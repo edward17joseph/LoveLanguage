@@ -1,8 +1,11 @@
 //Maya ASCII 2018 scene
 //Name: stove_latest.ma
-//Last modified: Thu, Feb 27, 2020 08:02:20 PM
+//Last modified: Sat, Mar 07, 2020 09:30:04 PM
 //Codeset: UTF-8
 requires maya "2018";
+requires "stereoCamera" "10.0";
+requires -nodeType "rmanDisplayChannel" -nodeType "d_openexr" -nodeType "rmanGlobals"
+		 -nodeType "PxrPathTracer" -nodeType "rmanDisplay" "RenderMan_for_Maya.py" "23.0 @ 2025012";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2018";
@@ -4442,7 +4445,6 @@ createNode transform -n "pCylinder2" -p "button4";
 createNode mesh -n "pCylinderShape2" -p "|stove|buttons|button4|pCylinder2";
 	rename -uid "FE6B5F38-4346-1936-DB9E-9AB70925EF69";
 	setAttr -k off ".v";
-	setAttr -s 6 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.5 0.83749997615814209 ;
@@ -4965,7 +4967,6 @@ createNode transform -n "pCylinder2" -p "button3";
 createNode mesh -n "pCylinderShape2" -p "|stove|buttons|button3|pCylinder2";
 	rename -uid "B3339627-324F-DF24-9773-F888E0E98034";
 	setAttr -k off ".v";
-	setAttr -s 6 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.5 0.83749997615814209 ;
@@ -5487,7 +5488,6 @@ createNode transform -n "pCylinder2" -p "button2";
 createNode mesh -n "pCylinderShape2" -p "|stove|buttons|button2|pCylinder2";
 	rename -uid "7FDF5E61-0E45-1EE6-EBC1-699B75FF6861";
 	setAttr -k off ".v";
-	setAttr -s 6 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.5 0.83749997615814209 ;
@@ -6010,7 +6010,6 @@ createNode transform -n "pCylinder2" -p "button1";
 createNode mesh -n "pCylinderShape2" -p "|stove|buttons|button1|pCylinder2";
 	rename -uid "F5D79D40-AF47-ED01-6E2A-3DA99001E1EF";
 	setAttr -k off ".v";
-	setAttr -s 6 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.5 0.83749997615814209 ;
@@ -6533,7 +6532,6 @@ createNode transform -n "pCylinder2" -p "button";
 createNode mesh -n "pCylinderShape2" -p "|stove|buttons|button|pCylinder2";
 	rename -uid "A050C5E0-D246-E165-C46B-528BDCDEA766";
 	setAttr -k off ".v";
-	setAttr -s 6 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.5 0.83749997615814209 ;
@@ -7096,9 +7094,6 @@ createNode transform -n "pCylinder13" -p "stoveTop3";
 createNode mesh -n "pCylinder13Shape" -p "|stove|stoveTops|stoveTop3|pCylinder13";
 	rename -uid "E2A3391B-174C-1134-AC3D-4A8707B3510E";
 	setAttr -k off ".v";
-	setAttr -s 3 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -8907,11 +8902,7 @@ createNode transform -n "pCylinder14" -p "stoveTop3";
 createNode mesh -n "pCylinder14Shape" -p "|stove|stoveTops|stoveTop3|pCylinder14";
 	rename -uid "A3563D58-B941-7450-4847-458CBDC209A7";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -10718,11 +10709,7 @@ createNode transform -n "pCylinder15" -p "stoveTop3";
 createNode mesh -n "pCylinder15Shape" -p "|stove|stoveTops|stoveTop3|pCylinder15";
 	rename -uid "56B2684A-2F41-BCB6-2D16-999EED88D705";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -12531,11 +12518,7 @@ createNode transform -n "pCylinder18" -p "stoveTop3";
 createNode mesh -n "pCylinder18Shape" -p "|stove|stoveTops|stoveTop3|pCylinder18";
 	rename -uid "09129715-8C4C-C75B-66FA-B9AE7C80F9DE";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -14343,11 +14326,7 @@ createNode transform -n "pCylinder19" -p "stoveTop3";
 createNode mesh -n "pCylinder19Shape" -p "|stove|stoveTops|stoveTop3|pCylinder19";
 	rename -uid "0AD0F0B6-1048-BE2E-9438-D49879AC184F";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -16156,11 +16135,7 @@ createNode transform -n "pCylinder20" -p "stoveTop3";
 createNode mesh -n "pCylinder20Shape" -p "|stove|stoveTops|stoveTop3|pCylinder20";
 	rename -uid "07540285-EA41-4A74-D97F-24B54BE9FDB5";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -19450,14 +19425,11 @@ createNode transform -n "pCube10" -p "stoveTop3";
 createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop3|pCube10";
 	rename -uid "46BD7876-C04D-510E-F3F9-93BDF3170E74";
 	setAttr -k off ".v";
-	setAttr -s 3 ".iog[0].og";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 21 "e[120]" "e[142]" "e[144]" "e[146]" "e[148]" "e[150:159]" "e[161:162]" "e[445]" "e[477]" "e[488]" "e[493]" "e[498:499]" "e[502:503]" "e[505]" "e[507]" "e[509]" "e[511]" "e[513]" "e[515]" "e[518:519]" "e[528]";
-	setAttr ".iog[0].og[2].gcl" -type "componentList" 16 "e[4:9]" "e[49]" "e[133]" "e[135]" "e[197:202]" "e[248]" "e[337]" "e[339]" "e[727]" "e[775]" "e[855]" "e[903]" "e[919]" "e[967]" "e[1047]" "e[1095]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.6875 0.37688392400741577 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 752 ".uvst[0].uvsp";
+	setAttr -s 782 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.62238073 0.5 0.62238073 0.49623212
 		 0.625 0.5 0.625 0.49623215 0.5 0.75376785 0.5 0.75 0.5 0.55509281 0.5 0.5 0.5 0.5
 		 0.5 0.49623215 0.5 0.49623215 0.51973408 0.75 0.51973408 0.75376785 0.51973408 0.55509281
@@ -19633,7 +19605,15 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop3|pCube10";
 		 0.51604199 0.38903892 0.47448796 0.39581618 0.52596146 0.40945649 0.51714134 0.41639322
 		 0.55376232 0.47731939 0.51521212 0.42273676 0.49999005 0.42589706 0.49999005 0.42589706
 		 0.51521212 0.42273676 0.55376232 0.47731939;
-	setAttr ".uvst[0].uvsp[750:751]" 0.51714134 0.41639322 0.52596146 0.40945649;
+	setAttr ".uvst[0].uvsp[750:781]" 0.51714134 0.41639322 0.52596146 0.40945649
+		 0.55920219 0.49623215 0.60575515 0.42995113 0.55920219 0.49623215 0.60575515 0.42995113
+		 0.55920219 0.49623215 0.60575515 0.42995113 0.55920219 0.49623215 0.60575515 0.42995113
+		 0.54886991 0.48177662 0.51204503 0.41718128 0.54886991 0.48177662 0.51204503 0.41718128
+		 0.51204503 0.41718128 0.53950655 0.38777813 0.55920219 0.38896635 0.51166707 0.83410144
+		 0.51166707 0.83410144 0.55920219 0.38896635 0.53950655 0.38777813 0.53950655 0.38777813
+		 0.55920219 0.38896635 0.51166707 0.83410144 0.51166707 0.83410144 0.55920219 0.38896635
+		 0.53950655 0.38777813 0.54886991 0.48177662 0.51204503 0.41718128 0.54886991 0.48177662
+		 0.51204503 0.41718128 0.51204503 0.41718128;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
@@ -20309,9 +20289,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop3|pCube10";
 		f 4 177 774 -132 -170
 		mu 0 4 116 538 540 78
 		f 4 738 -117 -46 137
-		mu 0 4 516 519 90 30
+		mu 0 4 516 519 90 752
 		f 4 -730 732 731 -33
-		mu 0 4 23 513 514 109
+		mu 0 4 753 513 514 109
 		f 4 -732 734 733 -164
 		mu 0 4 109 514 515 118
 		f 4 -172 163 186 179
@@ -20489,9 +20469,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop3|pCube10";
 		f 4 217 335 860 -345
 		mu 0 4 234 228 593 595
 		f 4 -346 243 316 896
-		mu 0 4 617 163 208 614
+		mu 0 4 617 754 208 614
 		f 4 225 -900 902 901
-		mu 0 4 162 239 619 620
+		mu 0 4 755 239 619 620
 		f 4 348 -898 900 899
 		mu 0 4 239 241 618 619
 		f 4 -351 -350 -349 226
@@ -20669,9 +20649,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop3|pCube10";
 		f 4 387 520 780 -528
 		mu 0 4 360 352 543 545
 		f 4 815 -530 413 487
-		mu 0 4 564 505 289 332
+		mu 0 4 564 505 756 332
 		f 4 395 -724 726 725
-		mu 0 4 288 365 507 508
+		mu 0 4 757 365 507 508
 		f 4 532 -722 724 723
 		mu 0 4 365 367 506 507
 		f 4 -535 -534 -533 396
@@ -20849,9 +20829,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop3|pCube10";
 		f 4 695 854 -690 -572
 		mu 0 4 486 588 590 479
 		f 4 818 -671 -599 696
-		mu 0 4 566 569 459 415
+		mu 0 4 566 569 459 758
 		f 4 -906 908 907 -582
-		mu 0 4 416 625 626 491
+		mu 0 4 759 625 626 491
 		f 4 -908 910 909 -699
 		mu 0 4 491 626 627 492
 		f 4 -581 698 701 700
@@ -21081,21 +21061,21 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop3|pCube10";
 		f 4 -917 -348 285 346
 		mu 0 4 631 630 240 230
 		f 4 -919 -347 343 338
-		mu 0 4 632 631 230 142
+		mu 0 4 632 631 230 760
 		f 4 -341 -920 -921 -339
-		mu 0 4 230 231 635 633
+		mu 0 4 761 231 635 633
 		f 4 691 -923 919 690
 		mu 0 4 480 636 634 481
 		f 4 -925 -692 -694 697
-		mu 0 4 638 637 395 480
+		mu 0 4 638 637 762 763
 		f 4 -927 -698 -636 699
-		mu 0 4 639 638 480 493
+		mu 0 4 639 638 764 493
 		f 4 -929 -700 -674 -928
 		mu 0 4 641 639 493 503
 		f 4 -529 -930 -931 927
-		mu 0 4 489 490 643 640
+		mu 0 4 489 765 643 640
 		f 4 -933 929 488 669
-		mu 0 4 644 642 459 458
+		mu 0 4 644 642 766 458
 		f 4 -935 -670 499 678
 		mu 0 4 645 644 458 466
 		f 4 -937 -679 503 680
@@ -21131,9 +21111,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop3|pCube10";
 		f 4 -967 963 -695 -966
 		mu 0 4 664 662 488 487
 		f 4 -969 965 688 337
-		mu 0 4 665 663 479 478
+		mu 0 4 665 663 767 478
 		f 4 -971 -338 -337 -970
-		mu 0 4 668 666 229 228
+		mu 0 4 668 666 229 768
 		f 4 -973 969 342 -972
 		mu 0 4 669 667 236 235
 		f 4 -975 971 283 -974
@@ -21170,13 +21150,13 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop3|pCube10";
 		f 4 -1005 -326 -145 317
 		mu 0 4 687 686 216 209
 		f 4 -1007 -318 -143 -1006
-		mu 0 4 689 687 209 208
+		mu 0 4 689 687 209 769
 		f 4 -913 -1008 1005 162
-		mu 0 4 237 629 688 238
+		mu 0 4 237 629 688 770
 		f 4 -163 -1010 -1011 1008
-		mu 0 4 83 82 693 690
+		mu 0 4 83 771 693 690
 		f 4 -1013 1009 142 141
-		mu 0 4 694 692 90 91
+		mu 0 4 694 692 772 91
 		f 4 -1015 -142 144 143
 		mu 0 4 695 694 91 92
 		f 4 -1017 -144 146 145
@@ -21212,9 +21192,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop3|pCube10";
 		f 4 -1047 1043 -140 -1046
 		mu 0 4 714 712 88 89
 		f 4 -1049 1045 132 133
-		mu 0 4 715 713 78 79
+		mu 0 4 715 713 773 79
 		f 4 -1051 -134 -522 -1050
-		mu 0 4 718 716 353 352
+		mu 0 4 718 716 353 774
 		f 4 -1053 1049 525 -1052
 		mu 0 4 719 717 362 361
 		f 4 -1055 1051 453 -1054
@@ -21250,23 +21230,23 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop3|pCube10";
 		f 4 -1085 -501 -500 489
 		mu 0 4 737 736 340 333
 		f 4 -1087 -490 -489 -1086
-		mu 0 4 739 737 333 332
+		mu 0 4 739 737 333 775
 		f 4 -1088 -1089 1085 528
-		mu 0 4 363 741 738 364
+		mu 0 4 363 741 738 776
 		f 4 -1091 1087 494 531
 		mu 0 4 742 740 377 366
 		f 4 -1093 -532 455 530
 		mu 0 4 743 742 366 354
 		f 4 -1095 -531 526 522
-		mu 0 4 744 743 354 267
+		mu 0 4 744 743 354 777
 		f 4 -524 -1096 -1097 -523
-		mu 0 4 354 355 747 745
+		mu 0 4 778 355 747 745
 		f 4 134 -1099 1095 136
 		mu 0 4 80 748 746 81
 		f 4 -1101 -135 -141 170
-		mu 0 4 750 749 16 80
+		mu 0 4 750 749 779 780
 		f 4 -1103 -171 -93 185
-		mu 0 4 751 750 80 86
+		mu 0 4 751 750 781 86
 		f 4 -1104 -186 -122 -1009
 		mu 0 4 691 751 86 87;
 	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
@@ -21286,9 +21266,6 @@ createNode transform -n "pCylinder13" -p "stoveTop2";
 createNode mesh -n "pCylinder13Shape" -p "|stove|stoveTops|stoveTop2|pCylinder13";
 	rename -uid "930F986F-F643-4123-8D0B-95B44C0220FD";
 	setAttr -k off ".v";
-	setAttr -s 3 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -23097,11 +23074,7 @@ createNode transform -n "pCylinder14" -p "stoveTop2";
 createNode mesh -n "pCylinder14Shape" -p "|stove|stoveTops|stoveTop2|pCylinder14";
 	rename -uid "793F00DB-8A4D-A9B5-2F7D-3F95C37FC854";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -24910,11 +24883,7 @@ createNode transform -n "pCylinder15" -p "stoveTop2";
 createNode mesh -n "pCylinder15Shape" -p "|stove|stoveTops|stoveTop2|pCylinder15";
 	rename -uid "59E15F22-C340-18AA-B729-2D89AD9D0F76";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -26723,11 +26692,7 @@ createNode transform -n "pCylinder18" -p "stoveTop2";
 createNode mesh -n "pCylinder18Shape" -p "|stove|stoveTops|stoveTop2|pCylinder18";
 	rename -uid "D050632C-A94A-0311-730A-88958E745F09";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -28535,11 +28500,7 @@ createNode transform -n "pCylinder19" -p "stoveTop2";
 createNode mesh -n "pCylinder19Shape" -p "|stove|stoveTops|stoveTop2|pCylinder19";
 	rename -uid "75B53117-6A40-57B4-7D57-E2867A3B2A3F";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -30348,11 +30309,7 @@ createNode transform -n "pCylinder20" -p "stoveTop2";
 createNode mesh -n "pCylinder20Shape" -p "|stove|stoveTops|stoveTop2|pCylinder20";
 	rename -uid "3ABB6A96-9043-307B-4215-1D90C2E37908";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -33652,14 +33609,11 @@ createNode transform -n "pCube10" -p "stoveTop2";
 createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop2|pCube10";
 	rename -uid "5CC260EF-1C44-132C-82FC-408C028487A8";
 	setAttr -k off ".v";
-	setAttr -s 3 ".iog[0].og";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 21 "e[120]" "e[142]" "e[144]" "e[146]" "e[148]" "e[150:159]" "e[161:162]" "e[445]" "e[477]" "e[488]" "e[493]" "e[498:499]" "e[502:503]" "e[505]" "e[507]" "e[509]" "e[511]" "e[513]" "e[515]" "e[518:519]" "e[528]";
-	setAttr ".iog[0].og[2].gcl" -type "componentList" 16 "e[4:9]" "e[49]" "e[133]" "e[135]" "e[197:202]" "e[248]" "e[337]" "e[339]" "e[727]" "e[775]" "e[855]" "e[903]" "e[919]" "e[967]" "e[1047]" "e[1095]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.6875 0.37688392400741577 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 752 ".uvst[0].uvsp";
+	setAttr -s 782 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.62238073 0.5 0.62238073 0.49623212
 		 0.625 0.5 0.625 0.49623215 0.5 0.75376785 0.5 0.75 0.5 0.55509281 0.5 0.5 0.5 0.5
 		 0.5 0.49623215 0.5 0.49623215 0.51973408 0.75 0.51973408 0.75376785 0.51973408 0.55509281
@@ -33835,7 +33789,15 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop2|pCube10";
 		 0.51604199 0.38903892 0.47448796 0.39581618 0.52596146 0.40945649 0.51714134 0.41639322
 		 0.55376232 0.47731939 0.51521212 0.42273676 0.49999005 0.42589706 0.49999005 0.42589706
 		 0.51521212 0.42273676 0.55376232 0.47731939;
-	setAttr ".uvst[0].uvsp[750:751]" 0.51714134 0.41639322 0.52596146 0.40945649;
+	setAttr ".uvst[0].uvsp[750:781]" 0.51714134 0.41639322 0.52596146 0.40945649
+		 0.55920219 0.49623215 0.60575515 0.42995113 0.55920219 0.49623215 0.60575515 0.42995113
+		 0.55920219 0.49623215 0.60575515 0.42995113 0.55920219 0.49623215 0.60575515 0.42995113
+		 0.54886991 0.48177662 0.51204503 0.41718128 0.54886991 0.48177662 0.51204503 0.41718128
+		 0.51204503 0.41718128 0.53950655 0.38777813 0.55920219 0.38896635 0.51166707 0.83410144
+		 0.51166707 0.83410144 0.55920219 0.38896635 0.53950655 0.38777813 0.53950655 0.38777813
+		 0.55920219 0.38896635 0.51166707 0.83410144 0.51166707 0.83410144 0.55920219 0.38896635
+		 0.53950655 0.38777813 0.54886991 0.48177662 0.51204503 0.41718128 0.54886991 0.48177662
+		 0.51204503 0.41718128 0.51204503 0.41718128;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
@@ -34511,9 +34473,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop2|pCube10";
 		f 4 177 774 -132 -170
 		mu 0 4 116 538 540 78
 		f 4 738 -117 -46 137
-		mu 0 4 516 519 90 30
+		mu 0 4 516 519 90 752
 		f 4 -730 732 731 -33
-		mu 0 4 23 513 514 109
+		mu 0 4 753 513 514 109
 		f 4 -732 734 733 -164
 		mu 0 4 109 514 515 118
 		f 4 -172 163 186 179
@@ -34691,9 +34653,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop2|pCube10";
 		f 4 217 335 860 -345
 		mu 0 4 234 228 593 595
 		f 4 -346 243 316 896
-		mu 0 4 617 163 208 614
+		mu 0 4 617 754 208 614
 		f 4 225 -900 902 901
-		mu 0 4 162 239 619 620
+		mu 0 4 755 239 619 620
 		f 4 348 -898 900 899
 		mu 0 4 239 241 618 619
 		f 4 -351 -350 -349 226
@@ -34871,9 +34833,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop2|pCube10";
 		f 4 387 520 780 -528
 		mu 0 4 360 352 543 545
 		f 4 815 -530 413 487
-		mu 0 4 564 505 289 332
+		mu 0 4 564 505 756 332
 		f 4 395 -724 726 725
-		mu 0 4 288 365 507 508
+		mu 0 4 757 365 507 508
 		f 4 532 -722 724 723
 		mu 0 4 365 367 506 507
 		f 4 -535 -534 -533 396
@@ -35051,9 +35013,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop2|pCube10";
 		f 4 695 854 -690 -572
 		mu 0 4 486 588 590 479
 		f 4 818 -671 -599 696
-		mu 0 4 566 569 459 415
+		mu 0 4 566 569 459 758
 		f 4 -906 908 907 -582
-		mu 0 4 416 625 626 491
+		mu 0 4 759 625 626 491
 		f 4 -908 910 909 -699
 		mu 0 4 491 626 627 492
 		f 4 -581 698 701 700
@@ -35283,21 +35245,21 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop2|pCube10";
 		f 4 -917 -348 285 346
 		mu 0 4 631 630 240 230
 		f 4 -919 -347 343 338
-		mu 0 4 632 631 230 142
+		mu 0 4 632 631 230 760
 		f 4 -341 -920 -921 -339
-		mu 0 4 230 231 635 633
+		mu 0 4 761 231 635 633
 		f 4 691 -923 919 690
 		mu 0 4 480 636 634 481
 		f 4 -925 -692 -694 697
-		mu 0 4 638 637 395 480
+		mu 0 4 638 637 762 763
 		f 4 -927 -698 -636 699
-		mu 0 4 639 638 480 493
+		mu 0 4 639 638 764 493
 		f 4 -929 -700 -674 -928
 		mu 0 4 641 639 493 503
 		f 4 -529 -930 -931 927
-		mu 0 4 489 490 643 640
+		mu 0 4 489 765 643 640
 		f 4 -933 929 488 669
-		mu 0 4 644 642 459 458
+		mu 0 4 644 642 766 458
 		f 4 -935 -670 499 678
 		mu 0 4 645 644 458 466
 		f 4 -937 -679 503 680
@@ -35333,9 +35295,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop2|pCube10";
 		f 4 -967 963 -695 -966
 		mu 0 4 664 662 488 487
 		f 4 -969 965 688 337
-		mu 0 4 665 663 479 478
+		mu 0 4 665 663 767 478
 		f 4 -971 -338 -337 -970
-		mu 0 4 668 666 229 228
+		mu 0 4 668 666 229 768
 		f 4 -973 969 342 -972
 		mu 0 4 669 667 236 235
 		f 4 -975 971 283 -974
@@ -35372,13 +35334,13 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop2|pCube10";
 		f 4 -1005 -326 -145 317
 		mu 0 4 687 686 216 209
 		f 4 -1007 -318 -143 -1006
-		mu 0 4 689 687 209 208
+		mu 0 4 689 687 209 769
 		f 4 -913 -1008 1005 162
-		mu 0 4 237 629 688 238
+		mu 0 4 237 629 688 770
 		f 4 -163 -1010 -1011 1008
-		mu 0 4 83 82 693 690
+		mu 0 4 83 771 693 690
 		f 4 -1013 1009 142 141
-		mu 0 4 694 692 90 91
+		mu 0 4 694 692 772 91
 		f 4 -1015 -142 144 143
 		mu 0 4 695 694 91 92
 		f 4 -1017 -144 146 145
@@ -35414,9 +35376,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop2|pCube10";
 		f 4 -1047 1043 -140 -1046
 		mu 0 4 714 712 88 89
 		f 4 -1049 1045 132 133
-		mu 0 4 715 713 78 79
+		mu 0 4 715 713 773 79
 		f 4 -1051 -134 -522 -1050
-		mu 0 4 718 716 353 352
+		mu 0 4 718 716 353 774
 		f 4 -1053 1049 525 -1052
 		mu 0 4 719 717 362 361
 		f 4 -1055 1051 453 -1054
@@ -35452,23 +35414,23 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop2|pCube10";
 		f 4 -1085 -501 -500 489
 		mu 0 4 737 736 340 333
 		f 4 -1087 -490 -489 -1086
-		mu 0 4 739 737 333 332
+		mu 0 4 739 737 333 775
 		f 4 -1088 -1089 1085 528
-		mu 0 4 363 741 738 364
+		mu 0 4 363 741 738 776
 		f 4 -1091 1087 494 531
 		mu 0 4 742 740 377 366
 		f 4 -1093 -532 455 530
 		mu 0 4 743 742 366 354
 		f 4 -1095 -531 526 522
-		mu 0 4 744 743 354 267
+		mu 0 4 744 743 354 777
 		f 4 -524 -1096 -1097 -523
-		mu 0 4 354 355 747 745
+		mu 0 4 778 355 747 745
 		f 4 134 -1099 1095 136
 		mu 0 4 80 748 746 81
 		f 4 -1101 -135 -141 170
-		mu 0 4 750 749 16 80
+		mu 0 4 750 749 779 780
 		f 4 -1103 -171 -93 185
-		mu 0 4 751 750 80 86
+		mu 0 4 751 750 781 86
 		f 4 -1104 -186 -122 -1009
 		mu 0 4 691 751 86 87;
 	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
@@ -35488,9 +35450,6 @@ createNode transform -n "pCylinder13" -p "stoveTop1";
 createNode mesh -n "pCylinder13Shape" -p "|stove|stoveTops|stoveTop1|pCylinder13";
 	rename -uid "6A2A2954-8B4B-A15C-01F0-6BB9441CB0AA";
 	setAttr -k off ".v";
-	setAttr -s 3 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -37302,11 +37261,7 @@ createNode transform -n "pCylinder14" -p "stoveTop1";
 createNode mesh -n "pCylinder14Shape" -p "|stove|stoveTops|stoveTop1|pCylinder14";
 	rename -uid "95E6C7E6-E749-6959-5A1F-029F6AFCC4EE";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -39115,11 +39070,7 @@ createNode transform -n "pCylinder15" -p "stoveTop1";
 createNode mesh -n "pCylinder15Shape" -p "|stove|stoveTops|stoveTop1|pCylinder15";
 	rename -uid "A51C0AC3-BD44-2D03-FA52-8E84D50052EB";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -40930,11 +40881,7 @@ createNode transform -n "pCylinder18" -p "stoveTop1";
 createNode mesh -n "pCylinder18Shape" -p "|stove|stoveTops|stoveTop1|pCylinder18";
 	rename -uid "876671DE-244A-536C-BB0D-FFA2DA25CEB9";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -42745,11 +42692,7 @@ createNode transform -n "pCylinder19" -p "stoveTop1";
 createNode mesh -n "pCylinder19Shape" -p "|stove|stoveTops|stoveTop1|pCylinder19";
 	rename -uid "8AF9126B-BC4A-83DE-B3E8-A2B19E969F61";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -44563,11 +44506,7 @@ createNode transform -n "pCylinder20" -p "stoveTop1";
 createNode mesh -n "pCylinder20Shape" -p "|stove|stoveTops|stoveTop1|pCylinder20";
 	rename -uid "8FC9FC79-5A41-BD26-1CEA-7D86BA999292";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -47868,14 +47807,11 @@ createNode transform -n "pCube10" -p "stoveTop1";
 createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop1|pCube10";
 	rename -uid "A43A73DF-FE44-F711-BD2A-3B9AB8638D98";
 	setAttr -k off ".v";
-	setAttr -s 3 ".iog[0].og";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 21 "e[120]" "e[142]" "e[144]" "e[146]" "e[148]" "e[150:159]" "e[161:162]" "e[445]" "e[477]" "e[488]" "e[493]" "e[498:499]" "e[502:503]" "e[505]" "e[507]" "e[509]" "e[511]" "e[513]" "e[515]" "e[518:519]" "e[528]";
-	setAttr ".iog[0].og[2].gcl" -type "componentList" 16 "e[4:9]" "e[49]" "e[133]" "e[135]" "e[197:202]" "e[248]" "e[337]" "e[339]" "e[727]" "e[775]" "e[855]" "e[903]" "e[919]" "e[967]" "e[1047]" "e[1095]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.6875 0.37688392400741577 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 752 ".uvst[0].uvsp";
+	setAttr -s 782 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.62238073 0.5 0.62238073 0.49623212
 		 0.625 0.5 0.625 0.49623215 0.5 0.75376785 0.5 0.75 0.5 0.55509281 0.5 0.5 0.5 0.5
 		 0.5 0.49623215 0.5 0.49623215 0.51973408 0.75 0.51973408 0.75376785 0.51973408 0.55509281
@@ -48051,7 +47987,15 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop1|pCube10";
 		 0.51604199 0.38903892 0.47448796 0.39581618 0.52596146 0.40945649 0.51714134 0.41639322
 		 0.55376232 0.47731939 0.51521212 0.42273676 0.49999005 0.42589706 0.49999005 0.42589706
 		 0.51521212 0.42273676 0.55376232 0.47731939;
-	setAttr ".uvst[0].uvsp[750:751]" 0.51714134 0.41639322 0.52596146 0.40945649;
+	setAttr ".uvst[0].uvsp[750:781]" 0.51714134 0.41639322 0.52596146 0.40945649
+		 0.55920219 0.49623215 0.60575515 0.42995113 0.55920219 0.49623215 0.60575515 0.42995113
+		 0.55920219 0.49623215 0.60575515 0.42995113 0.55920219 0.49623215 0.60575515 0.42995113
+		 0.54886991 0.48177662 0.51204503 0.41718128 0.54886991 0.48177662 0.51204503 0.41718128
+		 0.51204503 0.41718128 0.53950655 0.38777813 0.55920219 0.38896635 0.51166707 0.83410144
+		 0.51166707 0.83410144 0.55920219 0.38896635 0.53950655 0.38777813 0.53950655 0.38777813
+		 0.55920219 0.38896635 0.51166707 0.83410144 0.51166707 0.83410144 0.55920219 0.38896635
+		 0.53950655 0.38777813 0.54886991 0.48177662 0.51204503 0.41718128 0.54886991 0.48177662
+		 0.51204503 0.41718128 0.51204503 0.41718128;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
@@ -48728,9 +48672,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop1|pCube10";
 		f 4 177 774 -132 -170
 		mu 0 4 116 538 540 78
 		f 4 738 -117 -46 137
-		mu 0 4 516 519 90 30
+		mu 0 4 516 519 90 752
 		f 4 -730 732 731 -33
-		mu 0 4 23 513 514 109
+		mu 0 4 753 513 514 109
 		f 4 -732 734 733 -164
 		mu 0 4 109 514 515 118
 		f 4 -172 163 186 179
@@ -48908,9 +48852,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop1|pCube10";
 		f 4 217 335 860 -345
 		mu 0 4 234 228 593 595
 		f 4 -346 243 316 896
-		mu 0 4 617 163 208 614
+		mu 0 4 617 754 208 614
 		f 4 225 -900 902 901
-		mu 0 4 162 239 619 620
+		mu 0 4 755 239 619 620
 		f 4 348 -898 900 899
 		mu 0 4 239 241 618 619
 		f 4 -351 -350 -349 226
@@ -49088,9 +49032,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop1|pCube10";
 		f 4 387 520 780 -528
 		mu 0 4 360 352 543 545
 		f 4 815 -530 413 487
-		mu 0 4 564 505 289 332
+		mu 0 4 564 505 756 332
 		f 4 395 -724 726 725
-		mu 0 4 288 365 507 508
+		mu 0 4 757 365 507 508
 		f 4 532 -722 724 723
 		mu 0 4 365 367 506 507
 		f 4 -535 -534 -533 396
@@ -49268,9 +49212,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop1|pCube10";
 		f 4 695 854 -690 -572
 		mu 0 4 486 588 590 479
 		f 4 818 -671 -599 696
-		mu 0 4 566 569 459 415
+		mu 0 4 566 569 459 758
 		f 4 -906 908 907 -582
-		mu 0 4 416 625 626 491
+		mu 0 4 759 625 626 491
 		f 4 -908 910 909 -699
 		mu 0 4 491 626 627 492
 		f 4 -581 698 701 700
@@ -49500,21 +49444,21 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop1|pCube10";
 		f 4 -917 -348 285 346
 		mu 0 4 631 630 240 230
 		f 4 -919 -347 343 338
-		mu 0 4 632 631 230 142
+		mu 0 4 632 631 230 760
 		f 4 -341 -920 -921 -339
-		mu 0 4 230 231 635 633
+		mu 0 4 761 231 635 633
 		f 4 691 -923 919 690
 		mu 0 4 480 636 634 481
 		f 4 -925 -692 -694 697
-		mu 0 4 638 637 395 480
+		mu 0 4 638 637 762 763
 		f 4 -927 -698 -636 699
-		mu 0 4 639 638 480 493
+		mu 0 4 639 638 764 493
 		f 4 -929 -700 -674 -928
 		mu 0 4 641 639 493 503
 		f 4 -529 -930 -931 927
-		mu 0 4 489 490 643 640
+		mu 0 4 489 765 643 640
 		f 4 -933 929 488 669
-		mu 0 4 644 642 459 458
+		mu 0 4 644 642 766 458
 		f 4 -935 -670 499 678
 		mu 0 4 645 644 458 466
 		f 4 -937 -679 503 680
@@ -49550,9 +49494,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop1|pCube10";
 		f 4 -967 963 -695 -966
 		mu 0 4 664 662 488 487
 		f 4 -969 965 688 337
-		mu 0 4 665 663 479 478
+		mu 0 4 665 663 767 478
 		f 4 -971 -338 -337 -970
-		mu 0 4 668 666 229 228
+		mu 0 4 668 666 229 768
 		f 4 -973 969 342 -972
 		mu 0 4 669 667 236 235
 		f 4 -975 971 283 -974
@@ -49589,13 +49533,13 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop1|pCube10";
 		f 4 -1005 -326 -145 317
 		mu 0 4 687 686 216 209
 		f 4 -1007 -318 -143 -1006
-		mu 0 4 689 687 209 208
+		mu 0 4 689 687 209 769
 		f 4 -913 -1008 1005 162
-		mu 0 4 237 629 688 238
+		mu 0 4 237 629 688 770
 		f 4 -163 -1010 -1011 1008
-		mu 0 4 83 82 693 690
+		mu 0 4 83 771 693 690
 		f 4 -1013 1009 142 141
-		mu 0 4 694 692 90 91
+		mu 0 4 694 692 772 91
 		f 4 -1015 -142 144 143
 		mu 0 4 695 694 91 92
 		f 4 -1017 -144 146 145
@@ -49631,9 +49575,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop1|pCube10";
 		f 4 -1047 1043 -140 -1046
 		mu 0 4 714 712 88 89
 		f 4 -1049 1045 132 133
-		mu 0 4 715 713 78 79
+		mu 0 4 715 713 773 79
 		f 4 -1051 -134 -522 -1050
-		mu 0 4 718 716 353 352
+		mu 0 4 718 716 353 774
 		f 4 -1053 1049 525 -1052
 		mu 0 4 719 717 362 361
 		f 4 -1055 1051 453 -1054
@@ -49669,23 +49613,23 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop1|pCube10";
 		f 4 -1085 -501 -500 489
 		mu 0 4 737 736 340 333
 		f 4 -1087 -490 -489 -1086
-		mu 0 4 739 737 333 332
+		mu 0 4 739 737 333 775
 		f 4 -1088 -1089 1085 528
-		mu 0 4 363 741 738 364
+		mu 0 4 363 741 738 776
 		f 4 -1091 1087 494 531
 		mu 0 4 742 740 377 366
 		f 4 -1093 -532 455 530
 		mu 0 4 743 742 366 354
 		f 4 -1095 -531 526 522
-		mu 0 4 744 743 354 267
+		mu 0 4 744 743 354 777
 		f 4 -524 -1096 -1097 -523
-		mu 0 4 354 355 747 745
+		mu 0 4 778 355 747 745
 		f 4 134 -1099 1095 136
 		mu 0 4 80 748 746 81
 		f 4 -1101 -135 -141 170
-		mu 0 4 750 749 16 80
+		mu 0 4 750 749 779 780
 		f 4 -1103 -171 -93 185
-		mu 0 4 751 750 80 86
+		mu 0 4 751 750 781 86
 		f 4 -1104 -186 -122 -1009
 		mu 0 4 691 751 86 87;
 	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
@@ -49705,9 +49649,6 @@ createNode transform -n "pCylinder13" -p "stoveTop";
 createNode mesh -n "pCylinder13Shape" -p "|stove|stoveTops|stoveTop|pCylinder13";
 	rename -uid "FAB99B4F-9D47-D90B-12B4-929B8088BD7A";
 	setAttr -k off ".v";
-	setAttr -s 3 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -51519,11 +51460,7 @@ createNode transform -n "pCylinder14" -p "stoveTop";
 createNode mesh -n "pCylinder14Shape" -p "|stove|stoveTops|stoveTop|pCylinder14";
 	rename -uid "4F650BDA-8E4F-7FC6-F932-54B6C5A02DF2";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -53332,11 +53269,7 @@ createNode transform -n "pCylinder15" -p "stoveTop";
 createNode mesh -n "pCylinder15Shape" -p "|stove|stoveTops|stoveTop|pCylinder15";
 	rename -uid "FBB909EB-7742-F0B4-0E27-D7A1EE066797";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -55146,11 +55079,7 @@ createNode transform -n "pCylinder18" -p "stoveTop";
 createNode mesh -n "pCylinder18Shape" -p "|stove|stoveTops|stoveTop|pCylinder18";
 	rename -uid "C577F38A-ED4C-45E0-A290-4D988E579056";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -56961,11 +56890,7 @@ createNode transform -n "pCylinder19" -p "stoveTop";
 createNode mesh -n "pCylinder19Shape" -p "|stove|stoveTops|stoveTop|pCylinder19";
 	rename -uid "12D95254-4846-9064-BBAF-A1B85B4182D3";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -58776,11 +58701,7 @@ createNode transform -n "pCylinder20" -p "stoveTop";
 createNode mesh -n "pCylinder20Shape" -p "|stove|stoveTops|stoveTop|pCylinder20";
 	rename -uid "20C60934-974A-E49C-9107-6E84A74B1C24";
 	setAttr -k off ".v";
-	setAttr -s 4 ".iog[0].og";
-	setAttr ".iog[0].og[0].gcl" -type "componentList" 38 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]" "e[762]" "e[764]" "e[766]" "e[768]" "e[770]" "e[772]" "e[774]" "e[776]" "e[778]" "e[780]" "e[782]" "e[784]" "e[786]" "e[788]" "e[790]" "e[792]" "e[794]" "e[796]" "e[798:799]";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 19 "e[322]" "e[324]" "e[326]" "e[328]" "e[330]" "e[332]" "e[334]" "e[336]" "e[338]" "e[340]" "e[342]" "e[344]" "e[346]" "e[348]" "e[350]" "e[352]" "e[354]" "e[356]" "e[358:359]";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:559]";
-	setAttr ".iog[0].og[3].gcl" -type "componentList" 0;
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -62076,14 +61997,11 @@ createNode transform -n "pCube10" -p "stoveTop";
 createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop|pCube10";
 	rename -uid "5C8C8FA2-3649-2151-6626-EE90EDB11548";
 	setAttr -k off ".v";
-	setAttr -s 3 ".iog[0].og";
-	setAttr ".iog[0].og[1].gcl" -type "componentList" 21 "e[120]" "e[142]" "e[144]" "e[146]" "e[148]" "e[150:159]" "e[161:162]" "e[445]" "e[477]" "e[488]" "e[493]" "e[498:499]" "e[502:503]" "e[505]" "e[507]" "e[509]" "e[511]" "e[513]" "e[515]" "e[518:519]" "e[528]";
-	setAttr ".iog[0].og[2].gcl" -type "componentList" 16 "e[4:9]" "e[49]" "e[133]" "e[135]" "e[197:202]" "e[248]" "e[337]" "e[339]" "e[727]" "e[775]" "e[855]" "e[903]" "e[919]" "e[967]" "e[1047]" "e[1095]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.6875 0.37688392400741577 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 752 ".uvst[0].uvsp";
+	setAttr -s 782 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.62238073 0.5 0.62238073 0.49623212
 		 0.625 0.5 0.625 0.49623215 0.5 0.75376785 0.5 0.75 0.5 0.55509281 0.5 0.5 0.5 0.5
 		 0.5 0.49623215 0.5 0.49623215 0.51973408 0.75 0.51973408 0.75376785 0.51973408 0.55509281
@@ -62259,7 +62177,15 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop|pCube10";
 		 0.51604199 0.38903892 0.47448796 0.39581618 0.52596146 0.40945649 0.51714134 0.41639322
 		 0.55376232 0.47731939 0.51521212 0.42273676 0.49999005 0.42589706 0.49999005 0.42589706
 		 0.51521212 0.42273676 0.55376232 0.47731939;
-	setAttr ".uvst[0].uvsp[750:751]" 0.51714134 0.41639322 0.52596146 0.40945649;
+	setAttr ".uvst[0].uvsp[750:781]" 0.51714134 0.41639322 0.52596146 0.40945649
+		 0.55920219 0.49623215 0.60575515 0.42995113 0.55920219 0.49623215 0.60575515 0.42995113
+		 0.55920219 0.49623215 0.60575515 0.42995113 0.55920219 0.49623215 0.60575515 0.42995113
+		 0.54886991 0.48177662 0.51204503 0.41718128 0.54886991 0.48177662 0.51204503 0.41718128
+		 0.51204503 0.41718128 0.53950655 0.38777813 0.55920219 0.38896635 0.51166707 0.83410144
+		 0.51166707 0.83410144 0.55920219 0.38896635 0.53950655 0.38777813 0.53950655 0.38777813
+		 0.55920219 0.38896635 0.51166707 0.83410144 0.51166707 0.83410144 0.55920219 0.38896635
+		 0.53950655 0.38777813 0.54886991 0.48177662 0.51204503 0.41718128 0.54886991 0.48177662
+		 0.51204503 0.41718128 0.51204503 0.41718128;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
@@ -62939,9 +62865,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop|pCube10";
 		f 4 177 774 -132 -170
 		mu 0 4 116 538 540 78
 		f 4 738 -117 -46 137
-		mu 0 4 516 519 90 30
+		mu 0 4 516 519 90 752
 		f 4 -730 732 731 -33
-		mu 0 4 23 513 514 109
+		mu 0 4 753 513 514 109
 		f 4 -732 734 733 -164
 		mu 0 4 109 514 515 118
 		f 4 -172 163 186 179
@@ -63119,9 +63045,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop|pCube10";
 		f 4 217 335 860 -345
 		mu 0 4 234 228 593 595
 		f 4 -346 243 316 896
-		mu 0 4 617 163 208 614
+		mu 0 4 617 754 208 614
 		f 4 225 -900 902 901
-		mu 0 4 162 239 619 620
+		mu 0 4 755 239 619 620
 		f 4 348 -898 900 899
 		mu 0 4 239 241 618 619
 		f 4 -351 -350 -349 226
@@ -63299,9 +63225,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop|pCube10";
 		f 4 387 520 780 -528
 		mu 0 4 360 352 543 545
 		f 4 815 -530 413 487
-		mu 0 4 564 505 289 332
+		mu 0 4 564 505 756 332
 		f 4 395 -724 726 725
-		mu 0 4 288 365 507 508
+		mu 0 4 757 365 507 508
 		f 4 532 -722 724 723
 		mu 0 4 365 367 506 507
 		f 4 -535 -534 -533 396
@@ -63479,9 +63405,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop|pCube10";
 		f 4 695 854 -690 -572
 		mu 0 4 486 588 590 479
 		f 4 818 -671 -599 696
-		mu 0 4 566 569 459 415
+		mu 0 4 566 569 459 758
 		f 4 -906 908 907 -582
-		mu 0 4 416 625 626 491
+		mu 0 4 759 625 626 491
 		f 4 -908 910 909 -699
 		mu 0 4 491 626 627 492
 		f 4 -581 698 701 700
@@ -63711,21 +63637,21 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop|pCube10";
 		f 4 -917 -348 285 346
 		mu 0 4 631 630 240 230
 		f 4 -919 -347 343 338
-		mu 0 4 632 631 230 142
+		mu 0 4 632 631 230 760
 		f 4 -341 -920 -921 -339
-		mu 0 4 230 231 635 633
+		mu 0 4 761 231 635 633
 		f 4 691 -923 919 690
 		mu 0 4 480 636 634 481
 		f 4 -925 -692 -694 697
-		mu 0 4 638 637 395 480
+		mu 0 4 638 637 762 763
 		f 4 -927 -698 -636 699
-		mu 0 4 639 638 480 493
+		mu 0 4 639 638 764 493
 		f 4 -929 -700 -674 -928
 		mu 0 4 641 639 493 503
 		f 4 -529 -930 -931 927
-		mu 0 4 489 490 643 640
+		mu 0 4 489 765 643 640
 		f 4 -933 929 488 669
-		mu 0 4 644 642 459 458
+		mu 0 4 644 642 766 458
 		f 4 -935 -670 499 678
 		mu 0 4 645 644 458 466
 		f 4 -937 -679 503 680
@@ -63761,9 +63687,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop|pCube10";
 		f 4 -967 963 -695 -966
 		mu 0 4 664 662 488 487
 		f 4 -969 965 688 337
-		mu 0 4 665 663 479 478
+		mu 0 4 665 663 767 478
 		f 4 -971 -338 -337 -970
-		mu 0 4 668 666 229 228
+		mu 0 4 668 666 229 768
 		f 4 -973 969 342 -972
 		mu 0 4 669 667 236 235
 		f 4 -975 971 283 -974
@@ -63800,13 +63726,13 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop|pCube10";
 		f 4 -1005 -326 -145 317
 		mu 0 4 687 686 216 209
 		f 4 -1007 -318 -143 -1006
-		mu 0 4 689 687 209 208
+		mu 0 4 689 687 209 769
 		f 4 -913 -1008 1005 162
-		mu 0 4 237 629 688 238
+		mu 0 4 237 629 688 770
 		f 4 -163 -1010 -1011 1008
-		mu 0 4 83 82 693 690
+		mu 0 4 83 771 693 690
 		f 4 -1013 1009 142 141
-		mu 0 4 694 692 90 91
+		mu 0 4 694 692 772 91
 		f 4 -1015 -142 144 143
 		mu 0 4 695 694 91 92
 		f 4 -1017 -144 146 145
@@ -63842,9 +63768,9 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop|pCube10";
 		f 4 -1047 1043 -140 -1046
 		mu 0 4 714 712 88 89
 		f 4 -1049 1045 132 133
-		mu 0 4 715 713 78 79
+		mu 0 4 715 713 773 79
 		f 4 -1051 -134 -522 -1050
-		mu 0 4 718 716 353 352
+		mu 0 4 718 716 353 774
 		f 4 -1053 1049 525 -1052
 		mu 0 4 719 717 362 361
 		f 4 -1055 1051 453 -1054
@@ -63880,23 +63806,23 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop|pCube10";
 		f 4 -1085 -501 -500 489
 		mu 0 4 737 736 340 333
 		f 4 -1087 -490 -489 -1086
-		mu 0 4 739 737 333 332
+		mu 0 4 739 737 333 775
 		f 4 -1088 -1089 1085 528
-		mu 0 4 363 741 738 364
+		mu 0 4 363 741 738 776
 		f 4 -1091 1087 494 531
 		mu 0 4 742 740 377 366
 		f 4 -1093 -532 455 530
 		mu 0 4 743 742 366 354
 		f 4 -1095 -531 526 522
-		mu 0 4 744 743 354 267
+		mu 0 4 744 743 354 777
 		f 4 -524 -1096 -1097 -523
-		mu 0 4 354 355 747 745
+		mu 0 4 778 355 747 745
 		f 4 134 -1099 1095 136
 		mu 0 4 80 748 746 81
 		f 4 -1101 -135 -141 170
-		mu 0 4 750 749 16 80
+		mu 0 4 750 749 779 780
 		f 4 -1103 -171 -93 185
-		mu 0 4 751 750 80 86
+		mu 0 4 751 750 781 86
 		f 4 -1104 -186 -122 -1009
 		mu 0 4 691 751 86 87;
 	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
@@ -63906,22 +63832,22 @@ createNode mesh -n "pCube10Shape" -p "|stove|stoveTops|stoveTop|pCube10";
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "15FA9F7E-5849-6495-4829-988DA2DECC61";
+	rename -uid "40161D34-B042-8177-E54F-50A616ADEC09";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "4334A326-154B-C9EA-06EE-C18AD2562283";
+	rename -uid "3579D6D8-7E44-380F-519D-40988B01F76F";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "546F1711-294B-3C35-5D07-719052D6B43E";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "9647B27F-9D47-8CB9-5B90-2EB33922C5C7";
+	rename -uid "9166B85F-7F48-275D-2CFD-EB828272BB21";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "F343B606-9144-1240-38A4-E582CE0D49FE";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "5B003D58-FD40-D229-A193-56AF0674574B";
+	rename -uid "E5364E71-1B46-CD73-6AF9-5BAC3D83142B";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "120D5CD9-EE4E-CB4A-3F11-BBB81D3E2AB1";
+	rename -uid "9248EB80-B64F-0EC6-3899-2E94A5A1372F";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "7A2EEB5F-8941-9059-3026-3D9C9084EAC9";
 	setAttr ".b" -type "string" (
@@ -63942,7 +63868,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n"
 		+ "            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n"
-		+ "            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"0\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n"
 		+ "                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n"
 		+ "                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n"
@@ -63953,13 +63879,17 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n"
 		+ "                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n"
 		+ "                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n"
-		+ "                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -highlightConnections 0\n                -copyConnectionsOnPaste 0\n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n"
+		+ "                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n"
+		+ "                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n"
+		+ "                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n"
+		+ "                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -highlightConnections 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n"
+		+ "                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
 		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1191\\n    -height 711\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1191\\n    -height 711\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
@@ -63968,331 +63898,274 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "B6546EAD-9048-B4B5-CCAE-3EAB4CAD0AAD";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
-createNode objectSet -n "set1";
-	rename -uid "3EA7BE72-D940-8D92-76DB-AB807F0DE4EA";
-	setAttr ".ihi" 0;
-	setAttr -s 24 ".dsm";
-	setAttr -s 24 ".gn";
-createNode objectSet -n "set2";
-	rename -uid "50E2E005-E74D-BD7B-BA19-0683371C763B";
-	setAttr ".ihi" 0;
-	setAttr -s 24 ".dsm";
-	setAttr -s 24 ".gn";
-createNode objectSet -n "set3";
-	rename -uid "42E4CC02-2A40-8599-9EEF-65ACD7E1D969";
-	setAttr ".ihi" 0;
-	setAttr -s 20 ".dsm";
-	setAttr -s 20 ".gn";
-createNode groupId -n "groupId20";
-	rename -uid "3881A1D5-8547-2397-73FF-AB90A3FD73F8";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId21";
-	rename -uid "469FEF1A-C44D-81A7-A51D-3ABC7E451D52";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId22";
 	rename -uid "916D0A2D-F54D-A993-6780-759BAFD31192";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId23";
-	rename -uid "2D7E1F71-3443-F2C6-F77D-8A9766F1E4AF";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId24";
-	rename -uid "13033316-F245-50A7-720D-E2AA1A00CFF1";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId25";
-	rename -uid "CC4121B8-F84F-2F7E-9222-089AF152AB39";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId26";
 	rename -uid "81FE7B2E-DB41-1051-44F6-D7830C5DE21D";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId27";
-	rename -uid "02E1B074-0E41-BA12-4EF8-CBB256D28662";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId28";
-	rename -uid "228B6953-1B43-C390-E07D-D7A78C40FAA9";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId29";
-	rename -uid "FAD21F94-0741-4B68-FAE2-FAAA059D7A1A";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId30";
 	rename -uid "EA91821C-0E4A-18D3-776D-1A814534C379";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId32";
-	rename -uid "0EB6F3D8-0F46-30ED-9335-5084224B370C";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId33";
-	rename -uid "D7DA5CC3-DC43-F3B0-47C9-DABA9A17E2AC";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId34";
 	rename -uid "778FA6F5-7745-A140-F530-AF9A438E1083";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId35";
-	rename -uid "4B7E550D-9545-B2C2-DB7B-50A28D10EE2E";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId36";
-	rename -uid "A0302627-9C4E-D389-F2F2-76A3B88A2ED3";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId37";
-	rename -uid "9CB9AC57-2B48-CED6-60E3-4E9F0615EF7C";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId38";
 	rename -uid "D0B4948C-C045-2AD5-B354-369E45ABB67F";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId39";
-	rename -uid "545E44A5-CE4A-5CCB-112A-518BD54BB7A4";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId40";
-	rename -uid "89215FA6-024A-F7FA-EA15-0EBFB6DC4BF8";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId41";
-	rename -uid "12CC1062-1342-D635-18C9-6184C1B27EA2";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId42";
 	rename -uid "9A27DC11-E244-59F3-A254-6ABC15CFDC46";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId43";
-	rename -uid "BE700F2D-8E41-E33D-7F4F-4EA23E580EFC";
-	setAttr ".ihi" 0;
-createNode objectSet -n "set4";
-	rename -uid "84E99ABC-9E4E-42F0-95E9-03A4089F93FE";
-	setAttr ".ihi" 0;
-	setAttr -s 4 ".dsm";
-	setAttr -s 4 ".gn";
-createNode objectSet -n "set5";
-	rename -uid "F8023A68-B74C-FEB8-1E65-5A8EA3B6F6EF";
-	setAttr ".ihi" 0;
-	setAttr -s 4 ".dsm";
-	setAttr -s 4 ".gn";
-createNode groupId -n "groupId44";
-	rename -uid "F8874795-ED4D-BA0A-0E4B-CFA7AD2F8D87";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId45";
-	rename -uid "ADEA6A34-DE4A-7515-9902-149ED8E42F6E";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId46";
-	rename -uid "B4802756-6245-6B24-6E01-1599C004AFAC";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId47";
-	rename -uid "70067A50-0249-7B31-A149-BBA734B8D662";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId48";
 	rename -uid "251BE6E7-7349-AB67-9352-1199EA23300E";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId49";
-	rename -uid "3FF3BA36-3848-9D25-BA09-2D8AE4426F1C";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId50";
-	rename -uid "CED65893-3845-E4FD-E07C-C6A7A5312B25";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId51";
 	rename -uid "C50CB732-5441-5FA7-BEDF-FA9AE8CFD61C";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId52";
-	rename -uid "300C7040-A841-3E25-62ED-4E9BE5982EDD";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId53";
-	rename -uid "0A93C116-9541-563A-832E-EFB1E22CFED9";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId54";
-	rename -uid "F3A0FA11-E542-8064-C092-ECB9828A229B";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId55";
 	rename -uid "68CA4C4F-5F43-CE53-1A1B-35BAF34093AA";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId56";
-	rename -uid "936E43E0-1041-DBA9-383C-97A4A512A9D5";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId57";
-	rename -uid "AA9C2C51-C04E-22A8-F516-E88C7F81FDBF";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId58";
-	rename -uid "6182A9ED-ED47-7A92-2E37-DBB3672085B6";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId59";
 	rename -uid "2679E338-ED44-62CD-CC58-66ABBA3E2591";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId60";
-	rename -uid "06345F87-4D40-B607-E3B6-D2B2FE592EC2";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId61";
-	rename -uid "EF12C2DA-3948-6C18-BD4C-B6AA034FD092";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId62";
-	rename -uid "F35D4C49-2D40-EC9C-C4B1-C8BB82B29E11";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId63";
 	rename -uid "D685FCAA-9F45-E340-F72C-279B8DF644E7";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId64";
-	rename -uid "84E22529-5545-7752-9759-96A697AC19F9";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId65";
-	rename -uid "A4368744-5443-B02B-6DE9-23A98D5F079E";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId66";
-	rename -uid "FEA6B828-1F48-834B-5CF6-76A23D11F532";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId67";
 	rename -uid "38674DD6-7540-1C2A-4792-8CB50ABF17D6";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId68";
-	rename -uid "CAEEE3DC-C948-DC9B-5EFD-45B38243D524";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId69";
-	rename -uid "F1510EF6-9145-F9BF-F855-7F854A8E6D40";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId70";
-	rename -uid "00F217C9-A14C-FF61-0E45-758AFFA2C73D";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId71";
-	rename -uid "1262EFEC-2343-D119-D1C5-FABAC7A46C51";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId72";
-	rename -uid "232282F9-484C-60BA-4384-0F9C146B0CDE";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId73";
 	rename -uid "760DB72E-F34B-4E84-7EDC-63A1552F65C1";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId74";
-	rename -uid "3CBCC590-7A48-DBE8-5505-B2AFB39E01F1";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId75";
-	rename -uid "E2CCB7AC-1648-D38E-C357-B1865B58A93B";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId76";
 	rename -uid "75A7B9F0-2A4E-CED8-D0DB-16817DC65482";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId77";
-	rename -uid "7776350B-7E4D-63DB-F4B3-598B6B1428A3";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId78";
-	rename -uid "1C74BED1-3A4C-E87D-13E9-2FB8813EBF82";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId79";
-	rename -uid "042F7D48-E84D-FBB6-4F2E-A4A7661841FC";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId80";
 	rename -uid "2E5E2578-7948-E83F-3C2F-CA81928A914A";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId81";
-	rename -uid "9B5DE09A-8349-61EF-3886-6EA17EED7095";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId82";
-	rename -uid "E6B8157B-504A-7175-F21F-24A8B5BE83A9";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId83";
-	rename -uid "5B58657D-6C49-986C-4DD9-ACAF47046061";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId84";
 	rename -uid "75AC0C79-474C-5BA2-44B8-54BFECE6AC36";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId85";
-	rename -uid "2F708BB7-FF49-4D6A-0BF4-95878091F3D5";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId86";
-	rename -uid "17FEA5F6-7444-9914-022E-CC82048954D3";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId87";
-	rename -uid "22260F70-FC4B-D835-2AA6-0384D1CC0A56";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId88";
 	rename -uid "51FB9F74-7F44-6B77-8B6A-229A33D7BCA0";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId89";
-	rename -uid "739C8BF1-7648-E469-1EA1-689B37106385";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId90";
-	rename -uid "B7BEE190-5647-5BBB-36CA-D58DC5268F74";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId91";
-	rename -uid "79ADCF19-C64E-A96E-354B-EA88ED372315";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId92";
 	rename -uid "24CBB4ED-D942-285E-B839-F4A69E9627CC";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId93";
-	rename -uid "ABDEF5A8-D24B-9229-6627-95B254EA530E";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId94";
-	rename -uid "2A3A2488-724A-53B6-5BBA-38B0805CD226";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId95";
-	rename -uid "0C619239-CE47-BF14-1C1F-F0B3E5641477";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId96";
-	rename -uid "0BE5C131-6A4F-1EDC-3420-21882A0240DD";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId97";
-	rename -uid "E2E722D9-3A4C-FE49-B65C-049691202937";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId98";
 	rename -uid "21463920-4941-A561-28E0-9BAAE3B450BD";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId99";
-	rename -uid "01C9C625-1C40-4C0F-ED07-4AAB53FEAAC1";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId100";
-	rename -uid "48F59C0A-9F45-E096-5AA0-F38595D98C9C";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId101";
 	rename -uid "A7C130EB-6546-345A-8774-E984117C8DDD";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId102";
-	rename -uid "0B786834-FD46-444B-3F34-6B8DFC222F27";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId103";
-	rename -uid "ED2D102F-F741-6358-5733-6CA9BF8E68BE";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId104";
-	rename -uid "2E5D118B-3C41-1A7F-3E75-52B014A73489";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId105";
 	rename -uid "0E616143-C845-3AFF-A49F-BFA72D522B3D";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId106";
-	rename -uid "FA077206-8445-6CEE-8240-628B63881379";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId107";
-	rename -uid "0EA389DD-4644-09F9-B36C-7A824659CE85";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId108";
-	rename -uid "ECEFF53C-FE42-2DF8-36F8-4FB13B33C8B8";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId109";
 	rename -uid "2F630FE3-9140-F33E-258D-61B221A8D23E";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId110";
-	rename -uid "AD82FE9D-6F45-96DD-074F-DE8976B11D3D";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId111";
-	rename -uid "80D45AA9-3B4C-2D02-ABF3-B5B19849980D";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId112";
-	rename -uid "6B81EE55-5940-E487-3503-6EB6A7247721";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId113";
 	rename -uid "8D11E699-5E40-74C8-BF67-598808118432";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId114";
-	rename -uid "4BFDE637-FF49-7E23-75B0-A0B7035A3836";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId115";
-	rename -uid "54E19375-714C-207F-A087-2D8A2B353D64";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId116";
-	rename -uid "AE908084-B54C-DCA9-D4C8-97A053F98063";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId117";
 	rename -uid "D25BFCF7-2741-2FD5-19F7-0B96EA447109";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId118";
-	rename -uid "DA35F3C3-E248-2FF2-27E1-79BE5D5AC5D2";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId119";
-	rename -uid "569955C9-8D49-257E-877E-70AB1E41F6C5";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId120";
-	rename -uid "75ED50E6-024D-FF1D-932F-0AB07F0047FC";
-	setAttr ".ihi" 0;
+createNode rmanGlobals -s -n "rmanGlobals";
+	rename -uid "3FEA9639-094E-EBB9-C30C-7D800089B55E";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".hider_minSamples" 0;
+	setAttr ".hider_maxSamples" 128;
+	setAttr ".ri_pixelVariance" 0.014999999664723873;
+	setAttr ".hider_incremental" yes;
+	setAttr ".ipr_hider_maxSamples" 64;
+	setAttr ".ipr_ri_pixelVariance" 0.05000000074505806;
+	setAttr ".ipr_ri_decidither" 0;
+	setAttr ".ri_maxSpecularDepth" 4;
+	setAttr ".ri_maxDiffuseDepth" 1;
+	setAttr ".ri_displayFilter" -type "string" "gaussian";
+	setAttr ".ri_displayFilterSize" -type "float2" 2 2 ;
+	setAttr ".motionBlur" 0;
+	setAttr ".cameraBlur" no;
+	setAttr ".shutterAngle" 180;
+	setAttr ".shutterOpenEnd" 0;
+	setAttr ".shutterCloseStart" 1;
+	setAttr ".shutterTiming" 0;
+	setAttr ".motionSamples" 2;
+	setAttr ".displayFilters[0]" -type "string" "";
+	setAttr ".sampleFilters[0]" -type "string" "";
+	setAttr ".outputAllShaders" no;
+	setAttr ".reentrantProcedurals" yes;
+	setAttr ".outputShadowAOV" 0;
+	setAttr ".enableImagePlaneFilter" yes;
+	setAttr ".learnLightSelection" yes;
+	setAttr ".opt_bucket_order" -type "string" "circle";
+	setAttr ".limits_bucketsize" -type "long2" 16 16 ;
+	setAttr ".limits_othreshold" -type "float3" 0.99599999 0.99599999 0.99599999 ;
+	setAttr ".rfm_referenceFrame" 0;
+	setAttr ".adaptiveMetric" -type "string" "variance";
+	setAttr ".hider_darkfalloff" 0.02500000037252903;
+	setAttr ".hider_exposurebracket" -type "float2" -1 1 ;
+	setAttr ".ri_hider_adaptAll" no;
+	setAttr ".dice_micropolygonlength" 1;
+	setAttr ".dice_watertight" no;
+	setAttr ".dice_referenceCameraType" 0;
+	setAttr ".dice_referenceCamera" -type "string" "";
+	setAttr ".hair_minWidth" 0.5;
+	setAttr ".trace_autobias" yes;
+	setAttr ".trace_bias" 0.0010000000474974513;
+	setAttr ".trace_worldorigin" -type "string" "camera";
+	setAttr ".trace_worldoffset" -type "float3" 0 0 0 ;
+	setAttr ".opt_oslSIMDEnable" yes;
+	setAttr ".opt_oslVerbosity" 0;
+	setAttr ".opt_oslStatistics" 0;
+	setAttr ".deep_quality" 0.75;
+	setAttr ".opt_cropWindowEnable" no;
+	setAttr ".opt_cropWindowTopLeft" -type "float2" 0 0 ;
+	setAttr ".opt_cropWindowBottomRight" -type "float2" 1 1 ;
+	setAttr ".user_sceneUnits" 1;
+	setAttr ".user_iesIgnoreWatts" yes;
+	setAttr ".limits_texturememory" 4096;
+	setAttr ".limits_geocachememory" 4096;
+	setAttr ".limits_opacitycachememory" 2048;
+	setAttr ".statistics_level" 1;
+	setAttr ".statistics_xmlfilename" -type "string" "";
+	setAttr ".lpe_reload_definitions" -type "string" "";
+	setAttr ".lpe_diffuse2" -type "string" "Diffuse,HairDiffuse";
+	setAttr ".lpe_diffuse3" -type "string" "Subsurface";
+	setAttr ".lpe_specular2" -type "string" "Specular,HairSpecularR";
+	setAttr ".lpe_specular3" -type "string" "RoughSpecular,HairSpecularTRT";
+	setAttr ".lpe_specular4" -type "string" "Clearcoat";
+	setAttr ".lpe_specular5" -type "string" "Iridescence";
+	setAttr ".lpe_specular6" -type "string" "Fuzz,HairSpecularGLINTS";
+	setAttr ".lpe_specular7" -type "string" "SingleScatter,HairSpecularTT";
+	setAttr ".lpe_specular8" -type "string" "Glass";
+	setAttr ".lpe_user2" -type "string" "Albedo,DiffuseAlbedo,SubsurfaceAlbedo,HairAlbedo";
+	setAttr ".lpe_user3" -type "string" "Position";
+	setAttr ".lpe_user4" -type "string" "UserColor";
+	setAttr ".lpe_user5" -type "string" "";
+	setAttr ".lpe_user6" -type "string" "Normal,DiffuseNormal,HairTangent,SubsurfaceNormal,SpecularNormal,RoughSpecularNormal,SingleScatterNormal,FuzzNormal,IridescenceNormal,GlassNormal";
+	setAttr ".lpe_user7" -type "string" "";
+	setAttr ".lpe_user8" -type "string" "";
+	setAttr ".lpe_user9" -type "string" "";
+	setAttr ".lpe_user10" -type "string" "";
+	setAttr ".lpe_user11" -type "string" "";
+	setAttr ".lpe_user12" -type "string" "";
+	setAttr ".imageFileFormat" -type "string" "<scene>_<layer>_<camera>_<aov>.<f4>.<ext>";
+	setAttr ".ribFileFormat" -type "string" "<camera><layer>.<f4>.rib";
+	setAttr ".version" 1;
+	setAttr ".take" 1;
+	setAttr ".imageOutputDir" -type "string" "<ws>/images/<scene>_v<version>_t<take>";
+	setAttr ".ribOutputDir" -type "string" "<ws>/renderman/rib/<scene>/v<version>_t<take>";
+	setAttr -s 10 ".UserTokens";
+	setAttr ".UserTokens[0].userTokenKeys" -type "string" "";
+	setAttr ".UserTokens[0].userTokenValues" -type "string" "";
+	setAttr ".UserTokens[1].userTokenKeys" -type "string" "";
+	setAttr ".UserTokens[1].userTokenValues" -type "string" "";
+	setAttr ".UserTokens[2].userTokenKeys" -type "string" "";
+	setAttr ".UserTokens[2].userTokenValues" -type "string" "";
+	setAttr ".UserTokens[3].userTokenKeys" -type "string" "";
+	setAttr ".UserTokens[3].userTokenValues" -type "string" "";
+	setAttr ".UserTokens[4].userTokenKeys" -type "string" "";
+	setAttr ".UserTokens[4].userTokenValues" -type "string" "";
+	setAttr ".UserTokens[5].userTokenKeys" -type "string" "";
+	setAttr ".UserTokens[5].userTokenValues" -type "string" "";
+	setAttr ".UserTokens[6].userTokenKeys" -type "string" "";
+	setAttr ".UserTokens[6].userTokenValues" -type "string" "";
+	setAttr ".UserTokens[7].userTokenKeys" -type "string" "";
+	setAttr ".UserTokens[7].userTokenValues" -type "string" "";
+	setAttr ".UserTokens[8].userTokenKeys" -type "string" "";
+	setAttr ".UserTokens[8].userTokenValues" -type "string" "";
+	setAttr ".UserTokens[9].userTokenKeys" -type "string" "";
+	setAttr ".UserTokens[9].userTokenValues" -type "string" "";
+	setAttr ".rlfData" -type "string" "init";
+	setAttr ".jobid" -type "string" "";
+createNode PxrPathTracer -s -n "PxrPathTracer";
+	rename -uid "9F076AB2-744A-2138-4D09-6AB67368F9B4";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".maxIndirectBounces" 8;
+	setAttr ".maxContinuationLength" -1;
+	setAttr ".maxNonStochasticOpacityEvents" 0;
+	setAttr ".sampleMode" -type "string" "bxdf";
+	setAttr ".numLightSamples" 1;
+	setAttr ".numBxdfSamples" 1;
+	setAttr ".numIndirectSamples" 1;
+	setAttr ".numDiffuseSamples" 1;
+	setAttr ".numSpecularSamples" 1;
+	setAttr ".numSubsurfaceSamples" 1;
+	setAttr ".numRefractionSamples" 1;
+	setAttr ".allowCaustics" no;
+	setAttr ".accumOpacity" no;
+	setAttr ".rouletteDepth" 4;
+	setAttr ".rouletteThreshold" 0.20000000298023224;
+	setAttr ".clampDepth" 2;
+	setAttr ".clampLuminance" 10;
+createNode rmanDisplay -s -n "rmanDefaultDisplay";
+	rename -uid "9A3EBB1C-AF40-B696-AA90-2DB8F5251432";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".enable" yes;
+	setAttr ".denoise" no;
+	setAttr ".frameMode" 0;
+	setAttr ".remapBreakPoint" 0;
+	setAttr ".remapMaxValue" 0;
+	setAttr ".remapSmoothness" 0;
+	setAttr -s 2 ".displayChannels";
+	setAttr ".name" -type "string" "";
+createNode d_openexr -n "d_openexr";
+	rename -uid "95F783E8-1F4A-B37A-CEA9-CE96A700AD05";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".asrgba" yes;
+	setAttr ".storage" -type "string" "scanline";
+	setAttr ".exrpixeltype" -type "string" "half";
+	setAttr ".compression" -type "string" "zips";
+	setAttr ".compressionlevel" 45;
+createNode rmanDisplayChannel -n "Ci";
+	rename -uid "7B8BE0F9-D440-B507-30F5-02AAE095D074";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".enable" yes;
+	setAttr ".channelType" -type "string" "color";
+	setAttr ".channelSource" -type "string" "Ci";
+	setAttr ".lpeLightGroup" -type "string" "";
+	setAttr ".filter" -type "string" "inherit from display";
+	setAttr ".filterwidth" -type "float2" -1 -1 ;
+	setAttr ".statistics" -type "string" "";
+	setAttr ".relativepixelvariance" 1;
+	setAttr ".remapBreakPoint" 0;
+	setAttr ".remapMaxValue" 0;
+	setAttr ".remapSmoothness" 0;
+	setAttr ".name" -type "string" "";
+createNode rmanDisplayChannel -n "a";
+	rename -uid "5B4EB533-9844-9EE9-F4D3-AEA9C0BEB2AD";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".enable" yes;
+	setAttr ".channelType" -type "string" "float";
+	setAttr ".channelSource" -type "string" "a";
+	setAttr ".lpeLightGroup" -type "string" "";
+	setAttr ".filter" -type "string" "inherit from display";
+	setAttr ".filterwidth" -type "float2" -1 -1 ;
+	setAttr ".statistics" -type "string" "";
+	setAttr ".relativepixelvariance" -1;
+	setAttr ".remapBreakPoint" 0;
+	setAttr ".remapMaxValue" 0;
+	setAttr ".remapSmoothness" 0;
+	setAttr ".name" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -64312,6 +64185,7 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
+	setAttr -s 5 ".r";
 select -ne :initialShadingGroup;
 	setAttr -s 46 ".dsm";
 	setAttr ".ro" yes;
@@ -64325,407 +64199,101 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
-connectAttr "groupId96.id" "|stove|stoveTops|stoveTop3|pCylinder13|pCylinder13Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop3|pCylinder13|pCylinder13Shape.iog.og[0].gco"
-		;
-connectAttr "groupId97.id" "|stove|stoveTops|stoveTop3|pCylinder13|pCylinder13Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop3|pCylinder13|pCylinder13Shape.iog.og[1].gco"
-		;
 connectAttr "groupId98.id" "|stove|stoveTops|stoveTop3|pCylinder13|pCylinder13Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop3|pCylinder13|pCylinder13Shape.iog.og[2].gco"
-		;
-connectAttr "groupId99.id" "|stove|stoveTops|stoveTop3|pCylinder14|pCylinder14Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop3|pCylinder14|pCylinder14Shape.iog.og[0].gco"
-		;
-connectAttr "groupId100.id" "|stove|stoveTops|stoveTop3|pCylinder14|pCylinder14Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop3|pCylinder14|pCylinder14Shape.iog.og[1].gco"
 		;
 connectAttr "groupId101.id" "|stove|stoveTops|stoveTop3|pCylinder14|pCylinder14Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop3|pCylinder14|pCylinder14Shape.iog.og[2].gco"
 		;
-connectAttr "groupId102.id" "|stove|stoveTops|stoveTop3|pCylinder14|pCylinder14Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop3|pCylinder14|pCylinder14Shape.iog.og[3].gco"
-		;
-connectAttr "groupId103.id" "|stove|stoveTops|stoveTop3|pCylinder15|pCylinder15Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop3|pCylinder15|pCylinder15Shape.iog.og[0].gco"
-		;
-connectAttr "groupId104.id" "|stove|stoveTops|stoveTop3|pCylinder15|pCylinder15Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop3|pCylinder15|pCylinder15Shape.iog.og[1].gco"
-		;
 connectAttr "groupId105.id" "|stove|stoveTops|stoveTop3|pCylinder15|pCylinder15Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop3|pCylinder15|pCylinder15Shape.iog.og[2].gco"
-		;
-connectAttr "groupId106.id" "|stove|stoveTops|stoveTop3|pCylinder15|pCylinder15Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop3|pCylinder15|pCylinder15Shape.iog.og[3].gco"
-		;
-connectAttr "groupId107.id" "|stove|stoveTops|stoveTop3|pCylinder18|pCylinder18Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop3|pCylinder18|pCylinder18Shape.iog.og[0].gco"
-		;
-connectAttr "groupId108.id" "|stove|stoveTops|stoveTop3|pCylinder18|pCylinder18Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop3|pCylinder18|pCylinder18Shape.iog.og[1].gco"
 		;
 connectAttr "groupId109.id" "|stove|stoveTops|stoveTop3|pCylinder18|pCylinder18Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop3|pCylinder18|pCylinder18Shape.iog.og[2].gco"
 		;
-connectAttr "groupId110.id" "|stove|stoveTops|stoveTop3|pCylinder18|pCylinder18Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop3|pCylinder18|pCylinder18Shape.iog.og[3].gco"
-		;
-connectAttr "groupId111.id" "|stove|stoveTops|stoveTop3|pCylinder19|pCylinder19Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop3|pCylinder19|pCylinder19Shape.iog.og[0].gco"
-		;
-connectAttr "groupId112.id" "|stove|stoveTops|stoveTop3|pCylinder19|pCylinder19Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop3|pCylinder19|pCylinder19Shape.iog.og[1].gco"
-		;
 connectAttr "groupId113.id" "|stove|stoveTops|stoveTop3|pCylinder19|pCylinder19Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop3|pCylinder19|pCylinder19Shape.iog.og[2].gco"
-		;
-connectAttr "groupId114.id" "|stove|stoveTops|stoveTop3|pCylinder19|pCylinder19Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop3|pCylinder19|pCylinder19Shape.iog.og[3].gco"
-		;
-connectAttr "groupId115.id" "|stove|stoveTops|stoveTop3|pCylinder20|pCylinder20Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop3|pCylinder20|pCylinder20Shape.iog.og[0].gco"
-		;
-connectAttr "groupId116.id" "|stove|stoveTops|stoveTop3|pCylinder20|pCylinder20Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop3|pCylinder20|pCylinder20Shape.iog.og[1].gco"
 		;
 connectAttr "groupId117.id" "|stove|stoveTops|stoveTop3|pCylinder20|pCylinder20Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop3|pCylinder20|pCylinder20Shape.iog.og[2].gco"
 		;
-connectAttr "groupId118.id" "|stove|stoveTops|stoveTop3|pCylinder20|pCylinder20Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop3|pCylinder20|pCylinder20Shape.iog.og[3].gco"
-		;
-connectAttr "groupId119.id" "|stove|stoveTops|stoveTop3|pCube10|pCube10Shape.iog.og[1].gid"
-		;
-connectAttr "set4.mwc" "|stove|stoveTops|stoveTop3|pCube10|pCube10Shape.iog.og[1].gco"
-		;
-connectAttr "groupId120.id" "|stove|stoveTops|stoveTop3|pCube10|pCube10Shape.iog.og[2].gid"
-		;
-connectAttr "set5.mwc" "|stove|stoveTops|stoveTop3|pCube10|pCube10Shape.iog.og[2].gco"
-		;
-connectAttr "groupId71.id" "|stove|stoveTops|stoveTop2|pCylinder13|pCylinder13Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop2|pCylinder13|pCylinder13Shape.iog.og[0].gco"
-		;
-connectAttr "groupId72.id" "|stove|stoveTops|stoveTop2|pCylinder13|pCylinder13Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop2|pCylinder13|pCylinder13Shape.iog.og[1].gco"
-		;
 connectAttr "groupId73.id" "|stove|stoveTops|stoveTop2|pCylinder13|pCylinder13Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop2|pCylinder13|pCylinder13Shape.iog.og[2].gco"
-		;
-connectAttr "groupId74.id" "|stove|stoveTops|stoveTop2|pCylinder14|pCylinder14Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop2|pCylinder14|pCylinder14Shape.iog.og[0].gco"
-		;
-connectAttr "groupId75.id" "|stove|stoveTops|stoveTop2|pCylinder14|pCylinder14Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop2|pCylinder14|pCylinder14Shape.iog.og[1].gco"
 		;
 connectAttr "groupId76.id" "|stove|stoveTops|stoveTop2|pCylinder14|pCylinder14Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop2|pCylinder14|pCylinder14Shape.iog.og[2].gco"
 		;
-connectAttr "groupId77.id" "|stove|stoveTops|stoveTop2|pCylinder14|pCylinder14Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop2|pCylinder14|pCylinder14Shape.iog.og[3].gco"
-		;
-connectAttr "groupId78.id" "|stove|stoveTops|stoveTop2|pCylinder15|pCylinder15Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop2|pCylinder15|pCylinder15Shape.iog.og[0].gco"
-		;
-connectAttr "groupId79.id" "|stove|stoveTops|stoveTop2|pCylinder15|pCylinder15Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop2|pCylinder15|pCylinder15Shape.iog.og[1].gco"
-		;
 connectAttr "groupId80.id" "|stove|stoveTops|stoveTop2|pCylinder15|pCylinder15Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop2|pCylinder15|pCylinder15Shape.iog.og[2].gco"
-		;
-connectAttr "groupId81.id" "|stove|stoveTops|stoveTop2|pCylinder15|pCylinder15Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop2|pCylinder15|pCylinder15Shape.iog.og[3].gco"
-		;
-connectAttr "groupId82.id" "|stove|stoveTops|stoveTop2|pCylinder18|pCylinder18Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop2|pCylinder18|pCylinder18Shape.iog.og[0].gco"
-		;
-connectAttr "groupId83.id" "|stove|stoveTops|stoveTop2|pCylinder18|pCylinder18Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop2|pCylinder18|pCylinder18Shape.iog.og[1].gco"
 		;
 connectAttr "groupId84.id" "|stove|stoveTops|stoveTop2|pCylinder18|pCylinder18Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop2|pCylinder18|pCylinder18Shape.iog.og[2].gco"
 		;
-connectAttr "groupId85.id" "|stove|stoveTops|stoveTop2|pCylinder18|pCylinder18Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop2|pCylinder18|pCylinder18Shape.iog.og[3].gco"
-		;
-connectAttr "groupId86.id" "|stove|stoveTops|stoveTop2|pCylinder19|pCylinder19Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop2|pCylinder19|pCylinder19Shape.iog.og[0].gco"
-		;
-connectAttr "groupId87.id" "|stove|stoveTops|stoveTop2|pCylinder19|pCylinder19Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop2|pCylinder19|pCylinder19Shape.iog.og[1].gco"
-		;
 connectAttr "groupId88.id" "|stove|stoveTops|stoveTop2|pCylinder19|pCylinder19Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop2|pCylinder19|pCylinder19Shape.iog.og[2].gco"
-		;
-connectAttr "groupId89.id" "|stove|stoveTops|stoveTop2|pCylinder19|pCylinder19Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop2|pCylinder19|pCylinder19Shape.iog.og[3].gco"
-		;
-connectAttr "groupId90.id" "|stove|stoveTops|stoveTop2|pCylinder20|pCylinder20Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop2|pCylinder20|pCylinder20Shape.iog.og[0].gco"
-		;
-connectAttr "groupId91.id" "|stove|stoveTops|stoveTop2|pCylinder20|pCylinder20Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop2|pCylinder20|pCylinder20Shape.iog.og[1].gco"
 		;
 connectAttr "groupId92.id" "|stove|stoveTops|stoveTop2|pCylinder20|pCylinder20Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop2|pCylinder20|pCylinder20Shape.iog.og[2].gco"
 		;
-connectAttr "groupId93.id" "|stove|stoveTops|stoveTop2|pCylinder20|pCylinder20Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop2|pCylinder20|pCylinder20Shape.iog.og[3].gco"
-		;
-connectAttr "groupId94.id" "|stove|stoveTops|stoveTop2|pCube10|pCube10Shape.iog.og[1].gid"
-		;
-connectAttr "set4.mwc" "|stove|stoveTops|stoveTop2|pCube10|pCube10Shape.iog.og[1].gco"
-		;
-connectAttr "groupId95.id" "|stove|stoveTops|stoveTop2|pCube10|pCube10Shape.iog.og[2].gid"
-		;
-connectAttr "set5.mwc" "|stove|stoveTops|stoveTop2|pCube10|pCube10Shape.iog.og[2].gco"
-		;
-connectAttr "groupId46.id" "|stove|stoveTops|stoveTop1|pCylinder13|pCylinder13Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop1|pCylinder13|pCylinder13Shape.iog.og[0].gco"
-		;
-connectAttr "groupId47.id" "|stove|stoveTops|stoveTop1|pCylinder13|pCylinder13Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop1|pCylinder13|pCylinder13Shape.iog.og[1].gco"
-		;
 connectAttr "groupId48.id" "|stove|stoveTops|stoveTop1|pCylinder13|pCylinder13Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop1|pCylinder13|pCylinder13Shape.iog.og[2].gco"
-		;
-connectAttr "groupId49.id" "|stove|stoveTops|stoveTop1|pCylinder14|pCylinder14Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop1|pCylinder14|pCylinder14Shape.iog.og[0].gco"
-		;
-connectAttr "groupId50.id" "|stove|stoveTops|stoveTop1|pCylinder14|pCylinder14Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop1|pCylinder14|pCylinder14Shape.iog.og[1].gco"
 		;
 connectAttr "groupId51.id" "|stove|stoveTops|stoveTop1|pCylinder14|pCylinder14Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop1|pCylinder14|pCylinder14Shape.iog.og[2].gco"
 		;
-connectAttr "groupId52.id" "|stove|stoveTops|stoveTop1|pCylinder14|pCylinder14Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop1|pCylinder14|pCylinder14Shape.iog.og[3].gco"
-		;
-connectAttr "groupId53.id" "|stove|stoveTops|stoveTop1|pCylinder15|pCylinder15Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop1|pCylinder15|pCylinder15Shape.iog.og[0].gco"
-		;
-connectAttr "groupId54.id" "|stove|stoveTops|stoveTop1|pCylinder15|pCylinder15Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop1|pCylinder15|pCylinder15Shape.iog.og[1].gco"
-		;
 connectAttr "groupId55.id" "|stove|stoveTops|stoveTop1|pCylinder15|pCylinder15Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop1|pCylinder15|pCylinder15Shape.iog.og[2].gco"
-		;
-connectAttr "groupId56.id" "|stove|stoveTops|stoveTop1|pCylinder15|pCylinder15Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop1|pCylinder15|pCylinder15Shape.iog.og[3].gco"
-		;
-connectAttr "groupId57.id" "|stove|stoveTops|stoveTop1|pCylinder18|pCylinder18Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop1|pCylinder18|pCylinder18Shape.iog.og[0].gco"
-		;
-connectAttr "groupId58.id" "|stove|stoveTops|stoveTop1|pCylinder18|pCylinder18Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop1|pCylinder18|pCylinder18Shape.iog.og[1].gco"
 		;
 connectAttr "groupId59.id" "|stove|stoveTops|stoveTop1|pCylinder18|pCylinder18Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop1|pCylinder18|pCylinder18Shape.iog.og[2].gco"
 		;
-connectAttr "groupId60.id" "|stove|stoveTops|stoveTop1|pCylinder18|pCylinder18Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop1|pCylinder18|pCylinder18Shape.iog.og[3].gco"
-		;
-connectAttr "groupId61.id" "|stove|stoveTops|stoveTop1|pCylinder19|pCylinder19Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop1|pCylinder19|pCylinder19Shape.iog.og[0].gco"
-		;
-connectAttr "groupId62.id" "|stove|stoveTops|stoveTop1|pCylinder19|pCylinder19Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop1|pCylinder19|pCylinder19Shape.iog.og[1].gco"
-		;
 connectAttr "groupId63.id" "|stove|stoveTops|stoveTop1|pCylinder19|pCylinder19Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop1|pCylinder19|pCylinder19Shape.iog.og[2].gco"
-		;
-connectAttr "groupId64.id" "|stove|stoveTops|stoveTop1|pCylinder19|pCylinder19Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop1|pCylinder19|pCylinder19Shape.iog.og[3].gco"
-		;
-connectAttr "groupId65.id" "|stove|stoveTops|stoveTop1|pCylinder20|pCylinder20Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop1|pCylinder20|pCylinder20Shape.iog.og[0].gco"
-		;
-connectAttr "groupId66.id" "|stove|stoveTops|stoveTop1|pCylinder20|pCylinder20Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop1|pCylinder20|pCylinder20Shape.iog.og[1].gco"
 		;
 connectAttr "groupId67.id" "|stove|stoveTops|stoveTop1|pCylinder20|pCylinder20Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop1|pCylinder20|pCylinder20Shape.iog.og[2].gco"
 		;
-connectAttr "groupId68.id" "|stove|stoveTops|stoveTop1|pCylinder20|pCylinder20Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop1|pCylinder20|pCylinder20Shape.iog.og[3].gco"
-		;
-connectAttr "groupId69.id" "|stove|stoveTops|stoveTop1|pCube10|pCube10Shape.iog.og[1].gid"
-		;
-connectAttr "set4.mwc" "|stove|stoveTops|stoveTop1|pCube10|pCube10Shape.iog.og[1].gco"
-		;
-connectAttr "groupId70.id" "|stove|stoveTops|stoveTop1|pCube10|pCube10Shape.iog.og[2].gid"
-		;
-connectAttr "set5.mwc" "|stove|stoveTops|stoveTop1|pCube10|pCube10Shape.iog.og[2].gco"
-		;
-connectAttr "groupId28.id" "|stove|stoveTops|stoveTop|pCylinder13|pCylinder13Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop|pCylinder13|pCylinder13Shape.iog.og[0].gco"
-		;
-connectAttr "groupId29.id" "|stove|stoveTops|stoveTop|pCylinder13|pCylinder13Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop|pCylinder13|pCylinder13Shape.iog.og[1].gco"
-		;
 connectAttr "groupId30.id" "|stove|stoveTops|stoveTop|pCylinder13|pCylinder13Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop|pCylinder13|pCylinder13Shape.iog.og[2].gco"
-		;
-connectAttr "groupId20.id" "|stove|stoveTops|stoveTop|pCylinder14|pCylinder14Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop|pCylinder14|pCylinder14Shape.iog.og[0].gco"
-		;
-connectAttr "groupId21.id" "|stove|stoveTops|stoveTop|pCylinder14|pCylinder14Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop|pCylinder14|pCylinder14Shape.iog.og[1].gco"
 		;
 connectAttr "groupId22.id" "|stove|stoveTops|stoveTop|pCylinder14|pCylinder14Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop|pCylinder14|pCylinder14Shape.iog.og[2].gco"
 		;
-connectAttr "groupId23.id" "|stove|stoveTops|stoveTop|pCylinder14|pCylinder14Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop|pCylinder14|pCylinder14Shape.iog.og[3].gco"
-		;
-connectAttr "groupId24.id" "|stove|stoveTops|stoveTop|pCylinder15|pCylinder15Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop|pCylinder15|pCylinder15Shape.iog.og[0].gco"
-		;
-connectAttr "groupId25.id" "|stove|stoveTops|stoveTop|pCylinder15|pCylinder15Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop|pCylinder15|pCylinder15Shape.iog.og[1].gco"
-		;
 connectAttr "groupId26.id" "|stove|stoveTops|stoveTop|pCylinder15|pCylinder15Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop|pCylinder15|pCylinder15Shape.iog.og[2].gco"
-		;
-connectAttr "groupId27.id" "|stove|stoveTops|stoveTop|pCylinder15|pCylinder15Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop|pCylinder15|pCylinder15Shape.iog.og[3].gco"
-		;
-connectAttr "groupId32.id" "|stove|stoveTops|stoveTop|pCylinder18|pCylinder18Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop|pCylinder18|pCylinder18Shape.iog.og[0].gco"
-		;
-connectAttr "groupId33.id" "|stove|stoveTops|stoveTop|pCylinder18|pCylinder18Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop|pCylinder18|pCylinder18Shape.iog.og[1].gco"
 		;
 connectAttr "groupId34.id" "|stove|stoveTops|stoveTop|pCylinder18|pCylinder18Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop|pCylinder18|pCylinder18Shape.iog.og[2].gco"
 		;
-connectAttr "groupId35.id" "|stove|stoveTops|stoveTop|pCylinder18|pCylinder18Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop|pCylinder18|pCylinder18Shape.iog.og[3].gco"
-		;
-connectAttr "groupId36.id" "|stove|stoveTops|stoveTop|pCylinder19|pCylinder19Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop|pCylinder19|pCylinder19Shape.iog.og[0].gco"
-		;
-connectAttr "groupId37.id" "|stove|stoveTops|stoveTop|pCylinder19|pCylinder19Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop|pCylinder19|pCylinder19Shape.iog.og[1].gco"
-		;
 connectAttr "groupId38.id" "|stove|stoveTops|stoveTop|pCylinder19|pCylinder19Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop|pCylinder19|pCylinder19Shape.iog.og[2].gco"
 		;
-connectAttr "groupId39.id" "|stove|stoveTops|stoveTop|pCylinder19|pCylinder19Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop|pCylinder19|pCylinder19Shape.iog.og[3].gco"
-		;
-connectAttr "groupId40.id" "|stove|stoveTops|stoveTop|pCylinder20|pCylinder20Shape.iog.og[0].gid"
-		;
-connectAttr "set1.mwc" "|stove|stoveTops|stoveTop|pCylinder20|pCylinder20Shape.iog.og[0].gco"
-		;
-connectAttr "groupId41.id" "|stove|stoveTops|stoveTop|pCylinder20|pCylinder20Shape.iog.og[1].gid"
-		;
-connectAttr "set2.mwc" "|stove|stoveTops|stoveTop|pCylinder20|pCylinder20Shape.iog.og[1].gco"
-		;
 connectAttr "groupId42.id" "|stove|stoveTops|stoveTop|pCylinder20|pCylinder20Shape.iog.og[2].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|stove|stoveTops|stoveTop|pCylinder20|pCylinder20Shape.iog.og[2].gco"
-		;
-connectAttr "groupId43.id" "|stove|stoveTops|stoveTop|pCylinder20|pCylinder20Shape.iog.og[3].gid"
-		;
-connectAttr "set3.mwc" "|stove|stoveTops|stoveTop|pCylinder20|pCylinder20Shape.iog.og[3].gco"
-		;
-connectAttr "groupId44.id" "|stove|stoveTops|stoveTop|pCube10|pCube10Shape.iog.og[1].gid"
-		;
-connectAttr "set4.mwc" "|stove|stoveTops|stoveTop|pCube10|pCube10Shape.iog.og[1].gco"
-		;
-connectAttr "groupId45.id" "|stove|stoveTops|stoveTop|pCube10|pCube10Shape.iog.og[2].gid"
-		;
-connectAttr "set5.mwc" "|stove|stoveTops|stoveTop|pCube10|pCube10Shape.iog.og[2].gco"
 		;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
@@ -64733,235 +64301,16 @@ relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defau
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
-connectAttr "groupId20.msg" "set1.gn" -na;
-connectAttr "groupId24.msg" "set1.gn" -na;
-connectAttr "groupId28.msg" "set1.gn" -na;
-connectAttr "groupId32.msg" "set1.gn" -na;
-connectAttr "groupId36.msg" "set1.gn" -na;
-connectAttr "groupId40.msg" "set1.gn" -na;
-connectAttr "groupId46.msg" "set1.gn" -na;
-connectAttr "groupId49.msg" "set1.gn" -na;
-connectAttr "groupId53.msg" "set1.gn" -na;
-connectAttr "groupId57.msg" "set1.gn" -na;
-connectAttr "groupId61.msg" "set1.gn" -na;
-connectAttr "groupId65.msg" "set1.gn" -na;
-connectAttr "groupId71.msg" "set1.gn" -na;
-connectAttr "groupId74.msg" "set1.gn" -na;
-connectAttr "groupId78.msg" "set1.gn" -na;
-connectAttr "groupId82.msg" "set1.gn" -na;
-connectAttr "groupId86.msg" "set1.gn" -na;
-connectAttr "groupId90.msg" "set1.gn" -na;
-connectAttr "groupId96.msg" "set1.gn" -na;
-connectAttr "groupId99.msg" "set1.gn" -na;
-connectAttr "groupId103.msg" "set1.gn" -na;
-connectAttr "groupId107.msg" "set1.gn" -na;
-connectAttr "groupId111.msg" "set1.gn" -na;
-connectAttr "groupId115.msg" "set1.gn" -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder14|pCylinder14Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder15|pCylinder15Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder13|pCylinder13Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder18|pCylinder18Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder19|pCylinder19Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder20|pCylinder20Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder13|pCylinder13Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder14|pCylinder14Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder15|pCylinder15Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder18|pCylinder18Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder19|pCylinder19Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder20|pCylinder20Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder13|pCylinder13Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder14|pCylinder14Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder15|pCylinder15Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder18|pCylinder18Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder19|pCylinder19Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder20|pCylinder20Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder13|pCylinder13Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder14|pCylinder14Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder15|pCylinder15Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder18|pCylinder18Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder19|pCylinder19Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder20|pCylinder20Shape.iog.og[0]" "set1.dsm"
-		 -na;
-connectAttr "groupId21.msg" "set2.gn" -na;
-connectAttr "groupId25.msg" "set2.gn" -na;
-connectAttr "groupId29.msg" "set2.gn" -na;
-connectAttr "groupId33.msg" "set2.gn" -na;
-connectAttr "groupId37.msg" "set2.gn" -na;
-connectAttr "groupId41.msg" "set2.gn" -na;
-connectAttr "groupId47.msg" "set2.gn" -na;
-connectAttr "groupId50.msg" "set2.gn" -na;
-connectAttr "groupId54.msg" "set2.gn" -na;
-connectAttr "groupId58.msg" "set2.gn" -na;
-connectAttr "groupId62.msg" "set2.gn" -na;
-connectAttr "groupId66.msg" "set2.gn" -na;
-connectAttr "groupId72.msg" "set2.gn" -na;
-connectAttr "groupId75.msg" "set2.gn" -na;
-connectAttr "groupId79.msg" "set2.gn" -na;
-connectAttr "groupId83.msg" "set2.gn" -na;
-connectAttr "groupId87.msg" "set2.gn" -na;
-connectAttr "groupId91.msg" "set2.gn" -na;
-connectAttr "groupId97.msg" "set2.gn" -na;
-connectAttr "groupId100.msg" "set2.gn" -na;
-connectAttr "groupId104.msg" "set2.gn" -na;
-connectAttr "groupId108.msg" "set2.gn" -na;
-connectAttr "groupId112.msg" "set2.gn" -na;
-connectAttr "groupId116.msg" "set2.gn" -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder14|pCylinder14Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder15|pCylinder15Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder13|pCylinder13Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder18|pCylinder18Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder19|pCylinder19Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder20|pCylinder20Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder13|pCylinder13Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder14|pCylinder14Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder15|pCylinder15Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder18|pCylinder18Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder19|pCylinder19Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder20|pCylinder20Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder13|pCylinder13Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder14|pCylinder14Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder15|pCylinder15Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder18|pCylinder18Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder19|pCylinder19Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder20|pCylinder20Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder13|pCylinder13Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder14|pCylinder14Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder15|pCylinder15Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder18|pCylinder18Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder19|pCylinder19Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder20|pCylinder20Shape.iog.og[1]" "set2.dsm"
-		 -na;
-connectAttr "groupId23.msg" "set3.gn" -na;
-connectAttr "groupId27.msg" "set3.gn" -na;
-connectAttr "groupId35.msg" "set3.gn" -na;
-connectAttr "groupId39.msg" "set3.gn" -na;
-connectAttr "groupId43.msg" "set3.gn" -na;
-connectAttr "groupId52.msg" "set3.gn" -na;
-connectAttr "groupId56.msg" "set3.gn" -na;
-connectAttr "groupId60.msg" "set3.gn" -na;
-connectAttr "groupId64.msg" "set3.gn" -na;
-connectAttr "groupId68.msg" "set3.gn" -na;
-connectAttr "groupId77.msg" "set3.gn" -na;
-connectAttr "groupId81.msg" "set3.gn" -na;
-connectAttr "groupId85.msg" "set3.gn" -na;
-connectAttr "groupId89.msg" "set3.gn" -na;
-connectAttr "groupId93.msg" "set3.gn" -na;
-connectAttr "groupId102.msg" "set3.gn" -na;
-connectAttr "groupId106.msg" "set3.gn" -na;
-connectAttr "groupId110.msg" "set3.gn" -na;
-connectAttr "groupId114.msg" "set3.gn" -na;
-connectAttr "groupId118.msg" "set3.gn" -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder14|pCylinder14Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder15|pCylinder15Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder18|pCylinder18Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder19|pCylinder19Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop|pCylinder20|pCylinder20Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder14|pCylinder14Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder15|pCylinder15Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder18|pCylinder18Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder19|pCylinder19Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCylinder20|pCylinder20Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder14|pCylinder14Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder15|pCylinder15Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder18|pCylinder18Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder19|pCylinder19Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCylinder20|pCylinder20Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder14|pCylinder14Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder15|pCylinder15Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder18|pCylinder18Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder19|pCylinder19Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCylinder20|pCylinder20Shape.iog.og[3]" "set3.dsm"
-		 -na;
-connectAttr "groupId44.msg" "set4.gn" -na;
-connectAttr "groupId69.msg" "set4.gn" -na;
-connectAttr "groupId94.msg" "set4.gn" -na;
-connectAttr "groupId119.msg" "set4.gn" -na;
-connectAttr "|stove|stoveTops|stoveTop|pCube10|pCube10Shape.iog.og[1]" "set4.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCube10|pCube10Shape.iog.og[1]" "set4.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCube10|pCube10Shape.iog.og[1]" "set4.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCube10|pCube10Shape.iog.og[1]" "set4.dsm"
-		 -na;
-connectAttr "groupId45.msg" "set5.gn" -na;
-connectAttr "groupId70.msg" "set5.gn" -na;
-connectAttr "groupId95.msg" "set5.gn" -na;
-connectAttr "groupId120.msg" "set5.gn" -na;
-connectAttr "|stove|stoveTops|stoveTop|pCube10|pCube10Shape.iog.og[2]" "set5.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop1|pCube10|pCube10Shape.iog.og[2]" "set5.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop2|pCube10|pCube10Shape.iog.og[2]" "set5.dsm"
-		 -na;
-connectAttr "|stove|stoveTops|stoveTop3|pCube10|pCube10Shape.iog.og[2]" "set5.dsm"
-		 -na;
+connectAttr ":PxrPathTracer.msg" ":rmanGlobals.ri_integrator";
+connectAttr ":rmanDefaultDisplay.msg" ":rmanGlobals.displays[0]";
+connectAttr "d_openexr.msg" ":rmanDefaultDisplay.displayType";
+connectAttr "Ci.msg" ":rmanDefaultDisplay.displayChannels[0]";
+connectAttr "a.msg" ":rmanDefaultDisplay.displayChannels[1]";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
+connectAttr ":rmanGlobals.msg" ":defaultRenderingList1.r" -na;
+connectAttr ":PxrPathTracer.msg" ":defaultRenderingList1.r" -na;
+connectAttr ":rmanDefaultDisplay.msg" ":defaultRenderingList1.r" -na;
+connectAttr "d_openexr.msg" ":defaultRenderingList1.r" -na;
 connectAttr "stoveShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "ovenCoverShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "ovenHandleShape.iog" ":initialShadingGroup.dsm" -na;
