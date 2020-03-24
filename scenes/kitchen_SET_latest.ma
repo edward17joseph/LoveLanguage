@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: kitchen_SET_latest.ma
-//Last modified: Tue, Mar 24, 2020 02:52:03 PM
+//Last modified: Tue, Mar 24, 2020 04:13:16 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "house_INTERIOR" -rfn "house_INTERIORRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/house_INTERIOR.ma";
@@ -43,14 +43,6 @@ file -rdi 1 -ns "bowl_conic_latest" -rfn "bowl_conic_latestRN" -op "v=0;" -typ
 		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/bowl_conic_latest.ma";
 file -rdi 1 -ns "bowl_smallwhite_pattern1_latest" -rfn "bowl_smallwhite_pattern1_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/bowl_smallwhite_pattern1_latest.ma";
-file -rdi 1 -ns "mug_round_latest" -rfn "mug_round_latestRN" -op "v=0;" -typ
-		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/mug_round_latest.ma";
-file -rdi 1 -ns "mug_round_latest1" -rfn "mug_round_latestRN1" -op "v=0;" -typ
-		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/mug_round_latest.ma";
-file -rdi 1 -ns "mug_tall_latest" -rfn "mug_tall_latestRN" -op "v=0;" -typ "mayaAscii"
-		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/mug_tall_latest.ma";
-file -rdi 1 -ns "mug_round_latest2" -rfn "mug_round_latestRN2" -op "v=0;" -typ
-		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/mug_round_latest.ma";
 file -rdi 1 -ns "plate_latest" -rfn "plate_latestRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/plate_latest.ma";
 file -rdi 1 -ns "plate_latest1" -rfn "plate_latestRN1" -op "v=0;" -typ "mayaAscii"
@@ -106,6 +98,8 @@ file -rdi 1 -ns "butter_knife_latest" -rfn "butter_knife_latestRN" -op "v=0;"
 file -rdi 1 -ns "fork_latest" -rfn "fork_latestRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/fork_latest.ma";
 file -rdi 1 -ns "towel" -rfn "towelRN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/towel.ma";
+file -rdi 1 -ns "mug_WALL_HANGING" -rfn "mug_WALL_HANGINGRN" -op "v=0;" -typ
+		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/mug_WALL_HANGING.ma";
 file -r -ns "house_INTERIOR" -dr 1 -rfn "house_INTERIORRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/house_INTERIOR.ma";
 file -r -ns "cabinets_counter_latest" -dr 1 -rfn "cabinets_counter_latestRN" -op
@@ -139,14 +133,6 @@ file -r -ns "bowl_conic_latest" -dr 1 -rfn "bowl_conic_latestRN" -op "v=0;" -typ
 		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/bowl_conic_latest.ma";
 file -r -ns "bowl_smallwhite_pattern1_latest" -dr 1 -rfn "bowl_smallwhite_pattern1_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/bowl_smallwhite_pattern1_latest.ma";
-file -r -ns "mug_round_latest" -dr 1 -rfn "mug_round_latestRN" -op "v=0;" -typ "mayaAscii"
-		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/mug_round_latest.ma";
-file -r -ns "mug_round_latest1" -dr 1 -rfn "mug_round_latestRN1" -op "v=0;" -typ
-		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/mug_round_latest.ma";
-file -r -ns "mug_tall_latest" -dr 1 -rfn "mug_tall_latestRN" -op "v=0;" -typ "mayaAscii"
-		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/mug_tall_latest.ma";
-file -r -ns "mug_round_latest2" -dr 1 -rfn "mug_round_latestRN2" -op "v=0;" -typ
-		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/mug_round_latest.ma";
 file -r -ns "plate_latest" -dr 1 -rfn "plate_latestRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/plate_latest.ma";
 file -r -ns "plate_latest1" -dr 1 -rfn "plate_latestRN1" -op "v=0;" -typ "mayaAscii"
@@ -202,6 +188,8 @@ file -r -ns "butter_knife_latest" -dr 1 -rfn "butter_knife_latestRN" -op "v=0;"
 file -r -ns "fork_latest" -dr 1 -rfn "fork_latestRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/fork_latest.ma";
 file -r -ns "towel" -dr 1 -rfn "towelRN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/towel.ma";
+file -r -ns "mug_WALL_HANGING" -dr 1 -rfn "mug_WALL_HANGINGRN" -op "v=0;" -typ "mayaAscii"
+		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/mug_WALL_HANGING.ma";
 requires maya "2018";
 requires "stereoCamera" "10.0";
 requires -nodeType "PxrVisualizer" -nodeType "PxrDefault" -nodeType "PxrCamera" -nodeType "OmnidirectionalStereo"
@@ -217,17 +205,17 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "36461FDD-6841-0A64-D399-B0AB155E26C3";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -5.3663326547670032 17.169710126492596 2.8090357952399132 ;
-	setAttr ".r" -type "double3" -4.538352729088392 -180.19999999938651 0 ;
+	setAttr ".t" -type "double3" -6.6741972756404548 19.426246585448933 6.9306262787865354 ;
+	setAttr ".r" -type "double3" -10.538352729081097 -178.59999999937619 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5CDD104B-C747-D634-1E1A-19A7D9D672D5";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 53.342506261995162;
+	setAttr ".coi" 52.845424178972081;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 13.457604513017873 13.446746681837141 50.684425029937074 ;
+	setAttr ".tp" -type "double3" 8.9220059876494844 16.9150992604675 53.830232374749201 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "617FEC7E-6A49-06B6-FCDC-C196C5EFC780";
@@ -13230,22 +13218,22 @@ createNode mesh -n "polySurfaceShape1" -p "|dirty_PLATES|Plate4|pCylinder1";
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "550321A4-8D4C-EA28-2A7E-8688AFFC2C33";
-	setAttr -s 117 ".lnk";
-	setAttr -s 117 ".slnk";
+	rename -uid "27279045-5345-8A84-5E64-06ACBBD8F256";
+	setAttr -s 121 ".lnk";
+	setAttr -s 121 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "81F0F43A-1C46-5165-A63E-438A2E63584D";
+	rename -uid "6B5BD257-364F-645E-9954-8BBD07B9436B";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "4F596A1B-6D45-6003-0925-56AE8688BE3A";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "B245E210-634F-45C1-7377-DBA4D18BE8D7";
+	rename -uid "61059149-884A-73B5-4B88-08838B735C3F";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "820EE0FD-8A42-F060-3AAA-15B7ED982E31";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "5C5C3C43-A442-8211-ABA9-C0B76833A18E";
+	rename -uid "EDA6A4F7-7A4B-22BD-4FE6-F2A6F963109E";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "8C312443-E04D-0090-619B-0B9DBACF9E2E";
+	rename -uid "C6F8F2CE-B145-F1AD-72D8-06B03F1AFE5D";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "1734E96B-A34E-A2D9-CF2E-B7A17A194A04";
 	setAttr ".b" -type "string" (
@@ -13742,7 +13730,7 @@ createNode reference -n "water_kettle_latestRN";
 		
 		2 "|water_kettle_latest:kettle1" "scale" " -type \"double3\" 0.52127374631174195 0.52127374631174195 0.52127374631174195"
 		
-		2 "|water_kettle_latest:kettle2" "translate" " -type \"double3\" -10.30968646704803859 10.26031736175252007 47.0476642703593626"
+		2 "|water_kettle_latest:kettle2" "translate" " -type \"double3\" -5.52355442319913159 10.26031736175252007 47.0476642703593626"
 		
 		2 "|water_kettle_latest:kettle2" "rotate" " -type \"double3\" 0 75.00000000000001421 0"
 		
@@ -13828,7 +13816,7 @@ createNode reference -n "pot_big_handle_latestRN";
 		"pot_big_handle_latestRN"
 		"pot_big_handle_latestRN" 0
 		"pot_big_handle_latestRN" 4
-		2 "|pot_big_handle_latest:pot_big_handle_CTRL" "translate" " -type \"double3\" -5.58560851965563909 11.82481119584306484 51.71434859401498585"
+		2 "|pot_big_handle_latest:pot_big_handle_CTRL" "translate" " -type \"double3\" -10.42942936054840075 11.82481119584306484 51.71434859401498585"
 		
 		2 "|pot_big_handle_latest:pot_big_handle_CTRL" "rotate" " -type \"double3\" 0 209.99999999999994316 0"
 		
@@ -13967,68 +13955,6 @@ createNode reference -n "bowl_smallwhite_pattern1_latestRN";
 		"dispResolution" " 3"
 		2 "|BOWLS|bowl_smallwhite_pattern1_latest:bowl_smallwhite_pattern1_CTRL|bowl_smallwhite_pattern1_latest:bowl_smallwhite_pattern1|bowl_smallwhite_pattern1_latest:bowl_smallwhite_pattern1Shape" 
 		"displaySmoothMesh" " 2";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "mug_round_latestRN";
-	rename -uid "CEADABCB-ED4F-47AC-6D35-6FB8D720A69E";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"mug_round_latestRN"
-		"mug_round_latestRN" 0
-		"mug_round_latestRN" 5
-		0 "|mug_round_latest:mug_round_CTRL" "|MUGS" "-s -r "
-		2 "|MUGS|mug_round_latest:mug_round_CTRL" "translate" " -type \"double3\" 10.4134994246653676 18.98605247059638401 53.97431601507653909"
-		
-		2 "|MUGS|mug_round_latest:mug_round_CTRL" "rotate" " -type \"double3\" 181.96251785959196923 -28.30826153104692366 95.8199661153349922"
-		
-		2 "|MUGS|mug_round_latest:mug_round_CTRL|mug_round_latest:mug_round|mug_round_latest:mug_roundShape" 
-		"dispResolution" " 3"
-		2 "|MUGS|mug_round_latest:mug_round_CTRL|mug_round_latest:mug_round|mug_round_latest:mug_roundShape" 
-		"displaySmoothMesh" " 2";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "mug_round_latestRN1";
-	rename -uid "DC969332-6440-F210-BD0B-5B865F0E491E";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"mug_round_latestRN1"
-		"mug_round_latestRN1" 0
-		"mug_round_latestRN1" 5
-		0 "|mug_round_latest1:mug_round_CTRL" "|MUGS" "-s -r "
-		2 "|MUGS|mug_round_latest1:mug_round_CTRL" "translate" " -type \"double3\" 7.36850486572732688 16.27425293283140562 54.03375542257078479"
-		
-		2 "|MUGS|mug_round_latest1:mug_round_CTRL" "rotate" " -type \"double3\" 183.18042676397513446 -26.84195760662919028 96.59835835036325591"
-		
-		2 "|MUGS|mug_round_latest1:mug_round_CTRL|mug_round_latest1:mug_round|mug_round_latest1:mug_roundShape" 
-		"dispResolution" " 3"
-		2 "|MUGS|mug_round_latest1:mug_round_CTRL|mug_round_latest1:mug_round|mug_round_latest1:mug_roundShape" 
-		"displaySmoothMesh" " 2";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "mug_tall_latestRN";
-	rename -uid "43BE304E-FC49-9B91-CED6-D890306B61F9";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"mug_tall_latestRN"
-		"mug_tall_latestRN" 0
-		"mug_tall_latestRN" 4
-		0 "|mug_tall_latest:mug_tall_CTRL" "|MUGS" "-s -r "
-		2 "|MUGS|mug_tall_latest:mug_tall_CTRL" "translate" " -type \"double3\" 7.46878074393392133 18.97554062209415093 54.12637431160823098"
-		
-		2 "|MUGS|mug_tall_latest:mug_tall_CTRL" "rotate" " -type \"double3\" 174.50764872493249413 -23.82395897288832742 99.49767777910447819"
-		
-		2 "|MUGS|mug_tall_latest:mug_tall_CTRL" "scale" " -type \"double3\" 1.1066754826706946 1.1066754826706946 1.1066754826706946";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "mug_round_latestRN2";
-	rename -uid "71FF880A-C14E-8A13-7BBB-A9A1F71AE033";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"mug_round_latestRN2"
-		"mug_round_latestRN2" 0
-		"mug_round_latestRN2" 4
-		0 "|mug_round_latest2:mug_round_CTRL" "|MUGS" "-s -r "
-		2 "|MUGS|mug_round_latest2:mug_round_CTRL" "translate" " -type \"double3\" 10.68732368722168857 16.28381445832892638 53.94288941114372449"
-		
-		2 "|MUGS|mug_round_latest2:mug_round_CTRL" "rotate" " -type \"double3\" 0 211.36325957831647315 -83.67546337016240443"
-		
-		2 "|MUGS|mug_round_latest2:mug_round_CTRL" "scale" " -type \"double3\" 0.7991622571501189 0.7991622571501189 0.7991622571501189";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "plate_latestRN";
@@ -14535,6 +14461,17 @@ createNode reference -n "towelRN";
 		2 "|towel:pPlane1" "translate" " -type \"double3\" -24.20616522717834584 22.86558653098057192 53.4899504306167799";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode reference -n "mug_WALL_HANGINGRN";
+	rename -uid "CEF293B0-3448-1D09-F0F7-218650FFFF12";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"mug_WALL_HANGINGRN"
+		"mug_WALL_HANGINGRN" 0
+		"mug_WALL_HANGINGRN" 2
+		2 "|mug_WALL_HANGING:MUGS" "translate" " -type \"double3\" 9.89079715682484917 15.31434845652005272 54.29235636480810712"
+		
+		2 "|mug_WALL_HANGING:MUGS" "rotate" " -type \"double3\" 0 179.99999999999991473 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -14547,16 +14484,16 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".msaa" yes;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 117 ".st";
+	setAttr -s 113 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 118 ".s";
+	setAttr -s 114 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
 	setAttr -s 16 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 84 ".r";
+	setAttr -s 82 ".r";
 select -ne :defaultTextureList1;
 	setAttr -s 27 ".tx";
 select -ne :initialShadingGroup;
