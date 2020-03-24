@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: water_kettle_latest.ma
-//Last modified: Tue, Mar 24, 2020 12:16:49 PM
+//Last modified: Tue, Mar 24, 2020 12:19:13 PM
 //Codeset: UTF-8
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,8 +15,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "8F3A83FC-834F-4635-4F20-92AF88BBC547";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 36.911222375416465 9.9719318787053783 29.726220080140479 ;
-	setAttr ".r" -type "double3" -9.3383527715536427 51.399999999984018 -1.2745066108260477e-15 ;
+	setAttr ".t" -type "double3" 46.068705832431789 14.29409475934172 -0.89242744464654677 ;
+	setAttr ".r" -type "double3" -14.738352771553455 92.199999999983788 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "6E99C31B-F849-DE08-0395-DBB23C44D564";
 	setAttr -k off ".v" no;
