@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: house_INTERIOR.ma
-//Last modified: Mon, Mar 23, 2020 08:27:13 PM
+//Last modified: Mon, Mar 23, 2020 08:28:01 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "door_v01_latest" -rfn "door_v01_latestRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/door_v01_latest.ma";
@@ -22,13 +22,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "F71A8480-DF46-B8A6-3706-A2B6B32EAA2B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -69.365377246798346 122.38237349648702 -26.288655155163049 ;
+	setAttr ".t" -type "double3" -35.367810280507435 68.820839577075091 -8.3637715296040369 ;
 	setAttr ".r" -type "double3" -54.338352532213435 -2277.8000000014536 2.5444437451708134e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "04D99898-1D42-652C-E760-89BE83C8123D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 150.32993252545799;
+	setAttr ".coi" 84.40593136944976;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -13722,7 +13722,8 @@ createNode mesh -n "interiorShape" -p "interior";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 1;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
 createNode transform -n "LEFTLargeWindow" -p "HOUSE_INTERIOR";
 	rename -uid "5C969860-7343-E0BB-EE71-B888CFB673E0";
 	setAttr ".rp" -type "double3" 14.303402103121879 9.7457892576707419 -23.205216576460067 ;
