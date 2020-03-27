@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: grannyCranny_SET_latest.ma
-//Last modified: Thu, Mar 26, 2020 06:33:26 PM
+//Last modified: Thu, Mar 26, 2020 06:39:50 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "house_INTERIOR" -rfn "house_INTERIORRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/house_INTERIOR.ma";
@@ -8,10 +8,14 @@ file -rdi 2 -ns "door_v01_latest" -rfn "house_INTERIOR:door_v01_latestRN" -op
 		 "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/door_v01_latest.ma";
 file -rdi 1 -ns "console_table" -rfn "console_tableRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/console_table.ma";
+file -rdi 1 -ns "table" -rfn "tableRN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/table.ma";
+file -rdi 1 -ns "chair" -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
 file -r -ns "house_INTERIOR" -dr 1 -rfn "house_INTERIORRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/house_INTERIOR.ma";
 file -r -ns "console_table" -dr 1 -rfn "console_tableRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/console_table.ma";
+file -r -ns "table" -dr 1 -rfn "tableRN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/table.ma";
+file -r -ns "chair" -dr 1 -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
 requires maya "2018";
 requires "stereoCamera" "10.0";
 requires -nodeType "PxrVisualizer" -nodeType "PxrDefault" -nodeType "rmanDisplayChannel"
@@ -28,16 +32,17 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "37815538-8644-BCD7-AD49-938A2ADB8C19";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -15.840785431880411 149.58051536715084 19.256924510417264 ;
-	setAttr ".r" -type "double3" -68.138352729612521 -32.199999999998738 0 ;
+	setAttr ".t" -type "double3" -37.248364620837975 60.814980561490131 -6.1219663036040686 ;
+	setAttr ".r" -type "double3" -57.338352729615067 -98.999999999998224 2.5444437451708134e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3A622C15-C24B-A8CD-2858-14AC596DF0A6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 150.44450296981233;
+	setAttr ".coi" 69.697148128982477;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
+	setAttr ".tp" -type "double3" -0.097513270366052396 2.1388877233718735 -0.2378495048809115 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "4596694C-7A42-F964-EEAD-46893DD5FD0E";
@@ -87,22 +92,22 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "7D7C8485-FB47-12CD-23CC-E1AF44AEB5CB";
-	setAttr -s 10 ".lnk";
-	setAttr -s 10 ".slnk";
+	rename -uid "03B6D651-FB4A-8572-2370-EC8EB0051E3E";
+	setAttr -s 11 ".lnk";
+	setAttr -s 11 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "04A7FCA3-3843-7E07-4EE5-44A83B8AE7E2";
+	rename -uid "59A452F5-8945-FA26-87F0-EE84FE84F26D";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "68A0196B-D24C-924B-9F47-BDB45E9DD1B0";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "7337AC90-5E4B-1EE0-A768-BB8FF537DEC9";
+	rename -uid "031801AC-DF42-5E2E-E91A-E8AC9E1057C5";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "2F4F00D2-EF47-E196-0F28-1FA9CC37941D";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "C6A2AAFE-D442-18D4-EF13-348CE923C701";
+	rename -uid "B33DC58D-D545-F582-6293-01A15A4F1371";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "18E66A8E-4D41-D009-A705-849D064E6B2A";
+	rename -uid "D218A54A-FE4E-6AEF-1577-ABB3DCBED638";
 createNode rmanGlobals -s -n "rmanGlobals";
 	rename -uid "8FE3CD77-7742-010A-4E99-71B980D5197F";
 	setAttr ".cch" no;
@@ -487,7 +492,27 @@ createNode reference -n "console_tableRN";
 	rename -uid "0462573E-F245-E461-C09A-7383A4BB34E9";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"console_tableRN"
-		"console_tableRN" 0;
+		"console_tableRN" 0
+		"console_tableRN" 3
+		2 "|console_table:console_table" "translate" " -type \"double3\" -2.20505034549615253 3.07030656786148182 -43.4734368193347791"
+		
+		2 "|console_table:console_table" "rotate" " -type \"double3\" 0 -89.99999999999994316 0"
+		
+		2 "|console_table:console_table" "scale" " -type \"double3\" 1.48878654277095079 1.48878654277095079 1.48878654277095079";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "tableRN";
+	rename -uid "2786C7EF-6D40-8348-925C-218FB41AD1CE";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"tableRN"
+		"tableRN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "chairRN";
+	rename -uid "8BA5627B-8945-9E0B-6E71-00BD36B4B16B";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"chairRN"
+		"chairRN" 0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 select -ne :time1;
@@ -502,6 +527,7 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
 		 1 1 1 0 0 0 0 0 0 0 0 0
 		 0 0 0 0 ;
+	setAttr ".aoon" yes;
 	setAttr ".msaa" yes;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
@@ -509,7 +535,7 @@ select -ne :renderPartition;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 10 ".st";
+	setAttr -s 11 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -522,7 +548,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 12 ".s";
+	setAttr -s 13 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -530,17 +556,17 @@ select -ne :postProcessList1;
 	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 11 ".u";
+	setAttr -s 12 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 14 ".r";
+	setAttr -s 18 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 11 ".tx";
+	setAttr -s 12 ".tx";
 select -ne :initialShadingGroup;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 16 ".dsm";
+	setAttr -s 49 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -549,7 +575,7 @@ select -ne :initialShadingGroup;
 	setAttr -cb on ".fo";
 	setAttr -cb on ".epo";
 	setAttr -k on ".ro" yes;
-	setAttr -s 11 ".gn";
+	setAttr -s 25 ".gn";
 select -ne :initialParticleSE;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
