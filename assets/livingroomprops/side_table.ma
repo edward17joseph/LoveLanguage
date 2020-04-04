@@ -9,9 +9,18 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 //Last modified: Fri, Apr 03, 2020 02:27:24 PM
 //Codeset: UTF-8
 requires maya "2018";
+=======
+//Last modified: Thu, Apr 02, 2020 11:53:35 PM
+//Codeset: UTF-8
+requires maya "2018";
+requires -nodeType "PxrSurface" -nodeType "PxrBump" -nodeType "rmanDisplayChannel"
+		 -nodeType "d_openexr" -nodeType "rmanGlobals" -nodeType "PxrPathTracer" -nodeType "rmanDisplay"
+		 "RenderMan_for_Maya.py" "23.1 @ 2036321";
+>>>>>>> Stashed changes
 =======
 //Last modified: Thu, Apr 02, 2020 11:53:35 PM
 //Codeset: UTF-8
@@ -106,8 +115,13 @@ createNode transform -s -n "persp";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	setAttr ".t" -type "double3" 0.22453111324321129 13.633811342965281 -18.378619983662507 ;
 	setAttr ".r" -type "double3" 331.46164727120856 903.80000000041662 0 ;
+=======
+	setAttr ".t" -type "double3" 4.0804712424415115 7.7485756736912972 -9.456489389248631 ;
+	setAttr ".r" -type "double3" 336.86164727121565 878.20000000045604 0 ;
+>>>>>>> Stashed changes
 =======
 	setAttr ".t" -type "double3" 4.0804712424415115 7.7485756736912972 -9.456489389248631 ;
 	setAttr ".r" -type "double3" 336.86164727121565 878.20000000045604 0 ;
@@ -158,7 +172,11 @@ createNode camera -s -n "perspShape" -p "persp";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	setAttr ".coi" 22.426075875706871;
+=======
+	setAttr ".coi" 12.430870674219339;
+>>>>>>> Stashed changes
 =======
 	setAttr ".coi" 12.430870674219339;
 >>>>>>> Stashed changes
@@ -572,10 +590,13 @@ createNode mesh -n "table_legShape1" -p "table_leg1";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 createNode transform -n "table_top" -p "side_table";
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -1509,6 +1530,7 @@ createNode lightLinker -s -n "lightLinker1";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	rename -uid "1A23017C-9740-8FD4-D4F6-AB960D04F679";
 	setAttr -s 6 ".lnk";
 	setAttr -s 6 ".slnk";
@@ -1577,6 +1599,8 @@ createNode renderLayerManager -n "renderLayerManager";
 =======
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes
 	rename -uid "9806427A-8344-1B44-A888-BF8DBA986A8F";
 	setAttr -s 6 ".lnk";
 	setAttr -s 6 ".slnk";
@@ -1586,6 +1610,9 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "668971C0-A545-1237-8A98-B89BDD078D0D";
 createNode renderLayerManager -n "renderLayerManager";
 	rename -uid "3FA0CDC3-1847-510E-D782-9699A82E2F9E";
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "3E6976DD-604A-915B-57FA-D7999AC5C4A9";
@@ -1600,9 +1627,15 @@ createNode shapeEditorManager -n "shapeEditorManager";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	rename -uid "1A47B8B1-BD47-2590-E27A-AC94013F61A6";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
 	rename -uid "15291830-6042-90ED-CCBF-DC9C87D6D4C1";
+=======
+	rename -uid "8E9C398E-9C44-D62E-4507-FF89030B76AC";
+createNode poseInterpolatorManager -n "poseInterpolatorManager";
+	rename -uid "A741DE81-914D-D90F-2C80-D5A53FF72BF1";
+>>>>>>> Stashed changes
 =======
 	rename -uid "8E9C398E-9C44-D62E-4507-FF89030B76AC";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
@@ -1723,6 +1756,9 @@ createNode script -n "uiConfigurationScriptNode";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

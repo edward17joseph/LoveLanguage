@@ -9,6 +9,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 //Last modified: Thu, Mar 26, 2020 06:34:32 PM
 //Codeset: UTF-8
 requires maya "2018";
@@ -16,6 +17,11 @@ requires maya "2018";
 //Last modified: Thu, Apr 02, 2020 11:46:18 PM
 //Codeset: UTF-8
 requires maya "2018";
+=======
+//Last modified: Thu, Apr 02, 2020 11:46:18 PM
+//Codeset: UTF-8
+requires maya "2018";
+>>>>>>> Stashed changes
 =======
 //Last modified: Thu, Apr 02, 2020 11:46:18 PM
 //Codeset: UTF-8
@@ -83,8 +89,13 @@ createNode transform -s -n "persp";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	setAttr ".t" -type "double3" 38.332009133362689 29.467337224157145 2.7395643641631509 ;
 	setAttr ".r" -type "double3" -32.738352725983354 806.59999999973093 5.3629222112836823e-14 ;
+=======
+	setAttr ".t" -type "double3" 14.17455872957686 10.216452078730955 4.52333463482291 ;
+	setAttr ".r" -type "double3" -20.1383527259961 793.39999999974236 0 ;
+>>>>>>> Stashed changes
 =======
 	setAttr ".t" -type "double3" 14.17455872957686 10.216452078730955 4.52333463482291 ;
 	setAttr ".r" -type "double3" -20.1383527259961 793.39999999974236 0 ;
@@ -134,7 +145,11 @@ createNode camera -s -n "perspShape" -p "persp";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	setAttr ".coi" 45.910233845238693;
+=======
+	setAttr ".coi" 22.608595923223252;
+>>>>>>> Stashed changes
 =======
 	setAttr ".coi" 22.608595923223252;
 >>>>>>> Stashed changes
@@ -7144,9 +7159,12 @@ createNode transform -n "Book1" -p "console_table";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	setAttr ".rp" -type "double3" 0 6.8558718299485486 3.2773133968956762 ;
 	setAttr ".sp" -type "double3" 0 6.8558718299485486 3.2773133968956762 ;
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -7826,9 +7844,12 @@ createNode transform -n "Book2" -p "console_table";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	setAttr ".rp" -type "double3" 0 7.2313297346499974 3.2773133968956762 ;
 	setAttr ".sp" -type "double3" 0 7.2313297346499974 3.2773133968956762 ;
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -10983,6 +11004,7 @@ createNode lightLinker -s -n "lightLinker1";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	rename -uid "318DADBD-E942-A4E1-E65C-129E82F06DCC";
 	setAttr -s 10 ".lnk";
 	setAttr -s 10 ".slnk";
@@ -11033,6 +11055,8 @@ createNode renderLayerManager -n "renderLayerManager";
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 	rename -uid "E4D82937-2748-DB20-73F4-24A7BBE991AF";
 	setAttr -s 10 ".lnk";
 	setAttr -s 10 ".slnk";
@@ -11042,6 +11066,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "35934195-C84E-A775-5965-6FA16FAC97C1";
 createNode renderLayerManager -n "renderLayerManager";
 	rename -uid "951CF430-E249-D1B9-B758-19AE8C12A8EC";
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
@@ -11058,6 +11083,8 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "35934195-C84E-A775-5965-6FA16FAC97C1";
 createNode renderLayerManager -n "renderLayerManager";
 	rename -uid "951CF430-E249-D1B9-B758-19AE8C12A8EC";
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -11074,9 +11101,15 @@ createNode shapeEditorManager -n "shapeEditorManager";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	rename -uid "7CD32B32-8B45-8A7D-ED07-DE9F155FF62E";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
 	rename -uid "8BA62855-2940-61BB-BD29-EA86B1D597DF";
+=======
+	rename -uid "50EC15C2-E541-8DA1-BBAE-8ABFE1158643";
+createNode poseInterpolatorManager -n "poseInterpolatorManager";
+	rename -uid "79774E1F-D343-E861-36E9-0B808BCE6E15";
+>>>>>>> Stashed changes
 =======
 	rename -uid "50EC15C2-E541-8DA1-BBAE-8ABFE1158643";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
@@ -11145,6 +11178,7 @@ createNode script -n "uiConfigurationScriptNode";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
 		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 991\n            -height 711\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n"
@@ -11153,6 +11187,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n"
 		+ "            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n"
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -11184,6 +11220,9 @@ createNode script -n "uiConfigurationScriptNode";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -11245,6 +11284,9 @@ createNode script -n "uiConfigurationScriptNode";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
