@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: grannyCranny_SET_latest.ma
-//Last modified: Tue, Apr 07, 2020 07:01:51 PM
+//Last modified: Wed, Apr 08, 2020 09:57:28 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "house_INTERIOR" -rfn "house_INTERIORRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/house_INTERIOR.ma";
@@ -47,17 +47,17 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "37815538-8644-BCD7-AD49-938A2ADB8C19";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -4.9996558472261858 17.837037057416232 -40.7722335784877 ;
-	setAttr ".r" -type "double3" -6.9383527295744116 -89.799999999950742 0 ;
+	setAttr ".t" -type "double3" 19.794898289182935 55.715828795213433 -159.33272216875943 ;
+	setAttr ".r" -type "double3" -2.7383527294975485 -90.199999999941056 -1.0177774980683254e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3A622C15-C24B-A8CD-2858-14AC596DF0A6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 31.927383475742396;
+	setAttr ".coi" 95.481942779604424;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 23.197730577048603 5.2556095969546064 -41.07271632900752 ;
+	setAttr ".tp" -type "double3" 118.89844424266971 82.918535746025114 -157.25240866341176 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "4596694C-7A42-F964-EEAD-46893DD5FD0E";
@@ -110,26 +110,27 @@ createNode transform -n "GRANNY_CRANNY_SET";
 	rename -uid "CD36E22E-D148-59EF-ED4B-7CA7952C38AA";
 createNode transform -n "PROPS" -p "GRANNY_CRANNY_SET";
 	rename -uid "D9401DBB-3247-D71E-3D7B-9EB04B6FE6AC";
-	setAttr ".t" -type "double3" 0 0 -5.110579450743657 ;
+	setAttr ".t" -type "double3" 89.416588812308902 57.454249569707379 -121.3836270404536 ;
+	setAttr ".s" -type "double3" 3.9001098489816552 3.9001098489816552 3.9001098489816552 ;
 	setAttr ".rp" -type "double3" 23.667557969312739 20.9883223048978 -35.823045445143123 ;
 	setAttr ".sp" -type "double3" 23.667557969312739 20.9883223048978 -35.823045445143123 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "19799953-A541-2236-66C6-4B9A2A6E2BEA";
-	setAttr -s 76 ".lnk";
-	setAttr -s 76 ".slnk";
+	rename -uid "3D771700-4A44-BE56-9710-6EB2290106EA";
+	setAttr -s 124 ".lnk";
+	setAttr -s 124 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "0B60F91E-A944-DCB9-3182-018CFF9E0807";
+	rename -uid "484AB637-2E4D-B0A3-77F3-C29AC509724F";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "68A0196B-D24C-924B-9F47-BDB45E9DD1B0";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "E8F84C2A-BB4C-6424-0855-4BA7E4E041C5";
+	rename -uid "B23E9AB3-DD40-27CA-74FD-4F9FACA2D44E";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "2F4F00D2-EF47-E196-0F28-1FA9CC37941D";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "2AEB60A9-A041-A93B-BCD4-CD87283F4E9E";
+	rename -uid "A2CA443E-B047-5679-30DC-8D84D9D9F80F";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "4F674B3D-3A4D-72D7-0A68-F78F42EF2911";
+	rename -uid "76A18B18-494C-07C5-0095-E0A32FCBEC7C";
 createNode rmanGlobals -s -n "rmanGlobals";
 	rename -uid "8FE3CD77-7742-010A-4E99-71B980D5197F";
 	setAttr ".cch" no;
@@ -387,10 +388,10 @@ createNode reference -n "house_INTERIORRN";
 		2 "house_INTERIOR:flowershop_INTERIOR_latest:flowershop" "visibility" " 1"
 		
 		"house_INTERIOR:door_v01_latestRN" 0
-		"house_INTERIORRN" 10
+		"house_INTERIORRN" 11
 		0 "|house_INTERIOR:HOUSE_INTERIOR" "|GRANNY_CRANNY_SET" "-s -r "
 		2 "|GRANNY_CRANNY_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:roof" 
-		"visibility" " 0"
+		"visibility" " 1"
 		2 "|GRANNY_CRANNY_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:interior|house_INTERIOR:interiorShape" 
 		"dispResolution" " 3"
 		2 "|GRANNY_CRANNY_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:interior|house_INTERIOR:interiorShape" 
@@ -406,7 +407,8 @@ createNode reference -n "house_INTERIORRN";
 		2 "|GRANNY_CRANNY_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:MIDDLELargeWindow|house_INTERIOR:frame|house_INTERIOR:frameShape" 
 		"dispResolution" " 1"
 		2 "|GRANNY_CRANNY_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:MIDDLELargeWindow|house_INTERIOR:frame|house_INTERIOR:frameShape" 
-		"displaySmoothMesh" " 0";
+		"displaySmoothMesh" " 0"
+		2 "house_INTERIOR:INTERIOR_HOUSE" "visibility" " 1";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode OmnidirectionalStereo -s -n "OmnidirectionalStereo";
@@ -705,7 +707,7 @@ select -ne :renderPartition;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 72 ".st";
+	setAttr -s 124 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -718,7 +720,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 74 ".s";
+	setAttr -s 114 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -726,12 +728,12 @@ select -ne :postProcessList1;
 	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 126 ".u";
+	setAttr -s 136 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 40 ".r";
+	setAttr -s 48 ".r";
 select -ne :lightList1;
 select -ne :defaultTextureList1;
-	setAttr -s 195 ".tx";
+	setAttr -s 226 ".tx";
 select -ne :initialShadingGroup;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
