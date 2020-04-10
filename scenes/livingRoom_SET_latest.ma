@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: livingRoom_SET_latest.ma
-//Last modified: Fri, Apr 03, 2020 03:17:13 PM
+//Last modified: Wed, Apr 08, 2020 10:36:47 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "house_INTERIOR" -rfn "house_INTERIORRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/house_INTERIOR.ma";
@@ -31,8 +31,6 @@ file -rdi 2 -ns "house_INTERIOR" -rfn "grannyCranny_SET_latest:house_INTERIORRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/house_INTERIOR.ma";
 file -rdi 3 -ns "door_v01_latest" -rfn "grannyCranny_SET_latest:house_INTERIOR:door_v01_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/door_v01_latest.ma";
-file -rdi 2 -ns "table" -rfn "grannyCranny_SET_latest:tableRN" -op "v=0;" -typ
-		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/table.ma";
 file -rdi 2 -ns "chair" -rfn "grannyCranny_SET_latest:chairRN" -op "v=0;" -typ
 		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
 file -rdi 2 -ns "chair1" -rfn "grannyCranny_SET_latest:chairRN1" -op "v=0;"
@@ -47,6 +45,8 @@ file -rdi 2 -ns "edamame_latest" -rfn "grannyCranny_SET_latest:edamame_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/edamame_latest.ma";
 file -rdi 3 -ns "soy_bean_latest" -dr 1 -rfn "grannyCranny_SET_latest:edamame_latest:soy_bean_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/foodprops/soy_bean_latest.ma";
+file -rdi 2 -ns "table" -rfn "grannyCranny_SET_latest:tableRN" -op "v=0;" -typ
+		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/table.ma";
 file -rdi 1 -ns "orchid_latest" -rfn "orchid_latestRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/orchid_latest.ma";
 file -rdi 1 -ns "fish4" -rfn "fish4RN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/fish4.ma";
@@ -98,19 +98,19 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "6456CB10-5F41-50CB-9CCE-529569F62EAF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -15.125405150928923 17.650262823183361 -15.324432601298511 ;
-	setAttr ".r" -type "double3" 329.66164726119547 -116.19999999996611 0 ;
+	setAttr ".t" -type "double3" -134.09077761222608 534.8633946852791 -215.53943786413654 ;
+	setAttr ".r" -type "double3" 293.06164726112149 -142.99999999999488 0 ;
 	setAttr ".rp" -type "double3" 0 1.7763568394002505e-15 0 ;
 	setAttr ".rpt" -type "double3" 8.945892339872879e-18 -1.5352577067068242e-17 2.3286815999327906e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3152C822-AC47-BF26-80BA-71B0521AC687";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 20.191616803384189;
+	setAttr ".coi" 519.20842424338662;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.93601130374607722 7.3970506407608934 -8.5668779009615612 ;
+	setAttr ".tp" -type "double3" -53.40481065369859 20.371986238041412 -205.64796760271383 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "1F2F2559-C640-7D96-5978-C99FE81F2004";
@@ -159,14 +159,29 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".man" -type "string" "side_mask";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
-createNode transform -n "sideTable_and_Lamp";
+createNode transform -n "LIVING_ROOM_SET";
+	rename -uid "85EAF85C-4D43-3717-40E8-069E60DC8540";
+	setAttr ".rp" -type "double3" 31.673656463623047 77.465871385756174 -2.9321365356445312 ;
+	setAttr ".sp" -type "double3" 31.673656463623047 77.465871385756174 -2.9321365356445312 ;
+createNode transform -n "PROPS" -p "LIVING_ROOM_SET";
+	rename -uid "7A3D42E4-A94E-DF75-3819-50B395064E6C";
+	setAttr ".t" -type "double3" 7.9345679049878441 24.533165492215147 -66.210289693435612 ;
+	setAttr ".s" -type "double3" 3.9584914246567808 3.9584914246567808 3.9584914246567808 ;
+	setAttr ".rp" -type "double3" -3.8247898177425785 9.4482948246864566 -23.52175581067727 ;
+	setAttr ".sp" -type "double3" -3.8247898177425785 9.4482948246864566 -23.52175581067727 ;
+createNode transform -n "FRONT_WALL" -p "PROPS";
+	rename -uid "E0530A8D-724D-7276-89D0-1F9470F37AB8";
+	setAttr ".t" -type "double3" 0 0 -0.1433978560100844 ;
+	setAttr ".rp" -type "double3" 5.9629036110484694 7.4195649698851422 -8.1476378522831006 ;
+	setAttr ".sp" -type "double3" 5.9629036110484694 7.4195649698851422 -8.1476378522831006 ;
+createNode transform -n "sideTable_and_Lamp" -p "FRONT_WALL";
 	rename -uid "F6FB6A9D-0443-3896-754E-77920957AF8F";
-	setAttr ".t" -type "double3" 0 0 0.11535953532128751 ;
+	setAttr ".t" -type "double3" 0 -1.1102230246251565e-16 0.11535953532128751 ;
 	setAttr ".rp" -type "double3" 11.983998050009225 7.5293074076278845 7.0478314739179195 ;
 	setAttr ".sp" -type "double3" 11.983998050009225 7.5293074076278845 7.0478314739179195 ;
-createNode transform -n "sideTable_and_Lamp1";
+createNode transform -n "sideTable_and_Lamp1" -p "FRONT_WALL";
 	rename -uid "5BC571FC-5041-94F6-221A-249F562B91C9";
-	setAttr ".t" -type "double3" 0 0 -30.506298187723331 ;
+	setAttr ".t" -type "double3" 0 -1.1102230246251565e-16 -30.506298187723331 ;
 	setAttr ".rp" -type "double3" 11.983998050009225 7.5293074076278845 7.0478314739179195 ;
 	setAttr ".sp" -type "double3" 11.983998050009225 7.5293074076278845 7.0478314739179195 ;
 createNode transform -n "side_table1" -p "sideTable_and_Lamp1";
@@ -14357,7 +14372,7 @@ createNode transform -n "pCylinder5" -p "frame1";
 	rename -uid "4B37D78E-864F-A147-B2C2-46AA3DDF6B7F";
 	setAttr ".rp" -type "double3" -7.4505805969238281e-09 4.1370797157287598 1.5794773399829865 ;
 	setAttr ".sp" -type "double3" -7.4505805969238281e-09 4.1370797157287598 1.5794773399829865 ;
-createNode mesh -n "pCylinderShape5" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder5";
+createNode mesh -n "pCylinderShape5" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder5";
 	rename -uid "3E115F8D-7742-3C75-FA30-61ACE0FE1063";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -15112,7 +15127,7 @@ createNode transform -n "pCylinder2" -p "frame1";
 	rename -uid "800BD4C4-194A-9B52-DBC3-289209EAC36A";
 	setAttr ".rp" -type "double3" -7.4505805969238281e-09 6.9476397037506104 3.1754909753799438 ;
 	setAttr ".sp" -type "double3" -7.4505805969238281e-09 6.9476397037506104 3.1754909753799438 ;
-createNode mesh -n "pCylinderShape2" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder2";
+createNode mesh -n "pCylinderShape2" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder2";
 	rename -uid "B802239C-8A45-3FBC-B58D-85BE85DD14B5";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -15865,7 +15880,7 @@ createNode transform -n "pCylinder4" -p "frame1";
 	rename -uid "5DE3C347-8D4D-29D1-44C2-DE9EE0452BAE";
 	setAttr ".rp" -type "double3" -7.4505805969238281e-09 9.6712803840637207 1.5794773399829865 ;
 	setAttr ".sp" -type "double3" -7.4505805969238281e-09 9.6712803840637207 1.5794773399829865 ;
-createNode mesh -n "pCylinderShape4" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder4";
+createNode mesh -n "pCylinderShape4" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder4";
 	rename -uid "732D2E4D-AB42-A855-A615-5581794F8639";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -16623,7 +16638,7 @@ createNode transform -n "pCylinder5" -p "frame2";
 	rename -uid "9918684F-224E-3EFB-DDCD-61B1FE390A6C";
 	setAttr ".rp" -type "double3" -7.4505805969238281e-09 4.1370797157287598 1.5794773399829865 ;
 	setAttr ".sp" -type "double3" -7.4505805969238281e-09 4.1370797157287598 1.5794773399829865 ;
-createNode mesh -n "pCylinderShape5" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder5";
+createNode mesh -n "pCylinderShape5" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder5";
 	rename -uid "33A09E67-6A42-3194-F2D9-0EB5570C7790";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -17378,7 +17393,7 @@ createNode transform -n "pCylinder2" -p "frame2";
 	rename -uid "EC1D4303-A14E-70A4-9FF8-709BDE4F5C3C";
 	setAttr ".rp" -type "double3" -7.4505804859015257e-09 6.9476397037506104 3.1754909753799438 ;
 	setAttr ".sp" -type "double3" -7.4505804859015257e-09 6.9476397037506104 3.1754909753799438 ;
-createNode mesh -n "pCylinderShape2" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder2";
+createNode mesh -n "pCylinderShape2" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder2";
 	rename -uid "84F84945-B145-6A6B-A740-FDBB4B6C7C70";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -18131,7 +18146,7 @@ createNode transform -n "pCylinder4" -p "frame2";
 	rename -uid "D5A347DB-E341-C3D5-1CEA-D5ABBEE28E72";
 	setAttr ".rp" -type "double3" -7.4505805969238281e-09 9.6712803840637207 1.5794773399829865 ;
 	setAttr ".sp" -type "double3" -7.4505805969238281e-09 9.6712803840637207 1.5794773399829865 ;
-createNode mesh -n "pCylinderShape4" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder4";
+createNode mesh -n "pCylinderShape4" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder4";
 	rename -uid "CE17A1EF-904D-75B8-8BD1-529DF74AAE29";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -18889,7 +18904,7 @@ createNode transform -n "pCylinder5" -p "frame3";
 	rename -uid "F2FA23CA-ED41-B0A3-5F5C-7AB95F7D0B5B";
 	setAttr ".rp" -type "double3" -7.4505805969238281e-09 4.1370797157287598 1.5794773399829865 ;
 	setAttr ".sp" -type "double3" -7.4505805969238281e-09 4.1370797157287598 1.5794773399829865 ;
-createNode mesh -n "pCylinderShape5" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder5";
+createNode mesh -n "pCylinderShape5" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder5";
 	rename -uid "2F42044C-A343-3654-7D0F-969DAC735E38";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -19644,7 +19659,7 @@ createNode transform -n "pCylinder2" -p "frame3";
 	rename -uid "CD9C8C75-6346-4E8E-8842-9EAF0FF0945A";
 	setAttr ".rp" -type "double3" -7.4505805969238281e-09 6.9476397037506104 3.1754909753799434 ;
 	setAttr ".sp" -type "double3" -7.4505805969238281e-09 6.9476397037506104 3.1754909753799434 ;
-createNode mesh -n "pCylinderShape2" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder2";
+createNode mesh -n "pCylinderShape2" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder2";
 	rename -uid "C0281E41-2143-0E18-5F97-5FB215BC0367";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -20397,7 +20412,7 @@ createNode transform -n "pCylinder4" -p "frame3";
 	rename -uid "CB28C660-1C4E-B9B3-FA13-9F94336459D5";
 	setAttr ".rp" -type "double3" -7.4505805969238281e-09 9.6712803840637207 1.5794773399829865 ;
 	setAttr ".sp" -type "double3" -7.4505805969238281e-09 9.6712803840637207 1.5794773399829865 ;
-createNode mesh -n "pCylinderShape4" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder4";
+createNode mesh -n "pCylinderShape4" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder4";
 	rename -uid "90C7B6AD-6D4F-260F-60C8-A8B0FE395B06";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -21155,7 +21170,7 @@ createNode transform -n "pCylinder5" -p "frame4";
 	rename -uid "60912C97-1249-789C-E7C7-3C87C6C6C687";
 	setAttr ".rp" -type "double3" -7.4505805969238281e-09 4.1370797157287598 1.5794773399829862 ;
 	setAttr ".sp" -type "double3" -7.4505805969238281e-09 4.1370797157287598 1.5794773399829862 ;
-createNode mesh -n "pCylinderShape5" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder5";
+createNode mesh -n "pCylinderShape5" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder5";
 	rename -uid "C26539AB-6643-9708-A519-F8AAD350886A";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -21910,7 +21925,7 @@ createNode transform -n "pCylinder2" -p "frame4";
 	rename -uid "03D51454-DA4D-42A9-6DDF-7EA408059D6B";
 	setAttr ".rp" -type "double3" -7.4505808189684331e-09 6.9476397037506104 3.1754909753799434 ;
 	setAttr ".sp" -type "double3" -7.4505808189684331e-09 6.9476397037506104 3.1754909753799434 ;
-createNode mesh -n "pCylinderShape2" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder2";
+createNode mesh -n "pCylinderShape2" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder2";
 	rename -uid "6619D84F-F341-3C1A-C2F2-5A9383DE5CBC";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -22663,7 +22678,7 @@ createNode transform -n "pCylinder4" -p "frame4";
 	rename -uid "91754E4F-EE47-338D-DF0A-F99E84946F26";
 	setAttr ".rp" -type "double3" -7.4505805969238281e-09 9.6712803840637207 1.5794773399829862 ;
 	setAttr ".sp" -type "double3" -7.4505805969238281e-09 9.6712803840637207 1.5794773399829862 ;
-createNode mesh -n "pCylinderShape4" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder4";
+createNode mesh -n "pCylinderShape4" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder4";
 	rename -uid "88610B8D-AA44-8200-33FE-9F8D7E62DB15";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -23421,7 +23436,7 @@ createNode transform -n "pCylinder5" -p "frame5";
 	rename -uid "4A5C5F6A-874E-95B0-6E15-25AAD4E1DA26";
 	setAttr ".rp" -type "double3" -7.4505806524349794e-09 4.1370797157287598 1.5794773399829865 ;
 	setAttr ".sp" -type "double3" -7.4505806524349794e-09 4.1370797157287598 1.5794773399829865 ;
-createNode mesh -n "pCylinderShape5" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder5";
+createNode mesh -n "pCylinderShape5" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder5";
 	rename -uid "5A5A296A-9C45-A4EB-393C-FBBBB4A28EBE";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -24176,7 +24191,7 @@ createNode transform -n "pCylinder2" -p "frame5";
 	rename -uid "016C4739-1D43-F9AD-52D4-2BA3BB26D3AE";
 	setAttr ".rp" -type "double3" -7.4505805969238281e-09 6.9476397037506104 3.1754909753799438 ;
 	setAttr ".sp" -type "double3" -7.4505805969238281e-09 6.9476397037506104 3.1754909753799438 ;
-createNode mesh -n "pCylinderShape2" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder2";
+createNode mesh -n "pCylinderShape2" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder2";
 	rename -uid "208C0111-BF4E-F84B-5D97-E99031B5C8E4";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -24929,7 +24944,7 @@ createNode transform -n "pCylinder4" -p "frame5";
 	rename -uid "14AF4A70-E44D-54B5-7FDD-4386756F540A";
 	setAttr ".rp" -type "double3" -7.4505806524349794e-09 9.6712803840637207 1.5794773399829865 ;
 	setAttr ".sp" -type "double3" -7.4505806524349794e-09 9.6712803840637207 1.5794773399829865 ;
-createNode mesh -n "pCylinderShape4" -p "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder4";
+createNode mesh -n "pCylinderShape4" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder4";
 	rename -uid "FF0584F2-DE46-8B18-8F06-8AAADF661110";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -32511,35 +32526,45 @@ createNode mesh -n "topperShape" -p "topper";
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "bamboo1";
-	rename -uid "E1582906-F044-158A-A5AD-098C33C81293";
-	setAttr ".t" -type "double3" -6.2340657212726871 11.340145649086415 -54.898821011029021 ;
-	setAttr ".r" -type "double3" 0 102.67724469335151 0 ;
-	setAttr ".s" -type "double3" 0.66016566801580734 0.66016566801580734 0.66016566801580734 ;
-	setAttr ".rp" -type "double3" 0.344369205319905 1.2768892079409566 0.12957579979848166 ;
-	setAttr ".sp" -type "double3" 0.344369205319905 1.2768892079409566 0.12957579979848166 ;
-createNode transform -n "FISH";
+createNode transform -n "fish" -p "FRONT_WALL";
 	rename -uid "D55093BB-1E45-3675-68E3-0697137CF03C";
-	setAttr ".t" -type "double3" -2.2587654353702424 7.8426726296285985 -5.6963331007165428 ;
+	setAttr ".t" -type "double3" -2.2587654353702424 7.8426726296285993 -5.6963331007165436 ;
 	setAttr ".r" -type "double3" 0 179.99999999999994 0 ;
 	setAttr ".s" -type "double3" 1.1933583183462368 1.1933583183462368 1.1933583183462368 ;
+createNode transform -n "LEFT_WALL" -p "PROPS";
+	rename -uid "AF009097-D041-FF7D-363D-14BF862A6162";
+	setAttr ".rp" -type "double3" -4.4233255167771333 8.0871757919339906 -53.515120400327291 ;
+	setAttr ".sp" -type "double3" -4.4233255167771333 8.0871757919339906 -53.515120400327291 ;
+createNode transform -n "hallway_table" -p "LEFT_WALL";
+	rename -uid "2549D720-BF43-EFA1-8812-869AADFA762E";
+	setAttr ".rp" -type "double3" 0.18316458537726588 8.156381640234839 -53.347457638176053 ;
+	setAttr ".sp" -type "double3" 0.18316458537726588 8.156381640234839 -53.347457638176053 ;
+createNode transform -n "bamboo1" -p "hallway_table";
+	rename -uid "E1582906-F044-158A-A5AD-098C33C81293";
+	setAttr ".t" -type "double3" -5.9232607496844203 11.774076440084853 -54.528673817674395 ;
+	setAttr ".r" -type "double3" 0 102.6772446933515 0 ;
+	setAttr ".s" -type "double3" 0.66016566801580734 0.66016566801580734 0.66016566801580734 ;
+	setAttr ".rp" -type "double3" 0.22734072647408782 0.84295841694251683 0.085541494432647164 ;
+	setAttr ".rpt" -type "double3" -0.19377649274244907 0 -0.32611288798878996 ;
+	setAttr ".sp" -type "double3" 0.344369205319905 1.2768892079409566 0.12957579979848166 ;
+	setAttr ".spt" -type "double3" -0.1170284788458172 -0.43393079099843973 -0.044034305365834504 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "1FD2AE5B-D544-CBCD-9855-46AC0FE37489";
-	setAttr -s 62 ".lnk";
-	setAttr -s 62 ".slnk";
+	rename -uid "E77E2678-3A48-BE34-6D64-E1B94C6AC5F0";
+	setAttr -s 224 ".lnk";
+	setAttr -s 224 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "6014C4E9-B849-B333-0134-9A8E63D5BA8F";
+	rename -uid "CDEAAD0E-D54D-1F34-E5E4-B184D391079A";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "2DEB5D6F-3748-890E-8F8B-478AD3BE476D";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "A5E68E3F-7F4F-09C5-C9A7-48A1CB3326C5";
+	rename -uid "B3749DC7-2D44-B1B3-6B81-C5A36CAD57E8";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "BD85EAD8-4C42-96CE-CB38-618E2B34463A";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "90FE263A-5046-2EB4-6CF8-95B40EE44EA2";
+	rename -uid "2E423833-134F-5F0C-438E-FFB16B423E24";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "AF417054-AA4F-741F-DA2E-0AA92B933CDB";
+	rename -uid "1F382D01-204C-63E1-C5A3-68B0D50550A9";
 createNode rmanGlobals -s -n "rmanGlobals";
 	rename -uid "E4AC02F0-C840-DF51-F57B-1BA6C3E3FC36";
 	setAttr ".cch" no;
@@ -32795,8 +32820,10 @@ createNode reference -n "house_INTERIORRN";
 		"house_INTERIORRN"
 		"house_INTERIORRN" 0
 		"house_INTERIOR:door_v01_latestRN" 0
-		"house_INTERIORRN" 1
-		2 "|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:roof" "visibility" " 0";
+		"house_INTERIORRN" 2
+		0 "|house_INTERIOR:HOUSE_INTERIOR" "|LIVING_ROOM_SET" "-s -r "
+		2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:roof" "visibility" 
+		" 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode OmnidirectionalStereo -s -n "OmnidirectionalStereo";
@@ -32921,10 +32948,11 @@ createNode reference -n "bookshelf_v01_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bookshelf_v01_latestRN"
 		"bookshelf_v01_latestRN" 0
-		"bookshelf_v01_latestRN" 2
-		2 "|bookshelf_v01_latest:bookshelf" "translate" " -type \"double3\" -19.7671825528084284 -0.68827648807398045 5.56521570529348431"
+		"bookshelf_v01_latestRN" 3
+		0 "|bookshelf_v01_latest:bookshelf" "|LIVING_ROOM_SET|PROPS" "-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|bookshelf_v01_latest:bookshelf" "translate" " -type \"double3\" -19.28545901794583983 -0.5305327881998626 5.56521570529348431"
 		
-		2 "|bookshelf_v01_latest:bookshelf" "scale" " -type \"double3\" 3.00972450133074831 3.01 3.00972450133074831";
+		2 "|LIVING_ROOM_SET|PROPS|bookshelf_v01_latest:bookshelf" "scale" " -type \"double3\" 3.00972450133074831 3.01 3.00972450133074831";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "coffee_table_latestRN";
@@ -32932,12 +32960,16 @@ createNode reference -n "coffee_table_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"coffee_table_latestRN"
 		"coffee_table_latestRN" 0
-		"coffee_table_latestRN" 3
-		2 "|coffee_table_latest:coffee_table_CTRL" "translate" " -type \"double3\" -0.84694939352527854 0.53648068733750831 -7.89476933385443136"
+		"coffee_table_latestRN" 4
+		0 "|coffee_table_latest:coffee_table_CTRL" "|LIVING_ROOM_SET|PROPS|FRONT_WALL" 
+		"-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|coffee_table_latest:coffee_table_CTRL" 
+		"translate" " -type \"double3\" -0.84694939352527854 0.53648068733750831 -7.89476933385443225"
 		
-		2 "|coffee_table_latest:coffee_table_CTRL" "rotate" " -type \"double3\" 0 89.99999999999997158 0"
-		
-		2 "|coffee_table_latest:coffee_table_CTRL" "scale" " -type \"double3\" 0.89178601275270986 0.80012500597047531 0.80012500597047531";
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|coffee_table_latest:coffee_table_CTRL" 
+		"rotate" " -type \"double3\" 0 89.99999999999997158 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|coffee_table_latest:coffee_table_CTRL" 
+		"scale" " -type \"double3\" 0.89178601275270997 0.80012500597047531 0.80012500597047531";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "console_tableRN";
@@ -32945,12 +32977,28 @@ createNode reference -n "console_tableRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"console_tableRN"
 		"console_tableRN" 0
-		"console_tableRN" 3
-		2 "|console_table:console_table" "translate" " -type \"double3\" 0.10065816714911602 2.4064590221708233 -53.63470402552638916"
+		"console_tableRN" 8
+		0 "|console_table:console_table" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table" 
+		"-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table" 
+		"translate" " -type \"double3\" 0.68953768860678721 0.62970548948839145 -53.36787533984173137"
 		
-		2 "|console_table:console_table" "rotate" " -type \"double3\" 0 -89.99999999999990052 0"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table" 
+		"rotate" " -type \"double3\" 0 -89.99999999999990052 0"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table" 
+		"scale" " -type \"double3\" 1.34138126469932328 1.34138126469932328 1.34138126469932328"
 		
-		2 "|console_table:console_table" "scale" " -type \"double3\" 1.34138126469932328 1.34138126469932328 1.34138126469932328";
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table" 
+		"rotatePivot" " -type \"double3\" 0.11067256362868637 6.98135529736138682 0.506373103229522"
+		
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table" 
+		"rotatePivotTranslate" " -type \"double3\" -0.61704566685820816 0 -0.39570053960083473"
+		
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table" 
+		"scalePivot" " -type \"double3\" 0.082506418228149414 5.20460176467895508 0.37750124931335449"
+		
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table" 
+		"scalePivotTranslate" " -type \"double3\" 0.028166145400536954 1.77675353268243175 0.12887185391616754";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "sofa_latestRN";
@@ -32958,56 +33006,57 @@ createNode reference -n "sofa_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"sofa_latestRN"
 		"sofa_latestRN" 0
-		"sofa_latestRN" 25
-		2 "|sofa_latest:sofa_CTRL" "translate" " -type \"double3\" 10.78644947790843744 0.41937835068774065 -8.38558172535910273"
+		"sofa_latestRN" 26
+		0 "|sofa_latest:sofa_CTRL" "|LIVING_ROOM_SET|PROPS|FRONT_WALL" "-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL" "translate" " -type \"double3\" 10.78644947790843744 0.4193783506877406 -8.38558172535910273"
 		
-		2 "|sofa_latest:sofa_CTRL" "rotate" " -type \"double3\" 0 -89.99999999999997158 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL" "rotate" " -type \"double3\" 0 -89.99999999999997158 0"
 		
-		2 "|sofa_latest:sofa_CTRL" "scale" " -type \"double3\" 1.9510087236170377 1.9510087236170377 1.9510087236170377"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL" "scale" " -type \"double3\" 1.95100872361703792 1.95100872361703792 1.95100872361703792"
 		
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:base|sofa_latest:baseShape" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:base|sofa_latest:baseShape" 
 		"dispResolution" " 3"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:base|sofa_latest:baseShape" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:base|sofa_latest:baseShape" 
 		"displaySmoothMesh" " 2"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:mainbody|sofa_latest:outputCloth3" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:mainbody|sofa_latest:outputCloth3" 
 		"dispResolution" " 3"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:mainbody|sofa_latest:outputCloth3" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:mainbody|sofa_latest:outputCloth3" 
 		"displaySmoothMesh" " 2"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_rightfront|sofa_latest:leg_rightfrontShape" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_rightfront|sofa_latest:leg_rightfrontShape" 
 		"dispResolution" " 3"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_rightfront|sofa_latest:leg_rightfrontShape" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_rightfront|sofa_latest:leg_rightfrontShape" 
 		"displaySmoothMesh" " 2"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_rightback|sofa_latest:leg_rightbackShape" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_rightback|sofa_latest:leg_rightbackShape" 
 		"dispResolution" " 3"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_rightback|sofa_latest:leg_rightbackShape" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_rightback|sofa_latest:leg_rightbackShape" 
 		"displaySmoothMesh" " 2"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_leftfront|sofa_latest:leg_leftfrontShape" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_leftfront|sofa_latest:leg_leftfrontShape" 
 		"dispResolution" " 3"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_leftfront|sofa_latest:leg_leftfrontShape" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_leftfront|sofa_latest:leg_leftfrontShape" 
 		"displaySmoothMesh" " 2"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_leftback|sofa_latest:leg_leftbackShape" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_leftback|sofa_latest:leg_leftbackShape" 
 		"dispResolution" " 3"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_leftback|sofa_latest:leg_leftbackShape" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_leftback|sofa_latest:leg_leftbackShape" 
 		"displaySmoothMesh" " 2"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:armrests|sofa_latest:armrest_right|sofa_latest:outputCloth2" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:armrests|sofa_latest:armrest_right|sofa_latest:outputCloth2" 
 		"dispResolution" " 3"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:armrests|sofa_latest:armrest_right|sofa_latest:outputCloth2" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:armrests|sofa_latest:armrest_right|sofa_latest:outputCloth2" 
 		"displaySmoothMesh" " 2"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:armrests|sofa_latest:armrest_left|sofa_latest:outputCloth2" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:armrests|sofa_latest:armrest_left|sofa_latest:outputCloth2" 
 		"dispResolution" " 3"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:armrests|sofa_latest:armrest_left|sofa_latest:outputCloth2" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:armrests|sofa_latest:armrest_left|sofa_latest:outputCloth2" 
 		"displaySmoothMesh" " 2"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_right|sofa_latest:outputCloth1" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_right|sofa_latest:outputCloth1" 
 		"dispResolution" " 3"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_right|sofa_latest:outputCloth1" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_right|sofa_latest:outputCloth1" 
 		"displaySmoothMesh" " 2"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_left|sofa_latest:outputCloth1" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_left|sofa_latest:outputCloth1" 
 		"dispResolution" " 3"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_left|sofa_latest:outputCloth1" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_left|sofa_latest:outputCloth1" 
 		"displaySmoothMesh" " 2"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_mid|sofa_latest:outputCloth1" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_mid|sofa_latest:outputCloth1" 
 		"dispResolution" " 3"
-		2 "|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_mid|sofa_latest:outputCloth1" 
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_mid|sofa_latest:outputCloth1" 
 		"displaySmoothMesh" " 2";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -33021,12 +33070,15 @@ createNode reference -n "side_tableRN";
 		"side_tableRN"
 		"side_tableRN" 0
 		"side_tableRN" 7
-		0 "|side_table:side_table" "|sideTable_and_Lamp" "-s -r "
-		2 "|sideTable_and_Lamp|side_table:side_table" "translate" " -type \"double3\" 11.98399840763709356 1.76468237408722395 7.04783195075507773"
+		0 "|side_table:side_table" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp" 
+		"-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|side_table:side_table" 
+		"translate" " -type \"double3\" 11.98399840763709356 1.76468237408722395 7.04783195075507773"
 		
-		2 "|sideTable_and_Lamp|side_table:side_table" "rotate" " -type \"double3\" 0 89.99999999999998579 0"
-		
-		2 "|sideTable_and_Lamp|side_table:side_table" "scale" " -type \"double3\" 1.08136686026120588 1.36385685425620351 1.08488122478489291"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|side_table:side_table" 
+		"rotate" " -type \"double3\" 0 89.99999999999998579 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|side_table:side_table" 
+		"scale" " -type \"double3\" 1.08136686026120588 1.36385685425620351 1.08488122478489291"
 		
 		5 4 "side_tableRN" "side_table:PxrSurface1SG.dagSetMembers" "side_tableRN.placeHolderList[1]" 
 		""
@@ -33081,10 +33133,13 @@ createNode reference -n "lamp_latestRN";
 		"lamp_latestRN"
 		"lamp_latestRN" 0
 		"lamp_latestRN" 41
-		0 "|lamp_latest:lamp" "|sideTable_and_Lamp" "-s -r "
-		2 "|sideTable_and_Lamp|lamp_latest:lamp" "translate" " -type \"double3\" 12.25933760012418183 11.34914064257556454 7.00119537629517552"
+		0 "|lamp_latest:lamp" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp" 
+		"-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|lamp_latest:lamp" 
+		"translate" " -type \"double3\" 12.25933760012418183 11.34914064257556454 7.00119537629517552"
 		
-		2 "|sideTable_and_Lamp|lamp_latest:lamp" "scale" " -type \"double3\" 0.22003255440260694 0.22003255440260694 0.22003255440260694"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|lamp_latest:lamp" 
+		"scale" " -type \"double3\" 0.22003255440260694 0.22003255440260694 0.22003255440260694"
 		
 		5 4 "lamp_latestRN" "lamp_latest:PxrSurface2SG.dagSetMembers" "lamp_latestRN.placeHolderList[1]" 
 		""
@@ -33169,12 +33224,22 @@ createNode reference -n "shoe_rack_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"shoe_rack_latestRN"
 		"shoe_rack_latestRN" 0
-		"shoe_rack_latestRN" 3
-		2 "|shoe_rack_latest:rack" "translate" " -type \"double3\" -18.35982744102904718 0.41629488640313816 -52.83307207545268369"
+		"shoe_rack_latestRN" 8
+		0 "|shoe_rack_latest:rack" "|LIVING_ROOM_SET|PROPS|LEFT_WALL" "-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|shoe_rack_latest:rack" "translate" " -type \"double3\" -18.0251408824431536 1.52123580762988908 -52.80010156938634935"
 		
-		2 "|shoe_rack_latest:rack" "rotate" " -type \"double3\" 0 89.99999999999997158 0"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|shoe_rack_latest:rack" "rotate" " -type \"double3\" 0 89.99999999999997158 0"
 		
-		2 "|shoe_rack_latest:rack" "scale" " -type \"double3\" 0.80247587715482371 0.80247587715482371 0.60383083161799";
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|shoe_rack_latest:rack" "scale" " -type \"double3\" 0.80247587715482371 0.80247587715482371 0.60383083161799"
+		
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|shoe_rack_latest:rack" "rotatePivot" 
+		" -type \"double3\" 0.004507142418879213 4.48901340349553912 0.0171870565418916"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|shoe_rack_latest:rack" "rotatePivotTranslate" 
+		" -type \"double3\" 0.012679914123012387 0 -0.021694198960770811"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|shoe_rack_latest:rack" "scalePivot" " -type \"double3\" 0.0056165456771850586 5.59395432472229004 0.028463363647460938"
+		
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|shoe_rack_latest:rack" "scalePivotTranslate" 
+		" -type \"double3\" -0.0011094032583058452 -1.10494092122675047 -0.011276307105569336";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bambooRN";
@@ -33183,49 +33248,84 @@ createNode reference -n "bambooRN";
 		"bambooRN"
 		"bambooRN" 0
 		"bambooRN" 39
-		0 "|bamboo:bamboo_pot" "|bamboo1" "-s -r "
-		0 "|bamboo:pCube1" "|bamboo1" "-s -r "
-		0 "|bamboo:bamboo1" "|bamboo1" "-s -r "
-		0 "|bamboo:bamboo2" "|bamboo1" "-s -r "
-		0 "|bamboo:bamboo3" "|bamboo1" "-s -r "
-		0 "|bamboo:leaf3" "|bamboo1" "-s -r "
-		0 "|bamboo:leaf2" "|bamboo1" "-s -r "
-		0 "|bamboo:leaf1" "|bamboo1" "-s -r "
-		0 "|bamboo:leaf" "|bamboo1" "-s -r "
-		0 "|bamboo:leaf4" "|bamboo1" "-s -r "
-		0 "|bamboo:leaf5" "|bamboo1" "-s -r "
-		0 "|bamboo:gold" "|bamboo1" "-s -r "
-		0 "|bamboo:MASH1_ReproMesh1" "|bamboo1" "-s -r "
-		2 "|bamboo1|bamboo:bamboo_pot|bamboo:bamboo_potShape" "dispResolution" " 3"
-		
-		2 "|bamboo1|bamboo:bamboo_pot|bamboo:bamboo_potShape" "displaySmoothMesh" 
-		" 2"
-		2 "|bamboo1|bamboo:pCube1|bamboo:pCubeShape1" "dispResolution" " 3"
-		2 "|bamboo1|bamboo:pCube1|bamboo:pCubeShape1" "displaySmoothMesh" " 2"
-		2 "|bamboo1|bamboo:bamboo1|bamboo:bambooShape1" "dispResolution" " 3"
-		2 "|bamboo1|bamboo:bamboo1|bamboo:bambooShape1" "displaySmoothMesh" " 2"
-		2 "|bamboo1|bamboo:bamboo2|bamboo:bambooShape2" "dispResolution" " 3"
-		2 "|bamboo1|bamboo:bamboo2|bamboo:bambooShape2" "displaySmoothMesh" " 2"
-		2 "|bamboo1|bamboo:bamboo3|bamboo:bambooShape3" "dispResolution" " 3"
-		2 "|bamboo1|bamboo:bamboo3|bamboo:bambooShape3" "displaySmoothMesh" " 2"
-		2 "|bamboo1|bamboo:leaf3|bamboo:leafShape3" "dispResolution" " 3"
-		2 "|bamboo1|bamboo:leaf3|bamboo:leafShape3" "displaySmoothMesh" " 2"
-		2 "|bamboo1|bamboo:leaf2|bamboo:leafShape2" "dispResolution" " 3"
-		2 "|bamboo1|bamboo:leaf2|bamboo:leafShape2" "displaySmoothMesh" " 2"
-		2 "|bamboo1|bamboo:leaf1|bamboo:leafShape1" "dispResolution" " 3"
-		2 "|bamboo1|bamboo:leaf1|bamboo:leafShape1" "displaySmoothMesh" " 2"
-		2 "|bamboo1|bamboo:leaf|bamboo:leafShape" "dispResolution" " 3"
-		2 "|bamboo1|bamboo:leaf|bamboo:leafShape" "displaySmoothMesh" " 2"
-		2 "|bamboo1|bamboo:leaf4|bamboo:leafShape4" "dispResolution" " 3"
-		2 "|bamboo1|bamboo:leaf4|bamboo:leafShape4" "displaySmoothMesh" " 2"
-		2 "|bamboo1|bamboo:leaf5|bamboo:leafShape5" "dispResolution" " 3"
-		2 "|bamboo1|bamboo:leaf5|bamboo:leafShape5" "displaySmoothMesh" " 2"
-		2 "|bamboo1|bamboo:gold|bamboo:goldShape" "dispResolution" " 3"
-		2 "|bamboo1|bamboo:gold|bamboo:goldShape" "displaySmoothMesh" " 2"
-		2 "|bamboo1|bamboo:MASH1_ReproMesh1|bamboo:MASH1_ReproMesh1Shape" "dispResolution" 
-		" 3"
-		2 "|bamboo1|bamboo:MASH1_ReproMesh1|bamboo:MASH1_ReproMesh1Shape" "displaySmoothMesh" 
-		" 2";
+		0 "|bamboo:bamboo_pot" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		0 "|bamboo:pCube1" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		0 "|bamboo:bamboo1" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		0 "|bamboo:bamboo2" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		0 "|bamboo:bamboo3" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		0 "|bamboo:leaf3" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		0 "|bamboo:leaf2" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		0 "|bamboo:leaf1" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		0 "|bamboo:leaf" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		0 "|bamboo:leaf4" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		0 "|bamboo:leaf5" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		0 "|bamboo:gold" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		0 "|bamboo:MASH1_ReproMesh1" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
+		"-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo_pot|bamboo:bamboo_potShape" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo_pot|bamboo:bamboo_potShape" 
+		"displaySmoothMesh" " 2"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:pCube1|bamboo:pCubeShape1" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:pCube1|bamboo:pCubeShape1" 
+		"displaySmoothMesh" " 2"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo1|bamboo:bambooShape1" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo1|bamboo:bambooShape1" 
+		"displaySmoothMesh" " 2"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo2|bamboo:bambooShape2" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo2|bamboo:bambooShape2" 
+		"displaySmoothMesh" " 2"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo3|bamboo:bambooShape3" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo3|bamboo:bambooShape3" 
+		"displaySmoothMesh" " 2"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf3|bamboo:leafShape3" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf3|bamboo:leafShape3" 
+		"displaySmoothMesh" " 2"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf2|bamboo:leafShape2" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf2|bamboo:leafShape2" 
+		"displaySmoothMesh" " 2"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf1|bamboo:leafShape1" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf1|bamboo:leafShape1" 
+		"displaySmoothMesh" " 2"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf|bamboo:leafShape" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf|bamboo:leafShape" 
+		"displaySmoothMesh" " 2"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf4|bamboo:leafShape4" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf4|bamboo:leafShape4" 
+		"displaySmoothMesh" " 2"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf5|bamboo:leafShape5" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf5|bamboo:leafShape5" 
+		"displaySmoothMesh" " 2"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:gold|bamboo:goldShape" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:gold|bamboo:goldShape" 
+		"displaySmoothMesh" " 2"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:MASH1_ReproMesh1|bamboo:MASH1_ReproMesh1Shape" 
+		"dispResolution" " 3"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:MASH1_ReproMesh1|bamboo:MASH1_ReproMesh1Shape" 
+		"displaySmoothMesh" " 2";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "gingkoBiloba_latestRN";
@@ -33233,12 +33333,20 @@ createNode reference -n "gingkoBiloba_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"gingkoBiloba_latestRN"
 		"gingkoBiloba_latestRN" 0
-		"gingkoBiloba_latestRN" 3
-		2 "|gingkoBiloba_latest:gingko_biloba" "translate" " -type \"double3\" 0.19822897625690761 6.90088502865243036 -11.38003979056360038"
+		"gingkoBiloba_latestRN" 6
+		0 "|gingkoBiloba_latest:gingko_biloba" "|LIVING_ROOM_SET|PROPS|FRONT_WALL" 
+		"-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba" "translate" 
+		" -type \"double3\" 0.97508170319324794 6.90088502865243036 -12.15689299433709891"
 		
-		2 "|gingkoBiloba_latest:gingko_biloba" "rotate" " -type \"double3\" 0 -89.99999999999997158 0"
-		
-		2 "|gingkoBiloba_latest:gingko_biloba" "scale" " -type \"double3\" 1 1 1";
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba" "rotate" 
+		" -type \"double3\" 0 -89.99999999999997158 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba" "scale" 
+		" -type \"double3\" 1 1 1"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba" "rotatePivotTranslate" 
+		" -type \"double3\" -0.77685272693634 0 0.77685320377349854"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba" "scalePivot" 
+		" -type \"double3\" 0.77685296535491943 3.25698357820510864 -2.384185791015625e-07";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "guianaChestnutPlant_latestRN";
@@ -33246,12 +33354,28 @@ createNode reference -n "guianaChestnutPlant_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"guianaChestnutPlant_latestRN"
 		"guianaChestnutPlant_latestRN" 0
-		"guianaChestnutPlant_latestRN" 3
-		2 "|guianaChestnutPlant_latest:guiana_chesnut_plant" "translate" " -type \"double3\" 12.64809860921752893 3.94040905136978381 -54.08925992674446093"
+		"guianaChestnutPlant_latestRN" 8
+		0 "|guianaChestnutPlant_latest:guiana_chesnut_plant" "|LIVING_ROOM_SET|PROPS|LEFT_WALL" 
+		"-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant" 
+		"translate" " -type \"double3\" 12.29017650335204692 0.55524951404157274 -54.20184958677163678"
 		
-		2 "|guianaChestnutPlant_latest:guiana_chesnut_plant" "rotate" " -type \"double3\" 0 -15.00000000000000888 0"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant" 
+		"rotate" " -type \"double3\" 0 -15.00000000000001243 0"
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant" 
+		"scale" " -type \"double3\" 1.95873841820074879 1.95873841820074901 1.95873841820074879"
 		
-		2 "|guianaChestnutPlant_latest:guiana_chesnut_plant" "scale" " -type \"double3\" 1.95873841820074901 1.95873841820074901 1.95873841820074901";
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant" 
+		"rotatePivot" " -type \"double3\" 0.71414634245085584 6.91600744439455806 0.5195994333808811"
+		
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant" 
+		"rotatePivotTranslate" " -type \"double3\" -0.15881617571114759 0 0.1671297530634665"
+		
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant" 
+		"scalePivot" " -type \"double3\" 0.36459505558013916 3.53084790706634521 0.26527249813079834"
+		
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant" 
+		"scalePivotTranslate" " -type \"double3\" 0.34955128687071674 3.38515953732821284 0.25432693525008271";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "grannyCranny_SET_latestRN";
@@ -33259,8 +33383,8 @@ createNode reference -n "grannyCranny_SET_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"grannyCranny_SET_latestRN"
 		"grannyCranny_SET_latest:string_of_pearls_latestRN" 0
-		"grannyCranny_SET_latest:tableRN" 0
 		"grannyCranny_SET_latest:chairRN2" 0
+		"grannyCranny_SET_latest:tableRN" 0
 		"grannyCranny_SET_latest:chairRN" 0
 		"grannyCranny_SET_latest:edamame_latestRN" 0
 		"grannyCranny_SET_latest:house_INTERIOR:door_v01_latestRN" 0
@@ -33268,8 +33392,11 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		"grannyCranny_SET_latestRN" 0
 		"grannyCranny_SET_latest:house_INTERIORRN" 0
 		"grannyCranny_SET_latest:talllwhiteLantern_latestRN" 0
+		"grannyCranny_SET_latestRN" 1
+		0 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET" "|LIVING_ROOM_SET" "-s -r "
+		
 		"grannyCranny_SET_latest:house_INTERIORRN" 1
-		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:house_INTERIOR:HOUSE_INTERIOR" 
+		2 "|LIVING_ROOM_SET|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:house_INTERIOR:HOUSE_INTERIOR" 
 		"visibility" " 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -33291,12 +33418,23 @@ createNode reference -n "orchid_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"orchid_latestRN"
 		"orchid_latestRN" 0
-		"orchid_latestRN" 3
-		2 "|orchid_latest:orchid" "translate" " -type \"double3\" 10.87138481836084125 7.85074977607019164 -24.48155069783414106"
+		"orchid_latestRN" 8
+		0 "|orchid_latest:orchid" "|LIVING_ROOM_SET|PROPS|FRONT_WALL" "-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid" "translate" " -type \"double3\" 10.92252328799582628 8.24431940885307313 -24.36334351538821252"
 		
-		2 "|orchid_latest:orchid" "rotate" " -type \"double3\" 0 -89.99999999999997158 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid" "rotate" " -type \"double3\" 0 -89.99999999999997158 0"
 		
-		2 "|orchid_latest:orchid" "scale" " -type \"double3\" 0.87594360596994381 0.87594360596994381 0.87594360596994381";
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid" "scale" " -type \"double3\" 0.87594360596994392 0.87594360596994392 0.87594360596994392"
+		
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid" "rotatePivot" 
+		" -type \"double3\" -0.025974001446174112 2.77893619297509975 0.080791065155004657"
+		
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid" "rotatePivotTranslate" 
+		" -type \"double3\" -0.054817063708830563 0 -0.10676506660117874"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid" "scalePivot" " -type \"double3\" -0.029652595520019531 3.17250582575798035 0.092233180999755859"
+		
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid" "scalePivotTranslate" 
+		" -type \"double3\" 0.0036785940738454188 -0.39356963278288082 -0.011442115844751201";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "fish4RN";
@@ -33304,73 +33442,117 @@ createNode reference -n "fish4RN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"fish4RN"
 		"fish4RN" 0
-		"fish4RN" 56
-		0 "|fish4:pasted__pCube1" "|FISH" "-s -r "
-		0 "|fish4:group" "|FISH" "-s -r "
-		0 "|fish4:group1" "|FISH" "-s -r "
-		0 "|fish4:pCylinder1" "|FISH" "-s -r "
-		0 "|fish4:pCylinder2" "|FISH" "-s -r "
-		0 "|fish4:pPipe1" "|FISH" "-s -r "
-		0 "|fish4:group2" "|FISH" "-s -r "
-		0 "|fish4:MASH1_ReproMesh" "|FISH" "-s -r "
-		0 "|fish4:MASH2_ReproMesh" "|FISH" "-s -r "
-		0 "|fish4:MASH3_ReproMesh" "|FISH" "-s -r "
-		0 "|fish4:pCube1" "|FISH" "-s -r "
-		0 "|fish4:MASH4_ReproMesh" "|FISH" "-s -r "
-		2 "|FISH|fish4:MASH1_ReproMesh" "translate" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH1_ReproMesh" "rotate" " -type \"double3\" 0 -59.17312415716700258 0"
+		"fish4RN" 59
+		0 "|fish4:pasted__pCube1" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish" "-s -r "
 		
-		2 "|FISH|fish4:MASH1_ReproMesh" "rotateOrder" " 0"
-		2 "|FISH|fish4:MASH1_ReproMesh" "scale" " -type \"double3\" 1 1 1"
-		2 "|FISH|fish4:MASH1_ReproMesh" "shear" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH1_ReproMesh" "rotatePivot" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH1_ReproMesh" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		0 "|fish4:group" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish" "-s -r "
+		0 "|fish4:group1" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish" "-s -r "
+		0 "|fish4:pCylinder1" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish" "-s -r "
+		0 "|fish4:pCylinder2" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish" "-s -r "
+		0 "|fish4:pPipe1" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish" "-s -r "
+		0 "|fish4:group2" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish" "-s -r "
+		0 "|fish4:MASH1_ReproMesh" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish" "-s -r "
 		
-		2 "|FISH|fish4:MASH1_ReproMesh" "scalePivot" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH1_ReproMesh" "scalePivotTranslate" " -type \"double3\" 0 0 0"
+		0 "|fish4:MASH2_ReproMesh" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish" "-s -r "
 		
-		2 "|FISH|fish4:MASH1_ReproMesh" "rotateAxis" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH1_ReproMesh" "inheritsTransform" " 0"
-		2 "|FISH|fish4:MASH2_ReproMesh" "translate" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH2_ReproMesh" "rotate" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH2_ReproMesh" "rotateOrder" " 0"
-		2 "|FISH|fish4:MASH2_ReproMesh" "scale" " -type \"double3\" 1 1 1"
-		2 "|FISH|fish4:MASH2_ReproMesh" "shear" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH2_ReproMesh" "rotatePivot" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH2_ReproMesh" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		0 "|fish4:MASH3_ReproMesh" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish" "-s -r "
 		
-		2 "|FISH|fish4:MASH2_ReproMesh" "scalePivot" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH2_ReproMesh" "scalePivotTranslate" " -type \"double3\" 0 0 0"
+		0 "|fish4:pCube1" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish" "-s -r "
+		0 "|fish4:MASH4_ReproMesh" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish" "-s -r "
 		
-		2 "|FISH|fish4:MASH2_ReproMesh" "rotateAxis" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH2_ReproMesh" "inheritsTransform" " 0"
-		2 "|FISH|fish4:MASH3_ReproMesh" "translate" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH3_ReproMesh" "rotate" " -type \"double3\" 0 0 19.96888870793269533"
+		0 "|fish4:imagePlane1" "|LIVING_ROOM_SET|PROPS|FRONT_WALL" "-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish4:imagePlane1" "translate" " -type \"double3\" 0 0 0.14339785601008437"
 		
-		2 "|FISH|fish4:MASH3_ReproMesh" "rotateOrder" " 0"
-		2 "|FISH|fish4:MASH3_ReproMesh" "scale" " -type \"double3\" 1 1 1"
-		2 "|FISH|fish4:MASH3_ReproMesh" "shear" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH3_ReproMesh" "rotatePivot" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH3_ReproMesh" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish4:imagePlane1" "scale" " -type \"double3\" 1.00000000000000022 1 1.00000000000000022"
 		
-		2 "|FISH|fish4:MASH3_ReproMesh" "scalePivot" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH3_ReproMesh" "scalePivotTranslate" " -type \"double3\" 0 0 0"
-		
-		2 "|FISH|fish4:MASH3_ReproMesh" "rotateAxis" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH3_ReproMesh" "inheritsTransform" " 0"
-		2 "|FISH|fish4:MASH4_ReproMesh" "translate" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH4_ReproMesh" "rotate" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH4_ReproMesh" "rotateOrder" " 0"
-		2 "|FISH|fish4:MASH4_ReproMesh" "scale" " -type \"double3\" 1 1 1"
-		2 "|FISH|fish4:MASH4_ReproMesh" "shear" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH4_ReproMesh" "rotatePivot" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH4_ReproMesh" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		
-		2 "|FISH|fish4:MASH4_ReproMesh" "scalePivot" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH4_ReproMesh" "scalePivotTranslate" " -type \"double3\" 0 0 0"
-		
-		2 "|FISH|fish4:MASH4_ReproMesh" "rotateAxis" " -type \"double3\" 0 0 0"
-		2 "|FISH|fish4:MASH4_ReproMesh" "inheritsTransform" " 0";
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH1_ReproMesh" "translate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH1_ReproMesh" "rotate" 
+		" -type \"double3\" 0 -59.17312415716700258 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH1_ReproMesh" "rotateOrder" 
+		" 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH1_ReproMesh" "scale" 
+		" -type \"double3\" 1 1 1"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH1_ReproMesh" "shear" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH1_ReproMesh" "rotatePivot" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH1_ReproMesh" "rotatePivotTranslate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH1_ReproMesh" "scalePivot" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH1_ReproMesh" "scalePivotTranslate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH1_ReproMesh" "rotateAxis" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH1_ReproMesh" "inheritsTransform" 
+		" 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH2_ReproMesh" "translate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH2_ReproMesh" "rotate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH2_ReproMesh" "rotateOrder" 
+		" 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH2_ReproMesh" "scale" 
+		" -type \"double3\" 1 1 1"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH2_ReproMesh" "shear" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH2_ReproMesh" "rotatePivot" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH2_ReproMesh" "rotatePivotTranslate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH2_ReproMesh" "scalePivot" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH2_ReproMesh" "scalePivotTranslate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH2_ReproMesh" "rotateAxis" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH2_ReproMesh" "inheritsTransform" 
+		" 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH3_ReproMesh" "translate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH3_ReproMesh" "rotate" 
+		" -type \"double3\" 0 0 19.96888870793269533"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH3_ReproMesh" "rotateOrder" 
+		" 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH3_ReproMesh" "scale" 
+		" -type \"double3\" 1 1 1"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH3_ReproMesh" "shear" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH3_ReproMesh" "rotatePivot" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH3_ReproMesh" "rotatePivotTranslate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH3_ReproMesh" "scalePivot" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH3_ReproMesh" "scalePivotTranslate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH3_ReproMesh" "rotateAxis" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH3_ReproMesh" "inheritsTransform" 
+		" 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH4_ReproMesh" "translate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH4_ReproMesh" "rotate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH4_ReproMesh" "rotateOrder" 
+		" 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH4_ReproMesh" "scale" 
+		" -type \"double3\" 1 1 1"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH4_ReproMesh" "shear" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH4_ReproMesh" "rotatePivot" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH4_ReproMesh" "rotatePivotTranslate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH4_ReproMesh" "scalePivot" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH4_ReproMesh" "scalePivotTranslate" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH4_ReproMesh" "rotateAxis" 
+		" -type \"double3\" 0 0 0"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|fish|fish4:MASH4_ReproMesh" "inheritsTransform" 
+		" 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "meat_stirFry_latestRN";
@@ -33379,10 +33561,21 @@ createNode reference -n "meat_stirFry_latestRN";
 		"meat_stirFry_latestRN"
 		"meat_stirFry_latestRN" 0
 		"meat_stirFry_latest:bowl_smallwhite_pattern1_latestRN" 0
-		"meat_stirFry_latestRN" 2
-		2 "|meat_stirFry_latest:meat_stir_fry" "translate" " -type \"double3\" 0.46735292056988598 7.04683289648521605 -8.74138708936603059"
+		"meat_stirFry_latestRN" 6
+		0 "|meat_stirFry_latest:meat_stir_fry" "|LIVING_ROOM_SET|PROPS|FRONT_WALL" 
+		"-s -r "
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|meat_stirFry_latest:meat_stir_fry" "translate" 
+		" -type \"double3\" 0.45160864544602219 6.94772102775716327 -8.7393174556184352"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|meat_stirFry_latest:meat_stir_fry" "scale" 
+		" -type \"double3\" 1.31190381697110103 1.31190381697110103 1.31190381697110103"
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|meat_stirFry_latest:meat_stir_fry" "rotatePivot" 
+		" -type \"double3\" 0.066222256691246401 0.41687607466348836 -0.0087051208272163772"
 		
-		2 "|meat_stirFry_latest:meat_stir_fry" "scale" " -type \"double3\" 1.31190381697110103 1.31190381697110103 1.31190381697110103";
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|meat_stirFry_latest:meat_stir_fry" "scalePivot" 
+		" -type \"double3\" 0.050477981567382812 0.31776420593543514 -0.0066354870796203613"
+		
+		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|meat_stirFry_latest:meat_stir_fry" "scalePivotTranslate" 
+		" -type \"double3\" 0.015744275123863585 0.099111868728053221 -0.0020696337475960155";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 select -ne :time1;
@@ -33405,7 +33598,7 @@ select -ne :renderPartition;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 62 ".st";
+	setAttr -s 224 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -33418,7 +33611,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 62 ".s";
+	setAttr -s 200 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -33426,18 +33619,18 @@ select -ne :postProcessList1;
 	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 26 ".u";
+	setAttr -s 178 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 77 ".r";
+	setAttr -s 93 ".r";
 select -ne :lightList1;
 select -ne :defaultTextureList1;
-	setAttr -s 58 ".tx";
+	setAttr -s 317 ".tx";
 select -ne :initialShadingGroup;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 169 ".dsm";
+	setAttr -s 113 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -33446,7 +33639,7 @@ select -ne :initialShadingGroup;
 	setAttr -cb on ".fo";
 	setAttr -cb on ".epo";
 	setAttr -k on ".ro" yes;
-	setAttr -s 73 ".gn";
+	setAttr -s 72 ".gn";
 select -ne :initialParticleSE;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -33627,35 +33820,35 @@ connectAttr "vertical_shade_bar9Shape.iog" "lamp_latestRN.phl[14]";
 connectAttr "vertical_shade_bar10Shape.iog" "lamp_latestRN.phl[15]";
 connectAttr "footShape.iog" "lamp_latestRN.phl[16]";
 connectAttr "vase_capShape.iog" "lamp_latestRN.phl[17]";
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[18]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[18]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[19]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[19]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[20]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[20]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[21]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[21]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[22]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[22]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[23]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[23]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[24]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[24]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[25]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[25]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[26]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[26]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[27]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[27]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[28]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[28]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[29]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[29]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[30]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[30]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[31]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[31]"
 		;
-connectAttr "|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[32]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[32]"
 		;
 connectAttr "top_ringShape.iog" "lamp_latestRN.phl[33]";
 connectAttr "bottom_ringShape.iog" "lamp_latestRN.phl[34]";
