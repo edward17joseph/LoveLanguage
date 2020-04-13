@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: house_INTERIOR.ma
-//Last modified: Sat, Apr 11, 2020 06:51:51 PM
+//Last modified: Sat, Apr 11, 2020 06:52:27 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "door_v01_latest" -rfn "door_v01_latestRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/door_v01_latest.ma";
@@ -27,12 +27,12 @@ fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Mac OS X 10.14.6";
 fileInfo "license" "student";
-fileInfo "UUID" "3FB91FE9-724F-285D-7B76-5288D22B8ABF";
+fileInfo "UUID" "CFBB6211-1749-5A7B-9FDB-189D4F78A2E2";
 createNode transform -s -n "persp";
 	rename -uid "F71A8480-DF46-B8A6-3706-A2B6B32EAA2B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -108.08475916738793 158.09981841292958 -83.813312852127765 ;
-	setAttr ".r" -type "double3" -23.138352729596726 270.19999999999555 0 ;
+	setAttr ".t" -type "double3" 150.62541331997005 185.94720283825922 -123.2550696975355 ;
+	setAttr ".r" -type "double3" -35.138352729594359 108.19999999999541 0 ;
 	setAttr ".rp" -type "double3" 0 1.7763568394002505e-15 -1.0658141036401503e-14 ;
 	setAttr ".rpt" -type "double3" -6.1520574204249748e-15 -8.5580777429088765e-15 1.6395027391857552e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
