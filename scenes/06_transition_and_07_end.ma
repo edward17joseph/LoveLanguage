@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: 06_transition_and_07_end.ma
-//Last modified: Tue, Apr 14, 2020 04:19:36 PM
+//Last modified: Tue, Apr 14, 2020 05:01:26 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "house_INTERIOR" -dr 1 -rfn "house_INTERIORRN" -op "v=0;" -typ
 		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/house_INTERIOR.ma";
@@ -150,14 +150,14 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "37815538-8644-BCD7-AD49-938A2ADB8C19";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -51.385064153186114 128.97136533572657 15.696933509696066 ;
-	setAttr ".r" -type "double3" 4977.8616472716749 -783.00000000003604 1.4011547304589537e-14 ;
+	setAttr ".t" -type "double3" -30.897417855104322 112.42930139751262 -279.96800119276509 ;
+	setAttr ".r" -type "double3" 5018.0616472716674 -850.59999999998263 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3A622C15-C24B-A8CD-2858-14AC596DF0A6";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 150.44671545673643;
+	setAttr ".coi" 199.59195540039497;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -272,9 +272,9 @@ createNode camera -n "making_food_camShape" -p "making_food_cam";
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "FCCB9AA2-264B-E5B0-9A57-7FA1C4B945A9";
-	setAttr -s 591 ".lnk";
+	setAttr -s 659 ".lnk";
 	setAttr -s 64 ".ign";
-	setAttr -s 591 ".slnk";
+	setAttr -s 659 ".slnk";
 createNode displayLayerManager -n "layerManager";
 	rename -uid "E8A7EF85-B542-18BE-D1AE-1D8E7AFFC7C1";
 	setAttr -s 4 ".dli[1:3]"  1 2 3;
@@ -11086,9 +11086,14 @@ createNode reference -n "grandma_controlrigRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"grandma_controlrigRN"
 		"grandma_controlrigRN" 0
-		"grandma_controlrigRN" 7
+		"grandma_controlrigRN" 15
+		2 "|grandma_controlrig1:gma_ControlRig" "visibility" " 1"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_GEO|grandma_controlrig1:eyes|grandma_controlrig1:eye_L|grandma_controlrig1:eye_LShape" 
 		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_GEO|grandma_controlrig1:necklace" 
+		"translate" " -type \"double3\" 0 0.97813353465416397 0.140119224458645"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_GEO|grandma_controlrig1:necklace" 
+		"rotate" " -type \"double3\" -57.44321182804862502 0 180"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_JOINT|grandma_controlrig1:ROOT" 
 		"visibility" " 1"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_JOINT|grandma_controlrig1:IK_ROOT" 
@@ -11101,7 +11106,17 @@ createNode reference -n "grandma_controlrigRN";
 		"translate" " -type \"double3\" 0.67652188689581094 -14.61547060633593631 -13.6294382813370234"
 		
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ArmPole_Grp|grandma_controlrig1:ArmL_Pole" 
-		"translate" " -type \"double3\" 44.02445413386164574 0 11.63130495528124797";
+		"translate" " -type \"double3\" 44.02445413386164574 0 11.63130495528124797"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl|grandma_controlrig1:heelL_Ctrl" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:wdvvvvvvvvvvv|grandma_controlrig1:FootR_Ctrl|grandma_controlrig1:heelR_Grp|grandma_controlrig1:heelR_Ctrl" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:wdvvvvvvvvvvv|grandma_controlrig1:FootR_Ctrl|grandma_controlrig1:heelR_Grp|grandma_controlrig1:heelR_Ctrl" 
+		"rotate" " -type \"double3\" 0 0 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "sharedReferenceNode";
@@ -11115,7 +11130,8 @@ createNode reference -n "MC_control_rigRN";
 		"MC_control_rigRN" 1
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_Grp" 
 		"translate" " -type \"double3\" 0 0 0"
-		"MC_control_rigRN" 4
+		"MC_control_rigRN" 5
+		2 "|MC_control_rig:May_ControlRig" "visibility" " 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl" 
 		"translate" " -type \"double3\" 111.66053999878246827 8.39420513262343526 -177.42282474846652462"
 		
@@ -11240,7 +11256,7 @@ createNode reference -n "eggroll_platterRN";
 		"eggroll_platter:eggrollRN6" 0
 		"eggroll_platter:eggrollRN" 0
 		"eggroll_platterRN" 11
-		2 "|eggroll_platter:eggroll_platter" "visibility" " -av 1"
+		2 "|eggroll_platter:eggroll_platter" "visibility" " -av 0"
 		5 4 "eggroll_platterRN" "|eggroll_platter:eggroll_platter.visibility" 
 		"eggroll_platterRN.placeHolderList[1]" ""
 		5 4 "eggroll_platterRN" "|eggroll_platter:eggroll_platter.translateX" 
@@ -11280,7 +11296,7 @@ createNode reference -n "cutting_boardRN";
 		"cutting_boardRN"
 		"cutting_boardRN" 0
 		"cutting_boardRN" 11
-		2 "|cutting_board:cuttingBoard" "visibility" " -av 1"
+		2 "|cutting_board:cuttingBoard" "visibility" " -av 0"
 		5 4 "cutting_boardRN" "|cutting_board:cuttingBoard.visibility" "cutting_boardRN.placeHolderList[1]" 
 		""
 		5 4 "cutting_boardRN" "|cutting_board:cuttingBoard.translateX" "cutting_boardRN.placeHolderList[2]" 
@@ -11320,8 +11336,8 @@ createNode reference -n "soy_sauce_latestRN";
 		"soy_sauce_latestRN"
 		"soy_sauce_latestRN" 0
 		"soy_sauce_latestRN" 14
-		2 "|soy_sauce_latest:soy_sauce" "visibility" " -av 1"
-		2 "|soy_sauce_latest:soy_sauce" "translate" " -type \"double3\" 101.75343126905011104 32.4985349505198613 -166.18035233800000583"
+		2 "|soy_sauce_latest:soy_sauce" "visibility" " -av 0"
+		2 "|soy_sauce_latest:soy_sauce" "translate" " -type \"double3\" 101.75343126905011104 32.4985349505198613 -164.49502233435330822"
 		
 		2 "|soy_sauce_latest:soy_sauce" "translateX" " -av"
 		2 "|soy_sauce_latest:soy_sauce" "translateZ" " -av"
@@ -11364,7 +11380,7 @@ createNode reference -n "cutting_boardRN1";
 		"cutting_boardRN1"
 		"cutting_boardRN1" 0
 		"cutting_boardRN1" 11
-		2 "|cutting_board1:cuttingBoard" "visibility" " -av 1"
+		2 "|cutting_board1:cuttingBoard" "visibility" " -av 0"
 		5 4 "cutting_boardRN1" "|cutting_board1:cuttingBoard.visibility" "cutting_boardRN1.placeHolderList[1]" 
 		""
 		5 4 "cutting_boardRN1" "|cutting_board1:cuttingBoard.scaleX" "cutting_boardRN1.placeHolderList[2]" 
@@ -11404,7 +11420,7 @@ createNode reference -n "fork_latestRN";
 		"fork_latestRN"
 		"fork_latestRN" 0
 		"fork_latestRN" 11
-		2 "|fork_latest:fork" "visibility" " -av 1"
+		2 "|fork_latest:fork" "visibility" " -av 0"
 		5 4 "fork_latestRN" "|fork_latest:fork.visibility" "fork_latestRN.placeHolderList[1]" 
 		""
 		5 4 "fork_latestRN" "|fork_latest:fork.translateY" "fork_latestRN.placeHolderList[2]" 
@@ -11444,7 +11460,7 @@ createNode reference -n "butter_knife_latestRN";
 		"butter_knife_latestRN"
 		"butter_knife_latestRN" 0
 		"butter_knife_latestRN" 11
-		2 "|butter_knife_latest:knife" "visibility" " -av 1"
+		2 "|butter_knife_latest:knife" "visibility" " -av 0"
 		5 4 "butter_knife_latestRN" "|butter_knife_latest:knife.visibility" 
 		"butter_knife_latestRN.placeHolderList[1]" ""
 		5 4 "butter_knife_latestRN" "|butter_knife_latest:knife.translateX" 
@@ -11484,7 +11500,7 @@ createNode reference -n "pot_small_latestRN";
 		"pot_small_latestRN"
 		"pot_small_latestRN" 0
 		"pot_small_latestRN" 11
-		2 "|pot_small_latest:pot_small_CTRL" "visibility" " -av 1"
+		2 "|pot_small_latest:pot_small_CTRL" "visibility" " -av 0"
 		5 4 "pot_small_latestRN" "|pot_small_latest:pot_small_CTRL.visibility" 
 		"pot_small_latestRN.placeHolderList[1]" ""
 		5 4 "pot_small_latestRN" "|pot_small_latest:pot_small_CTRL.translateX" 
@@ -11524,7 +11540,7 @@ createNode reference -n "butter_knife_latestRN1";
 		"butter_knife_latestRN1"
 		"butter_knife_latestRN1" 0
 		"butter_knife_latestRN1" 11
-		2 "|butter_knife_latest1:knife" "visibility" " -av 1"
+		2 "|butter_knife_latest1:knife" "visibility" " -av 0"
 		5 4 "butter_knife_latestRN1" "|butter_knife_latest1:knife.visibility" 
 		"butter_knife_latestRN1.placeHolderList[1]" ""
 		5 4 "butter_knife_latestRN1" "|butter_knife_latest1:knife.translateX" 
@@ -12114,6 +12130,27 @@ createNode animCurveTA -n "bean_bowl_rotateZ";
 	setAttr -s 3 ".ktv[0:2]"  1 0 24 0 25 0;
 createNode reference -n "grannyCranny_SET_latestRN";
 	rename -uid "D78A0F4C-AC4F-AF0C-E00F-FB96BEBAFE42";
+	setAttr -s 20 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
+	setAttr ".phl[7]" 0;
+	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
+	setAttr ".phl[11]" 0;
+	setAttr ".phl[12]" 0;
+	setAttr ".phl[13]" 0;
+	setAttr ".phl[14]" 0;
+	setAttr ".phl[15]" 0;
+	setAttr ".phl[16]" 0;
+	setAttr ".phl[17]" 0;
+	setAttr ".phl[18]" 0;
+	setAttr ".phl[19]" 0;
+	setAttr ".phl[20]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"grannyCranny_SET_latestRN"
 		"grannyCranny_SET_latest:string_of_pearls_latestRN" 0
@@ -12126,7 +12163,17 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		"grannyCranny_SET_latestRN" 0
 		"grannyCranny_SET_latest:house_INTERIORRN" 0
 		"grannyCranny_SET_latest:talllwhiteLantern_latestRN" 0
-		"grannyCranny_SET_latestRN" 6
+		"grannyCranny_SET_latestRN" 21
+		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup" 
+		"translate" " -type \"double3\" 24.59044508986178101 10.2827141237649009 -33.21046738155116884"
+		
+		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup" 
+		"translateX" " -av"
+		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup" 
+		"translateY" " -av"
+		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup" 
+		"translateZ" " -av"
+		2 "|grannyCranny_SET_latest:nookLight" "visibility" " 1"
 		2 "|grannyCranny_SET_latest:nookLight|grannyCranny_SET_latest:lamp_disk|grannyCranny_SET_latest:lamp_diskShape" 
 		"color" " -type \"float3\" 1 0.59670239999999997 0.24800003000000001"
 		2 "|grannyCranny_SET_latest:nookLight|grannyCranny_SET_latest:windowRight|grannyCranny_SET_latest:windowRightShape" 
@@ -12142,18 +12189,173 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		"color" " -type \"float3\" 1 0.59670239999999997 0.24800003000000001"
 		2 "|grannyCranny_SET_latest:nookLight|grannyCranny_SET_latest:roofLight|grannyCranny_SET_latest:roofLightShape" 
 		"color" " -type \"float3\" 1 0.68840968999999996 0.41900003000000002"
-		"grannyCranny_SET_latest:house_INTERIORRN" 1
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.translateX" 
+		"grannyCranny_SET_latestRN.placeHolderList[11]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.translateY" 
+		"grannyCranny_SET_latestRN.placeHolderList[12]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.translateZ" 
+		"grannyCranny_SET_latestRN.placeHolderList[13]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.visibility" 
+		"grannyCranny_SET_latestRN.placeHolderList[14]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.rotateX" 
+		"grannyCranny_SET_latestRN.placeHolderList[15]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.rotateY" 
+		"grannyCranny_SET_latestRN.placeHolderList[16]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.rotateZ" 
+		"grannyCranny_SET_latestRN.placeHolderList[17]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.scaleX" 
+		"grannyCranny_SET_latestRN.placeHolderList[18]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.scaleY" 
+		"grannyCranny_SET_latestRN.placeHolderList[19]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.scaleZ" 
+		"grannyCranny_SET_latestRN.placeHolderList[20]" ""
+		"grannyCranny_SET_latest:edamame_latestRN" 12
+		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl" 
+		"visibility" " -av 1"
+		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl|grannyCranny_SET_latest:edamame_latest:bowl_blueceramic_pattern1_latest:bowl_blueceramic_pattern1_CTRL" 
+		"translate" " -type \"double3\" 0 0 0"
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.translateX" 
+		"grannyCranny_SET_latestRN.placeHolderList[1]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.translateZ" 
+		"grannyCranny_SET_latestRN.placeHolderList[2]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.translateY" 
+		"grannyCranny_SET_latestRN.placeHolderList[3]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.visibility" 
+		"grannyCranny_SET_latestRN.placeHolderList[4]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.rotateX" 
+		"grannyCranny_SET_latestRN.placeHolderList[5]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.rotateY" 
+		"grannyCranny_SET_latestRN.placeHolderList[6]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.rotateZ" 
+		"grannyCranny_SET_latestRN.placeHolderList[7]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.scaleX" 
+		"grannyCranny_SET_latestRN.placeHolderList[8]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.scaleY" 
+		"grannyCranny_SET_latestRN.placeHolderList[9]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.scaleZ" 
+		"grannyCranny_SET_latestRN.placeHolderList[10]" ""
+		"grannyCranny_SET_latest:house_INTERIORRN" 2
+		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:house_INTERIOR:HOUSE_INTERIOR" 
+		"visibility" " 0"
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:house_INTERIOR:HOUSE_INTERIOR|grannyCranny_SET_latest:house_INTERIOR:roof" 
 		"visibility" " 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode animCurveTL -n "bean_bowl_translateX1";
+	rename -uid "6C29A16B-B94F-BEB5-1855-A0A019EF22DB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  1 22.622294845928572 10 22.622294845928572
+		 24 22.622294845928572 25 22.622294845928572;
+createNode animCurveTL -n "bean_bowl_translateY1";
+	rename -uid "9DF37004-BD46-4913-569B-678C1B0AB79F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  1 9.6059230800409825 10 9.6059230800409825
+		 24 9.6059230800409825 25 9.6059230800409825;
+createNode animCurveTL -n "bean_bowl_translateZ1";
+	rename -uid "5E8DECFD-2E4E-093E-8B72-79B70111662C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  1 -40.279619213961176 10 -40.279619213961176
+		 24 -40.279619213961176 25 -40.279619213961176;
+createNode animCurveTU -n "bean_bowl_visibility1";
+	rename -uid "0B7F897B-234D-7A9F-4983-02A587225DC3";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  1 1 10 1 24 1 25 0;
+	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+createNode animCurveTA -n "bean_bowl_rotateX1";
+	rename -uid "0FCCD828-7A40-8D40-B84B-08AB7DCEE3F0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  1 0 10 0 24 0 25 0;
+createNode animCurveTA -n "bean_bowl_rotateY1";
+	rename -uid "3B334AE3-4A48-0D01-F7F2-C2BFA7FEEAE7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  1 0 10 0 24 0 25 0;
+createNode animCurveTA -n "bean_bowl_rotateZ1";
+	rename -uid "A2948108-7348-BEDE-8B02-57A24AC476B9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  1 0 10 0 24 0 25 0;
+createNode animCurveTU -n "bean_bowl_scaleX1";
+	rename -uid "45622071-FE4E-1626-C76B-7AAE70C5405F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  1 0.90347019227583336 10 0.90347019227583336
+		 24 0.90347019227583336 25 0.90347019227583336;
+createNode animCurveTU -n "bean_bowl_scaleY1";
+	rename -uid "3418971A-5C43-427D-A36C-68964A88782B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  1 0.90347019227583336 10 0.90347019227583336
+		 24 0.90347019227583336 25 0.90347019227583336;
+createNode animCurveTU -n "bean_bowl_scaleZ1";
+	rename -uid "903ADC5E-9449-9066-3045-0FBB6196F587";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  1 0.90347019227583336 10 0.90347019227583336
+		 24 0.90347019227583336 25 0.90347019227583336;
+createNode animCurveTL -n "teacup_translateX";
+	rename -uid "8BFA4593-B648-8FF4-EAE2-1E8E9370DA0B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  23 24.590445089861781 24 25.617809029461469;
+createNode animCurveTL -n "teacup_translateY";
+	rename -uid "94654858-B640-D6FA-127D-088345EC639D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  23 10.282714123764901 24 10.244263130008775;
+createNode animCurveTL -n "teacup_translateZ";
+	rename -uid "21CBD4D7-CF49-6B0D-CA39-4B94584D6115";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  23 -33.210467381551169 24 -38.622442258065448;
+createNode animCurveTU -n "teacup_visibility";
+	rename -uid "C51DA955-BE42-A412-257C-06BB2402EC1D";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  23 1 24 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTA -n "teacup_rotateX";
+	rename -uid "7F2AD05B-F345-189A-0C56-CCA70C80A601";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  23 0 24 0;
+createNode animCurveTA -n "teacup_rotateY";
+	rename -uid "59309C0A-134E-45FE-6B18-3A822247E10D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  23 0 24 0;
+createNode animCurveTA -n "teacup_rotateZ";
+	rename -uid "8C44FB9D-B34D-3D16-6C92-5795D11B7ABD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  23 0 24 0;
+createNode animCurveTU -n "teacup_scaleX";
+	rename -uid "2385AD62-6448-F25E-AE77-E291D1E8398B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  23 0.5170649633339427 24 0.5170649633339427;
+createNode animCurveTU -n "teacup_scaleY";
+	rename -uid "0C1BB146-E145-293A-73EE-28AEB7CC2C17";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  23 0.64552297675968484 24 0.64552297675968484;
+createNode animCurveTU -n "teacup_scaleZ";
+	rename -uid "EE4ABF8B-034D-02EA-FC7E-D89031A4447A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  23 0.5170649633339427 24 0.5170649633339427;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 44;
-	setAttr -av ".unw" 44;
+	setAttr -k on ".o" 14;
+	setAttr -av ".unw" 14;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -12472,6 +12674,26 @@ connectAttr "knife_scaleZ.o" "butter_knife_latestRN1.phl[7]";
 connectAttr "knife_rotateY.o" "butter_knife_latestRN1.phl[8]";
 connectAttr "knife_rotateX.o" "butter_knife_latestRN1.phl[9]";
 connectAttr "knife_rotateZ.o" "butter_knife_latestRN1.phl[10]";
+connectAttr "teacup_translateX.o" "grannyCranny_SET_latestRN.phl[11]";
+connectAttr "teacup_translateY.o" "grannyCranny_SET_latestRN.phl[12]";
+connectAttr "teacup_translateZ.o" "grannyCranny_SET_latestRN.phl[13]";
+connectAttr "teacup_visibility.o" "grannyCranny_SET_latestRN.phl[14]";
+connectAttr "teacup_rotateX.o" "grannyCranny_SET_latestRN.phl[15]";
+connectAttr "teacup_rotateY.o" "grannyCranny_SET_latestRN.phl[16]";
+connectAttr "teacup_rotateZ.o" "grannyCranny_SET_latestRN.phl[17]";
+connectAttr "teacup_scaleX.o" "grannyCranny_SET_latestRN.phl[18]";
+connectAttr "teacup_scaleY.o" "grannyCranny_SET_latestRN.phl[19]";
+connectAttr "teacup_scaleZ.o" "grannyCranny_SET_latestRN.phl[20]";
+connectAttr "bean_bowl_translateX1.o" "grannyCranny_SET_latestRN.phl[1]";
+connectAttr "bean_bowl_translateZ1.o" "grannyCranny_SET_latestRN.phl[2]";
+connectAttr "bean_bowl_translateY1.o" "grannyCranny_SET_latestRN.phl[3]";
+connectAttr "bean_bowl_visibility1.o" "grannyCranny_SET_latestRN.phl[4]";
+connectAttr "bean_bowl_rotateX1.o" "grannyCranny_SET_latestRN.phl[5]";
+connectAttr "bean_bowl_rotateY1.o" "grannyCranny_SET_latestRN.phl[6]";
+connectAttr "bean_bowl_rotateZ1.o" "grannyCranny_SET_latestRN.phl[7]";
+connectAttr "bean_bowl_scaleX1.o" "grannyCranny_SET_latestRN.phl[8]";
+connectAttr "bean_bowl_scaleY1.o" "grannyCranny_SET_latestRN.phl[9]";
+connectAttr "bean_bowl_scaleZ1.o" "grannyCranny_SET_latestRN.phl[10]";
 connectAttr "persp1_translateX.o" "trans_cam.tx" -l on;
 connectAttr "persp1_translateY.o" "trans_cam.ty" -l on;
 connectAttr "persp1_translateZ.o" "trans_cam.tz" -l on;
