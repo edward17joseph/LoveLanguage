@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: meat_stirFry_latest.ma
-//Last modified: Thu, Mar 12, 2020 02:24:31 PM
+//Last modified: Thu, Mar 12, 2020 05:19:11 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "bowl_smallwhite_pattern1_latest" -rfn "bowl_smallwhite_pattern1_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/bowl_smallwhite_pattern1_latest.ma";
@@ -19,13 +19,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "53778528-2E40-41D0-2BDE-6A84715E6339";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.57522477258078608 12.593890567921765 10.819542563613053 ;
-	setAttr ".r" -type "double3" -48.938352484272905 -2.9999999999684297 1.990574689344812e-16 ;
+	setAttr ".t" -type "double3" 1.0361106330014656 3.2615020979090361 4.1361180763217327 ;
+	setAttr ".r" -type "double3" -34.538352484276608 13.800000000031057 8.1877314684018019e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "12B4201A-6E44-048B-DE74-5ABD26BE7174";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 16.268690076337244;
+	setAttr ".coi" 4.985823634065687;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
