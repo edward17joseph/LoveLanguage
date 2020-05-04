@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: livingRoom_SET_latest.ma
-//Last modified: Fri, May 01, 2020 07:09:02 PM
+//Last modified: Sun, May 03, 2020 10:14:14 PM
 //Codeset: 1252
 file -rdi 1 -ns "bookshelf_v01_latest" -rfn "bookshelf_v01_latestRN" -op "v=0;"
 		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/bookshelf_v01_latest.ma";
@@ -226,15 +226,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "6456CB10-5F41-50CB-9CCE-529569F62EAF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -103.04311849085202 292.3082339040858 -258.46084369311529 ;
-	setAttr ".r" -type "double3" 1037.0616472604047 213.400000000001 0 ;
+	setAttr ".t" -type "double3" -214.91819690888366 358.844090687392 -200.0189437433211 ;
+	setAttr ".r" -type "double3" 1032.8616472598901 -112.20000000001042 0 ;
 	setAttr ".rp" -type "double3" 0 1.7763568394002505e-15 0 ;
 	setAttr ".rpt" -type "double3" 8.945892339872879e-18 -1.5352577067068242e-17 2.3286815999327906e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3152C822-AC47-BF26-80BA-71B0521AC687";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 385.96144736461861;
+	setAttr ".coi" 354.41730946968187;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -29874,7 +29874,7 @@ createNode PxrMeshLight -n "PxrMeshLight_bulbShape" -p "PxrMeshLight_bulb";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".intensity" 8;
 	setAttr ".exposure" 2.5;
-	setAttr ".lightColor" -type "float3" 1 0.83124423 0.59299999 ;
+	setAttr ".lightColor" -type "float3" 1 0.76659834 0.36199999 ;
 	setAttr ".textureColor" -type "float3" 1 1 1 ;
 	setAttr ".enableTemperature" yes;
 	setAttr ".temperature" 4200;
@@ -40308,12 +40308,12 @@ createNode transform -n "picture_frames" -p "PROPS";
 	setAttr ".spt" -type "double3" -43.027813750554941 -48.470444464592283 -32.679014358489766 ;
 createNode transform -n "livingRoomLights";
 	rename -uid "AD99D085-4319-4E68-D8D0-4BA966DB7EDA";
-createNode transform -n "PxrRectLight" -p "livingRoomLights";
+createNode transform -n "livingroom_roof" -p "livingRoomLights";
 	rename -uid "63BEAB60-4E44-4096-8BF3-4B956031A86C";
-	setAttr ".t" -type "double3" 6.9578491763303063 103.96987210665829 -31.524979786192773 ;
+	setAttr ".t" -type "double3" 6.9578491763303063 132.69761659702974 -31.524979786192773 ;
 	setAttr ".r" -type "double3" -90 90 0 ;
 	setAttr ".s" -type "double3" 107.43620019058524 107.43620019058524 107.43620019058524 ;
-createNode PxrRectLight -n "PxrRectLightShape" -p "PxrRectLight";
+createNode PxrRectLight -n "livingroom_roofShape" -p "livingroom_roof";
 	rename -uid "C39EC88E-4478-1C6B-ECB9-B49BB49DF04F";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -40401,7 +40401,7 @@ createNode PxrRectLight -n "PxrRectLightShape" -p "PxrRectLight";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 3;
+	setAttr ".intensity" 1.5;
 	setAttr ".exposure" 0.5;
 	setAttr ".lightColor" -type "float3" 1 0.83124423 0.59299999 ;
 	setAttr ".lightColorMap" -type "string" "";
@@ -40449,12 +40449,12 @@ createNode PxrRectLight -n "PxrRectLightShape" -p "PxrRectLight";
 	setAttr ".oclr" -type "float3" 0 0 0 ;
 	setAttr ".rman_coneAngleDepth" 10;
 	setAttr ".rman_coneAngleOpacity" 0.5;
-createNode transform -n "PxrRectLight1" -p "livingRoomLights";
+createNode transform -n "livingroom_window" -p "livingRoomLights";
 	rename -uid "5043DA72-4160-9761-9C82-1D82D3BBEDAE";
 	setAttr ".t" -type "double3" 81.958428081569195 63.33331779549053 -29.134960595215436 ;
 	setAttr ".r" -type "double3" 0 90 0 ;
 	setAttr ".s" -type "double3" 64.45494501410802 53.303713232277552 64.45494501410802 ;
-createNode PxrRectLight -n "PxrRectLight1Shape" -p "PxrRectLight1";
+createNode PxrRectLight -n "livingroom_windowShape" -p "livingroom_window";
 	rename -uid "BA349EE8-422A-1D03-ABB6-18BE4BD9C918";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -40542,9 +40542,9 @@ createNode PxrRectLight -n "PxrRectLight1Shape" -p "PxrRectLight1";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 1;
-	setAttr ".exposure" 0;
-	setAttr ".lightColor" -type "float3" 1 1 1 ;
+	setAttr ".intensity" 1.5;
+	setAttr ".exposure" 0.10000000149011612;
+	setAttr ".lightColor" -type "float3" 0.11799997 0.18253291 1 ;
 	setAttr ".lightColorMap" -type "string" "";
 	setAttr ".colorMapGamma" -type "float3" 1 1 1 ;
 	setAttr ".colorMapSaturation" 1;
@@ -40578,7 +40578,7 @@ createNode PxrRectLight -n "PxrRectLight1Shape" -p "PxrRectLight1";
 	setAttr ".lightGroup" -type "string" "";
 	setAttr ".importanceMultiplier" 1;
 	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
-	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".cl" -type "float3" 0.11799997 0.18253291 1 ;
 	setAttr ".ed" yes;
 	setAttr ".sn" yes;
 	setAttr ".lls" 1;
@@ -40590,12 +40590,12 @@ createNode PxrRectLight -n "PxrRectLight1Shape" -p "PxrRectLight1";
 	setAttr ".oclr" -type "float3" 0 0 0 ;
 	setAttr ".rman_coneAngleDepth" 10;
 	setAttr ".rman_coneAngleOpacity" 0.5;
-createNode transform -n "PxrRectLight2" -p "livingRoomLights";
+createNode transform -n "nook" -p "livingRoomLights";
 	rename -uid "776DE434-43B3-CF56-A903-B7934589B796";
-	setAttr ".t" -type "double3" 77.93500759884536 80.904008873503756 -144.77013040192574 ;
-	setAttr ".r" -type "double3" 0 44.423099301273304 0 ;
-	setAttr ".s" -type "double3" 64.45494501410802 64.45494501410802 64.45494501410802 ;
-createNode PxrRectLight -n "PxrRectLight2Shape" -p "PxrRectLight2";
+	setAttr ".t" -type "double3" 84.34154674604595 88.638319038200194 -141.25112939358075 ;
+	setAttr ".r" -type "double3" -12.995468325130433 70.508923396449092 0 ;
+	setAttr ".s" -type "double3" 79.41631543584046 79.41631543584046 79.41631543584046 ;
+createNode PxrRectLight -n "nookShape" -p "nook";
 	rename -uid "AFF94CB7-438D-FCB0-81B6-08B15F579D32";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -40683,9 +40683,9 @@ createNode PxrRectLight -n "PxrRectLight2Shape" -p "PxrRectLight2";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 1;
-	setAttr ".exposure" 0;
-	setAttr ".lightColor" -type "float3" 1 1 1 ;
+	setAttr ".intensity" 1.5;
+	setAttr ".exposure" 0.5;
+	setAttr ".lightColor" -type "float3" 1 0.83124423 0.59299999 ;
 	setAttr ".lightColorMap" -type "string" "";
 	setAttr ".colorMapGamma" -type "float3" 1 1 1 ;
 	setAttr ".colorMapSaturation" 1;
@@ -40719,7 +40719,7 @@ createNode PxrRectLight -n "PxrRectLight2Shape" -p "PxrRectLight2";
 	setAttr ".lightGroup" -type "string" "";
 	setAttr ".importanceMultiplier" 1;
 	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
-	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".cl" -type "float3" 1 0.83124423 0.59299999 ;
 	setAttr ".ed" yes;
 	setAttr ".sn" yes;
 	setAttr ".lls" 1;
@@ -40731,12 +40731,12 @@ createNode PxrRectLight -n "PxrRectLight2Shape" -p "PxrRectLight2";
 	setAttr ".oclr" -type "float3" 0 0 0 ;
 	setAttr ".rman_coneAngleDepth" 10;
 	setAttr ".rman_coneAngleOpacity" 0.5;
-createNode transform -n "PxrRectLight3" -p "livingRoomLights";
+createNode transform -n "kitchen" -p "livingRoomLights";
 	rename -uid "FC7129A1-4B20-CEB4-9379-05B68591E251";
-	setAttr ".t" -type "double3" 0 105.52717876493097 96.476332055159006 ;
+	setAttr ".t" -type "double3" 4.4080297412768914 105.52717876493097 96.476332055159006 ;
 	setAttr ".r" -type "double3" -43.520128312980873 0 0 ;
 	setAttr ".s" -type "double3" 107.89569041928533 50.766107035321376 50.766107035321376 ;
-createNode PxrRectLight -n "PxrRectLight3Shape" -p "PxrRectLight3";
+createNode PxrRectLight -n "kitchenShape" -p "kitchen";
 	rename -uid "BFFFD170-4A34-3765-C649-B8971066D7E9";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -40824,9 +40824,9 @@ createNode PxrRectLight -n "PxrRectLight3Shape" -p "PxrRectLight3";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 1;
-	setAttr ".exposure" 0;
-	setAttr ".lightColor" -type "float3" 1 1 1 ;
+	setAttr ".intensity" 5;
+	setAttr ".exposure" 0.20000000298023224;
+	setAttr ".lightColor" -type "float3" 0.56900001 0.44609815 0.28905201 ;
 	setAttr ".lightColorMap" -type "string" "";
 	setAttr ".colorMapGamma" -type "float3" 1 1 1 ;
 	setAttr ".colorMapSaturation" 1;
@@ -40860,7 +40860,7 @@ createNode PxrRectLight -n "PxrRectLight3Shape" -p "PxrRectLight3";
 	setAttr ".lightGroup" -type "string" "";
 	setAttr ".importanceMultiplier" 1;
 	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
-	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".cl" -type "float3" 0.56900001 0.44609815 0.28905201 ;
 	setAttr ".ed" yes;
 	setAttr ".sn" yes;
 	setAttr ".lls" 1;
@@ -40976,7 +40976,7 @@ createNode PxrDiskLight -n "kitchen_door_lampShape" -p "kitchen_door_lamp";
 	setAttr ".specular" 1;
 	setAttr ".diffuse" 1;
 	setAttr ".intensityNearDist" 0;
-	setAttr ".coneAngle" 20.501930236816406;
+	setAttr ".coneAngle" 21.361867904663086;
 	setAttr ".coneSoftness" 0.45559844374656677;
 	setAttr ".iesProfile" -type "string" "";
 	setAttr ".iesProfileScale" 0;
@@ -41009,147 +41009,6 @@ createNode PxrDiskLight -n "kitchen_door_lampShape" -p "kitchen_door_lamp";
 	setAttr ".uocol" no;
 	setAttr ".oclr" -type "float3" 0 0 0 ;
 	setAttr ".rman_coneAngleDepth" 1.6216216087341309;
-	setAttr ".rman_coneAngleOpacity" 0.5;
-createNode transform -n "tabletop_light" -p "livingRoomLights";
-	rename -uid "B22979D7-43A0-E189-4A19-5FA00865D3F5";
-	setAttr ".t" -type "double3" 8.8244213736785468 36.310268419286082 -29.208476124792774 ;
-	setAttr ".r" -type "double3" -90 0 0 ;
-	setAttr ".s" -type "double3" 32.96952104524452 65.266326776297774 18.91421305542011 ;
-createNode PxrRectLight -n "tabletop_lightShape" -p "tabletop_light";
-	rename -uid "4FF5E268-4FE0-2F28-9594-1493D4100DB7";
-	setAttr ".cch" no;
-	setAttr ".fzn" no;
-	setAttr ".ihi" 2;
-	setAttr ".nds" 0;
-	setAttr ".isc" no;
-	setAttr ".bbx" no;
-	setAttr ".icn" -type "string" "";
-	setAttr ".vwm" 2;
-	setAttr ".tpv" 0;
-	setAttr ".uit" 0;
-	setAttr -k off ".v" yes;
-	setAttr ".io" no;
-	setAttr ".tmp" no;
-	setAttr ".gh" no;
-	setAttr ".obcc" -type "float3" 0 0 0 ;
-	setAttr ".wfcc" -type "float3" 0 0 0 ;
-	setAttr ".uoc" 0;
-	setAttr ".oc" 0;
-	setAttr ".ovdt" 0;
-	setAttr ".ovlod" 0;
-	setAttr ".ovs" no;
-	setAttr ".ovt" yes;
-	setAttr ".ovp" yes;
-	setAttr ".ove" yes;
-	setAttr ".ovv" yes;
-	setAttr ".hpb" no;
-	setAttr ".ovrgbf" no;
-	setAttr ".ovc" 0;
-	setAttr ".ovrgb" -type "float3" 0 0 0 ;
-	setAttr ".lodv" yes;
-	setAttr ".sech" yes;
-	setAttr ".rlid" 0;
-	setAttr ".rndr" yes;
-	setAttr ".lovc" 0;
-	setAttr ".gc" 0;
-	setAttr ".gpr" 3;
-	setAttr ".gps" 3;
-	setAttr ".gss" 1;
-	setAttr ".gap" 1;
-	setAttr ".gcp" -type "float3" 0.447 1 1 ;
-	setAttr ".gla" 1;
-	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
-	setAttr ".grs" 0;
-	setAttr ".gre" 100;
-	setAttr ".rt" 0;
-	setAttr ".rv" no;
-	setAttr ".vf" 1;
-	setAttr ".hfm" 1;
-	setAttr ".mb" yes;
-	setAttr ".vir" no;
-	setAttr ".vif" no;
-	setAttr ".csh" yes;
-	setAttr ".rcsh" yes;
-	setAttr ".asbg" no;
-	setAttr ".vbo" no;
-	setAttr ".mvs" 1;
-	setAttr ".gao" no;
-	setAttr ".gal" 1;
-	setAttr ".sso" no;
-	setAttr ".ssa" 1;
-	setAttr ".msa" 1;
-	setAttr ".vso" no;
-	setAttr ".vss" 1;
-	setAttr ".dej" no;
-	setAttr ".iss" no;
-	setAttr ".vis" no;
-	setAttr ".tw" no;
-	setAttr ".rtw" yes;
-	setAttr ".pv" -type "double2" 0 0 ;
-	setAttr ".di" no;
-	setAttr ".dcol" no;
-	setAttr ".dcc" -type "string" "color";
-	setAttr ".ih" no;
-	setAttr ".ds" yes;
-	setAttr ".op" no;
-	setAttr ".hot" no;
-	setAttr ".smo" yes;
-	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
-	setAttr ".fbda" yes;
-	setAttr ".dsr" 6;
-	setAttr ".xsr" 5;
-	setAttr ".fth" 0;
-	setAttr ".nat" 30;
-	setAttr ".dhe" no;
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 1;
-	setAttr ".exposure" 0;
-	setAttr ".lightColor" -type "float3" 1 1 1 ;
-	setAttr ".lightColorMap" -type "string" "";
-	setAttr ".colorMapGamma" -type "float3" 1 1 1 ;
-	setAttr ".colorMapSaturation" 1;
-	setAttr ".enableTemperature" no;
-	setAttr ".temperature" 6500;
-	setAttr ".emissionFocus" 0;
-	setAttr ".emissionFocusNormalize" no;
-	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
-	setAttr ".specular" 1;
-	setAttr ".diffuse" 1;
-	setAttr ".intensityNearDist" 0;
-	setAttr ".coneAngle" 90;
-	setAttr ".coneSoftness" 0;
-	setAttr ".iesProfile" -type "string" "";
-	setAttr ".iesProfileScale" 0;
-	setAttr ".iesProfileNormalize" no;
-	setAttr ".enableShadows" yes;
-	setAttr ".shadowColor" -type "float3" 0 0 0 ;
-	setAttr ".shadowDistance" -1;
-	setAttr ".shadowFalloff" -1;
-	setAttr ".shadowFalloffGamma" 1;
-	setAttr ".shadowSubset" -type "string" "";
-	setAttr ".shadowExcludeSubset" -type "string" "";
-	setAttr ".areaNormalize" no;
-	setAttr ".traceLightPaths" no;
-	setAttr ".thinShadow" yes;
-	setAttr ".visibleInRefractionPath" yes;
-	setAttr ".cheapCaustics" no;
-	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
-	setAttr ".fixedSampleCount" 0;
-	setAttr ".lightGroup" -type "string" "";
-	setAttr ".importanceMultiplier" 1;
-	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
-	setAttr ".cl" -type "float3" 1 1 1 ;
-	setAttr ".ed" yes;
-	setAttr ".sn" yes;
-	setAttr ".lls" 1;
-	setAttr ".de" 2;
-	setAttr ".urs" yes;
-	setAttr ".col" 5;
-	setAttr ".hio" no;
-	setAttr ".uocol" no;
-	setAttr ".oclr" -type "float3" 0 0 0 ;
-	setAttr ".rman_coneAngleDepth" 10;
 	setAttr ".rman_coneAngleOpacity" 0.5;
 createNode transform -n "left_table_lamp1" -p "livingRoomLights";
 	rename -uid "AFCF8A70-4213-8E21-5B51-828E847FE4C0";
@@ -41427,12 +41286,12 @@ createNode PxrDiskLight -n "left_table_lamp2Shape" -p "left_table_lamp2";
 	setAttr ".oclr" -type "float3" 0 0 0 ;
 	setAttr ".rman_coneAngleDepth" 0;
 	setAttr ".rman_coneAngleOpacity" 0.5;
-createNode transform -n "left_table_lamp3" -p "livingRoomLights";
+createNode transform -n "right_table_lamp1" -p "livingRoomLights";
 	rename -uid "D64A35D3-4E8B-09F0-11DD-6EAD635892F3";
 	setAttr ".t" -type "double3" 71.516859724099746 52.340957557154034 34.034363695083016 ;
 	setAttr ".r" -type "double3" 90 0 0 ;
 	setAttr ".s" -type "double3" 8.4401205910290535 8.4401205910290535 8.4401205910290535 ;
-createNode PxrDiskLight -n "left_table_lamp3Shape" -p "left_table_lamp3";
+createNode PxrDiskLight -n "right_table_lamp1Shape" -p "right_table_lamp1";
 	rename -uid "5D1FB80D-4610-4500-1B5A-629FFD03FB23";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -41565,12 +41424,12 @@ createNode PxrDiskLight -n "left_table_lamp3Shape" -p "left_table_lamp3";
 	setAttr ".oclr" -type "float3" 0 0 0 ;
 	setAttr ".rman_coneAngleDepth" 0;
 	setAttr ".rman_coneAngleOpacity" 0.5;
-createNode transform -n "left_table_lamp4" -p "livingRoomLights";
+createNode transform -n "right_table_lamp2" -p "livingRoomLights";
 	rename -uid "00EF60C2-4F88-B5C4-346C-128EE8A47A82";
 	setAttr ".t" -type "double3" 71.394098984958944 42.248546600341804 33.924714036879891 ;
 	setAttr ".r" -type "double3" -90 0 0 ;
 	setAttr ".s" -type "double3" 11.993877926463247 11.993877926463247 11.993877926463247 ;
-createNode PxrDiskLight -n "left_table_lamp4Shape" -p "left_table_lamp4";
+createNode PxrDiskLight -n "right_table_lamp2Shape" -p "right_table_lamp2";
 	rename -uid "C49B2E24-480E-21B8-37D7-CC958FA7906F";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -41703,12 +41562,12 @@ createNode PxrDiskLight -n "left_table_lamp4Shape" -p "left_table_lamp4";
 	setAttr ".oclr" -type "float3" 0 0 0 ;
 	setAttr ".rman_coneAngleDepth" 0;
 	setAttr ".rman_coneAngleOpacity" 0.5;
-createNode transform -n "PxrDiskLight";
+createNode transform -n "left_lamp_fill" -p "livingRoomLights";
 	rename -uid "579A8936-491D-E5BC-F12E-F3A840F48D6A";
-	setAttr ".t" -type "double3" 57.350511124484107 49.434934614114823 -78.51298781595608 ;
-	setAttr ".r" -type "double3" 0 141.72878179737299 0 ;
-	setAttr ".s" -type "double3" 30.25610118382037 30.25610118382037 30.25610118382037 ;
-createNode PxrDiskLight -n "PxrDiskLightShape" -p "PxrDiskLight";
+	setAttr ".t" -type "double3" 62.5615247480671 47.999787861447928 -80.574353199660294 ;
+	setAttr ".r" -type "double3" -7.9392719205796531 154.74178728146461 -1.3523123915973725 ;
+	setAttr ".s" -type "double3" 19.005768320432171 19.005768320432171 19.005768320432171 ;
+createNode PxrDiskLight -n "left_lamp_fillShape" -p "left_lamp_fill";
 	rename -uid "80E0FC4D-4220-284E-4E0B-FAA19954ABDC";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -41796,9 +41655,9 @@ createNode PxrDiskLight -n "PxrDiskLightShape" -p "PxrDiskLight";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 1;
-	setAttr ".exposure" 0;
-	setAttr ".lightColor" -type "float3" 1 1 1 ;
+	setAttr ".intensity" 5;
+	setAttr ".exposure" 1.5;
+	setAttr ".lightColor" -type "float3" 0.986 0.62959552 0.21692003 ;
 	setAttr ".enableTemperature" no;
 	setAttr ".temperature" 6500;
 	setAttr ".emissionFocus" 0;
@@ -41829,7 +41688,7 @@ createNode PxrDiskLight -n "PxrDiskLightShape" -p "PxrDiskLight";
 	setAttr ".lightGroup" -type "string" "";
 	setAttr ".importanceMultiplier" 1;
 	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
-	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".cl" -type "float3" 0.986 0.62959552 0.21692003 ;
 	setAttr ".ed" yes;
 	setAttr ".sn" yes;
 	setAttr ".lls" 1;
@@ -41841,12 +41700,12 @@ createNode PxrDiskLight -n "PxrDiskLightShape" -p "PxrDiskLight";
 	setAttr ".oclr" -type "float3" 0 0 0 ;
 	setAttr ".rman_coneAngleDepth" 10;
 	setAttr ".rman_coneAngleOpacity" 0.5;
-createNode transform -n "PxrDiskLight1";
+createNode transform -n "right_lamp_fill" -p "livingRoomLights";
 	rename -uid "134371F5-4932-DEAF-557F-92AA8FC0BE86";
-	setAttr ".t" -type "double3" 62.592425209626185 49.434934614114823 24.912040535030002 ;
-	setAttr ".r" -type "double3" 0 34.056968590694211 0 ;
-	setAttr ".s" -type "double3" 30.25610118382037 30.25610118382037 30.25610118382037 ;
-createNode PxrDiskLight -n "PxrDiskLight1Shape" -p "PxrDiskLight1";
+	setAttr ".t" -type "double3" 64.108905091993662 47.999787861447928 28.012992474649725 ;
+	setAttr ".r" -type "double3" -4.0229169508841949 34.056968590694233 0 ;
+	setAttr ".s" -type "double3" 19.005768320432171 19.005768320432171 19.005768320432171 ;
+createNode PxrDiskLight -n "right_lamp_fillShape" -p "right_lamp_fill";
 	rename -uid "87D9EBFE-4229-DAB2-3709-0CB3F1296FF9";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -41934,9 +41793,9 @@ createNode PxrDiskLight -n "PxrDiskLight1Shape" -p "PxrDiskLight1";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 1;
-	setAttr ".exposure" 0;
-	setAttr ".lightColor" -type "float3" 1 1 1 ;
+	setAttr ".intensity" 5;
+	setAttr ".exposure" 1.6000000238418579;
+	setAttr ".lightColor" -type "float3" 1 0.68970001 0.15180001 ;
 	setAttr ".enableTemperature" no;
 	setAttr ".temperature" 6500;
 	setAttr ".emissionFocus" 0;
@@ -41967,7 +41826,283 @@ createNode PxrDiskLight -n "PxrDiskLight1Shape" -p "PxrDiskLight1";
 	setAttr ".lightGroup" -type "string" "";
 	setAttr ".importanceMultiplier" 1;
 	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
-	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".cl" -type "float3" 1 0.68970001 0.15180001 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 10;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "sofa_key" -p "livingRoomLights";
+	rename -uid "64AB8E4B-40AC-D8FE-CDEC-7C874E26B77C";
+	setAttr ".t" -type "double3" 11.279470728934456 60.13665098174436 7.6865737050107548 ;
+	setAttr ".r" -type "double3" -23.563189857919291 -58.019304086445381 6.0051991083553812e-15 ;
+	setAttr ".s" -type "double3" 29.342316363288948 29.342316363288948 29.342316363288948 ;
+createNode PxrDiskLight -n "sofa_keyShape" -p "sofa_key";
+	rename -uid "F98499C4-49F8-4A4B-7CC6-B7A76B16616C";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 4.5;
+	setAttr ".exposure" 2;
+	setAttr ".lightColor" -type "float3" 0.986 0.75388014 0.48511198 ;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 90;
+	setAttr ".coneSoftness" 0;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 0.986 0.75388014 0.48511198 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 10;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "tabletop_light" -p "livingRoomLights";
+	rename -uid "3E86B00D-4969-348D-3369-E58EE2BE51FE";
+	setAttr ".t" -type "double3" 10.142526489587802 52.471200130619891 17.079972669869193 ;
+	setAttr ".r" -type "double3" -39.641873811504489 0 0 ;
+	setAttr ".s" -type "double3" 47.153803473025391 79.943959752367235 47.153803473025391 ;
+createNode PxrDiskLight -n "tabletop_lightShape" -p "tabletop_light";
+	rename -uid "20F3467D-4C25-89BE-B66A-3495FEC72664";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 5;
+	setAttr ".exposure" 0.80000001192092896;
+	setAttr ".lightColor" -type "float3" 1 0.68970001 0.15180001 ;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 90;
+	setAttr ".coneSoftness" 0;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 0.68970001 0.15180001 ;
 	setAttr ".ed" yes;
 	setAttr ".sn" yes;
 	setAttr ".lls" 1;
@@ -41980,7 +42115,7 @@ createNode PxrDiskLight -n "PxrDiskLight1Shape" -p "PxrDiskLight1";
 	setAttr ".rman_coneAngleDepth" 10;
 	setAttr ".rman_coneAngleOpacity" 0.5;
 createNode fosterParent -n "lamp_latestRNfosterParent1";
-	rename -uid "2BDBDC31-4B77-D956-742C-B49D93FC9354";
+	rename -uid "EA588D04-46EA-B7CA-FA11-0995C859C7D9";
 createNode transform -n "bulb" -p "lamp_latestRNfosterParent1";
 	rename -uid "7DF7A3F0-4C0D-2FB2-CFDC-76BE51FAB1CE";
 	setAttr ".t" -type "double3" -109.08319677477778 -53.565833694018878 -52.04037907008405 ;
@@ -42075,7 +42210,7 @@ createNode PxrMeshLight -n "bulbShape" -p "|lamp_latestRNfosterParent1|bulb";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".intensity" 8;
 	setAttr ".exposure" 2.5;
-	setAttr ".lightColor" -type "float3" 1 0.83124423 0.59299999 ;
+	setAttr ".lightColor" -type "float3" 1 0.76659834 0.36199999 ;
 	setAttr ".textureColor" -type "float3" 1 1 1 ;
 	setAttr ".enableTemperature" yes;
 	setAttr ".temperature" 4200;
@@ -42118,24 +42253,24 @@ parent -s -nc -r -add "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|Jackie_Shoe|Ja
 parent -s -nc -r -add "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|Jackie_Shoe|Jackie_Shoe|LaceHoles|Right_Lace_Holes|pTorus2|pTorusShape2" "pTorus5" ;
 parent -s -nc -r -add "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|Jackie_Shoe|Jackie_Shoe|LaceHoles|Right_Lace_Holes|pTorus2|pTorusShape2" "pTorus10" ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "09331C1D-4F56-0553-4A91-2487FB17C5E4";
+	rename -uid "5BCE08A8-41D8-627E-00FE-8A8154C6BEEF";
 	setAttr -s 297 ".lnk";
-	setAttr -s 619 ".ign";
+	setAttr -s 536 ".ign";
 	setAttr -s 297 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "1778F4AA-402E-E336-AC4F-97B0F4E90A19";
+	rename -uid "CDBF3DAE-49A7-382B-42E7-128F9C65AC90";
 	setAttr -s 2 ".dli[1]"  1;
 createNode displayLayer -n "defaultLayer";
 	rename -uid "2DEB5D6F-3748-890E-8F8B-478AD3BE476D";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "DCA1B542-4BC5-EEA6-C34D-6F8DD055E76F";
+	rename -uid "E0A2EAD3-410E-A6C0-FDBB-D8AD486686B2";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "BD85EAD8-4C42-96CE-CB38-618E2B34463A";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "70BAF467-465A-212F-7D9F-50B69FD403BE";
+	rename -uid "771411CA-4173-45B9-64EC-FFBAA08F5979";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "5852B051-483A-F40D-13BB-DF8993A86FA0";
+	rename -uid "DC41AAF2-4FDF-4C82-BC6F-FD8C9BB54A9C";
 createNode rmanGlobals -s -n "rmanGlobals";
 	rename -uid "E4AC02F0-C840-DF51-F57B-1BA6C3E3FC36";
 	setAttr ".cch" no;
@@ -42338,17 +42473,17 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1372\n            -height 771\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
 		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
 		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1371\n            -height 770\n"
+		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n"
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
 		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1372\n            -height 770\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
+		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
 		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
 		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 0\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n"
-		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2755\n            -height 1612\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2531\n            -height 1612\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
 		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n"
 		+ "            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
@@ -42378,8 +42513,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
 		+ "            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n"
 		+ "            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2755\\n    -height 1612\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2755\\n    -height 1612\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2531\\n    -height 1612\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2531\\n    -height 1612\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -42508,14 +42643,27 @@ createNode reference -n "bookshelf_v01_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bookshelf_v01_latestRN"
 		"bookshelf_v01_latestRN" 0
-		"bookshelf_v01_latestRN" 3
+		"bookshelf_v01_latestRN" 9
 		0 "|bookshelf_v01_latest:bookshelf" "|LIVING_ROOM_SET|PROPS|BOOKSHELF" "-s -r "
 		
 		2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookshelf_v01_latest:bookshelf" "translate" 
 		" -type \"double3\" -57.09114836121459291 -5.51964321683718673 25.40848181109341297"
 		
 		2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookshelf_v01_latest:bookshelf" "scale" 
-		" -type \"double3\" 11.91396862909717314 11.9150591882169099 11.91396862909717314";
+		" -type \"double3\" 11.91396862909717314 11.9150591882169099 11.91396862909717314"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookshelf_v01_latest:bookshelf|bookshelf_v01_latest:bookcase|bookshelf_v01_latest:bookcaseShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookshelf_v01_latest:bookshelf|bookshelf_v01_latest:ornaments|bookshelf_v01_latest:medium_ornament|bookshelf_v01_latest:medium_ornamentShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookshelf_v01_latest:bookshelf|bookshelf_v01_latest:ornaments|bookshelf_v01_latest:big_ornament|bookshelf_v01_latest:big_ornamentShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookshelf_v01_latest:bookshelf|bookshelf_v01_latest:ornaments|bookshelf_v01_latest:small_ornament|bookshelf_v01_latest:small_ornamentShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookshelf_v01_latest:bookshelf|bookshelf_v01_latest:posts|bookshelf_v01_latest:post1|bookshelf_v01_latest:postShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookshelf_v01_latest:bookshelf|bookshelf_v01_latest:posts|bookshelf_v01_latest:post2|bookshelf_v01_latest:postShape2.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "coffee_table_latestRN";
@@ -42551,7 +42699,7 @@ createNode reference -n "console_tableRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"console_tableRN"
 		"console_tableRN" 0
-		"console_tableRN" 16
+		"console_tableRN" 24
 		0 "|console_table:console_table" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table" 
@@ -42574,19 +42722,35 @@ createNode reference -n "console_tableRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table" 
 		"scalePivotTranslate" " -type \"double3\" 0.028166145400536954 1.77675353268243175 0.12887185391616754"
 		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Console|console_table:ConsoleShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Console|console_table:ConsoleShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Console_Shelf|console_table:Console_ShelfShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Console_Shelf|console_table:Console_ShelfShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Drawer_Knob|console_table:Drawer_KnobShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Drawer_Knob|console_table:Drawer_KnobShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Book1|console_table:BookShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Book1|console_table:BookShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Book2|console_table:BookShape2.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Book2|console_table:BookShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Bowl|console_table:BowlShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Bowl|console_table:BowlShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Vase|console_table:VaseShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Vase|console_table:VaseShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Vase_lid|console_table:Vase_lidShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Vase_lid|console_table:Vase_lidShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -42703,7 +42867,7 @@ createNode reference -n "side_tableRN";
 lockNode -l 1 ;
 createNode reference -n "lamp_latestRN";
 	rename -uid "24C8B593-A944-4632-26C7-D3A994171BDC";
-	setAttr -s 38 ".phl";
+	setAttr -s 39 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -42742,10 +42906,11 @@ createNode reference -n "lamp_latestRN";
 	setAttr ".phl[36]" 0;
 	setAttr ".phl[37]" 0;
 	setAttr ".phl[38]" 0;
+	setAttr ".phl[39]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"lamp_latestRN"
 		"lamp_latestRN" 0
-		"lamp_latestRN" 43
+		"lamp_latestRN" 46
 		0 "|lamp_latest:lamp" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp" 
 		"-s -r "
 		0 "|lamp_latestRNfosterParent1|bulb" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|lamp_latest:lamp|lamp_latest:frame|lamp_latest:lightbulb|lamp_latest:bulb" 
@@ -42756,15 +42921,17 @@ createNode reference -n "lamp_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|lamp_latest:lamp" 
 		"scale" " -type \"double3\" 0.22003255440260694 0.22003255440260694 0.22003255440260694"
 		
+		2 "lamp_latest:PxrSurface6" "subsurfaceGain" " 0.25396826863288879"
+		2 "lamp_latest:PxrSurface6" "glowGain" " 0.14300000667572021"
 		3 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|lamp_latest:lamp|lamp_latest:frame|lamp_latest:lightbulb|lamp_latest:bulb|lamp_latest:bulbShape.instObjGroups" 
 		"lamp_latest:PxrSurface7SG.dagSetMembers" "-na"
+		5 3 "lamp_latestRN" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|lamp_latest:lamp|lamp_latest:frame|lamp_latest:lightbulb|lamp_latest:bulb.message" 
+		"lamp_latestRN.placeHolderList[1]" ""
 		5 3 "lamp_latestRN" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|lamp_latest:lamp|lamp_latest:frame|lamp_latest:lightbulb|lamp_latest:bulb|lamp_latest:bulbShape.instObjGroups" 
-		"lamp_latestRN.placeHolderList[1]" "lamp_latest:PxrSurface7SG.dsm"
-		5 4 "lamp_latestRN" "lamp_latest:PxrSurface2SG.dagSetMembers" "lamp_latestRN.placeHolderList[2]" 
+		"lamp_latestRN.placeHolderList[2]" "lamp_latest:PxrSurface7SG.dsm"
+		5 4 "lamp_latestRN" "lamp_latest:PxrSurface2SG.dagSetMembers" "lamp_latestRN.placeHolderList[3]" 
 		""
-		5 4 "lamp_latestRN" "lamp_latest:PxrSurface6SG.dagSetMembers" "lamp_latestRN.placeHolderList[3]" 
-		""
-		5 4 "lamp_latestRN" "lamp_latest:PxrSurface9SG.dagSetMembers" "lamp_latestRN.placeHolderList[4]" 
+		5 4 "lamp_latestRN" "lamp_latest:PxrSurface6SG.dagSetMembers" "lamp_latestRN.placeHolderList[4]" 
 		""
 		5 4 "lamp_latestRN" "lamp_latest:PxrSurface9SG.dagSetMembers" "lamp_latestRN.placeHolderList[5]" 
 		""
@@ -42830,9 +42997,11 @@ createNode reference -n "lamp_latestRN";
 		""
 		5 4 "lamp_latestRN" "lamp_latest:PxrSurface9SG.dagSetMembers" "lamp_latestRN.placeHolderList[36]" 
 		""
-		5 4 "lamp_latestRN" "lamp_latest:PxrSurface11SG.dagSetMembers" "lamp_latestRN.placeHolderList[37]" 
+		5 4 "lamp_latestRN" "lamp_latest:PxrSurface9SG.dagSetMembers" "lamp_latestRN.placeHolderList[37]" 
 		""
 		5 4 "lamp_latestRN" "lamp_latest:PxrSurface11SG.dagSetMembers" "lamp_latestRN.placeHolderList[38]" 
+		""
+		5 4 "lamp_latestRN" "lamp_latest:PxrSurface11SG.dagSetMembers" "lamp_latestRN.placeHolderList[39]" 
 		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -42841,7 +43010,7 @@ createNode reference -n "shoe_rack_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"shoe_rack_latestRN"
 		"shoe_rack_latestRN" 0
-		"shoe_rack_latestRN" 16
+		"shoe_rack_latestRN" 24
 		0 "|shoe_rack_latest:rack" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK" "-s -r "
 		
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack" "translate" 
@@ -42862,19 +43031,35 @@ createNode reference -n "shoe_rack_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack" "scalePivotTranslate" 
 		" -type \"double3\" -0.0012961589013445838 -1.29094537967645673 -0.011988461170854524"
 		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:boards|shoe_rack_latest:lower_board3|shoe_rack_latest:lower_board3Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:boards|shoe_rack_latest:lower_board3|shoe_rack_latest:lower_board3Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:boards|shoe_rack_latest:lower_board4|shoe_rack_latest:lower_board4Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:boards|shoe_rack_latest:lower_board4|shoe_rack_latest:lower_board4Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:boards|shoe_rack_latest:lower_board5|shoe_rack_latest:lower_board5Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:boards|shoe_rack_latest:lower_board5|shoe_rack_latest:lower_board5Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:boards|shoe_rack_latest:lower_board6|shoe_rack_latest:lower_board6Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:boards|shoe_rack_latest:lower_board6|shoe_rack_latest:lower_board6Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:posts|shoe_rack_latest:post1|shoe_rack_latest:postShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:posts|shoe_rack_latest:post1|shoe_rack_latest:postShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:posts|shoe_rack_latest:post2|shoe_rack_latest:postShape2.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:posts|shoe_rack_latest:post2|shoe_rack_latest:postShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:posts|shoe_rack_latest:post3|shoe_rack_latest:postShape3.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:posts|shoe_rack_latest:post3|shoe_rack_latest:postShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:posts|shoe_rack_latest:post4|shoe_rack_latest:postShape4.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:posts|shoe_rack_latest:post4|shoe_rack_latest:postShape4.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -42885,7 +43070,7 @@ createNode reference -n "bambooRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bambooRN"
 		"bambooRN" 0
-		"bambooRN" 52
+		"bambooRN" 65
 		0 "|bamboo:bamboo_pot" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
 		"-s -r "
 		0 "|bamboo:pCube1" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
@@ -42964,29 +43149,55 @@ createNode reference -n "bambooRN";
 		"dispResolution" " 3"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:MASH1_ReproMesh1|bamboo:MASH1_ReproMesh1Shape" 
 		"displaySmoothMesh" " 2"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo_pot|bamboo:bamboo_potShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo_pot|bamboo:bamboo_potShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:pCube1|bamboo:pCubeShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:pCube1|bamboo:pCubeShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo1|bamboo:bambooShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo1|bamboo:bambooShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo2|bamboo:bambooShape2.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo2|bamboo:bambooShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo3|bamboo:bambooShape3.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo3|bamboo:bambooShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf3|bamboo:leafShape3.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf3|bamboo:leafShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf2|bamboo:leafShape2.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf2|bamboo:leafShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf1|bamboo:leafShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf1|bamboo:leafShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf|bamboo:leafShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf|bamboo:leafShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf4|bamboo:leafShape4.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf4|bamboo:leafShape4.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf5|bamboo:leafShape5.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf5|bamboo:leafShape5.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:gold|bamboo:goldShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:gold|bamboo:goldShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:MASH1_ReproMesh1|bamboo:MASH1_ReproMesh1Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:MASH1_ReproMesh1|bamboo:MASH1_ReproMesh1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -43042,7 +43253,7 @@ createNode reference -n "guianaChestnutPlant_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"guianaChestnutPlant_latestRN"
 		"guianaChestnutPlant_latestRN" 0
-		"guianaChestnutPlant_latestRN" 18
+		"guianaChestnutPlant_latestRN" 28
 		0 "|guianaChestnutPlant_latest:guiana_chesnut_plant" "|LIVING_ROOM_SET|PROPS|LEFT_WALL" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant" 
@@ -43065,23 +43276,43 @@ createNode reference -n "guianaChestnutPlant_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant" 
 		"scalePivotTranslate" " -type \"double3\" 0.34955128687071674 3.38515953732821284 0.25432693525008271"
 		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:pot|guianaChestnutPlant_latest:potShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:pot|guianaChestnutPlant_latest:potShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:dirt|guianaChestnutPlant_latest:dirtShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:dirt|guianaChestnutPlant_latest:dirtShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:leaves|guianaChestnutPlant_latest:leavesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:leaves|guianaChestnutPlant_latest:leavesShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:smallerStems|guianaChestnutPlant_latest:smallerStemsShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:smallerStems|guianaChestnutPlant_latest:smallerStemsShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:largerStems|guianaChestnutPlant_latest:largerStemsShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:largerStems|guianaChestnutPlant_latest:largerStemsShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:right_front_trunk|guianaChestnutPlant_latest:right_front_trunkShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:right_front_trunk|guianaChestnutPlant_latest:right_front_trunkShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:right_back_trunk|guianaChestnutPlant_latest:right_back_trunkShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:right_back_trunk|guianaChestnutPlant_latest:right_back_trunkShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:middle_trunk|guianaChestnutPlant_latest:middle_trunkShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:middle_trunk|guianaChestnutPlant_latest:middle_trunkShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:left_trunk|guianaChestnutPlant_latest:left_trunkShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:left_trunk|guianaChestnutPlant_latest:left_trunkShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:back_trunk|guianaChestnutPlant_latest:back_trunkShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:back_trunk|guianaChestnutPlant_latest:back_trunkShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -43092,11 +43323,11 @@ createNode reference -n "grannyCranny_SET_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"grannyCranny_SET_latestRN"
 		"grannyCranny_SET_latest:string_of_pearls_latestRN" 0
+		"grannyCranny_SET_latest:tableRN" 0
 		"grannyCranny_SET_latest:chairRN2" 2
 		2 "grannyCranny_SET_latest:chair2:windsor_seat_layer" "visibility" " 1"
 		2 "grannyCranny_SET_latest:chair2:windsor_seat_layer" "displayOrder" " 4"
 		
-		"grannyCranny_SET_latest:tableRN" 0
 		"grannyCranny_SET_latest:chairRN" 2
 		2 "grannyCranny_SET_latest:chair:windsor_seat_layer" "visibility" " 1"
 		2 "grannyCranny_SET_latest:chair:windsor_seat_layer" "displayOrder" " 2"
@@ -43407,8 +43638,8 @@ createNode reference -n "kitchen_SET_latestRN";
 		"kitchen_SET_latest:bowl_smallwhite_pattern1_latestRN2" 0
 		"kitchen_SET_latest:pan_small_latestRN" 0
 		"kitchen_SET_latest:bowl_smallwhite_pattern1_latestRN1" 0
-		"kitchen_SET_latest:butter_knife_latestRN" 0
 		"kitchen_SET_latest:knife_v01_latestRN" 0
+		"kitchen_SET_latest:butter_knife_latestRN" 0
 		"kitchen_SET_latest:bowl_smallwhite_pattern1_latestRN" 0
 		"kitchen_SET_latest:dish_rack_latest:pho_spoon_latestRN" 0
 		"kitchen_SET_latest:water_kettle_latestRN" 0
@@ -43417,8 +43648,8 @@ createNode reference -n "kitchen_SET_latestRN";
 		"kitchen_SET_latest:ladle_latestRN" 0
 		"kitchen_SET_latest:mug_WALL_HANGINGRN" 0
 		"kitchen_SET_latest:bowl_conic_latestRN4" 0
-		"kitchen_SET_latest:bokchoy_splitRN" 0
 		"kitchen_SET_latest:paperTowel_latestRN" 0
+		"kitchen_SET_latest:bokchoy_splitRN" 0
 		"kitchen_SET_latest:plate_latestRN3" 0
 		"kitchen_SET_latest:chopsticks_round_latestRN" 0
 		"kitchen_SET_latest:dish_rack_latest:butter_knife_latestRN" 0
@@ -43426,8 +43657,8 @@ createNode reference -n "kitchen_SET_latestRN";
 		"kitchen_SET_latest:takeout_box_open_v01_latestRN" 0
 		"kitchen_SET_latest:takeout_box_v01_latestRN" 0
 		"kitchen_SET_latest:plate_latestRN2" 0
-		"kitchen_SET_latest:mug_round_latestRN3" 0
 		"kitchen_SET_latest:house_INTERIORRN" 0
+		"kitchen_SET_latest:mug_round_latestRN3" 0
 		"kitchen_SET_latest:bowl_blueceramic_pattern1_latestRN2" 0
 		"kitchen_SET_latest:dish_rack_latest:mug_round_latestRN" 0
 		"kitchen_SET_latest:bowl_conic_latestRN2" 0
@@ -43457,23 +43688,23 @@ createNode reference -n "kitchen_SET_latestRN";
 		"kitchen_SET_latest:utensil_holderRN" 0
 		"kitchen_SET_latest:dish_rack_latest:mug_tall_latestRN" 0
 		"kitchen_SET_latest:plate_latestRN4" 0
-		"kitchen_SET_latest:fork_latestRN" 0
 		"kitchen_SET_latest:cabinets_counter_latestRN" 0
+		"kitchen_SET_latest:fork_latestRN" 0
 		"kitchen_SET_latest:pot_small_handle_latestRN" 0
 		"kitchen_SET_latest:pho_spoon_latestRN" 0
 		"kitchen_SET_latest:cabinets_counter_latest:stove_latestRN" 0
-		"kitchen_SET_latest:pho_spoon_latestRN1" 0
 		"kitchen_SET_latest:house_INTERIOR:door_v01_latestRN" 0
-		"kitchen_SET_latest:pan_big_latestRN" 0
+		"kitchen_SET_latest:pho_spoon_latestRN1" 0
 		"kitchen_SET_latest:floor_mat_latestRN" 0
+		"kitchen_SET_latest:pan_big_latestRN" 0
 		"kitchen_SET_latest:pan_big_latestRN1" 0
 		"kitchen_SET_latest:chopsticks_square_latestRN" 0
-		"kitchen_SET_latest:toasterRN" 0
 		"kitchen_SET_latest:ricecooker_latestRN" 0
+		"kitchen_SET_latest:toasterRN" 0
 		"kitchen_SET_latest:pho_spoon_latestRN2" 0
-		"kitchen_SET_latest:chopsticks_round_latestRN1" 0
 		"kitchen_SET_latest:dish_rack_latest:bowl_smallwhite_pattern1_latestRN" 0
 		
+		"kitchen_SET_latest:chopsticks_round_latestRN1" 0
 		"kitchen_SET_latest:cutting_boardRN" 0
 		"kitchen_SET_latest:dish_rack_latest:plate_latestRN" 0
 		"kitchen_SET_latest:dish_rack_latest:bowl_conic_latestRN" 0
@@ -47019,7 +47250,7 @@ createNode reference -n "frame1RN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"frame1RN"
 		"frame1RN" 0
-		"frame1RN" 6
+		"frame1RN" 8
 		0 "|frame6:frame1" "|LIVING_ROOM_SET|PROPS|picture_frames" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame6:frame1" "translate" " -type \"double3\" 49.97599864085881904 53.35694608019980478 43.79099998865422805"
 		
@@ -47027,7 +47258,11 @@ createNode reference -n "frame1RN";
 		
 		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame6:frame1" "scale" " -type \"double3\" 3.18225300077599371 3.18225300077599371 3.18225300077599371"
 		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame6:frame1|frame6:frame1|frame6:frame1Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame6:frame1|frame6:frame1|frame6:frame1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame6:frame1|frame6:photo1|frame6:photo1Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame6:frame1|frame6:photo1|frame6:photo1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -47038,7 +47273,7 @@ createNode reference -n "frame2RN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"frame2RN"
 		"frame2RN" 0
-		"frame2RN" 6
+		"frame2RN" 8
 		0 "|frame7:frame2" "|LIVING_ROOM_SET|PROPS|picture_frames" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame7:frame2" "translate" " -type \"double3\" 47.84282407324241149 76.23533310358300241 43.29868988093123505"
 		
@@ -47046,7 +47281,11 @@ createNode reference -n "frame2RN";
 		
 		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame7:frame2" "scale" " -type \"double3\" 3.01377457753110223 3.01377457753110223 3.01377457753110223"
 		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame7:frame2|frame7:frame2|frame7:frame2Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame7:frame2|frame7:frame2|frame7:frame2Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame7:frame2|frame7:photo2|frame7:photo2Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame7:frame2|frame7:photo2|frame7:photo2Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -47057,7 +47296,7 @@ createNode reference -n "frame3RN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"frame3RN"
 		"frame3RN" 0
-		"frame3RN" 6
+		"frame3RN" 8
 		0 "|frame8:frame3" "|LIVING_ROOM_SET|PROPS|picture_frames" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame8:frame3" "translate" " -type \"double3\" 68.45455256980883973 71.7095649769135548 44.08630775929331236"
 		
@@ -47065,7 +47304,11 @@ createNode reference -n "frame3RN";
 		
 		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame8:frame3" "scale" " -type \"double3\" 3.52283490802465504 3.52283490802465504 3.52283490802465504"
 		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame8:frame3|frame8:frame3|frame8:frame3Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame8:frame3|frame8:frame3|frame8:frame3Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame8:frame3|frame8:photo3|frame8:photo3Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame8:frame3|frame8:photo3|frame8:photo3Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -47245,7 +47488,7 @@ createNode reference -n "soy_sauce_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"soy_sauce_latestRN"
 		"soy_sauce_latestRN" 0
-		"soy_sauce_latestRN" 8
+		"soy_sauce_latestRN" 10
 		0 "|soy_sauce_latest:soy_sauce" "|LIVING_ROOM_SET|PROPS" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|soy_sauce_latest:soy_sauce" "translate" " -type \"double3\" 0.04459001145104402 7.04625290956688666 -2.64352522566874804"
 		
@@ -47257,7 +47500,11 @@ createNode reference -n "soy_sauce_latestRN";
 		
 		2 "|LIVING_ROOM_SET|PROPS|soy_sauce_latest:soy_sauce" "scalePivotTranslate" 
 		" -type \"double3\" 0 -2.47896422814945794 0"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|soy_sauce_latest:soy_sauce|soy_sauce_latest:bottle|soy_sauce_latest:bottleShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|soy_sauce_latest:soy_sauce|soy_sauce_latest:bottle|soy_sauce_latest:bottleShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|soy_sauce_latest:soy_sauce|soy_sauce_latest:topCap1|soy_sauce_latest:topCap1Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|soy_sauce_latest:soy_sauce|soy_sauce_latest:topCap1|soy_sauce_latest:topCap1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -47275,7 +47522,7 @@ createNode reference -n "croc3RN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"croc3RN"
 		"croc3RN" 0
-		"croc3RN" 64
+		"croc3RN" 67
 		0 "|croc3:croc" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc" 
@@ -47599,9 +47846,15 @@ createNode reference -n "croc3RN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pasted__pCube2|croc3:pasted__pCube2Shape" 
 		"pt[166:193]" " -35.285049 30.547762 -204.18779 -35.285049 30.756435 -203.87115 -35.136414 31.24234 -203.20287 -34.486046 31.948708 -202.19196 -34.009224 32.184273 -201.58939 -34.127396 32.189346 -201.50941 -34.719803 31.937841 -202.19435 -35.331211 31.285686 -203.13847 -35.278786 31.219522 -203.23552 -35.356758 31.24234 -203.20287 -35.505398 30.756435 -203.87115 -35.493366 30.991594 -204.02365 -35.493366 30.756435 -203.87115 -35.493366 30.903818 -204.4586 -35.493366 30.216711 -204.59785 -35.493366 30.443184 -204.68275 -35.493366 30.507092 -203.70946 -35.493366 30.138115 -203.94504 -35.493366 30.09494 -204.45767 -35.545418 30.919939 -204.05121 -35.545418 30.722366 -203.9231 -35.545418 30.547045 -204.18912 -35.545418 30.846193 -204.41666 -35.545418 30.268902 -204.53365 -35.545418 30.459179 -204.60497 -35.545418 30.512873 -203.78723 -35.545418 30.202868 -203.98517 -35.545418 30.166592 -204.41586"
 		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pCube1|croc3:polySurface1|croc3:polySurfaceShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pCube1|croc3:polySurface1|croc3:polySurfaceShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pCube1|croc3:polySurface2|croc3:polySurfaceShape2.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pCube1|croc3:polySurface2|croc3:polySurfaceShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pasted__pCube2|croc3:pasted__pCube2Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pasted__pCube2|croc3:pasted__pCube2Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -47612,7 +47865,7 @@ createNode reference -n "croc3RN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"croc3RN1"
 		"croc3RN1" 0
-		"croc3RN1" 65
+		"croc3RN1" 68
 		0 "|croc4:croc" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc" 
@@ -47938,9 +48191,15 @@ createNode reference -n "croc3RN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pasted__pCube2|croc4:pasted__pCube2Shape" 
 		"pt[166:193]" " -36.757008 30.167473 -205.44215 -36.732723 30.329632 -205.1235 -36.945606 30.713678 -204.43481 -38.023811 31.265203 -203.36372 -38.82494 31.419371 -202.73822 -38.608803 31.41634 -202.67181 -37.608601 31.256647 -203.3849 -36.594509 30.748665 -204.38474 -36.695107 30.696583 -204.47865 -36.554043 30.714989 -204.45158 -36.34116 30.330942 -205.14029 -36.374237 30.567738 -205.25711 -36.362537 30.33087 -205.13936 -36.407589 30.531597 -205.67365 -36.41827 29.901646 -205.87715 -36.424778 30.123178 -205.93253 -36.350136 30.079712 -205.01453 -36.368206 29.758518 -205.27434 -36.40752 29.772486 -205.75888 -36.283848 30.50374 -205.29449 -36.274021 30.304729 -205.19557 -36.294422 30.168488 -205.4633 -36.311871 30.473373 -205.64447 -36.320847 29.944105 -205.81544 -36.326313 30.130232 -205.86195 -36.263599 30.093714 -205.09068 -36.278782 29.823853 -205.30899 -36.311813 29.835587 -205.71606"
 		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface1|croc4:polySurfaceShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface1|croc4:polySurfaceShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface2|croc4:polySurfaceShape2.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface2|croc4:polySurfaceShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pasted__pCube2|croc4:pasted__pCube2Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pasted__pCube2|croc4:pasted__pCube2Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -47951,7 +48210,7 @@ createNode reference -n "running_shoe_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"running_shoe_latestRN"
 		"running_shoe_latestRN" 0
-		"running_shoe_latestRN" 79
+		"running_shoe_latestRN" 91
 		0 "|running_shoe_latest:shoe" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe" 
@@ -48210,27 +48469,51 @@ createNode reference -n "running_shoe_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder10|running_shoe_latest:pCylinderShape10" 
 		"pt[166:181]" " -49.423656 31.878056 -203.42741 -49.179268 31.881058 -203.64313 -49.011906 31.884026 -203.92259 -48.93795 31.886669 -204.23849 -48.964649 31.888733 -204.55989 -49.089378 31.890007 -204.85532 -49.299934 31.890373 -205.09584 -49.57571 31.889793 -205.25795 -49.889702 31.888327 -205.32576 -50.211182 31.886112 -205.29263 -50.508675 31.883369 -205.1618 -50.753067 31.880367 -204.94609 -50.920425 31.877399 -204.66663 -50.994381 31.874756 -204.35072 -51.581894 31.809147 -205.21664 -49.966167 31.880713 -204.29462"
 		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:sole|running_shoe_latest:soleShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:sole|running_shoe_latest:soleShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:body|running_shoe_latest:bodyShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:body|running_shoe_latest:bodyShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:lip|running_shoe_latest:lipShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:lip|running_shoe_latest:lipShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder1|running_shoe_latest:pCylinderShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder1|running_shoe_latest:pCylinderShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder2|running_shoe_latest:pCylinderShape2.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder2|running_shoe_latest:pCylinderShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder3|running_shoe_latest:pCylinderShape3.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder3|running_shoe_latest:pCylinderShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder4|running_shoe_latest:pCylinderShape4.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder4|running_shoe_latest:pCylinderShape4.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder5|running_shoe_latest:pCylinderShape5.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder5|running_shoe_latest:pCylinderShape5.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder6|running_shoe_latest:pCylinderShape6.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder6|running_shoe_latest:pCylinderShape6.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder7|running_shoe_latest:pCylinderShape7.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder7|running_shoe_latest:pCylinderShape7.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder8|running_shoe_latest:pCylinderShape8.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder8|running_shoe_latest:pCylinderShape8.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder10|running_shoe_latest:pCylinderShape10.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder10|running_shoe_latest:pCylinderShape10.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -48241,7 +48524,7 @@ createNode reference -n "running_shoe_latestRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"running_shoe_latestRN1"
 		"running_shoe_latestRN1" 0
-		"running_shoe_latestRN1" 79
+		"running_shoe_latestRN1" 91
 		0 "|running_shoe_latest1:shoe" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe" 
@@ -48500,27 +48783,51 @@ createNode reference -n "running_shoe_latestRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder10|running_shoe_latest1:pCylinderShape10" 
 		"pt[166:181]" " -53.807884 31.903938 -203.9937 -53.611317 31.907261 -204.20912 -53.496254 31.910406 -204.48871 -53.473949 31.913063 -204.80513 -53.546589 31.914974 -205.12737 -53.707066 31.915951 -205.42392 -53.939663 31.915899 -205.66573 -54.221626 31.914822 -205.82915 -54.525337 31.912825 -205.89816 -54.821083 31.910103 -205.86603 -55.079906 31.906925 -205.73587 -55.27647 31.903601 -205.52046 -55.391537 31.900455 -205.24086 -55.413841 31.8978 -204.92445 -52.722862 31.678188 -205.79987 -54.443893 31.905432 -204.86478"
 		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:sole|running_shoe_latest1:soleShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:sole|running_shoe_latest1:soleShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:body|running_shoe_latest1:bodyShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:body|running_shoe_latest1:bodyShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:lip|running_shoe_latest1:lipShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:lip|running_shoe_latest1:lipShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder1|running_shoe_latest1:pCylinderShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder1|running_shoe_latest1:pCylinderShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder2|running_shoe_latest1:pCylinderShape2.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder2|running_shoe_latest1:pCylinderShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder3|running_shoe_latest1:pCylinderShape3.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder3|running_shoe_latest1:pCylinderShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder4|running_shoe_latest1:pCylinderShape4.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder4|running_shoe_latest1:pCylinderShape4.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder5|running_shoe_latest1:pCylinderShape5.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder5|running_shoe_latest1:pCylinderShape5.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder6|running_shoe_latest1:pCylinderShape6.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder6|running_shoe_latest1:pCylinderShape6.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder7|running_shoe_latest1:pCylinderShape7.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder7|running_shoe_latest1:pCylinderShape7.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder8|running_shoe_latest1:pCylinderShape8.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder8|running_shoe_latest1:pCylinderShape8.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder10|running_shoe_latest1:pCylinderShape10.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder10|running_shoe_latest1:pCylinderShape10.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -48531,7 +48838,7 @@ createNode reference -n "shoe_jicRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"shoe_jicRN"
 		"shoe_jicRN" 0
-		"shoe_jicRN" 98
+		"shoe_jicRN" 100
 		0 "|shoe_jic:shoe" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe" 
@@ -48815,7 +49122,11 @@ createNode reference -n "shoe_jicRN";
 		"dispResolution" " 3"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface16|shoe_jic:transform1|shoe_jic:polySurfaceShape16" 
 		"displaySmoothMesh" " 2"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:shoe|shoe_jic:polySurface17|shoe_jic:polySurfaceShape17.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:shoe|shoe_jic:polySurface17|shoe_jic:polySurfaceShape17.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:shoe|shoe_jic:polySurface18|shoe_jic:polySurfaceShape18.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:shoe|shoe_jic:polySurface18|shoe_jic:polySurfaceShape18.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -48826,7 +49137,7 @@ createNode reference -n "shoe_jicRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"shoe_jicRN1"
 		"shoe_jicRN1" 0
-		"shoe_jicRN1" 65
+		"shoe_jicRN1" 67
 		0 "|shoe_jic1:shoe" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe" 
@@ -49044,7 +49355,11 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface16|shoe_jic1:transform1|shoe_jic1:polySurfaceShape16" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -63.888828 32.796066 -206.00549 -63.848907 32.833607 -205.86339 -63.763062 32.827148 -205.64931 -63.669571 32.83408 -205.46249 -63.58601 32.825783 -205.45757 -63.487362 32.694534 -205.44791 -63.406258 32.708042 -205.56902 -63.334385 32.764626 -205.54987 -63.333851 32.738644 -205.78281 -63.404808 32.880741 -205.98918 -63.487026 32.959332 -206.11813 -63.574112 33.139301 -206.21001 -63.651329 33.177254 -206.2908 -63.73885 33.121513 -206.3588 -63.838951 33.097324 -206.48111 -63.87833 32.953796 -206.42542 -63.745644 33.127884 -206.3259 -63.852188 33.103928 -206.46484 -63.769855 32.833519 -205.61642 -63.862148 32.84021 -205.84712 -63.896034 32.960808 -206.4241 -63.906528 32.803078 -206.00421 -63.655506 33.183327 -206.2547 -63.673748 32.840149 -205.42638 -63.575108 33.145386 -206.17317 -63.587006 32.831863 -205.42073 -63.483768 32.966408 -206.08418 -63.484104 32.701611 -205.41396 -63.398235 32.884903 -205.95074 -63.399681 32.712204 -205.53058 -63.325668 32.872955 -205.73268 -63.326202 32.765369"
 		+ " -205.50484")
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:shoe|shoe_jic1:polySurface17|shoe_jic1:polySurfaceShape17.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:shoe|shoe_jic1:polySurface17|shoe_jic1:polySurfaceShape17.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:shoe|shoe_jic1:polySurface18|shoe_jic1:polySurfaceShape18.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:shoe|shoe_jic1:polySurface18|shoe_jic1:polySurfaceShape18.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -49100,7 +49415,7 @@ createNode reference -n "jackie_shoe_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"jackie_shoe_latestRN"
 		"jackie_shoe_latestRN" 0
-		"jackie_shoe_latestRN" 67
+		"jackie_shoe_latestRN" 82
 		0 "|jackie_shoe_latest:Jackie_Shoe" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe" 
@@ -49227,33 +49542,63 @@ createNode reference -n "jackie_shoe_latestRN";
 		"jackie_shoe_latestRN.placeHolderList[43]" ""
 		5 4 "jackie_shoe_latestRN" "jackie_shoe_latest:PxrSurface4SG.dagSetMembers" 
 		"jackie_shoe_latestRN.placeHolderList[44]" ""
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube15|jackie_shoe_latest:pCubeShape15.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube15|jackie_shoe_latest:pCubeShape15.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube14|jackie_shoe_latest:pCubeShape14.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube14|jackie_shoe_latest:pCubeShape14.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube13|jackie_shoe_latest:pCubeShape13.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube13|jackie_shoe_latest:pCubeShape13.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube12|jackie_shoe_latest:pCubeShape12.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube12|jackie_shoe_latest:pCubeShape12.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube11|jackie_shoe_latest:pCubeShape11.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube11|jackie_shoe_latest:pCubeShape11.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube10|jackie_shoe_latest:pCubeShape10.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube10|jackie_shoe_latest:pCubeShape10.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube9|jackie_shoe_latest:pCubeShape9.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube9|jackie_shoe_latest:pCubeShape9.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube2|jackie_shoe_latest:pCubeShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube2|jackie_shoe_latest:pCubeShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:ClothParts|jackie_shoe_latest:Left_Side|jackie_shoe_latest:Left_SideShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:ClothParts|jackie_shoe_latest:Left_Side|jackie_shoe_latest:Left_SideShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:ClothParts|jackie_shoe_latest:Right_Side|jackie_shoe_latest:Right_SideShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:ClothParts|jackie_shoe_latest:Right_Side|jackie_shoe_latest:Right_SideShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:ClothParts|jackie_shoe_latest:Base|jackie_shoe_latest:BaseShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:ClothParts|jackie_shoe_latest:Base|jackie_shoe_latest:BaseShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:ClothParts|jackie_shoe_latest:Tongue|jackie_shoe_latest:TongueShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:ClothParts|jackie_shoe_latest:Tongue|jackie_shoe_latest:TongueShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:LaceHoles|jackie_shoe_latest:Right_Lace_Holes|jackie_shoe_latest:pTorus2|jackie_shoe_latest:pTorusShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:LaceHoles|jackie_shoe_latest:Right_Lace_Holes|jackie_shoe_latest:pTorus2|jackie_shoe_latest:pTorusShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:RubberParts|jackie_shoe_latest:Back|jackie_shoe_latest:BackShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:RubberParts|jackie_shoe_latest:Back|jackie_shoe_latest:BackShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:RubberParts|jackie_shoe_latest:Sole|jackie_shoe_latest:SoleShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:RubberParts|jackie_shoe_latest:Sole|jackie_shoe_latest:SoleShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -49264,7 +49609,7 @@ createNode reference -n "ping_shoes_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"ping_shoes_latestRN"
 		"ping_shoes_latestRN" 0
-		"ping_shoes_latestRN" 18
+		"ping_shoes_latestRN" 20
 		0 "|ping_shoes_latest:ping_shoes" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|ping_shoes_latest:ping_shoes" 
@@ -49302,7 +49647,11 @@ createNode reference -n "ping_shoes_latestRN";
 		"dispResolution" " 3"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|ping_shoes_latest:ping_shoes|ping_shoes_latest:left_shoe|ping_shoes_latest:left_shoeShape" 
 		"displaySmoothMesh" " 2"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|ping_shoes_latest:ping_shoes|ping_shoes_latest:right_shoe|ping_shoes_latest:right_shoeShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|ping_shoes_latest:ping_shoes|ping_shoes_latest:right_shoe|ping_shoes_latest:right_shoeShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|ping_shoes_latest:ping_shoes|ping_shoes_latest:left_shoe|ping_shoes_latest:left_shoeShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|ping_shoes_latest:ping_shoes|ping_shoes_latest:left_shoe|ping_shoes_latest:left_shoeShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -49313,7 +49662,7 @@ createNode reference -n "boardGames_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"boardGames_latestRN"
 		"boardGames_latestRN" 0
-		"boardGames_latestRN" 4
+		"boardGames_latestRN" 10
 		0 "|boardGames_latest:BoardGames" "|LIVING_ROOM_SET|PROPS|BOOKSHELF" "-s -r "
 		
 		2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|boardGames_latest:BoardGames" "translate" 
@@ -49322,7 +49671,19 @@ createNode reference -n "boardGames_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|boardGames_latest:BoardGames" "rotate" 
 		" -type \"double3\" 0 179.99999999999991473 0"
 		2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|boardGames_latest:BoardGames" "scale" 
-		" -type \"double3\" 17.338296733639595 17.338296733639595 17.338296733639595";
+		" -type \"double3\" 17.338296733639595 17.338296733639595 17.338296733639595"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|boardGames_latest:BoardGames|boardGames_latest:Board_Game|boardGames_latest:Lid|boardGames_latest:LidShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|boardGames_latest:BoardGames|boardGames_latest:Board_Game|boardGames_latest:Bottom|boardGames_latest:BottomShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|boardGames_latest:BoardGames|boardGames_latest:oskisAdventure|boardGames_latest:Lid|boardGames_latest:LidShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|boardGames_latest:BoardGames|boardGames_latest:oskisAdventure|boardGames_latest:Bottom|boardGames_latest:BottomShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|boardGames_latest:BoardGames|boardGames_latest:BerkeleyBingo|boardGames_latest:Lid|boardGames_latest:LidShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|boardGames_latest:BoardGames|boardGames_latest:BerkeleyBingo|boardGames_latest:Bottom|boardGames_latest:BottomShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bookStack_LEFT_SHELFRN";
@@ -49330,7 +49691,7 @@ createNode reference -n "bookStack_LEFT_SHELFRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bookStack_LEFT_SHELFRN"
 		"bookStack_LEFT_SHELFRN" 0
-		"bookStack_LEFT_SHELFRN" 20
+		"bookStack_LEFT_SHELFRN" 86
 		0 "|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF" "|LIVING_ROOM_SET|PROPS|BOOKSHELF" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF" 
@@ -49386,7 +49747,140 @@ createNode reference -n "bookStack_LEFT_SHELFRN";
 		"translate" " -type \"double3\" 12.90174609651615256 -2.42118183629778017 -0.26363169003336612"
 		
 		2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book14" 
-		"rotate" " -type \"double3\" -0.39535431109100327 3.67455069547296231 -96.14525219727673289";
+		"rotate" " -type \"double3\" -0.39535431109100327 3.67455069547296231 -96.14525219727673289"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book_stack:book|bookStack_LEFT_SHELF:book_stack:cover|bookStack_LEFT_SHELF:book_stack:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book_stack:book|bookStack_LEFT_SHELF:book_stack:pages|bookStack_LEFT_SHELF:book_stack:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book_stack:book1|bookStack_LEFT_SHELF:book_stack:cover|bookStack_LEFT_SHELF:book_stack:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book_stack:book1|bookStack_LEFT_SHELF:book_stack:pages|bookStack_LEFT_SHELF:book_stack:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book_stack:book4|bookStack_LEFT_SHELF:book_stack:cover|bookStack_LEFT_SHELF:book_stack:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book_stack:book4|bookStack_LEFT_SHELF:book_stack:pages|bookStack_LEFT_SHELF:book_stack:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book_stack:book5|bookStack_LEFT_SHELF:book_stack:cover|bookStack_LEFT_SHELF:book_stack:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book_stack:book5|bookStack_LEFT_SHELF:book_stack:pages|bookStack_LEFT_SHELF:book_stack:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book_stack:book6|bookStack_LEFT_SHELF:book_stack:cover|bookStack_LEFT_SHELF:book_stack:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book_stack:book6|bookStack_LEFT_SHELF:book_stack:pages|bookStack_LEFT_SHELF:book_stack:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book_stack:book7|bookStack_LEFT_SHELF:book_stack:cover|bookStack_LEFT_SHELF:book_stack:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book_stack:book7|bookStack_LEFT_SHELF:book_stack:pages|bookStack_LEFT_SHELF:book_stack:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book13|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book13|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book12|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book12|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book11|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book11|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book10|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book10|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book9|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book9|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book8|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book8|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book7|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book7|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book20|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Top_Stack|bookStack_LEFT_SHELF:book20|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book21|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book21|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book15|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book15|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book1|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book1|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book2|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book2|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book3|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book3|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book4|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book4|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book5|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book5|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book6|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book6|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book13|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book13|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book12|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book12|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book11|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book11|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book10|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book10|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book9|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book9|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book8|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book8|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book14|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book14|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book16|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book16|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book17|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book17|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book18|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book18|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book19|bookStack_LEFT_SHELF:cover|bookStack_LEFT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_LEFT_SHELF:bookStack_LEFT_SHELF|bookStack_LEFT_SHELF:Bottom_Stack|bookStack_LEFT_SHELF:book19|bookStack_LEFT_SHELF:pages|bookStack_LEFT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bookStack_RIGHT_SHELFRN";
@@ -49394,7 +49888,7 @@ createNode reference -n "bookStack_RIGHT_SHELFRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bookStack_RIGHT_SHELFRN"
 		"bookStack_RIGHT_SHELFRN" 0
-		"bookStack_RIGHT_SHELFRN" 6
+		"bookStack_RIGHT_SHELFRN" 20
 		0 "|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF" "|LIVING_ROOM_SET|PROPS|BOOKSHELF" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF" 
@@ -49410,7 +49904,36 @@ createNode reference -n "bookStack_RIGHT_SHELFRN";
 		"rotate" " -type \"double3\" 0.023201961384386616 -18.82352311201809769 -0.0057382949483604194"
 		
 		2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book26" 
-		"scale" " -type \"double3\" 0.092824697018849364 0.19976962353959063 0.093382586512310697";
+		"scale" " -type \"double3\" 0.092824697018849364 0.19976962353959063 0.093382586512310697"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book26|bookStack_RIGHT_SHELF:cover|bookStack_RIGHT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book26|bookStack_RIGHT_SHELF:pages|bookStack_RIGHT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book25|bookStack_RIGHT_SHELF:cover|bookStack_RIGHT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book25|bookStack_RIGHT_SHELF:pages|bookStack_RIGHT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book24|bookStack_RIGHT_SHELF:cover|bookStack_RIGHT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book24|bookStack_RIGHT_SHELF:pages|bookStack_RIGHT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book23|bookStack_RIGHT_SHELF:cover|bookStack_RIGHT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book23|bookStack_RIGHT_SHELF:pages|bookStack_RIGHT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book22|bookStack_RIGHT_SHELF:cover|bookStack_RIGHT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book22|bookStack_RIGHT_SHELF:pages|bookStack_RIGHT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book21|bookStack_RIGHT_SHELF:cover|bookStack_RIGHT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book21|bookStack_RIGHT_SHELF:pages|bookStack_RIGHT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book20|bookStack_RIGHT_SHELF:cover|bookStack_RIGHT_SHELF:coverShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|BOOKSHELF|bookStack_RIGHT_SHELF:bookstack_RIGHT_SHELF|bookStack_RIGHT_SHELF:book20|bookStack_RIGHT_SHELF:pages|bookStack_RIGHT_SHELF:pagesShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "large_painting_ARN";
@@ -49418,7 +49941,7 @@ createNode reference -n "large_painting_ARN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"large_painting_ARN"
 		"large_painting_ARN" 0
-		"large_painting_ARN" 11
+		"large_painting_ARN" 13
 		0 "|large_painting_A:large_painting_A" "|LIVING_ROOM_SET|PROPS" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|large_painting_A:large_painting_A" "translate" 
 		" -type \"double3\" 3.70860707288954128 15.0907359059612407 -56.54373850548257963"
@@ -49437,7 +49960,11 @@ createNode reference -n "large_painting_ARN";
 		"translate" " -type \"double3\" 0 0 0.033722206162728169"
 		2 "|LIVING_ROOM_SET|PROPS|large_painting_A:large_painting_A|large_painting_A:picture_plane" 
 		"scale" " -type \"double3\" 1 1.0218208105210691 1"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|large_painting_A:large_painting_A|large_painting_A:picture_frame|large_painting_A:picture_frameShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|large_painting_A:large_painting_A|large_painting_A:picture_frame|large_painting_A:picture_frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|large_painting_A:large_painting_A|large_painting_A:picture_plane|large_painting_A:picture_planeShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|large_painting_A:large_painting_A|large_painting_A:picture_plane|large_painting_A:picture_planeShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -49448,7 +49975,7 @@ createNode reference -n "large_painting_BRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"large_painting_BRN"
 		"large_painting_BRN" 0
-		"large_painting_BRN" 11
+		"large_painting_BRN" 13
 		0 "|large_painting_B:large_painting_B" "|LIVING_ROOM_SET|PROPS" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|large_painting_B:large_painting_B" "translate" 
 		" -type \"double3\" -9.01456407465584419 14.0696221650061748 -56.52109065019639189"
@@ -49467,7 +49994,11 @@ createNode reference -n "large_painting_BRN";
 		" -type \"double3\" 0 4.16119757233388032 0"
 		2 "|LIVING_ROOM_SET|PROPS|large_painting_B:large_painting_B|large_painting_B:picture_plane" 
 		"translate" " -type \"double3\" 0 0 0.041463560506797906"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|large_painting_B:large_painting_B|large_painting_B:picture_frame|large_painting_B:picture_frameShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|large_painting_B:large_painting_B|large_painting_B:picture_frame|large_painting_B:picture_frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|large_painting_B:large_painting_B|large_painting_B:picture_plane|large_painting_B:picture_planeShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|large_painting_B:large_painting_B|large_painting_B:picture_plane|large_painting_B:picture_planeShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -49478,7 +50009,7 @@ createNode reference -n "windchime_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"windchime_latestRN"
 		"windchime_latestRN" 0
-		"windchime_latestRN" 21
+		"windchime_latestRN" 34
 		0 "|windchime_latest:wind_chime" "|LIVING_ROOM_SET|PROPS" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime" "translate" " -type \"double3\" -4.44828349936885825 18.0168752232719811 10.03537944234512835"
 		
@@ -49496,29 +50027,55 @@ createNode reference -n "windchime_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime" "scalePivotTranslate" 
 		" -type \"double3\" -1.8642936557105983e-08 0.4721630312786112 -3.7285873114211901e-08"
 		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:large_hat|windchime_latest:large_hatShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:large_hat|windchime_latest:large_hatShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:small_hat|windchime_latest:small_hatShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:small_hat|windchime_latest:small_hatShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:big_bell|windchime_latest:big_bellShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:big_bell|windchime_latest:big_bellShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:medium_bell|windchime_latest:medium_bellShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:medium_bell|windchime_latest:medium_bellShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:smallest_bell|windchime_latest:smallest_bellShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:smallest_bell|windchime_latest:smallest_bellShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:string1|windchime_latest:stringShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:string1|windchime_latest:stringShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead2|windchime_latest:beadShape2.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead2|windchime_latest:beadShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead1|windchime_latest:beadShape1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead1|windchime_latest:beadShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead|windchime_latest:beadShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead|windchime_latest:beadShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead3|windchime_latest:beadShape3.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead3|windchime_latest:beadShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead4|windchime_latest:bead4Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead4|windchime_latest:bead4Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead5|windchime_latest:beadShape5.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead5|windchime_latest:beadShape5.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:nail|windchime_latest:nailShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:nail|windchime_latest:nailShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -49529,7 +50086,7 @@ createNode reference -n "wooden_pictureRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"wooden_pictureRN"
 		"wooden_pictureRN" 0
-		"wooden_pictureRN" 6
+		"wooden_pictureRN" 7
 		0 "|wooden_picture:wooden_picture" "|LIVING_ROOM_SET|PROPS" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|wooden_picture:wooden_picture" "translate" " -type \"double3\" -19.35668793214558292 22.2981415319360039 10.26657739224862098"
 		
@@ -49539,6 +50096,8 @@ createNode reference -n "wooden_pictureRN";
 		
 		2 "wooden_picture:PxrNormalMap1" "filename" " -type \"string\" \"C:/Users/chenc315/Desktop/Repository/LoveLanguage//sourceimages/livingroomprops/wooden_picture/wooden_pic_lambert1_Normal.png\""
 		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|wooden_picture:wooden_picture|wooden_picture:wooden_pictureShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|wooden_picture:wooden_picture|wooden_picture:wooden_pictureShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
 	setAttr ".ptag" -type "string" "";
@@ -49559,8 +50118,8 @@ createNode reference -n "eggroll_platterRN1";
 		"eggroll_platter1:eggrollRN10" 0
 		"eggroll_platter1:eggrollRN7" 0
 		"eggroll_platter1:eggrollRN9" 0
-		"eggroll_platter1:eggrollRN8" 0
 		"eggroll_platter1:eggrollRN" 0
+		"eggroll_platter1:eggrollRN8" 0
 		"eggroll_platter1:eggrollRN2" 0
 		"eggroll_platter1:eggrollRN11" 1
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll11:pCube1|eggroll_platter1:eggroll11:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
@@ -49613,11 +50172,11 @@ createNode reference -n "eggroll_platterRN1";
 		"eggroll_platter1:eggrollRN4" 1
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll4:pCube1|eggroll_platter1:eggroll4:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
-		"eggroll_platter1:eggrollRN12" 1
-		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll12:pCube1|eggroll_platter1:eggroll12:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
-		0
 		"eggroll_platter1:eggrollRN10" 1
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll10:pCube1|eggroll_platter1:eggroll10:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN12" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll12:pCube1|eggroll_platter1:eggroll12:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
 		"eggroll_platter1:eggrollRN7" 1
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll7:pCube1|eggroll_platter1:eggroll7:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
@@ -49805,8 +50364,12 @@ createNode reference -n "house_INTERIORRN";
 		"house_INTERIOR:stairsRN" 0
 		"house_INTERIORRN" 0
 		"house_INTERIOR:door_v01_latestRN" 0
-		"house_INTERIORRN" 20
+		"house_INTERIORRN" 36
 		0 "|house_INTERIOR:HOUSE_INTERIOR" "|LIVING_ROOM_SET" "-s -r "
+		2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:roof" "visibility" 
+		" 0"
+		2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:interior" 
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:interior|house_INTERIOR:interiorShape" 
 		"dispResolution" " 3"
 		2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:interior|house_INTERIOR:interiorShape" 
@@ -49816,51 +50379,97 @@ createNode reference -n "house_INTERIORRN";
 		2 "house_INTERIOR:file5" "fileTextureName" " -type \"string\" \"C:/Users/chenc315/Desktop/Repository/LoveLanguage//sourceimages/house/house_house_Height.png\""
 		
 		2 "house_INTERIOR:file5" "colorSpace" " -type \"string\" \"sRGB\""
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:roof|house_INTERIOR:roofShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:roof|house_INTERIOR:roofShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:interior|house_INTERIOR:interiorShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:interior|house_INTERIOR:interiorShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LEFTLargeWindow|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LEFTLargeWindow|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LEFTLargeWindow|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LEFTLargeWindow|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:MIDDLELargeWindow|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:MIDDLELargeWindow|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:MIDDLELargeWindow|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:MIDDLELargeWindow|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:RIGHTLargeWindow|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:RIGHTLargeWindow|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:RIGHTLargeWindow|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:RIGHTLargeWindow|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:kitchen_window|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:kitchen_window|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:kitchen_window|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:kitchen_window|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LR_Big_left_window|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LR_Big_left_window|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LR_Big_left_window|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LR_Big_left_window|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LR_Big_right_Window|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LR_Big_right_Window|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LR_Big_right_Window|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LR_Big_right_Window|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
-		"house_INTERIOR:curtainsRN" 3
+		"house_INTERIOR:curtainsRN" 6
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:curtains:Curtains|house_INTERIOR:curtains:Left_Curtain|house_INTERIOR:curtains:outputCloth1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:curtains:Curtains|house_INTERIOR:curtains:Left_Curtain|house_INTERIOR:curtains:outputCloth1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:curtains:Curtains|house_INTERIOR:curtains:Right_Curtain|house_INTERIOR:curtains:outputCloth1.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:curtains:Curtains|house_INTERIOR:curtains:Right_Curtain|house_INTERIOR:curtains:outputCloth1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:curtains:Curtains|house_INTERIOR:curtains:Rod|house_INTERIOR:curtains:RodShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:curtains:Curtains|house_INTERIOR:curtains:Rod|house_INTERIOR:curtains:RodShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
-		"house_INTERIOR:door_v01_latestRN" 6
+		"house_INTERIOR:door_v01_latestRN" 12
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:doorShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:doorShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:knob_stem|house_INTERIOR:door_v01_latest:knob_stemShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:knob_stem|house_INTERIOR:door_v01_latest:knob_stemShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:doorknob2|house_INTERIOR:door_v01_latest:doorknob2Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:doorknob2|house_INTERIOR:door_v01_latest:doorknob2Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:doorknob1|house_INTERIOR:door_v01_latest:doorknob1Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:doorknob1|house_INTERIOR:door_v01_latest:doorknob1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:doorknob_plate1|house_INTERIOR:door_v01_latest:doorknob_plate1Shape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
+		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:doorknob_plate1|house_INTERIOR:door_v01_latest:doorknob_plate1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:doorkonb_plate|house_INTERIOR:door_v01_latest:doorkonb_plateShape.message" "|livingRoomLights|sofa_key|sofa_keyShape.message" 
 		0
 		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:doorkonb_plate|house_INTERIOR:door_v01_latest:doorkonb_plateShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
 		0;
@@ -49973,7 +50582,7 @@ select -ne :defaultRenderUtilityList1;
 select -ne :defaultRenderingList1;
 	setAttr -s 146 ".r";
 select -ne :lightList1;
-	setAttr -s 14 ".l";
+	setAttr -s 15 ".l";
 select -ne :defaultTextureList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -50117,7 +50726,7 @@ select -ne :defaultResolution;
 	setAttr -k on ".isu";
 	setAttr -k on ".pdu";
 select -ne :defaultLightSet;
-	setAttr -s 14 ".dsm";
+	setAttr -s 15 ".dsm";
 select -ne :hardwareRenderGlobals;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -50161,59 +50770,60 @@ select -ne :ikSystem;
 connectAttr "table_legShape1.iog" "side_tableRN.phl[1]";
 connectAttr "table_legShape2.iog" "side_tableRN.phl[2]";
 connectAttr "table_topShape.iog" "side_tableRN.phl[3]";
-connectAttr "lamp_latestRN.phl[1]" "PxrBlack6SG.dsm" -na;
-connectAttr "vase_bodyShape.iog" "lamp_latestRN.phl[2]";
-connectAttr "lamp_shadeShape.iog" "lamp_latestRN.phl[3]";
-connectAttr "bottom_shade_ringShape.iog" "lamp_latestRN.phl[4]";
-connectAttr "top_shade_ringShape.iog" "lamp_latestRN.phl[5]";
-connectAttr "vertical_shade_barShape.iog" "lamp_latestRN.phl[6]";
-connectAttr "vertical_shade_bar2Shape.iog" "lamp_latestRN.phl[7]";
-connectAttr "vertical_shade_bar3Shape.iog" "lamp_latestRN.phl[8]";
-connectAttr "vertical_shade_bar4Shape.iog" "lamp_latestRN.phl[9]";
-connectAttr "vertical_shade_bar5Shape.iog" "lamp_latestRN.phl[10]";
-connectAttr "vertical_shade_bar6Shape.iog" "lamp_latestRN.phl[11]";
-connectAttr "vertical_shade_bar7Shape.iog" "lamp_latestRN.phl[12]";
-connectAttr "vertical_shade_bar8Shape.iog" "lamp_latestRN.phl[13]";
-connectAttr "vertical_shade_bar9Shape.iog" "lamp_latestRN.phl[14]";
-connectAttr "vertical_shade_bar10Shape.iog" "lamp_latestRN.phl[15]";
-connectAttr "footShape.iog" "lamp_latestRN.phl[16]";
-connectAttr "vase_capShape.iog" "lamp_latestRN.phl[17]";
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[18]"
+connectAttr "lamp_latestRN.phl[1]" "PxrBlack6.rman_areaLightShader";
+connectAttr "lamp_latestRN.phl[2]" "PxrBlack6SG.dsm" -na;
+connectAttr "vase_bodyShape.iog" "lamp_latestRN.phl[3]";
+connectAttr "lamp_shadeShape.iog" "lamp_latestRN.phl[4]";
+connectAttr "bottom_shade_ringShape.iog" "lamp_latestRN.phl[5]";
+connectAttr "top_shade_ringShape.iog" "lamp_latestRN.phl[6]";
+connectAttr "vertical_shade_barShape.iog" "lamp_latestRN.phl[7]";
+connectAttr "vertical_shade_bar2Shape.iog" "lamp_latestRN.phl[8]";
+connectAttr "vertical_shade_bar3Shape.iog" "lamp_latestRN.phl[9]";
+connectAttr "vertical_shade_bar4Shape.iog" "lamp_latestRN.phl[10]";
+connectAttr "vertical_shade_bar5Shape.iog" "lamp_latestRN.phl[11]";
+connectAttr "vertical_shade_bar6Shape.iog" "lamp_latestRN.phl[12]";
+connectAttr "vertical_shade_bar7Shape.iog" "lamp_latestRN.phl[13]";
+connectAttr "vertical_shade_bar8Shape.iog" "lamp_latestRN.phl[14]";
+connectAttr "vertical_shade_bar9Shape.iog" "lamp_latestRN.phl[15]";
+connectAttr "vertical_shade_bar10Shape.iog" "lamp_latestRN.phl[16]";
+connectAttr "footShape.iog" "lamp_latestRN.phl[17]";
+connectAttr "vase_capShape.iog" "lamp_latestRN.phl[18]";
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[19]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[19]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[20]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[20]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame1|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[21]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[21]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[22]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[22]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[23]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[23]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame2|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[24]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[24]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[25]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[25]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[26]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[26]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame3|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[27]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[27]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[28]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[28]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[29]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[29]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame4|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[30]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[30]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder5|pCylinderShape5.iog" "lamp_latestRN.phl[31]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[31]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder2|pCylinderShape2.iog" "lamp_latestRN.phl[32]"
 		;
-connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[32]"
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|inner_frame|frame5|pCylinder4|pCylinderShape4.iog" "lamp_latestRN.phl[33]"
 		;
-connectAttr "top_ringShape.iog" "lamp_latestRN.phl[33]";
-connectAttr "bottom_ringShape.iog" "lamp_latestRN.phl[34]";
-connectAttr "pipe_bottomShape.iog" "lamp_latestRN.phl[35]";
-connectAttr "pipe_topShape.iog" "lamp_latestRN.phl[36]";
-connectAttr "topperShape.iog" "lamp_latestRN.phl[37]";
-connectAttr "brass_neckShape.iog" "lamp_latestRN.phl[38]";
+connectAttr "top_ringShape.iog" "lamp_latestRN.phl[34]";
+connectAttr "bottom_ringShape.iog" "lamp_latestRN.phl[35]";
+connectAttr "pipe_bottomShape.iog" "lamp_latestRN.phl[36]";
+connectAttr "pipe_topShape.iog" "lamp_latestRN.phl[37]";
+connectAttr "topperShape.iog" "lamp_latestRN.phl[38]";
+connectAttr "brass_neckShape.iog" "lamp_latestRN.phl[39]";
 connectAttr "SoleShape.iog" "jackie_shoe_latestRN.phl[1]";
 connectAttr "Left_SideShape.iog" "jackie_shoe_latestRN.phl[2]";
 connectAttr "Right_SideShape.iog" "jackie_shoe_latestRN.phl[3]";
@@ -50321,6 +50931,21 @@ relationship "ignore" ":lightLinker1" "pCubeShape12.message" "PxrMeshLight_bulbS
 relationship "ignore" ":lightLinker1" "pCubeShape14.message" "PxrMeshLight_bulbShape.message";
 relationship "ignore" ":lightLinker1" "pCubeShape15.message" "PxrMeshLight_bulbShape.message";
 relationship "ignore" ":lightLinker1" "pCubeShape13.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "SoleShape.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "pTorusShape2.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "BackShape.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "TongueShape.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape2.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape10.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "BaseShape.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape12.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape13.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape9.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape14.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape11.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "Left_SideShape.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "Right_SideShape.message" "sofa_keyShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape15.message" "sofa_keyShape.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr ":PxrPathTracer.msg" ":rmanGlobals.ri_integrator";
@@ -50608,21 +51233,22 @@ connectAttr "d_openexr.msg" ":defaultRenderingList1.r" -na;
 connectAttr "grandma_controlrig:defaultRenderLayer.msg" ":defaultRenderingList1.r"
 		 -na;
 connectAttr "grandma_controlrig:d_openexr.msg" ":defaultRenderingList1.r" -na;
-connectAttr "PxrRectLightShape.msg" ":lightList1.l" -na;
-connectAttr "PxrRectLight1Shape.msg" ":lightList1.l" -na;
-connectAttr "PxrRectLight2Shape.msg" ":lightList1.l" -na;
-connectAttr "PxrRectLight3Shape.msg" ":lightList1.l" -na;
+connectAttr "livingroom_roofShape.msg" ":lightList1.l" -na;
+connectAttr "livingroom_windowShape.msg" ":lightList1.l" -na;
+connectAttr "nookShape.msg" ":lightList1.l" -na;
+connectAttr "kitchenShape.msg" ":lightList1.l" -na;
 connectAttr "kitchen_door_lampShape.msg" ":lightList1.l" -na;
-connectAttr "tabletop_lightShape.msg" ":lightList1.l" -na;
 connectAttr "left_table_lamp1Shape.msg" ":lightList1.l" -na;
 connectAttr "left_table_lamp2Shape.msg" ":lightList1.l" -na;
 connectAttr "PxrMeshLight_bulbShape.msg" ":lightList1.l" -na;
-connectAttr "left_table_lamp3Shape.msg" ":lightList1.l" -na;
-connectAttr "left_table_lamp4Shape.msg" ":lightList1.l" -na;
+connectAttr "right_table_lamp1Shape.msg" ":lightList1.l" -na;
+connectAttr "right_table_lamp2Shape.msg" ":lightList1.l" -na;
 connectAttr "|lamp_latestRNfosterParent1|bulb|bulbShape.msg" ":lightList1.l" -na
 		;
-connectAttr "PxrDiskLightShape.msg" ":lightList1.l" -na;
-connectAttr "PxrDiskLight1Shape.msg" ":lightList1.l" -na;
+connectAttr "left_lamp_fillShape.msg" ":lightList1.l" -na;
+connectAttr "right_lamp_fillShape.msg" ":lightList1.l" -na;
+connectAttr "sofa_keyShape.msg" ":lightList1.l" -na;
+connectAttr "tabletop_lightShape.msg" ":lightList1.l" -na;
 connectAttr "grandma_controlrig:gma_tex_norm.msg" ":defaultTextureList1.tx" -na;
 connectAttr "grandma_controlrig:gma_tex_disp.msg" ":defaultTextureList1.tx" -na;
 connectAttr "grandma_controlrig:PxrDispTransform1.msg" ":defaultTextureList1.tx"
@@ -50651,18 +51277,19 @@ connectAttr "grandma_controlrig:PxrGamma1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "grandma_controlrig:necklace_string_dustfractal.msg" ":defaultTextureList1.tx"
 		 -na;
 connectAttr "lightbulb_baseShape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "PxrRectLight.iog" ":defaultLightSet.dsm" -na;
-connectAttr "PxrRectLight1.iog" ":defaultLightSet.dsm" -na;
-connectAttr "PxrRectLight2.iog" ":defaultLightSet.dsm" -na;
-connectAttr "PxrRectLight3.iog" ":defaultLightSet.dsm" -na;
+connectAttr "livingroom_roof.iog" ":defaultLightSet.dsm" -na;
+connectAttr "livingroom_window.iog" ":defaultLightSet.dsm" -na;
+connectAttr "nook.iog" ":defaultLightSet.dsm" -na;
+connectAttr "kitchen.iog" ":defaultLightSet.dsm" -na;
 connectAttr "kitchen_door_lamp.iog" ":defaultLightSet.dsm" -na;
-connectAttr "tabletop_light.iog" ":defaultLightSet.dsm" -na;
 connectAttr "left_table_lamp1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "left_table_lamp2.iog" ":defaultLightSet.dsm" -na;
 connectAttr "PxrMeshLight_bulb.iog" ":defaultLightSet.dsm" -na;
-connectAttr "left_table_lamp3.iog" ":defaultLightSet.dsm" -na;
-connectAttr "left_table_lamp4.iog" ":defaultLightSet.dsm" -na;
+connectAttr "right_table_lamp1.iog" ":defaultLightSet.dsm" -na;
+connectAttr "right_table_lamp2.iog" ":defaultLightSet.dsm" -na;
 connectAttr "|lamp_latestRNfosterParent1|bulb.iog" ":defaultLightSet.dsm" -na;
-connectAttr "PxrDiskLight.iog" ":defaultLightSet.dsm" -na;
-connectAttr "PxrDiskLight1.iog" ":defaultLightSet.dsm" -na;
+connectAttr "left_lamp_fill.iog" ":defaultLightSet.dsm" -na;
+connectAttr "right_lamp_fill.iog" ":defaultLightSet.dsm" -na;
+connectAttr "sofa_key.iog" ":defaultLightSet.dsm" -na;
+connectAttr "tabletop_light.iog" ":defaultLightSet.dsm" -na;
 // End of livingRoom_SET_latest.ma
