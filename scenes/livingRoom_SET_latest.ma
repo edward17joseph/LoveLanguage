@@ -1,7 +1,7 @@
 //Maya ASCII 2019 scene
 //Name: livingRoom_SET_latest.ma
-//Last modified: Thu, Apr 16, 2020 12:10:37 PM
-//Codeset: UTF-8
+//Last modified: Fri, May 01, 2020 07:09:02 PM
+//Codeset: 1252
 file -rdi 1 -ns "bookshelf_v01_latest" -rfn "bookshelf_v01_latestRN" -op "v=0;"
 		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/bookshelf_v01_latest.ma";
 file -rdi 1 -ns "coffee_table_latest" -rfn "coffee_table_latestRN" -op "v=0;"
@@ -206,33 +206,35 @@ file -r -ns "house_INTERIOR" -dr 1 -rfn "house_INTERIORRN" -op "v=0;" -typ "maya
 		 "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/house_INTERIOR.ma";
 requires maya "2019";
 requires "stereoCamera" "10.0";
-requires -nodeType "PxrVisualizer" -nodeType "PxrDispTransform" -nodeType "PxrLayer"
-		 -nodeType "PxrNormalMap" -nodeType "PxrSurface" -nodeType "PxrDisplace" -nodeType "PxrGamma"
-		 -nodeType "PxrFractal" -nodeType "PxrDefault" -nodeType "PxrTexture" -nodeType "rmanDisplayChannel"
-		 -nodeType "PxrInvert" -nodeType "PxrLayerMixer" -nodeType "d_openexr" -nodeType "PxrCamera"
-		 -nodeType "OmnidirectionalStereo" -nodeType "rmanGlobals" -nodeType "PxrOcclusion"
-		 -nodeType "PxrDirectLighting" -nodeType "PxrVCM" -nodeType "PxrPathTracer" -nodeType "PxrDirt"
-		 -nodeType "rmanDisplay" "RenderMan_for_Maya.py" "23.0 @ 2025012";
+requires -nodeType "PxrDiskLight" -nodeType "PxrVisualizer" -nodeType "PxrDispTransform"
+		 -nodeType "PxrLayer" -nodeType "PxrNormalMap" -nodeType "PxrSurface" -nodeType "PxrDisplace"
+		 -nodeType "PxrGamma" -nodeType "PxrFractal" -nodeType "PxrDefault" -nodeType "rmanDisplayChannel"
+		 -nodeType "PxrInvert" -nodeType "PxrBlack" -nodeType "PxrLayerMixer" -nodeType "PxrTexture"
+		 -nodeType "PxrMeshLight" -nodeType "d_openexr" -nodeType "PxrCamera" -nodeType "OmnidirectionalStereo"
+		 -nodeType "rmanGlobals" -nodeType "PxrOcclusion" -nodeType "PxrDirectLighting" -nodeType "PxrVCM"
+		 -nodeType "PxrRectLight" -nodeType "PxrPathTracer" -nodeType "PxrDirt" -nodeType "rmanDisplay"
+		 "RenderMan_for_Maya.py" "23.1 @ 2036321";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "3.1.2";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2019";
 fileInfo "version" "2019";
 fileInfo "cutIdentifier" "201812112215-434d8d9c04";
-fileInfo "osv" "Mac OS X 10.15.3";
+fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 17763)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "6456CB10-5F41-50CB-9CCE-529569F62EAF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 34.101753993239967 242.06933059265214 -290.38887194530093 ;
-	setAttr ".r" -type "double3" 322.46164726084277 -186.19999999956215 0 ;
+	setAttr ".t" -type "double3" -103.04311849085202 292.3082339040858 -258.46084369311529 ;
+	setAttr ".r" -type "double3" 1037.0616472604047 213.400000000001 0 ;
 	setAttr ".rp" -type "double3" 0 1.7763568394002505e-15 0 ;
 	setAttr ".rpt" -type "double3" 8.945892339872879e-18 -1.5352577067068242e-17 2.3286815999327906e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3152C822-AC47-BF26-80BA-71B0521AC687";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 341.03026379928173;
+	setAttr ".coi" 385.96144736461861;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -287,8 +289,8 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 createNode transform -n "LIVING_ROOM_SET";
 	rename -uid "85EAF85C-4D43-3717-40E8-069E60DC8540";
-	setAttr ".rp" -type "double3" 31.673656463623047 77.465871385756174 -2.9321365356445312 ;
-	setAttr ".sp" -type "double3" 31.673656463623047 77.465871385756174 -2.9321365356445312 ;
+	setAttr ".rp" -type "double3" 31.673656463623047 77.465871385756174 -2.9321365356445313 ;
+	setAttr ".sp" -type "double3" 31.673656463623047 77.465871385756174 -2.9321365356445313 ;
 createNode transform -n "PROPS" -p "LIVING_ROOM_SET";
 	rename -uid "7A3D42E4-A94E-DF75-3819-50B395064E6C";
 	setAttr ".t" -type "double3" 7.9345679049878441 24.533165492215147 -66.210289693435612 ;
@@ -5426,7 +5428,7 @@ createNode mesh -n "vertical_shade_bar2Shape" -p "vertical_shade_bar2";
 		1.8705708 -6.2946801 -3.7244143 1.8624734 -6.5824475 -3.8391497 1.8551686 -6.8477998 
 		-4.0299344 1.8493716 -7.0647626 -4.2780924 1.8456496 -7.2120981 -4.5593333 1.8443671 
 		-7.2753839 -4.8461266 1.8456496 -7.248425 -5.1103992 1.8493716 -7.1338611 -5.326282 
-		1.8551686 -6.9429054 -5.4726434 1.8624734 -6.6942511 -5.5351562 1.8705708 -6.4122372 
+		1.8551686 -6.9429054 -5.4726434 1.8624734 -6.6942511 -5.5351563 1.8705708 -6.4122372 
 		-4.9507599 2.7321475 -5.3579049 -4.8360248 2.7394521 -5.0925527 -4.6452403 2.7452493 
 		-4.8755898 -4.3970819 2.7489712 -4.7282538 -4.1158409 2.7502537 -4.664968 -3.8290474 
 		2.7489712 -4.6919274 -3.5647748 2.7452493 -4.8064914 -3.3488917 2.7394521 -4.9974475 
@@ -28274,8 +28276,8 @@ createNode mesh -n "bottom_ringShape" -p "bottom_ring";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pipe_bottom" -p "frame";
 	rename -uid "3A40C649-2049-DDFA-9960-E3BD0A6B3C4B";
-	setAttr ".rp" -type "double3" 0 2.0100874304771423 -2.9802322387695312e-08 ;
-	setAttr ".sp" -type "double3" 0 2.0100874304771423 -2.9802322387695312e-08 ;
+	setAttr ".rp" -type "double3" 0 2.0100874304771423 -2.9802322387695313e-08 ;
+	setAttr ".sp" -type "double3" 0 2.0100874304771423 -2.9802322387695313e-08 ;
 createNode mesh -n "pipe_bottomShape" -p "pipe_bottom";
 	rename -uid "66975075-EF4C-B686-95F6-42A128A0386B";
 	setAttr -k off ".v";
@@ -29058,7 +29060,7 @@ createNode transform -n "bulb" -p "lightbulb";
 	rename -uid "F6283A8A-4749-F075-C6F6-3F9B03EFC5CC";
 	setAttr ".rp" -type "double3" -1.1920928955078125e-07 18.1636061668396 -3.5762786865234375e-07 ;
 	setAttr ".sp" -type "double3" -1.1920928955078125e-07 18.1636061668396 -3.5762786865234375e-07 ;
-createNode mesh -n "bulbShape" -p "bulb";
+createNode mesh -n "bulbShape" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb";
 	rename -uid "2E633919-DC40-5B1F-4205-D78FEE29DA34";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -29778,6 +29780,133 @@ createNode mesh -n "bulbShape" -p "bulb";
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "PxrMeshLight_bulb" -p "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb";
+	rename -uid "9FF43C57-490E-88E9-B435-8092E688F691";
+	setAttr ".t" -type "double3" -105.04360456357681 -53.565833694018878 134.1654857850105 ;
+	setAttr ".s" -type "double3" 1.5270654486745217 1.5270654486745217 1.5270654486745217 ;
+createNode PxrMeshLight -n "PxrMeshLight_bulbShape" -p "PxrMeshLight_bulb";
+	rename -uid "D54EF963-45AB-9D0E-4644-678CB8F7F291";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" yes;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 8;
+	setAttr ".exposure" 2.5;
+	setAttr ".lightColor" -type "float3" 1 0.83124423 0.59299999 ;
+	setAttr ".textureColor" -type "float3" 1 1 1 ;
+	setAttr ".enableTemperature" yes;
+	setAttr ".temperature" 4200;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" no;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
 createNode transform -n "lightbulb_base" -p "lightbulb";
 	rename -uid "55D86486-9A4A-B2CB-44B2-F0A447960C9A";
 	setAttr ".rp" -type "double3" -1.1920928955078125e-07 15.393765926361084 -2.384185791015625e-07 ;
@@ -30108,8 +30237,8 @@ createNode mesh -n "lightbulb_baseShape" -p "lightbulb_base";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pipe_top" -p "frame";
 	rename -uid "6B8709CE-794D-20B7-CB92-638BB1366516";
-	setAttr ".rp" -type "double3" 0 11.50292444229126 -2.9802322387695312e-08 ;
-	setAttr ".sp" -type "double3" 0 11.50292444229126 -2.9802322387695312e-08 ;
+	setAttr ".rp" -type "double3" 0 11.50292444229126 -2.9802322387695313e-08 ;
+	setAttr ".sp" -type "double3" 0 11.50292444229126 -2.9802322387695313e-08 ;
 createNode mesh -n "pipe_topShape" -p "pipe_top";
 	rename -uid "A9B7FC23-E842-7BB8-CB82-B7AB9AE6F40E";
 	setAttr -k off ".v";
@@ -40177,6 +40306,1808 @@ createNode transform -n "picture_frames" -p "PROPS";
 	setAttr ".rp" -type "double3" 14.543835886070427 16.383500070552138 11.045837106754806 ;
 	setAttr ".sp" -type "double3" 57.571649636625366 64.853944535144421 43.724851465244569 ;
 	setAttr ".spt" -type "double3" -43.027813750554941 -48.470444464592283 -32.679014358489766 ;
+createNode transform -n "livingRoomLights";
+	rename -uid "AD99D085-4319-4E68-D8D0-4BA966DB7EDA";
+createNode transform -n "PxrRectLight" -p "livingRoomLights";
+	rename -uid "63BEAB60-4E44-4096-8BF3-4B956031A86C";
+	setAttr ".t" -type "double3" 6.9578491763303063 103.96987210665829 -31.524979786192773 ;
+	setAttr ".r" -type "double3" -90 90 0 ;
+	setAttr ".s" -type "double3" 107.43620019058524 107.43620019058524 107.43620019058524 ;
+createNode PxrRectLight -n "PxrRectLightShape" -p "PxrRectLight";
+	rename -uid "C39EC88E-4478-1C6B-ECB9-B49BB49DF04F";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 3;
+	setAttr ".exposure" 0.5;
+	setAttr ".lightColor" -type "float3" 1 0.83124423 0.59299999 ;
+	setAttr ".lightColorMap" -type "string" "";
+	setAttr ".colorMapGamma" -type "float3" 1 1 1 ;
+	setAttr ".colorMapSaturation" 1;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 90;
+	setAttr ".coneSoftness" 0;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 0.83124423 0.59299999 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 10;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "PxrRectLight1" -p "livingRoomLights";
+	rename -uid "5043DA72-4160-9761-9C82-1D82D3BBEDAE";
+	setAttr ".t" -type "double3" 81.958428081569195 63.33331779549053 -29.134960595215436 ;
+	setAttr ".r" -type "double3" 0 90 0 ;
+	setAttr ".s" -type "double3" 64.45494501410802 53.303713232277552 64.45494501410802 ;
+createNode PxrRectLight -n "PxrRectLight1Shape" -p "PxrRectLight1";
+	rename -uid "BA349EE8-422A-1D03-ABB6-18BE4BD9C918";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 1;
+	setAttr ".exposure" 0;
+	setAttr ".lightColor" -type "float3" 1 1 1 ;
+	setAttr ".lightColorMap" -type "string" "";
+	setAttr ".colorMapGamma" -type "float3" 1 1 1 ;
+	setAttr ".colorMapSaturation" 1;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 90;
+	setAttr ".coneSoftness" 0;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 10;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "PxrRectLight2" -p "livingRoomLights";
+	rename -uid "776DE434-43B3-CF56-A903-B7934589B796";
+	setAttr ".t" -type "double3" 77.93500759884536 80.904008873503756 -144.77013040192574 ;
+	setAttr ".r" -type "double3" 0 44.423099301273304 0 ;
+	setAttr ".s" -type "double3" 64.45494501410802 64.45494501410802 64.45494501410802 ;
+createNode PxrRectLight -n "PxrRectLight2Shape" -p "PxrRectLight2";
+	rename -uid "AFF94CB7-438D-FCB0-81B6-08B15F579D32";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 1;
+	setAttr ".exposure" 0;
+	setAttr ".lightColor" -type "float3" 1 1 1 ;
+	setAttr ".lightColorMap" -type "string" "";
+	setAttr ".colorMapGamma" -type "float3" 1 1 1 ;
+	setAttr ".colorMapSaturation" 1;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 90;
+	setAttr ".coneSoftness" 0;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 10;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "PxrRectLight3" -p "livingRoomLights";
+	rename -uid "FC7129A1-4B20-CEB4-9379-05B68591E251";
+	setAttr ".t" -type "double3" 0 105.52717876493097 96.476332055159006 ;
+	setAttr ".r" -type "double3" -43.520128312980873 0 0 ;
+	setAttr ".s" -type "double3" 107.89569041928533 50.766107035321376 50.766107035321376 ;
+createNode PxrRectLight -n "PxrRectLight3Shape" -p "PxrRectLight3";
+	rename -uid "BFFFD170-4A34-3765-C649-B8971066D7E9";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 1;
+	setAttr ".exposure" 0;
+	setAttr ".lightColor" -type "float3" 1 1 1 ;
+	setAttr ".lightColorMap" -type "string" "";
+	setAttr ".colorMapGamma" -type "float3" 1 1 1 ;
+	setAttr ".colorMapSaturation" 1;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 90;
+	setAttr ".coneSoftness" 0;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 10;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "kitchen_door_lamp" -p "livingRoomLights";
+	rename -uid "0D0FFFEB-4CA0-9B17-D21B-19B288A116C6";
+	setAttr ".t" -type "double3" 1.0605549972989863 81.687572622528521 43.020152265452325 ;
+	setAttr ".r" -type "double3" -90 0 0 ;
+	setAttr ".s" -type "double3" 11.495948152494675 11.495948152494675 11.495948152494675 ;
+createNode PxrDiskLight -n "kitchen_door_lampShape" -p "kitchen_door_lamp";
+	rename -uid "F959AC56-484E-B593-853A-D498BFE3D58A";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 10;
+	setAttr ".exposure" 3.2046332359313965;
+	setAttr ".lightColor" -type "float3" 1 0.63595194 0.12199998 ;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 20.501930236816406;
+	setAttr ".coneSoftness" 0.45559844374656677;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 0.63595194 0.12199998 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 1.6216216087341309;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "tabletop_light" -p "livingRoomLights";
+	rename -uid "B22979D7-43A0-E189-4A19-5FA00865D3F5";
+	setAttr ".t" -type "double3" 8.8244213736785468 36.310268419286082 -29.208476124792774 ;
+	setAttr ".r" -type "double3" -90 0 0 ;
+	setAttr ".s" -type "double3" 32.96952104524452 65.266326776297774 18.91421305542011 ;
+createNode PxrRectLight -n "tabletop_lightShape" -p "tabletop_light";
+	rename -uid "4FF5E268-4FE0-2F28-9594-1493D4100DB7";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 1;
+	setAttr ".exposure" 0;
+	setAttr ".lightColor" -type "float3" 1 1 1 ;
+	setAttr ".lightColorMap" -type "string" "";
+	setAttr ".colorMapGamma" -type "float3" 1 1 1 ;
+	setAttr ".colorMapSaturation" 1;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 90;
+	setAttr ".coneSoftness" 0;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 10;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "left_table_lamp1" -p "livingRoomLights";
+	rename -uid "AFCF8A70-4213-8E21-5B51-828E847FE4C0";
+	setAttr ".t" -type "double3" 68.708221435546875 42.248546600341797 -87.968025207519531 ;
+	setAttr ".r" -type "double3" -90 0 0 ;
+	setAttr ".s" -type "double3" 11.993877926463247 11.993877926463247 11.993877926463247 ;
+createNode PxrDiskLight -n "left_table_lamp1Shape" -p "left_table_lamp1";
+	rename -uid "DEAB1D98-418F-76B9-92DC-5A9F7EFA5531";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 4;
+	setAttr ".exposure" 0.69999998807907104;
+	setAttr ".lightColor" -type "float3" 1 0.82585537 0.52399999 ;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 23.629343032836914;
+	setAttr ".coneSoftness" 0.25;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 0.82585537 0.52399999 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 0;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "left_table_lamp2" -p "livingRoomLights";
+	rename -uid "823CDA25-44BA-2BD5-947C-829A30436ED9";
+	setAttr ".t" -type "double3" 68.830982174687676 52.340957557154027 -87.858375549316406 ;
+	setAttr ".r" -type "double3" 90 0 0 ;
+	setAttr ".s" -type "double3" 8.4401205910290535 8.4401205910290535 8.4401205910290535 ;
+createNode PxrDiskLight -n "left_table_lamp2Shape" -p "left_table_lamp2";
+	rename -uid "1A9B0D99-4D18-3792-AF6C-2CBBC4C287C3";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 5;
+	setAttr ".exposure" 0.30000001192092896;
+	setAttr ".lightColor" -type "float3" 1 0.82585537 0.52399999 ;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 7.297297477722168;
+	setAttr ".coneSoftness" 0.25;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 0.82585537 0.52399999 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 0;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "left_table_lamp3" -p "livingRoomLights";
+	rename -uid "D64A35D3-4E8B-09F0-11DD-6EAD635892F3";
+	setAttr ".t" -type "double3" 71.516859724099746 52.340957557154034 34.034363695083016 ;
+	setAttr ".r" -type "double3" 90 0 0 ;
+	setAttr ".s" -type "double3" 8.4401205910290535 8.4401205910290535 8.4401205910290535 ;
+createNode PxrDiskLight -n "left_table_lamp3Shape" -p "left_table_lamp3";
+	rename -uid "5D1FB80D-4610-4500-1B5A-629FFD03FB23";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 5;
+	setAttr ".exposure" 0.30000001192092896;
+	setAttr ".lightColor" -type "float3" 1 0.82585537 0.52399999 ;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 7.297297477722168;
+	setAttr ".coneSoftness" 0.25;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 0.82585537 0.52399999 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 0;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "left_table_lamp4" -p "livingRoomLights";
+	rename -uid "00EF60C2-4F88-B5C4-346C-128EE8A47A82";
+	setAttr ".t" -type "double3" 71.394098984958944 42.248546600341804 33.924714036879891 ;
+	setAttr ".r" -type "double3" -90 0 0 ;
+	setAttr ".s" -type "double3" 11.993877926463247 11.993877926463247 11.993877926463247 ;
+createNode PxrDiskLight -n "left_table_lamp4Shape" -p "left_table_lamp4";
+	rename -uid "C49B2E24-480E-21B8-37D7-CC958FA7906F";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 4;
+	setAttr ".exposure" 0.69999998807907104;
+	setAttr ".lightColor" -type "float3" 1 0.82585537 0.52399999 ;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 23.629343032836914;
+	setAttr ".coneSoftness" 0.25;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 0.82585537 0.52399999 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 0;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "PxrDiskLight";
+	rename -uid "579A8936-491D-E5BC-F12E-F3A840F48D6A";
+	setAttr ".t" -type "double3" 57.350511124484107 49.434934614114823 -78.51298781595608 ;
+	setAttr ".r" -type "double3" 0 141.72878179737299 0 ;
+	setAttr ".s" -type "double3" 30.25610118382037 30.25610118382037 30.25610118382037 ;
+createNode PxrDiskLight -n "PxrDiskLightShape" -p "PxrDiskLight";
+	rename -uid "80E0FC4D-4220-284E-4E0B-FAA19954ABDC";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 1;
+	setAttr ".exposure" 0;
+	setAttr ".lightColor" -type "float3" 1 1 1 ;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 90;
+	setAttr ".coneSoftness" 0;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 10;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode transform -n "PxrDiskLight1";
+	rename -uid "134371F5-4932-DEAF-557F-92AA8FC0BE86";
+	setAttr ".t" -type "double3" 62.592425209626185 49.434934614114823 24.912040535030002 ;
+	setAttr ".r" -type "double3" 0 34.056968590694211 0 ;
+	setAttr ".s" -type "double3" 30.25610118382037 30.25610118382037 30.25610118382037 ;
+createNode PxrDiskLight -n "PxrDiskLight1Shape" -p "PxrDiskLight1";
+	rename -uid "87D9EBFE-4229-DAB2-3709-0CB3F1296FF9";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" no;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 1;
+	setAttr ".exposure" 0;
+	setAttr ".lightColor" -type "float3" 1 1 1 ;
+	setAttr ".enableTemperature" no;
+	setAttr ".temperature" 6500;
+	setAttr ".emissionFocus" 0;
+	setAttr ".emissionFocusNormalize" no;
+	setAttr ".emissionFocusTint" -type "float3" 0 0 0 ;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".coneAngle" 90;
+	setAttr ".coneSoftness" 0;
+	setAttr ".iesProfile" -type "string" "";
+	setAttr ".iesProfileScale" 0;
+	setAttr ".iesProfileNormalize" no;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" yes;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".fixedSampleCount" 0;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
+	setAttr ".rman_coneAngleDepth" 10;
+	setAttr ".rman_coneAngleOpacity" 0.5;
+createNode fosterParent -n "lamp_latestRNfosterParent1";
+	rename -uid "2BDBDC31-4B77-D956-742C-B49D93FC9354";
+createNode transform -n "bulb" -p "lamp_latestRNfosterParent1";
+	rename -uid "7DF7A3F0-4C0D-2FB2-CFDC-76BE51FAB1CE";
+	setAttr ".t" -type "double3" -109.08319677477778 -53.565833694018878 -52.04037907008405 ;
+	setAttr ".s" -type "double3" 1.5270654486745217 1.5270654486745217 1.5270654486745217 ;
+createNode PxrMeshLight -n "bulbShape" -p "|lamp_latestRNfosterParent1|bulb";
+	rename -uid "E88DE767-463E-46C8-D18C-BAA8C474135D";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".isc" no;
+	setAttr ".bbx" no;
+	setAttr ".icn" -type "string" "";
+	setAttr ".vwm" 2;
+	setAttr ".tpv" 0;
+	setAttr ".uit" 0;
+	setAttr -k off ".v" yes;
+	setAttr ".io" no;
+	setAttr ".tmp" no;
+	setAttr ".gh" no;
+	setAttr ".obcc" -type "float3" 0 0 0 ;
+	setAttr ".wfcc" -type "float3" 0 0 0 ;
+	setAttr ".uoc" 0;
+	setAttr ".oc" 0;
+	setAttr ".ovdt" 0;
+	setAttr ".ovlod" 0;
+	setAttr ".ovs" no;
+	setAttr ".ovt" yes;
+	setAttr ".ovp" yes;
+	setAttr ".ove" yes;
+	setAttr ".ovv" yes;
+	setAttr ".hpb" no;
+	setAttr ".ovrgbf" no;
+	setAttr ".ovc" 0;
+	setAttr ".ovrgb" -type "float3" 0 0 0 ;
+	setAttr ".lodv" yes;
+	setAttr ".sech" yes;
+	setAttr ".rlid" 0;
+	setAttr ".rndr" yes;
+	setAttr ".lovc" 0;
+	setAttr ".gc" 0;
+	setAttr ".gpr" 3;
+	setAttr ".gps" 3;
+	setAttr ".gss" 1;
+	setAttr ".gap" 1;
+	setAttr ".gcp" -type "float3" 0.447 1 1 ;
+	setAttr ".gla" 1;
+	setAttr ".gac" -type "float3" 0.87800002 0.67799997 0.66299999 ;
+	setAttr ".grs" 0;
+	setAttr ".gre" 100;
+	setAttr ".rt" 0;
+	setAttr ".rv" no;
+	setAttr ".vf" 1;
+	setAttr ".hfm" 1;
+	setAttr ".mb" yes;
+	setAttr ".vir" no;
+	setAttr ".vif" no;
+	setAttr ".csh" yes;
+	setAttr ".rcsh" yes;
+	setAttr ".asbg" no;
+	setAttr ".vbo" no;
+	setAttr ".mvs" 1;
+	setAttr ".gao" no;
+	setAttr ".gal" 1;
+	setAttr ".sso" no;
+	setAttr ".ssa" 1;
+	setAttr ".msa" 1;
+	setAttr ".vso" no;
+	setAttr ".vss" 1;
+	setAttr ".dej" no;
+	setAttr ".iss" no;
+	setAttr ".vis" yes;
+	setAttr ".tw" no;
+	setAttr ".rtw" yes;
+	setAttr ".pv" -type "double2" 0 0 ;
+	setAttr ".di" no;
+	setAttr ".dcol" no;
+	setAttr ".dcc" -type "string" "color";
+	setAttr ".ih" no;
+	setAttr ".ds" yes;
+	setAttr ".op" no;
+	setAttr ".hot" no;
+	setAttr ".smo" yes;
+	setAttr ".bbs" -type "float3" 1.5 1.5 1.5 ;
+	setAttr ".fbda" yes;
+	setAttr ".dsr" 6;
+	setAttr ".xsr" 5;
+	setAttr ".fth" 0;
+	setAttr ".nat" 30;
+	setAttr ".dhe" no;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".intensity" 8;
+	setAttr ".exposure" 2.5;
+	setAttr ".lightColor" -type "float3" 1 0.83124423 0.59299999 ;
+	setAttr ".textureColor" -type "float3" 1 1 1 ;
+	setAttr ".enableTemperature" yes;
+	setAttr ".temperature" 4200;
+	setAttr ".specular" 1;
+	setAttr ".diffuse" 1;
+	setAttr ".intensityNearDist" 0;
+	setAttr ".enableShadows" yes;
+	setAttr ".shadowColor" -type "float3" 0 0 0 ;
+	setAttr ".shadowDistance" -1;
+	setAttr ".shadowFalloff" -1;
+	setAttr ".shadowFalloffGamma" 1;
+	setAttr ".shadowSubset" -type "string" "";
+	setAttr ".shadowExcludeSubset" -type "string" "";
+	setAttr ".areaNormalize" no;
+	setAttr ".traceLightPaths" no;
+	setAttr ".thinShadow" yes;
+	setAttr ".visibleInRefractionPath" no;
+	setAttr ".cheapCaustics" no;
+	setAttr ".cheapCausticsExcludeGroup" -type "string" "";
+	setAttr ".importanceMultiplier" 1;
+	setAttr ".lightGroup" -type "string" "";
+	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
+	setAttr ".cl" -type "float3" 1 1 1 ;
+	setAttr ".ed" yes;
+	setAttr ".sn" yes;
+	setAttr ".lls" 1;
+	setAttr ".de" 2;
+	setAttr ".urs" yes;
+	setAttr ".col" 5;
+	setAttr ".hio" no;
+	setAttr ".uocol" no;
+	setAttr ".oclr" -type "float3" 0 0 0 ;
 parent -s -nc -r -add "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|Jackie_Shoe|Jackie_Shoe|LaceHoles|Right_Lace_Holes|pTorus2|pTorusShape2" "pTorus1" ;
 parent -s -nc -r -add "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|Jackie_Shoe|Jackie_Shoe|LaceHoles|Right_Lace_Holes|pTorus2|pTorusShape2" "pTorus3" ;
 parent -s -nc -r -add "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|Jackie_Shoe|Jackie_Shoe|LaceHoles|Right_Lace_Holes|pTorus2|pTorusShape2" "pTorus4" ;
@@ -40187,23 +42118,24 @@ parent -s -nc -r -add "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|Jackie_Shoe|Ja
 parent -s -nc -r -add "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|Jackie_Shoe|Jackie_Shoe|LaceHoles|Right_Lace_Holes|pTorus2|pTorusShape2" "pTorus5" ;
 parent -s -nc -r -add "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|Jackie_Shoe|Jackie_Shoe|LaceHoles|Right_Lace_Holes|pTorus2|pTorusShape2" "pTorus10" ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "E0CAB77A-1F4F-AB58-D93E-B285F87D783F";
-	setAttr -s 272 ".lnk";
-	setAttr -s 272 ".slnk";
+	rename -uid "09331C1D-4F56-0553-4A91-2487FB17C5E4";
+	setAttr -s 297 ".lnk";
+	setAttr -s 619 ".ign";
+	setAttr -s 297 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "8A5D3D8B-7243-FCC5-6E1F-AC875AFDDF57";
+	rename -uid "1778F4AA-402E-E336-AC4F-97B0F4E90A19";
 	setAttr -s 2 ".dli[1]"  1;
 createNode displayLayer -n "defaultLayer";
 	rename -uid "2DEB5D6F-3748-890E-8F8B-478AD3BE476D";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "051D99BE-CC47-0191-4335-2BBF0C815F5E";
+	rename -uid "DCA1B542-4BC5-EEA6-C34D-6F8DD055E76F";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "BD85EAD8-4C42-96CE-CB38-618E2B34463A";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D3E45E67-AB45-A5CC-6CBD-DB8623E75B68";
+	rename -uid "70BAF467-465A-212F-7D9F-50B69FD403BE";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "A77EDD1C-A34B-577B-25A7-A38CE6B452AB";
+	rename -uid "5852B051-483A-F40D-13BB-DF8993A86FA0";
 createNode rmanGlobals -s -n "rmanGlobals";
 	rename -uid "E4AC02F0-C840-DF51-F57B-1BA6C3E3FC36";
 	setAttr ".cch" no;
@@ -40404,19 +42336,19 @@ createNode script -n "uiConfigurationScriptNode";
 	rename -uid "76C27CAF-DD4F-D8C6-5433-39B88ADD42F4";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
+		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
-		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1187\n            -height 702\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1372\n            -height 771\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
+		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
+		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1371\n            -height 770\n"
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
-		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
+		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
-		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
+		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1372\n            -height 770\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
+		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
 		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 0\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n"
-		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1187\n            -height 702\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2755\n            -height 1612\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
 		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n"
 		+ "            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
@@ -40432,22 +42364,22 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n"
 		+ "                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n"
+		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"rmanNodeEdKeyPressCommand\" \n"
 		+ "                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n"
-		+ "                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n"
+		+ "                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"rmanNodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -editorChanged \"updateModelPanelBar\" \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n"
-		+ "                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererOverrideName \"stereoOverrideVP2\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n"
+		+ "                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererOverrideName \"stereoOverrideVP2\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n"
 		+ "                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n"
 		+ "                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
 		+ "                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
 		+ "            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n"
-		+ "            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Side View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Side View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"persp\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1187\\n    -height 702\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Side View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"persp\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1187\\n    -height 702\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2755\\n    -height 1612\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2755\\n    -height 1612\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -40591,7 +42523,7 @@ createNode reference -n "coffee_table_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"coffee_table_latestRN"
 		"coffee_table_latestRN" 0
-		"coffee_table_latestRN" 4
+		"coffee_table_latestRN" 9
 		0 "|coffee_table_latest:coffee_table_CTRL" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|coffee_table_latest:coffee_table_CTRL" 
@@ -40600,7 +42532,18 @@ createNode reference -n "coffee_table_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|coffee_table_latest:coffee_table_CTRL" 
 		"rotate" " -type \"double3\" 0 89.99999999999997158 0"
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|coffee_table_latest:coffee_table_CTRL" 
-		"scale" " -type \"double3\" 0.89178601275271008 0.80012500597047531 0.80012500597047531";
+		"scale" " -type \"double3\" 0.89178601275271008 0.80012500597047531 0.80012500597047531"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|coffee_table_latest:coffee_table_CTRL|coffee_table_latest:cornerprotector|coffee_table_latest:cornerprotector4|coffee_table_latest:cornerprotector4Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|coffee_table_latest:coffee_table_CTRL|coffee_table_latest:cornerprotector|coffee_table_latest:cornerprotector3|coffee_table_latest:cornerprotector3Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|coffee_table_latest:coffee_table_CTRL|coffee_table_latest:cornerprotector|coffee_table_latest:cornerprotector2|coffee_table_latest:cornerprotector2Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|coffee_table_latest:coffee_table_CTRL|coffee_table_latest:cornerprotector|coffee_table_latest:cornerprotector1|coffee_table_latest:cornerprotector1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|coffee_table_latest:coffee_table_CTRL|coffee_table_latest:coffee_table|coffee_table_latest:coffee_tableShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "console_tableRN";
@@ -40608,7 +42551,7 @@ createNode reference -n "console_tableRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"console_tableRN"
 		"console_tableRN" 0
-		"console_tableRN" 8
+		"console_tableRN" 16
 		0 "|console_table:console_table" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table" 
@@ -40629,7 +42572,24 @@ createNode reference -n "console_tableRN";
 		"scalePivot" " -type \"double3\" 0.082506418228149414 5.20460176467895508 0.37750124931335449"
 		
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table" 
-		"scalePivotTranslate" " -type \"double3\" 0.028166145400536954 1.77675353268243175 0.12887185391616754";
+		"scalePivotTranslate" " -type \"double3\" 0.028166145400536954 1.77675353268243175 0.12887185391616754"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Console|console_table:ConsoleShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Console_Shelf|console_table:Console_ShelfShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Drawer_Knob|console_table:Drawer_KnobShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Book1|console_table:BookShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Book2|console_table:BookShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Bowl|console_table:BowlShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Vase|console_table:VaseShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|console_table:console_table|console_table:Vase_lid|console_table:Vase_lidShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "sofa_latestRN";
@@ -40637,7 +42597,7 @@ createNode reference -n "sofa_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"sofa_latestRN"
 		"sofa_latestRN" 0
-		"sofa_latestRN" 26
+		"sofa_latestRN" 37
 		0 "|sofa_latest:sofa_CTRL" "|LIVING_ROOM_SET|PROPS|FRONT_WALL" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL" "translate" " -type \"double3\" 9.37144723864205176 0.41937835068774099 -8.38558172535910273"
 		
@@ -40688,7 +42648,29 @@ createNode reference -n "sofa_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_mid|sofa_latest:outputCloth1" 
 		"dispResolution" " 3"
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_mid|sofa_latest:outputCloth1" 
-		"displaySmoothMesh" " 2";
+		"displaySmoothMesh" " 2"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:base|sofa_latest:baseShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:mainbody|sofa_latest:outputCloth3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_rightfront|sofa_latest:leg_rightfrontShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_rightback|sofa_latest:leg_rightbackShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_leftfront|sofa_latest:leg_leftfrontShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:legs|sofa_latest:leg_leftback|sofa_latest:leg_leftbackShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:armrests|sofa_latest:armrest_right|sofa_latest:outputCloth2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:armrests|sofa_latest:armrest_left|sofa_latest:outputCloth2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_right|sofa_latest:outputCloth1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_left|sofa_latest:outputCloth1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sofa_latest:sofa_CTRL|sofa_latest:sofa_GRP|sofa_latest:pillows|sofa_latest:pillow_mid|sofa_latest:outputCloth1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "side_tableRN";
@@ -40763,8 +42745,10 @@ createNode reference -n "lamp_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"lamp_latestRN"
 		"lamp_latestRN" 0
-		"lamp_latestRN" 41
+		"lamp_latestRN" 43
 		0 "|lamp_latest:lamp" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp" 
+		"-s -r "
+		0 "|lamp_latestRNfosterParent1|bulb" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|lamp_latest:lamp|lamp_latest:frame|lamp_latest:lightbulb|lamp_latest:bulb" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|lamp_latest:lamp" 
 		"translate" " -type \"double3\" 13.18255747610042583 11.34914064257556454 7.78353313881769449"
@@ -40772,11 +42756,13 @@ createNode reference -n "lamp_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|lamp_latest:lamp" 
 		"scale" " -type \"double3\" 0.22003255440260694 0.22003255440260694 0.22003255440260694"
 		
-		5 4 "lamp_latestRN" "lamp_latest:PxrSurface2SG.dagSetMembers" "lamp_latestRN.placeHolderList[1]" 
+		3 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|lamp_latest:lamp|lamp_latest:frame|lamp_latest:lightbulb|lamp_latest:bulb|lamp_latest:bulbShape.instObjGroups" 
+		"lamp_latest:PxrSurface7SG.dagSetMembers" "-na"
+		5 3 "lamp_latestRN" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp|lamp_latest:lamp|lamp_latest:frame|lamp_latest:lightbulb|lamp_latest:bulb|lamp_latest:bulbShape.instObjGroups" 
+		"lamp_latestRN.placeHolderList[1]" "lamp_latest:PxrSurface7SG.dsm"
+		5 4 "lamp_latestRN" "lamp_latest:PxrSurface2SG.dagSetMembers" "lamp_latestRN.placeHolderList[2]" 
 		""
-		5 4 "lamp_latestRN" "lamp_latest:PxrSurface6SG.dagSetMembers" "lamp_latestRN.placeHolderList[2]" 
-		""
-		5 4 "lamp_latestRN" "lamp_latest:PxrSurface7SG.dagSetMembers" "lamp_latestRN.placeHolderList[3]" 
+		5 4 "lamp_latestRN" "lamp_latest:PxrSurface6SG.dagSetMembers" "lamp_latestRN.placeHolderList[3]" 
 		""
 		5 4 "lamp_latestRN" "lamp_latest:PxrSurface9SG.dagSetMembers" "lamp_latestRN.placeHolderList[4]" 
 		""
@@ -40855,7 +42841,7 @@ createNode reference -n "shoe_rack_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"shoe_rack_latestRN"
 		"shoe_rack_latestRN" 0
-		"shoe_rack_latestRN" 8
+		"shoe_rack_latestRN" 16
 		0 "|shoe_rack_latest:rack" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK" "-s -r "
 		
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack" "translate" 
@@ -40874,7 +42860,24 @@ createNode reference -n "shoe_rack_latestRN";
 		" -type \"double3\" 0.0056165456771850586 5.59395432472229004 0.028463363647460938"
 		
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack" "scalePivotTranslate" 
-		" -type \"double3\" -0.0012961589013445838 -1.29094537967645673 -0.011988461170854524";
+		" -type \"double3\" -0.0012961589013445838 -1.29094537967645673 -0.011988461170854524"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:boards|shoe_rack_latest:lower_board3|shoe_rack_latest:lower_board3Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:boards|shoe_rack_latest:lower_board4|shoe_rack_latest:lower_board4Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:boards|shoe_rack_latest:lower_board5|shoe_rack_latest:lower_board5Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:boards|shoe_rack_latest:lower_board6|shoe_rack_latest:lower_board6Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:posts|shoe_rack_latest:post1|shoe_rack_latest:postShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:posts|shoe_rack_latest:post2|shoe_rack_latest:postShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:posts|shoe_rack_latest:post3|shoe_rack_latest:postShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|shoe_rack_latest:rack|shoe_rack_latest:posts|shoe_rack_latest:post4|shoe_rack_latest:postShape4.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bambooRN";
@@ -40882,7 +42885,7 @@ createNode reference -n "bambooRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bambooRN"
 		"bambooRN" 0
-		"bambooRN" 39
+		"bambooRN" 52
 		0 "|bamboo:bamboo_pot" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
 		"-s -r "
 		0 "|bamboo:pCube1" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1" 
@@ -40960,7 +42963,33 @@ createNode reference -n "bambooRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:MASH1_ReproMesh1|bamboo:MASH1_ReproMesh1Shape" 
 		"dispResolution" " 3"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:MASH1_ReproMesh1|bamboo:MASH1_ReproMesh1Shape" 
-		"displaySmoothMesh" " 2";
+		"displaySmoothMesh" " 2"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo_pot|bamboo:bamboo_potShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:pCube1|bamboo:pCubeShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo1|bamboo:bambooShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo2|bamboo:bambooShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:bamboo3|bamboo:bambooShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf3|bamboo:leafShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf2|bamboo:leafShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf1|bamboo:leafShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf|bamboo:leafShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf4|bamboo:leafShape4.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:leaf5|bamboo:leafShape5.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:gold|bamboo:goldShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|hallway_table|bamboo1|bamboo:MASH1_ReproMesh1|bamboo:MASH1_ReproMesh1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "gingkoBiloba_latestRN";
@@ -40968,7 +42997,7 @@ createNode reference -n "gingkoBiloba_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"gingkoBiloba_latestRN"
 		"gingkoBiloba_latestRN" 0
-		"gingkoBiloba_latestRN" 6
+		"gingkoBiloba_latestRN" 18
 		0 "|gingkoBiloba_latest:gingko_biloba" "|LIVING_ROOM_SET|PROPS|FRONT_WALL" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba" "translate" 
@@ -40980,7 +43009,32 @@ createNode reference -n "gingkoBiloba_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba" "rotatePivotTranslate" 
 		" -type \"double3\" -0.77685272693634 0 0.77685320377349854"
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba" "scalePivot" 
-		" -type \"double3\" 0.77685296535491943 3.25698357820510864 -2.384185791015625e-07";
+		" -type \"double3\" 0.77685296535491943 3.25698357820510864 -2.384185791015625e-07"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba|gingkoBiloba_latest:dirt|gingkoBiloba_latest:dirtShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba|gingkoBiloba_latest:pot|gingkoBiloba_latest:potShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba|gingkoBiloba_latest:PLANT|gingkoBiloba_latest:branches|gingkoBiloba_latest:left_small_branch|gingkoBiloba_latest:left_small_branchShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba|gingkoBiloba_latest:PLANT|gingkoBiloba_latest:branches|gingkoBiloba_latest:left_branch|gingkoBiloba_latest:left_branchShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba|gingkoBiloba_latest:PLANT|gingkoBiloba_latest:branches|gingkoBiloba_latest:bottom_right|gingkoBiloba_latest:bottom_rightShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba|gingkoBiloba_latest:PLANT|gingkoBiloba_latest:branches|gingkoBiloba_latest:lower_right|gingkoBiloba_latest:lower_rightShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba|gingkoBiloba_latest:PLANT|gingkoBiloba_latest:branches|gingkoBiloba_latest:middle_left|gingkoBiloba_latest:middle_leftShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba|gingkoBiloba_latest:PLANT|gingkoBiloba_latest:branches|gingkoBiloba_latest:middle_right|gingkoBiloba_latest:middle_rightShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba|gingkoBiloba_latest:PLANT|gingkoBiloba_latest:branches|gingkoBiloba_latest:top_right|gingkoBiloba_latest:top_rightShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba|gingkoBiloba_latest:PLANT|gingkoBiloba_latest:branches|gingkoBiloba_latest:main_branch|gingkoBiloba_latest:main_branchShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba|gingkoBiloba_latest:PLANT|gingkoBiloba_latest:stems|gingkoBiloba_latest:stemsShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|gingkoBiloba_latest:gingko_biloba|gingkoBiloba_latest:PLANT|gingkoBiloba_latest:gingko_leaves|gingkoBiloba_latest:gingko_leavesShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "guianaChestnutPlant_latestRN";
@@ -40988,7 +43042,7 @@ createNode reference -n "guianaChestnutPlant_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"guianaChestnutPlant_latestRN"
 		"guianaChestnutPlant_latestRN" 0
-		"guianaChestnutPlant_latestRN" 8
+		"guianaChestnutPlant_latestRN" 18
 		0 "|guianaChestnutPlant_latest:guiana_chesnut_plant" "|LIVING_ROOM_SET|PROPS|LEFT_WALL" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant" 
@@ -41009,7 +43063,28 @@ createNode reference -n "guianaChestnutPlant_latestRN";
 		"scalePivot" " -type \"double3\" 0.36459505558013916 3.53084790706634521 0.26527249813079834"
 		
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant" 
-		"scalePivotTranslate" " -type \"double3\" 0.34955128687071674 3.38515953732821284 0.25432693525008271";
+		"scalePivotTranslate" " -type \"double3\" 0.34955128687071674 3.38515953732821284 0.25432693525008271"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:pot|guianaChestnutPlant_latest:potShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:dirt|guianaChestnutPlant_latest:dirtShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:leaves|guianaChestnutPlant_latest:leavesShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:smallerStems|guianaChestnutPlant_latest:smallerStemsShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:largerStems|guianaChestnutPlant_latest:largerStemsShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:right_front_trunk|guianaChestnutPlant_latest:right_front_trunkShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:right_back_trunk|guianaChestnutPlant_latest:right_back_trunkShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:middle_trunk|guianaChestnutPlant_latest:middle_trunkShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:left_trunk|guianaChestnutPlant_latest:left_trunkShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|guianaChestnutPlant_latest:guiana_chesnut_plant|guianaChestnutPlant_latest:PLANT|guianaChestnutPlant_latest:trunks|guianaChestnutPlant_latest:back_trunk|guianaChestnutPlant_latest:back_trunkShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "grannyCranny_SET_latestRN";
@@ -41017,11 +43092,11 @@ createNode reference -n "grannyCranny_SET_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"grannyCranny_SET_latestRN"
 		"grannyCranny_SET_latest:string_of_pearls_latestRN" 0
-		"grannyCranny_SET_latest:tableRN" 0
 		"grannyCranny_SET_latest:chairRN2" 2
 		2 "grannyCranny_SET_latest:chair2:windsor_seat_layer" "visibility" " 1"
 		2 "grannyCranny_SET_latest:chair2:windsor_seat_layer" "displayOrder" " 4"
 		
+		"grannyCranny_SET_latest:tableRN" 0
 		"grannyCranny_SET_latest:chairRN" 2
 		2 "grannyCranny_SET_latest:chair:windsor_seat_layer" "visibility" " 1"
 		2 "grannyCranny_SET_latest:chair:windsor_seat_layer" "displayOrder" " 2"
@@ -41091,7 +43166,7 @@ createNode reference -n "orchid_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"orchid_latestRN"
 		"orchid_latestRN" 0
-		"orchid_latestRN" 8
+		"orchid_latestRN" 15
 		0 "|orchid_latest:orchid" "|LIVING_ROOM_SET|PROPS|FRONT_WALL" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid" "translate" " -type \"double3\" 10.92252328799582628 8.24431940885307313 -24.36334351538821252"
 		
@@ -41107,7 +43182,22 @@ createNode reference -n "orchid_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid" "scalePivot" " -type \"double3\" -0.029652595520019531 3.17250582575798035 0.092233180999755859"
 		
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid" "scalePivotTranslate" 
-		" -type \"double3\" 0.0036785940738454188 -0.39356963278288082 -0.011442115844751201";
+		" -type \"double3\" 0.0036785940738454188 -0.39356963278288082 -0.011442115844751201"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid|orchid_latest:pot|orchid_latest:potShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid|orchid_latest:dirt|orchid_latest:dirtShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid|orchid_latest:Stem|orchid_latest:StemShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid|orchid_latest:petals|orchid_latest:petalsShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid|orchid_latest:roots|orchid_latest:rootsShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid|orchid_latest:pollen|orchid_latest:pollenShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|orchid_latest:orchid|orchid_latest:Leaves|orchid_latest:LeavesShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "fish4RN";
@@ -41115,7 +43205,7 @@ createNode reference -n "fish4RN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"fish4RN"
 		"fish4RN" 0
-		"fish4RN" 59
+		"fish4RN" 74
 		0 "|fish4:pasted__pCube1" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish" 
 		"-s -r "
 		0 "|fish4:group" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish" "-s -r "
@@ -41233,7 +43323,37 @@ createNode reference -n "fish4RN";
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:MASH4_ReproMesh" 
 		"rotateAxis" " -type \"double3\" 0 0 0"
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:MASH4_ReproMesh" 
-		"inheritsTransform" " 0";
+		"inheritsTransform" " 0"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:pasted__pCube1|fish4:pasted__pCubeShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:group1|fish4:topfin|fish4:topfinShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:group1|fish4:bottomfin|fish4:bottomfinShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:group1|fish4:fin|fish4:finShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:group1|fish4:eye|fish4:eyeShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:group1|fish4:body|fish4:bodyShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:pCylinder1|fish4:pCylinderShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:pCylinder2|fish4:pCylinderShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:pPipe1|fish4:pPipeShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:group2|fish4:pasted__pPipe1|fish4:pasted__pPipeShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:MASH1_ReproMesh|fish4:MASH1_ReproMeshShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:MASH2_ReproMesh|fish4:MASH2_ReproMeshShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:MASH3_ReproMesh|fish4:MASH3_ReproMeshShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:pCube1|fish4:pCubeShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|fish|fish4:MASH4_ReproMesh|fish4:MASH4_ReproMeshShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "meat_stirFry_latestRN";
@@ -41242,7 +43362,7 @@ createNode reference -n "meat_stirFry_latestRN";
 		"meat_stirFry_latestRN"
 		"meat_stirFry_latestRN" 0
 		"meat_stirFry_latest:bowl_smallwhite_pattern1_latestRN" 0
-		"meat_stirFry_latestRN" 6
+		"meat_stirFry_latestRN" 13
 		0 "|meat_stirFry_latest:meat_stir_fry" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|meat_stirFry_latest:meat_stir_fry" 
@@ -41255,10 +43375,28 @@ createNode reference -n "meat_stirFry_latestRN";
 		"rotatePivot" " -type \"double3\" 0.066222256691246401 0.41687607466348836 -0.0087051208272163772"
 		
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|meat_stirFry_latest:meat_stir_fry" 
-		"scalePivot" " -type \"double3\" 0.050477981567382812 0.31776420593543514 -0.0066354870796203613"
+		"scalePivot" " -type \"double3\" 0.050477981567382813 0.31776420593543514 -0.0066354870796203613"
 		
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|meat_stirFry_latest:meat_stir_fry" 
-		"scalePivotTranslate" " -type \"double3\" 0.015744275123863585 0.099111868728053221 -0.0020696337475960155";
+		"scalePivotTranslate" " -type \"double3\" 0.015744275123863585 0.099111868728053221 -0.0020696337475960155"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|meat_stirFry_latest:meat_stir_fry|meat_stirFry_latest:meatCHONKS|meat_stirFry_latest:rounded_meatChonks|meat_stirFry_latest:rounded_meatChonksShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|meat_stirFry_latest:meat_stir_fry|meat_stirFry_latest:meatCHONKS|meat_stirFry_latest:long_meatChonks|meat_stirFry_latest:long_meatChonksShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|meat_stirFry_latest:meat_stir_fry|meat_stirFry_latest:meatCHONKS|meat_stirFry_latest:cube_meatChonks|meat_stirFry_latest:cube_meatChonksShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|meat_stirFry_latest:meat_stir_fry|meat_stirFry_latest:meatCHONKS|meat_stirFry_latest:dented_meatChonks|meat_stirFry_latest:dented_meatChonksShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|meat_stirFry_latest:meat_stir_fry|meat_stirFry_latest:meatCHONKS|meat_stirFry_latest:smol_meatChonks|meat_stirFry_latest:smol_meatChonksShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|meat_stirFry_latest:meat_stir_fry|meat_stirFry_latest:greenOnions|meat_stirFry_latest:greenOnionsShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|meat_stirFry_latest:meat_stir_fry|meat_stirFry_latest:onions|meat_stirFry_latest:onionsShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"meat_stirFry_latest:bowl_smallwhite_pattern1_latestRN" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|meat_stirFry_latest:meat_stir_fry|meat_stirFry_latest:bowl_smallwhite_pattern1_latest:bowl_smallwhite_pattern1_CTRL|meat_stirFry_latest:bowl_smallwhite_pattern1_latest:bowl_smallwhite_pattern1|meat_stirFry_latest:bowl_smallwhite_pattern1_latest:bowl_smallwhite_pattern1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "kitchen_SET_latestRN";
@@ -41269,8 +43407,8 @@ createNode reference -n "kitchen_SET_latestRN";
 		"kitchen_SET_latest:bowl_smallwhite_pattern1_latestRN2" 0
 		"kitchen_SET_latest:pan_small_latestRN" 0
 		"kitchen_SET_latest:bowl_smallwhite_pattern1_latestRN1" 0
-		"kitchen_SET_latest:knife_v01_latestRN" 0
 		"kitchen_SET_latest:butter_knife_latestRN" 0
+		"kitchen_SET_latest:knife_v01_latestRN" 0
 		"kitchen_SET_latest:bowl_smallwhite_pattern1_latestRN" 0
 		"kitchen_SET_latest:dish_rack_latest:pho_spoon_latestRN" 0
 		"kitchen_SET_latest:water_kettle_latestRN" 0
@@ -41279,8 +43417,8 @@ createNode reference -n "kitchen_SET_latestRN";
 		"kitchen_SET_latest:ladle_latestRN" 0
 		"kitchen_SET_latest:mug_WALL_HANGINGRN" 0
 		"kitchen_SET_latest:bowl_conic_latestRN4" 0
-		"kitchen_SET_latest:paperTowel_latestRN" 0
 		"kitchen_SET_latest:bokchoy_splitRN" 0
+		"kitchen_SET_latest:paperTowel_latestRN" 0
 		"kitchen_SET_latest:plate_latestRN3" 0
 		"kitchen_SET_latest:chopsticks_round_latestRN" 0
 		"kitchen_SET_latest:dish_rack_latest:butter_knife_latestRN" 0
@@ -41288,8 +43426,8 @@ createNode reference -n "kitchen_SET_latestRN";
 		"kitchen_SET_latest:takeout_box_open_v01_latestRN" 0
 		"kitchen_SET_latest:takeout_box_v01_latestRN" 0
 		"kitchen_SET_latest:plate_latestRN2" 0
-		"kitchen_SET_latest:house_INTERIORRN" 0
 		"kitchen_SET_latest:mug_round_latestRN3" 0
+		"kitchen_SET_latest:house_INTERIORRN" 0
 		"kitchen_SET_latest:bowl_blueceramic_pattern1_latestRN2" 0
 		"kitchen_SET_latest:dish_rack_latest:mug_round_latestRN" 0
 		"kitchen_SET_latest:bowl_conic_latestRN2" 0
@@ -41319,23 +43457,23 @@ createNode reference -n "kitchen_SET_latestRN";
 		"kitchen_SET_latest:utensil_holderRN" 0
 		"kitchen_SET_latest:dish_rack_latest:mug_tall_latestRN" 0
 		"kitchen_SET_latest:plate_latestRN4" 0
-		"kitchen_SET_latest:cabinets_counter_latestRN" 0
 		"kitchen_SET_latest:fork_latestRN" 0
+		"kitchen_SET_latest:cabinets_counter_latestRN" 0
 		"kitchen_SET_latest:pot_small_handle_latestRN" 0
 		"kitchen_SET_latest:pho_spoon_latestRN" 0
 		"kitchen_SET_latest:cabinets_counter_latest:stove_latestRN" 0
-		"kitchen_SET_latest:house_INTERIOR:door_v01_latestRN" 0
 		"kitchen_SET_latest:pho_spoon_latestRN1" 0
-		"kitchen_SET_latest:floor_mat_latestRN" 0
+		"kitchen_SET_latest:house_INTERIOR:door_v01_latestRN" 0
 		"kitchen_SET_latest:pan_big_latestRN" 0
+		"kitchen_SET_latest:floor_mat_latestRN" 0
 		"kitchen_SET_latest:pan_big_latestRN1" 0
 		"kitchen_SET_latest:chopsticks_square_latestRN" 0
-		"kitchen_SET_latest:ricecooker_latestRN" 0
 		"kitchen_SET_latest:toasterRN" 0
+		"kitchen_SET_latest:ricecooker_latestRN" 0
 		"kitchen_SET_latest:pho_spoon_latestRN2" 0
+		"kitchen_SET_latest:chopsticks_round_latestRN1" 0
 		"kitchen_SET_latest:dish_rack_latest:bowl_smallwhite_pattern1_latestRN" 0
 		
-		"kitchen_SET_latest:chopsticks_round_latestRN1" 0
 		"kitchen_SET_latest:cutting_boardRN" 0
 		"kitchen_SET_latest:dish_rack_latest:plate_latestRN" 0
 		"kitchen_SET_latest:dish_rack_latest:bowl_conic_latestRN" 0
@@ -41474,6 +43612,7 @@ createNode PxrSurface -n "grandma_controlrig:grandma_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -41516,7 +43655,7 @@ createNode PxrNormalMap -n "grandma_controlrig:gma_tex_norm";
 	setAttr ".nds" 0;
 	setAttr ".bumpScale" 1.5;
 	setAttr ".inputRGB" -type "float3" 0 0 0 ;
-	setAttr ".filename" -type "string" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/grandma/grandma_normalmap.png";
+	setAttr ".filename" -type "string" "C:/Users/chenc315/Desktop/Repository/LoveLanguage//sourceimages/grandma/grandma_normalmap.png";
 	setAttr ".bumpOverlay" -type "float3" 0 0 0 ;
 	setAttr ".invertBump" yes;
 	setAttr ".orientation" 2;
@@ -41761,6 +43900,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_shirt_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -41919,6 +44059,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_pants_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -42077,6 +44218,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_cardigan_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -42235,6 +44377,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_eyes_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -42393,6 +44536,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_hair_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -42551,6 +44695,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_hairstick_base_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -42709,6 +44854,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_hairstick_tip_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -42867,6 +45013,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_hairstick_pearl_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -42909,7 +45056,7 @@ createNode PxrNormalMap -n "grandma_controlrig:PxrNormalMap1";
 	setAttr ".nds" 0;
 	setAttr ".bumpScale" 1;
 	setAttr ".inputRGB" -type "float3" 0 0 0 ;
-	setAttr ".filename" -type "string" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/grandma/grandma_hairstick/grandma_hairstick_base_normal.png";
+	setAttr ".filename" -type "string" "C:/Users/chenc315/Desktop/Repository/LoveLanguage//sourceimages/grandma/grandma_hairstick/grandma_hairstick_base_normal.png";
 	setAttr ".bumpOverlay" -type "float3" 0 0 0 ;
 	setAttr ".invertBump" yes;
 	setAttr ".orientation" 2;
@@ -43081,6 +45228,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_bun_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -43239,6 +45387,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_sole_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -43397,6 +45546,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_shoetop_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -43555,6 +45705,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_shoebase_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -43713,6 +45864,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_necklace_pendant_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 0.4844 0.73400003 0.63380003 ;
 	setAttr ".glassRoughness" 0;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -43755,7 +45907,7 @@ createNode PxrNormalMap -n "grandma_controlrig:gma_pendant_tex_normal";
 	setAttr ".nds" 0;
 	setAttr ".bumpScale" 1;
 	setAttr ".inputRGB" -type "float3" 0 0 0 ;
-	setAttr ".filename" -type "string" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/grandma/grandma_necklace/gma_necklace_pendant_normal.png";
+	setAttr ".filename" -type "string" "C:/Users/chenc315/Desktop/Repository/LoveLanguage//sourceimages/grandma/grandma_necklace/gma_necklace_pendant_normal.png";
 	setAttr ".bumpOverlay" -type "float3" 0 0 0 ;
 	setAttr ".invertBump" yes;
 	setAttr ".orientation" 2;
@@ -43899,6 +46051,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_necklace_string_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -44057,6 +46210,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_necklace_bead_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 0.85699999 0.72502202 0.76062965 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -44220,6 +46374,7 @@ createNode PxrLayerMixer -n "grandma_controlrig:gma_necklace_string_layermxer";
 	setAttr ".baselayer_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".baselayer_reflectionGain" 0;
 	setAttr ".baselayer_glassRoughness" 0.10000000149011612;
+	setAttr ".baselayer_glassRefractionRoughness" -1;
 	setAttr ".baselayer_glassIor" 1.5;
 	setAttr ".baselayer_enableSubsurface" 0;
 	setAttr ".baselayer_subsurfaceGain" 0;
@@ -44301,6 +46456,7 @@ createNode PxrLayerMixer -n "grandma_controlrig:gma_necklace_string_layermxer";
 	setAttr ".layer1_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".layer1_reflectionGain" 0;
 	setAttr ".layer1_glassRoughness" 0.10000000149011612;
+	setAttr ".layer1_glassRefractionRoughness" -1;
 	setAttr ".layer1_glassIor" 1.5;
 	setAttr ".layer1_enableSubsurface" 0;
 	setAttr ".layer1_subsurfaceGain" 0;
@@ -44383,6 +46539,7 @@ createNode PxrLayerMixer -n "grandma_controlrig:gma_necklace_string_layermxer";
 	setAttr ".layer2_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".layer2_reflectionGain" 0;
 	setAttr ".layer2_glassRoughness" 0.10000000149011612;
+	setAttr ".layer2_glassRefractionRoughness" -1;
 	setAttr ".layer2_glassIor" 1.5;
 	setAttr ".layer2_enableSubsurface" 0;
 	setAttr ".layer2_subsurfaceGain" 0;
@@ -44465,6 +46622,7 @@ createNode PxrLayerMixer -n "grandma_controlrig:gma_necklace_string_layermxer";
 	setAttr ".layer3_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".layer3_reflectionGain" 0;
 	setAttr ".layer3_glassRoughness" 0.10000000149011612;
+	setAttr ".layer3_glassRefractionRoughness" -1;
 	setAttr ".layer3_glassIor" 1.5;
 	setAttr ".layer3_enableSubsurface" 0;
 	setAttr ".layer3_subsurfaceGain" 0;
@@ -44547,6 +46705,7 @@ createNode PxrLayerMixer -n "grandma_controlrig:gma_necklace_string_layermxer";
 	setAttr ".layer4_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".layer4_reflectionGain" 0;
 	setAttr ".layer4_glassRoughness" 0.10000000149011612;
+	setAttr ".layer4_glassRefractionRoughness" -1;
 	setAttr ".layer4_glassIor" 1.5;
 	setAttr ".layer4_enableSubsurface" 0;
 	setAttr ".layer4_subsurfaceGain" 0;
@@ -44659,6 +46818,7 @@ createNode PxrLayer -n "grandma_controlrig:necklace_string_base";
 	setAttr ".rrReflectionGain" 0;
 	setAttr ".rrRefractionColor" -type "float3" 1 1 1 ;
 	setAttr ".rrRoughness" 0.10000000149011612;
+	setAttr ".rrRefractionRoughness" -1;
 	setAttr ".rrIor" 1.5;
 	setAttr ".enableGlow" no;
 	setAttr ".glowGain" 0;
@@ -44748,6 +46908,7 @@ createNode PxrLayer -n "grandma_controlrig:necklace_string_dirt";
 	setAttr ".rrReflectionGain" 0;
 	setAttr ".rrRefractionColor" -type "float3" 1 1 1 ;
 	setAttr ".rrRoughness" 0.10000000149011612;
+	setAttr ".rrRefractionRoughness" -1;
 	setAttr ".rrIor" 1.5;
 	setAttr ".enableGlow" no;
 	setAttr ".glowGain" 0;
@@ -44833,7 +46994,7 @@ createNode nodeGraphEditorInfo -n "grandma_controlrig:hyperShadePrimaryNodeEdito
 	setAttr ".tgi[0].ni[3].y" 145.71427917480469;
 	setAttr ".tgi[0].ni[3].nvs" 1923;
 	setAttr ".tgi[0].ni[4].x" -1563.0657958984375;
-	setAttr ".tgi[0].ni[4].y" -134.16629028320312;
+	setAttr ".tgi[0].ni[4].y" -134.16629028320313;
 	setAttr ".tgi[0].ni[4].nvs" 18304;
 	setAttr ".tgi[0].ni[5].x" -1333.1832275390625;
 	setAttr ".tgi[0].ni[5].y" -142.46112060546875;
@@ -44842,7 +47003,7 @@ createNode nodeGraphEditorInfo -n "grandma_controlrig:hyperShadePrimaryNodeEdito
 	setAttr ".tgi[0].ni[6].y" 145.71427917480469;
 	setAttr ".tgi[0].ni[6].nvs" 2227;
 	setAttr ".tgi[0].ni[7].x" -991.4285888671875;
-	setAttr ".tgi[0].ni[7].y" 447.74551391601562;
+	setAttr ".tgi[0].ni[7].y" 447.74551391601563;
 	setAttr ".tgi[0].ni[7].nvs" 2227;
 createNode expression -n "grandma_controlrig:xgmRefreshPreview";
 	rename -uid "49AB3C67-B945-75AA-81F4-358B29DD2FD6";
@@ -44858,13 +47019,18 @@ createNode reference -n "frame1RN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"frame1RN"
 		"frame1RN" 0
-		"frame1RN" 4
+		"frame1RN" 6
 		0 "|frame6:frame1" "|LIVING_ROOM_SET|PROPS|picture_frames" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame6:frame1" "translate" " -type \"double3\" 49.97599864085881904 53.35694608019980478 43.79099998865422805"
 		
 		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame6:frame1" "rotate" " -type \"double3\" -89.99999999999995737 0 92.88906507446402827"
 		
-		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame6:frame1" "scale" " -type \"double3\" 3.18225300077599371 3.18225300077599371 3.18225300077599371";
+		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame6:frame1" "scale" " -type \"double3\" 3.18225300077599371 3.18225300077599371 3.18225300077599371"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame6:frame1|frame6:frame1|frame6:frame1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame6:frame1|frame6:photo1|frame6:photo1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "frame2RN";
@@ -44872,13 +47038,18 @@ createNode reference -n "frame2RN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"frame2RN"
 		"frame2RN" 0
-		"frame2RN" 4
+		"frame2RN" 6
 		0 "|frame7:frame2" "|LIVING_ROOM_SET|PROPS|picture_frames" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame7:frame2" "translate" " -type \"double3\" 47.84282407324241149 76.23533310358300241 43.29868988093123505"
 		
 		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame7:frame2" "rotate" " -type \"double3\" 0 -179.99999999999994316 -0.79413166077288133"
 		
-		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame7:frame2" "scale" " -type \"double3\" 3.01377457753110223 3.01377457753110223 3.01377457753110223";
+		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame7:frame2" "scale" " -type \"double3\" 3.01377457753110223 3.01377457753110223 3.01377457753110223"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame7:frame2|frame7:frame2|frame7:frame2Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame7:frame2|frame7:photo2|frame7:photo2Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "frame3RN";
@@ -44886,13 +47057,18 @@ createNode reference -n "frame3RN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"frame3RN"
 		"frame3RN" 0
-		"frame3RN" 4
+		"frame3RN" 6
 		0 "|frame8:frame3" "|LIVING_ROOM_SET|PROPS|picture_frames" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame8:frame3" "translate" " -type \"double3\" 68.45455256980883973 71.7095649769135548 44.08630775929331236"
 		
 		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame8:frame3" "rotate" " -type \"double3\" 0 -179.99999999999994316 -0.8869618112274571"
 		
-		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame8:frame3" "scale" " -type \"double3\" 3.52283490802465504 3.52283490802465504 3.52283490802465504";
+		2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame8:frame3" "scale" " -type \"double3\" 3.52283490802465504 3.52283490802465504 3.52283490802465504"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame8:frame3|frame8:frame3|frame8:frame3Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|picture_frames|frame8:frame3|frame8:photo3|frame8:photo3Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "greenbeansRN";
@@ -44900,7 +47076,7 @@ createNode reference -n "greenbeansRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"greenbeansRN"
 		"greenbeansRN" 0
-		"greenbeansRN" 8
+		"greenbeansRN" 52
 		0 "|greenbeans:greenbeans" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans" 
@@ -44918,7 +47094,96 @@ createNode reference -n "greenbeansRN";
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans" 
 		"scalePivot" " -type \"double3\" 2.1112387438293467e-07 1.41600264794813713 0"
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans" 
-		"scalePivotTranslate" " -type \"double3\" -1.2255536518159243e-07 -0.82197582876213615 0";
+		"scalePivotTranslate" " -type \"double3\" -1.2255536518159243e-07 -0.82197582876213615 0"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:skillet|greenbeans:skilletShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean1|greenbeans:greenbeanShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean2|greenbeans:greenbeanShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean3|greenbeans:greenbeanShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean4|greenbeans:greenbeanShape4.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean5|greenbeans:greenbeanShape5.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean6|greenbeans:greenbeanShape6.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean7|greenbeans:greenbeanShape7.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean8|greenbeans:greenbeanShape8.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean9|greenbeans:greenbeanShape9.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean10|greenbeans:greenbeanShape10.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean11|greenbeans:greenbeanShape11.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean12|greenbeans:greenbeanShape12.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean13|greenbeans:greenbeanShape13.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean14|greenbeans:greenbeanShape14.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean15|greenbeans:greenbeanShape15.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean16|greenbeans:greenbeanShape16.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean17|greenbeans:greenbeanShape17.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean18|greenbeans:greenbeanShape18.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean19|greenbeans:greenbeanShape19.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean20|greenbeans:greenbeanShape20.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean21|greenbeans:greenbeanShape21.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean22|greenbeans:greenbeanShape22.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean23|greenbeans:greenbeanShape23.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean24|greenbeans:greenbeanShape24.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean25|greenbeans:greenbeanShape25.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean26|greenbeans:greenbeanShape26.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean27|greenbeans:greenbeanShape27.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean28|greenbeans:greenbeanShape28.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean29|greenbeans:greenbeanShape29.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean30|greenbeans:greenbeanShape30.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean31|greenbeans:greenbeanShape31.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean32|greenbeans:greenbeanShape32.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean33|greenbeans:greenbeanShape33.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean34|greenbeans:greenbeanShape34.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean35|greenbeans:greenbeanShape35.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean36|greenbeans:greenbeanShape36.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean37|greenbeans:greenbeanShape37.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean38|greenbeans:greenbeanShape38.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean39|greenbeans:greenbeanShape39.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean40|greenbeans:greenbeanShape40.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean41|greenbeans:greenbeanShape41.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean42|greenbeans:greenbeanShape42.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|greenbeans:greenbeans|greenbeans:greenbean43|greenbeans:greenbeanShape43.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "rice_partyservingRN";
@@ -44927,7 +47192,7 @@ createNode reference -n "rice_partyservingRN";
 		"rice_partyservingRN"
 		"rice_partyservingRN" 0
 		"rice_partyserving:bowl_blueceramic_pattern1_latestRN" 0
-		"rice_partyservingRN" 6
+		"rice_partyservingRN" 9
 		0 "|rice_partyserving:rice_party_serving_CTRL" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|rice_partyserving:rice_party_serving_CTRL" 
@@ -44941,7 +47206,16 @@ createNode reference -n "rice_partyservingRN";
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|rice_partyserving:rice_party_serving_CTRL" 
 		"scalePivot" " -type \"double3\" 0 0.6878260458743759 0"
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|rice_partyserving:rice_party_serving_CTRL" 
-		"scalePivotTranslate" " -type \"double3\" 0 0.1494554615698799 0";
+		"scalePivotTranslate" " -type \"double3\" 0 0.1494554615698799 0"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|rice_partyserving:rice_party_serving_CTRL|rice_partyserving:rice_party_serving|rice_partyserving:rice_v3_CTRL|rice_partyserving:rice_v3|rice_partyserving:rice_v3Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|rice_partyserving:rice_party_serving_CTRL|rice_partyserving:rice_party_serving|rice_partyserving:rice_v2_CTRL|rice_partyserving:rice_v2|rice_partyserving:rice_v2Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|rice_partyserving:rice_party_serving_CTRL|rice_partyserving:rice_party_serving|rice_partyserving:rice_v1_CTRL|rice_partyserving:rice_v1|rice_partyserving:rice_v1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"rice_partyserving:bowl_blueceramic_pattern1_latestRN" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|rice_partyserving:rice_party_serving_CTRL|rice_partyserving:rice_party_serving|rice_partyserving:bowl_blueceramic_pattern1_latest:bowl_blueceramic_pattern1_CTRL|rice_partyserving:bowl_blueceramic_pattern1_latest:bowl_blueceramic_pattern1|rice_partyserving:bowl_blueceramic_pattern1_latest:bowl_blueceramic_patternShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "edamame_latestRN";
@@ -44949,14 +47223,21 @@ createNode reference -n "edamame_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"edamame_latestRN"
 		"edamame_latestRN" 0
-		"edamame_latestRN" 3
+		"edamame_latestRN" 6
 		0 "|edamame_latest:bean_bowl" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|edamame_latest:bean_bowl" 
 		"translate" " -type \"double3\" -0.55906361702086027 6.93936687687103593 -13.31743368892519541"
 		
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|edamame_latest:bean_bowl" 
-		"scale" " -type \"double3\" 0.73677099210264008 0.73677099210264008 0.73677099210264008";
+		"scale" " -type \"double3\" 0.73677099210264008 0.73677099210264008 0.73677099210264008"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|edamame_latest:bean_bowl|edamame_latest:bowl_blueceramic_pattern1_latest:bowl_blueceramic_pattern1_CTRL|edamame_latest:bowl_blueceramic_pattern1_latest:bowl_blueceramic_pattern1|edamame_latest:bowl_blueceramic_pattern1_latest:bowl_blueceramic_patternShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|edamame_latest:bean_bowl|edamame_latest:soybeans|edamame_latest:soybeansShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|edamame_latest:bean_bowl|edamame_latest:sauce|edamame_latest:sauceShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "soy_sauce_latestRN";
@@ -44964,7 +47245,7 @@ createNode reference -n "soy_sauce_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"soy_sauce_latestRN"
 		"soy_sauce_latestRN" 0
-		"soy_sauce_latestRN" 6
+		"soy_sauce_latestRN" 8
 		0 "|soy_sauce_latest:soy_sauce" "|LIVING_ROOM_SET|PROPS" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|soy_sauce_latest:soy_sauce" "translate" " -type \"double3\" 0.04459001145104402 7.04625290956688666 -2.64352522566874804"
 		
@@ -44975,7 +47256,11 @@ createNode reference -n "soy_sauce_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|soy_sauce_latest:soy_sauce" "scalePivot" " -type \"double3\" 0 3.57090985774993896 0"
 		
 		2 "|LIVING_ROOM_SET|PROPS|soy_sauce_latest:soy_sauce" "scalePivotTranslate" 
-		" -type \"double3\" 0 -2.47896422814945794 0";
+		" -type \"double3\" 0 -2.47896422814945794 0"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|soy_sauce_latest:soy_sauce|soy_sauce_latest:bottle|soy_sauce_latest:bottleShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|soy_sauce_latest:soy_sauce|soy_sauce_latest:topCap1|soy_sauce_latest:topCap1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "shoes_wyatt_v01_latestRN";
@@ -44990,7 +47275,7 @@ createNode reference -n "croc3RN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"croc3RN"
 		"croc3RN" 0
-		"croc3RN" 61
+		"croc3RN" 64
 		0 "|croc3:croc" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc" 
@@ -45025,9 +47310,9 @@ createNode reference -n "croc3RN";
 		"pt[0:165]" (" -type \"float3\" -32.885178 28.997751 -199.44778 -36.378223 28.997751 -199.44778 -33.024105 29.428537 -199.99669 -36.098877 29.428537 -199.99669 -30.203793 28.638491 -201.46251 -39.612755 28.637863 -201.46117 -30.454828 28.744997 -200.2739 -38.684113 28.744894 -200.27347 -38.651951 29.792095 -200.26283 -36.364502 29.88711 -199.33633 -32.898186 29.887114 -199.33638 -30.486801 29.792101 -200.26207 -30.116709 29.707298 -201.54008 -39.656433 29.707298 -201.54181 -38.651951 29.207832 -200.27003 -36.364502 29.333525 -199.39064 -32.898186 29.33353 -199.39067 -30.486801 29.207838 -200.26929 -30.134474 29.107296 -201.52884 -39.644894 29.107296 -201.53058 -39.809883 28.629398 -202.32137 -30.87858 28.629129 -202.32518 -40.306915 29.449776 -202.96356 -30.273058 29.4496 -202.96202 -40.284687 28.910082 -202.95946 -30.352846 28.908508 -202.95938 -30.276861 29.276594 -203.66483 -40.748791 29.276829 -203.6674 -30.273872 28.905325 -203.66444 -40.76112 28.908958 -203.66605 -30.294931 29.098413 -204.34 -41.29454 29.098413 -204.34"
 		+ "251 -30.290438 28.799109 -204.33862 -41.306976 28.802418 -204.3414 -30.367754 28.940994 -205.02513 -41.735107 28.940994 -205.02657 -30.359123 28.570887 -205.0239 -41.747761 28.572935 -205.02589 -30.034412 28.832821 -206.36754 -41.905407 28.832821 -206.36607 -30.021688 28.536995 -206.36725 -41.918037 28.537062 -206.36652 -30.233644 28.959452 -207.79884 -40.775181 28.959452 -207.79646 -30.221413 28.680931 -207.79991 -40.785831 28.680931 -207.79869 -31.572495 29.335438 -208.81662 -37.727898 29.335438 -208.81476 -31.563545 29.065561 -208.82079 -37.733788 29.065561 -208.81982 -33.06517 29.58774 -209.10738 -34.400684 29.58774 -209.10696 -33.062214 29.402016 -209.12129 -34.401745 29.402016 -209.12108 -32.170055 28.428162 -202.35295 -38.561779 28.428261 -202.35158 -32.598637 28.691242 -203.07101 -39.998253 28.693703 -203.06918 -31.48093 28.564861 -200.27551 -37.658012 28.564758 -200.27509 -36.095818 28.821775 -199.54126 -33.139603 28.821775 -199.54124 -31.382847 28.436058 -201.44151 -38.373287 28.435429 -201.44017 -3"
 		+ "2.66853 28.72094 -203.6615 -40.47942 28.724573 -203.66074 -31.972332 28.628798 -204.32648 -41.127243 28.632109 -204.32674 -31.739122 28.415133 -204.98022 -40.787033 28.416443 -204.98061 -31.485807 28.389896 -206.36673 -40.453663 28.389961 -206.36745 -31.519789 28.533783 -207.80211 -39.484192 28.533783 -207.80327 -32.318348 28.917755 -208.82687 -36.972672 28.917755 -208.82779 -33.202843 29.2428 -209.12497 -34.315327 29.2428 -209.12532 -30.315269 28.877314 -205.63333 -30.303215 28.532427 -205.63266 -31.757229 28.385328 -205.63194 -40.465977 28.385981 -205.63239 -41.88694 28.533079 -205.63281 -41.874153 28.877314 -205.63303 -30.062719 28.87907 -207.10266 -30.049969 28.595535 -207.10291 -31.453382 28.448435 -207.10339 -40.056564 28.448435 -207.10435 -41.46104 28.595535 -207.10188 -41.448807 28.87907 -207.10069 -30.902784 29.15494 -208.38116 -30.89142 28.877132 -208.38312 -31.915953 28.729656 -208.38716 -38.223766 28.729656 -208.38844 -39.253761 28.877132 -208.38177 -39.245045 29.15494 -208.37854 -32.430012 29.505"
-		+ "88399999999822 -209.0204 -32.42379 29.287691 -209.03273 -32.818363 29.139463 -209.04073 -35.271996 29.139463 -209.04123 -35.672993 29.287691 -209.03223 -35.669891 29.50588399999999822 -209.01939 -34.055321 28.491192 -203.06778 -37.804787 28.491192 -203.06778 -34.26852 28.500984 -203.64423 -38.069855 28.500984 -203.64423 -33.839993 28.481497 -204.29918 -39.135277 28.481497 -204.29918 -29.409044 29.394375 -200.7233 -31.082439 29.290377 -201.86263 -31.310091 29.069818 -203.10204 -31.371271 28.913063 -203.71457 -31.459129 28.755129 -204.30333 -31.583397 28.620152 -204.90044 -31.553728 28.565853 -205.42993 -31.300863 28.527916 -206.07011 -31.266993 28.56735 -206.71182 -31.335873 28.635887 -207.32019 -31.749125 28.802574 -207.82942 -32.167274 28.951836 -208.20451 -32.824581 29.588257 -208.97772 -32.920479 29.640364 -209.05936 -34.464859 29.640364 -209.05936 -35.268898 29.588257 -208.97772 -37.017498 28.951836 -208.20451 -39.638119 28.635887 -207.32019 -38.322464 28.802574 -207.82942 -40.649551 28.527916 -206.07011 "
-		+ "-40.234833 28.56735 -206.71182 -40.53735 28.620152 -204.90044 -40.657951 28.565853 -205.42993 -40.124413 28.755129 -204.30333 -39.622807 28.913063 -203.71457 -39.21833 29.069818 -203.10204 -38.60273 29.290377 -201.86263 -39.478317 29.394375 -200.7233 -38.539135 29.315706 -200.2758 -36.3106 29.421095 -199.39879 -38.539135 29.735855 -200.27127 -36.3106 29.833195 -199.36707 -32.92934 29.833231 -199.36734 -32.92934 29.421131 -199.39906 -30.578035 29.31575 -200.27048 -30.578037 29.735899 -200.26595 -30.231005 29.216537 -201.53 -30.231007 29.651949 -201.53 -33.080544 29.413179 -209.08647 -33.080544 29.569498 -209.08647 -34.375763 29.569498 -209.08356 -34.375763 29.413179 -209.08356 -39.528397 29.21653 -201.54219 -39.528397 29.651943 -201.54219 -30.391161 28.986738 -202.9559 -30.391161 29.396189 -202.9559 -40.181774 29.396124 -202.96887 -40.181831 28.986738 -202.96977 -30.395063 29.232662 -203.66255 -30.395063 28.930645 -203.66255 -40.628933 28.930645 -203.67915 -40.628563 29.232283 -203.67929 -30.413221 29.060055 -"
-		+ "204.33946 -30.413221 28.819595 -204.33946 -41.178574 28.819595 -204.35716 -41.178574 29.060055 -204.35716 -30.486422 28.89827 -205.02869 -30.486422 28.594624 -205.02869"
+		+ "884 -209.0204 -32.42379 29.287691 -209.03273 -32.818363 29.139463 -209.04073 -35.271996 29.139463 -209.04123 -35.672993 29.287691 -209.03223 -35.669891 29.505884 -209.01939 -34.055321 28.491192 -203.06778 -37.804787 28.491192 -203.06778 -34.26852 28.500984 -203.64423 -38.069855 28.500984 -203.64423 -33.839993 28.481497 -204.29918 -39.135277 28.481497 -204.29918 -29.409044 29.394375 -200.7233 -31.082439 29.290377 -201.86263 -31.310091 29.069818 -203.10204 -31.371271 28.913063 -203.71457 -31.459129 28.755129 -204.30333 -31.583397 28.620152 -204.90044 -31.553728 28.565853 -205.42993 -31.300863 28.527916 -206.07011 -31.266993 28.56735 -206.71182 -31.335873 28.635887 -207.32019 -31.749125 28.802574 -207.82942 -32.167274 28.951836 -208.20451 -32.824581 29.588257 -208.97772 -32.920479 29.640364 -209.05936 -34.464859 29.640364 -209.05936 -35.268898 29.588257 -208.97772 -37.017498 28.951836 -208.20451 -39.638119 28.635887 -207.32019 -38.322464 28.802574 -207.82942 -40.649551 28.527916 -206.07011 -40.234833 28.56735 -2"
+		+ "06.71182 -40.53735 28.620152 -204.90044 -40.657951 28.565853 -205.42993 -40.124413 28.755129 -204.30333 -39.622807 28.913063 -203.71457 -39.21833 29.069818 -203.10204 -38.60273 29.290377 -201.86263 -39.478317 29.394375 -200.7233 -38.539135 29.315706 -200.2758 -36.3106 29.421095 -199.39879 -38.539135 29.735855 -200.27127 -36.3106 29.833195 -199.36707 -32.92934 29.833231 -199.36734 -32.92934 29.421131 -199.39906 -30.578035 29.31575 -200.27048 -30.578037 29.735899 -200.26595 -30.231005 29.216537 -201.53 -30.231007 29.651949 -201.53 -33.080544 29.413179 -209.08647 -33.080544 29.569498 -209.08647 -34.375763 29.569498 -209.08356 -34.375763 29.413179 -209.08356 -39.528397 29.21653 -201.54219 -39.528397 29.651943 -201.54219 -30.391161 28.986738 -202.9559 -30.391161 29.396189 -202.9559 -40.181774 29.396124 -202.96887 -40.181831 28.986738 -202.96977 -30.395063 29.232662 -203.66255 -30.395063 28.930645 -203.66255 -40.628933 28.930645 -203.67915 -40.628563 29.232283 -203.67929 -30.413221 29.060055 -204.33946 -30.413221 2"
+		+ "8.819595 -204.33946 -41.178574 28.819595 -204.35716 -41.178574 29.060055 -204.35716 -30.486422 28.89827 -205.02869 -30.486422 28.594624 -205.02869"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pCube1|croc3:polySurface1|croc3:polySurfaceShape1" 
 		"pt[166:331]" (" -41.619678 28.594624 -205.03873 -41.619678 28.89827 -205.03873 -30.432676 28.836077 -205.64427 -30.432676 28.55328 -205.64427 -41.758087 28.55328 -205.64223 -41.758087 28.836077 -205.64223 -30.149704 28.794615 -206.38065 -30.149704 28.55423 -206.38065 -30.178148 28.841627 -207.1129 -30.178148 28.611942 -207.1129 -41.791473 28.794615 -206.37035 -41.791473 28.55423 -206.37035 -41.336456 28.611942 -207.09903 -41.33646 28.841627 -207.09903 -30.343832 28.922323 -207.80193 -30.343832 28.697023 -207.80193 -31.007092 29.117855 -208.37579 -31.007092 28.893181 -208.37579 -40.67767 28.922323 -207.78519 -40.67767 28.697023 -207.78519 -39.160389 28.893181 -208.35735 -39.160389 29.117855 -208.35735 -31.651621 29.299698 -208.80203 -31.651621 29.081171 -208.80203 -32.481392 29.479376 -209.00253 -32.481392 29.30047 -209.00253 -37.667328 29.299698 -208.78888 -37.667328 29.081173 -208.78888 -35.628914 29.30047 -208.99545 -35.628914 29.479376 -208.99545 -30.644276 28.830536 -203.07803 -31.087704 28.554846 -202.36378 -32.156429 "
@@ -45136,7 +47421,7 @@ createNode reference -n "croc3RN";
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pCube1|croc3:polySurface2|croc3:polySurfaceShape2" 
 		"pt[498:663]" (" -30.772413 29.699537 -201.25348 -30.660072 29.672922 -201.00616 -38.656124 29.674978 -200.72563 -38.577499 29.68335 -200.77205 -38.856972 29.634932 -201.29247 -38.956284 29.631804 -201.2514 -31.040108 29.900648 -205.50926 -30.834591 29.415981 -206.67288 -31.085943 29.7223 -206.1532 -30.661572 29.20738 -207.12009 -32.378704 29.97036 -207.09978 -31.490484 29.828724 -206.64058 -34.034817 30.085129 -206.61459 -35.680416 30.418938 -205.95251 -39.324337 29.995817 -207.08228 -37.843567 30.090189 -206.59651 -40.406437 29.834408 -206.60461 -41.028305 29.709013 -206.13538 -41.083038 29.424778 -206.62674 -34.10294 29.804886 -208.79895 -34.524292 29.844414 -208.75693 -34.094921 29.849289 -208.72998 -33.507259 29.783554 -208.71666 -34.960945 29.830605 -208.79886 -35.632015 29.817331 -208.7135 -34.960697 29.868753 -208.73178 -35.538082 29.901356 -208.66885 -35.0588 29.936972 -208.65872 -34.521389 29.888527 -208.71655 -34.062965 29.927168 -208.65913 -33.600506 29.881601 -208.66992 -30.92766 29.605976 -207.09447 -35.609001 "
-		+ "30.067389 -207.06914 -40.680386 29.610176 -207.03705 -31.039062 29.637909 -207.61064 -31.372402 29.71771 -208.02818 -35.621376 30.066805 -207.59235 -35.230793 30.081762 -207.99347 -40.040909 29.634422 -207.5461 -39.162266 29.714008 -207.96703 -31.57799 29.759245 -208.20271 -31.925566 29.804533 -208.39235 -35.082428 30.103615 -208.1898 -34.838703 30.103256 -208.37521 -38.647255 29.757748 -208.14822 -37.80846 29.807487 -208.35318 -32.325027 29.823891 -208.51045 -34.715633 30.066349 -208.47377 -37.156235 29.828165 -208.48759 -33.642147 31.344934 -204.54694 -38.01936 31.268471 -204.5444 -30.332895 29.369715 -202.82007 -30.242828 29.396505 -202.82956 -30.223167 29.535339 -202.84285 -30.365273 29.246683 -203.36148 -30.275139 29.283524 -203.36186 -30.254339 29.476673 -203.36334 -30.364029 29.0376 -204.12076 -30.271788 29.128906 -203.98544 -30.273895 29.095139 -204.12442 -30.286356 29.04711 -204.32413 -30.361946 29.129475 -203.78929 -30.271801 29.177086 -203.79083 -30.250998 29.427685 -203.79916 -30.253149 29.402615 "
+		+ "30.067389 -207.06914 -40.680386 29.610176 -207.03705 -31.039063 29.637909 -207.61064 -31.372402 29.71771 -208.02818 -35.621376 30.066805 -207.59235 -35.230793 30.081762 -207.99347 -40.040909 29.634422 -207.5461 -39.162266 29.714008 -207.96703 -31.57799 29.759245 -208.20271 -31.925566 29.804533 -208.39235 -35.082428 30.103615 -208.1898 -34.838703 30.103256 -208.37521 -38.647255 29.757748 -208.14822 -37.80846 29.807487 -208.35318 -32.325027 29.823891 -208.51045 -34.715633 30.066349 -208.47377 -37.156235 29.828165 -208.48759 -33.642147 31.344934 -204.54694 -38.01936 31.268471 -204.5444 -30.332895 29.369715 -202.82007 -30.242828 29.396505 -202.82956 -30.223167 29.535339 -202.84285 -30.365273 29.246683 -203.36148 -30.275139 29.283524 -203.36186 -30.254339 29.476673 -203.36334 -30.364029 29.0376 -204.12076 -30.271788 29.128906 -203.98544 -30.273895 29.095139 -204.12442 -30.286356 29.04711 -204.32413 -30.361946 29.129475 -203.78929 -30.271801 29.177086 -203.79083 -30.250998 29.427685 -203.79916 -30.253149 29.402615 "
 		+ "-204.14351 -30.265755 29.366028 -204.34622 -30.484653 28.772007 -205.40913 -30.376944 28.828201 -205.31146 -30.407169 28.801775 -205.42331 -30.46661 28.783012 -205.50595 -30.454391 28.800762 -205.17467 -30.365381 28.853725 -205.17589 -30.387884 29.008623 -205.46204 -30.453014 28.889387 -205.526 -41.724915 28.7938 -205.17957 -41.812927 28.798332 -205.17639 -41.686993 28.846977 -204.92647 -41.752728 28.767452 -205.4126 -41.782257 28.761227 -205.50706 -41.831291 28.76903 -205.42406 -40.308872 29.313866 -203.0356 -39.762974 29.564037 -201.72873 -40.668453 29.170395 -203.62726 -40.751987 29.175135 -203.61661 -40.844185 29.105978 -203.85829 -41.051788 29.035528 -204.10936 -41.136414 29.040825 -204.10004 -30.182587 28.802725 -206.91788 -41.781582 29.019213 -206.39772 -41.49387 28.808279 -206.90417 -41.513401 29.049507 -207.00011 -30.911243 29.287275 -208.27165 -30.387959 29.139133 -207.80673 -40.499466 28.905977 -207.89676 -39.449223 29.041567 -208.26358 -39.814465 29.002064 -208.16148 -32.044495 29.287096 -208.8514"
 		+ "7 -37.277565 29.296469 -208.84053 -36.031376 29.409853 -208.96193 -30.131521 29.588959 -201.79446 -30.20813 29.672995 -201.00546 -30.10701 29.699627 -201.25372 -30.110922 29.764742 -201.76869 -30.131336 29.622511 -202.01221 -39.038544 29.675611 -200.69603 -39.138771 29.684269 -200.72878 -38.965298 29.696192 -200.5659 -39.397038 29.632389 -201.21924 -39.506111 29.635775 -201.24535 -36.059307 30.750273 -205.52408 -38.202999 30.760279 -205.37245 -39.960308 30.476984 -205.52643 -31.967407 30.594866 -205.49008 -33.945332 30.854576 -205.36609 -32.133137 30.865316 -205.20065 -33.91169 31.10317 -205.01306 -36.078465 30.962742 -205.21837 -38.141884 30.992281 -205.01431 -39.936558 30.632071 -205.2216 -41.42371 29.842672 -205.73315 -41.785023 29.263802 -205.75554 -40.884426 30.263208 -205.4581 -41.506569 29.942005 -205.22791 -41.830048 29.129688 -205.17831 -41.868538 29.414602 -205.37486 -41.796738 29.04841 -205.56055 -41.849323 28.973869 -205.44731 -30.359076 29.480684 -206.2587 -30.236864 29.466812 -206.68744 -31.0849"
 		+ "15 29.98111 -206.25011 -30.995293 29.918537 -206.68124 -31.914375 30.009583 -207.11449 -30.896027 29.886425 -207.11002 -30.162878 29.462229 -207.12277 -30.158367 29.232855 -207.12662 -33.90247 30.320091 -206.24593 -33.824486 30.201841 -206.67854 -38.346428 30.268417 -206.24794 -38.047806 30.200357 -206.67735 -39.592911 29.964922 -207.10146 -37.844845 30.147287 -207.10773 -33.687225 30.144064 -207.11102 -40.925251 30.016388 -206.2453 -40.905598 29.919546 -206.68079 -41.735565 29.549635 -206.27187 -41.689495 29.466473 -206.68863 -41.444366 29.233664 -207.11763 -41.423988 29.461998 -207.11771 -40.662018 29.886484 -207.1098 -33.256435 29.828714 -208.90981 -33.976395 29.911728 -208.9463 -34.519234 29.883108 -208.95273 -34.019821 29.822475 -208.93285 -33.34985 29.970837 -208.85941 -33.959648 30.025881 -208.85652 -34.512325 29.968056 -208.93288 -35.129433 30.031946 -208.85995 -35.815041 29.98455 -208.86198 -35.095863 29.925444 -208.95134 -35.977173 29.845333 -208.9086 -35.056385 29.841478 -208.94154 -30.973091 29.90"
@@ -45151,12 +47436,12 @@ createNode reference -n "croc3RN";
 		+ "65057 -205.10583 -40.971123 30.400997 -204.99629 -41.619507 29.600239 -204.8707 -32.631252 29.702271 -208.8701 -33.245697 30.061838 -208.76151"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pCube1|croc3:polySurface2|croc3:polySurfaceShape2" 
-		"pt[830:995]" (" -32.918606 29.994453 -208.78694 -34.594929 30.101492 -208.77252 -33.845684 30.09127 -208.76814 -35.971638 30.061674 -208.76964 -35.349728 30.092567 -208.77182 -36.525761 29.912094 -208.81802 -36.311836 29.99641 -208.78928 -36.602478 29.708996 -208.86714 -36.596535 29.816406 -208.84732 -34.774353 31.143127 -204.44458 -35.805557 31.253855 -204.40103 -34.723976 31.335447 -204.44017 -33.703369 31.247026 -204.37759 -32.747124 31.09963399999999822 -204.40829 -32.731133 31.299934 -204.39461 -31.944546 31.1849 -204.30737 -38.893532 30.993462 -204.42935 -39.594009 31.071318 -204.32552 -38.839542 31.230106 -204.39894 -37.891193 31.195633 -204.38657 -36.896427 31.114449 -204.4514 -36.880291 31.313549 -204.44162 -39.724964 31.175592 -204.38162 -39.033707 31.189266 -204.52077 -37.954834 31.309992 -204.45401 -36.943867 31.31912 -204.55768 -35.804337 31.37159 -204.47455 -34.726429 31.354431 -204.55879 -33.639347 31.366209 -204.45506 -32.612041 31.318569 -204.52544 -31.818367 31.300137 -204.38443 -30.63105 29.367058 -202.81"
-		+ "738 -30.52182 29.573547 -201.68886 -30.419771 29.471239 -202.26997 -30.387049 29.367058 -202.81816 -30.277845 29.573572 -201.68939 -30.282881 29.945307 -201.65157 -30.422222 30.157495 -202.24405 -30.387524 30.370153 -202.81226 -30.277739 30.132164 -202.24794 -30.525879 29.945284 -201.6512 -30.732441 30.132143 -202.24666 -30.631304 30.369932 -202.81134 -30.663389 29.243176 -203.36096 -30.501368 29.297771 -203.14212 -30.419352 29.243177 -203.36137 -30.500385 30.515188 -203.14357 -30.415131 30.621819 -203.36909 -30.356737 30.471046 -203.14421 -30.809893 30.469461 -203.14203 -30.65333 30.616095 -203.3649 -30.430563 28.981564 -204.31943 -30.50802 29.015181 -204.1785 -30.41811 29.032217 -204.12022 -30.505659 29.049995 -204.05371 -30.416014 29.070665 -203.98245 -30.674318 28.98147 -204.3176 -30.661922 29.032143 -204.11876 -30.65991 29.07061 -203.98152 -30.660011 29.124947 -203.78862 -30.504105 29.091335 -203.90639 -30.50766 29.179934 -203.59201 -30.416033 29.124979 -203.78908 -30.487034 30.765766 -203.61209 -30.4061"
-		+ "93 30.896465 -203.83398 -30.354357 30.718155 -203.61856 -30.517406 30.978067 -203.95755 -30.524494 31.050083 -204.06154 -30.384285 30.935591 -203.9738 -30.775118 30.684803 -203.59576 -30.615685 30.862494 -203.81102 -30.75386 30.8514 -203.91685 -30.709484 30.991018 -204.02158 -30.890142 30.938221 -204.07196 -31.062704 31.094883 -204.1796 -30.752893 31.100956 -204.13393 -31.317789 31.018957 -204.20958 -31.377771 31.215416 -204.28954 -30.903044 31.181686 -204.23822 -30.563036 31.066914 -204.15915 -31.037371 31.199121 -204.33115 -30.541101 28.764479 -205.48131 -30.609837 28.765285 -205.45248 -30.530972 28.769234 -205.40984 -30.604259 28.773325 -205.36328 -30.51589 28.779778 -205.30656 -30.732738 28.764311 -205.48149 -30.7425 28.769135 -205.40987 -30.749969 28.779634 -205.30624 -30.751129 28.796045 -205.17363 -30.598724 28.786652 -205.24348 -30.736895 28.838099 -204.94371 -30.594252 28.806276 -205.10025 -30.508392 28.796198 -205.17445 -30.493172 28.838377 -204.94452 -30.501652 28.862131 -205.55495 -30.590809 28.79"
-		+ "7709 -205.55971 -30.511925 28.776575 -205.53465 -30.742088 28.855192 -205.55324 -30.741709 28.775 -205.53503 -30.602314 28.76425 -205.52122 -41.545895 28.840042 -204.93694 -41.553776 28.805153 -205.1097 -41.670643 28.793774 -205.18193 -41.602859 28.784897 -205.25388 -41.701797 28.777672 -205.31264 -41.315609 28.838081 -204.95789 -41.431625 28.793694 -205.19237 -41.469826 28.777618 -205.32104 -41.496513 28.767324 -205.42139 -41.625965 28.771761 -205.37152 -41.514729 28.761337 -205.49062 -41.633884 28.763687 -205.45901 -41.706764 28.76737 -205.41481 -41.705452 28.761381 -205.48523 -41.648785 28.758156 -205.52592 -41.74025 28.75857 -205.53633 -41.510952 28.758331 -205.54216 -39.610329 29.561737 -201.72116 -39.837479 29.443808 -202.37683 -40.256054 29.313839 -203.03963 -39.371277 29.561497 -201.73828 -40.017952 29.313784 -203.05818 -40.023357 30.372322 -203.06293 -39.550793 30.097631 -202.41805 -39.366123 29.923807 -201.73024 -39.844124 30.159313 -202.38872 -40.259682 30.374178 -203.04576 -39.605217 29.924044 -20"
-		+ "1.71318 -39.984905 30.097889 -202.38617 -40.382919 29.169092 -203.65799 -40.383896 29.226978 -203.4274 -40.614277 29.170071 -203.63333 -40.634277 30.640341 -203.65976 -40.402061 30.566135 -203.44632 -40.532215 30.45533 -203.4369 -40.412228 30.625843 -203.67003 -40.113449 30.442936 -203.46391 -40.620949 29.134436 -203.7704 -40.790005 29.10607 -203.86293 -40.555107 29.106331 -203.8839 -40.765564 29.035028 -204.1384 -40.811096 29.069769 -204.00021 -40.934353 28.976803 -204.36371 -40.980648 29.012144 -204.20729 -40.998131 29.035435 -204.11476 -41.171734 28.975224 -204.35011 -40.116146 31.107407 -204.29713 -40.536335 31.009113 -204.21469 -40.41996 31.003912 -204.32368 -40.617222 30.918871 -204.0562 -40.758743 30.782232 -203.90489 -40.777981 30.794331 -204.06172 -40.138165 30.846607 -204.24635 -40.369003 30.936619 -204.18245 -40.435936 30.704184 -204.03389 -40.554905 30.749567 -203.9021 -40.382229 30.580168 -203.80042 -40.653461 30.743889 -203.7953 -40.774475 30.616102 -203.78929 -30.213783 28.769354 -206.93904 -30"
-		+ ".268213 28.718769 -206.84967 -30.175049 28.713121 -206.7419 -30.161135 28.766302 -206.84254 -30.407646 28.761541 -206.94229 -30.537502 28.751135 -206.84877"
+		"pt[830:995]" (" -32.918606 29.994453 -208.78694 -34.594929 30.101492 -208.77252 -33.845684 30.09127 -208.76814 -35.971638 30.061674 -208.76964 -35.349728 30.092567 -208.77182 -36.525761 29.912094 -208.81802 -36.311836 29.99641 -208.78928 -36.602478 29.708996 -208.86714 -36.596535 29.816406 -208.84732 -34.774353 31.143127 -204.44458 -35.805557 31.253855 -204.40103 -34.723976 31.335447 -204.44017 -33.703369 31.247026 -204.37759 -32.747124 31.099634 -204.40829 -32.731133 31.299934 -204.39461 -31.944546 31.1849 -204.30737 -38.893532 30.993462 -204.42935 -39.594009 31.071318 -204.32552 -38.839542 31.230106 -204.39894 -37.891193 31.195633 -204.38657 -36.896427 31.114449 -204.4514 -36.880291 31.313549 -204.44162 -39.724964 31.175592 -204.38162 -39.033707 31.189266 -204.52077 -37.954834 31.309992 -204.45401 -36.943867 31.31912 -204.55768 -35.804337 31.37159 -204.47455 -34.726429 31.354431 -204.55879 -33.639347 31.366209 -204.45506 -32.612041 31.318569 -204.52544 -31.818367 31.300137 -204.38443 -30.63105 29.367058 -202.81738 -30.521"
+		+ "82 29.573547 -201.68886 -30.419771 29.471239 -202.26997 -30.387049 29.367058 -202.81816 -30.277845 29.573572 -201.68939 -30.282881 29.945307 -201.65157 -30.422222 30.157495 -202.24405 -30.387524 30.370153 -202.81226 -30.277739 30.132164 -202.24794 -30.525879 29.945284 -201.6512 -30.732441 30.132143 -202.24666 -30.631304 30.369932 -202.81134 -30.663389 29.243176 -203.36096 -30.501368 29.297771 -203.14212 -30.419352 29.243177 -203.36137 -30.500385 30.515188 -203.14357 -30.415131 30.621819 -203.36909 -30.356737 30.471046 -203.14421 -30.809893 30.469461 -203.14203 -30.65333 30.616095 -203.3649 -30.430563 28.981564 -204.31943 -30.50802 29.015181 -204.1785 -30.41811 29.032217 -204.12022 -30.505659 29.049995 -204.05371 -30.416014 29.070665 -203.98245 -30.674318 28.98147 -204.3176 -30.661922 29.032143 -204.11876 -30.65991 29.07061 -203.98152 -30.660011 29.124947 -203.78862 -30.504105 29.091335 -203.90639 -30.50766 29.179934 -203.59201 -30.416033 29.124979 -203.78908 -30.487034 30.765766 -203.61209 -30.406193 30.89646"
+		+ "5 -203.83398 -30.354357 30.718155 -203.61856 -30.517406 30.978067 -203.95755 -30.524494 31.050083 -204.06154 -30.384285 30.935591 -203.9738 -30.775118 30.684803 -203.59576 -30.615685 30.862494 -203.81102 -30.75386 30.8514 -203.91685 -30.709484 30.991018 -204.02158 -30.890142 30.938221 -204.07196 -31.062704 31.094883 -204.1796 -30.752893 31.100956 -204.13393 -31.317789 31.018957 -204.20958 -31.377771 31.215416 -204.28954 -30.903044 31.181686 -204.23822 -30.563036 31.066914 -204.15915 -31.037371 31.199121 -204.33115 -30.541101 28.764479 -205.48131 -30.609837 28.765285 -205.45248 -30.530972 28.769234 -205.40984 -30.604259 28.773325 -205.36328 -30.51589 28.779778 -205.30656 -30.732738 28.764311 -205.48149 -30.7425 28.769135 -205.40987 -30.749969 28.779634 -205.30624 -30.751129 28.796045 -205.17363 -30.598724 28.786652 -205.24348 -30.736895 28.838099 -204.94371 -30.594252 28.806276 -205.10025 -30.508392 28.796198 -205.17445 -30.493172 28.838377 -204.94452 -30.501652 28.862131 -205.55495 -30.590809 28.797709 -205.5"
+		+ "5971 -30.511925 28.776575 -205.53465 -30.742088 28.855192 -205.55324 -30.741709 28.775 -205.53503 -30.602314 28.76425 -205.52122 -41.545895 28.840042 -204.93694 -41.553776 28.805153 -205.1097 -41.670643 28.793774 -205.18193 -41.602859 28.784897 -205.25388 -41.701797 28.777672 -205.31264 -41.315609 28.838081 -204.95789 -41.431625 28.793694 -205.19237 -41.469826 28.777618 -205.32104 -41.496513 28.767324 -205.42139 -41.625965 28.771761 -205.37152 -41.514729 28.761337 -205.49062 -41.633884 28.763687 -205.45901 -41.706764 28.76737 -205.41481 -41.705452 28.761381 -205.48523 -41.648785 28.758156 -205.52592 -41.74025 28.75857 -205.53633 -41.510952 28.758331 -205.54216 -39.610329 29.561737 -201.72116 -39.837479 29.443808 -202.37683 -40.256054 29.313839 -203.03963 -39.371277 29.561497 -201.73828 -40.017952 29.313784 -203.05818 -40.023357 30.372322 -203.06293 -39.550793 30.097631 -202.41805 -39.366123 29.923807 -201.73024 -39.844124 30.159313 -202.38872 -40.259682 30.374178 -203.04576 -39.605217 29.924044 -201.71318 -39"
+		+ ".984905 30.097889 -202.38617 -40.382919 29.169092 -203.65799 -40.383896 29.226978 -203.4274 -40.614277 29.170071 -203.63333 -40.634277 30.640341 -203.65976 -40.402061 30.566135 -203.44632 -40.532215 30.45533 -203.4369 -40.412228 30.625843 -203.67003 -40.113449 30.442936 -203.46391 -40.620949 29.134436 -203.7704 -40.790005 29.10607 -203.86293 -40.555107 29.106331 -203.8839 -40.765564 29.035028 -204.1384 -40.811096 29.069769 -204.00021 -40.934353 28.976803 -204.36371 -40.980648 29.012144 -204.20729 -40.998131 29.035435 -204.11476 -41.171734 28.975224 -204.35011 -40.116146 31.107407 -204.29713 -40.536335 31.009113 -204.21469 -40.41996 31.003912 -204.32368 -40.617222 30.918871 -204.0562 -40.758743 30.782232 -203.90489 -40.777981 30.794331 -204.06172 -40.138165 30.846607 -204.24635 -40.369003 30.936619 -204.18245 -40.435936 30.704184 -204.03389 -40.554905 30.749567 -203.9021 -40.382229 30.580168 -203.80042 -40.653461 30.743889 -203.7953 -40.774475 30.616102 -203.78929 -30.213783 28.769354 -206.93904 -30.268213 28."
+		+ "718769 -206.84967 -30.175049 28.713121 -206.7419 -30.161135 28.766302 -206.84254 -30.407646 28.761541 -206.94229 -30.537502 28.751135 -206.84877"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pCube1|croc3:polySurface2|croc3:polySurfaceShape2" 
 		"pt[996:1161]" (" -30.389366 28.704319 -206.74612 -30.526438 28.734896 -206.63733 -30.390827 28.730732 -206.53926 -30.243134 28.700897 -206.6373 -30.196934 28.738424 -206.53601 -30.15004 28.749945 -206.6311 -41.707935 28.745291 -206.52031 -41.587906 28.71031 -206.61555 -41.589848 28.719723 -206.72676 -41.515167 28.743874 -206.50844 -41.376644 28.718378 -206.71349 -41.249012 28.774612 -206.90959 -41.431396 28.728182 -206.82797 -41.440914 28.776176 -206.92249 -41.342545 28.899584 -207.01138 -41.430016 29.040979 -207.06589 -41.194515 29.036386 -207.04404 -41.519318 28.998747 -206.30977 -41.673016 28.859858 -206.39581 -41.761421 29.001928 -206.32437 -30.918634 29.017376 -208.24367 -30.937874 28.964811 -208.20627 -30.78438 28.943367 -208.15343 -31.097342 29.011761 -208.21867 -30.975054 28.937508 -208.12796 -30.69211 28.895847 -207.90329 -30.712589 28.900837 -208.03758 -30.511278 28.901415 -207.92656 -30.474937 28.982302 -207.79688 -30.354527 29.104847 -207.72917 -30.586025 29.097147 -207.70485 -31.212784 29.28039 -208.263 -31.0455"
@@ -45184,7 +47469,7 @@ createNode reference -n "croc3RN";
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pCube1|croc3:polySurface2|croc3:polySurfaceShape2" 
 		"pt[1494:1659]" (" -30.49399 29.590296 -205.90952 -30.403046 29.486006 -206.05606 -30.419914 29.377764 -205.86369 -31.854515 31.129187 -204.74429 -33.768341 31.233641 -204.77396 -35.930389 31.229118 -204.78285 -38.086433 31.137173 -204.77271 -39.911377 30.916796 -204.74365 -30.296629 29.290094 -204.64658 -30.296909 30.085968 -204.67834 -30.485727 30.715895 -204.70631 -30.407578 28.914829 -204.63028 -30.317451 28.972998 -204.63329 -30.858612 28.914173 -204.62698 -30.550329 28.908724 -204.62917 -30.960512 29.236362 -204.62042 -30.975212 28.965818 -204.62526 -30.869173 29.943066 -204.60812 -30.938221 30.464989 -204.60973 -39.81995 30.693628 -204.7014 -38.02544 30.906574 -204.70995 -35.926594 30.985058 -204.70703 -33.821072 30.970863 -204.69606 -31.959787 30.841318 -204.66985 -40.875175 29.223473 -204.67265 -40.90163 29.53985 -204.66449 -40.577068 30.320553 -204.67093 -40.980797 28.906443 -204.67107 -40.859241 28.910603 -204.67987 -41.272072 28.906706 -204.64944 -41.417549 28.906914 -204.63858 -41.502552 28.913818 -204.6326 -40.89"
-		+ "5428 30.523411 -204.71786 -41.315575 30.104902 -204.65828 -41.485344 29.653543 -204.65163 -41.525269 29.278214 -204.65228 -39.285847 29.818321 -201.28427 -39.200951 29.761705 -200.99084 -39.443188 29.800312 -201.30606 -39.008564 29.79977 -201.33733 -38.963165 29.761362 -201.0085 -38.671852 29.717825 -200.78519 -38.917171 29.726562 -200.69189 -39.098431 29.718508 -200.75247 -38.893303 29.642921 -201.37482 -39.020618 29.632084 -201.60681 -39.121315 29.568821 -201.81839 -38.759735 29.676483 -201.12961 -38.909523 29.675732 -201.39507 -38.668922 29.701012 -200.9332 -38.831062 29.712704 -201.22804 -38.800888 29.741526 -201.1039 -38.952282 29.763908 -201.40828 -38.977901 29.718426 -201.50716 -39.040516 29.668653 -201.64229 -39.193504 29.599958 -201.95963 -39.431679 29.471045 -202.47151 -39.735985 29.32394 -203.08806 -39.740849 29.416729 -203.10628 -39.952251 29.272099 -203.4734 -40.100407 29.181992 -203.68614 -40.099438 29.30846 -203.68646 -40.484142 29.051439 -204.16562 -40.553135 29.07888 -204.24452 -40.648296 28."
+		+ "5428 30.523411 -204.71786 -41.315575 30.104902 -204.65828 -41.485344 29.653543 -204.65163 -41.525269 29.278214 -204.65228 -39.285847 29.818321 -201.28427 -39.200951 29.761705 -200.99084 -39.443188 29.800312 -201.30606 -39.008564 29.79977 -201.33733 -38.963165 29.761362 -201.0085 -38.671852 29.717825 -200.78519 -38.917171 29.726563 -200.69189 -39.098431 29.718508 -200.75247 -38.893303 29.642921 -201.37482 -39.020618 29.632084 -201.60681 -39.121315 29.568821 -201.81839 -38.759735 29.676483 -201.12961 -38.909523 29.675732 -201.39507 -38.668922 29.701012 -200.9332 -38.831062 29.712704 -201.22804 -38.800888 29.741526 -201.1039 -38.952282 29.763908 -201.40828 -38.977901 29.718426 -201.50716 -39.040516 29.668653 -201.64229 -39.193504 29.599958 -201.95963 -39.431679 29.471045 -202.47151 -39.735985 29.32394 -203.08806 -39.740849 29.416729 -203.10628 -39.952251 29.272099 -203.4734 -40.100407 29.181992 -203.68614 -40.099438 29.30846 -203.68646 -40.484142 29.051439 -204.16562 -40.553135 29.07888 -204.24452 -40.648296 28."
 		+ "995365 -204.38248 -40.271469 29.121275 -203.90974 -40.380074 29.13036 -204.04066 -40.189915 29.189348 -203.81166 -40.275589 29.262032 -203.90898 -40.496429 29.208084 -204.16295 -40.667286 29.156923 -204.384 -41.034668 28.851767 -204.98215 -40.846043 28.971495 -204.67969 -41.042881 29.000784 -204.9752 -41.246845 28.773653 -205.44499 -41.280586 28.787123 -205.4919 -41.358627 28.764278 -205.52591 -41.191128 28.787592 -205.33559 -41.215252 28.806135 -205.39407 -41.143421 28.806774 -205.20502 -41.166161 28.830748 -205.27202 -41.117172 28.860611 -205.13228 -41.149498 28.932943 -205.20177 -41.194012 28.887577 -205.33466 -41.247261 28.847553 -205.44714 -41.358208 28.817314 -205.53122 -41.663742 28.760208 -205.56125 -41.751335 28.778416 -205.55066 -41.79314 28.765841 -205.51508 -41.509766 28.77545 -205.5558 -41.666023 28.807634 -205.56985 -41.796967 28.833378 -205.52495 -41.829464 28.81221 -205.17647 -41.801411 28.883381 -205.09407 -41.702286 28.866489 -204.92349 -41.85606 28.791887 -205.31306 -41.850765 28.848518 -20"
 		+ "5.25006 -41.845997 28.776657 -205.42798 -41.859661 28.820293 -205.37738 -41.828682 28.795961 -205.47955 -41.85022 28.879068 -205.4389 -41.860237 28.930225 -205.32373 -41.833241 28.976402 -205.18352 -41.695793 29.051144 -204.91359 -41.356827 29.184078 -204.38576 -41.524178 29.000158 -204.6358 -41.333363 28.999454 -204.34511 -40.947281 29.124947 -203.8504 -40.869339 29.199394 -203.7473 -40.769165 29.188427 -203.61501 -41.153175 29.057665 -204.0992 -41.056896 29.141855 -203.97987 -41.234169 29.097012 -204.2003 -41.15369 29.241064 -204.10501 -40.955158 29.277292 -203.85724 -40.77578 29.319269 -203.61731 -40.632061 29.279705 -203.40213 -40.417801 29.32415 -203.03499 -40.432999 29.417461 -203.05286 -40.123642 29.471436 -202.42087 -39.806107 29.569477 -201.76976 -39.889488 29.600557 -201.91083 -39.258659 29.701912 -200.88875 -39.341499 29.742287 -201.06407 -39.416904 29.677406 -201.08127 -39.469398 29.713554 -201.18176 -39.575233 29.643772 -201.32594 -39.591614 29.676567 -201.34647 -39.713997 29.632835 -201.55829 -3"
 		+ "9.733986 29.669386 -201.59393 -39.646618 29.719193 -201.45999 -39.552795 29.764633 -201.36546 -30.600271 29.209906 -205.70624 -30.465475 29.274639 -205.73868 -30.817339 29.312723 -205.65858 -30.931427 29.54254 -205.55151 -30.992687 29.867077 -205.36574 -31.127703 30.176952 -205.2151 -31.350958 30.496914 -204.9579 -31.21553 30.812609 -204.32576 -30.939236 30.808609 -204.12091 -30.825142 30.743124 -203.98119 -30.825939 30.655815 -203.7879 -30.893101 30.471914 -203.36066 -30.874929 30.268078 -202.81274 -30.767002 29.906258 -201.67227 -30.735338 29.761417 -201.01411 -30.653109 29.715952 -200.67142 -30.389698 29.706924 -200.57784 -30.262035 29.716026 -200.66966 -30.172421 29.761507 -201.01311 -30.170513 29.906317 -201.67332 -30.27651 30.26857 -202.81497 -30.307013 30.484568 -203.37004 -30.303181 30.73057 -203.83853 -30.354984 30.87038 -204.0676 -30.520002 30.988516 -204.24323 -30.864307 31.050781 -204.46187 -31.191168 30.831163 -204.98343 -30.456383 29.451616 -205.77179 -30.594439 29.692652 -205.78474 -30.875048 2"
@@ -45312,7 +47597,14 @@ createNode reference -n "croc3RN";
 		+ "30.09494 -204.45767 -35.505398 30.04171 -204.25125 -35.285049 30.04171 -204.25125 -35.505398 30.216711 -204.59785 -35.285049 30.216711 -204.59785"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pasted__pCube2|croc3:pasted__pCube2Shape" 
-		"pt[166:193]" " -35.285049 30.547762 -204.18779 -35.285049 30.756435 -203.87115 -35.136414 31.24234 -203.20287 -34.486046 31.948708 -202.19196 -34.009224 32.184273 -201.58939 -34.127396 32.189346 -201.50941 -34.719803 31.937841 -202.19435 -35.331211 31.285686 -203.13847 -35.278786 31.219522 -203.23552 -35.356758 31.24234 -203.20287 -35.505398 30.756435 -203.87115 -35.493366 30.991594 -204.02365 -35.493366 30.756435 -203.87115 -35.493366 30.903818 -204.4586 -35.493366 30.216711 -204.59785 -35.493366 30.443184 -204.68275 -35.493366 30.507092 -203.70946 -35.493366 30.138115 -203.94504 -35.493366 30.09494 -204.45767 -35.545418 30.919939 -204.05121 -35.545418 30.722366 -203.9231 -35.545418 30.547045 -204.18912 -35.545418 30.846193 -204.41666 -35.545418 30.268902 -204.53365 -35.545418 30.459179 -204.60497 -35.545418 30.512873 -203.78723 -35.545418 30.202868 -203.98517 -35.545418 30.166592 -204.41586";
+		"pt[166:193]" " -35.285049 30.547762 -204.18779 -35.285049 30.756435 -203.87115 -35.136414 31.24234 -203.20287 -34.486046 31.948708 -202.19196 -34.009224 32.184273 -201.58939 -34.127396 32.189346 -201.50941 -34.719803 31.937841 -202.19435 -35.331211 31.285686 -203.13847 -35.278786 31.219522 -203.23552 -35.356758 31.24234 -203.20287 -35.505398 30.756435 -203.87115 -35.493366 30.991594 -204.02365 -35.493366 30.756435 -203.87115 -35.493366 30.903818 -204.4586 -35.493366 30.216711 -204.59785 -35.493366 30.443184 -204.68275 -35.493366 30.507092 -203.70946 -35.493366 30.138115 -203.94504 -35.493366 30.09494 -204.45767 -35.545418 30.919939 -204.05121 -35.545418 30.722366 -203.9231 -35.545418 30.547045 -204.18912 -35.545418 30.846193 -204.41666 -35.545418 30.268902 -204.53365 -35.545418 30.459179 -204.60497 -35.545418 30.512873 -203.78723 -35.545418 30.202868 -203.98517 -35.545418 30.166592 -204.41586"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pCube1|croc3:polySurface1|croc3:polySurfaceShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pCube1|croc3:polySurface2|croc3:polySurfaceShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc3:croc|croc3:pasted__pCube2|croc3:pasted__pCube2Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "croc3RN1";
@@ -45320,7 +47612,7 @@ createNode reference -n "croc3RN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"croc3RN1"
 		"croc3RN1" 0
-		"croc3RN1" 62
+		"croc3RN1" 65
 		0 "|croc4:croc" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc" 
@@ -45373,9 +47665,9 @@ createNode reference -n "croc3RN1";
 		"pt[332:497]" (" -31.907509 28.698284 -204.70132 -52.301853 28.679697 -204.42393 -31.939114 29.017138 -205.25166 -53.286129 28.994709 -204.96333 -31.947758 29.028936 -205.58008 -53.917645 29.005575 -205.28088 -31.93223 28.720852 -205.28979 -53.310692 28.701742 -205.00041 -32.104065 28.925779 -205.9245 -32.145107 28.954893 -206.23868 -54.846874 28.930756 -205.92952 -32.091213 28.617376 -205.9639 -32.228687 28.892168 -206.53156 -55.000793 28.868013 -206.22198 -31.585661 28.997681 -207.51714 -55.288235 28.972479 -207.19437 -32.2075 28.549799 -206.57597 -55.026104 28.526857 -206.26608 -31.636288 28.992901 -207.87039 -54.890141 28.967989 -207.55208 -32.093849 29.267324 -208.83879 -53.143295 29.244944 -208.55214 -31.610849 28.72674 -207.90572 -54.915119 28.701866 -207.58751 -32.76812 29.324661 -209.11203 -51.704342 29.304253 -208.85175 -34.846901 29.719507 -209.70985 -47.144123 29.706432 -209.54239 -32.744526 29.066708 -209.14774 -51.723949 29.046385 -208.88802 -35.766689 29.760113 -209.80827 -45.046661 29.750095 -209.68057 -37.85"
 		+ "9329 29.942875 -209.89403 -40.530685 29.940035 -209.85765 -35.75219 29.532354 -209.84633 -45.056095 29.522385 -209.71895 -35.571987 28.304668 -204.09398 -50.3587 28.289904 -203.89046 -44.850876 28.118433 -201.19157 -35.477699 28.128414 -201.31934 -47.336105 28.008011 -202.19438 -33.608738 28.023079 -202.38206 -34.818203 28.067461 -203.34705 -47.784004 28.053051 -203.16882 -36.811256 28.520224 -204.65591 -51.724983 28.507236 -204.45116 -36.158356 28.54866 -205.2502 -52.837326 28.534279 -205.02243 -34.241459 28.469374 -205.92236 -35.244228 28.409847 -206.55228 -52.25148 28.393024 -206.32098 -34.478146 28.586994 -207.88454 -52.046886 28.568405 -207.64609 -35.074055 28.927696 -209.13692 -49.386204 28.912613 -208.94319 -36.887707 29.394361 -209.85564 -39.196632 29.615782 -209.95956 -43.908615 29.386971 -209.76068 -52.156322 28.576128 -206.67668 -34.928547 28.59317 -206.89494 -31.874481 28.913025 -207.16557 -32.087646 28.960382 -206.81654 -31.849363 28.617514 -207.20438 -34.732632 28.477682 -207.18237 -52.396431 28"
 		+ ".459206 -206.94234 -55.279797 28.592804 -206.88487 -55.254482 28.888062 -206.8463 -55.170418 28.935839 -206.5022 -50.975941 28.767836 -207.88423 -34.743904 28.783892 -208.08987 -31.862217 29.126055 -208.53641 -31.698414 29.118832 -208.19991 -31.837345 28.865362 -208.57164 -34.551968 28.725927 -208.55386 -51.195248 28.708345 -208.32822 -53.913574 28.841768 -208.26996 -53.890499 29.102404 -208.23439 -54.43539 29.094656 -207.89027 -46.788548 29.151535 -208.85059 -36.090698 29.162117 -208.98613 -34.17889 29.561609 -209.55418 -33.472408 29.509636 -209.34363 -34.15863 29.303753 -209.59073 -35.939754 29.165213 -209.58923 -46.912235 29.153667 -209.44089 -48.70433 29.28816 -209.39151 -48.689392 29.545933 -209.3544 -50.138393 29.491915 -209.11668 -37.169224 29.895351 -209.89847 -36.57687 29.877769 -209.84023 -37.160919 29.712851 -209.93568 -37.710434 29.575304 -209.9543 -41.133076 29.571703 -209.90802 -41.691574 29.707993 -209.87364 -41.686153 29.890472 -209.83629 -43.055668 29.870882 -209.752 -37.495583 28.368231 -204"
-		+ ".40486 -49.559704 28.355404 -204.24057 -37.709492 28.439478 -204.9247 -39.861752 28.303398 -204.63376 -50.33633 28.426052 -204.75276 -46.918289 28.295897 -204.53767 -36.495468 28.4618 -205.54509 -39.67934 28.362259 -205.20203 -52.28083 28.445017 -205.33014 -48.369308 28.353022 -205.08369 -47.059593 28.18679 -203.94986 -38.047398 28.196373 -204.07259 -50.761894 28.377342 -205.69176 -37.624973 28.39131 -205.87064 -39.124664 29.934156 -209.90701 -39.124069 29.766872 -209.94237 -42.96405 28.224009 -204.31581 -40.247177 28.218615 -200.92914 -40.263199 29.162027 -200.56659 -40.319881 28.784983 -201.25049 -40.13921 28.819773 -202.02921 -54.16010700000000355 28.450806 -205.65126 -54.418362 28.59647 -205.66197 -54.393509 28.902304 -205.62294 -33.85387 28.840275 -202.63095 -34.242645 28.831928 -203.81104 -34.611164 28.750578 -204.70744 -34.753151 28.671494 -205.23317 -35.026165 28.595678 -205.81781 -35.203999 28.571209 -206.34468 -34.676029 28.665932 -207.50839 -35.249928 28.95709 -208.59523 -36.899982 29.85364 -209.75"
-		+ "961 -37.714294 29.944986 -209.8374 -39.116726 29.967747 -209.847 -41.123207 29.94136 -209.79099 -43.896961 29.846201 -209.66432 -49.206509 28.943285 -208.41841 -51.810856 28.648983 -207.29131 -51.985947 28.554609 -206.13206 -51.453453 28.579428 -205.60968 -50.488674 28.65593 -205.03381 -49.626202 28.735725 -204.51721 -48.64019 28.817686 -203.62863 -47.236641 28.827038 -202.4614 -40.972355 28.868479 -203.09419 -40.13921 28.819773 -202.02921 -41.855762 28.801168 -204.26985 -42.337845 28.722359 -204.85678 -42.933155 28.640205 -205.42012 -43.480534 28.58106 -205.98875 -43.607483 28.589521 -206.48901 -43.415771 28.62571 -207.09459 -43.04998 28.733768 -207.69371 -42.607819 28.865103 -208.25885 -41.809391 29.076515 -208.72304 -41.014633 29.256094 -209.06325 -39.813679 29.921762 -209.75777 -39.116726 29.967747 -209.847 -48.171566 28.694595 -201.5396 -43.631481 28.703588 -200.76369 -46.180996 28.721878 -201.06615 -48.171165 29.140215 -201.47604 -48.140766 28.800823 -201.47408 -43.6287 29.13736 -200.67216 -46.179604 29"
-		+ ".105335 -200.99847 -43.570419 28.807386 -200.68774 -36.846966 29.144608 -200.76466 -36.849747 28.710836 -200.85619 -36.738365 28.814724 -200.78107"
+		+ ".40486 -49.559704 28.355404 -204.24057 -37.709492 28.439478 -204.9247 -39.861752 28.303398 -204.63376 -50.33633 28.426052 -204.75276 -46.918289 28.295897 -204.53767 -36.495468 28.4618 -205.54509 -39.67934 28.362259 -205.20203 -52.28083 28.445017 -205.33014 -48.369308 28.353022 -205.08369 -47.059593 28.18679 -203.94986 -38.047398 28.196373 -204.07259 -50.761894 28.377342 -205.69176 -37.624973 28.39131 -205.87064 -39.124664 29.934156 -209.90701 -39.124069 29.766872 -209.94237 -42.96405 28.224009 -204.31581 -40.247177 28.218615 -200.92914 -40.263199 29.162027 -200.56659 -40.319881 28.784983 -201.25049 -40.13921 28.819773 -202.02921 -54.160107 28.450806 -205.65126 -54.418362 28.59647 -205.66197 -54.393509 28.902304 -205.62294 -33.85387 28.840275 -202.63095 -34.242645 28.831928 -203.81104 -34.611164 28.750578 -204.70744 -34.753151 28.671494 -205.23317 -35.026165 28.595678 -205.81781 -35.203999 28.571209 -206.34468 -34.676029 28.665932 -207.50839 -35.249928 28.95709 -208.59523 -36.899982 29.85364 -209.75961 -37.714"
+		+ "294 29.944986 -209.8374 -39.116726 29.967747 -209.847 -41.123207 29.94136 -209.79099 -43.896961 29.846201 -209.66432 -49.206509 28.943285 -208.41841 -51.810856 28.648983 -207.29131 -51.985947 28.554609 -206.13206 -51.453453 28.579428 -205.60968 -50.488674 28.65593 -205.03381 -49.626202 28.735725 -204.51721 -48.64019 28.817686 -203.62863 -47.236641 28.827038 -202.4614 -40.972355 28.868479 -203.09419 -40.13921 28.819773 -202.02921 -41.855762 28.801168 -204.26985 -42.337845 28.722359 -204.85678 -42.933155 28.640205 -205.42012 -43.480534 28.58106 -205.98875 -43.607483 28.589521 -206.48901 -43.415771 28.62571 -207.09459 -43.04998 28.733768 -207.69371 -42.607819 28.865103 -208.25885 -41.809391 29.076515 -208.72304 -41.014633 29.256094 -209.06325 -39.813679 29.921762 -209.75777 -39.116726 29.967747 -209.847 -48.171566 28.694595 -201.5396 -43.631481 28.703588 -200.76369 -46.180996 28.721878 -201.06615 -48.171165 29.140215 -201.47604 -48.140766 28.800823 -201.47408 -43.6287 29.13736 -200.67216 -46.179604 29.105335 -20"
+		+ "0.99847 -43.570419 28.807386 -200.68774 -36.846966 29.144608 -200.76466 -36.849747 28.710836 -200.85619 -36.738365 28.814724 -200.78107"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface1|croc4:polySurfaceShape1" 
 		"pt[498:663]" (" -40.246033 28.737803 -200.69017 -40.243252 29.116053 -200.60596 -32.200096 28.711277 -201.75426 -34.096703 28.734575 -201.22899 -32.199699 29.156898 -201.6907 -34.095314 29.118032 -201.1613 -32.055408 29.040129 -201.65555 -31.586655 28.753374 -202.9585 -31.611626 28.765486 -202.30869 -31.586655 29.215757 -202.89767 -31.611626 29.164379 -202.25621 -31.456985 29.095419 -202.8712 -37.908058 29.750895 -209.922 -37.908058 29.916895 -209.90016 -37.79211 29.881163 -209.95695 -40.513409 29.913946 -209.86313 -39.110287 29.915909 -209.88831 -40.513409 29.747948 -209.88495 -40.406322 29.878023 -209.91818 -39.110287 29.773207 -209.90709 -50.243248 28.734272 -202.71094 -49.29808 28.747631 -202.07642 -50.243248 29.196653 -202.6501 -50.241245 29.076939 -202.6286 -49.29808 29.146523 -202.02393 -32.009045 28.692261 -204.31223 -31.868898 28.751476 -203.66389 -32.009045 29.127075 -204.25502 -31.868898 29.152676 -203.61111 -31.894037 29.016109 -204.24988 -51.643433 29.10709 -203.99435 -51.643497 28.672222 -204.05223 -51.67897 2"
@@ -45451,7 +47743,7 @@ createNode reference -n "croc3RN1";
 		+ "2 29.348534 -207.76389 -43.134933 30.282492 -207.06096 -50.971687 30.102005 -207.38593 -42.818562 30.214609 -207.88776 -54.275192 29.786888 -206.9845"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface2|croc4:polySurfaceShape2" 
-		"pt[166:331]" (" -54.796764 29.324623 -207.45216 -53.851589 29.777287 -207.80475 -38.237701 30.185938 -209.65416 -40.748333 30.301792 -209.58258 -43.549343 30.195446 -209.57932 -40.730278 30.142828 -209.66429 -35.722191 30.158037 -208.49855 -32.63237 29.888212 -208.59921 -32.276539 29.489845 -208.66412 -49.392071 30.121466 -208.34499 -42.67635 30.25433 -208.37494 -52.945011 29.46059 -208.37848 -52.490101 29.8673 -208.32812 -35.98962 30.291817 -208.90715 -33.9146 30.072483 -209.17723 -33.095039 29.666384 -209.06729 -47.992989 30.270687 -208.73564 -41.675854 30.443977 -209.01657 -51.035007 29.635967 -208.81825 -49.524845 30.056629 -208.96172 -37.065506 30.387409 -209.30597 -36.323971 30.176796 -209.54836 -33.240253 28.946844 -205.21648 -33.501511 28.80076 -206.49648 -33.589832 29.700901 -207.65802 -43.34494 30.143097 -207.41389 -53.181355 29.68235 -207.3519 -40.706955 30.131697 -209.48331 -43.538391 30.693066 -206.16861 -54.300587 29.805014 -206.22539 -32.534843 29.769848 -207.68884 -43.336803 30.253429 -207.47134 -54.316826 2"
+		"pt[166:331]" (" -54.796764 29.324623 -207.45216 -53.851589 29.777287 -207.80475 -38.237701 30.185938 -209.65416 -40.748333 30.301792 -209.58258 -43.549343 30.195446 -209.57932 -40.730278 30.142828 -209.66429 -35.722191 30.158037 -208.49855 -32.63237 29.888212 -208.59921 -32.276539 29.489845 -208.66412 -49.392071 30.121466 -208.34499 -42.67635 30.25433 -208.37494 -52.945011 29.46059 -208.37848 -52.490101 29.8673 -208.32813 -35.98962 30.291817 -208.90715 -33.9146 30.072483 -209.17723 -33.095039 29.666384 -209.06729 -47.992989 30.270687 -208.73564 -41.675854 30.443977 -209.01657 -51.035007 29.635967 -208.81825 -49.524845 30.056629 -208.96172 -37.065506 30.387409 -209.30597 -36.323971 30.176796 -209.54836 -33.240253 28.946844 -205.21648 -33.501511 28.80076 -206.49648 -33.589832 29.700901 -207.65802 -43.34494 30.143097 -207.41389 -53.181355 29.68235 -207.3519 -40.706955 30.131697 -209.48331 -43.538391 30.693066 -206.16861 -54.300587 29.805014 -206.22539 -32.534843 29.769848 -207.68884 -43.336803 30.253429 -207.47134 -54.316826 2"
 		+ "9.747416 -207.39391 -40.710709 30.209604 -209.67749 -32.394318 28.897381 -205.23643 -32.593437 30.734104 -205.05382 -32.687031 28.767763 -206.50974 -54.493137 28.744133 -206.22295 -32.106678 28.856674 -207.87241 -54.39426 28.839417 -207.54898 -49.116608 29.102169 -202.07611 -40.731689 30.124388 -209.62198 -53.025467 29.78805 -204.7475 -51.938141 29.557518 -203.99084 -50.880543 29.929932 -203.98416 -49.48978 29.414204 -202.81355 -50.055103 29.439987 -202.76582 -51.728844 29.928753 -203.94295 -52.261902 30.332544 -204.47285 -52.511631 30.215532 -204.47508 -51.709316 30.198463 -204.50888 -52.572765 28.897722 -204.85397 -53.006859 28.858246 -205.09392 -52.072083 30.719032 -204.93715 -52.507496 30.610857 -204.95976 -51.891838 30.488073 -204.93225 -52.046703 30.316872 -204.70189 -52.531513 30.487782 -204.67761 -52.784687 30.369585 -204.68846 -32.182835 28.931162 -208.05714 -32.628349 28.949427 -208.02342 -54.639645 28.838812 -207.34149 -54.151791 28.87344 -207.35213 -54.696381 29.048046 -207.11618 -54.026978 29.075"
 		+ "411 -207.18826 -33.684227 29.300146 -209.21788 -33.406998 29.219807 -209.14061 -34.042419 29.312904 -209.16507 -33.890472 29.554934 -209.23792 -34.295475 29.532726 -209.14407 -52.149673 29.098522 -208.66656 -51.622902 29.102411 -208.65765 -50.095295 29.225479 -208.91504 -50.90308 29.194815 -208.87834 -50.331543 29.244677 -208.97215 -52.679638 29.097965 -208.55907 -51.827328 29.11202 -208.57498 -37.891754 29.658049 -209.76382 -37.815414 29.624107 -209.69554 -38.53812 29.734003 -209.77354 -38.241261 29.675949 -209.67598 -31.866709 29.127895 -202.31616 -31.914324 29.146173 -202.00385 -31.883514 29.233936 -202.3204 -31.613806 29.231861 -202.34673 -32.3535 29.156641 -202.06432 -32.462021 29.230997 -202.33611 -32.562847 29.452114 -202.95006 -31.666479 29.45318 -202.96289 -48.545494 29.085087 -201.70868 -48.783985 29.093107 -201.86021 -48.18074 29.089304 -201.76485 -49.507053 29.108561 -202.35425 -48.512489 29.09621 -201.67087 -48.074142 29.102013 -201.77563 -32.580051 29.178406 -207.26787 -33.232349 29.260704 -207."
 		+ "32603 -53.952652 29.238703 -207.01881 -54.669693 29.153355 -206.95482 -42.432014 30.061298 -209.63762 -41.609745 30.118872 -209.61519 -42.794052 30.045744 -209.49928 -38.791462 30.012741 -209.56 -39.876171 30.098442 -209.63429 -39.110905 30.039686 -209.67731 -32.415825 29.384827 -208.58128 -53.885067 29.296078 -207.94618 -53.343887 29.336353 -207.82172 -53.068779 29.350035 -208.28294 -35.139896 29.799383 -209.46931 -34.723045 29.795284 -209.38359 -35.895409 29.851995 -209.41609 -34.508175 29.695757 -209.14754 -34.095779 29.684772 -209.26291 -49.382401 29.655916 -209.02864 -49.25856 29.664984 -208.89311 -46.393356 29.844633 -209.24536 -47.972019 29.780336 -209.17813 -47.20874 29.78503 -209.2919 -45.90453 29.553839 -209.57266 -45.419029 29.545931 -209.52994 -43.746838 29.650848 -209.67773 -31.956573 29.196815 -208.08205 -32.132183 29.105295 -207.51677 -31.921329 29.165693 -207.80078 -32.210281 29.1891 -208.16537 -32.836372 29.179876 -208.07309 -33.013664 29.090113 -207.50682 -33.102142 29.143072 -207.7897 -32.4"
@@ -45502,17 +47794,17 @@ createNode reference -n "croc3RN1";
 		"pt[1162:1327]" (" -31.948114 29.292986 -208.10362 -32.216213 29.269361 -208.1967 -32.039097 29.195189 -208.14827 -32.878902 29.272814 -208.0919 -32.521343 29.185843 -208.14313 -32.746407 29.042381 -208.05177 -32.201588 29.057089 -208.12115 -32.929413 29.005005 -207.82727 -33.118111 29.11573 -207.63232 -32.795547 28.963419 -207.60426 -33.019474 29.165464 -207.94662 -33.177975 29.237883 -207.76514 -33.131439 29.177217 -207.43842 -32.264027 28.953804 -207.54382 -32.25161 29.080612 -207.4511 -32.734898 29.072525 -207.4454 -32.524426 29.136946 -207.36206 -31.591795 29.428135 -203.57515 -31.745419 29.370495 -204.09267 -31.618376 29.594507 -203.52126 -31.742903 29.686077 -204.03624 -31.818394 29.621494 -204.35167 -31.848637 29.433287 -204.58653 -31.845768 29.920719 -204.31239 -31.848913 29.870106 -204.53247 -31.876116 29.501583 -205.00005 -31.885633 29.868185 -205.08563 -31.89213 29.543663 -205.19138 -31.866531 29.752583 -204.77716 -31.892359 30.146959 -204.73271 -31.877705 30.070518 -204.9449 -31.921713 30.34355 -205.04214 -31.8946"
 		+ "46 30.181501 -205.14047 -31.908188 29.580091 -205.32951 -31.917448 29.993301 -205.36488 -31.956484 29.582197 -205.54501 -31.901646 29.935198 -205.23621 -31.986444 30.455873 -205.19603 -31.911322 30.269009 -205.28384 -32.13129 30.556231 -205.3282 -31.952053 30.309483 -205.47282 -32.990711 30.359896 -206.13298 -32.804985 30.034382 -206.2623 -32.378075 29.78624 -206.15918 -32.33036 30.155159 -205.99287 -33.393066 30.243834 -206.30203 -33.101524 29.993139 -206.42642 -32.695599 29.748558 -206.36597 -32.581966 29.508358 -206.47169 -32.371128 29.483517 -206.29388 -32.142143 29.503794 -206.02283 -33.431099 30.011652 -206.6418 -33.081051 29.851641 -206.62914 -33.283421 29.99494 -206.54359 -33.669804 30.12348 -206.55087 -32.905861 29.749212 -206.73013 -32.651272 29.556139 -206.69167 -32.778469 29.642164 -206.60265 -32.492424 29.372423 -206.5764 -32.923679 29.784679 -206.51289 -33.594067 30.177332 -206.43726 -32.467152 29.169437 -206.75897 -32.40057 29.148571 -206.71466 -32.422298 29.319101 -206.73492 -32.423161 29.2999"
 		+ "86 -206.79698 -32.425766 28.994381 -206.71385 -32.353397 29.12425 -206.65886 -32.448963 29.33736 -206.66501 -32.536266 29.497929 -206.77762 -32.568672 29.187481 -206.79492 -32.725666 29.118912 -206.75102 -32.544498 29.052607 -206.74081 -32.691711 28.948442 -206.741 -32.940125 29.19841 -206.75502 -33.147552 29.178143 -206.68777 -32.962578 29.053326 -206.71632 -33.244183 28.983479 -206.68208 -33.421787 29.0613 -206.57774 -33.410992 29.270523 -206.49738 -33.457691 29.163048 -206.44466 -33.31662 29.13612 -206.62801 -33.264614 29.327427 -206.66029 -33.353615 29.322453 -206.5681 -33.387291 29.544847 -206.49422 -33.391361 29.529722 -206.40115 -33.440845 29.270113 -206.29247 -33.349369 29.611401 -206.1703 -33.369057 29.363127 -206.06085 -33.406567 29.441456 -206.33905 -33.394211 29.802654 -206.30299 -33.331562 29.75292 -206.22263 -33.447636 30.031242 -206.11693 -33.219803 29.938435 -205.97314 -33.148483 29.495779 -205.27083 -33.084629 29.827353 -205.16414 -33.17701 29.483498 -205.14346 -33.161469 29.485723 -205.45844"
-		+ " -33.036152 29.855156 -205.27695 -32.976334 30.116556 -205.37094 -33.06908 30.355101 -205.21178 -32.989807 30.110775 -205.18732 -33.019253 30.301205 -205.10265 -33.060852 30.065252 -205.06505 -33.209637 29.465904 -204.96378 -33.210461 29.721651 -204.7433 -33.241673 29.425892 -204.56366 -33.138893 29.79389 -205.03067 -33.055576 30.23786 -204.97307 -33.140186 30.000418 -204.89235 -33.155464 30.10349100000000178 -204.69366 -33.229874 29.856861 -204.50684 -33.220528 29.618427 -204.33029 -33.149818 29.368532 -204.0713 -33.191784 29.917118 -204.29155 -33.146847 29.683897 -204.01485 -32.996559 29.426373 -203.55396 -32.968292 29.592834 -203.50107 -35.760929 29.672516 -209.7009 -36.822334 29.817474 -209.74754 -37.920887 29.795561 -209.78981 -35.75679 29.790257 -209.655 -36.885727 29.910416 -209.71658 -37.950779 29.919733 -209.75958 -35.79285 29.878939 -209.6198 -38.113674 30.003551 -209.72684 -38.884586 30.001892 -209.70825 -38.561161 29.98031 -209.74385 -38.674049 29.930592 -209.73775 -38.454369 29.886213 -209.772 -3"
-		+ "8.483852 29.962473 -209.58856 -38.732464 29.94873 -209.66058 -38.311424 29.877359 -209.62849 -38.626392 29.856928 -209.69357 -38.277172 29.747593 -209.66116 -38.594723 29.806011 -209.76537 -37.245716 29.764999 -209.59714 -36.156273 29.626612 -209.5775 -37.275135 29.858416 -209.56021 -36.131317 29.743937 -209.52335 -36.074566 29.820637 -209.47029 -35.315147 29.619768 -209.6308 -35.303589 29.697521 -209.62445 -35.539337 29.672876 -209.5547 -35.510571 29.751625 -209.49959 -35.295372 29.720728 -209.55946 -35.249355 29.777493 -209.49783 -35.332939 29.78488 -209.58809 -43.641769 29.843332 -209.69756 -44.955276 29.869165 -209.60709 -46.281086 29.696274 -209.53371 -43.554867 30.011814 -209.65364 -46.191048 29.858597 -209.48224 -47.015327 29.758366 -209.3318 -46.880054 29.742153 -209.42621 -46.102165 29.81291 -209.31116 -46.7183 29.720047 -209.34312 -45.932194 29.654863 -209.40906 -46.865147 29.639254 -209.44032 -44.613125 29.839333 -209.44435 -43.320309 29.801128 -209.56952 -43.168385 29.9909 -209.51405 -42.843113 29"
-		+ ".863014 -209.69733 -42.961761 29.973772 -209.69469 -42.794357 29.95208 -209.61404 -42.64785 30.017179 -209.66432 -51.142513 29.326244 -208.88908"
+		+ " -33.036152 29.855156 -205.27695 -32.976334 30.116556 -205.37094 -33.06908 30.355101 -205.21178 -32.989807 30.110775 -205.18732 -33.019253 30.301205 -205.10265 -33.060852 30.065252 -205.06505 -33.209637 29.465904 -204.96378 -33.210461 29.721651 -204.7433 -33.241673 29.425892 -204.56366 -33.138893 29.79389 -205.03067 -33.055576 30.23786 -204.97307 -33.140186 30.000418 -204.89235 -33.155464 30.103491 -204.69366 -33.229874 29.856861 -204.50684 -33.220528 29.618427 -204.33029 -33.149818 29.368532 -204.0713 -33.191784 29.917118 -204.29155 -33.146847 29.683897 -204.01485 -32.996559 29.426373 -203.55396 -32.968292 29.592834 -203.50107 -35.760929 29.672516 -209.7009 -36.822334 29.817474 -209.74754 -37.920887 29.795561 -209.78981 -35.75679 29.790257 -209.655 -36.885727 29.910416 -209.71658 -37.950779 29.919733 -209.75958 -35.79285 29.878939 -209.6198 -38.113674 30.003551 -209.72684 -38.884586 30.001892 -209.70825 -38.561161 29.98031 -209.74385 -38.674049 29.930592 -209.73775 -38.454369 29.886213 -209.772 -38.483852 29"
+		+ ".962473 -209.58856 -38.732464 29.94873 -209.66058 -38.311424 29.877359 -209.62849 -38.626392 29.856928 -209.69357 -38.277172 29.747593 -209.66116 -38.594723 29.806011 -209.76537 -37.245716 29.764999 -209.59714 -36.156273 29.626612 -209.5775 -37.275135 29.858416 -209.56021 -36.131317 29.743937 -209.52335 -36.074566 29.820637 -209.47029 -35.315147 29.619768 -209.6308 -35.303589 29.697521 -209.62445 -35.539337 29.672876 -209.5547 -35.510571 29.751625 -209.49959 -35.295372 29.720728 -209.55946 -35.249355 29.777493 -209.49783 -35.332939 29.78488 -209.58809 -43.641769 29.843332 -209.69756 -44.955276 29.869165 -209.60709 -46.281086 29.696274 -209.53371 -43.554867 30.011814 -209.65364 -46.191048 29.858597 -209.48224 -47.015327 29.758366 -209.3318 -46.880054 29.742153 -209.42621 -46.102165 29.81291 -209.31116 -46.7183 29.720047 -209.34312 -45.932194 29.654863 -209.40906 -46.865147 29.639254 -209.44032 -44.613125 29.839333 -209.44435 -43.320309 29.801128 -209.56952 -43.168385 29.9909 -209.51405 -42.843113 29.863014 -20"
+		+ "9.69733 -42.961761 29.973772 -209.69469 -42.794357 29.95208 -209.61404 -42.64785 30.017179 -209.66432 -51.142513 29.326244 -208.88908"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface2|croc4:polySurfaceShape2" 
 		"pt[1328:1493]" (" -51.875351 29.35059 -208.71094 -52.528053 29.199789 -208.61314 -50.39418 29.377188 -208.99901 -50.650906 29.453402 -208.94405 -50.211227 29.577881 -208.98077 -51.079258 29.526407 -208.83836 -52.649765 29.375364 -208.49834 -52.854969 29.304541 -208.38977 -52.833591 29.245115 -208.48656 -51.93008 29.344769 -208.41978 -52.448479 29.229904 -208.44362 -51.851395 29.171942 -208.53276 -52.739208 29.154392 -208.51172 -50.275242 29.288801 -208.77769 -49.858047 29.41732 -208.83334 -49.747684 29.348745 -208.91309 -51.043556 29.315321 -208.60744 -50.235825 29.48424 -208.72137 -49.590054 29.545092 -208.88393 -49.927975 29.388922 -209.01978 -50.082893 29.477293 -209.00932 -49.736713 29.461269 -208.95918 -49.738628 29.567606 -209.00388 -54.413948 29.270376 -207.79042 -54.802544 29.240608 -207.46709 -54.918446 29.171473 -207.14061 -54.6903 29.116632 -207.04961 -53.993263 29.161345 -207.12489 -53.596188 29.222324 -207.44069 -53.515305 29.254955 -207.76251 -54.041546 29.248022 -207.87747 -49.467159 29.202879 -203.06403 -49.99"
-		+ "2981 29.296053 -203.54338 -50.617226 29.270227 -204.10962 -50.018085 29.185686 -203.58376 -49.378735 29.260799 -202.97031 -49.97260700000000355 29.426504 -203.48732 -50.618717 29.458263 -204.07411 -49.336494 29.327515 -202.89276 -50.006657 29.558084 -203.44202 -50.653641 29.664017 -204.03688 -49.372456 29.389259 -202.83788 -50.744389 29.852762 -204.00258 -51.06115 29.182098 -204.46007 -51.072739 29.395111 -204.43185 -51.380306 29.28957 -204.6429 -51.105495 29.642452 -204.39748 -51.408325 29.547089 -204.60703 -51.17918 29.890354 -204.36137 -51.467354 29.828985 -204.56694 -51.573338 30.088842 -204.52771 -52.367428 29.153696 -205.17331 -52.253441 29.297436 -205.07895 -52.432564 29.455706 -205.12601 -52.612251 29.282251 -205.27834 -51.98687 29.161983 -204.98558 -51.76289 29.293558 -204.8463 -52.036339 29.440035 -204.9442 -51.805122 29.579601 -204.80516 -52.060692 29.767946 -204.89734 -52.288334 29.618624 -205.03122 -52.379597 29.816761 -205.07484 -51.570145 29.171167 -204.77434 -51.597763 29.422293 -204.739 -51.6"
-		+ "48029 29.714682 -204.69746 -51.735138 30.009109 -204.65483 -51.858784 29.895132 -204.76042 -51.936348 30.189552 -204.7198 -52.204292 29.981855 -204.98262 -52.062492 30.199783 -205.03043 -52.383526 29.996437 -205.1801 -52.031929 30.105385 -204.85258 -51.974525 30.331142 -204.94341 -51.626064 30.384655 -205.1515 -53.850204 28.86652 -206.38527 -53.789619 28.953867 -206.33012 -53.866249 28.984785 -206.37329 -54.006287 28.898409 -206.41794 -53.721664 28.910057 -206.28503 -53.689079 29.024549 -206.21162 -53.757339 29.080687 -206.26299 -53.625267 28.959454 -206.16054 -53.607582 29.097979 -206.0733 -53.691883 29.179432 -206.12685 -53.528801 29.008307 -206.02019 -53.394329 29.173367 -205.85324 -53.585659 29.270033 -205.97295 -53.489967 29.643167 -206.01384 -53.55328 29.66832 -206.10199 -53.786957 29.456165 -206.17487 -53.088448 29.822411 -205.77165 -53.065475 29.888872 -205.92719 -52.259941 30.168188 -205.77031 -53.118698 29.90064 -206.03593 -53.670147 29.642853 -206.24692 -53.906715 29.232803 -206.3222 -54.001575 29."
-		+ "2547 -206.42294 -54.086357 29.09561 -206.42569 -53.856274 29.449066 -206.27016 -53.915909 29.409546 -206.43279 -54.12616 29.23 -206.57999 -54.778114 28.853361 -206.43773 -54.610252 28.88373 -206.45322 -54.775402 28.960587 -206.43791 -54.302711 28.840302 -206.44722 -54.307953 28.930431 -206.44348 -54.347919 29.143373 -206.50429 -54.596779 29.058462 -206.4765 -54.608425 29.170378 -206.63416 -54.748001 29.168978 -206.55629 -52.896687 29.177666 -204.70119 -53.072327 29.316828 -204.79018 -52.895908 29.441032 -204.67548 -52.702763 29.295109 -204.56734 -53.051266 29.619925 -204.75887 -52.867416 29.744709 -204.64166 -52.697216 29.560371 -204.54109 -53.279739 29.185823 -204.91977 -53.474918 29.346655 -205.02168 -53.270855 29.49098 -204.8967 -53.668571 29.187296 -205.14575 -53.875771 29.339823 -205.26721 -53.626053 29.530098 -205.11372 -53.767403 29.716507 -205.25575 -53.429405 29.926947 -205.09598 -53.423645 29.701609 -205.00275 -53.188034 29.843069 -204.87085 -53.183395 30.094675 -204.97836 -52.991184 30.198706 -204."
-		+ "8474 -52.973129 29.954708 -204.73608 -53.309486 30.153887 -205.20517 -52.928734 30.360413 -205.06311 -52.255283 30.577942 -205.19531 -52.768661 30.470081 -204.96921 -52.856087 30.251867 -204.70337 -52.787991 30.04306 -204.60902 -52.639545 29.844057 -204.49889 -52.560459 30.106377 -204.47789 -52.403542 29.179432 -204.37868 -52.412376 29.396151 -204.3642 -51.981277 29.264801 -204.04156 -52.387352 29.647333 -204.33289 -51.959366 29.45402 -204.00778 -52.322502 29.897581 -204.3045 -51.907204 29.661072 -203.97537 -51.805283 29.851021 -203.9509 -51.389465 29.179186 -203.51765 -51.358963 29.289581 -203.47748 -50.84116 29.196787 -202.99966 -51.29026 29.420267 -203.42366 -50.731007 29.254816 -202.90674 -51.190289 29.552479 -203.38472 -50.602612 29.321913 -202.83299 -50.445202 29.384506 -202.78702 -54.761623 29.542875 -206.8351 -54.195759 29.798647 -206.79843 -53.115562 30.036615 -206.73297 -51.199574 30.233768 -206.68954 -35.461063 30.151463 -206.94658 -39.172115 30.382805 -206.84039 -43.119572 30.385374 -206.75508 -47"
-		+ ".817581 30.326883 -206.69722 -33.961533 30.120125 -206.77301 -33.610756 29.985723 -207.02522 -33.040077 29.827274 -206.92445 -32.758995 29.728319 -207.10915"
+		+ "2981 29.296053 -203.54338 -50.617226 29.270227 -204.10962 -50.018085 29.185686 -203.58376 -49.378735 29.260799 -202.97031 -49.972607 29.426504 -203.48732 -50.618717 29.458263 -204.07411 -49.336494 29.327515 -202.89276 -50.006657 29.558084 -203.44202 -50.653641 29.664017 -204.03688 -49.372456 29.389259 -202.83788 -50.744389 29.852762 -204.00258 -51.06115 29.182098 -204.46007 -51.072739 29.395111 -204.43185 -51.380306 29.28957 -204.6429 -51.105495 29.642452 -204.39748 -51.408325 29.547089 -204.60703 -51.17918 29.890354 -204.36137 -51.467354 29.828985 -204.56694 -51.573338 30.088842 -204.52771 -52.367428 29.153696 -205.17331 -52.253441 29.297436 -205.07895 -52.432564 29.455706 -205.12601 -52.612251 29.282251 -205.27834 -51.98687 29.161983 -204.98558 -51.76289 29.293558 -204.8463 -52.036339 29.440035 -204.9442 -51.805122 29.579601 -204.80516 -52.060692 29.767946 -204.89734 -52.288334 29.618624 -205.03122 -52.379597 29.816761 -205.07484 -51.570145 29.171167 -204.77434 -51.597763 29.422293 -204.739 -51.648029 29.71"
+		+ "4682 -204.69746 -51.735138 30.009109 -204.65483 -51.858784 29.895132 -204.76042 -51.936348 30.189552 -204.7198 -52.204292 29.981855 -204.98262 -52.062492 30.199783 -205.03043 -52.383526 29.996437 -205.1801 -52.031929 30.105385 -204.85258 -51.974525 30.331142 -204.94341 -51.626064 30.384655 -205.1515 -53.850204 28.86652 -206.38527 -53.789619 28.953867 -206.33012 -53.866249 28.984785 -206.37329 -54.006287 28.898409 -206.41794 -53.721664 28.910057 -206.28503 -53.689079 29.024549 -206.21162 -53.757339 29.080687 -206.26299 -53.625267 28.959454 -206.16054 -53.607582 29.097979 -206.0733 -53.691883 29.179432 -206.12685 -53.528801 29.008307 -206.02019 -53.394329 29.173367 -205.85324 -53.585659 29.270033 -205.97295 -53.489967 29.643167 -206.01384 -53.55328 29.66832 -206.10199 -53.786957 29.456165 -206.17487 -53.088448 29.822411 -205.77165 -53.065475 29.888872 -205.92719 -52.259941 30.168188 -205.77031 -53.118698 29.90064 -206.03593 -53.670147 29.642853 -206.24692 -53.906715 29.232803 -206.3222 -54.001575 29.2547 -206.4"
+		+ "2294 -54.086357 29.09561 -206.42569 -53.856274 29.449066 -206.27016 -53.915909 29.409546 -206.43279 -54.12616 29.23 -206.57999 -54.778114 28.853361 -206.43773 -54.610252 28.88373 -206.45322 -54.775402 28.960587 -206.43791 -54.302711 28.840302 -206.44722 -54.307953 28.930431 -206.44348 -54.347919 29.143373 -206.50429 -54.596779 29.058462 -206.4765 -54.608425 29.170378 -206.63416 -54.748001 29.168978 -206.55629 -52.896687 29.177666 -204.70119 -53.072327 29.316828 -204.79018 -52.895908 29.441032 -204.67548 -52.702763 29.295109 -204.56734 -53.051266 29.619925 -204.75887 -52.867416 29.744709 -204.64166 -52.697216 29.560371 -204.54109 -53.279739 29.185823 -204.91977 -53.474918 29.346655 -205.02168 -53.270855 29.49098 -204.8967 -53.668571 29.187296 -205.14575 -53.875771 29.339823 -205.26721 -53.626053 29.530098 -205.11372 -53.767403 29.716507 -205.25575 -53.429405 29.926947 -205.09598 -53.423645 29.701609 -205.00275 -53.188034 29.843069 -204.87085 -53.183395 30.094675 -204.97836 -52.991184 30.198706 -204.8474 -52.97"
+		+ "3129 29.954708 -204.73608 -53.309486 30.153887 -205.20517 -52.928734 30.360413 -205.06311 -52.255283 30.577942 -205.19531 -52.768661 30.470081 -204.96921 -52.856087 30.251867 -204.70337 -52.787991 30.04306 -204.60902 -52.639545 29.844057 -204.49889 -52.560459 30.106377 -204.47789 -52.403542 29.179432 -204.37868 -52.412376 29.396151 -204.3642 -51.981277 29.264801 -204.04156 -52.387352 29.647333 -204.33289 -51.959366 29.45402 -204.00778 -52.322502 29.897581 -204.3045 -51.907204 29.661072 -203.97537 -51.805283 29.851021 -203.9509 -51.389465 29.179186 -203.51765 -51.358963 29.289581 -203.47748 -50.84116 29.196787 -202.99966 -51.29026 29.420267 -203.42366 -50.731007 29.254816 -202.90674 -51.190289 29.552479 -203.38472 -50.602612 29.321913 -202.83299 -50.445202 29.384506 -202.78702 -54.761623 29.542875 -206.8351 -54.195759 29.798647 -206.79843 -53.115562 30.036615 -206.73297 -51.199574 30.233768 -206.68954 -35.461063 30.151463 -206.94658 -39.172115 30.382805 -206.84039 -43.119572 30.385374 -206.75508 -47.817581 30."
+		+ "326883 -206.69722 -33.961533 30.120125 -206.77301 -33.610756 29.985723 -207.02522 -33.040077 29.827274 -206.92445 -32.758995 29.728319 -207.10915"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface2|croc4:polySurfaceShape2" 
 		"pt[1494:1659]" (" -32.536739 29.585056 -206.97717 -32.360962 29.504154 -207.12976 -32.372475 29.383303 -206.96265 -35.124588 30.888891 -205.66203 -38.915154 30.985092 -205.62567 -43.195469 30.977304 -205.57654 -47.462433 30.886274 -205.5204 -51.072552 30.674587 -205.47116 -32.033371 29.172895 -205.83719 -32.036358 29.915791 -205.76964 -32.412254 30.503693 -205.71375 -32.251732 28.822233 -205.86484 -32.073563 28.876789 -205.86296 -33.144272 28.820326 -205.84973 -32.534214 28.816139 -205.8607 -33.345474 29.118793 -205.80147 -33.374943 28.867887 -205.83867 -33.163731 29.774345 -205.70602 -33.300529 30.259338 -205.64183 -50.888336 30.462921 -205.46135 -47.336887 30.665461 -205.49149 -43.18214 30.742474 -205.53548 -39.013557 30.732531 -205.58345 -35.327259 30.613272 -205.62469 -52.97488 29.091589 -205.58585 -53.026623 29.384644 -205.5388 -52.384666 30.111435 -205.4581 -53.183826 28.796618 -205.62029 -52.943897 28.801672 -205.63127 -53.758732 28.793951 -205.59219 -54.04586 28.792685 -205.57806 -54.213661 28.798286 -205.56934 -53.01"
@@ -45548,11 +47840,11 @@ createNode reference -n "croc3RN1";
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface2|croc4:polySurfaceShape2" 
 		"pt[2158:2323]" (" -50.710041 29.291159 -208.97565 -36.886673 29.625046 -209.76782 -35.947369 29.588871 -209.73952 -36.83231 29.673321 -209.77257 -37.789379 29.682707 -209.7951 -44.906048 29.61396 -209.65106 -43.840828 29.676172 -209.70615 -44.956459 29.672543 -209.64749 -46.008614 29.576576 -209.59808 -31.594822 29.139927 -202.65552 -31.472137 29.162251 -202.47859 -31.418295 29.174181 -202.81161 -31.581705 29.14056 -202.21222 -31.502113 29.169794 -202.24599 -31.395958 29.206137 -202.49965 -31.384596 29.236088 -202.7948 -31.46014 29.246605 -203.18268 -31.412951 29.280907 -202.66493 -31.44183 29.357374 -203.0374 -48.89053 29.089088 -201.7825 -49.1092 29.093122 -201.84622 -49.054905 29.101122 -201.80086 -48.787853 29.085588 -201.70418 -49.201839 29.097269 -201.95222 -49.483295 29.101841 -202.06264 -49.421631 29.107475 -201.98283 -49.581905 29.105158 -202.19742 -49.886932 29.107815 -202.34021 -49.806484 29.112436 -202.22415 -49.989155 29.108387 -202.49854 -50.197582 29.112591 -202.51302 -47.76416 30.502298 -206.35133 -49.637901 3"
-		+ "0.455027 -206.26157 -51.241238 30.329042 -206.33389 -43.491863 30.571114 -206.40248 -45.688606 30.584475 -206.29906 -43.525848 30.651672 -206.24731 -45.68634 30.659086 -206.14449 -47.751339 30.565296 -206.20152 -49.61092 30.511837 -206.11172 -51.224136 30.368925 -206.18259 -39.069275 30.546116 -206.46432 -41.296326 30.614 -206.35475 -35.167221 30.40204 -206.50577 -37.196236 30.56057 -206.40875 -35.557602 30.532986 -206.34274 -37.423225 30.670031 -206.24538 -39.243916 30.64650899999999822 -206.30231 -41.381271 30.704138 -206.19518 -39.343674 30.742117 -206.1424 -41.391228 30.790882 -206.03876 -43.536591 30.734568 -206.09023 -35.695335 30.641893 -206.18863 -37.485085 30.766287 -206.08958 -35.7038 30.738108 -206.04128 -37.329094 30.86981 -205.8853 -39.334496 30.829239 -205.98975 -41.270145 30.892141 -205.83577 -43.496086 30.816225 -205.93713 -47.720345 30.63658 -206.04741 -49.558998 30.583786 -205.95732 -51.19136 30.42474 -206.03044 -45.652302 30.738237 -205.98933 -45.539661 30.83939 -205.7847 -47.659367 30.7144"
-		+ "99 -205.89401 -49.475426 30.686489 -205.74547 -51.117512 30.499136 -205.87546 -54.717323 29.525152 -206.68997 -54.872715 29.342676 -206.56902 -54.87833 29.289894 -206.67439 -54.142345 29.794193 -206.63901 -54.475349 29.598917 -206.51367 -54.180534 29.749113 -206.34366 -54.758667 29.314718 -206.41803 -54.841789 29.129696 -206.47238 -52.236435 30.230692 -206.31897 -53.070724 30.06955 -206.5341 -52.227528 30.268454 -206.14238 -53.022423 30.119823 -206.28491 -53.744953 29.963888 -206.21803 -53.648026 29.943506 -206.44785 -52.303478 30.401566 -205.73703 -53.194523 30.195286 -205.886 -52.341713 30.310608 -205.96474 -53.773525 30.052641 -205.72914 -54.211082 29.849268 -205.86511 -53.808506 30.010866 -206.00687 -54.281357 29.794897 -206.11655 -53.088696 30.162241 -206.099 -54.811768 29.074814 -205.94943 -54.854576 29.231983 -205.99324 -54.635803 29.446455 -205.8533 -54.549549 29.272371 -205.73878 -54.952042 29.034687 -206.12309 -54.96146 29.163425 -206.17595 -54.811989 29.39002 -206.08334 -54.673542 29.580303 -206.22"
-		+ "742 -54.548199 29.62702 -205.97878 -54.290211 29.672213 -205.66788 -54.863621 28.938896 -206.40324 -54.922108 29.113678 -206.39917 -54.962975 29.047249 -206.31665 -54.925346 28.90634 -206.36414 -54.941208 29.307354 -206.29311 -54.978695 28.974876 -206.25945 -32.459187 29.633553 -207.30856 -32.659103 29.760437 -207.4877 -32.24733 29.662619 -207.70863 -32.181538 29.53731 -207.52568 -32.218346 29.405899 -207.33318 -31.991314 29.44726 -207.74666 -32.082092 29.317057 -207.56824 -34.545456 30.070532 -207.20924 -35.813488 30.129467 -207.39815 -34.468918 30.059151 -207.62213 -33.686897 29.97562 -207.44524 -33.148888 29.864964 -207.26357 -32.963264 29.873735 -207.66803 -33.458912 29.973871 -207.8425 -32.758747 29.897348 -208.07719 -32.408134 29.781328 -207.88927 -35.682228 30.086399 -207.78894 -34.326084 30.067894 -208.03059 -31.984247 29.57192 -207.92781 -31.928551 29.491922 -208.15637 -31.91975 29.369699 -207.95782 -32.082573 29.699722 -208.11925 -41.750141 30.273045 -207.09395 -43.442081 30.272167 -207.26767 -41.22"
-		+ "0165 30.24704 -207.50108 -39.271061 30.246958 -207.33513 -37.359627 30.180964 -207.16824 -37.317383 30.184414 -207.5641 -49.295868 30.187502 -206.98761 -51.107536 30.130766 -207.18719 -49.360203 30.156515 -207.3985 -47.597542 30.228756 -207.2155 -45.655827 30.313036 -207.02013 -45.474567 30.247061 -207.44403 -47.381935 30.209614 -207.61728 -45.150593 30.240562 -207.85725 -42.945919 30.206722 -207.66586 -50.83198200000000355 30.03104 -207.57579 -48.994854 30.099724 -207.81773 -39.067196 30.218126 -207.73004 -37.182987 30.13896 -207.98248 -41.279064 30.225035 -207.91197 -53.820362 29.895226 -206.9709 -54.335991 29.761255 -207.19565 -53.858524 29.853525 -207.38509 -53.247978 29.963232 -207.17989 -52.373779 30.083889 -206.95465 -52.245487 30.040787 -207.3802 -54.918495 29.41527 -207.0336 -54.898445 29.293736 -207.25638 -54.792877 29.422581 -207.43631 -54.804283 29.54385 -207.23595 -54.588085 29.678694 -207.00139 -54.597141 29.639322 -207.40677 -54.573433 29.54631 -207.61678 -54.119026 29.675579 -207.81651 -54.163"
-		+ "937 29.75683 -207.58965 -54.612164 29.345808 -207.64577 -54.281384 29.467943 -207.84775 -53.035004 29.953184 -207.57613 -51.791904 30.041964 -207.80151"
+		+ "0.455027 -206.26157 -51.241238 30.329042 -206.33389 -43.491863 30.571114 -206.40248 -45.688606 30.584475 -206.29906 -43.525848 30.651672 -206.24731 -45.68634 30.659086 -206.14449 -47.751339 30.565296 -206.20152 -49.61092 30.511837 -206.11172 -51.224136 30.368925 -206.18259 -39.069275 30.546116 -206.46432 -41.296326 30.614 -206.35475 -35.167221 30.40204 -206.50577 -37.196236 30.56057 -206.40875 -35.557602 30.532986 -206.34274 -37.423225 30.670031 -206.24538 -39.243916 30.646509 -206.30231 -41.381271 30.704138 -206.19518 -39.343674 30.742117 -206.1424 -41.391228 30.790882 -206.03876 -43.536591 30.734568 -206.09023 -35.695335 30.641893 -206.18863 -37.485085 30.766287 -206.08958 -35.7038 30.738108 -206.04128 -37.329094 30.86981 -205.8853 -39.334496 30.829239 -205.98975 -41.270145 30.892141 -205.83577 -43.496086 30.816225 -205.93713 -47.720345 30.63658 -206.04741 -49.558998 30.583786 -205.95732 -51.19136 30.42474 -206.03044 -45.652302 30.738237 -205.98933 -45.539661 30.83939 -205.7847 -47.659367 30.714499 -205.894"
+		+ "01 -49.475426 30.686489 -205.74547 -51.117512 30.499136 -205.87546 -54.717323 29.525152 -206.68997 -54.872715 29.342676 -206.56902 -54.87833 29.289894 -206.67439 -54.142345 29.794193 -206.63901 -54.475349 29.598917 -206.51367 -54.180534 29.749113 -206.34366 -54.758667 29.314718 -206.41803 -54.841789 29.129696 -206.47238 -52.236435 30.230692 -206.31897 -53.070724 30.06955 -206.5341 -52.227528 30.268454 -206.14238 -53.022423 30.119823 -206.28491 -53.744953 29.963888 -206.21803 -53.648026 29.943506 -206.44785 -52.303478 30.401566 -205.73703 -53.194523 30.195286 -205.886 -52.341713 30.310608 -205.96474 -53.773525 30.052641 -205.72914 -54.211082 29.849268 -205.86511 -53.808506 30.010866 -206.00687 -54.281357 29.794897 -206.11655 -53.088696 30.162241 -206.099 -54.811768 29.074814 -205.94943 -54.854576 29.231983 -205.99324 -54.635803 29.446455 -205.8533 -54.549549 29.272371 -205.73878 -54.952042 29.034687 -206.12309 -54.96146 29.163425 -206.17595 -54.811989 29.39002 -206.08334 -54.673542 29.580303 -206.22742 -54.548"
+		+ "199 29.62702 -205.97878 -54.290211 29.672213 -205.66788 -54.863621 28.938896 -206.40324 -54.922108 29.113678 -206.39917 -54.962975 29.047249 -206.31665 -54.925346 28.90634 -206.36414 -54.941208 29.307354 -206.29311 -54.978695 28.974876 -206.25945 -32.459187 29.633553 -207.30856 -32.659103 29.760437 -207.4877 -32.24733 29.662619 -207.70863 -32.181538 29.53731 -207.52568 -32.218346 29.405899 -207.33318 -31.991314 29.44726 -207.74666 -32.082092 29.317057 -207.56824 -34.545456 30.070532 -207.20924 -35.813488 30.129467 -207.39815 -34.468918 30.059151 -207.62213 -33.686897 29.97562 -207.44524 -33.148888 29.864964 -207.26357 -32.963264 29.873735 -207.66803 -33.458912 29.973871 -207.8425 -32.758747 29.897348 -208.07719 -32.408134 29.781328 -207.88927 -35.682228 30.086399 -207.78894 -34.326084 30.067894 -208.03059 -31.984247 29.57192 -207.92781 -31.928551 29.491922 -208.15637 -31.91975 29.369699 -207.95782 -32.082573 29.699722 -208.11925 -41.750141 30.273045 -207.09395 -43.442081 30.272167 -207.26767 -41.220165 30.247"
+		+ "04 -207.50108 -39.271061 30.246958 -207.33513 -37.359627 30.180964 -207.16824 -37.317383 30.184414 -207.5641 -49.295868 30.187502 -206.98761 -51.107536 30.130766 -207.18719 -49.360203 30.156515 -207.3985 -47.597542 30.228756 -207.2155 -45.655827 30.313036 -207.02013 -45.474567 30.247061 -207.44403 -47.381935 30.209614 -207.61728 -45.150593 30.240562 -207.85725 -42.945919 30.206722 -207.66586 -50.831982 30.03104 -207.57579 -48.994854 30.099724 -207.81773 -39.067196 30.218126 -207.73004 -37.182987 30.13896 -207.98248 -41.279064 30.225035 -207.91197 -53.820362 29.895226 -206.9709 -54.335991 29.761255 -207.19565 -53.858524 29.853525 -207.38509 -53.247978 29.963232 -207.17989 -52.373779 30.083889 -206.95465 -52.245487 30.040787 -207.3802 -54.918495 29.41527 -207.0336 -54.898445 29.293736 -207.25638 -54.792877 29.422581 -207.43631 -54.804283 29.54385 -207.23595 -54.588085 29.678694 -207.00139 -54.597141 29.639322 -207.40677 -54.573433 29.54631 -207.61678 -54.119026 29.675579 -207.81651 -54.163937 29.75683 -207.5896"
+		+ "5 -54.612164 29.345808 -207.64577 -54.281384 29.467943 -207.84775 -53.035004 29.953184 -207.57613 -51.791904 30.041964 -207.80151"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface2|croc4:polySurfaceShape2" 
 		"pt[2324:2489]" (" -53.405781 29.875412 -207.79634 -38.268269 30.087507 -209.69531 -39.014763 30.138823 -209.69763 -39.673725 30.132385 -209.69655 -39.162243 30.090794 -209.70564 -38.216412 30.153421 -209.67004 -39.026936 30.192242 -209.67938 -39.638481 30.176609 -209.69566 -40.192844 30.206108 -209.68605 -40.716217 30.190844 -209.68292 -40.198421 30.165554 -209.69142 -40.727058 30.156258 -209.67656 -40.241302 30.133038 -209.67163 -38.301769 30.217323 -209.63623 -39.120102 30.24313 -209.64876 -39.667431 30.222305 -209.67567 -38.50161 30.273939 -209.59256 -39.055241 30.294807 -209.58333 -39.689178 30.267002 -209.63368 -40.166599 30.299686 -209.58849 -40.715504 30.271364 -209.62845 -40.204647 30.245783 -209.65622 -40.706741 30.228662 -209.66721 -41.225555 30.251717 -209.64561 -41.830544 30.232159 -209.64812 -41.247898 30.212297 -209.67397 -41.337654 30.301567 -209.57382 -41.804665 30.274094 -209.60463 -42.511864 30.298243 -209.54207 -43.124004 30.278851 -209.53458 -42.474815 30.254063 -209.60245 -43.433804 30.226374 -209.56517 -"
@@ -45575,7 +47867,7 @@ createNode reference -n "croc3RN1";
 		+ ".875437 -204.95486 -53.524673 28.843472 -205.15332 -54.82346 28.978289 -207.39156 -54.561325 29.022223 -207.64175 -33.335693 29.405085 -209.18568 -32.830021 29.318264 -209.00714 -51.760944 29.169296 -208.79417 -50.746296 29.251171 -208.96606 -36.855968 29.638916 -209.774 -44.934551 29.627913 -209.65558 -31.490793 29.153389 -202.71814 -31.47258 29.166479 -202.33125 -31.403824 29.203325 -202.93808 -31.381456 29.261143 -202.71249 -48.943249 29.08901 -201.76588 -49.290607 29.097567 -201.94577 -49.683094 29.105438 -202.19495 -50.091747 29.108421 -202.49597 -49.645687 30.429974 -206.33427 -45.686745 30.548939 -206.37465 -45.689865 30.621159 -206.22215 -49.626816 30.481857 -206.18738 -41.257946 30.570045 -206.43317 -37.010155 30.49971 -206.49362 -37.332802 30.617174 -206.32607 -41.342731 30.659067 -206.27505 -41.396061 30.748125 -206.11624 -37.470871 30.719637 -206.16647 -37.475212 30.810265 -206.01491 -41.370903 30.832264 -205.9632 -49.58868 30.546345 -206.03468 -45.673832 30.698355 -206.0666 -45.621693 30.778008 -"
 		+ "205.91345 -49.52076 30.62258 -205.88072 -54.855686 29.400232 -206.68715 -54.48103 29.651365 -206.66975 -54.537769 29.472374 -206.33226 -54.888226 29.201237 -206.43805 -52.295238 30.197937 -206.44623 -52.218479 30.251837 -206.22777 -53.677593 29.946806 -206.3241 -53.674606 29.934031 -206.59242 -52.350689 30.3428 -205.87914 -53.82045 30.028839 -205.88493 -53.779163 29.98587 -206.11633 -52.275055 30.287971 -206.05428 -54.745747 29.252337 -205.88652 -54.929859 29.201553 -206.08833 -54.603554 29.59141 -206.09886 -54.455509 29.652475 -205.84256 -54.924458 28.986704 -206.36269 -54.974533 29.1122 -206.25645 -32.364899 29.649174 -207.50726 -32.098976 29.42458 -207.54539 -34.562233 30.068455 -207.42451 -33.088135 29.870148 -207.46638 -32.830246 29.880886 -207.86696 -34.379913 30.056721 -207.81757 -31.925171 29.467361 -207.94522 -32.135883 29.677567 -207.9093 -41.318291 30.268648 -207.3007 -37.407715 30.193731 -207.36493 -49.461437 30.183889 -207.19637 -45.582249 30.266964 -207.24472 -45.345947 30.23675 -207.64098 -49.2"
 		+ "43172 30.090389 -207.59207 -37.269344 30.132183 -207.75905 -41.36002 30.201113 -207.69342 -53.871029 29.867132 -207.18478 -52.359241 30.051123 -207.181 -54.887592 29.410057 -207.24628 -54.632404 29.65517 -207.21286 -54.437458 29.652002 -207.60188 -54.614044 29.44231 -207.63358 -52.088947 30.03603 -207.57808 -53.710705 29.858234 -207.58075 -39.058212 30.113464 -209.70398 -39.009724 30.165524 -209.68987 -40.192162 30.185495 -209.69121 -40.214352 30.147444 -209.68503 -39.068165 30.218191 -209.66573 -39.146374 30.266947 -209.62399 -40.201191 30.268848 -209.6329 -40.198334 30.225086 -209.67171 -41.233448 30.231867 -209.66249 -41.243484 30.272982 -209.61955 -42.430511 30.275774 -209.57878 -42.550827 30.230358 -209.61911 -41.255028 30.156336 -209.67392 -41.25919 30.19265 -209.68021 -42.646862 30.17902 -209.64381 -42.576496 30.128494 -209.66217 -32.164734 29.738201 -208.36366 -32.032547 29.534182 -208.39792 -34.35144 30.095833 -208.28165 -32.828796 29.931007 -208.32603 -40.779861 30.266624 -208.16951 -37.06707 30.208"
-		+ "702 -208.22942 -48.553581 30.185955 -208.07619 -44.842274 30.263023 -208.11438 -52.846268 29.909847 -208.05392 -51.277004 30.077089 -208.05542 -53.710087 29.510969 -208.09813 -53.541725 29.715561 -208.07159 -32.797359 29.861706 -208.84438 -32.670547 29.67502 -208.87402 -34.648659 30.164377 -208.75517 -33.38588 30.040937 -208.80898 -35.174744 30.273754 -209.04788 -33.979435 30.129318 -209.08662 -33.46386 29.961002 -209.121 -33.368935 29.787683 -209.15346 -40.301979 30.30081 -208.63222 -37.150757 30.284479 -208.70081 -47.302643 30.221836 -208.57613 -43.907684 30.301735 -208.58487 -46.364147 30.366428 -208.88087 -43.424339 30.416508 -208.90877 -40.229786 30.424627 -208.95706 -37.303165 30.375711 -209.00429 -51.134998 30.022562 -208.56715 -49.737324 30.159058 -208.54434 -51.932861 29.655106 -208.60614 -51.759541 29.842007 -208.58353 -50.428795 29.77067 -208.91341 -50.293358 29.94389 -208.88733 -49.7411 30.113016 -208.86961 -48.511337 30.257812 -208.86305 -34.212116 30.030426 -209.29781 -34.116447 29.875956 -209.3"
+		+ "702 -208.22942 -48.553581 30.185955 -208.07619 -44.842274 30.263023 -208.11438 -52.846268 29.909847 -208.05392 -51.277004 30.077089 -208.05542 -53.710087 29.510969 -208.09813 -53.541725 29.715561 -208.07159 -32.797359 29.861706 -208.84438 -32.670547 29.67502 -208.87402 -34.648659 30.164377 -208.75517 -33.38588 30.040937 -208.80898 -35.174744 30.273754 -209.04788 -33.979435 30.129318 -209.08662 -33.46386 29.961002 -209.121 -33.368935 29.787683 -209.15346 -40.301979 30.30081 -208.63222 -37.150757 30.284479 -208.70081 -47.302643 30.221836 -208.57613 -43.907684 30.301735 -208.58487 -46.364147 30.366428 -208.88087 -43.424339 30.416508 -208.90877 -40.229786 30.424627 -208.95706 -37.303165 30.375711 -209.00429 -51.134998 30.022562 -208.56715 -49.737324 30.159058 -208.54434 -51.932861 29.655106 -208.60614 -51.759541 29.842007 -208.58353 -50.428795 29.77067 -208.91341 -50.293358 29.94389 -208.88733 -49.7411 30.113016 -208.86961 -48.511337 30.257813 -208.86305 -34.212116 30.030426 -209.29781 -34.116447 29.875956 -209.3"
 		+ "1784 -35.81057 30.321997 -209.22888 -34.705551 30.188192 -209.27011 -36.85955 30.33604 -209.41652 -35.920055 30.227283 -209.46248"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface2|croc4:polySurfaceShape2" 
@@ -45644,7 +47936,14 @@ createNode reference -n "croc3RN1";
 		+ "05.74301 -36.370312 29.700668 -205.5722 -36.761871 29.699358 -205.55542 -36.396893 29.901718 -205.87807 -36.788456 29.900408 -205.8613"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pasted__pCube2|croc4:pasted__pCube2Shape" 
-		"pt[166:193]" " -36.757008 30.167473 -205.44215 -36.732723 30.329632 -205.1235 -36.945606 30.713678 -204.43481 -38.023811 31.265203 -203.36372 -38.82494 31.419371 -202.73822 -38.608803 31.41634 -202.67181 -37.608601 31.256647 -203.3849 -36.594509 30.748665 -204.38474 -36.695107 30.696583 -204.47865 -36.554043 30.714989 -204.45158 -36.34116 30.330942 -205.14029 -36.374237 30.567738 -205.25711 -36.362537 30.33087 -205.13936 -36.407589 30.531597 -205.67365 -36.41827 29.901646 -205.87715 -36.424778 30.123178 -205.93253 -36.350136 30.079712 -205.01453 -36.368206 29.758518 -205.27434 -36.40752 29.772486 -205.75888 -36.283848 30.50374 -205.29449 -36.274021 30.304729 -205.19557 -36.294422 30.168488 -205.4633 -36.311871 30.473373 -205.64447 -36.320847 29.944105 -205.81544 -36.326313 30.130232 -205.86195 -36.263599 30.093714 -205.09068 -36.278782 29.823853 -205.30899 -36.311813 29.835587 -205.71606";
+		"pt[166:193]" " -36.757008 30.167473 -205.44215 -36.732723 30.329632 -205.1235 -36.945606 30.713678 -204.43481 -38.023811 31.265203 -203.36372 -38.82494 31.419371 -202.73822 -38.608803 31.41634 -202.67181 -37.608601 31.256647 -203.3849 -36.594509 30.748665 -204.38474 -36.695107 30.696583 -204.47865 -36.554043 30.714989 -204.45158 -36.34116 30.330942 -205.14029 -36.374237 30.567738 -205.25711 -36.362537 30.33087 -205.13936 -36.407589 30.531597 -205.67365 -36.41827 29.901646 -205.87715 -36.424778 30.123178 -205.93253 -36.350136 30.079712 -205.01453 -36.368206 29.758518 -205.27434 -36.40752 29.772486 -205.75888 -36.283848 30.50374 -205.29449 -36.274021 30.304729 -205.19557 -36.294422 30.168488 -205.4633 -36.311871 30.473373 -205.64447 -36.320847 29.944105 -205.81544 -36.326313 30.130232 -205.86195 -36.263599 30.093714 -205.09068 -36.278782 29.823853 -205.30899 -36.311813 29.835587 -205.71606"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface1|croc4:polySurfaceShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pCube1|croc4:polySurface2|croc4:polySurfaceShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|crocs|croc4:croc|croc4:pasted__pCube2|croc4:pasted__pCube2Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "running_shoe_latestRN";
@@ -45652,7 +47951,7 @@ createNode reference -n "running_shoe_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"running_shoe_latestRN"
 		"running_shoe_latestRN" 0
-		"running_shoe_latestRN" 67
+		"running_shoe_latestRN" 79
 		0 "|running_shoe_latest:shoe" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe" 
@@ -45678,10 +47977,10 @@ createNode reference -n "running_shoe_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:sole|running_shoe_latest:soleShape" 
 		"pt[0:165]" (" -type \"float3\" -45.761276 30.56036 -207.44191 -46.479485 29.665819 -209.27271 -45.673222 27.821795 -207.31305 -46.452412 26.994858 -209.24937 -50.538795 27.813032 -206.10092 -52.280716 27.022078 -207.68773 -50.626854 30.551592 -206.2298 -52.288326 29.815863 -207.67586 -52.609123 29.772573 -208.06671 -46.643097 29.802591 -209.57721 -52.60041 27.060675 -208.07436 -46.622929 27.060804 -209.56519 -53.361851 29.952166 -209.65588 -48.003876 29.946377 -210.99141 -53.599758 28.279461 -210.0826 -48.242455 28.268517 -211.41931 -53.580074 30.058792 -210.18874 -48.451912 30.081852 -211.55449 -53.713501 28.445171 -210.4339 -48.58358 28.498133 -211.79633 -53.861862 30.765484 -211.51941 -49.555038 30.680492 -212.52055 -53.998528 29.317215 -211.76843 -49.691708 29.232224 -212.76956 -53.826904 31.985332 -212.75905 -51.135723 31.958813 -213.37924 -53.674892 30.014191 -212.51068 -50.983711 29.987671 -213.13089 -52.935532 32.150875 -213.29529 -52.344173 32.14505 -213.43156 -52.783516 30.179735 -213.04692 -52.192162 30.173906 -2"
 		+ "13.1832 -50.32597 30.693279 -205.87732 -45.670437 30.696724 -207.0369 -45.694771 27.832703 -207.10406 -50.350307 27.829262 -205.94449 -49.700703 30.978863 -205.16307 -45.529224 30.980701 -206.2021 -45.541832 27.829369 -206.25113 -49.71331 27.827532 -205.2121 -49.157707 31.247486 -203.83102 -45.397457 31.248873 -204.74329 -45.387405 27.630058 -204.75685 -49.147648 27.62867 -203.8446 -49.097309 31.400692 -203.55223 -45.303963 31.402294 -204.49089 -45.328461 27.581047 -204.56642 -49.121807 27.579445 -203.62775 -48.519218 31.220907 -201.3226 -44.021488 31.228441 -202.66165 -44.046318 27.358576 -202.73349 -48.519218 27.350203 -201.35611 -47.506424 31.003399 -199.7626 -43.3797 31.019653 -201.47682 -43.299984 27.329565 -201.38284 -47.48687 27.315842 -199.78757 -46.034904 33.332535 -198.41624 -42.785606 32.889366 -199.56995 -42.744236 27.621729 -199.57468 -45.993538 28.064896 -198.42096 -44.491417 31.749435 -198.22328 -43.443161 31.606464 -198.59546 -43.401798 28.722511 -198.57956 -44.45005 28.86548 -198.20737 -47.36"
-		+ "4784 27.695984 -199.64592 -43.246944 27.325493 -201.18237 -43.320824 31.015369 -201.2666 -47.326866 30.999901 -199.61852 -51.211735 29.270887 -212.26135 -50.023739 28.441753 -211.3535 -49.705601 28.27150899999999822 -211.05423 -48.094818 27.060747 -209.19855 -47.884441 26.992279 -208.89262 -47.252144 27.818949 -206.91971 -47.293999 27.83152 -206.70573 -47.238499 27.828623 -205.82851 -46.785053 27.629711 -204.43309 -46.694839 27.580524 -204.23225 -45.199345 27.349731 -202.03096 -44.703022 27.329765 -201.09767 -44.616249 27.325459 -200.89209 -51.381321 29.273819 -212.22313 -50.31234 28.44202 -211.28156 -49.893974 28.007021 -210.83971 -48.353439 27.060738 -209.13412 -48.150402 26.991798 -208.82635 -47.547535 27.818417 -206.84612 -47.622646 27.831278 -206.62387 -47.463696 27.828522 -205.77242 -47.223297 27.629519 -204.32393 -47.213104 27.580294 -204.10316 -46.837406 27.351446 -201.77499 -46.287647 27.323841 -200.45596 -46.192745 27.703592 -200.28833 -50.75412 29.920958 -213.06149 -50.820915 28.837751 -211.72951 -"
-		+ "53.811821 28.842127 -210.98642 -53.715256 30.295973 -210.802 -50.939369 31.901756 -213.3199 -51.964359 29.285315 -212.09375 -51.558002 28.838829 -211.54637 -51.121056 28.44277 -211.08 -50.77961 28.007458 -210.61903 -49.248444 27.060701 -208.91116 -49.079594 26.990124 -208.59486 -48.091682 27.817438 -206.71057 -48.892006 27.815996 -206.51118 -50.183578 26.988136 -208.31985 -50.404339 27.060656 -208.62323 -51.664909 28.007896 -210.39845 -51.960712 28.44355 -210.87074 -52.302395 28.83992 -211.36145 -52.609722 29.296474 -211.94826 -53.367413 29.308165 -211.77541 -53.103477 28.841091 -211.1624 -52.879318 28.444401 -210.64178 -52.596901 28.008354 -210.16623 -51.469131 27.060616 -208.35799 -51.273029 26.986174 -208.04845 -49.759705 27.814432 -206.29503 -50.590824 28.837536 -211.78685 -51.019302 29.541519 -212.71896 -49.958309 28.836941 -211.94449 -49.356445 28.441135 -211.51981 -49.090572 28.27025 -211.20769 -47.403847 27.060774 -209.37067 -47.179359 26.993547 -209.06827 -46.45047 27.820393 -207.11943 -46.525166 27."
-		+ "832088 -206.89723 -46.517433 27.828939 -206.00812 -46.177357 27.629978 -204.58446 -46.040318 27.580812 -204.39528 -44.62841 27.354322 -202.38982 -50.266113 27.666105 -210.06412 -49.377171 27.665668 -210.28561 -49.108555 27.665535 -210.35254 -48.466579 27.665216 -210.51248 -47.642166 27.664812 -210.7179 -47.539543 29.853859 -210.52107 -53.126728 29.846943 -209.12941 -53.229176 27.667568 -209.32585 -52.226177 27.667074 -209.57576 -51.247189 27.66659 -209.81969 -49.667992 27.221592 -209.36922 -48.775654 27.22163 -209.59149 -48.512615 27.221638 -209.65701 -47.843281 27.221666 -209.82376 -47.04314 27.221695 -210.02307 -46.978775 29.793661 -209.8893 -52.798962 29.783325 -208.43936 -52.863407 27.221468 -208.57323 -51.773582 27.22151 -208.8447 -50.746677 27.22155 -209.10049 -48.782352 27.239044 -208.02794 -47.969013 27.240509 -208.23056 -47.694199 27.241005 -208.29901 -46.960052 27.242329 -208.4819 -46.217972 27.243666 -208.66678 -46.293686 29.907143 -208.7748 -51.927303 29.896994 -207.37135 -51.851593 27.233515 -207"
-		+ ".26332 -50.817703 27.235376 -207.52089 -49.794975 27.237219 -207.77567 -48.415325 27.546408 -207.32787 -47.745033 27.547617 -207.49486 -47.45929 27.548132 -207.56604"
+		+ "4784 27.695984 -199.64592 -43.246944 27.325493 -201.18237 -43.320824 31.015369 -201.2666 -47.326866 30.999901 -199.61852 -51.211735 29.270887 -212.26135 -50.023739 28.441753 -211.3535 -49.705601 28.271509 -211.05423 -48.094818 27.060747 -209.19855 -47.884441 26.992279 -208.89262 -47.252144 27.818949 -206.91971 -47.293999 27.83152 -206.70573 -47.238499 27.828623 -205.82851 -46.785053 27.629711 -204.43309 -46.694839 27.580524 -204.23225 -45.199345 27.349731 -202.03096 -44.703022 27.329765 -201.09767 -44.616249 27.325459 -200.89209 -51.381321 29.273819 -212.22313 -50.31234 28.44202 -211.28156 -49.893974 28.007021 -210.83971 -48.353439 27.060738 -209.13412 -48.150402 26.991798 -208.82635 -47.547535 27.818417 -206.84612 -47.622646 27.831278 -206.62387 -47.463696 27.828522 -205.77242 -47.223297 27.629519 -204.32393 -47.213104 27.580294 -204.10316 -46.837406 27.351446 -201.77499 -46.287647 27.323841 -200.45596 -46.192745 27.703592 -200.28833 -50.75412 29.920958 -213.06149 -50.820915 28.837751 -211.72951 -53.811821 2"
+		+ "8.842127 -210.98642 -53.715256 30.295973 -210.802 -50.939369 31.901756 -213.3199 -51.964359 29.285315 -212.09375 -51.558002 28.838829 -211.54637 -51.121056 28.44277 -211.08 -50.77961 28.007458 -210.61903 -49.248444 27.060701 -208.91116 -49.079594 26.990124 -208.59486 -48.091682 27.817438 -206.71057 -48.892006 27.815996 -206.51118 -50.183578 26.988136 -208.31985 -50.404339 27.060656 -208.62323 -51.664909 28.007896 -210.39845 -51.960712 28.44355 -210.87074 -52.302395 28.83992 -211.36145 -52.609722 29.296474 -211.94826 -53.367413 29.308165 -211.77541 -53.103477 28.841091 -211.1624 -52.879318 28.444401 -210.64178 -52.596901 28.008354 -210.16623 -51.469131 27.060616 -208.35799 -51.273029 26.986174 -208.04845 -49.759705 27.814432 -206.29503 -50.590824 28.837536 -211.78685 -51.019302 29.541519 -212.71896 -49.958309 28.836941 -211.94449 -49.356445 28.441135 -211.51981 -49.090572 28.27025 -211.20769 -47.403847 27.060774 -209.37067 -47.179359 26.993547 -209.06827 -46.45047 27.820393 -207.11943 -46.525166 27.832088 -206"
+		+ ".89723 -46.517433 27.828939 -206.00812 -46.177357 27.629978 -204.58446 -46.040318 27.580812 -204.39528 -44.62841 27.354322 -202.38982 -50.266113 27.666105 -210.06412 -49.377171 27.665668 -210.28561 -49.108555 27.665535 -210.35254 -48.466579 27.665216 -210.51248 -47.642166 27.664812 -210.7179 -47.539543 29.853859 -210.52107 -53.126728 29.846943 -209.12941 -53.229176 27.667568 -209.32585 -52.226177 27.667074 -209.57576 -51.247189 27.66659 -209.81969 -49.667992 27.221592 -209.36922 -48.775654 27.22163 -209.59149 -48.512615 27.221638 -209.65701 -47.843281 27.221666 -209.82376 -47.04314 27.221695 -210.02307 -46.978775 29.793661 -209.8893 -52.798962 29.783325 -208.43936 -52.863407 27.221468 -208.57323 -51.773582 27.22151 -208.8447 -50.746677 27.22155 -209.10049 -48.782352 27.239044 -208.02794 -47.969013 27.240509 -208.23056 -47.694199 27.241005 -208.29901 -46.960052 27.242329 -208.4819 -46.217972 27.243666 -208.66678 -46.293686 29.907143 -208.7748 -51.927303 29.896994 -207.37135 -51.851593 27.233515 -207.26332 -50."
+		+ "817703 27.235376 -207.52089 -49.794975 27.237219 -207.77567 -48.415325 27.546408 -207.32787 -47.745033 27.547617 -207.49486 -47.45929 27.548132 -207.56604"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:sole|running_shoe_latest:soleShape" 
 		"pt[166:331]" (" -46.689259 27.549519 -207.75787 -45.928482 27.55089 -207.94739 -46.016537 30.167213 -208.07732 -51.242016 30.157799 -206.77553 -51.153961 27.541475 -206.64561 -50.25547 27.543095 -206.86945 -49.315128 27.544786 -207.1037 -46.975052 27.713057 -205.01779 -46.319855 27.713345 -205.18098 -45.4823 27.713715 -205.3896 -45.481617 31.172039 -205.35869 -49.383984 31.170321 -204.38669 -49.384666 27.711994 -204.4176 -47.324028 27.712904 -204.93088 -47.108551 27.489527 -203.43427 -46.290119 27.489891 -203.63811 -45.641296 27.490179 -203.79973 -44.908733 27.490505 -203.98218 -44.884239 31.556231 -203.90456 -48.926712 31.554436 -202.89766 -48.951206 27.488708 -202.97528 -46.983414 27.380888 -202.63362 -45.805702 27.381411 -202.92696 -45.163696 27.381695 -203.08687 -44.393925 27.382036 -203.27861 -44.369431 31.447763 -203.20097 -48.722519 31.445829 -202.1167 -48.747017 27.380104 -202.19434 -51.184586 29.828571 -212.77892 -43.906429 27.354082 -202.52946 -43.842152 31.078131 -202.38504 -47.980759 31.058346 -200.48488 -48.024"
@@ -45845,11 +48144,11 @@ createNode reference -n "running_shoe_latestRN";
 		"pnts" " -s 182"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder6|running_shoe_latest:pCylinderShape6" 
 		"pt[0:165]" (" -type \"float3\" -48.914627 33.474724 -205.27632 -48.79232 33.469025 -204.99286 -48.58934 33.467018 -204.76234 -48.325554 33.468914 -204.60736 -48.026791 33.474518 -204.54306 -47.722286 33.483288 -204.57573 -47.441856 33.494362 -204.70219 -47.212952 33.506653 -204.91005 -47.057968 33.518963 -205.17896 -46.992085 33.530087 -205.4826 -47.021751 33.538933 -205.79124 -47.144062 33.544636 -206.07471 -47.347042 33.546638 -206.30521 -47.610825 33.544743 -206.46021 -47.909592 33.539139 -206.52452 -48.214092 33.530369 -206.49184 -48.494522 33.519295 -206.36539 -48.723431 33.507004 -206.15753 -48.878414 33.494694 -205.88863 -48.944294 33.48357 -205.58498 -49.047981 33.383881 -205.4299 -48.925671 33.378181 -205.14645 -48.722694 33.376175 -204.91595 -48.458908 33.378075 -204.76096 -48.160141 33.383678 -204.69666 -47.855644 33.392445 -204.72932 -47.575211 33.403519 -204.85579 -47.346302 33.41581 -205.06364 -47.191322 33.428123 -205.33255 -47.125435 33.439243 -205.6362 -47.155106 33.44809 -205.94484 -47.277416 33.453793 -20"
-		+ "6.2283 -47.480396 33.455795 -206.4588 -47.744183 33.453899 -206.61378 -48.042946 33.448296 -206.67812 -48.347443 33.439526 -206.64543 -48.627876 33.428452 -206.51898 -48.856785 33.416161 -206.31113 -49.01176799999999645 33.403847 -206.04222 -49.077648 33.392727 -205.73857 -49.21146 33.211823 -205.55148 -49.082863 33.202019 -205.26273 -48.874893 33.196762 -205.02802 -48.607906 33.196564 -204.87033 -48.308037 33.20145 -204.80508 -48.004639 33.210938 -204.83868 -47.727413 33.224106 -204.96783 -47.503494 33.239651 -205.1799 -47.354797 33.256065 -205.45412 -47.295883 33.271736 -205.76364 -47.33252 33.28513 -206.07819 -47.461121 33.294933 -206.36696 -47.66909 33.300194 -206.60165 -47.936077 33.300388 -206.75935 -48.235947 33.295502 -206.82458 -48.539345 33.286015 -206.791 -48.81657 33.27285 -206.66183 -49.040489 33.257301 -206.44977 -49.189186 33.240891 -206.17555 -49.248096 33.22522 -205.86603 -49.310745 33.000237 -205.62064 -49.174164 32.98941 -205.32753 -48.959846 32.983341 -205.08936 -48.688774 32.982628 -204.9"
-		+ "2943 -48.387482 32.987335 -204.86342 -48.085461 32.997002 -204.89778 -47.812279 33.010689 -205.02914 -47.594673 33.027046 -205.24466 -47.453945 33.044479 -205.52321 -47.40387 33.061283 -205.83755 -47.449352 33.075809 -206.15691 -47.585938 33.086632 -206.45003 -47.800255 33.092701 -206.6882 -48.071323 33.093414 -206.84811 -48.37262 33.088711 -206.91412 -48.674637 33.079041 -206.87976 -48.947819 33.065353 -206.74841 -49.165424 33.048996 -206.5329 -49.306152 33.031563 -206.25433 -49.356228 33.014759 -205.93999 -49.887203 32.62838 -205.83401 -49.750622 32.617554 -205.54091 -49.536304 32.611488 -205.30273 -49.265232 32.610775 -205.14281 -48.963943 32.615479 -205.0768 -48.661919 32.625153 -205.11116 -48.388737 32.638836 -205.24252 -48.171131 32.655197 -205.45802 -48.030407 32.67263 -205.73659 -47.980331 32.68943 -206.05093 -48.02581 32.703957 -206.3703 -48.162395 32.714783 -206.66339 -48.376713 32.720848 -206.90157 -48.647789 32.721561 -207.06149 -48.949078 32.716858 -207.1275 -49.251095 32.707184 -207.09315 -49.52"
-		+ "4277 32.693501 -206.96178 -49.741882 32.677143 -206.74628 -49.882614 32.659706 -206.46771 -49.932686 32.642906 -206.15337 -50.484787 32.343517 -206.09747 -50.348206 32.332691 -205.80437 -50.133888 32.326622 -205.56619 -49.862816 32.325909 -205.40628 -49.561523 32.330616 -205.34026 -49.259502 32.340286 -205.37462 -48.98632 32.35397 -205.50598 -48.768715 32.370331 -205.7215 -48.627987 32.387764 -206.00006 -48.577911 32.404564 -206.31441 -48.623394 32.41909 -206.63374 -48.759979 32.429916 -206.92686 -48.974297 32.435982 -207.16504 -49.245365 32.436699 -207.32495 -49.546658 32.431992 -207.39098 -49.848679 32.422321 -207.35661 -50.121861 32.408638 -207.22525 -50.339466 32.392277 -207.00974 -50.480194 32.374844 -206.73119 -50.53027 32.35804 -206.41684 -50.561821 32.088966 -206.12457 -50.417488 32.081596 -205.82774 -50.198536 32.077759 -205.58733 -49.926399 32.077835 -205.42683 -49.62772 32.081806 -205.36198 -49.33173 32.089294 -205.39912 -49.06741 32.09956 -205.53461 -48.860622 32.111599 -205.75519 -48.731617 32.12"
-		+ "4237 -206.03928 -48.693024 32.136234 -206.35905 -48.748615 32.146416 -206.6832 -48.892948 32.153786 -206.98003 -49.1119 32.157623 -207.22044 -49.384037 32.157551 -207.38094 -49.682716 32.153576 -207.44579 -49.978706 32.146091 -207.40865 -50.243027 32.135826 -207.27316 -50.449814 32.123783 -207.05258 -50.578815 32.111145 -206.76849 -50.617413 32.099152 -206.44872 -50.723835 31.678898 -206.17947 -50.573166 31.67902 -205.88113 -50.34919 31.681129 -205.63951 -50.073826 31.685019 -205.47826 -49.774036 31.690308 -205.41315 -49.479156 31.69648 -205.45055 -49.21806 31.702927 -205.58681 -49.016304 31.709021 -205.80858 -48.893635 31.714167 -206.09418 -48.862061 31.717857 -206.41562 -48.924671 31.719734 -206.74146 -49.07534 31.719608 -207.03978 -49.29932 31.717501 -207.28139 -49.57468 31.71361 -207.44266 -49.874474 31.708321 -207.50777 -50.169346 31.70215 -207.47038 -50.430443 31.695704 -207.33412 -50.632202 31.68961 -207.11234 -50.754871 31.684464 -206.82675 -50.786446 31.680773 -206.50531 -50.83987 31.212158 -206.1660"
-		+ "3 -50.689201 31.21228 -205.86771 -50.465221 31.214392 -205.62608 -50.189857 31.218281 -205.46481 -49.890068 31.223568 -205.39972 -49.595192 31.22974 -205.4371"
+		+ "6.2283 -47.480396 33.455795 -206.4588 -47.744183 33.453899 -206.61378 -48.042946 33.448296 -206.67812 -48.347443 33.439526 -206.64543 -48.627876 33.428452 -206.51898 -48.856785 33.416161 -206.31113 -49.011768 33.403847 -206.04222 -49.077648 33.392727 -205.73857 -49.21146 33.211823 -205.55148 -49.082863 33.202019 -205.26273 -48.874893 33.196762 -205.02802 -48.607906 33.196564 -204.87033 -48.308037 33.20145 -204.80508 -48.004639 33.210938 -204.83868 -47.727413 33.224106 -204.96783 -47.503494 33.239651 -205.1799 -47.354797 33.256065 -205.45412 -47.295883 33.271736 -205.76364 -47.33252 33.28513 -206.07819 -47.461121 33.294933 -206.36696 -47.66909 33.300194 -206.60165 -47.936077 33.300388 -206.75935 -48.235947 33.295502 -206.82458 -48.539345 33.286015 -206.791 -48.81657 33.27285 -206.66183 -49.040489 33.257301 -206.44977 -49.189186 33.240891 -206.17555 -49.248096 33.22522 -205.86603 -49.310745 33.000237 -205.62064 -49.174164 32.98941 -205.32753 -48.959846 32.983341 -205.08936 -48.688774 32.982628 -204.92943 -48.38"
+		+ "7482 32.987335 -204.86342 -48.085461 32.997002 -204.89778 -47.812279 33.010689 -205.02914 -47.594673 33.027046 -205.24466 -47.453945 33.044479 -205.52321 -47.40387 33.061283 -205.83755 -47.449352 33.075809 -206.15691 -47.585938 33.086632 -206.45003 -47.800255 33.092701 -206.6882 -48.071323 33.093414 -206.84811 -48.37262 33.088711 -206.91412 -48.674637 33.079041 -206.87976 -48.947819 33.065353 -206.74841 -49.165424 33.048996 -206.5329 -49.306152 33.031563 -206.25433 -49.356228 33.014759 -205.93999 -49.887203 32.62838 -205.83401 -49.750622 32.617554 -205.54091 -49.536304 32.611488 -205.30273 -49.265232 32.610775 -205.14281 -48.963943 32.615479 -205.0768 -48.661919 32.625153 -205.11116 -48.388737 32.638836 -205.24252 -48.171131 32.655197 -205.45802 -48.030407 32.67263 -205.73659 -47.980331 32.68943 -206.05093 -48.02581 32.703957 -206.3703 -48.162395 32.714783 -206.66339 -48.376713 32.720848 -206.90157 -48.647789 32.721561 -207.06149 -48.949078 32.716858 -207.1275 -49.251095 32.707184 -207.09315 -49.524277 32.693"
+		+ "501 -206.96178 -49.741882 32.677143 -206.74628 -49.882614 32.659706 -206.46771 -49.932686 32.642906 -206.15337 -50.484787 32.343517 -206.09747 -50.348206 32.332691 -205.80437 -50.133888 32.326622 -205.56619 -49.862816 32.325909 -205.40628 -49.561523 32.330616 -205.34026 -49.259502 32.340286 -205.37462 -48.98632 32.35397 -205.50598 -48.768715 32.370331 -205.7215 -48.627987 32.387764 -206.00006 -48.577911 32.404564 -206.31441 -48.623394 32.41909 -206.63374 -48.759979 32.429916 -206.92686 -48.974297 32.435982 -207.16504 -49.245365 32.436699 -207.32495 -49.546658 32.431992 -207.39098 -49.848679 32.422321 -207.35661 -50.121861 32.408638 -207.22525 -50.339466 32.392277 -207.00974 -50.480194 32.374844 -206.73119 -50.53027 32.35804 -206.41684 -50.561821 32.088966 -206.12457 -50.417488 32.081596 -205.82774 -50.198536 32.077759 -205.58733 -49.926399 32.077835 -205.42683 -49.62772 32.081806 -205.36198 -49.33173 32.089294 -205.39912 -49.06741 32.09956 -205.53461 -48.860622 32.111599 -205.75519 -48.731617 32.124237 -206.0"
+		+ "3928 -48.693024 32.136234 -206.35905 -48.748615 32.146416 -206.6832 -48.892948 32.153786 -206.98003 -49.1119 32.157623 -207.22044 -49.384037 32.157551 -207.38094 -49.682716 32.153576 -207.44579 -49.978706 32.146091 -207.40865 -50.243027 32.135826 -207.27316 -50.449814 32.123783 -207.05258 -50.578815 32.111145 -206.76849 -50.617413 32.099152 -206.44872 -50.723835 31.678898 -206.17947 -50.573166 31.67902 -205.88113 -50.34919 31.681129 -205.63951 -50.073826 31.685019 -205.47826 -49.774036 31.690308 -205.41315 -49.479156 31.69648 -205.45055 -49.21806 31.702927 -205.58681 -49.016304 31.709021 -205.80858 -48.893635 31.714167 -206.09418 -48.862061 31.717857 -206.41562 -48.924671 31.719734 -206.74146 -49.07534 31.719608 -207.03978 -49.29932 31.717501 -207.28139 -49.57468 31.71361 -207.44266 -49.874474 31.708321 -207.50777 -50.169346 31.70215 -207.47038 -50.430443 31.695704 -207.33412 -50.632202 31.68961 -207.11234 -50.754871 31.684464 -206.82675 -50.786446 31.680773 -206.50531 -50.83987 31.212158 -206.16603 -50.68920"
+		+ "1 31.21228 -205.86771 -50.465221 31.214392 -205.62608 -50.189857 31.218281 -205.46481 -49.890068 31.223568 -205.39972 -49.595192 31.22974 -205.4371"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder6|running_shoe_latest:pCylinderShape6" 
 		"pt[166:181]" " -49.334095 31.236187 -205.57336 -49.132339 31.242283 -205.79514 -49.009666 31.247427 -206.08073 -48.978092 31.251118 -206.40218 -49.040703 31.252995 -206.72801 -49.191372 31.252872 -207.02634 -49.415352 31.250763 -207.26796 -49.690716 31.246872 -207.42921 -49.990505 31.241585 -207.49434 -50.285381 31.235413 -207.45692 -50.546478 31.228964 -207.32068 -50.748238 31.22287 -207.09889 -50.870907 31.217724 -206.81331 -50.902481 31.214033 -206.49187 -47.968189 33.506828 -205.5338 -49.940289 31.232574 -206.44702"
@@ -45884,7 +48183,7 @@ createNode reference -n "running_shoe_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder8|running_shoe_latest:pCylinderShape8" 
 		"pt[0:165]" (" -type \"float3\" -47.896336 31.620157 -204.15576 -47.771389 31.631041 -203.88051 -47.56633 31.642187 -203.65652 -47.301231 31.652508 -203.50572 -47.002037 31.660992 -203.44284 -46.69804 31.666805 -203.47406 -46.418999 31.669382 -203.59634 -46.192223 31.668472 -203.79767 -46.039913 31.664162 -204.05838 -45.976982 31.656872 -204.35292 -46.009579 31.64732 -204.65248 -46.134525 31.636436 -204.92773 -46.339584 31.625288 -205.15173 -46.604687 31.614967 -205.30254 -46.903877 31.606485 -205.3654 -47.207878 31.60067 -205.33418 -47.486919 31.598091 -205.2119 -47.713696 31.599003 -205.01057 -47.866001 31.603313 -204.74986 -47.92894 31.610603 -204.45532 -47.767982 31.57655 -204.21338 -47.643036 31.587433 -203.93814 -47.437977 31.598583 -203.71416 -47.172878 31.608902 -203.56334 -46.873684 31.617384 -203.50047 -46.569687 31.623199 -203.53169 -46.290642 31.625776 -203.65396 -46.063869 31.624866 -203.8553 -45.91156 31.620556 -204.116 -45.848625 31.613264 -204.41055 -45.881229 31.60371 -204.7101 -46.006172 31.592829 -204.9853"
 		+ "5 -46.211235 31.58168 -205.20935 -46.476334 31.571362 -205.36017 -46.775524 31.562878 -205.42303 -47.079521 31.557064 -205.3918 -47.358566 31.554485 -205.26955 -47.585342 31.555397 -205.06819 -47.737652 31.55971 -204.8075 -47.800583 31.566998 -204.51295 -47.73151 31.506866 -204.29939 -47.609108 31.510132 -204.02097 -47.406067 31.515228 -203.79448 -47.142262 31.521667 -203.64204 -46.843513 31.528811 -203.57863 -46.53907 31.535965 -203.61041 -46.258732 31.542427 -203.73428 -46.029938 31.547562 -203.93813 -45.875088 31.550873 -204.202 -45.809334 31.552029 -204.50005 -45.839119 31.550922 -204.80312 -45.961521 31.547661 -205.08153 -46.164562 31.542561 -205.30803 -46.428368 31.536123 -205.46045 -46.727112 31.52898 -205.52388 -47.031559 31.521828 -205.4921 -47.311893 31.515366 -205.36821 -47.540688 31.510231 -205.16437 -47.695538 31.50692 -204.9005 -47.761292 31.505762 -204.60245 -47.948349 31.923344 -204.4436 -47.814705 31.915783 -204.14937 -47.598537 31.911982 -203.90981 -47.320999 31.912317 -203.74832 -47.009262 "
-		+ "31.916756 -203.68076 -46.69384 31.924858 -203.71371 -46.405609 31.935835 -203.84398 -46.172783 31.948612 -204.05879 -46.01815 31.961937 -204.33711 -45.956856 31.974506 -204.65172 -45.994884 31.985092 -204.9718 -46.128525 31.992653 -205.26604 -46.3447 31.996452 -205.5056 -46.622234 31.996117 -205.66708 -46.933971 31.99168 -205.73465 -47.24939 31.983576 -205.70169 -47.537621 31.972599 -205.57143 -47.770447 31.95982 -205.35661 -47.925079 31.946497 -205.07829 -47.986382 31.933926 -204.76369 -48.310932 32.791756 -204.1714 -48.168064 32.782337 -203.87621 -47.94088 32.77581 -203.63788 -47.651611 32.772812 -203.47977 -47.328575 32.773636 -203.41733 -47.003395 32.778206 -203.4567 -46.707897 32.786068 -203.59401 -46.471008 32.796455 -203.81583 -46.315922 32.80835 -204.10042 -46.257812 32.820591 -204.41997 -46.302376 32.831978 -204.74315 -46.44524 32.841393 -205.03835 -46.672428 32.847923 -205.27669 -46.961693 32.850922 -205.43478 -47.284733 32.850094 -205.49722 -47.609913 32.845528 -205.45786 -47.905407 32.837662 -205."
+		+ "31.916756 -203.68076 -46.69384 31.924858 -203.71371 -46.405609 31.935835 -203.84398 -46.172783 31.948612 -204.05879 -46.01815 31.961937 -204.33711 -45.956856 31.974506 -204.65172 -45.994884 31.985092 -204.9718 -46.128525 31.992653 -205.26604 -46.3447 31.996452 -205.5056 -46.622234 31.996117 -205.66708 -46.933971 31.99168 -205.73465 -47.24939 31.983576 -205.70169 -47.537621 31.972599 -205.57143 -47.770447 31.95982 -205.35661 -47.925079 31.946497 -205.07829 -47.986382 31.933926 -204.76369 -48.310932 32.791756 -204.1714 -48.168064 32.782337 -203.87621 -47.94088 32.77581 -203.63788 -47.651611 32.772812 -203.47977 -47.328575 32.773636 -203.41733 -47.003395 32.778206 -203.4567 -46.707897 32.786068 -203.59401 -46.471008 32.796455 -203.81583 -46.315922 32.80835 -204.10042 -46.257813 32.820591 -204.41997 -46.302376 32.831978 -204.74315 -46.44524 32.841393 -205.03835 -46.672428 32.847923 -205.27669 -46.961693 32.850922 -205.43478 -47.284733 32.850094 -205.49722 -47.609913 32.845528 -205.45786 -47.905407 32.837662 -205."
 		+ "32054 -48.142292 32.827278 -205.09874 -48.297382 32.81538 -204.81413 -48.355488 32.803143 -204.4946 -48.71788 32.973534 -203.85852 -48.576279 32.962364 -203.56471 -48.354141 32.95578 -203.32542 -48.073219 32.954422 -203.16408 -47.761013 32.958427 -203.09647 -47.448078 32.9674 -203.12921 -47.165054 32.980457 -203.25909 -46.93964 32.99633 -203.4734 -46.793903 33.013462 -203.75119 -46.742107 33.030174 -204.06523 -46.789322 33.04483 -204.3848 -46.930931 33.055996 -204.6786 -47.153061 33.06258 -204.91789 -47.433983 33.063938 -205.07924 -47.746189 33.059937 -205.14685 -48.059124 33.050964 -205.11409 -48.342148 33.037903 -204.98422 -48.567562 33.02203 -204.76988 -48.713303 33.004898 -204.49213 -48.765099 32.98819 -204.17807 -48.835377 32.816856 -203.98361 -48.698524 32.807076 -203.68893 -48.485413 32.80201 -203.45056 -48.216904 32.802155 -203.29179 -47.919281 32.807491 -203.22821 -47.621677 32.817497 -203.26604 -47.353226 32.8312 -203.40157 -47.140202 32.847252 -203.62149 -47.00346 32.864082 -203.90434 -46.956383 32"
 		+ ".880047 -204.22238 -47.003578 32.893578 -204.54451 -47.14043 32.903358 -204.8392 -47.353546 32.908424 -205.07758 -47.622051 32.908283 -205.23631 -47.919674 32.902946 -205.2999 -48.217278 32.892937 -205.26207 -48.485733 32.879234 -205.12657 -48.698753 32.863182 -204.90663 -48.835495 32.846352 -204.62379 -48.882572 32.830391 -204.30574 -48.988033 32.416405 -204.03967 -48.837372 32.416527 -203.74135 -48.6134 32.41864 -203.49973 -48.338043 32.422531 -203.33847 -48.038258 32.427818 -203.27336 -47.743389 32.433987 -203.31076 -47.482296 32.440434 -203.44702 -47.28054 32.446526 -203.66882 -47.157867 32.451668 -203.95441 -47.126289 32.455353 -204.27586 -47.188896 32.457226 -204.6017 -47.339558 32.4571 -204.90002 -47.563526 32.45499 -205.14165 -47.838882 32.451103 -205.30292 -48.138668 32.445812 -205.36801 -48.43354 32.439644 -205.33061 -48.694633 32.433197 -205.19435 -48.896389 32.427105 -204.97255 -49.019058 32.421963 -204.68697 -49.050636 32.418278 -204.36551 -49.104034 31.949646 -204.02628 -48.953369 31.949772 -203"
 		+ ".72794 -48.729397 31.951883 -203.48631 -48.454044 31.955774 -203.32506 -48.154259 31.961061 -203.25993 -47.85939 31.967232 -203.29736"
@@ -45904,12 +48203,37 @@ createNode reference -n "running_shoe_latestRN";
 		"pt[0:165]" (" -type \"float3\" -52.520054 31.805565 -204.9705 -52.356037 31.814024 -204.68854 -52.116238 31.822006 -204.45825 -51.824135 31.82873 -204.30222 -51.508316 31.833534 -204.23569 -51.199703 31.835953 -204.26518 -50.928501 31.835747 -204.3878 -50.721256 31.832935 -204.59157 -50.598259 31.827797 -204.85651 -50.571541 31.820831 -205.15671 -50.64373 31.812723 -205.46277 -50.807751 31.804264 -205.74474 -51.04755 31.796282 -205.97501 -51.339653 31.789558 -206.13104 -51.655472 31.784752 -206.19759 -51.964085 31.782335 -206.16808 -52.235287 31.782539 -206.04546 -52.442532 31.785351 -205.84171 -52.565529 31.790489 -205.57677 -52.592243 31.797457 -205.27655 -52.626957 31.784843 -205.00958 -52.462936 31.793301 -204.72762 -52.223141 31.801285 -204.49734 -51.931034 31.808008 -204.34131 -51.615219 31.812813 -204.27477 -51.306606 31.815231 -204.30428 -51.0354 31.815025 -204.4269 -50.828156 31.812214 -204.63066 -50.705154 31.807076 -204.89558 -50.678444 31.80011 -205.19579 -50.750629 31.792 -205.50186 -50.91465 31.783541 -205.783"
 		+ "81 -51.154449 31.775558 -206.0141 -51.446552 31.768837 -206.17014 -51.762371 31.76403 -206.23666 -52.070984 31.761614 -206.20717 -52.34219 31.76182 -206.08455 -52.549431 31.764629 -205.88078 -52.672428 31.76977 -205.61584 -52.699146 31.776733 -205.31566 -52.619865 31.728407 -205.05966 -52.454815 31.7286 -204.77579 -52.214195 31.730019 -204.54399 -51.921566 31.732529 -204.38699 -51.605572 31.735882 -204.32011 -51.297134 31.73975 -204.34995 -51.026459 31.743759 -204.47354 -50.82003 31.747509 -204.67882 -50.698063 31.750643 -204.94566 -50.672489 31.752844 -205.24797 -50.745819 31.753902 -205.55615 -50.91087 31.753712 -205.84003 -51.151489 31.752293 -206.07181 -51.444115 31.749784 -206.22881 -51.760109 31.746429 -206.29568 -52.068546 31.742561 -206.26585 -52.339226 31.738552 -206.14226 -52.54565 31.734802 -205.93698 -52.667622 31.73167 -205.67014 -52.693192 31.729467 -205.36783 -52.255062 32.115101 -204.99446 -52.109909 32.104263 -204.70062 -51.890152 32.097206 -204.4615 -51.61729 32.094627 -204.30052 -51.318047 "
 		+ "32.096771 -204.23343 -51.021702 32.103439 -204.2668 -50.757271 32.113968 -204.39737 -50.550636 32.127327 -204.61235 -50.422024 32.142216 -204.8907 -50.384022 32.157173 -205.20515 -50.440353 32.170734 -205.52498 -50.585503 32.181572 -205.81882 -50.805264 32.188629 -206.05794 -51.078117 32.191208 -206.21893 -51.377365 32.18906 -206.28601 -51.67371 32.1824 -206.25264 -51.938141 32.171867 -206.12207 -52.144779 32.158508 -205.9071 -52.273392 32.14362 -205.62875 -52.311394 32.128662 -205.31427 -51.839035 32.861858 -204.394 -51.705025 32.850502 -204.10187 -51.497707 32.84267 -203.8672 -51.237373 32.839127 -203.713 -50.949509 32.840218 -203.65434 -50.662281 32.84584 -203.69698 -50.40382 32.855438 -203.83672 -50.199417 32.86808 -204.05991 -50.06908 32.882523 -204.34468 -50.025578 32.897354 -204.66318 -50.073154 32.911121 -204.98421 -50.207161 32.922478 -205.27635 -50.414478 32.930309 -205.51102 -50.674812 32.933853 -205.66522 -50.962681 32.932762 -205.72388 -51.249905 32.927139 -205.68124 -51.508369 32.917542 -205.541"
-		+ "5 -51.712772 32.9049 -205.3183 -51.843105 32.890457 -205.03352 -51.886612 32.875626 -204.71503 -51.450142 32.926254 -203.89958 -51.31432 32.913193 -203.60887 -51.101562 32.904388 -203.3721 -50.832699 32.900696 -203.21243 -50.534054 32.902489 -203.14551 -50.234852 32.909584 -203.17787 -49.964382 32.921284 -203.30637 -49.749126 32.936447 -203.5184 -49.610149 32.953594 -203.79321 -49.561058 32.971039 -204.10394 -49.606655 32.98708 -204.42014 -49.742481 33.000141 -204.71083 -49.955238 33.008945 -204.94762 -50.224098 33.012634 -205.10727 -50.522747 33.010849 -205.17419 -50.821949 33.003754 -205.14183 -51.092415 32.99205 -205.01335 -51.307671 32.976883 -204.8013 -51.446648 32.95974 -204.52649 -51.495739 32.942295 -204.21577 -51.259171 32.766567 -203.96979 -51.11808 32.754002 -203.6768 -50.89447 32.745407 -203.43837 -50.610218 32.741619 -203.27788 -50.293152 32.743011 -203.21101 -49.974308 32.749451 -203.24432 -49.684898 32.760307 -203.37454 -49.453255 32.774513 -203.58893 -49.302044 32.79068 -203.8665 -49.246075 32"
+		+ "5 -51.712772 32.9049 -205.3183 -51.843105 32.890457 -205.03352 -51.886612 32.875626 -204.71503 -51.450142 32.926254 -203.89958 -51.31432 32.913193 -203.60887 -51.101563 32.904388 -203.3721 -50.832699 32.900696 -203.21243 -50.534054 32.902489 -203.14551 -50.234852 32.909584 -203.17787 -49.964382 32.921284 -203.30637 -49.749126 32.936447 -203.5184 -49.610149 32.953594 -203.79321 -49.561058 32.971039 -204.10394 -49.606655 32.98708 -204.42014 -49.742481 33.000141 -204.71083 -49.955238 33.008945 -204.94762 -50.224098 33.012634 -205.10727 -50.522747 33.010849 -205.17419 -50.821949 33.003754 -205.14183 -51.092415 32.99205 -205.01335 -51.307671 32.976883 -204.8013 -51.446648 32.95974 -204.52649 -51.495739 32.942295 -204.21577 -51.259171 32.766567 -203.96979 -51.11808 32.754002 -203.6768 -50.89447 32.745407 -203.43837 -50.610218 32.741619 -203.27788 -50.293152 32.743011 -203.21101 -49.974308 32.749451 -203.24432 -49.684898 32.760307 -203.37454 -49.453255 32.774513 -203.58893 -49.302044 32.79068 -203.8665 -49.246075 32"
 		+ ".807224 -204.1801 -49.290825 32.822533 -204.49899 -49.431911 32.835098 -204.79199 -49.655525 32.843693 -205.03041 -49.939777 32.847481 -205.19092 -50.256844 32.846085 -205.25778 -50.575687 32.839645 -205.22447 -50.865097 32.828789 -205.09425 -51.096741 32.814587 -204.87985 -51.247952 32.798416 -204.60228 -51.303917 32.781872 -204.28871 -51.076176 32.353985 -204.02086 -50.951439 32.352711 -203.72543 -50.740883 32.352341 -203.48489 -50.465111 32.352921 -203.3228 -50.151119 32.354393 -203.25497 -49.829639 32.356606 -203.2881 -49.532143 32.359344 -203.41893 -49.287758 32.36235 -203.63464 -49.120392 32.365318 -203.91412 -49.04644 32.367962 -204.23003 -49.073135 32.370022 -204.55141 -49.197868 32.371296 -204.84683 -49.408428 32.371666 -205.08737 -49.684196 32.371086 -205.24948 -49.998192 32.369617 -205.31729 -50.319668 32.367401 -205.28415 -50.617168 32.364662 -205.15334 -50.861553 32.361656 -204.93762 -51.028919 32.358688 -204.65814 -51.102867 32.356049 -204.34224 -50.967686 31.872694 -204.02933 -50.842953 31.8714"
 		+ "18 -203.7339 -50.632393 31.871052 -203.49338 -50.356621 31.871632 -203.33127 -50.042625 31.8731 -203.26346 -49.721149 31.875313 -203.29659"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder10|running_shoe_latest:pCylinderShape10" 
-		"pt[166:181]" " -49.423656 31.878056 -203.42741 -49.179268 31.881058 -203.64313 -49.011906 31.884026 -203.92259 -48.93795 31.886669 -204.23849 -48.964649 31.888733 -204.55989 -49.089378 31.890007 -204.85532 -49.299934 31.890373 -205.09584 -49.57571 31.889793 -205.25795 -49.889702 31.888327 -205.32576 -50.211182 31.886112 -205.29263 -50.508675 31.883369 -205.1618 -50.753067 31.880367 -204.94609 -50.920425 31.877399 -204.66663 -50.994381 31.874756 -204.35072 -51.581894 31.809147 -205.21664 -49.966167 31.880713 -204.29462";
+		"pt[166:181]" " -49.423656 31.878056 -203.42741 -49.179268 31.881058 -203.64313 -49.011906 31.884026 -203.92259 -48.93795 31.886669 -204.23849 -48.964649 31.888733 -204.55989 -49.089378 31.890007 -204.85532 -49.299934 31.890373 -205.09584 -49.57571 31.889793 -205.25795 -49.889702 31.888327 -205.32576 -50.211182 31.886112 -205.29263 -50.508675 31.883369 -205.1618 -50.753067 31.880367 -204.94609 -50.920425 31.877399 -204.66663 -50.994381 31.874756 -204.35072 -51.581894 31.809147 -205.21664 -49.966167 31.880713 -204.29462"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:sole|running_shoe_latest:soleShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:body|running_shoe_latest:bodyShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:lip|running_shoe_latest:lipShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder1|running_shoe_latest:pCylinderShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder2|running_shoe_latest:pCylinderShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder3|running_shoe_latest:pCylinderShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder4|running_shoe_latest:pCylinderShape4.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder5|running_shoe_latest:pCylinderShape5.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder6|running_shoe_latest:pCylinderShape6.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder7|running_shoe_latest:pCylinderShape7.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder8|running_shoe_latest:pCylinderShape8.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest:shoe|running_shoe_latest:laces|running_shoe_latest:pCylinder10|running_shoe_latest:pCylinderShape10.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "running_shoe_latestRN1";
@@ -45917,7 +48241,7 @@ createNode reference -n "running_shoe_latestRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"running_shoe_latestRN1"
 		"running_shoe_latestRN1" 0
-		"running_shoe_latestRN1" 67
+		"running_shoe_latestRN1" 79
 		0 "|running_shoe_latest1:shoe" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe" 
@@ -46017,9 +48341,9 @@ createNode reference -n "running_shoe_latestRN1";
 		"pt[0:165]" (" -type \"float3\" -57.274212 32.638763 -207.78828 -57.118267 32.633614 -207.49681 -56.886101 32.632076 -207.25928 -56.600445 32.634308 -207.09894 -56.289257 32.640087 -207.03152 -55.982998 32.648849 -207.06357 -55.711651 32.659737 -207.192 -55.50177 32.671684 -207.40419 -55.373909 32.683521 -207.67941 -55.340576 32.694092 -207.99069 -55.405037 32.702354 -208.3076 -55.560982 32.707508 -208.59908 -55.793148 32.709042 -208.83661 -56.078804 32.706814 -208.99693 -56.389996 32.701031 -209.06436 -56.696251 32.692268 -209.03232 -56.967598 32.681381 -208.90388 -57.177479 32.669434 -208.69168 -57.30534 32.657597 -208.41647 -57.338673 32.64703 -208.10518 -57.12112 32.556396 -207.87149 -56.965176 32.551247 -207.58002 -56.733009 32.549709 -207.34248 -56.447353 32.551941 -207.18214 -56.136166 32.55772 -207.11472 -55.82991 32.566483 -207.14677 -55.558559 32.57737 -207.27518 -55.348682 32.589317 -207.48738 -55.220818 32.601154 -207.7626 -55.187485 32.611725 -208.0739 -55.251945 32.619987 -208.39078 -55.407894 32.625137 -208.68"
 		+ "227 -55.640057 32.626678 -208.9198 -55.925713 32.624447 -209.08012 -56.236904 32.618668 -209.14757 -56.543159 32.609901 -209.11551 -56.81451 32.599014 -208.98709 -57.024384 32.587067 -208.77489 -57.152252 32.575233 -208.49968 -57.185585 32.564663 -208.18839 -56.952824 32.392563 -207.91277 -56.803528 32.382973 -207.61911 -56.576645 32.377914 -207.37988 -56.29438 32.377884 -207.21844 -55.98436 32.382881 -207.15063 -55.676937 32.392426 -207.18306 -55.402195 32.405575 -207.31259 -55.187035 32.421043 -207.5265 -55.052517 32.437321 -207.80388 -55.011803 32.452812 -208.11757 -55.06889 32.465996 -208.43686 -55.218178 32.47559 -208.7305 -55.445061 32.480648 -208.96973 -55.727329 32.480679 -209.13116 -56.037346 32.475681 -209.19899 -56.344776 32.466137 -209.16655 -56.619511 32.452988 -209.03703 -56.834675 32.437519 -208.82312 -56.969193 32.421242 -208.54573 -57.009903 32.40575 -208.23206 -56.728745 32.18433 -207.93039 -56.587181 32.173367 -207.63618 -56.366428 32.167217 -207.39648 -56.0881 32.166489 -207.23476 -55.7794"
 		+ "38 32.171249 -207.16684 -55.470654 32.18103 -207.19939 -55.191975 32.194878 -207.32918 -54.970684 32.211437 -207.54356 -54.828438 32.229084 -207.8215 -54.779163 32.246094 -208.13583 -54.827679 32.260799 -208.45575 -54.969242 32.271763 -208.74997 -55.189991 32.277908 -208.98967 -55.468319 32.278641 -209.15138 -55.776985 32.27388 -209.2193 -56.085766 32.264099 -209.18677 -56.364445 32.250252 -209.05695 -56.585739 32.233692 -208.84259 -56.727985 32.216042 -208.56464 -56.777256 32.199036 -208.25032 -56.473366 31.931713 -207.9248 -56.331802 31.92075 -207.63058 -56.11105 31.9146 -207.39088 -55.832722 31.913872 -207.22916 -55.524059 31.918631 -207.16124 -55.215275 31.928413 -207.19379 -54.936596 31.942261 -207.32361 -54.715305 31.95882 -207.53798 -54.573059 31.976467 -207.81593 -54.523785 31.993479 -208.13023 -54.572304 32.008183 -208.45016 -54.713863 32.01915 -208.74437 -54.934612 32.025295 -208.98407 -55.212944 32.026024 -209.1458 -55.521606 32.021263 -209.21371 -55.830387 32.011482 -209.18117 -56.109066 31.997635"
-		+ " -209.05136 -56.33036 31.981075 -208.83699 -56.47260700000000355 31.963428 -208.55904 -56.521881 31.946419 -208.24472 -56.217987 31.679096 -207.9192 -56.076424 31.668133 -207.625 -55.855675 31.661985 -207.3853 -55.577343 31.661255 -207.22359 -55.268681 31.666016 -207.15567 -54.959896 31.675798 -207.18819 -54.681221 31.689648 -207.31801 -54.45993 31.706203 -207.53238 -54.317684 31.723852 -207.81033 -54.268406 31.74086 -208.12465 -54.316925 31.755568 -208.44456 -54.458485 31.766529 -208.73878 -54.679237 31.772678 -208.97849 -54.957565 31.773407 -209.1402 -55.266228 31.768646 -209.20811 -55.575012 31.758865 -209.17558 -55.853691 31.745018 -209.04578 -56.074982 31.728458 -208.83139 -56.217228 31.710812 -208.55345 -56.266506 31.693802 -208.23914 -55.979916 31.380714 -207.8905 -55.844799 31.370827 -207.59694 -55.629166 31.365532 -207.35777 -55.354122 31.365353 -207.19637 -55.046593 31.3703 -207.12857 -54.736675 31.379894 -207.161 -54.454712 31.393194 -207.29047 -54.228302 31.408899 -207.50432 -54.079609 31.42547 -2"
-		+ "07.7816 -54.023186 31.441288 -208.0952 -54.064556 31.4548 -208.4144 -54.199673 31.464687 -208.70796 -54.415306 31.46998 -208.94713 -54.69035 31.470161 -209.10852 -54.997879 31.465214 -209.17632 -55.307796 31.45562 -209.14389 -55.58976 31.442318 -209.01442 -55.81617 31.426617 -208.80057 -55.964863 31.410044 -208.52328 -56.021286 31.394228 -208.20969 -55.79121 31.037516 -207.83968 -55.66362 31.032511 -207.54874 -55.453964 31.031094 -207.31165 -55.182755 31.0334 -207.15161 -54.876545 31.039204 -207.08426 -54.565308 31.047941 -207.11621 -54.27951 31.058754 -207.24437 -54.047131 31.070583 -207.45613 -53.890907 31.082272 -207.73079 -53.826141 31.092674 -208.04147 -53.859165 31.100777 -208.35776 -53.986755 31.10578 -208.6487 -54.196411 31.107197 -208.88579 -54.467621 31.104893 -209.04584 -54.77383 31.099087 -209.11317 -55.085068 31.090349 -209.08121 -55.370865 31.079536 -208.95308 -55.603249 31.067707 -208.74132 -55.759472 31.056019 -208.46666 -55.824234 31.045616 -208.15596 -55.643639 30.618311 -207.75067 -55.51604"
-		+ "8 30.613306 -207.45973 -55.306393 30.611889 -207.22264 -55.035183 30.614195 -207.06259 -54.728973 30.619999 -206.99524 -54.417736 30.628736 -207.02721"
+		+ " -209.05136 -56.33036 31.981075 -208.83699 -56.472607 31.963428 -208.55904 -56.521881 31.946419 -208.24472 -56.217987 31.679096 -207.9192 -56.076424 31.668133 -207.625 -55.855675 31.661985 -207.3853 -55.577343 31.661255 -207.22359 -55.268681 31.666016 -207.15567 -54.959896 31.675798 -207.18819 -54.681221 31.689648 -207.31801 -54.45993 31.706203 -207.53238 -54.317684 31.723852 -207.81033 -54.268406 31.74086 -208.12465 -54.316925 31.755568 -208.44456 -54.458485 31.766529 -208.73878 -54.679237 31.772678 -208.97849 -54.957565 31.773407 -209.1402 -55.266228 31.768646 -209.20811 -55.575012 31.758865 -209.17558 -55.853691 31.745018 -209.04578 -56.074982 31.728458 -208.83139 -56.217228 31.710812 -208.55345 -56.266506 31.693802 -208.23914 -55.979916 31.380714 -207.8905 -55.844799 31.370827 -207.59694 -55.629166 31.365532 -207.35777 -55.354122 31.365353 -207.19637 -55.046593 31.3703 -207.12857 -54.736675 31.379894 -207.161 -54.454712 31.393194 -207.29047 -54.228302 31.408899 -207.50432 -54.079609 31.42547 -207.7816 -54"
+		+ ".023186 31.441288 -208.0952 -54.064556 31.4548 -208.4144 -54.199673 31.464687 -208.70796 -54.415306 31.46998 -208.94713 -54.69035 31.470161 -209.10852 -54.997879 31.465214 -209.17632 -55.307796 31.45562 -209.14389 -55.58976 31.442318 -209.01442 -55.81617 31.426617 -208.80057 -55.964863 31.410044 -208.52328 -56.021286 31.394228 -208.20969 -55.79121 31.037516 -207.83968 -55.66362 31.032511 -207.54874 -55.453964 31.031094 -207.31165 -55.182755 31.0334 -207.15161 -54.876545 31.039204 -207.08426 -54.565308 31.047941 -207.11621 -54.27951 31.058754 -207.24437 -54.047131 31.070583 -207.45613 -53.890907 31.082272 -207.73079 -53.826141 31.092674 -208.04147 -53.859165 31.100777 -208.35776 -53.986755 31.10578 -208.6487 -54.196411 31.107197 -208.88579 -54.467621 31.104893 -209.04584 -54.77383 31.099087 -209.11317 -55.085068 31.090349 -209.08121 -55.370865 31.079536 -208.95308 -55.603249 31.067707 -208.74132 -55.759472 31.056019 -208.46666 -55.824234 31.045616 -208.15596 -55.643639 30.618311 -207.75067 -55.516048 30.613306"
+		+ " -207.45973 -55.306393 30.611889 -207.22264 -55.035183 30.614195 -207.06259 -54.728973 30.619999 -206.99524 -54.417736 30.628736 -207.02721"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder1|running_shoe_latest1:pCylinderShape1" 
 		"pt[166:181]" " -54.131939 30.639549 -207.15535 -53.899555 30.651379 -207.36711 -53.743332 30.663067 -207.64178 -53.678566 30.67347 -207.95247 -53.711594 30.68157 -208.26875 -53.839184 30.686575 -208.55969 -54.04884 30.687992 -208.79678 -54.320049 30.685688 -208.95683 -54.626259 30.679882 -209.02417 -54.937496 30.671144 -208.9922 -55.223293 30.660332 -208.86407 -55.455673 30.648502 -208.65231 -55.611897 30.636814 -208.37764 -55.676662 30.626411 -208.06694 -56.339622 32.670563 -208.04794 -54.677612 30.64994 -208.0097"
@@ -46054,10 +48378,10 @@ createNode reference -n "running_shoe_latestRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder3|running_shoe_latest1:pCylinderShape3" 
 		"pt[0:165]" (" -type \"float3\" -57.446594 33.087303 -206.79002 -57.291409 33.085953 -206.4929 -57.062801 33.087055 -206.25102 -56.783142 33.090504 -206.08812 -56.479824 33.095959 -206.0201 -56.182518 33.10289 -206.05365 -55.920338 33.110611 -206.18547 -55.718948 33.118378 -206.40265 -55.598057 33.12542 -206.68396 -55.5695 33.131054 -207.00182 -55.636074 33.134727 -207.32515 -55.79126 33.136078 -207.62228 -56.019871 33.134975 -207.86415 -56.299526 33.131527 -208.02707 -56.602844 33.126068 -208.09508 -56.90015 33.119141 -208.06154 -57.162331 33.111416 -207.9297 -57.36372 33.103653 -207.71254 -57.484612 33.096607 -207.43123 -57.513165 33.090973 -207.11336 -57.307198 33.060696 -206.82051 -57.152008 33.059345 -206.52338 -56.923397 33.060448 -206.28151 -56.643745 33.063896 -206.11859 -56.340424 33.069351 -206.05058 -56.043118 33.076283 -206.08412 -55.780937 33.084007 -206.21594 -55.579548 33.091774 -206.43314 -55.458656 33.098816 -206.71443 -55.430099 33.104446 -207.03229 -55.496674 33.10812 -207.35564 -55.651859 33.10947 -207.65"
 		+ "277 -55.880466 33.108368 -207.89464 -56.160126 33.104919 -208.05754 -56.463448 33.099464 -208.12555 -56.76075 33.092537 -208.09201 -57.02293 33.084808 -207.96021 -57.224319 33.077045 -207.74301 -57.345211 33.07 -207.4617 -57.373768 33.064369 -207.14383 -57.136009 32.954807 -206.79956 -56.9874 32.946693 -206.50269 -56.764015 32.942425 -206.26102 -56.487717 32.942429 -206.09825 -56.185547 32.946693 -206.03027 -55.887093 32.954811 -206.06377 -55.621559 32.965984 -206.19545 -55.414944 32.979118 -206.41245 -55.287472 32.992928 -206.69348 -55.251621 33.006062 -207.01106 -55.310898 33.017235 -207.33412 -55.459503 33.025352 -207.63101 -55.682892 33.029617 -207.87267 -55.95919 33.029617 -208.03545 -56.261356 33.025349 -208.10341 -56.559818 33.017235 -208.06992 -56.825352 33.006058 -207.93823 -57.031963 32.992924 -207.72124 -57.159439 32.979118 -207.4402 -57.195286 32.965981 -207.12262 -57.031746 32.78252 -206.78271 -56.891506 32.770451 -206.48824 -56.674774 32.763042 -206.24849 -56.402756 32.761024 -206.08694 -56.1020"
-		+ "77 32.764595 -206.01941 -55.802174 32.773399 -206.05249 -55.532406 32.786575 -206.18297 -55.319172 32.802841 -206.39804 -55.183353 32.820599 -206.67668 -55.138237 32.838112 -206.99161 -55.188244 32.853664 -207.31198 -55.32848 32.865734 -207.60646 -55.545216 32.873138 -207.84621 -55.817238 32.87516 -208.00774 -56.117916 32.871593 -208.07529 -56.417816 32.862789 -208.04219 -56.687588 32.849609 -207.91173 -56.900818 32.833344 -207.69666 -57.03664 32.815586 -207.41801 -57.081753 32.798073 -207.10309 -56.441105 32.737297 -206.52168 -56.300873 32.725227 -206.22722 -56.084133 32.717819 -205.98747 -55.812115 32.715801 -205.82593 -55.511436 32.719368 -205.75839 -55.211533 32.728172 -205.79147 -54.941765 32.741352 -205.92194 -54.728531 32.757614 -206.13702 -54.592712 32.775375 -206.41566 -54.5476 32.792885 -206.73058 -54.59760700000000355 32.808441 -207.05096 -54.737839 32.820511 -207.34543 -54.954578 32.827915 -207.58517 -55.226597 32.829933 -207.74673 -55.527275 32.826366 -207.81427 -55.827175 32.817562 -207.78119 -5"
-		+ "6.096947 32.804382 -207.65071 -56.310177 32.78812 -207.43564 -56.445999 32.770363 -207.15698 -56.491112 32.75285 -206.84207 -55.792343 32.526295 -206.28484 -55.652111 32.514225 -205.99036 -55.435371 32.506817 -205.75061 -55.163353 32.504799 -205.58907 -54.862675 32.508366 -205.52153 -54.562775 32.51717 -205.55463 -54.293003 32.53035 -205.68509 -54.079769 32.546616 -205.90018 -53.943951 32.564373 -206.1788 -53.898838 32.581886 -206.49373 -53.948845 32.597435 -206.8141 -54.089077 32.609509 -207.10858 -54.305817 32.616917 -207.34833 -54.577835 32.618935 -207.50987 -54.878513 32.615364 -207.57741 -55.178417 32.60656 -207.54433 -55.448185 32.593384 -207.41385 -55.661419 32.577118 -207.19878 -55.797237 32.559357 -206.92014 -55.842354 32.541847 -206.60521 -55.716282 32.297241 -206.24924 -55.58559 32.285881 -205.95776 -55.374657 32.279057 -205.71979 -55.104118 32.277435 -205.55862 -54.800461 32.281178 -205.49004 -54.493401 32.289917 -205.52074 -54.213005 32.302799 -205.64774 -53.986717 32.318558 -205.85858 -53.836685"
-		+ " 32.335659 -206.13266 -53.777603 32.352425 -206.44312 -53.815243 32.36721 -206.75958 -53.94593 32.378571 -207.05106 -54.156864 32.385395 -207.28903 -54.427402 32.387016 -207.45021 -54.731068 32.383274 -207.51878 -55.03812 32.374535 -207.48808 -55.31852 32.361652 -207.36108 -55.544807 32.34589 -207.15024 -55.694836 32.328793 -206.87616 -55.753922 32.312027 -206.5657 -55.497204 31.940287 -206.16423 -55.37513 31.93446 -205.87665 -55.171028 31.93203 -205.64175 -54.904881 31.933231 -205.48256 -54.60273 31.937946 -205.41466 -54.294163 31.945713 -205.44469 -54.00938 31.955772 -205.5697 -53.776257 31.96714 -205.77747 -53.617611 31.978703 -206.04765 -53.548981 31.98933 -206.35379 -53.577072 31.997978 -206.66595 -53.699146 32.003803 -206.95355 -53.903244 32.006233 -207.18845 -54.169399 32.005035 -207.34763 -54.471546 32.000317 -207.41553 -54.780117 31.99255 -207.38551 -55.064896 31.982491 -207.26048 -55.298019 31.971123 -207.05272 -55.456665 31.95956 -206.78253 -55.525299 31.948935 -206.47639 -55.336273 31.501633 -206."
-		+ "0567 -55.214203 31.49581 -205.7691 -55.010101 31.493378 -205.53423 -54.74395 31.494577 -205.37505 -54.441799 31.499292 -205.30714 -54.133232 31.507061 -205.33716"
+		+ "77 32.764595 -206.01941 -55.802174 32.773399 -206.05249 -55.532406 32.786575 -206.18297 -55.319172 32.802841 -206.39804 -55.183353 32.820599 -206.67668 -55.138237 32.838112 -206.99161 -55.188244 32.853664 -207.31198 -55.32848 32.865734 -207.60646 -55.545216 32.873138 -207.84621 -55.817238 32.87516 -208.00774 -56.117916 32.871593 -208.07529 -56.417816 32.862789 -208.04219 -56.687588 32.849609 -207.91173 -56.900818 32.833344 -207.69666 -57.03664 32.815586 -207.41801 -57.081753 32.798073 -207.10309 -56.441105 32.737297 -206.52168 -56.300873 32.725227 -206.22722 -56.084133 32.717819 -205.98747 -55.812115 32.715801 -205.82593 -55.511436 32.719368 -205.75839 -55.211533 32.728172 -205.79147 -54.941765 32.741352 -205.92194 -54.728531 32.757614 -206.13702 -54.592712 32.775375 -206.41566 -54.5476 32.792885 -206.73058 -54.597607 32.808441 -207.05096 -54.737839 32.820511 -207.34543 -54.954578 32.827915 -207.58517 -55.226597 32.829933 -207.74673 -55.527275 32.826366 -207.81427 -55.827175 32.817562 -207.78119 -56.096947 32"
+		+ ".804382 -207.65071 -56.310177 32.78812 -207.43564 -56.445999 32.770363 -207.15698 -56.491112 32.75285 -206.84207 -55.792343 32.526295 -206.28484 -55.652111 32.514225 -205.99036 -55.435371 32.506817 -205.75061 -55.163353 32.504799 -205.58907 -54.862675 32.508366 -205.52153 -54.562775 32.51717 -205.55463 -54.293003 32.53035 -205.68509 -54.079769 32.546616 -205.90018 -53.943951 32.564373 -206.1788 -53.898838 32.581886 -206.49373 -53.948845 32.597435 -206.8141 -54.089077 32.609509 -207.10858 -54.305817 32.616917 -207.34833 -54.577835 32.618935 -207.50987 -54.878513 32.615364 -207.57741 -55.178417 32.60656 -207.54433 -55.448185 32.593384 -207.41385 -55.661419 32.577118 -207.19878 -55.797237 32.559357 -206.92014 -55.842354 32.541847 -206.60521 -55.716282 32.297241 -206.24924 -55.58559 32.285881 -205.95776 -55.374657 32.279057 -205.71979 -55.104118 32.277435 -205.55862 -54.800461 32.281178 -205.49004 -54.493401 32.289917 -205.52074 -54.213005 32.302799 -205.64774 -53.986717 32.318558 -205.85858 -53.836685 32.335659 "
+		+ "-206.13266 -53.777603 32.352425 -206.44312 -53.815243 32.36721 -206.75958 -53.94593 32.378571 -207.05106 -54.156864 32.385395 -207.28903 -54.427402 32.387016 -207.45021 -54.731068 32.383274 -207.51878 -55.03812 32.374535 -207.48808 -55.31852 32.361652 -207.36108 -55.544807 32.34589 -207.15024 -55.694836 32.328793 -206.87616 -55.753922 32.312027 -206.5657 -55.497204 31.940287 -206.16423 -55.37513 31.93446 -205.87665 -55.171028 31.93203 -205.64175 -54.904881 31.933231 -205.48256 -54.60273 31.937946 -205.41466 -54.294163 31.945713 -205.44469 -54.00938 31.955772 -205.5697 -53.776257 31.96714 -205.77747 -53.617611 31.978703 -206.04765 -53.548981 31.98933 -206.35379 -53.577072 31.997978 -206.66595 -53.699146 32.003803 -206.95355 -53.903244 32.006233 -207.18845 -54.169399 32.005035 -207.34763 -54.471546 32.000317 -207.41553 -54.780117 31.99255 -207.38551 -55.064896 31.982491 -207.26048 -55.298019 31.971123 -207.05272 -55.456665 31.95956 -206.78253 -55.525299 31.948935 -206.47639 -55.336273 31.501633 -206.0567 -55.21"
+		+ "4203 31.49581 -205.7691 -55.010101 31.493378 -205.53423 -54.74395 31.494577 -205.37505 -54.441799 31.499292 -205.30714 -54.133232 31.507061 -205.33716"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder3|running_shoe_latest1:pCylinderShape3" 
 		"pt[166:181]" " -53.84845 31.51712 -205.46217 -53.615326 31.528488 -205.66994 -53.45668 31.540051 -205.94012 -53.38805 31.550676 -206.24628 -53.416145 31.559324 -206.55843 -53.538216 31.565147 -206.84602 -53.742317 31.567581 -207.0809 -54.008469 31.56638 -207.2401 -54.310616 31.561665 -207.308 -54.619183 31.553898 -207.27797 -54.903969 31.543837 -207.15297 -55.137093 31.532471 -206.94519 -55.295734 31.520906 -206.67502 -55.364368 31.510281 -206.36885 -56.541336 33.111015 -207.05759 -54.376209 31.530479 -206.30757"
@@ -46071,7 +48395,7 @@ createNode reference -n "running_shoe_latestRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder4|running_shoe_latest1:pCylinderShape4" 
 		"pnts" " -s 182"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder4|running_shoe_latest1:pCylinderShape4" 
-		"pt[0:165]" (" -type \"float3\" -57.512329 33.439602 -205.95312 -57.357063 33.43919 -205.65598 -57.128574 33.440815 -205.41412 -56.849228 33.444313 -205.25121 -56.546368 33.449348 -205.1832 -56.249641 33.455421 -205.21674 -55.988094 33.461945 -205.34856 -55.787323 33.468269 -205.56575 -55.666988 33.473785 -205.84705 -55.638866 33.477951 -206.16492 -55.705711 33.480358 -206.48824 -55.860973 33.480766 -206.78539 -56.089462 33.479145 -207.02725 -56.368809 33.475647 -207.19016 -56.671669 33.470612 -207.25816 -56.968395 33.464539 -207.22462 -57.229946 33.458015 -207.0928 -57.430714 33.451691 -206.87563 -57.551048 33.446171 -206.59433 -57.57917 33.442009 -206.27646 -57.393116 33.422211 -205.98361 -57.23785 33.421799 -205.68646 -57.009361 33.423424 -205.44461 -56.730015 33.426926 -205.28169 -56.427158 33.431957 -205.21368 -56.130428 33.43803 -205.24722 -55.868881 33.44455 -205.37904 -55.668114 33.450882 -205.59624 -55.547779 33.456398 -205.87752 -55.519657 33.460564 -206.19539 -55.586498 33.462967 -206.51872 -55.74176 33.463379 -20"
+		"pt[0:165]" (" -type \"float3\" -57.512329 33.439602 -205.95313 -57.357063 33.43919 -205.65598 -57.128574 33.440815 -205.41412 -56.849228 33.444313 -205.25121 -56.546368 33.449348 -205.1832 -56.249641 33.455421 -205.21674 -55.988094 33.461945 -205.34856 -55.787323 33.468269 -205.56575 -55.666988 33.473785 -205.84705 -55.638866 33.477951 -206.16492 -55.705711 33.480358 -206.48824 -55.860973 33.480766 -206.78539 -56.089462 33.479145 -207.02725 -56.368809 33.475647 -207.19016 -56.671669 33.470612 -207.25816 -56.968395 33.464539 -207.22462 -57.229946 33.458015 -207.0928 -57.430714 33.451691 -206.87563 -57.551048 33.446171 -206.59433 -57.57917 33.442009 -206.27646 -57.393116 33.422211 -205.98361 -57.23785 33.421799 -205.68646 -57.009361 33.423424 -205.44461 -56.730015 33.426926 -205.28169 -56.427158 33.431957 -205.21368 -56.130428 33.43803 -205.24722 -55.868881 33.44455 -205.37904 -55.668114 33.450882 -205.59624 -55.547779 33.456398 -205.87752 -55.519657 33.460564 -206.19539 -55.586498 33.462967 -206.51872 -55.74176 33.463379 -20"
 		+ "6.81587 -55.970253 33.461754 -207.05772 -56.249599 33.458252 -207.22064 -56.552456 33.45322 -207.28865 -56.849182 33.447147 -207.25511 -57.110733 33.440628 -207.12329 -57.311501 33.434296 -206.9061 -57.431835 33.42878 -206.6248 -57.459957 33.424614 -206.30693 -57.23521 33.328049 -205.96268 -57.085907 33.320427 -205.66579 -56.862148 33.316326 -205.42412 -56.585842 33.316151 -205.26134 -56.284027 33.319916 -205.19337 -55.986256 33.327259 -205.22687 -55.721668 33.337456 -205.35855 -55.516167 33.349506 -205.57553 -55.389874 33.362236 -205.85658 -55.355141 33.374397 -206.17416 -55.415375 33.3848 -206.49721 -55.564678 33.392426 -206.7941 -55.788437 33.396523 -207.03577 -56.064743 33.396698 -207.19855 -56.366558 33.392933 -207.26651 -56.66433 33.38559 -207.23302 -56.928917 33.375397 -207.10132 -57.134415 33.363342 -206.88434 -57.260712 33.350613 -206.6033 -57.295444 33.338451 -206.28572 -57.138142 33.162937 -205.9458 -56.996838 33.150776 -205.65134 -56.77943 33.14307 -205.41159 -56.50721 33.140579 -205.25003 -56.206"
 		+ "821 33.143543 -205.18251 -55.907669 33.151672 -205.21559 -55.639038 33.164169 -205.34607 -55.427216 33.179813 -205.56114 -55.292946 33.197075 -205.83977 -55.249371 33.214256 -206.15469 -55.300751 33.229683 -206.47507 -55.442055 33.241844 -206.76956 -55.659462 33.24955 -207.00929 -55.931683 33.252041 -207.17084 -56.232071 33.249077 -207.23839 -56.531223 33.240952 -207.20529 -56.799854 33.228455 -207.07483 -57.011677 33.212807 -206.85974 -57.145943 33.195549 -206.5811 -57.189522 33.178364 -206.26619 -56.414753 33.155525 -205.62775 -56.273445 33.143364 -205.33328 -56.056042 33.135662 -205.09352 -55.783821 33.133167 -204.93198 -55.483429 33.136131 -204.86444 -55.18428 33.14426 -204.89752 -54.915646 33.156757 -205.028 -54.703827 33.172401 -205.24309 -54.569557 33.189663 -205.52171 -54.525978 33.206844 -205.83664 -54.577358 33.222275 -206.15701 -54.718666 33.234436 -206.45149 -54.936069 33.242138 -206.69124 -55.20829 33.244629 -206.85278 -55.508678 33.241669 -206.92033 -55.807831 33.23354 -206.88724 -56.076466 33.2"
 		+ "21043 -206.75677 -56.288284 33.205399 -206.54169 -56.422554 33.188141 -206.26305 -56.466133 33.170956 -205.94812 -55.772758 33.004944 -205.39088 -55.631451 32.992783 -205.09642 -55.414043 32.985081 -204.85667 -55.141827 32.98259 -204.69513 -54.841438 32.98555 -204.62759 -54.542286 32.993679 -204.66066 -54.273651 33.00618 -204.79114 -54.061832 33.02182 -205.00623 -53.927563 33.039082 -205.28487 -53.883984 33.056267 -205.59979 -53.935364 33.071693 -205.92017 -54.076675 33.083855 -206.21463 -54.294075 33.091557 -206.45438 -54.566296 33.094048 -206.61592 -54.866684 33.091087 -206.68347 -55.165836 33.082962 -206.65039 -55.434471 33.070461 -206.51991 -55.64629 33.054817 -206.30482 -55.78056 33.03756 -206.02618 -55.824139 33.020374 -205.71126 -55.698788 32.781239 -205.3553 -55.567062 32.769104 -205.06381 -55.355488 32.76157 -204.82585 -55.084778 32.759369 -204.66467 -54.781433 32.762718 -204.59608 -54.475143 32.771294 -204.62679 -54.195892 32.784248 -204.75378 -53.971012 32.80032 -204.96465 -53.822521 32.817932 -205"
@@ -46174,7 +48498,32 @@ createNode reference -n "running_shoe_latestRN1";
 		+ "0729 31.894913 -204.30565 -54.94812 31.894964 -204.06384 -54.666168 31.896042 -203.90042 -54.36245 31.898039 -203.83141 -54.066708 31.900761 -203.86354"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder10|running_shoe_latest1:pCylinderShape10" 
-		"pt[166:181]" " -53.807884 31.903938 -203.9937 -53.611317 31.907261 -204.20912 -53.496254 31.910406 -204.48871 -53.473949 31.913063 -204.80513 -53.546589 31.914974 -205.12737 -53.707066 31.915951 -205.42392 -53.939663 31.915899 -205.66573 -54.221626 31.914822 -205.82915 -54.525337 31.912825 -205.89816 -54.821083 31.910103 -205.86603 -55.079906 31.906925 -205.73587 -55.27647 31.903601 -205.52046 -55.391537 31.900455 -205.24086 -55.413841 31.8978 -204.92445 -52.722862 31.678188 -205.79987 -54.443893 31.905432 -204.86478";
+		"pt[166:181]" " -53.807884 31.903938 -203.9937 -53.611317 31.907261 -204.20912 -53.496254 31.910406 -204.48871 -53.473949 31.913063 -204.80513 -53.546589 31.914974 -205.12737 -53.707066 31.915951 -205.42392 -53.939663 31.915899 -205.66573 -54.221626 31.914822 -205.82915 -54.525337 31.912825 -205.89816 -54.821083 31.910103 -205.86603 -55.079906 31.906925 -205.73587 -55.27647 31.903601 -205.52046 -55.391537 31.900455 -205.24086 -55.413841 31.8978 -204.92445 -52.722862 31.678188 -205.79987 -54.443893 31.905432 -204.86478"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:sole|running_shoe_latest1:soleShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:body|running_shoe_latest1:bodyShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:lip|running_shoe_latest1:lipShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder1|running_shoe_latest1:pCylinderShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder2|running_shoe_latest1:pCylinderShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder3|running_shoe_latest1:pCylinderShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder4|running_shoe_latest1:pCylinderShape4.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder5|running_shoe_latest1:pCylinderShape5.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder6|running_shoe_latest1:pCylinderShape6.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder7|running_shoe_latest1:pCylinderShape7.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder8|running_shoe_latest1:pCylinderShape8.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|running_shoes|running_shoe_latest1:shoe|running_shoe_latest1:laces|running_shoe_latest1:pCylinder10|running_shoe_latest1:pCylinderShape10.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "shoe_jicRN";
@@ -46182,7 +48531,7 @@ createNode reference -n "shoe_jicRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"shoe_jicRN"
 		"shoe_jicRN" 0
-		"shoe_jicRN" 96
+		"shoe_jicRN" 98
 		0 "|shoe_jic:shoe" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe" 
@@ -46218,16 +48567,16 @@ createNode reference -n "shoe_jicRN";
 		+ "13 -65.297501 28.684677 -211.3085 -68.843132 28.617424 -211.84676 -72.546478 28.54718 -212.40894 -71.756042 29.287582 -213.01756 -66.157585 29.348888 -210.29245 -65.401787 28.651035 -210.01524 -69.045143 28.58193 -210.56833 -72.826508 28.510208 -211.14236 -72.199074 29.234297 -211.20958 -66.731255 29.385788 -208.23407 -65.99369 28.592897 -207.67554 -69.416199 28.527981 -208.1951 -72.838707 28.463064 -208.71465 -72.355461 29.27911 -209.08786 -68.491173 29.915106 -215.55557 -69.69062 29.895441 -215.79727 -70.104919 29.833107 -215.4357 -70.870895 29.678797 -214.55093 -66.882904 29.888554 -214.84019 -66.467896 29.760155 -213.85599 -67.291718 29.934771 -215.31389 -71.802284 29.524466 -212.8974 -66.030373 29.633947 -212.0213 -72.23967 29.479076 -211.17285 -66.200951 29.593618 -210.25618 -72.153313 29.590908 -209.76181 -66.69574 29.691885 -208.87445 -71.871246 29.659777 -208.83975 -67.66114 29.735531 -208.12962 -66.351173 29.166086 -215.38776 -66.896759 29.217653 -216.23134 -68.173485 29.21034 -216.60991 -69.464447 "
 		+ "29.169632 -216.65361 -70.229881 29.093025 -216.00093 -71.371376 29.026506 -215.07185 -72.289162 28.94417 -212.35526 -72.576912 28.91131 -211.25546 -72.664581 28.860325 -208.79895 -73.145531 28.804199 -206.5253 -75.064484 28.670755 -198.82513 -74.656464 28.684528 -196.92137 -73.634979 28.70294 -194.87073 -71.326553 28.760511 -192.78003 -68.609215 28.798265 -194.10779 -67.635323 28.817703 -195.85553 -66.958015 28.824514 -197.59451 -66.786118 28.879732 -205.55072 -66.310989 28.980837 -207.83443 -65.709 29.041578 -210.21286 -65.628868 29.070499 -211.34419 -65.806618 29.132057 -214.22708 -72.99263 28.876774 -206.5889 -72.594017 28.946095 -208.85431 -72.487953 29.000994 -211.27629 -72.140846 29.033724 -212.68764 -65.680473 29.156261 -211.70691 -65.809143 29.127674 -210.26241 -66.407318 29.063442 -207.91513 -66.901634 28.991535 -205.66876 -71.299416 29.346191 -213.87364 -71.355797 29.598448 -213.69006 -66.240112 29.694448 -212.9008 -66.158234 29.443708 -213.09317 -65.666374 29.104996 -213.03954 -65.309326 28.713661 "
 		+ "-213.01268 -68.585617 28.651518 -213.51004 -72.11412 28.584591 -214.04568 -71.801491 28.988628 -213.97089 -72.276939 29.23311 -210.16237 -72.19104 29.528624 -210.35497 -66.474091 29.63623 -209.47682 -66.431725 29.343979 -209.27502 -66.090508 29.097462 -209.15833 -65.992157 29.013008 -209.09413 -65.680191 28.62369 -208.91473 -69.219673 28.556555 -209.45204 -72.832245 28.488033 -210.00046 -72.618149 28.887329 -210.10001 -72.537842 28.975172 -210.13707 -72.55394 29.401852 -207.85529 -72.13884 29.620035 -209.48492 -66.901482 29.71496 -208.57416 -67.055618 29.506504 -207.02066 -66.665909 29.025826 -206.73999 -66.559547 28.927946 -206.63974 -66.202705 28.558069 -206.54848 -69.591949 28.493784 -207.06299 -73.197777 28.42539 -207.61038 -72.916183 28.830963 -207.60953 -72.802544 28.90983 -207.6692 -65.897736 28.763103 -216.10631 -66.67894 28.865976 -216.88724 -66.759766 29.238373 -216.72197 -66.190804 29.184595 -215.84222 -68.036858 28.840219 -217.09338 -68.091209 29.230747 -217.11674 -69.394775 28.814463 -217.29951 -"
-		+ "69.4375 29.188293 -217.16234 -70.346001 28.67873 -216.78159 -70.235741 29.108404 -216.48167 -71.621498 29.03533 -215.54243 -71.814819 28.609701 -215.61472 -72.070045 28.995827 -214.39429 -72.200729 28.57818 -214.44264 -72.574684 28.949875 -212.73521 -72.878693 28.915197 -211.56248 -72.64769 28.539577 -212.76155 -72.943642 28.500608 -211.4149 -72.9217 28.890186 -210.35751 -72.949631 28.477484 -210.22404 -72.970123 28.862026 -209.0007 -73.232506 28.831406 -207.7603 -72.956367 28.451447 -208.88315 -73.330818 28.412157 -207.73154 -73.471687 28.803495 -206.62961 -75.404297 28.670019 -198.87367 -73.672157 28.376343 -206.68179 -75.551384 28.22625 -198.12933 -74.85701 28.682306 -196.58521 -74.846054 28.241892 -196.12242 -73.786766 28.701601 -194.44592 -73.665649 28.302767 -193.88524 -71.37941 28.761639 -192.26562 -71.297424 28.428783 -192.34631 -68.621468 28.393805 -192.89821 -68.545616 28.801014 -193.65028 -67.408279 28.376965 -194.70695 -67.362617 28.824457 -195.44753 -66.573936 28.39653 -196.76649 -66.643654 28.83"
+		+ "69.4375 29.188293 -217.16234 -70.346001 28.67873 -216.78159 -70.235741 29.108404 -216.48167 -71.621498 29.03533 -215.54243 -71.814819 28.609701 -215.61472 -72.070045 28.995827 -214.39429 -72.200729 28.57818 -214.44264 -72.574684 28.949875 -212.73521 -72.878693 28.915197 -211.56248 -72.64769 28.539577 -212.76155 -72.943642 28.500608 -211.4149 -72.9217 28.890186 -210.35751 -72.949631 28.477484 -210.22404 -72.970123 28.862026 -209.0007 -73.232506 28.831406 -207.7603 -72.956367 28.451447 -208.88315 -73.330818 28.412157 -207.73154 -73.471687 28.803495 -206.62961 -75.404297 28.670019 -198.87367 -73.672157 28.376343 -206.68179 -75.551384 28.22625 -198.12933 -74.85701 28.682306 -196.58521 -74.846054 28.241892 -196.12242 -73.786766 28.701601 -194.44592 -73.665649 28.302767 -193.88524 -71.37941 28.761639 -192.26563 -71.297424 28.428783 -192.34631 -68.621468 28.393805 -192.89821 -68.545616 28.801014 -193.65028 -67.408279 28.376965 -194.70695 -67.362617 28.824457 -195.44753 -66.573936 28.39653 -196.76649 -66.643654 28.83"
 		+ "123 -197.30722 -66.234673 28.517414 -205.55273 -66.471718 28.889246 -205.5574 -66.035973 28.550522 -206.62415 -65.818001 28.586843 -207.7995"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:shoe|shoe_jic:polySurface17|shoe_jic:polySurfaceShape17" 
 		"pt[166:331]" (" -65.976227 28.994682 -207.93898 -66.235435 28.939526 -206.6931 -65.491066 28.618956 -209.0918 -65.200729 28.647474 -210.23947 -65.348434 29.058027 -210.41936 -65.643723 29.028233 -209.25267 -65.088051 28.682966 -211.61395 -65.260941 29.088598 -211.62495 -65.104309 28.712782 -213.36537 -65.221481 28.734762 -214.6138 -65.450241 29.152384 -214.60561 -65.303986 29.124163 -213.36716 -75.003746 28.675617 -199.09943 -70.974541 29.148319 -199.67029 -66.957939 28.830097 -198.18089 -67.385979 29.933226 -215.33289 -67.162811 29.729668 -215.6813 -66.997093 29.217079 -216.26109 -66.864403 29.237774 -216.75299 -66.78566 28.863953 -216.90344 -66.921585 28.85862 -216.40535 -66.237755 28.758736 -215.66643 -65.656174 28.730289 -214.24541 -65.566803 28.708778 -213.05177 -65.576149 28.679392 -211.3508 -65.68811 28.645605 -210.05872 -65.958359 28.618414 -208.95695 -66.262657 28.587797 -207.71637 -66.469055 28.553019 -206.58891 -66.657204 28.521315 -205.56117 -67.065903 28.404366 -197.10255 -67.815125 28.386021 -195.16603 -68.824"
-		+ "562 28.399174 -193.12617 -70.375839 28.457874 -192.72501 -70.387955 28.446033 -192.20824 -70.433701 28.779533 -192.11998 -70.419708 28.77767 -192.64038 -69.897293 29.159309 -199.53769 -68.805969 29.680315 -206.16885 -68.526093 29.879717 -207.90944 -69.609184 29.896776 -215.78087 -69.492386 29.686438 -216.10497 -69.376793 29.172396 -216.65063 -69.346092 29.191175 -217.15924 -69.302574 28.816212 -217.28552 -69.335068 28.812841 -216.77174 -70.190811 28.683756 -216.26653 -71.517395 28.61911600000000178 -215.13518 -71.87455 28.589136 -214.00932 -72.295044 28.55195 -212.37077 -72.569771 28.515078 -211.10339 -72.586967 28.492685 -209.96323 -72.606331 28.467472 -208.67938 -72.952957 28.430035 -207.57321 -73.268921 28.395906 -206.56488 -75.048981 28.252945 -198.31442 -74.459457 28.265997 -196.46106 -73.429619 28.318604 -194.14853 -72.130157 28.424599 -192.99132 -72.217453 28.411331 -192.48598 -72.33609 28.743538 -192.41295 -72.243927 28.743153 -192.9213 -72.081047 29.101431 -199.82639 -71.37558 29.630684 -206.55931 -7"
-		+ "1.150963 29.825808 -208.03082 -69.941666 29.674988 -206.44028 -68.871529 29.674999 -206.30457 -70.956871 29.138435 -199.74208 -69.9328 29.148252 -199.61658 -68.621704 29.880142 -208.10199 -69.777832 29.899513 -207.87978 -71.288582 29.628895 -206.68382 -72.010193 29.09272 -199.8911 -71.047829 29.830942 -208.21512 -70.960617 29.144005 -199.72626 -72.018867 29.098183 -199.87593 -71.298759 29.633715 -206.6631 -71.059494 29.835121 -208.18886 -68.614952 29.884758 -208.07497 -68.867561 29.680147 -206.28282 -69.931618 29.153933 -199.6001 -70.971672 29.144051 -199.68242 -72.074402 29.097246 -199.83801 -71.367783 29.626989 -206.5752 -71.142021 29.822605 -208.05095 -68.531265 29.876181 -207.93015 -68.809006 29.676371 -206.18552 -69.898201 29.154957 -199.55032 -71.198593 29.814827 -208.08434 -68.41317 29.860893 -207.93819 -68.688477 29.882421 -208.09901 -68.952744 29.674999 -206.31487 -69.996895 29.147638 -199.62444 -69.996605 29.153305 -199.60806 -69.971222 29.154215 -199.55931 -69.971001 29.158558 -199.54677 -72.019562"
-		+ " 29.104036 -199.8177 -72.014091 29.099806 -199.8295 -71.972366 29.100197 -199.86935 -71.965218 29.094673 -199.88474 -71.220299 29.631231 -206.67148 -71.00808 29.833641 -208.21008 -66.957954 28.829166 -198.08308 -74.992363 28.676516 -199.1402 -74.92382 28.730133 -199.19302 -73.499802 28.987352 -200.09969 -72.123085 29.10108 -199.87851 -72.076378 29.104939 -199.871 -72.069717 29.100756 -199.88266 -71.99791 29.090647 -200.01498 -72.005409 29.096273 -199.93611 -71.960281 29.098228 -199.92972 -70.950142 29.141991 -199.78647 -69.989975 29.151133 -199.66878 -69.909576 29.140659 -199.75499 -69.924568 29.157419 -199.64438 -69.890976 29.158413 -199.5943 -69.89006 29.162762 -199.58163 -69.826073 29.160458 -199.57256 -68.204498 29.102755 -199.34222 -67.03746 28.884895 -198.27527 -66.957932 28.830494 -198.22246 -74.037071 28.735847 -203.45926 -73.937988 28.796856 -203.43228 -73.107956 29.204382 -203.42905 -71.72776 29.366474 -203.19815 -71.720535 29.362534 -203.2119 -71.658249 29.366371 -203.27486 -71.648819 29.361229 -20"
-		+ "3.2928 -71.592171 29.363375 -203.28345 -70.448471 29.407133 -203.09645 -69.473999 29.411734 -202.97491 -69.401329 29.412041 -202.96584 -69.39875 29.417454 -202.94672 -69.352745 29.416075 -202.87315 -69.350769 29.420223 -202.85849 -67.768745 29.313519 -202.64189 -66.883972 28.932873 -202.50412 -66.786545 28.849916 -202.41885 -66.47216 28.85808 -202.28384 -66.311676 28.457481 -202.03387 -66.467079 28.468851 -202.14687 -66.765984 28.463182 -202.19223 -70.270538 28.396709 -202.72424 -74.083931 28.324379 -203.30315 -74.361702 28.319111 -203.34531 -74.544632 28.301323 -203.28369 -74.368591 28.736078 -203.59599 -66.502625 28.857288 -202.29692 -66.50219 28.888323 -205.55675 -66.266846 28.938402 -206.68793 -66.008675 28.993341 -207.92885 -65.677498 29.026756 -209.2373 -65.383377 29.056433 -210.39934 -65.2966 29.086843 -211.59773 -65.339104 29.122305 -213.3354 -65.484779 29.150414 -214.56891 -66.206345 29.182802 -215.79819 -66.773048 29.236364 -216.67442 -66.877266 29.235767 -216.70532 -68.09919 29.228769 -217.06763 -6"
-		+ "9.349068 29.189356 -217.10994 -69.440109 29.186485 -217.11304 -70.235168 29.106915 -216.43507 -71.59726 29.034475 -215.49683 -72.044022 28.995129 -214.35326"
+		+ "562 28.399174 -193.12617 -70.375839 28.457874 -192.72501 -70.387955 28.446033 -192.20824 -70.433701 28.779533 -192.11998 -70.419708 28.77767 -192.64038 -69.897293 29.159309 -199.53769 -68.805969 29.680315 -206.16885 -68.526093 29.879717 -207.90944 -69.609184 29.896776 -215.78087 -69.492386 29.686438 -216.10497 -69.376793 29.172396 -216.65063 -69.346092 29.191175 -217.15924 -69.302574 28.816212 -217.28552 -69.335068 28.812841 -216.77174 -70.190811 28.683756 -216.26653 -71.517395 28.619116 -215.13518 -71.87455 28.589136 -214.00932 -72.295044 28.55195 -212.37077 -72.569771 28.515078 -211.10339 -72.586967 28.492685 -209.96323 -72.606331 28.467472 -208.67938 -72.952957 28.430035 -207.57321 -73.268921 28.395906 -206.56488 -75.048981 28.252945 -198.31442 -74.459457 28.265997 -196.46106 -73.429619 28.318604 -194.14853 -72.130157 28.424599 -192.99132 -72.217453 28.411331 -192.48598 -72.33609 28.743538 -192.41295 -72.243927 28.743153 -192.9213 -72.081047 29.101431 -199.82639 -71.37558 29.630684 -206.55931 -71.150963 29"
+		+ ".825808 -208.03082 -69.941666 29.674988 -206.44028 -68.871529 29.674999 -206.30457 -70.956871 29.138435 -199.74208 -69.9328 29.148252 -199.61658 -68.621704 29.880142 -208.10199 -69.777832 29.899513 -207.87978 -71.288582 29.628895 -206.68382 -72.010193 29.09272 -199.8911 -71.047829 29.830942 -208.21512 -70.960617 29.144005 -199.72626 -72.018867 29.098183 -199.87593 -71.298759 29.633715 -206.6631 -71.059494 29.835121 -208.18886 -68.614952 29.884758 -208.07497 -68.867561 29.680147 -206.28282 -69.931618 29.153933 -199.6001 -70.971672 29.144051 -199.68242 -72.074402 29.097246 -199.83801 -71.367783 29.626989 -206.5752 -71.142021 29.822605 -208.05095 -68.531265 29.876181 -207.93015 -68.809006 29.676371 -206.18552 -69.898201 29.154957 -199.55032 -71.198593 29.814827 -208.08434 -68.41317 29.860893 -207.93819 -68.688477 29.882421 -208.09901 -68.952744 29.674999 -206.31487 -69.996895 29.147638 -199.62444 -69.996605 29.153305 -199.60806 -69.971222 29.154215 -199.55931 -69.971001 29.158558 -199.54677 -72.019562 29.104036 "
+		+ "-199.8177 -72.014091 29.099806 -199.8295 -71.972366 29.100197 -199.86935 -71.965218 29.094673 -199.88474 -71.220299 29.631231 -206.67148 -71.00808 29.833641 -208.21008 -66.957954 28.829166 -198.08308 -74.992363 28.676516 -199.1402 -74.92382 28.730133 -199.19302 -73.499802 28.987352 -200.09969 -72.123085 29.10108 -199.87851 -72.076378 29.104939 -199.871 -72.069717 29.100756 -199.88266 -71.99791 29.090647 -200.01498 -72.005409 29.096273 -199.93611 -71.960281 29.098228 -199.92972 -70.950142 29.141991 -199.78647 -69.989975 29.151133 -199.66878 -69.909576 29.140659 -199.75499 -69.924568 29.157419 -199.64438 -69.890976 29.158413 -199.5943 -69.89006 29.162762 -199.58163 -69.826073 29.160458 -199.57256 -68.204498 29.102755 -199.34222 -67.03746 28.884895 -198.27527 -66.957932 28.830494 -198.22246 -74.037071 28.735847 -203.45926 -73.937988 28.796856 -203.43228 -73.107956 29.204382 -203.42905 -71.72776 29.366474 -203.19815 -71.720535 29.362534 -203.2119 -71.658249 29.366371 -203.27486 -71.648819 29.361229 -203.2928 -71."
+		+ "592171 29.363375 -203.28345 -70.448471 29.407133 -203.09645 -69.473999 29.411734 -202.97491 -69.401329 29.412041 -202.96584 -69.39875 29.417454 -202.94672 -69.352745 29.416075 -202.87315 -69.350769 29.420223 -202.85849 -67.768745 29.313519 -202.64189 -66.883972 28.932873 -202.50412 -66.786545 28.849916 -202.41885 -66.47216 28.85808 -202.28384 -66.311676 28.457481 -202.03387 -66.467079 28.468851 -202.14687 -66.765984 28.463182 -202.19223 -70.270538 28.396709 -202.72424 -74.083931 28.324379 -203.30315 -74.361702 28.319111 -203.34531 -74.544632 28.301323 -203.28369 -74.368591 28.736078 -203.59599 -66.502625 28.857288 -202.29692 -66.50219 28.888323 -205.55675 -66.266846 28.938402 -206.68793 -66.008675 28.993341 -207.92885 -65.677498 29.026756 -209.2373 -65.383377 29.056433 -210.39934 -65.2966 29.086843 -211.59773 -65.339104 29.122305 -213.3354 -65.484779 29.150414 -214.56891 -66.206345 29.182802 -215.79819 -66.773048 29.236364 -216.67442 -66.877266 29.235767 -216.70532 -68.09919 29.228769 -217.06763 -69.349068 29"
+		+ ".189356 -217.10994 -69.440109 29.186485 -217.11304 -70.235168 29.106915 -216.43507 -71.59726 29.034475 -215.49683 -72.044022 28.995129 -214.35326"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:shoe|shoe_jic:polySurface17|shoe_jic:polySurfaceShape17" 
 		"pt[332:497]" (" -72.547012 28.949322 -212.69839 -72.849449 28.91482 -211.53273 -72.892281 28.88991 -210.33255 -72.940514 28.86186 -208.98114 -73.201851 28.831364 -207.7457 -73.440079 28.803564 -206.61951 -74.336456 28.736055 -203.58275 -66.757683 28.850666 -202.40646 -66.757263 28.880606 -205.55133 -66.529793 28.929008 -206.64464 -66.280258 28.982107 -207.84402 -65.960175 29.014404 -209.10869 -65.675903 29.043089 -210.23183 -65.595093 29.072161 -211.36996 -65.63311 29.106756 -213.06961 -65.773911 29.133923 -214.26183 -66.336449 29.167784 -215.42947 -66.884186 29.219555 -216.27638 -66.984512 29.216593 -216.30655 -68.165535 29.209829 -216.65672 -69.373573 29.171734 -216.69763 -69.461967 29.171345 -216.7003 -70.230423 29.094439 -216.04506 -71.394341 29.027317 -215.11505 -71.826141 28.989288 -214.00975 -72.315369 28.944693 -212.39014 -72.604614 28.911667 -211.28365 -72.646011 28.88759 -210.12364 -72.692627 28.860481 -208.81746 -72.945221 28.831005 -207.62337 -73.175476 28.804134 -206.53487 -74.067505 28.735868 -203.4718 -75.114"
@@ -46290,12 +48639,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface1" 
 		"scalePivot" " -type \"double3\" -69.95946132547278751 32.72508728580872628 -205.05719241544309739"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface1|shoe_jic:polySurfaceShape1" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface1|shoe_jic:transform14|shoe_jic:polySurfaceShape1" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -68.008301 29.572977 -205.67236 -68.303917 29.627995 -205.43625 -68.833153 29.64366 -205.23834 -69.440056 29.647243 -205.11777 -69.957451 29.644289 -205.16603 -70.558052 29.600155 -205.25002 -71.029434 29.579153 -205.47878 -71.608047 29.544121 -205.65831 -71.583099 29.547527 -205.84462 -70.987335 29.625431 -205.85443 -70.475037 29.665813 -205.86369 -69.940536 29.729416 -205.84093 -69.452263 29.738817 -205.8685 -68.896362 29.72143 -205.8887 -68.293449 29.702835 -205.98076 -68.016403 29.606501 -206.0789 -68.865738 29.734205 -205.82269 -68.219017 29.713013 -205.93365 -68.802536 29.656435 -205.17233 -68.229485 29.638172 -205.38913 -67.910797 29.614342 -206.04974 -67.902695 29.580818 -205.6432 -69.438423 29.751736 -205.80049 -69.426224 29.660162 -205.04977 -69.946396 29.74213 -205.77475 -69.963303 29.657003 -205.09985 -70.506531 29.6782 -205.80435 -70.589546 29.612539 -205.19067 -71.039322 29.636099 -205.79578 -71.081421 29.589821 -205.42012 -71.650963 29.589382 -205.77858 -71.670418 29.55331"
 		+ "2 -205.59641")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface1|shoe_jic:polySurfaceShape1" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface1|shoe_jic:transform14|shoe_jic:polySurfaceShape1" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface1|shoe_jic:polySurfaceShape1" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface1|shoe_jic:transform14|shoe_jic:polySurfaceShape1" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface2" 
 		"rotatePivot" " -type \"double3\" -70.32475565137941942 32.34814104439948323 -204.00153186545836093"
@@ -46303,12 +48652,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface2" 
 		"scalePivot" " -type \"double3\" -70.32475565137941942 32.34814104439948323 -204.00153186545836093"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface2|shoe_jic:polySurfaceShape2" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface2|shoe_jic:transform13|shoe_jic:polySurfaceShape2" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -68.295197 31.915562 -204.38853 -68.593185 31.934048 -204.28535 -69.044037 31.833324 -204.13458 -69.643318 31.834932 -204.0372 -70.16098 31.815334 -204.11014 -70.818626 31.734386 -204.2097 -71.253624 31.758558 -204.39221 -71.856689 31.809044 -204.46347 -71.831902 31.787632 -204.69017 -71.21344 31.935791 -204.79518 -70.738319 32.008072 -204.85114 -70.147629 32.135323 -204.84023 -69.659378 32.184895 -204.84578 -69.110558 32.13245 -204.83514 -68.585838 32.202206 -204.88458 -68.304741 32.078762 -204.80037 -69.080414 32.136581 -204.79646 -68.511749 32.208389 -204.85611 -69.013893 31.837458 -204.0959 -68.519096 31.940229 -204.25688 -68.199364 32.086807 -204.7823 -68.189819 31.923611 -204.37048 -69.646034 32.188251 -204.80643 -69.629982 31.838287 -203.99783 -70.153984 32.138271 -204.8031 -70.167336 31.818283 -204.07301 -70.770325 32.011581 -204.82074 -70.850632 31.737894 -204.17931 -71.265877 31.936089 -204.76361 -71.306068 31.758856 -204.36066 -71.901489 31.913971 -204.64479 -71.919472 31.8057"
 		+ "61 -204.42714")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface2|shoe_jic:polySurfaceShape2" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface2|shoe_jic:transform13|shoe_jic:polySurfaceShape2" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface2|shoe_jic:polySurfaceShape2" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface2|shoe_jic:transform13|shoe_jic:polySurfaceShape2" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface4" 
 		"rotatePivot" " -type \"double3\" -70.69350269984704482 31.62576932746357983 -202.76665874785740584"
@@ -46316,12 +48665,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface4" 
 		"scalePivot" " -type \"double3\" -70.69350269984704482 31.62576932746357983 -202.76665874785740584"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface4|shoe_jic:polySurfaceShape4" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface4|shoe_jic:transform12|shoe_jic:polySurfaceShape4" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -68.627235 31.568968 -203.15221 -69.083 31.542143 -203.08319 -69.52504 31.529016 -202.96959 -70.156212 31.428638 -202.80513 -70.668121 31.341755 -202.89099 -71.082985 31.258595 -202.97627 -71.554855 31.227699 -203.16052 -72.153061 31.29356 -203.25171 -72.127998 31.245928 -203.47618 -71.510857 31.387747 -203.57549 -70.997299 31.504044 -203.63416 -70.629181 31.522966 -203.69875 -70.144119 31.62125 -203.69853 -69.570595 31.717813 -203.73419 -69.051216 31.77776 -203.74591 -68.632935 31.706621 -203.57509 -69.536613 31.73064 -203.71083 -68.976128 31.786219 -203.72142 -69.491058 31.541843 -202.94623 -69.007919 31.5506 -203.0587 -68.526894 31.715508 -203.5596 -68.521194 31.57785 -203.13672 -70.125893 31.635283 -203.67865 -70.137985 31.442675 -202.78523 -70.630714 31.53661 -203.68086 -70.669655 31.355398 -202.87309 -71.028244 31.510559 -203.60806 -71.113937 31.265112 -202.95016 -71.562347 31.391159 -203.54781 -71.606346 31.23111 -203.13284 -72.186554 31.380142 -203.47269 -72.213066 31.299438 -203"
 		+ ".22685")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface4|shoe_jic:polySurfaceShape4" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface4|shoe_jic:transform12|shoe_jic:polySurfaceShape4" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface4|shoe_jic:polySurfaceShape4" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface4|shoe_jic:transform12|shoe_jic:polySurfaceShape4" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface5" 
 		"rotatePivot" " -type \"double3\" -70.42645537842119552 32.69953322043878785 -204.87392987360510688"
@@ -46329,12 +48678,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface5" 
 		"scalePivot" " -type \"double3\" -70.42645537842119552 32.69953322043878785 -204.87392987360510688"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface5|shoe_jic:polySurfaceShape5" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface5|shoe_jic:transform11|shoe_jic:polySurfaceShape5" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -70.318588 32.302704 -206.20515 -70.15406 32.565811 -206.04587 -70.224525 32.539101 -205.88547 -70.219292 32.610535 -205.63278 -70.197052 32.562984 -205.47278 -70.040184 32.491798 -205.24974 -70.024841 32.421528 -205.13153 -69.991997 32.239147 -205.06599 -70.033104 32.123615 -205.14081 -70.165085 32.341999 -205.12041 -70.255531 32.363091 -205.24658 -70.439957 32.344891 -205.46278 -70.482742 32.368404 -205.61481 -70.435501 32.342335 -205.84027 -70.309875 32.35741 -205.99004 -70.428001 32.194084 -206.20145 -70.457939 32.348232 -205.83289 -70.327812 32.359447 -206.00488 -70.246971 32.544994 -205.87807 -70.171997 32.567852 -206.0607 -70.443001 32.191631 -206.23125 -70.333588 32.300251 -206.23497 -70.495522 32.377739 -205.59386 -70.232079 32.619869 -205.61183 -70.451744 32.352966 -205.43547 -70.208839 32.57106 -205.44548 -70.260849 32.373386 -205.21977 -70.045502 32.502094 -205.22295 -70.16684 32.351383 -205.08861 -70.026588 32.430916 -205.09973 -70.078339 32.209415 -205.01231 -69.990379 32.2"
 		+ "48863 -205.03207")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface5|shoe_jic:polySurfaceShape5" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface5|shoe_jic:transform11|shoe_jic:polySurfaceShape5" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface5|shoe_jic:polySurfaceShape5" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface5|shoe_jic:transform11|shoe_jic:polySurfaceShape5" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface7" 
 		"rotatePivot" " -type \"double3\" -70.14316265442090526 32.4986291609069724 -204.52588391126494116"
@@ -46342,12 +48691,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface7" 
 		"scalePivot" " -type \"double3\" -70.14316265442090526 32.4986291609069724 -204.52588391126494116"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface7|shoe_jic:polySurfaceShape7" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface7|shoe_jic:transform10|shoe_jic:polySurfaceShape7" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -68.17189 32.124115 -204.89157 -68.467506 32.149292 -204.79805 -68.989845 32.129795 -204.66789 -69.596748 32.123417 -204.57594 -70.114143 32.104542 -204.64996 -70.714745 31.965422 -204.73151 -71.184822 31.940395 -204.92313 -71.788841 31.98867 -204.9906 -71.763893 31.963003 -205.21735 -71.142723 32.109314 -205.33215 -70.631729 32.22541 -205.3813 -70.097237 32.409813 -205.39142 -69.608955 32.457096 -205.3968 -69.053055 32.414989 -205.379 -68.457039 32.405624 -205.40739 -68.179993 32.2784 -205.30763 -69.02243 32.420578 -205.34227 -68.382607 32.412666 -205.38029 -68.959229 32.135384 -204.63116 -68.393074 32.156334 -204.77095 -68.074387 32.286781 -205.29047 -68.066284 32.132492 -204.87442 -69.595116 32.462013 -205.35947 -69.582916 32.12833 -204.5386 -70.103088 32.414349 -205.35635 -70.119995 32.109077 -204.6149 -70.663223 32.230442 -205.35298 -70.746239 31.970449 -204.70319 -71.194702 32.111183 -205.30249 -71.236809 31.942263 -204.89346 -71.831757 32.091324 -205.17859 -71.851219 31.987059 -20"
 		+ "4.95596")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface7|shoe_jic:polySurfaceShape7" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface7|shoe_jic:transform10|shoe_jic:polySurfaceShape7" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface7|shoe_jic:polySurfaceShape7" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface7|shoe_jic:transform10|shoe_jic:polySurfaceShape7" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface8" 
 		"rotatePivot" " -type \"double3\" -70.42095075452944286 32.08050943025733659 -203.49745542785703378"
@@ -46355,12 +48704,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface8" 
 		"scalePivot" " -type \"double3\" -70.42095075452944286 32.08050943025733659 -203.49745542785703378"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface8|shoe_jic:polySurfaceShape8" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface8|shoe_jic:transform9|shoe_jic:polySurfaceShape8" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -68.419121 31.612473 -203.7771 -68.709549 31.650263 -203.70439 -69.159607 31.568855 -203.55896 -69.756599 31.585068 -203.47189 -70.273407 31.567549 -203.54825 -70.933235 31.486982 -203.63979 -71.369331 31.500305 -203.81689 -71.975388 31.544495 -203.87622 -71.950256 31.509996 -204.10258 -71.323517 31.651215 -204.23746 -70.845009 31.717516 -204.30522 -70.249565 31.840853 -204.31146 -69.761307 31.883423 -204.31619 -69.216362 31.823822 -204.29025 -68.692963 31.880783 -204.33322 -68.424507 31.747747 -204.20085 -69.1847 31.832172 -204.25775 -68.617783 31.889425 -204.3091 -69.127945 31.577204 -203.52646 -68.634369 31.658905 -203.68027 -68.318398 31.756695 -204.18561 -68.313011 31.621418 -203.76186 -69.746384 31.891308 -204.28325 -69.741684 31.592953 -203.43896 -70.254326 31.848412 -204.28087 -70.278168 31.575108 -203.51765 -70.875397 31.72543 -204.2814 -70.963623 31.494896 -203.61595 -71.374504 31.656086 -204.21185 -71.420319 31.505178 -203.79129 -72.014465 31.641563 -204.07779 -72.036873 31.54"
 		+ "612 -203.84534")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface8|shoe_jic:polySurfaceShape8" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface8|shoe_jic:transform9|shoe_jic:polySurfaceShape8" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface8|shoe_jic:polySurfaceShape8" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface8|shoe_jic:transform9|shoe_jic:polySurfaceShape8" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface9" 
 		"rotatePivot" " -type \"double3\" -70.8429030414187082 31.35544020433543722 -202.17831763298283931"
@@ -46368,12 +48717,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface9" 
 		"scalePivot" " -type \"double3\" -70.8429030414187082 31.35544020433543722 -202.17831763298283931"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface9|shoe_jic:polySurfaceShape9" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface9|shoe_jic:transform8|shoe_jic:polySurfaceShape9" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -68.776634 31.298637 -202.56384 -69.232399 31.271814 -202.49486 -69.674438 31.258688 -202.38126 -70.305611 31.158308 -202.21677 -70.81752 31.071426 -202.30264 -71.232384 30.988264 -202.38792 -71.704254 30.957369 -202.57219 -72.302467 31.023232 -202.66336 -72.277397 30.975597 -202.88783 -71.660255 31.117418 -202.98714 -71.146698 31.233715 -203.04582 -70.77858 31.252636 -203.1104 -70.293518 31.350918 -203.11018 -69.719994 31.447485 -203.14586 -69.200615 31.507431 -203.15758 -68.782333 31.436295 -202.98676 -69.686012 31.46031 -203.1225 -69.125526 31.515888 -203.13309 -69.640457 31.271513 -202.35789 -69.157318 31.280272 -202.47037 -68.676292 31.445177 -202.97127 -68.670593 31.307522 -202.54837 -70.275291 31.364956 -203.0903 -70.287384 31.172344 -202.1969 -70.780113 31.266279 -203.0925 -70.819061 31.08507 -202.28476 -71.177643 31.240229 -203.01971 -71.263336 30.994781 -202.36183 -71.711754 31.120829 -202.95947 -71.755753 30.960781 -202.54449 -72.33596 31.109812 -202.88435 -72.362465 31.029108"
 		+ " -202.6385")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface9|shoe_jic:polySurfaceShape9" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface9|shoe_jic:transform8|shoe_jic:polySurfaceShape9" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface9|shoe_jic:polySurfaceShape9" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface9|shoe_jic:transform8|shoe_jic:polySurfaceShape9" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface10" 
 		"rotatePivot" " -type \"double3\" -70.56176614813497849 32.39382975861094138 -204.30309239535492338"
@@ -46381,12 +48730,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface10" 
 		"scalePivot" " -type \"double3\" -70.56176614813497849 32.39382975861094138 -204.30309239535492338"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface10|shoe_jic:polySurfaceShape10" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface10|shoe_jic:transform7|shoe_jic:polySurfaceShape10" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -70.49675 32.040241 -205.68384 -70.277969 32.278934 -205.48906 -70.351257 32.251072 -205.32436 -70.350075 32.32111 -205.0654 -70.328537 32.272736 -204.90445 -70.171227 32.203094 -204.68175 -70.153519 32.13279 -204.56738 -70.11319 31.957968 -204.51222 -70.15255 31.839985 -204.59048 -70.292755 32.042885 -204.56042 -70.370667 32.061005 -204.73679 -70.568153 32.037045 -204.90402 -70.609787 32.059814 -205.05812 -70.559441 32.037632 -205.2877 -70.431038 32.055141 -205.44139 -70.603661 31.923288 -205.6862 -70.583084 32.042191 -205.27866 -70.449654 32.056328 -205.45534 -70.374901 32.255634 -205.31529 -70.296577 32.280121 -205.50301 -70.618858 31.920286 -205.71582 -70.511963 32.037243 -205.71346 -70.623985 32.067707 -205.03522 -70.364265 32.328999 -205.04248 -70.581367 32.043659 -204.87476 -70.341751 32.27935 -204.87518 -70.377464 32.070202 -204.70784 -70.178017 32.212292 -204.65282 -70.295921 32.05138 -204.52655 -70.156685 32.141289 -204.53351 -70.201286 31.920666 -204.4575 -70.112953 31.967022 "
 		+ "-204.4762")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface10|shoe_jic:polySurfaceShape10" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface10|shoe_jic:transform7|shoe_jic:polySurfaceShape10" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface10|shoe_jic:polySurfaceShape10" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface10|shoe_jic:transform7|shoe_jic:polySurfaceShape10" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface11" 
 		"rotatePivot" " -type \"double3\" -70.68047644946926766 32.09878184329694051 -203.7063249081163292"
@@ -46394,12 +48743,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface11" 
 		"scalePivot" " -type \"double3\" -70.68047644946926766 32.09878184329694051 -203.7063249081163292"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface11|shoe_jic:polySurfaceShape11" 
-		"pt[0:31]" (" -s 32 -type \"float3\" -70.449928 32.025906 -205.0338 -70.370224 32.085232 -204.86258 -70.510612 32.088394 -204.71396 -70.500778 32.089226 -204.4664 -70.467255 32.049881 -204.32335 -70.287308 32.025501 -204.16451 -70.241013 31.888775 -204.08299 -70.175827 31.746998 -204.07628 -70.204048 31.622997 -204.15974 -70.355888 31.77198 -204.07649 -70.451584 31.847988 -204.22289 -70.658569 31.77018 -204.33124 -70.706535 31.780767 -204.46999 -70.66404 31.759529 -204.69328 -70.506088 31.865986 -204.72963 -70.521896 31.813387 -205.05019 -70.690849 31.759001 -204.67738 -70.527733 31.862738 -204.73734 -70.52993 32.011887 -204.70303 -70.391869 32.08198200000000355 -204.87029 -70.602745 31.804249 -205.09138 -70.530792 32.016766 -205.07501 -70.723511 31.784008 -204.4409 -70.517754 32.092468 -204.43732 -70.674118 31.772524 -204.29648 -70.482803 32.052223 -204.28859 -70.460938 31.854439 -204.18948 -70.296661 32.031956 -204.13109 -70.361305 31.778744 -204.03923 -70.246429 31.895538 -204.04573 -70.253838 31.690609 -204.01546 -70.17"
-		+ "794 31.755142 -204.03745")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface11|shoe_jic:polySurfaceShape11" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface11|shoe_jic:transform6|shoe_jic:polySurfaceShape11" 
+		"pt[0:31]" (" -s 32 -type \"float3\" -70.449928 32.025906 -205.0338 -70.370224 32.085232 -204.86258 -70.510612 32.088394 -204.71396 -70.500778 32.089226 -204.4664 -70.467255 32.049881 -204.32335 -70.287308 32.025501 -204.16451 -70.241013 31.888775 -204.08299 -70.175827 31.746998 -204.07628 -70.204048 31.622997 -204.15974 -70.355888 31.77198 -204.07649 -70.451584 31.847988 -204.22289 -70.658569 31.77018 -204.33124 -70.706535 31.780767 -204.46999 -70.66404 31.759529 -204.69328 -70.506088 31.865986 -204.72963 -70.521896 31.813387 -205.05019 -70.690849 31.759001 -204.67738 -70.527733 31.862738 -204.73734 -70.52993 32.011887 -204.70303 -70.391869 32.081982 -204.87029 -70.602745 31.804249 -205.09138 -70.530792 32.016766 -205.07501 -70.723511 31.784008 -204.4409 -70.517754 32.092468 -204.43732 -70.674118 31.772524 -204.29648 -70.482803 32.052223 -204.28859 -70.460938 31.854439 -204.18948 -70.296661 32.031956 -204.13109 -70.361305 31.778744 -204.03923 -70.246429 31.895538 -204.04573 -70.253838 31.690609 -204.01546 -70.17794 31.7551"
+		+ "42 -204.03745")
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface11|shoe_jic:transform6|shoe_jic:polySurfaceShape11" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface11|shoe_jic:polySurfaceShape11" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface11|shoe_jic:transform6|shoe_jic:polySurfaceShape11" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface12" 
 		"rotatePivot" " -type \"double3\" -70.85813086607623745 31.87362915203643254 -203.12009344231515229"
@@ -46407,12 +48756,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface12" 
 		"scalePivot" " -type \"double3\" -70.85813086607623745 31.87362915203643254 -203.12009344231515229"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface12|shoe_jic:polySurfaceShape12" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface12|shoe_jic:transform5|shoe_jic:polySurfaceShape12" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -70.696869 31.611355 -204.47112 -70.478081 31.850048 -204.27634 -70.535324 31.734653 -204.1111 -70.528229 31.804886 -203.85054 -70.577759 31.754122 -203.70876 -70.46759 31.682892 -203.49875 -70.449883 31.612591 -203.38437 -70.409561 31.437767 -203.32921 -70.448914 31.319784 -203.40747 -70.589119 31.522684 -203.37743 -70.66703 31.540804 -203.55377 -70.817375 31.518433 -203.70834 -70.787941 31.543596 -203.84328 -70.743507 31.52121 -204.07446 -70.631149 31.626253 -204.22867 -70.803772 31.494402 -204.47348 -70.767151 31.52577 -204.0654 -70.649765 31.627439 -204.24261 -70.558968 31.739214 -204.10205 -70.496696 31.851234 -204.29027 -70.818977 31.4914 -204.50308 -70.712074 31.608353 -204.50072 -70.802139 31.551485 -203.82037 -70.542419 31.812778 -203.82765 -70.830589 31.525047 -203.67905 -70.590973 31.760738 -203.67947 -70.673828 31.550003 -203.52486 -70.474388 31.692091 -203.46982 -70.592278 31.531181 -203.34354 -70.453056 31.621086 -203.35049 -70.49765 31.400465 -203.27452 -70.409325 31.44682"
 		+ "1 -203.29321")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface12|shoe_jic:polySurfaceShape12" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface12|shoe_jic:transform5|shoe_jic:polySurfaceShape12" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface12|shoe_jic:polySurfaceShape12" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface12|shoe_jic:transform5|shoe_jic:polySurfaceShape12" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface13" 
 		"rotatePivot" " -type \"double3\" -71.07293051456414901 31.55554469556361497 -202.44329257638565878"
@@ -46420,12 +48769,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface13" 
 		"scalePivot" " -type \"double3\" -71.07293051456414901 31.55554469556361497 -202.44329257638565878"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface13|shoe_jic:polySurfaceShape13" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface13|shoe_jic:transform4|shoe_jic:polySurfaceShape13" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -70.866501 31.388493 -203.85657 -70.674492 31.622906 -203.61923 -70.732025 31.46311 -203.45253 -70.734459 31.529013 -203.17752 -70.785164 31.474148 -203.03482 -70.665276 31.510622 -202.87862 -70.650505 31.335655 -202.72073 -70.593109 31.180576 -202.68858 -70.628098 31.057497 -202.77519 -70.786392 31.222168 -202.7249 -70.861519 31.186337 -202.90572 -71.015404 31.198952 -203.05917 -70.983597 31.224756 -203.19781 -70.932098 31.212122 -203.43814 -70.819664 31.364513 -203.59276 -70.966721 31.253128 -203.87425 -70.958488 31.213226 -203.42545 -70.839798 31.363525 -203.60475 -70.758415 31.464216 -203.43985 -70.694618 31.621918 -203.63123 -70.982353 31.248795 -203.90347 -70.882141 31.384159 -203.88579 -71.000992 31.228882 -203.17059 -70.751854 31.53314 -203.1503 -71.031876 31.201756 -203.02551 -70.801628 31.476952 -203.00114 -70.871704 31.192545 -202.87199 -70.675453 31.51683 -202.84486 -70.792831 31.228176 -202.68631 -70.656944 31.341661 -202.68213 -70.684677 31.125292 -202.63255 -70.5961 31.187"
 		+ "677 -202.64783")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface13|shoe_jic:polySurfaceShape13" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface13|shoe_jic:transform4|shoe_jic:polySurfaceShape13" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface13|shoe_jic:polySurfaceShape13" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface13|shoe_jic:transform4|shoe_jic:polySurfaceShape13" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface14" 
 		"rotatePivot" " -type \"double3\" -70.91018689837187594 31.31042164679885786 -201.76584364628718049"
@@ -46433,12 +48782,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface14" 
 		"scalePivot" " -type \"double3\" -70.91018689837187594 31.31042164679885786 -201.76584364628718049"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface14|shoe_jic:polySurfaceShape14" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface14|shoe_jic:transform3|shoe_jic:polySurfaceShape14" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -70.902176 31.19392 -202.83461 -70.757912 31.264811 -202.77658 -70.671585 31.227776 -202.5545 -70.723656 31.231089 -202.41234 -70.679253 31.197948 -202.31963 -70.716148 31.188271 -202.28523 -70.559265 31.213095 -202.24557 -70.564041 31.004578 -202.22157 -70.60347 30.87472 -202.2565 -70.738396 31.086136 -202.11729 -70.800507 31.00523 -202.2915 -70.806236 30.960875 -202.38733 -70.829315 31.00334 -202.49918 -70.764763 31.056641 -202.56999 -70.800369 31.148567 -202.69292 -70.869637 31.14493 -202.72234 -70.782356 31.060902 -202.57794 -70.812164 31.12495 -202.73253 -70.695564 31.229782 -202.53848 -70.777527 31.265598 -202.78769 -70.888641 31.138792 -202.74129 -70.921181 31.187782 -202.85356 -70.857536 31.005575 -202.51114 -70.736465 31.23773 -202.38571 -70.806992 30.968599 -202.39372 -70.690079 31.204052 -202.28844 -70.842552 31.015327 -202.24629 -70.720871 31.198114 -202.25764 -70.738853 31.096514 -202.08788 -70.559723 31.223473 -202.21616 -70.647507 30.948683 -202.09476 -70.560654 31.016558 "
 		+ "-202.19347")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface14|shoe_jic:polySurfaceShape14" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface14|shoe_jic:transform3|shoe_jic:polySurfaceShape14" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface14|shoe_jic:polySurfaceShape14" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface14|shoe_jic:transform3|shoe_jic:polySurfaceShape14" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface15" 
 		"rotatePivot" " -type \"double3\" -70.27841194199730523 32.96966913424145673 -205.45721010267655515"
@@ -46446,12 +48795,12 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface15" 
 		"scalePivot" " -type \"double3\" -70.27841194199730523 32.96966913424145673 -205.45721010267655515"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface15|shoe_jic:polySurfaceShape15" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface15|shoe_jic:transform2|shoe_jic:polySurfaceShape15" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -70.170547 32.572838 -206.78845 -70.006012 32.835949 -206.62915 -70.076485 32.809235 -206.46875 -70.071251 32.880672 -206.21606 -70.049011 32.833122 -206.05606 -69.892136 32.761936 -205.83302 -69.876793 32.691666 -205.7148 -69.843956 32.509281 -205.64926 -69.885056 32.393749 -205.72409 -70.017036 32.612133 -205.70369 -70.107483 32.633228 -205.82985 -70.291916 32.615028 -206.04607 -70.334694 32.638538 -206.1981 -70.287453 32.612469 -206.42355 -70.161827 32.627544 -206.57332 -70.279953 32.464218 -206.78471 -70.309898 32.618366 -206.41615 -70.179764 32.629585 -206.58815 -70.09893 32.815132 -206.46135 -70.023949 32.837986 -206.644 -70.29496 32.461765 -206.81451 -70.185547 32.570389 -206.81825 -70.347481 32.647873 -206.17714 -70.08403 32.890007 -206.1951 -70.303696 32.623104 -206.01875 -70.060791 32.841198 -206.02875 -70.112808 32.643524 -205.80304 -69.897461 32.772232 -205.80623 -70.018791 32.621517 -205.67189 -69.878548 32.70105 -205.68301 -69.93029 32.479553 -205.5956 -69.842339 32.518997 "
 		+ "-205.61536")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface15|shoe_jic:polySurfaceShape15" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface15|shoe_jic:transform2|shoe_jic:polySurfaceShape15" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface15|shoe_jic:polySurfaceShape15" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface15|shoe_jic:transform2|shoe_jic:polySurfaceShape15" 
 		"displaySmoothMesh" " 2"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface16" 
 		"rotatePivot" " -type \"double3\" -69.81141788904889722 32.99522319961139516 -205.64047264451454566"
@@ -46459,13 +48808,17 @@ createNode reference -n "shoe_jicRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface16" 
 		"scalePivot" " -type \"double3\" -69.81141788904889722 32.99522319961139516 -205.64047264451454566"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface16|shoe_jic:polySurfaceShape16" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface16|shoe_jic:transform1|shoe_jic:polySurfaceShape16" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -67.840149 32.620708 -206.00615 -68.135757 32.645885 -205.91263 -68.658104 32.626389 -205.78249 -69.265007 32.62001 -205.69054 -69.782394 32.601135 -205.76456 -70.383003 32.462017 -205.84608 -70.854385 32.46801 -206.03673 -71.458405 32.516285 -206.1042 -71.433464 32.490616 -206.33095 -70.812286 32.636929 -206.44576 -70.29998 32.722008 -206.4959 -69.765488 32.906406 -206.50601 -69.277206 32.95369 -206.51138 -68.721313 32.911587 -206.49359 -68.12529 32.902218 -206.52197 -67.848251 32.774998 -206.42223 -68.690689 32.917171 -206.45686 -68.050858 32.90926 -206.49489 -68.62748 32.631977 -205.74576 -68.061325 32.652927 -205.88554 -67.742638 32.783375 -206.40506 -67.734535 32.629086 -205.98901 -69.263374 32.958607 -206.47406 -69.251175 32.624928 -205.6532 -69.771347 32.910942 -206.47095 -69.788254 32.605671 -205.72949 -70.331474 32.727036 -206.46756 -70.414497 32.467045 -205.81776 -70.864273 32.638794 -206.41609 -70.906372 32.469875 -206.00706 -71.501328 32.618935 -206.29219 -71.520782 32.514671"
 		+ " -206.06956")
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface16|shoe_jic:polySurfaceShape16" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface16|shoe_jic:transform1|shoe_jic:polySurfaceShape16" 
 		"dispResolution" " 3"
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface16|shoe_jic:polySurfaceShape16" 
-		"displaySmoothMesh" " 2";
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:polySurface16|shoe_jic:transform1|shoe_jic:polySurfaceShape16" 
+		"displaySmoothMesh" " 2"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:shoe|shoe_jic:polySurface17|shoe_jic:polySurfaceShape17.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic:shoe|shoe_jic:shoe|shoe_jic:polySurface18|shoe_jic:polySurfaceShape18.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "shoe_jicRN1";
@@ -46473,7 +48826,7 @@ createNode reference -n "shoe_jicRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"shoe_jicRN1"
 		"shoe_jicRN1" 0
-		"shoe_jicRN1" 63
+		"shoe_jicRN1" 65
 		0 "|shoe_jic1:shoe" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe" 
@@ -46547,7 +48900,7 @@ createNode reference -n "shoe_jicRN1";
 		+ "0262 29.17371 -213.50298 -64.167458 29.13529 -211.78447 -64.1521 29.231689 -212.14931 -64.126747 29.364019 -212.60455 -64.048302 29.561144 -213.48361 -63.98978 29.726059 -214.73897 -63.907478 29.827389 -215.45485 -63.835934 29.892626 -216.017 -63.811481 29.898466 -216.09198 -63.605637 29.956711 -216.54498 -63.409515 29.899395 -216.16518 -63.387669 29.894411 -216.09959 -63.338104 29.823364 -215.41278 -63.233692 29.720686 -214.67198 -63.175964 29.555164 -213.43913 -63.09264 29.358425 -212.55536 -63.063858 29.227654 -212.10902 -63.046303 29.131817 -211.74937 -63.085224 29.169491 -213.46094 -63.127754 29.201492 -214.64597 -63.288288 29.250225 -215.76555 -63.396564 29.318419 -216.54669 -63.411446 29.319664 -216.56004 -63.605152 29.33625 -216.70375 -63.801414 29.319206 -216.53131 -63.818886 29.317703 -216.51376 -63.926044 29.249641 -215.73996 -64.040642 29.201397 -214.64537 -64.091698 29.169376 -213.46152 -64.138565 29.131712 -211.74986 -64.123444 29.227545 -212.10951 -64.09864 29.358313 -212.55585 -64.020103 29.55"
 		+ "5052 -213.43965 -63.96307 29.720591 -214.67159 -63.883152 29.821968 -215.35085 -63.819134 29.885916 -215.87546 -63.801815 29.891003 -215.91681 -63.60516 29.949829 -216.36804 -63.418232 29.891998 -215.9879 -63.404018 29.887722 -215.95721 -63.143337 29.556686 -213.48251 -63.203392 29.718229 -214.75194 -63.311413 29.818985 -215.54344 -63.385857 29.884123 -216.12648 -63.408566 29.889097 -216.19482 -63.605686 29.945539 -216.57057 -63.812397 29.888184 -216.12221 -63.83765 29.882357 -216.04463 -63.910728 29.81708 -215.47368 -63.993927 29.716906 -214.74631 -64.052475 29.555126 -213.48979 -63.055107 29.182541 -213.50249 -63.101547 29.215233 -214.73856 -63.264278 29.263546 -215.89543 -63.381603 29.331976 -216.70769 -63.406769 29.333654 -216.75768 -63.605541 29.350021 -216.90495 -63.806988 29.333462 -216.72725 -63.834354 29.331387 -216.67343 -63.951603 29.262466 -215.85744 -64.06868 29.2139 -214.73013 -64.122093 29.18096 -213.5105 -64.169395 29.142006 -211.81204 -64.166451 29.141636 -211.80849 -64.137573 29.13802 -211.7"
 		+ "7353 -64.135101 29.137711 -211.77054 -64.14949 29.108416 -210.5912 -64.131279 29.083557 -209.41576 -64.110771 29.055565 -208.09219 -64.099251 29.004349 -206.84541 -64.088745 28.957663 -205.70889 -64.165192 28.925112 -202.5352 -64.240715 28.908619 -198.26552 -64.240868 28.908588 -198.25714 -64.240868 28.911495 -198.25673 -64.240868 28.946381 -198.25183 -64.240868 28.948458 -198.25153 -64.241882 28.948027 -198.2094 -64.244255 28.94702 -198.11084 -64.256081 28.94202 -197.61977 -64.191261 28.94875 -195.75092 -64.078896 28.949083 -193.83328 -63.827114 28.964643 -192.07216 -63.678894 28.964689 -192.07422 -63.528954 28.964735 -192.07629 -63.259411 28.949083 -193.83328 -63.044769 28.94875 -195.75092 -62.932037 28.94202 -197.61977 -62.934444 28.945236 -197.85258 -62.934994 28.945959 -197.90413 -62.935837 28.94669 -197.94725 -62.936077 28.944613 -197.94754 -62.938152 28.909727 -197.95244 -62.938156 28.906818 -197.95285 -62.938271 28.906902 -197.9617 -62.985764 28.949274 -202.46861 -63.05423 29.004368 -205.71718 -63.064"
-		+ "285 29.028782 -206.84975 -63.075317 29.055565 -208.09219 -63.051479 29.083557 -209.41576 -63.030312 29.108416 -210.5912 -63.049931 29.137711 -211.77054 -63.047459 29.138124 -211.77306 -63.018593 29.142967 -211.80234 -63.015648 29.143461 -211.80533 -63.064251 29.368923 -212.6519 -63.034084 29.235558 -212.20602 -63.017132 29.144932 -211.86925 -63.015873 29.138481 -211.84242 -64.125778 29.368553 -212.67976 -64.15213 29.234835 -212.23746 -64.168236 29.142963 -211.85381 -64.169304 29.136555 -211.82812 -63.596817 30.116083 -215.34105 -63.423595 30.119041 -215.39407 -63.410976 30.119257 -215.39793 -63.355865 30.062727 -214.99297 -63.258114 29.917604 -214.03793 -63.853886 30.056894 -214.89145 -63.936047 29.915375 -214.01262 -63.782654 30.112907 -215.28418 -63.768051 30.113157 -215.28865 -63.20359 29.844067 -213.14627 -63.990868 29.843 -213.1342 -63.153385 29.776356 -212.32526 -63.126778 29.739035 -210.61618 -64.041344 29.776358 -212.32536 -64.055779 29.739037 -210.61623 -63.154121 29.790421 -209.84259 -64.033844 29.7"
+		+ "285 29.028782 -206.84975 -63.075317 29.055565 -208.09219 -63.051479 29.083557 -209.41576 -63.030312 29.108416 -210.5912 -63.049931 29.137711 -211.77054 -63.047459 29.138124 -211.77306 -63.018593 29.142967 -211.80234 -63.015648 29.143461 -211.80533 -63.064251 29.368923 -212.6519 -63.034084 29.235558 -212.20602 -63.017132 29.144932 -211.86925 -63.015873 29.138481 -211.84242 -64.125778 29.368553 -212.67976 -64.15213 29.234835 -212.23746 -64.168236 29.142963 -211.85381 -64.169304 29.136555 -211.82813 -63.596817 30.116083 -215.34105 -63.423595 30.119041 -215.39407 -63.410976 30.119257 -215.39793 -63.355865 30.062727 -214.99297 -63.258114 29.917604 -214.03793 -63.853886 30.056894 -214.89145 -63.936047 29.915375 -214.01262 -63.782654 30.112907 -215.28418 -63.768051 30.113157 -215.28865 -63.20359 29.844067 -213.14627 -63.990868 29.843 -213.1342 -63.153385 29.776356 -212.32526 -63.126778 29.739035 -210.61618 -64.041344 29.776358 -212.32536 -64.055779 29.739037 -210.61623 -63.154121 29.790421 -209.84259 -64.033844 29.7"
 		+ "89562 -209.83278 -63.174908 29.855143 -209.28186 -63.184143 29.885473 -209.01965 -63.240093 29.922129 -208.44263 -63.243546 29.926357 -208.42493"
 		)
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:shoe|shoe_jic1:polySurface17|shoe_jic1:polySurfaceShape17" 
@@ -46571,7 +48924,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface1" 
 		"scalePivot" " -type \"double3\" -63.62387415820328584 32.95423937079171139 -204.71953563890272676"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface1|shoe_jic1:polySurfaceShape1" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface1|shoe_jic1:transform14|shoe_jic1:polySurfaceShape1" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -63.908939 29.742958 -205.63589 -63.869019 29.810343 -205.35118 -63.79007 29.839043 -205.06935 -63.696579 29.855938 -204.85391 -63.613018 29.863562 -204.82323 -63.51437 29.827301 -204.81601 -63.433266 29.813812 -204.97523 -63.335983 29.787086 -205.06816 -63.335449 29.79018 -205.26067 -63.431816 29.863869 -205.36205 -63.514034 29.897766 -205.45012 -63.60112 29.956936 -205.50911 -63.678337 29.957006 -205.61209 -63.765858 29.925983 -205.71809 -63.859062 29.892567 -205.90408 -63.898441 29.779924 -206.04628 -63.772652 29.939541 -205.65593 -63.872299 29.902306 -205.8678 -63.796864 29.8526 -205.00719 -63.882259 29.820082 -205.31491 -63.916145 29.786402 -206.03297 -63.92664 29.749435 -205.62259 -63.682514 29.971079 -205.54533 -63.700756 29.87001 -204.78714 -63.602116 29.971197 -205.44116 -63.614014 29.877823 -204.75528 -63.510777 29.912199 -205.38515 -63.511112 29.841734 -204.75104 -63.425243 29.876833 -205.29463 -63.426689 29.826775 -204.90782 -63.327267 29.838028 -205.18326 -63.327801 29.79863"
 		+ "7 -204.99585")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface2" 
@@ -46580,7 +48933,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface2" 
 		"scalePivot" " -type \"double3\" -63.53110281307967 32.5737885893390029 -203.57345228233631929"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface2|shoe_jic1:polySurfaceShape2" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface2|shoe_jic1:transform13|shoe_jic1:polySurfaceShape2" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -63.846203 32.078667 -204.27682 -63.806286 32.109364 -204.12448 -63.794109 32.017029 -203.90875 -63.709885 32.031883 -203.7186 -63.626328 32.022842 -203.71252 -63.468262 31.953312 -203.70573 -63.426006 31.984232 -203.82855 -63.35413 32.043076 -203.81343 -63.353596 32.021465 -204.0463 -63.424557 32.165501 -204.24225 -63.467926 32.232216 -204.36697 -63.614429 32.351532 -204.4528 -63.691647 32.391834 -204.53378 -63.769897 32.325748 -204.60693 -63.796326 32.385273 -204.73137 -63.835709 32.245571 -204.6922 -63.776695 32.330631 -204.57198 -63.809566 32.390999 -204.71364 -63.800907 32.021912 -203.87379 -63.819527 32.115089 -204.10675 -63.853409 32.252251 -204.68994 -63.863907 32.085342 -204.27458 -63.695824 32.396313 -204.49554 -63.714066 32.036358 -203.68036 -63.615425 32.355991 -204.41379 -63.627323 32.027302 -203.67351 -63.464668 32.237736 -204.33083 -63.465004 31.958832 -203.66959 -63.41798 32.168056 -204.2018 -63.41943 31.98679 -203.78812 -63.345413 32.15377 -203.98914 -63.345947 32.04211 "
 		+ "-203.7666")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface4" 
@@ -46589,7 +48942,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface4" 
 		"scalePivot" " -type \"double3\" -63.47124243821617995 31.83784892938594524 -202.24744603080270622"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface4|shoe_jic1:polySurfaceShape4" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface4|shoe_jic1:transform12|shoe_jic1:polySurfaceShape4" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -63.835663 31.727327 -202.96053 -63.628708 31.716917 -202.79976 -63.618259 31.71442 -202.62357 -63.516937 31.625265 -202.358 -63.43338 31.547022 -202.36606 -63.519722 31.467093 -202.40991 -63.438618 31.442705 -202.52443 -63.366745 31.517279 -202.53043 -63.366211 31.468727 -202.76106 -63.437168 31.606266 -202.95096 -63.519386 31.716913 -203.08882 -63.421482 31.732779 -203.1897 -63.498699 31.823174 -203.26427 -63.594048 31.909504 -203.39049 -63.624928 31.958937 -203.47604 -63.825169 31.867937 -203.38779 -63.600845 31.923265 -203.37178 -63.638168 31.966988 -203.46254 -63.625057 31.728182 -202.60487 -63.641945 31.724966 -202.78627 -63.842869 31.875467 -203.38826 -63.853367 31.734856 -202.961 -63.502876 31.838551 -203.24669 -63.521118 31.640646 -202.34041 -63.422478 31.748159 -203.1711 -63.434376 31.562401 -202.34743 -63.516129 31.72551 -203.05724 -63.516464 31.475691 -202.37831 -63.430592 31.612009 -202.91464 -63.432041 31.448448 -202.48811 -63.358028 31.608971 -202.74843 -63.358562 31.52568"
 		+ "8 -202.49574")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface5" 
@@ -46598,7 +48951,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface5" 
 		"scalePivot" " -type \"double3\" -63.20903558109152698 32.94252197415929828 -204.41291633519361426"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface5|shoe_jic1:polySurfaceShape5" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface5|shoe_jic1:transform11|shoe_jic1:polySurfaceShape5" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -61.36821 32.552757 -205.53973 -61.809933 32.818993 -205.45616 -62.179859 32.789989 -205.33275 -62.738701 32.855682 -205.15027 -63.25161 32.798828 -205.05724 -63.987453 32.710625 -204.94803 -64.468781 32.628075 -204.8925 -65.05603 32.426025 -204.91072 -65.027596 32.30917 -204.97499 -64.39048 32.549522 -204.84633 -63.852757 32.582798 -204.88947 -63.165382 32.579659 -204.99301 -62.676208 32.611576 -205.07735 -62.195068 32.590435 -205.25082 -61.797268 32.607574 -205.36798 -61.360622 32.441704 -205.51526 -62.141449 32.599037 -205.23286 -61.707581 32.612324 -205.36861 -62.12624 32.798588 -205.31477 -61.720242 32.823742 -205.45679 -61.245865 32.441845 -205.52827 -61.253456 32.552895 -205.55278 -62.649769 32.623154 -205.0504 -62.712265 32.86726 -205.12331 -63.158554 32.589615 -204.96231 -63.244778 32.808781 -205.02654 -63.875217 32.594421 -204.86403 -64.009911 32.722252 -204.92261 -64.434509 32.559731 -204.81923 -64.512817 32.638283 -204.86542 -65.064392 32.398605 -204.84175 -65.111473 32.43628"
 		+ "7 -204.88353")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface7" 
@@ -46607,7 +48960,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface7" 
 		"scalePivot" " -type \"double3\" -63.57610491309520739 32.72502974888281813 -204.14262686479955278"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface7|shoe_jic1:polySurfaceShape7" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface7|shoe_jic1:transform10|shoe_jic1:polySurfaceShape7" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -63.841057 32.291344 -204.80949 -63.80114 32.328888 -204.66739 -63.715294 32.322426 -204.45331 -63.621803 32.329361 -204.26649 -63.538242 32.321064 -204.26157 -63.439598 32.189816 -204.25191 -63.35849 32.171436 -204.37422 -63.286613 32.22802 -204.35509 -63.286079 32.202034 -204.58803 -63.357044 32.344135 -204.7944 -63.439262 32.454613 -204.92212 -63.526348 32.634579 -205.01401 -63.603561 32.672535 -205.0948 -63.691082 32.616791 -205.16278 -63.79118 32.592602 -205.2851 -63.830563 32.449074 -205.22942 -63.69788 32.623161 -205.1299 -63.80442 32.599209 -205.26883 -63.722092 32.328796 -204.42043 -63.814377 32.335491 -204.65112 -63.848263 32.456089 -205.2281 -63.858757 32.298359 -204.8082 -63.607738 32.678608 -205.0587 -63.62598 32.33543 -204.23038 -63.527344 32.640663 -204.97717 -63.539238 32.327145 -204.22473 -63.436005 32.461689 -204.88818 -63.43634 32.196892 -204.21796 -63.350468 32.348297 -204.75597 -63.351917 32.175598 -204.33578 -63.277897 32.336349 -204.5379 -63.278431 32.228767 -204.3"
 		+ "1006")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface8" 
@@ -46616,7 +48969,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface8" 
 		"scalePivot" " -type \"double3\" -63.56143139968986588 32.29954619571081764 -203.0467839133135044"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface8|shoe_jic1:polySurfaceShape8" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface8|shoe_jic1:transform9|shoe_jic1:polySurfaceShape8" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -63.876534 31.768373 -203.63614 -63.836617 31.818804 -203.51611 -63.824436 31.7463 -203.30595 -63.740215 31.776127 -203.12669 -63.656658 31.769215 -203.12425 -63.498589 31.700102 -203.1089 -63.456333 31.719894 -203.22604 -63.38446 31.772308 -203.19826 -63.383926 31.737249 -203.43085 -63.454884 31.874039 -203.65858 -63.498253 31.934563 -203.79593 -63.64476 32.049793 -203.90002 -63.721977 32.082905 -203.98015 -63.800224 32.009518 -204.03708 -63.82666 32.055916 -204.15469 -63.866039 31.906534 -204.06435 -63.807022 32.018715 -204.00867 -63.839897 32.064156 -204.14157 -63.831234 31.755493 -203.27754 -63.849857 31.827042 -203.50299 -63.883743 31.914125 -204.06506 -63.894238 31.775963 -203.63687 -63.726154 32.09201 -203.9487 -63.744396 31.785233 -203.09526 -63.645756 32.058968 -203.86792 -63.657654 31.778387 -203.09216 -63.494995 31.944588 -203.76674 -63.495331 31.710127 -203.07973 -63.448311 31.881273 -203.62447 -63.449757 31.727131 -203.19193 -63.375744 31.874851 -203.39555 -63.376278 31.7763"
 		+ "67 -203.15718")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface9" 
@@ -46625,7 +48978,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface9" 
 		"scalePivot" " -type \"double3\" -63.47124243821617284 31.56215901915448896 -201.6229695963000097"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface9|shoe_jic1:polySurfaceShape9" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface9|shoe_jic1:transform8|shoe_jic1:polySurfaceShape9" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -63.835663 31.451637 -202.33603 -63.628708 31.441227 -202.17529 -63.618259 31.43873 -201.9991 -63.516937 31.349575 -201.73351 -63.43338 31.271332 -201.74156 -63.519722 31.191402 -201.78545 -63.438618 31.167015 -201.89995 -63.366745 31.241589 -201.90593 -63.366211 31.193037 -202.13657 -63.437168 31.330576 -202.32649 -63.519386 31.441223 -202.46436 -63.421482 31.457088 -202.56523 -63.498699 31.547482 -202.6398 -63.594048 31.633814 -202.76601 -63.624928 31.683247 -202.85156 -63.825169 31.592247 -202.76332 -63.600845 31.647575 -202.74731 -63.638168 31.691298 -202.83807 -63.625057 31.452492 -201.98039 -63.641945 31.449276 -202.16179 -63.842869 31.599777 -202.76379 -63.853367 31.459167 -202.33652 -63.502876 31.562862 -202.62221 -63.521118 31.364956 -201.71594 -63.422478 31.472469 -202.5466 -63.434376 31.286713 -201.72296 -63.516129 31.44982 -202.43275 -63.516464 31.200001 -201.75385 -63.430592 31.336319 -202.29018 -63.432041 31.172758 -201.86362 -63.358028 31.333281 -202.12395 -63.358562 31.24"
 		+ "9998 -201.87126")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface10" 
@@ -46634,7 +48987,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface10" 
 		"scalePivot" " -type \"double3\" -63.21714766089543502 32.63013627117580029 -203.80944022915466007"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface10|shoe_jic1:polySurfaceShape10" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface10|shoe_jic1:transform7|shoe_jic1:polySurfaceShape10" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -61.32206 32.286449 -204.97409 -61.826229 32.525635 -204.86971 -62.194477 32.495518 -204.74126 -62.750927 32.559875 -204.55147 -63.263359 32.502197 -204.45732 -63.999599 32.415565 -204.34857 -64.482239 32.332924 -204.2975 -65.074402 32.138439 -204.32803 -65.0467 32.019028 -204.39618 -64.403488 32.243706 -204.25568 -63.864681 32.273777 -204.35194 -63.177246 32.2649 -204.40343 -62.688637 32.296032 -204.4901 -62.20961 32.278797 -204.6685 -61.813591 32.298363 -204.7903 -61.315048 32.16679 -204.95628 -62.155186 32.286057 -204.64857 -61.723446 32.302254 -204.78987 -62.140057 32.502777 -204.72133 -61.736084 32.529526 -204.86928 -61.200127 32.16637 -204.96906 -61.20713 32.28603 -204.98688 -62.66127 32.30616 -204.46083 -62.723564 32.570007 -204.5222 -63.169476 32.273392 -204.37038 -63.255592 32.510689 -204.42429 -63.886208 32.284313 -204.32399 -64.021133 32.426102 -204.32063 -64.446648 32.253036 -204.22614 -64.525398 32.342255 -204.26796 -65.081047 32.103302 -204.25754 -65.129005 32.148056 -204.2"
 		+ "9839")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface11" 
@@ -46643,7 +48996,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface11" 
 		"scalePivot" " -type \"double3\" -63.24899592719614816 32.32800493381864015 -203.18471492279087443"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface11|shoe_jic1:polySurfaceShape11" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface11|shoe_jic1:transform6|shoe_jic1:polySurfaceShape11" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -61.541595 32.266769 -204.34174 -61.895618 32.326523 -204.22293 -62.194096 32.33057 -204.09262 -62.753761 32.32365 -203.91621 -63.273602 32.274933 -203.84305 -64.016739 32.234364 -203.80385 -64.516724 32.082745 -203.79277 -65.121689 31.921619 -203.87811 -65.103439 31.795687 -203.95438 -64.461098 31.965115 -203.75783 -63.9146 32.05505 -203.81981 -63.231686 31.990892 -203.81013 -62.740482 32.009644 -203.87985 -62.255375 31.993608 -204.04994 -61.922962 32.102905 -204.06354 -61.56229 32.047909 -204.34683 -62.199486 31.99571 -204.02234 -61.831326 32.10231 -204.05611 -62.141754 32.254444 -204.0717 -61.803982 32.325932 -204.2155 -61.378983 32.043423 -204.35355 -61.358284 32.262287 -204.34846 -62.711861 32.01506 -203.8437 -62.725136 32.329063 -203.88007 -63.222923 31.995049 -203.77101 -63.264839 32.279091 -203.80392 -63.934696 32.062828 -203.78673 -64.036835 32.242142 -203.77078 -64.502876 31.972721 -203.7243 -64.558502 32.090351 -203.75926 -65.139328 31.866516 -203.80418 -65.174698 31.930365 -2"
 		+ "03.84506")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface12" 
@@ -46652,7 +49005,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface12" 
 		"scalePivot" " -type \"double3\" -63.22193194532336236 32.0996473974209664 -202.55494499942335551"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface12|shoe_jic1:polySurfaceShape12" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface12|shoe_jic1:transform5|shoe_jic1:polySurfaceShape12" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -61.433243 31.846367 -203.71616 -61.937416 32.085556 -203.61176 -62.31879 31.965031 -203.48677 -62.881531 32.029388 -203.29697 -63.318321 31.971706 -203.20284 -64.004387 31.885077 -203.09409 -64.487022 31.802437 -203.043 -65.079185 31.607952 -203.07353 -65.051483 31.488539 -203.14168 -64.408272 31.713221 -203.00119 -63.869465 31.743288 -203.09744 -63.232204 31.734411 -203.14893 -62.819241 31.765543 -203.23561 -62.33392 31.748306 -203.41402 -61.924778 31.858282 -203.53236 -61.426235 31.726711 -203.69833 -62.279495 31.755566 -203.39409 -61.834629 31.862171 -203.53192 -62.264366 31.97229 -203.46684 -61.847267 32.089447 -203.61131 -61.311314 31.726292 -203.71111 -61.318317 31.845947 -203.72891 -62.791878 31.775671 -203.20634 -62.854172 32.039516 -203.26772 -63.224438 31.742905 -203.11588 -63.310555 31.980198 -203.16977 -63.890995 31.753822 -203.0695 -64.025917 31.895613 -203.06613 -64.451431 31.722549 -202.97163 -64.530182 31.811764 -203.01346 -65.085831 31.572813 -203.00305 -65.133789 31.61"
 		+ "7567 -203.0439")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface13" 
@@ -46661,7 +49014,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface13" 
 		"scalePivot" " -type \"double3\" -63.17913233351908531 31.77662927254911551 -201.82508152081422281"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface13|shoe_jic1:polySurfaceShape13" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface13|shoe_jic1:transform4|shoe_jic1:polySurfaceShape13" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -61.421764 31.619947 -203.06044 -61.910614 31.855406 -202.90666 -62.290611 31.689293 -202.77998 -62.847626 31.749443 -202.57329 -63.283367 31.68759 -202.47792 -63.968288 31.711502 -202.42552 -64.456131 31.521267 -202.33012 -65.059723 31.346611 -202.38811 -65.033958 31.221863 -202.46568 -64.376945 31.407787 -202.30016 -63.837914 31.382389 -202.40138 -63.198608 31.40955 -202.45096 -62.787022 31.441278 -202.54193 -62.306583 31.433868 -202.73134 -61.898994 31.592459 -202.85028 -61.416687 31.481245 -203.05954 -62.250294 31.437653 -202.70705 -61.807789 31.594158 -202.84749 -62.234322 31.693079 -202.75571 -61.819412 31.857103 -202.90388 -61.301392 31.479469 -203.07181 -61.306473 31.618172 -203.07271 -62.757507 31.447626 -202.50752 -62.818115 31.755793 -202.53889 -63.188656 31.414213 -202.41267 -63.273411 31.692251 -202.43964 -63.857265 31.389944 -202.36777 -63.98764 31.719055 -202.39189 -64.418037 31.414644 -202.26505 -64.497231 31.528124 -202.29501 -65.062683 31.293116 -202.31532 -65.112358 31"
 		+ ".354303 -202.35289")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface14" 
@@ -46670,7 +49023,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface14" 
 		"scalePivot" " -type \"double3\" -63.51319564013491004 31.51600531763428847 -201.19568193572828818"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface14|shoe_jic1:polySurfaceShape14" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface14|shoe_jic1:transform3|shoe_jic1:polySurfaceShape14" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -61.652832 31.415997 -202.03648 -62.041004 31.486082 -202.04724 -62.582489 31.440954 -201.90448 -63.052746 31.439184 -201.8161 -63.570133 31.396744 -201.79579 -64.065567 31.379107 -201.82217 -64.669388 31.389914 -201.88272 -65.20739 31.162495 -201.93199 -65.190796 31.030663 -201.95709 -64.582253 31.26334 -201.70976 -64.056374 31.191198 -201.80775 -63.577431 31.154652 -201.83955 -63.119152 31.205164 -201.88934 -62.699116 31.264133 -201.91432 -62.151226 31.365381 -201.96207 -61.81694 31.360899 -201.94244 -62.646141 31.270973 -201.91287 -62.06015 31.343714 -201.98883 -62.529518 31.445566 -201.87755 -61.950611 31.489582 -202.04372 -61.700981 31.35733 -201.94362 -61.536873 31.41243 -202.03766 -63.068382 31.210136 -201.8909 -63.02771 31.447966 -201.78351 -63.572514 31.164057 -201.84521 -63.565216 31.404621 -201.76149 -64.04734 31.203741 -201.75426 -64.088806 31.390244 -201.79611 -64.626968 31.274534 -201.68538 -64.714104 31.401108 -201.85834 -65.237251 31.107733 -201.79115 -65.263115 31.175051"
 		+ " -201.91104")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface15" 
@@ -46679,7 +49032,7 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface15" 
 		"scalePivot" " -type \"double3\" -63.20903558109152698 33.21803196728372853 -205.03200947180422986"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface15|shoe_jic1:polySurfaceShape15" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface15|shoe_jic1:transform2|shoe_jic1:polySurfaceShape15" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -61.36821 32.828262 -206.15884 -61.809933 33.094505 -206.07526 -62.179859 33.065498 -205.95183 -62.738701 33.131195 -205.76935 -63.25161 33.074337 -205.67633 -63.987453 32.986137 -205.56712 -64.468781 32.903584 -205.5116 -65.05603 32.701534 -205.5298 -65.027596 32.584679 -205.5941 -64.39048 32.825031 -205.46542 -63.852757 32.858307 -205.50856 -63.165382 32.855171 -205.61211 -62.676208 32.887089 -205.69646 -62.195068 32.865948 -205.8699 -61.797268 32.883083 -205.98706 -61.360622 32.717216 -206.13435 -62.141449 32.874546 -205.85194 -61.707581 32.887833 -205.9877 -62.12624 33.074097 -205.93385 -61.720242 33.099255 -206.07588 -61.245865 32.717354 -206.14737 -61.253456 32.828403 -206.17186 -62.649769 32.898663 -205.66949 -62.712265 33.142769 -205.7424 -63.158554 32.865124 -205.58139 -63.244778 33.084293 -205.64561 -63.875217 32.869934 -205.48312 -64.009911 32.997761 -205.5417 -64.434509 32.835239 -205.43832 -64.512817 32.913792 -205.4845 -65.064392 32.674118 -205.46083 -65.111473 32.711796 -2"
 		+ "05.50262")
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface16" 
@@ -46688,9 +49041,13 @@ createNode reference -n "shoe_jicRN1";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface16" 
 		"scalePivot" " -type \"double3\" -63.62387415820329295 33.22974936391614165 -205.33862877551334236"
 		
-		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface16|shoe_jic1:polySurfaceShape16" 
+		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:polySurface16|shoe_jic1:transform1|shoe_jic1:polySurfaceShape16" 
 		"pt[0:31]" (" -s 32 -type \"float3\" -63.888828 32.796066 -206.00549 -63.848907 32.833607 -205.86339 -63.763062 32.827148 -205.64931 -63.669571 32.83408 -205.46249 -63.58601 32.825783 -205.45757 -63.487362 32.694534 -205.44791 -63.406258 32.708042 -205.56902 -63.334385 32.764626 -205.54987 -63.333851 32.738644 -205.78281 -63.404808 32.880741 -205.98918 -63.487026 32.959332 -206.11813 -63.574112 33.139301 -206.21001 -63.651329 33.177254 -206.2908 -63.73885 33.121513 -206.3588 -63.838951 33.097324 -206.48111 -63.87833 32.953796 -206.42542 -63.745644 33.127884 -206.3259 -63.852188 33.103928 -206.46484 -63.769855 32.833519 -205.61642 -63.862148 32.84021 -205.84712 -63.896034 32.960808 -206.4241 -63.906528 32.803078 -206.00421 -63.655506 33.183327 -206.2547 -63.673748 32.840149 -205.42638 -63.575108 33.145386 -206.17317 -63.587006 32.831863 -205.42073 -63.483768 32.966408 -206.08418 -63.484104 32.701611 -205.41396 -63.398235 32.884903 -205.95074 -63.399681 32.712204 -205.53058 -63.325668 32.872955 -205.73268 -63.326202 32.765369"
-		+ " -205.50484");
+		+ " -205.50484")
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:shoe|shoe_jic1:polySurface17|shoe_jic1:polySurfaceShape17.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|dad_shoes|sneakers|shoe_jic1:shoe|shoe_jic1:shoe|shoe_jic1:polySurface18|shoe_jic1:polySurfaceShape18.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "jackie_shoe_latestRN";
@@ -46743,7 +49100,7 @@ createNode reference -n "jackie_shoe_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"jackie_shoe_latestRN"
 		"jackie_shoe_latestRN" 0
-		"jackie_shoe_latestRN" 52
+		"jackie_shoe_latestRN" 67
 		0 "|jackie_shoe_latest:Jackie_Shoe" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe" 
@@ -46869,7 +49226,37 @@ createNode reference -n "jackie_shoe_latestRN";
 		5 4 "jackie_shoe_latestRN" "jackie_shoe_latest:PxrSurface4SG.dagSetMembers" 
 		"jackie_shoe_latestRN.placeHolderList[43]" ""
 		5 4 "jackie_shoe_latestRN" "jackie_shoe_latest:PxrSurface4SG.dagSetMembers" 
-		"jackie_shoe_latestRN.placeHolderList[44]" "";
+		"jackie_shoe_latestRN.placeHolderList[44]" ""
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube15|jackie_shoe_latest:pCubeShape15.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube14|jackie_shoe_latest:pCubeShape14.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube13|jackie_shoe_latest:pCubeShape13.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube12|jackie_shoe_latest:pCubeShape12.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube11|jackie_shoe_latest:pCubeShape11.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube10|jackie_shoe_latest:pCubeShape10.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube9|jackie_shoe_latest:pCubeShape9.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Laces|jackie_shoe_latest:pCube2|jackie_shoe_latest:pCubeShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:ClothParts|jackie_shoe_latest:Left_Side|jackie_shoe_latest:Left_SideShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:ClothParts|jackie_shoe_latest:Right_Side|jackie_shoe_latest:Right_SideShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:ClothParts|jackie_shoe_latest:Base|jackie_shoe_latest:BaseShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:ClothParts|jackie_shoe_latest:Tongue|jackie_shoe_latest:TongueShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:LaceHoles|jackie_shoe_latest:Right_Lace_Holes|jackie_shoe_latest:pTorus2|jackie_shoe_latest:pTorusShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:RubberParts|jackie_shoe_latest:Back|jackie_shoe_latest:BackShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:Jackie_Shoe|jackie_shoe_latest:RubberParts|jackie_shoe_latest:Sole|jackie_shoe_latest:SoleShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "ping_shoes_latestRN";
@@ -46877,7 +49264,7 @@ createNode reference -n "ping_shoes_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"ping_shoes_latestRN"
 		"ping_shoes_latestRN" 0
-		"ping_shoes_latestRN" 16
+		"ping_shoes_latestRN" 18
 		0 "|ping_shoes_latest:ping_shoes" "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|ping_shoes_latest:ping_shoes" 
@@ -46914,7 +49301,11 @@ createNode reference -n "ping_shoes_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|ping_shoes_latest:ping_shoes|ping_shoes_latest:left_shoe|ping_shoes_latest:left_shoeShape" 
 		"dispResolution" " 3"
 		2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|ping_shoes_latest:ping_shoes|ping_shoes_latest:left_shoe|ping_shoes_latest:left_shoeShape" 
-		"displaySmoothMesh" " 2";
+		"displaySmoothMesh" " 2"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|ping_shoes_latest:ping_shoes|ping_shoes_latest:right_shoe|ping_shoes_latest:right_shoeShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|LEFT_WALL|SHOE_RACK|ping_shoes_latest:ping_shoes|ping_shoes_latest:left_shoe|ping_shoes_latest:left_shoeShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "boardGames_latestRN";
@@ -47027,7 +49418,7 @@ createNode reference -n "large_painting_ARN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"large_painting_ARN"
 		"large_painting_ARN" 0
-		"large_painting_ARN" 9
+		"large_painting_ARN" 11
 		0 "|large_painting_A:large_painting_A" "|LIVING_ROOM_SET|PROPS" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|large_painting_A:large_painting_A" "translate" 
 		" -type \"double3\" 3.70860707288954128 15.0907359059612407 -56.54373850548257963"
@@ -47045,7 +49436,11 @@ createNode reference -n "large_painting_ARN";
 		2 "|LIVING_ROOM_SET|PROPS|large_painting_A:large_painting_A|large_painting_A:picture_plane" 
 		"translate" " -type \"double3\" 0 0 0.033722206162728169"
 		2 "|LIVING_ROOM_SET|PROPS|large_painting_A:large_painting_A|large_painting_A:picture_plane" 
-		"scale" " -type \"double3\" 1 1.0218208105210691 1";
+		"scale" " -type \"double3\" 1 1.0218208105210691 1"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|large_painting_A:large_painting_A|large_painting_A:picture_frame|large_painting_A:picture_frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|large_painting_A:large_painting_A|large_painting_A:picture_plane|large_painting_A:picture_planeShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "large_painting_BRN";
@@ -47053,7 +49448,7 @@ createNode reference -n "large_painting_BRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"large_painting_BRN"
 		"large_painting_BRN" 0
-		"large_painting_BRN" 9
+		"large_painting_BRN" 11
 		0 "|large_painting_B:large_painting_B" "|LIVING_ROOM_SET|PROPS" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|large_painting_B:large_painting_B" "translate" 
 		" -type \"double3\" -9.01456407465584419 14.0696221650061748 -56.52109065019639189"
@@ -47071,7 +49466,11 @@ createNode reference -n "large_painting_BRN";
 		2 "|LIVING_ROOM_SET|PROPS|large_painting_B:large_painting_B" "scalePivotTranslate" 
 		" -type \"double3\" 0 4.16119757233388032 0"
 		2 "|LIVING_ROOM_SET|PROPS|large_painting_B:large_painting_B|large_painting_B:picture_plane" 
-		"translate" " -type \"double3\" 0 0 0.041463560506797906";
+		"translate" " -type \"double3\" 0 0 0.041463560506797906"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|large_painting_B:large_painting_B|large_painting_B:picture_frame|large_painting_B:picture_frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|large_painting_B:large_painting_B|large_painting_B:picture_plane|large_painting_B:picture_planeShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "windchime_latestRN";
@@ -47079,7 +49478,7 @@ createNode reference -n "windchime_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"windchime_latestRN"
 		"windchime_latestRN" 0
-		"windchime_latestRN" 8
+		"windchime_latestRN" 21
 		0 "|windchime_latest:wind_chime" "|LIVING_ROOM_SET|PROPS" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime" "translate" " -type \"double3\" -4.44828349936885825 18.0168752232719811 10.03537944234512835"
 		
@@ -47095,7 +49494,34 @@ createNode reference -n "windchime_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime" "scalePivot" " -type \"double3\" -1.1920928955078125e-07 3.0191713273525238 -2.384185791015625e-07"
 		
 		2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime" "scalePivotTranslate" 
-		" -type \"double3\" -1.8642936557105983e-08 0.4721630312786112 -3.7285873114211901e-08";
+		" -type \"double3\" -1.8642936557105983e-08 0.4721630312786112 -3.7285873114211901e-08"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:large_hat|windchime_latest:large_hatShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:small_hat|windchime_latest:small_hatShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:big_bell|windchime_latest:big_bellShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:medium_bell|windchime_latest:medium_bellShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:smallest_bell|windchime_latest:smallest_bellShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:string1|windchime_latest:stringShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead2|windchime_latest:beadShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead1|windchime_latest:beadShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead|windchime_latest:beadShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead3|windchime_latest:beadShape3.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead4|windchime_latest:bead4Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:bead5|windchime_latest:beadShape5.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|windchime_latest:wind_chime|windchime_latest:nail|windchime_latest:nailShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "wooden_pictureRN";
@@ -47103,13 +49529,18 @@ createNode reference -n "wooden_pictureRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"wooden_pictureRN"
 		"wooden_pictureRN" 0
-		"wooden_pictureRN" 4
+		"wooden_pictureRN" 6
 		0 "|wooden_picture:wooden_picture" "|LIVING_ROOM_SET|PROPS" "-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|wooden_picture:wooden_picture" "translate" " -type \"double3\" -19.35668793214558292 22.2981415319360039 10.26657739224862098"
 		
 		2 "|LIVING_ROOM_SET|PROPS|wooden_picture:wooden_picture" "rotate" " -type \"double3\" 89.99999999999995737 180.00000000000011369 0"
 		
-		2 "|LIVING_ROOM_SET|PROPS|wooden_picture:wooden_picture" "scale" " -type \"double3\" 2.41737371833806414 0.16614281460810634 2.41737371833806414";
+		2 "|LIVING_ROOM_SET|PROPS|wooden_picture:wooden_picture" "scale" " -type \"double3\" 2.41737371833806414 0.16614281460810634 2.41737371833806414"
+		
+		2 "wooden_picture:PxrNormalMap1" "filename" " -type \"string\" \"C:/Users/chenc315/Desktop/Repository/LoveLanguage//sourceimages/livingroomprops/wooden_picture/wooden_pic_lambert1_Normal.png\""
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|wooden_picture:wooden_picture|wooden_picture:wooden_pictureShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "eggroll_platterRN1";
@@ -47128,10 +49559,25 @@ createNode reference -n "eggroll_platterRN1";
 		"eggroll_platter1:eggrollRN10" 0
 		"eggroll_platter1:eggrollRN7" 0
 		"eggroll_platter1:eggrollRN9" 0
-		"eggroll_platter1:eggrollRN" 0
 		"eggroll_platter1:eggrollRN8" 0
+		"eggroll_platter1:eggrollRN" 0
 		"eggroll_platter1:eggrollRN2" 0
-		"eggroll_platterRN1" 9
+		"eggroll_platter1:eggrollRN11" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll11:pCube1|eggroll_platter1:eggroll11:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN6" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll6:pCube1|eggroll_platter1:eggroll6:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN13" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll13:pCube1|eggroll_platter1:eggroll13:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN3" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll3:pCube1|eggroll_platter1:eggroll3:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN1" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll1:pCube1|eggroll_platter1:eggroll1:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platterRN1" 10
 		0 "|eggroll_platter1:eggroll_platter" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter" 
@@ -47156,9 +49602,38 @@ createNode reference -n "eggroll_platterRN1";
 		
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls" 
 		"translate" " -type \"double3\" -0.12538688559553227 0 0.0018082936720132509"
-		"eggroll_platter1:eggrollRN5" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:skillet|eggroll_platter1:skilletShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN5" 2
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll5:pCube1" 
-		"translate" " -type \"double3\" -0.0015570518073218986 1.03701336393363186 1.88822919848769977";
+		"translate" " -type \"double3\" -0.0015570518073218986 1.03701336393363186 1.88822919848769977"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll5:pCube1|eggroll_platter1:eggroll5:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN4" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll4:pCube1|eggroll_platter1:eggroll4:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN12" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll12:pCube1|eggroll_platter1:eggroll12:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN10" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll10:pCube1|eggroll_platter1:eggroll10:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN7" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll7:pCube1|eggroll_platter1:eggroll7:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN9" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll9:pCube1|eggroll_platter1:eggroll9:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll:pCube1|eggroll_platter1:eggroll:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN8" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll8:pCube1|eggroll_platter1:eggroll8:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"eggroll_platter1:eggrollRN2" 1
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|eggroll_platter1:eggroll_platter|eggroll_platter1:eggrollls|eggroll_platter1:eggroll2:pCube1|eggroll_platter1:eggroll2:pCube1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "napkinStack_latestRN";
@@ -47166,7 +49641,7 @@ createNode reference -n "napkinStack_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"napkinStack_latestRN"
 		"napkinStack_latestRN" 0
-		"napkinStack_latestRN" 8
+		"napkinStack_latestRN" 11
 		0 "|napkinStack_latest:napkinstack" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|napkinStack_latest:napkinstack" 
@@ -47185,7 +49660,13 @@ createNode reference -n "napkinStack_latestRN";
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|napkinStack_latest:napkinstack" 
 		"scalePivot" " -type \"double3\" 0 0.16844832897186274 0"
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|napkinStack_latest:napkinstack" 
-		"scalePivotTranslate" " -type \"double3\" 0 0.26301768838214856 0";
+		"scalePivotTranslate" " -type \"double3\" 0 0.26301768838214856 0"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|napkinStack_latest:napkinstack|napkinStack_latest:napkinstack|napkinStack_latest:topnapkin|napkinStack_latest:topnapkinShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|napkinStack_latest:napkinstack|napkinStack_latest:napkinstack|napkinStack_latest:napkinstacktop|napkinStack_latest:napkinstacktopShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|napkinStack_latest:napkinstack|napkinStack_latest:napkinstack|napkinStack_latest:napkinstackbottom|napkinStack_latest:napkinstackbottomShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "napkinStack_latestRN1";
@@ -47193,7 +49674,7 @@ createNode reference -n "napkinStack_latestRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"napkinStack_latestRN1"
 		"napkinStack_latestRN1" 0
-		"napkinStack_latestRN1" 8
+		"napkinStack_latestRN1" 11
 		0 "|napkinStack_latest1:napkinstack" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|napkinStack_latest1:napkinstack" 
@@ -47212,7 +49693,13 @@ createNode reference -n "napkinStack_latestRN1";
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|napkinStack_latest1:napkinstack" 
 		"scalePivot" " -type \"double3\" 0 0.16844832897186274 0"
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|napkinStack_latest1:napkinstack" 
-		"scalePivotTranslate" " -type \"double3\" 0 0.25915683237704162 0";
+		"scalePivotTranslate" " -type \"double3\" 0 0.25915683237704162 0"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|napkinStack_latest1:napkinstack|napkinStack_latest1:napkinstack|napkinStack_latest1:topnapkin|napkinStack_latest1:topnapkinShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|napkinStack_latest1:napkinstack|napkinStack_latest1:napkinstack|napkinStack_latest1:napkinstacktop|napkinStack_latest1:napkinstacktopShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|napkinStack_latest1:napkinstack|napkinStack_latest1:napkinstack|napkinStack_latest1:napkinstackbottom|napkinStack_latest1:napkinstackbottomShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "chopsticks_round_latestRN";
@@ -47220,14 +49707,19 @@ createNode reference -n "chopsticks_round_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"chopsticks_round_latestRN"
 		"chopsticks_round_latestRN" 0
-		"chopsticks_round_latestRN" 3
+		"chopsticks_round_latestRN" 5
 		0 "|chopsticks_round_latest:chopsticks_round_CTRL" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|chopsticks_round_latest:chopsticks_round_CTRL" 
 		"translate" " -type \"double3\" 11.46753372652981895 25.48726316694887828 -6.04396776594367058"
 		
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|chopsticks_round_latest:chopsticks_round_CTRL" 
-		"scale" " -type \"double3\" 3.76291068517716631 3.76291068517716631 3.76291068517716631";
+		"scale" " -type \"double3\" 3.76291068517716631 3.76291068517716631 3.76291068517716631"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|chopsticks_round_latest:chopsticks_round_CTRL|chopsticks_round_latest:chopstick1|chopsticks_round_latest:chopstick1|chopsticks_round_latest:chopstickShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|chopsticks_round_latest:chopsticks_round_CTRL|chopsticks_round_latest:chopstick2|chopsticks_round_latest:chopstick2|chopsticks_round_latest:chopstickShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "chopsticks_square_latestRN";
@@ -47235,7 +49727,7 @@ createNode reference -n "chopsticks_square_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"chopsticks_square_latestRN"
 		"chopsticks_square_latestRN" 0
-		"chopsticks_square_latestRN" 8
+		"chopsticks_square_latestRN" 10
 		0 "|chopsticks_square_latest:chopsticks_square_CTRL" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|chopsticks_square_latest:chopsticks_square_CTRL" 
@@ -47256,7 +49748,11 @@ createNode reference -n "chopsticks_square_latestRN";
 		"translate" " -type \"double3\" -0.010288681759085769 -0.00015305125943197191 -0.08911314927290595"
 		
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|chopsticks_square_latest:chopsticks_square_CTRL|chopsticks_square_latest:chopstick2" 
-		"rotate" " -type \"double3\" 0 3.80662815897049134 0";
+		"rotate" " -type \"double3\" 0 3.80662815897049134 0"
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|chopsticks_square_latest:chopsticks_square_CTRL|chopsticks_square_latest:chopstick1|chopsticks_square_latest:chopstick1|chopsticks_square_latest:chopstickShape1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|chopsticks_square_latest:chopsticks_square_CTRL|chopsticks_square_latest:chopstick2|chopsticks_square_latest:chopstick2|chopsticks_square_latest:chopstickShape2.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "fork_latestRN";
@@ -47264,7 +49760,7 @@ createNode reference -n "fork_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"fork_latestRN"
 		"fork_latestRN" 0
-		"fork_latestRN" 4
+		"fork_latestRN" 5
 		0 "|fork_latest:fork" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|fork_latest:fork" 
@@ -47274,7 +49770,10 @@ createNode reference -n "fork_latestRN";
 		"rotate" " -type \"double3\" 187.8422515668085282 -80.49143357418559219 -182.24602173783586068"
 		
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|fork_latest:fork" 
-		"scale" " -type \"double3\" 0.29534671658575029 0.29534671658575029 0.29534671658575029";
+		"scale" " -type \"double3\" 0.29534671658575029 0.29534671658575029 0.29534671658575029"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|fork_latest:fork|fork_latest:forkShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "fork_latestRN1";
@@ -47282,7 +49781,7 @@ createNode reference -n "fork_latestRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"fork_latestRN1"
 		"fork_latestRN1" 0
-		"fork_latestRN1" 4
+		"fork_latestRN1" 5
 		0 "|fork_latest1:fork" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK" 
 		"-s -r "
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|fork_latest1:fork" 
@@ -47292,7 +49791,10 @@ createNode reference -n "fork_latestRN1";
 		"rotate" " -type \"double3\" 199.91488415920105126 -87.95190795827305408 -194.18934602499686548"
 		
 		2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|fork_latest1:fork" 
-		"scale" " -type \"double3\" 0.2929653850151816 0.2929653850151816 0.2929653850151816";
+		"scale" " -type \"double3\" 0.2929653850151816 0.2929653850151816 0.2929653850151816"
+		
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|PROPS|FRONT_WALL|COFFEE_TABLE|NAPKIN_STACK|fork_latest1:fork|fork_latest1:forkShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "house_INTERIORRN";
@@ -47303,19 +49805,127 @@ createNode reference -n "house_INTERIORRN";
 		"house_INTERIOR:stairsRN" 0
 		"house_INTERIORRN" 0
 		"house_INTERIOR:door_v01_latestRN" 0
-		"house_INTERIORRN" 6
+		"house_INTERIORRN" 20
 		0 "|house_INTERIOR:HOUSE_INTERIOR" "|LIVING_ROOM_SET" "-s -r "
 		2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:interior|house_INTERIOR:interiorShape" 
 		"dispResolution" " 3"
 		2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:interior|house_INTERIOR:interiorShape" 
 		"displaySmoothMesh" " 2"
-		2 "house_INTERIOR:PxrBump1" "filename" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/house/house_house_Height.png\""
+		2 "house_INTERIOR:PxrBump1" "filename" " -type \"string\" \"C:/Users/chenc315/Desktop/Repository/LoveLanguage//sourceimages/house/house_house_Height.png\""
 		
-		2 "house_INTERIOR:file5" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/house/house_house_Height.png\""
+		2 "house_INTERIOR:file5" "fileTextureName" " -type \"string\" \"C:/Users/chenc315/Desktop/Repository/LoveLanguage//sourceimages/house/house_house_Height.png\""
 		
-		2 "house_INTERIOR:file5" "colorSpace" " -type \"string\" \"sRGB\"";
+		2 "house_INTERIOR:file5" "colorSpace" " -type \"string\" \"sRGB\""
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:roof|house_INTERIOR:roofShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:interior|house_INTERIOR:interiorShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LEFTLargeWindow|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LEFTLargeWindow|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:MIDDLELargeWindow|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:MIDDLELargeWindow|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:RIGHTLargeWindow|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:RIGHTLargeWindow|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:kitchen_window|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:kitchen_window|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LR_Big_left_window|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LR_Big_left_window|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LR_Big_right_Window|house_INTERIOR:glass|house_INTERIOR:glassShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:LR_Big_right_Window|house_INTERIOR:frame|house_INTERIOR:frameShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"house_INTERIOR:curtainsRN" 3
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:curtains:Curtains|house_INTERIOR:curtains:Left_Curtain|house_INTERIOR:curtains:outputCloth1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:curtains:Curtains|house_INTERIOR:curtains:Right_Curtain|house_INTERIOR:curtains:outputCloth1.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:curtains:Curtains|house_INTERIOR:curtains:Rod|house_INTERIOR:curtains:RodShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		"house_INTERIOR:door_v01_latestRN" 6
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:doorShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:knob_stem|house_INTERIOR:door_v01_latest:knob_stemShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:doorknob2|house_INTERIOR:door_v01_latest:doorknob2Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:doorknob1|house_INTERIOR:door_v01_latest:doorknob1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:doorknob_plate1|house_INTERIOR:door_v01_latest:doorknob_plate1Shape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "|LIVING_ROOM_SET|house_INTERIOR:HOUSE_INTERIOR|house_INTERIOR:door_v01_latest:door|house_INTERIOR:door_v01_latest:knob|house_INTERIOR:door_v01_latest:doorkonb_plate|house_INTERIOR:door_v01_latest:doorkonb_plateShape.message" "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|PxrMeshLight_bulb|PxrMeshLight_bulbShape.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode shadingEngine -n "PxrBlack1SG";
+	rename -uid "7482843A-4FD4-5929-5F29-4CBB007794D2";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo1";
+	rename -uid "CDDCADA5-465F-20C1-E2DA-4E92FC6112F4";
+createNode lambert -n "lambert2";
+	rename -uid "085C1D7C-45F2-EBEF-ADCC-5AB51B34131E";
+createNode shadingEngine -n "PxrBlack2SG";
+	rename -uid "DA89B404-45B3-B556-5683-478BD5B08EDF";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo2";
+	rename -uid "7797E8D3-4384-245F-432A-2791F97E18C2";
+createNode lambert -n "lambert3";
+	rename -uid "D00466FF-4FAA-0ACA-F849-0CBB625FAB30";
+createNode shadingEngine -n "PxrBlack3SG";
+	rename -uid "BC3B7A30-4AE8-0151-CC8E-B48B5BA6DBF5";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo3";
+	rename -uid "0222F11E-4845-F0B2-A66B-04B9D8400BE8";
+createNode lambert -n "lambert4";
+	rename -uid "F6B28611-48A4-F30D-C649-5CB2A90E5C67";
+createNode shadingEngine -n "PxrBlack4SG";
+	rename -uid "CDF7F8E5-4C46-84D4-AEFC-6F9D797D5920";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo4";
+	rename -uid "FA0CA67D-4009-3C1D-B3FC-10A016E5F5A8";
+createNode lambert -n "lambert5";
+	rename -uid "F422D071-4DFB-37D4-E385-5B94AF361A22";
+createNode shadingEngine -n "PxrBlack5SG";
+	rename -uid "EFFFCDF2-40F8-CF2D-7F90-EF9AD9358780";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo5";
+	rename -uid "DCBD986B-4FEC-FA77-1F3A-88801456DF47";
+createNode lambert -n "lambert6";
+	rename -uid "79103735-49CD-3213-DF72-68ACCB9F322A";
+createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "B8871FCC-41F1-601D-1FE7-D8B404D31E52";
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" -334.92062161208514 -330.95236780151538 ;
+	setAttr ".tgi[0].vh" -type "double2" 326.19046322883179 341.26982770899673 ;
+createNode PxrBlack -n "PxrBlack6";
+	rename -uid "1821E50D-4922-2DFA-4CA9-4496AB83258D";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".rman_areaLightShader" -type "string" "";
+createNode shadingEngine -n "PxrBlack6SG";
+	rename -uid "FCE4F557-496F-1F60-AA71-1DAD071B9FB8";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo6";
+	rename -uid "4E5695E9-4FC1-9B83-9221-8097CF50C2B9";
+createNode lambert -n "lambert7";
+	rename -uid "3E57D680-4B4E-C9C2-74E3-6C9A7F24FEF3";
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -47328,15 +49938,13 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
 		 1 1 1 0 0 0 0 0 0 0 0 0
 		 0 0 0 0 ;
-	setAttr ".aoon" yes;
-	setAttr ".msaa" yes;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 272 ".st";
+	setAttr -s 297 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -47349,7 +49957,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 246 ".s";
+	setAttr -s 266 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -47361,21 +49969,23 @@ select -ne :defaultRenderUtilityList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 160 ".u";
+	setAttr -s 200 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 146 ".r";
+select -ne :lightList1;
+	setAttr -s 14 ".l";
 select -ne :defaultTextureList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 294 ".tx";
+	setAttr -s 353 ".tx";
 select -ne :initialShadingGroup;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 126 ".dsm";
+	setAttr -s 137 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -47384,7 +49994,7 @@ select -ne :initialShadingGroup;
 	setAttr -cb on ".fo";
 	setAttr -cb on ".epo";
 	setAttr -k on ".ro" yes;
-	setAttr -s 45 ".gn";
+	setAttr -s 99 ".gn";
 select -ne :initialParticleSE;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -47506,6 +50116,8 @@ select -ne :defaultResolution;
 	setAttr -av -k on ".zsl";
 	setAttr -k on ".isu";
 	setAttr -k on ".pdu";
+select -ne :defaultLightSet;
+	setAttr -s 14 ".dsm";
 select -ne :hardwareRenderGlobals;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -47544,12 +50156,14 @@ select -ne :hardwareRenderGlobals;
 	setAttr -k on ".bswa";
 	setAttr -k on ".shml";
 	setAttr -k on ".hwel";
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "table_legShape1.iog" "side_tableRN.phl[1]";
 connectAttr "table_legShape2.iog" "side_tableRN.phl[2]";
 connectAttr "table_topShape.iog" "side_tableRN.phl[3]";
-connectAttr "vase_bodyShape.iog" "lamp_latestRN.phl[1]";
-connectAttr "lamp_shadeShape.iog" "lamp_latestRN.phl[2]";
-connectAttr "bulbShape.iog" "lamp_latestRN.phl[3]";
+connectAttr "lamp_latestRN.phl[1]" "PxrBlack6SG.dsm" -na;
+connectAttr "vase_bodyShape.iog" "lamp_latestRN.phl[2]";
+connectAttr "lamp_shadeShape.iog" "lamp_latestRN.phl[3]";
 connectAttr "bottom_shade_ringShape.iog" "lamp_latestRN.phl[4]";
 connectAttr "top_shade_ringShape.iog" "lamp_latestRN.phl[5]";
 connectAttr "vertical_shade_barShape.iog" "lamp_latestRN.phl[6]";
@@ -47662,6 +50276,12 @@ relationship "link" ":lightLinker1" "grandma_controlrig:PxrSurface12SG.message" 
 relationship "link" ":lightLinker1" "grandma_controlrig:PxrSurface14SG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "grandma_controlrig:PxrSurface13SG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "grandma_controlrig:PxrSurface15SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "PxrBlack1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "PxrBlack2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "PxrBlack3SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "PxrBlack4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "PxrBlack5SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "PxrBlack6SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "grandma_controlrig:grandma_shaderSG.message" ":defaultLightSet.message";
@@ -47680,6 +50300,27 @@ relationship "shadowLink" ":lightLinker1" "grandma_controlrig:PxrSurface12SG.mes
 relationship "shadowLink" ":lightLinker1" "grandma_controlrig:PxrSurface14SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "grandma_controlrig:PxrSurface13SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "grandma_controlrig:PxrSurface15SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "PxrBlack1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "PxrBlack2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "PxrBlack3SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "PxrBlack4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "PxrBlack5SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "PxrBlack6SG.message" ":defaultLightSet.message";
+relationship "ignore" ":lightLinker1" "pCubeShape2.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "BaseShape.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "BackShape.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape10.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape11.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "TongueShape.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "pTorusShape2.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape9.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "Left_SideShape.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "Right_SideShape.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "SoleShape.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape12.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape14.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape15.message" "PxrMeshLight_bulbShape.message";
+relationship "ignore" ":lightLinker1" "pCubeShape13.message" "PxrMeshLight_bulbShape.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr ":PxrPathTracer.msg" ":rmanGlobals.ri_integrator";
@@ -47687,6 +50328,7 @@ connectAttr ":rmanDefaultDisplay.msg" ":rmanGlobals.displays[0]";
 connectAttr "d_openexr.msg" ":rmanDefaultDisplay.displayType";
 connectAttr "Ci.msg" ":rmanDefaultDisplay.displayChannels[0]";
 connectAttr "a.msg" ":rmanDefaultDisplay.displayChannels[1]";
+connectAttr "lamp_latestRNfosterParent1.msg" "lamp_latestRN.fp";
 connectAttr "sharedReferenceNode.sr" "grannyCranny_SET_latestRN.sr";
 connectAttr "sharedReferenceNode.sr" "kitchen_SET_latestRN.sr";
 connectAttr "grandma_controlrig:renderLayerManager.rlmi[0]" "grandma_controlrig:defaultRenderLayer.rlid"
@@ -47881,6 +50523,29 @@ connectAttr "grandma_controlrig:necklace_string_base.msg" "grandma_controlrig:hy
 		;
 connectAttr ":time1.o" "grandma_controlrig:xgmRefreshPreview.tim";
 connectAttr "sharedReferenceNode.sr" "shoes_wyatt_v01_latestRN.sr";
+connectAttr "lambert2.oc" "PxrBlack1SG.ss";
+connectAttr "|LIVING_ROOM_SET|PROPS|FRONT_WALL|sideTable_and_Lamp1|lamp|frame|lightbulb|bulb|bulbShape.iog" "PxrBlack1SG.dsm"
+		 -na;
+connectAttr "PxrMeshLight_bulbShape.msg" "PxrBlack1SG.rman__torattr___areaLightShader"
+		;
+connectAttr "PxrBlack1SG.msg" "materialInfo1.sg";
+connectAttr "lambert2.msg" "materialInfo1.m";
+connectAttr "lambert3.oc" "PxrBlack2SG.ss";
+connectAttr "PxrBlack2SG.msg" "materialInfo2.sg";
+connectAttr "lambert3.msg" "materialInfo2.m";
+connectAttr "lambert4.oc" "PxrBlack3SG.ss";
+connectAttr "PxrBlack3SG.msg" "materialInfo3.sg";
+connectAttr "lambert4.msg" "materialInfo3.m";
+connectAttr "lambert5.oc" "PxrBlack4SG.ss";
+connectAttr "PxrBlack4SG.msg" "materialInfo4.sg";
+connectAttr "lambert5.msg" "materialInfo4.m";
+connectAttr "lambert6.oc" "PxrBlack5SG.ss";
+connectAttr "PxrBlack5SG.msg" "materialInfo5.sg";
+connectAttr "lambert6.msg" "materialInfo5.m";
+connectAttr "PxrBlack6.oc" "PxrBlack6SG.rman__surface";
+connectAttr "lambert7.oc" "PxrBlack6SG.ss";
+connectAttr "PxrBlack6SG.msg" "materialInfo6.sg";
+connectAttr "lambert7.msg" "materialInfo6.m";
 connectAttr "grandma_controlrig:grandma_shaderSG.pa" ":renderPartition.st" -na;
 connectAttr "grandma_controlrig:PxrSurface1SG.pa" ":renderPartition.st" -na;
 connectAttr "grandma_controlrig:PxrSurface2SG.pa" ":renderPartition.st" -na;
@@ -47897,6 +50562,12 @@ connectAttr "grandma_controlrig:PxrSurface12SG.pa" ":renderPartition.st" -na;
 connectAttr "grandma_controlrig:PxrSurface13SG.pa" ":renderPartition.st" -na;
 connectAttr "grandma_controlrig:PxrSurface14SG.pa" ":renderPartition.st" -na;
 connectAttr "grandma_controlrig:PxrSurface15SG.pa" ":renderPartition.st" -na;
+connectAttr "PxrBlack1SG.pa" ":renderPartition.st" -na;
+connectAttr "PxrBlack2SG.pa" ":renderPartition.st" -na;
+connectAttr "PxrBlack3SG.pa" ":renderPartition.st" -na;
+connectAttr "PxrBlack4SG.pa" ":renderPartition.st" -na;
+connectAttr "PxrBlack5SG.pa" ":renderPartition.st" -na;
+connectAttr "PxrBlack6SG.pa" ":renderPartition.st" -na;
 connectAttr "grandma_controlrig:grandma_shader.msg" ":defaultShaderList1.s" -na;
 connectAttr "grandma_controlrig:gma_pxrdisp.msg" ":defaultShaderList1.s" -na;
 connectAttr "grandma_controlrig:gma_shirt_shader.msg" ":defaultShaderList1.s" -na
@@ -47928,6 +50599,7 @@ connectAttr "grandma_controlrig:gma_necklace_string_shader.msg" ":defaultShaderL
 		 -na;
 connectAttr "grandma_controlrig:gma_necklace_bead_shader.msg" ":defaultShaderList1.s"
 		 -na;
+connectAttr "PxrBlack6.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr ":rmanGlobals.msg" ":defaultRenderingList1.r" -na;
 connectAttr ":PxrPathTracer.msg" ":defaultRenderingList1.r" -na;
@@ -47936,6 +50608,21 @@ connectAttr "d_openexr.msg" ":defaultRenderingList1.r" -na;
 connectAttr "grandma_controlrig:defaultRenderLayer.msg" ":defaultRenderingList1.r"
 		 -na;
 connectAttr "grandma_controlrig:d_openexr.msg" ":defaultRenderingList1.r" -na;
+connectAttr "PxrRectLightShape.msg" ":lightList1.l" -na;
+connectAttr "PxrRectLight1Shape.msg" ":lightList1.l" -na;
+connectAttr "PxrRectLight2Shape.msg" ":lightList1.l" -na;
+connectAttr "PxrRectLight3Shape.msg" ":lightList1.l" -na;
+connectAttr "kitchen_door_lampShape.msg" ":lightList1.l" -na;
+connectAttr "tabletop_lightShape.msg" ":lightList1.l" -na;
+connectAttr "left_table_lamp1Shape.msg" ":lightList1.l" -na;
+connectAttr "left_table_lamp2Shape.msg" ":lightList1.l" -na;
+connectAttr "PxrMeshLight_bulbShape.msg" ":lightList1.l" -na;
+connectAttr "left_table_lamp3Shape.msg" ":lightList1.l" -na;
+connectAttr "left_table_lamp4Shape.msg" ":lightList1.l" -na;
+connectAttr "|lamp_latestRNfosterParent1|bulb|bulbShape.msg" ":lightList1.l" -na
+		;
+connectAttr "PxrDiskLightShape.msg" ":lightList1.l" -na;
+connectAttr "PxrDiskLight1Shape.msg" ":lightList1.l" -na;
 connectAttr "grandma_controlrig:gma_tex_norm.msg" ":defaultTextureList1.tx" -na;
 connectAttr "grandma_controlrig:gma_tex_disp.msg" ":defaultTextureList1.tx" -na;
 connectAttr "grandma_controlrig:PxrDispTransform1.msg" ":defaultTextureList1.tx"
@@ -47964,4 +50651,18 @@ connectAttr "grandma_controlrig:PxrGamma1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "grandma_controlrig:necklace_string_dustfractal.msg" ":defaultTextureList1.tx"
 		 -na;
 connectAttr "lightbulb_baseShape.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "PxrRectLight.iog" ":defaultLightSet.dsm" -na;
+connectAttr "PxrRectLight1.iog" ":defaultLightSet.dsm" -na;
+connectAttr "PxrRectLight2.iog" ":defaultLightSet.dsm" -na;
+connectAttr "PxrRectLight3.iog" ":defaultLightSet.dsm" -na;
+connectAttr "kitchen_door_lamp.iog" ":defaultLightSet.dsm" -na;
+connectAttr "tabletop_light.iog" ":defaultLightSet.dsm" -na;
+connectAttr "left_table_lamp1.iog" ":defaultLightSet.dsm" -na;
+connectAttr "left_table_lamp2.iog" ":defaultLightSet.dsm" -na;
+connectAttr "PxrMeshLight_bulb.iog" ":defaultLightSet.dsm" -na;
+connectAttr "left_table_lamp3.iog" ":defaultLightSet.dsm" -na;
+connectAttr "left_table_lamp4.iog" ":defaultLightSet.dsm" -na;
+connectAttr "|lamp_latestRNfosterParent1|bulb.iog" ":defaultLightSet.dsm" -na;
+connectAttr "PxrDiskLight.iog" ":defaultLightSet.dsm" -na;
+connectAttr "PxrDiskLight1.iog" ":defaultLightSet.dsm" -na;
 // End of livingRoom_SET_latest.ma
