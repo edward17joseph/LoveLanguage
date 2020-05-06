@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: 06_transition_and_07_end.ma
-//Last modified: Tue, May 05, 2020 07:57:13 PM
+//Last modified: Tue, May 05, 2020 10:25:55 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "chair" -dr 1 -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
 file -rdi 1 -ns "chair1" -dr 1 -rfn "chairRN1" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
@@ -93,12 +93,184 @@ file -rdi 2 -ns "bowl_conic_latest" -rfn "filling:bowl_conic_latestRN" -op "v=0;
 		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/bowl_conic_latest.ma";
 file -rdi 1 -ns "full_SET_latest" -dr 1 -rfn "_meetGrandma:full_SET_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//scenes/full_SET_latest.ma";
-file -rdi 1 -ns "grandma_controlrig" -rfn "_meetGrandma:grandma_controlrigRN"
+file -rdi 1 -ns "grandma_controlrig" -dr 1 -rfn "_meetGrandma:grandma_controlrigRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/grandma/grandma_controlrig.ma";
-file -rdi 1 -ns "MC_control_rig" -rfn "_meetGrandma:MC_control_rigRN" -op "v=0;"
-		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/MC(May)/MC_control_rig.ma";
+file -rdi 1 -ns "MC_control_rig" -dr 1 -rfn "_meetGrandma:MC_control_rigRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/MC(May)/MC_control_rig.ma";
 file -rdi 1 -ns "grannyCranny_SET_latest" -dr 1 -rfn "_meetGrandma:grannyCranny_SET_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//scenes/grannyCranny_SET_latest.ma";
+file -rdi 1 -ns "livingRoom_SET_latest" -rfn "livingRoom_SET_latestRN" -op "v=0;"
+		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//scenes/livingRoom_SET_latest.ma";
+file -rdi 2 -ns "bookshelf_v01_latest" -rfn "livingRoom_SET_latest:bookshelf_v01_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/bookshelf_v01_latest.ma";
+file -rdi 2 -ns "coffee_table_latest" -rfn "livingRoom_SET_latest:coffee_table_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/coffee_table_latest.ma";
+file -rdi 2 -ns "console_table" -rfn "livingRoom_SET_latest:console_tableRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/console_table.ma";
+file -rdi 2 -ns "sofa_latest" -rfn "livingRoom_SET_latest:sofa_latestRN" -op
+		 "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/sofa_latest.ma";
+file -rdi 2 -ns "side_table" -rfn "livingRoom_SET_latest:side_tableRN" -op "v=0;"
+		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/side_table.ma";
+file -rdi 2 -ns "lamp_latest" -rfn "livingRoom_SET_latest:lamp_latestRN" -op
+		 "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/lamp_latest.ma";
+file -rdi 2 -ns "shoe_rack_latest" -rfn "livingRoom_SET_latest:shoe_rack_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/shoe_rack_latest.ma";
+file -rdi 2 -ns "bamboo" -rfn "livingRoom_SET_latest:bambooRN" -op "v=0;" -typ
+		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/bamboo.ma";
+file -rdi 2 -ns "gingkoBiloba_latest" -rfn "livingRoom_SET_latest:gingkoBiloba_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/gingkoBiloba_latest.ma";
+file -rdi 2 -ns "guianaChestnutPlant_latest" -rfn "livingRoom_SET_latest:guianaChestnutPlant_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/guianaChestnutPlant_latest.ma";
+file -rdi 2 -ns "grannyCranny_SET_latest" -dr 1 -rfn "livingRoom_SET_latest:grannyCranny_SET_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//scenes/grannyCranny_SET_latest.ma";
+file -rdi 2 -ns "orchid_latest" -rfn "livingRoom_SET_latest:orchid_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/orchid_latest.ma";
+file -rdi 2 -ns "fish4" -rfn "livingRoom_SET_latest:fish4RN" -op "v=0;" -typ
+		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/fish4.ma";
+file -rdi 2 -ns "meat_stirFry_latest" -rfn "livingRoom_SET_latest:meat_stirFry_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/meat_stirFry_latest.ma";
+file -rdi 3 -ns "bowl_smallwhite_pattern1_latest" -rfn "livingRoom_SET_latest:meat_stirFry_latest:bowl_smallwhite_pattern1_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/bowl_smallwhite_pattern1_latest.ma";
+file -rdi 2 -ns "kitchen_SET_latest" -dr 1 -rfn "livingRoom_SET_latest:kitchen_SET_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//scenes/kitchen_SET_latest.ma";
+file -rdi 2 -ns "frame6" -rfn "livingRoom_SET_latest:frame1RN" -op "v=0;" -typ
+		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/frame1.ma";
+file -rdi 2 -ns "frame7" -rfn "livingRoom_SET_latest:frame2RN" -op "v=0;" -typ
+		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/frame2.ma";
+file -rdi 2 -ns "frame8" -rfn "livingRoom_SET_latest:frame3RN" -op "v=0;" -typ
+		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/frame3.ma";
+file -rdi 2 -ns "greenbeans" -rfn "livingRoom_SET_latest:greenbeansRN" -op "v=0;"
+		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/greenbeans.ma";
+file -rdi 2 -ns "rice_partyserving" -rfn "livingRoom_SET_latest:rice_partyservingRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/rice/rice_partyserving.ma";
+file -rdi 3 -ns "bowl_blueceramic_pattern1_latest" -rfn "livingRoom_SET_latest:rice_partyserving:bowl_blueceramic_pattern1_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/bowl_blueceramic_pattern1_latest.ma";
+file -rdi 2 -ns "edamame_latest" -rfn "livingRoom_SET_latest:edamame_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/edamame_latest.ma";
+file -rdi 3 -ns "soy_bean_latest" -dr 1 -rfn "livingRoom_SET_latest:edamame_latest:soy_bean_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/foodprops/soy_bean_latest.ma";
+file -rdi 2 -ns "soy_sauce_latest" -rfn "livingRoom_SET_latest:soy_sauce_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/soy_sauce_latest.ma";
+file -rdi 2 -ns "croc3" -rfn "livingRoom_SET_latest:croc3RN" -op "v=0;" -typ
+		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/shoes/croc3.ma";
+file -rdi 2 -ns "croc4" -dr 1 -rfn "livingRoom_SET_latest:croc3RN1" -op "v=0;"
+		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/shoes/croc3.ma";
+file -rdi 2 -ns "running_shoe_latest" -rfn "livingRoom_SET_latest:running_shoe_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/shoes/running_shoe_latest.ma";
+file -rdi 2 -ns "running_shoe_latest1" -dr 1 -rfn "livingRoom_SET_latest:running_shoe_latestRN1"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/shoes/running_shoe_latest.ma";
+file -rdi 2 -ns "shoe_jic" -rfn "livingRoom_SET_latest:shoe_jicRN" -op "v=0;"
+		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/shoes/shoe_jic.ma";
+file -rdi 2 -ns "shoe_jic1" -dr 1 -rfn "livingRoom_SET_latest:shoe_jicRN1" 
+		-op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/shoes/shoe_jic.ma";
+file -rdi 2 -ns "jackie_shoe_latest" -rfn "livingRoom_SET_latest:jackie_shoe_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/shoes/jackie_shoe_latest.ma";
+file -rdi 2 -ns "ping_shoes_latest" -rfn "livingRoom_SET_latest:ping_shoes_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/shoes/ping_shoes_latest.ma";
+file -rdi 2 -ns "boardGames_latest" -rfn "livingRoom_SET_latest:boardGames_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/boardGames_latest.ma";
+file -rdi 2 -ns "bookStack_LEFT_SHELF" -rfn "livingRoom_SET_latest:bookStack_LEFT_SHELFRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/bookStack_LEFT_SHELF.ma";
+file -rdi 2 -ns "bookStack_RIGHT_SHELF" -rfn "livingRoom_SET_latest:bookStack_RIGHT_SHELFRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/bookStack_RIGHT_SHELF.ma";
+file -rdi 2 -ns "large_painting_A" -rfn "livingRoom_SET_latest:large_painting_ARN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/large_painting_A.ma";
+file -rdi 2 -ns "large_painting_B" -rfn "livingRoom_SET_latest:large_painting_BRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/large_painting_B.ma";
+file -rdi 2 -ns "windchime_latest" -rfn "livingRoom_SET_latest:windchime_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/windchime_latest.ma";
+file -rdi 2 -ns "wooden_picture" -rfn "livingRoom_SET_latest:wooden_pictureRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/wooden_picture.ma";
+file -rdi 2 -ns "eggroll_platter1" -rfn "livingRoom_SET_latest:eggroll_platterRN1"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll_platter.ma";
+file -rdi 3 -ns "eggroll" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll1" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN1"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll2" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN2"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll3" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN3"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll4" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN4"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll5" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN5"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll6" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN6"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll7" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN7"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll8" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN8"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll9" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN9"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll10" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN10"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll11" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN11"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll12" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN12"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 3 -ns "eggroll13" -rfn "livingRoom_SET_latest:eggroll_platter1:eggrollRN13"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/eggroll.ma";
+file -rdi 2 -ns "napkinStack_latest" -rfn "livingRoom_SET_latest:napkinStack_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/napkinStack_latest.ma";
+file -rdi 2 -ns "napkinStack_latest1" -rfn "livingRoom_SET_latest:napkinStack_latestRN1"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/napkinStack_latest.ma";
+file -rdi 2 -ns "chopsticks_round_latest" -rfn "livingRoom_SET_latest:chopsticks_round_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/chopsticks_round_latest.ma";
+file -rdi 2 -ns "chopsticks_square_latest" -rfn "livingRoom_SET_latest:chopsticks_square_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/chopsticks_square_latest.ma";
+file -rdi 2 -ns "fork_latest" -rfn "livingRoom_SET_latest:fork_latestRN" -op
+		 "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/fork_latest.ma";
+file -rdi 2 -ns "fork_latest1" -rfn "livingRoom_SET_latest:fork_latestRN1" 
+		-op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/fork_latest.ma";
+file -rdi 2 -ns "house_INTERIOR" -rfn "livingRoom_SET_latest:house_INTERIORRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/house_INTERIOR.ma";
+file -rdi 3 -ns "door_v01_latest" -rfn "livingRoom_SET_latest:house_INTERIOR:door_v01_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/door_v01_latest.ma";
+file -rdi 3 -ns "curtains" -rfn "livingRoom_SET_latest:house_INTERIOR:curtainsRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/curtains.ma";
+file -rdi 2 -ns "running_shoe_latest2" -rfn "livingRoom_SET_latest:running_shoe_latestRN2"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/running_shoe_latest.ma";
+file -rdi 2 -ns "croc5" -rfn "livingRoom_SET_latest:croc3RN2" -typ "mayaAscii"
+		 "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/croc3.ma";
+file -rdi 2 -ns "shoe_converse_latest" -rfn "livingRoom_SET_latest:shoe_converse_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/shoe_converse_latest.ma";
+file -rdi 2 -ns "shoe_jic2" -rfn "livingRoom_SET_latest:shoe_jicRN2" -typ "mayaAscii"
+		 "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/shoe_jic.ma";
+file -rdi 2 -ns "ping_shoes_latest1" -dr 1 -rfn "livingRoom_SET_latest:ping_shoes_latestRN1"
+		 -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/ping_shoes_latest.ma";
+file -rdi 2 -ns "ping_shoes_latest2" -rfn "livingRoom_SET_latest:ping_shoes_latestRN2"
+		 -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/ping_shoes_latest.ma";
+file -rdi 2 -ns "running_shoe_latest3" -rfn "livingRoom_SET_latest:running_shoe_latestRN3"
+		 -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/running_shoe_latest.ma";
+file -rdi 2 -ns "running_shoe_latest4" -rfn "livingRoom_SET_latest:running_shoe_latest3RN"
+		 -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/running_shoe_latest.ma";
+file -rdi 2 -ns "bamboo2" -dr 1 -rfn "livingRoom_SET_latest:bambooRN1" -op "v=0;"
+		 -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/bamboo.ma";
+file -rdi 2 -ns "hiking_boot_latest" -rfn "livingRoom_SET_latest:hiking_boot_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/hiking_boot_latest.ma";
+file -rdi 2 -ns "hiking_boot_latest1" -rfn "livingRoom_SET_latest:hiking_boot_latestRN1"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/hiking_boot_latest.ma";
+file -rdi 2 -ns "jackie_shoe_latest_purple" -rfn "livingRoom_SET_latest:jackie_shoe_latest_purpleRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/jackie_shoe_latest_purple.ma";
+file -rdi 2 -ns "jackie_shoe_latest_purple1" -rfn "livingRoom_SET_latest:jackie_shoe_latest_purpleRN1"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/jackie_shoe_latest_purple.ma";
+file -rdi 2 -ns "flats" -rfn "livingRoom_SET_latest:flatsRN" -op "v=0;" -typ
+		 "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/flats.ma";
+file -rdi 2 -ns "shoe_swoosh" -rfn "livingRoom_SET_latest:shoe_swooshRN" -op
+		 "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/shoe_swoosh.ma";
+file -rdi 2 -ns "shoe_swoosh1" -rfn "livingRoom_SET_latest:shoe_swooshRN1" 
+		-op "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/shoe_swoosh.ma";
+file -rdi 2 -ns "flats_red" -rfn "livingRoom_SET_latest:flats_redRN" -op "v=0;"
+		 -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/flats_red.ma";
+file -rdi 2 -ns "croc_pile" -rfn "livingRoom_SET_latest:croc_pileRN" -op "v=0;"
+		 -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/croc_pile.ma";
+file -rdi 3 -ns "croc3" -rfn "livingRoom_SET_latest:croc_pile:croc3RN" -op "v=0;"
+		 -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/livingroomprops/shoes/croc3.ma";
+file -rdi 2 -ns "mooncake_latest" -rfn "livingRoom_SET_latest:mooncake_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/foodprops/mooncake_latest.ma";
+file -rdi 2 -ns "plate" -rfn "livingRoom_SET_latest:plateRN" -op "v=0;" -typ
+		 "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/kitchenprops/plate.ma";
 file -r -ns "chair" -dr 1 -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
 file -r -ns "chair1" -dr 1 -rfn "chairRN1" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
 file -r -ns "chair2" -dr 1 -rfn "chairRN2" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
@@ -148,6 +320,8 @@ file -r -ns "MC_control_rig" -dr 1 -rfn "_meetGrandma:MC_control_rigRN" -op "v=0
 		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/MC(May)/MC_control_rig.ma";
 file -r -ns "grannyCranny_SET_latest" -dr 1 -rfn "_meetGrandma:grannyCranny_SET_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//scenes/grannyCranny_SET_latest.ma";
+file -r -ns "livingRoom_SET_latest" -dr 1 -rfn "livingRoom_SET_latestRN" -op "v=0;"
+		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//scenes/livingRoom_SET_latest.ma";
 requires maya "2019";
 requires -nodeType "hairPhysicalShader" "hairPhysicalShader" "1.0";
 requires -nodeType "floatLogic" "lookdevKit" "1.0";
@@ -160,6 +334,7 @@ requires -nodeType "PxrVisualizer" -nodeType "PxrDispTransform" -nodeType "PxrLa
 		 -nodeType "PxrDirectLighting" -nodeType "PxrVCM" -nodeType "PxrPathTracer" -nodeType "PxrDirt"
 		 -nodeType "rmanDisplay" "RenderMan_for_Maya.py" "23.0 @ 2025012";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "3.1.2";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2019";
@@ -170,14 +345,14 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "37815538-8644-BCD7-AD49-938A2ADB8C19";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 136.36555607842902 62.483638921034235 -145.271918336748 ;
-	setAttr ".r" -type "double3" 4646.6616472738588 -1762.2000000001199 0 ;
+	setAttr ".t" -type "double3" -150.2699210451766 403.78563829345967 24.611224097447291 ;
+	setAttr ".r" -type "double3" 4631.661647273877 -1851.4000000001126 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3A622C15-C24B-A8CD-2858-14AC596DF0A6";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 55.136671080790158;
+	setAttr ".coi" 497.40654995410262;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -353,11 +528,11 @@ createNode camera -n "making_food_cam_altShape" -p "making_food_cam_alt";
 	setAttr ".rnd" no;
 	setAttr ".ovr" 1.3;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 84.625083749001902;
+	setAttr ".coi" 77.274777385170012;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 114.99053999878379 7.9983532445868128 -177.82920262209819 ;
+	setAttr ".tp" -type "double3" 111.35556098572165 31.627382259136272 -160.42237875697268 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".dr" yes;
 createNode transform -n "end_cam_alt";
@@ -384,8 +559,50 @@ createNode camera -n "end_cam_altShape" -p "end_cam_alt";
 	setAttr ".tp" -type "double3" 111.35556098572165 31.627382259136272 -160.42237875697268 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".dr" yes;
+createNode fosterParent -n "_meetGrandma:MC_control_rigRNfosterParent1";
+	rename -uid "8626D877-914C-7D29-B37B-56987361CB1A";
+createNode parentConstraint -n "_meetGrandma:armL_IK_Grp1_parentConstraint1" -p "_meetGrandma:MC_control_rigRNfosterParent1";
+	rename -uid "4AF91CDB-D744-0B99-C514-E5BD1A8E9525";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bowl_blueceramic_pattern1_CTRLW0" 
+		-dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -101.49984227681995 33.922104913103887 18.169929051585139 ;
+	setAttr ".rst" -type "double3" -5.8603317357442037 -1.9574813848107517 7.1097108584675937 ;
+	setAttr ".rsrr" -type "double3" -33.64095564377417 -99.833356191941732 -60.536049465608805 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "_meetGrandma:armR_IK_Ctrl_parentConstraint1" -p "_meetGrandma:MC_control_rigRNfosterParent1";
+	rename -uid "A4C18A47-8C47-1343-BD96-1AA1634CA578";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bowl_blueceramic_pattern1_CTRLW0" 
+		-dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" 170.23971167328773 11.756355087086586 5.9547255869350799 ;
+	setAttr ".rst" -type "double3" 5.3721462521421781 0.84904557742057207 -7.4009585660128714 ;
+	setAttr ".rsrr" -type "double3" -37.553413617181484 -98.288570174533817 -54.943896127099329 ;
+	setAttr -k on ".w0";
 createNode fosterParent -n "fork_latestRNfosterParent1";
-	rename -uid "0DC687C9-EE42-F907-93F1-98B16360845B";
+	rename -uid "C1B6835B-A344-C8AA-FD6F-5595BD32CB38";
 createNode parentConstraint -n "fork_parentConstraint1" -p "fork_latestRNfosterParent1";
 	rename -uid "55B5E00C-8748-5464-8FAE-FF93F15B0266";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "armR_IK_CtrlW0" -dv 1 -min 0 -at "double";
@@ -3035,73 +3252,30 @@ createNode parentConstraint -n "pSphere1_parentConstraint1" -p "pSphere1";
 	setAttr ".rst" -type "double3" -6.0938282761842402 -10.282512954567949 -6.4453434460255608 ;
 	setAttr ".rsrr" -type "double3" -2.6922469953218271 -162.61171331564884 -27.095792364122008 ;
 	setAttr -k on ".w0";
-createNode fosterParent -n "_meetGrandma:MC_control_rigRNfosterParent1";
-	rename -uid "F51FE027-AD4D-52F9-B446-4FBFEFD909F4";
-createNode parentConstraint -n "_meetGrandma:armL_IK_Grp1_parentConstraint1" -p "_meetGrandma:MC_control_rigRNfosterParent1";
-	rename -uid "4AF91CDB-D744-0B99-C514-E5BD1A8E9525";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bowl_blueceramic_pattern1_CTRLW0" 
-		-dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -101.49984227681995 33.922104913103887 18.169929051585139 ;
-	setAttr ".rst" -type "double3" -5.8603317357442037 -1.9574813848107517 7.1097108584675937 ;
-	setAttr ".rsrr" -type "double3" -33.64095564377417 -99.833356191941732 -60.536049465608805 ;
-	setAttr -k on ".w0";
-createNode parentConstraint -n "_meetGrandma:armR_IK_Ctrl_parentConstraint1" -p "_meetGrandma:MC_control_rigRNfosterParent1";
-	rename -uid "A4C18A47-8C47-1343-BD96-1AA1634CA578";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bowl_blueceramic_pattern1_CTRLW0" 
-		-dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 170.23971167328773 11.756355087086586 5.9547255869350799 ;
-	setAttr ".rst" -type "double3" 5.3721462521421781 0.84904557742057207 -7.4009585660128714 ;
-	setAttr ".rsrr" -type "double3" -37.553413617181484 -98.288570174533817 -54.943896127099329 ;
-	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "2F6C8929-5B4B-3562-5972-468D3AC0755A";
-	setAttr -s 454 ".lnk";
-	setAttr -s 32 ".ign";
-	setAttr -s 454 ".slnk";
+	rename -uid "28E47E8B-6444-CDA3-C8AE-80B56CB6129B";
+	setAttr -s 851 ".lnk";
+	setAttr -s 1211 ".ign";
+	setAttr -s 851 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "ECDB0F6D-6F47-5669-F969-C99BCC5760A7";
+	rename -uid "BF7908D8-C343-CC35-330D-4EA290375226";
 	setAttr -s 17 ".dli[1:16]"  1 2 3 4 5 6 7 8 
 		9 10 11 12 13 14 15 16;
 	setAttr -s 17 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "68A0196B-D24C-924B-9F47-BDB45E9DD1B0";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "2964205C-464F-72AE-4C75-239BC5CBBB66";
+	rename -uid "134C4D3B-2248-6350-4079-B48035A7F1F3";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "2F4F00D2-EF47-E196-0F28-1FA9CC37941D";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "3701E2EE-2B43-B059-B477-2B99EA963148";
-	setAttr ".bsdt[0].bscd" -type "Int32Array" 6 1 0 2 3 4
-		 5 ;
-	setAttr -s 4 ".bspr";
-	setAttr -s 4 ".obsv";
+	rename -uid "66B57B47-7144-247A-0104-FFA58F151A26";
+	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 1 0 ;
+	setAttr -s 2 ".bspr";
+	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "08F101E9-0647-0F3A-EFD2-F783E6F67496";
+	rename -uid "5FBE140A-8D47-AD9A-766C-F286A7EBBE41";
 createNode rmanGlobals -s -n "rmanGlobals";
 	rename -uid "8FE3CD77-7742-010A-4E99-71B980D5197F";
 	setAttr ".cch" no;
@@ -3305,16 +3479,16 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
 		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 486\n            -height 327\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
-		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 0\n            -nurbsCurves 1\n            -nurbsSurfaces 0\n            -polymeshes 1\n            -subdivSurfaces 0\n            -planes 0\n            -lights 0\n            -cameras 0\n            -controlVertices 0\n            -hulls 0\n            -grid 1\n            -imagePlane 0\n            -joints 0\n            -ikHandles 0\n            -deformers 0\n            -dynamics 0\n            -particleInstancers 0\n            -fluids 0\n            -hairSystems 0\n            -follicles 0\n            -nCloths 0\n            -nParticles 0\n            -nRigids 0\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 0\n            -dimensions 0\n            -handles 0\n            -pivots 0\n            -textures 0\n            -strokes 0\n            -motionTrails 0\n            -clipGhosts 0\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 485\n            -height 327\n"
-		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 0 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
-		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
-		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 486\n            -height 327\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"making_food_cam_alt\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
-		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
-		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 0\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n"
-		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 982\n            -height 703\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"making_food_cam_alt\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n"
+		+ "            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
+		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 0\n            -nurbsCurves 0\n            -nurbsSurfaces 0\n            -polymeshes 1\n            -subdivSurfaces 0\n            -planes 0\n            -lights 0\n            -cameras 0\n            -controlVertices 0\n            -hulls 0\n            -grid 1\n            -imagePlane 0\n            -joints 0\n            -ikHandles 0\n            -deformers 0\n            -dynamics 0\n            -particleInstancers 0\n            -fluids 0\n            -hairSystems 0\n            -follicles 0\n            -nCloths 0\n            -nParticles 0\n            -nRigids 0\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 0\n            -dimensions 0\n            -handles 0\n            -pivots 0\n            -textures 0\n            -strokes 0\n            -motionTrails 0\n            -clipGhosts 0\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n"
+		+ "            -width 982\n            -height 703\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 0 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n"
+		+ "            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n"
+		+ "            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n"
+		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 486\n            -height 327\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n"
+		+ "            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n"
+		+ "            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 0\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n"
+		+ "            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 485\n            -height 327\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
 		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n"
 		+ "            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
@@ -3330,9 +3504,9 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n"
 		+ "                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"rmanNodeEdKeyPressCommand\" \n"
+		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n"
 		+ "                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n"
-		+ "                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"rmanNodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n"
+		+ "                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
@@ -3343,9 +3517,9 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
 		+ "                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
 		+ "            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n"
-		+ "            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"making_food_cam_alt\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 982\\n    -height 703\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"making_food_cam_alt\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 982\\n    -height 703\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Side View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Side View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"making_food_cam_alt\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 0\\n    -nurbsCurves 0\\n    -nurbsSurfaces 0\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 982\\n    -height 703\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 0 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Side View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"making_food_cam_alt\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 0\\n    -nurbsCurves 0\\n    -nurbsSurfaces 0\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 982\\n    -height 703\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 0 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -16367,8 +16541,8 @@ createNode reference -n "grannyCranny_SET_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"grannyCranny_SET_latestRN"
 		"grannyCranny_SET_latest:string_of_pearls_latestRN" 0
-		"grannyCranny_SET_latest:tableRN" 0
 		"grannyCranny_SET_latest:chairRN2" 0
+		"grannyCranny_SET_latest:tableRN" 0
 		"grannyCranny_SET_latest:chairRN" 0
 		"grannyCranny_SET_latest:edamame_latestRN" 0
 		"grannyCranny_SET_latest:house_INTERIOR:door_v01_latestRN" 0
@@ -17001,7 +17175,7 @@ createNode animCurveTA -n "neck_Ctrl_rotateY";
 		 70 -14.859492618501328 75 -14.85949261850133 78 -14.85949261850133 80 -13.050947200307574
 		 88 2.5303671718231704 102 -0.78324131141144016 111 -9.4937313844416273 121 3.2499800092349735
 		 137 4.47969104673742 155 3.2499800092349735 169 -10.557278109385082 190 10.261454215696851
-		 197 12.809747726888229 209 10.664785362284283 220 10.664785362284277 235 8.012724396622561;
+		 197 12.809747726888231 209 10.664785362284283 220 10.664785362284277 235 8.012724396622561;
 	setAttr -s 23 ".kit[2:22]"  1 18 18 18 18 18 18 18 
 		18 18 18 18 18 18 18 18 18 18 18 18 18;
 	setAttr -s 23 ".kot[2:22]"  1 18 18 18 18 18 18 18 
@@ -17282,7 +17456,7 @@ createNode animCurveTA -n "armR_IK_Ctrl_rotateX";
 		 118 -110.35434708508544 127.99999982993198 -139.26228010009945 128 -139.26228010009945
 		 158 -108.37965627673991 164 -74.312126282638957 170 -18.922606164915116 181 -83.633060577265539
 		 192 -117.60263315311923 200 -105.62166780323619 207 -103.03384522214942 219 -125.86159836986538
-		 226 -103.06635522780883 235 -125.86159836986538;
+		 226 -103.06635522780884 235 -125.86159836986538;
 	setAttr -s 30 ".kit[1:29]"  1 1 18 18 18 18 18 18 
 		18 18 18 18 18 18 18 18 18 18 18 1 18 18 18 18 18 
 		18 18 18 18;
@@ -17350,7 +17524,7 @@ createNode animCurveTA -n "armR_IK_Ctrl_rotateZ";
 		 118 102.56682459246574 127.99999982993198 134.08249312446898 128 134.08249312446898
 		 158 97.933761487802926 164 62.607371131808598 170 4.0532492395484532 181 81.240785347032585
 		 192 121.78906556651481 200 108.78781996290181 207 105.7690255068879 219 130.33128547330236
-		 226 105.80928954718128 235 130.33128547330236;
+		 226 105.80928954718129 235 130.33128547330236;
 	setAttr -s 30 ".kit[1:29]"  1 1 18 18 18 18 18 18 
 		18 18 18 18 18 18 18 18 18 18 18 1 18 18 18 18 18 
 		18 18 18 18;
@@ -18585,13 +18759,13 @@ createNode animCurveTA -n "pSphere1_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 6 ".ktv[0:5]"  93 -14.727035884064987 99 -16.335777423105718
-		 101 -17.18112380922053 102 -163.22870774402202 104 -160.58563592322312 105 -156.43602484393108;
+		 101 -17.18112380922053 102 -163.22870774402202 104 -160.58563592322312 105 -156.43602484393111;
 createNode animCurveTA -n "pSphere1_rotateZ";
 	rename -uid "F18EEA04-5049-7DE3-FE7B-C19240FC0C00";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 6 ".ktv[0:5]"  93 177.95020324299855 99 166.35801706196338
-		 101 155.77381265727988 102 -27.077459158435286 104 -31.384700786073317 105 -35.355023518486519;
+		 101 155.77381265727988 102 -27.077459158435289 104 -31.384700786073317 105 -35.355023518486519;
 createNode animCurveTU -n "pSphere1_scaleX";
 	rename -uid "DFB7A286-D241-6466-9171-79915C466303";
 	setAttr ".tan" 18;
@@ -18646,8 +18820,8 @@ createNode reference -n "_meetGrandma:full_SET_latestRN";
 		"_meetGrandma:full_SET_latestRN"
 		"full_SET_latest:kitchen_SET_latest:house_INTERIORRN" 0
 		"full_SET_latest:kitchen_SET_latest:plate_latestRN" 0
-		"full_SET_latest:livingRoom_SET_latest:napkinStack_latestRN1" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN13" 0
+		"full_SET_latest:livingRoom_SET_latest:napkinStack_latestRN1" 0
 		"full_SET_latest:kitchen_SET_latest:water_kettle_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:orchid_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:frame2RN" 0
@@ -18676,9 +18850,9 @@ createNode reference -n "_meetGrandma:full_SET_latestRN";
 		
 		"full_SET_latest:livingRoom_SET_latest:coffee_table_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:mug_WALL_HANGINGRN" 0
-		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:bowl_blueceramic_pattern1_latestRN" 
 		0
+		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
 		"full_SET_latest:livingRoom_SET_latest:wooden_pictureRN" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN2" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platterRN1" 0
@@ -18781,8 +18955,8 @@ createNode reference -n "_meetGrandma:full_SET_latestRN";
 		
 		"full_SET_latest:livingRoom_SET_latest:fish4RN" 0
 		"full_SET_latest:kitchen_SET_latest:cutting_boardRN" 0
-		"full_SET_latest:kitchen_SET_latest:pot_small_handle_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:chopsticks_round_latestRN1" 0
+		"full_SET_latest:kitchen_SET_latest:pot_small_handle_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN10" 0
 		"full_SET_latest:kitchen_SET_latest:butter_knife_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latestRN" 2
@@ -18796,21 +18970,21 @@ createNode reference -n "_meetGrandma:full_SET_latestRN";
 		
 		"full_SET_latest:kitchen_SET_latest:house_INTERIOR:door_v01_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN9" 0
-		"full_SET_latest:kitchen_SET_latest:bowl_conic_latestRN2" 0
 		"full_SET_latest:kitchen_SET_latest:mug_round_latestRN3" 0
+		"full_SET_latest:kitchen_SET_latest:bowl_conic_latestRN2" 0
 		"full_SET_latest:livingRoom_SET_latest:boardGames_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:mug_round_latestRN" 0
 		
 		"full_SET_latest:kitchen_SET_latest:pho_spoon_latestRN1" 0
-		"full_SET_latest:livingRoom_SET_latest:bambooRN" 0
 		"full_SET_latest:livingRoom_SET_latest:shoe_jicRN1" 0
-		"full_SET_latest:livingRoom_SET_latest:croc3RN" 0
+		"full_SET_latest:livingRoom_SET_latest:bambooRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:butter_knife_latestRN" 0
 		
+		"full_SET_latest:livingRoom_SET_latest:croc3RN" 0
 		"full_SET_latest:livingRoom_SET_latest:meat_stirFry_latest:bowl_smallwhite_pattern1_latestRN" 
 		0
-		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN11" 0
 		"full_SET_latest:livingRoom_SET_latest:soy_sauce_latestRN" 0
+		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN11" 0
 		"full_SET_latest:kitchen_SET_latest:takeout_box_v01_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:chopsticks_round_latestRN" 
 		0
@@ -18820,8 +18994,8 @@ createNode reference -n "_meetGrandma:full_SET_latestRN";
 		"full_SET_latest:kitchen_SET_latest:towelRN" 0
 		"full_SET_latest:livingRoom_SET_latest:bookshelf_v01_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:sofa_latestRN" 0
-		"full_SET_latest:kitchen_SET_latest:pot_big_handle_latestRN1" 0
 		"full_SET_latest:kitchen_SET_latest:utensil_holderRN" 0
+		"full_SET_latest:kitchen_SET_latest:pot_big_handle_latestRN1" 0
 		"full_SET_latest:kitchen_SET_latest:plate_latestRN1" 0
 		"full_SET_latest:kitchen_SET_latest:bowl_smallwhite_pattern1_latestRN3" 0;
 	setAttr ".ptag" -type "string" "";
@@ -18832,32 +19006,8 @@ createNode reference -n "_meetGrandma:grandma_controlrigRN";
 	rename -uid "EF47CF81-6645-343A-C549-0AA69D8CC481";
 	setAttr -s 24 ".phl";
 	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
-	setAttr ".phl[10]" 0;
-	setAttr ".phl[11]" 0;
-	setAttr ".phl[12]" 0;
-	setAttr ".phl[13]" 0;
-	setAttr ".phl[14]" 0;
-	setAttr ".phl[15]" 0;
-	setAttr ".phl[16]" 0;
-	setAttr ".phl[17]" 0;
-	setAttr ".phl[18]" 0;
-	setAttr ".phl[19]" 0;
-	setAttr ".phl[20]" 0;
-	setAttr ".phl[21]" 0;
-	setAttr ".phl[22]" 0;
-	setAttr ".phl[23]" 0;
-	setAttr ".phl[24]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"_meetGrandma:grandma_controlrigRN"
-		"grandma_controlrigRN" 0
 		"grandma_controlrigRN" 67
 		2 "|grandma_controlrig:gma_ControlRig" "visibility" " 0"
 		2 "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_GEO|grandma_controlrig:eyes|grandma_controlrig:eye_L|grandma_controlrig:eye_LShape" 
@@ -18986,549 +19136,33 @@ lockNode -l 1 ;
 createNode reference -n "_meetGrandma:MC_control_rigRN";
 	rename -uid "D0308B0B-2040-0ADF-4508-F3B8D3F18AC4";
 	setAttr -s 540 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
-	setAttr ".phl[10]" 0;
-	setAttr ".phl[11]" 0;
-	setAttr ".phl[12]" 0;
-	setAttr ".phl[13]" 0;
-	setAttr ".phl[14]" 0;
-	setAttr ".phl[15]" 0;
-	setAttr ".phl[16]" 0;
-	setAttr ".phl[17]" 0;
-	setAttr ".phl[18]" 0;
-	setAttr ".phl[19]" 0;
-	setAttr ".phl[20]" 0;
+	setAttr ".phl[11]" -type "double3" 0.48758599038021089 0.094189172552168188 3.2369672502768769 ;
+	setAttr ".phl[15]" -type "double3" 0 0 0 ;
+	setAttr ".phl[16]" -type "double3" 0 0 0 ;
+	setAttr ".phl[17]" -type "double3" 0 -2.2208129204259164 0 ;
 	setAttr ".phl[21]" 0;
-	setAttr ".phl[22]" 0;
-	setAttr ".phl[23]" 0;
-	setAttr ".phl[24]" 0;
-	setAttr ".phl[25]" 0;
-	setAttr ".phl[26]" 0;
-	setAttr ".phl[27]" 0;
-	setAttr ".phl[28]" 0;
-	setAttr ".phl[29]" 0;
-	setAttr ".phl[30]" 0;
-	setAttr ".phl[31]" 0;
-	setAttr ".phl[32]" 0;
-	setAttr ".phl[33]" 0;
-	setAttr ".phl[34]" 0;
-	setAttr ".phl[35]" 0;
-	setAttr ".phl[36]" 0;
-	setAttr ".phl[37]" 0;
-	setAttr ".phl[38]" 0;
-	setAttr ".phl[39]" 0;
-	setAttr ".phl[40]" 0;
-	setAttr ".phl[41]" 0;
-	setAttr ".phl[42]" 0;
-	setAttr ".phl[43]" 0;
-	setAttr ".phl[44]" 0;
-	setAttr ".phl[45]" 0;
-	setAttr ".phl[46]" 0;
-	setAttr ".phl[47]" 0;
-	setAttr ".phl[48]" 0;
-	setAttr ".phl[49]" 0;
-	setAttr ".phl[50]" 0;
-	setAttr ".phl[51]" 0;
-	setAttr ".phl[52]" 0;
-	setAttr ".phl[53]" 0;
-	setAttr ".phl[54]" 0;
-	setAttr ".phl[55]" 0;
-	setAttr ".phl[56]" 0;
-	setAttr ".phl[57]" 0;
-	setAttr ".phl[58]" 0;
-	setAttr ".phl[59]" 0;
-	setAttr ".phl[60]" 0;
-	setAttr ".phl[61]" 0;
-	setAttr ".phl[62]" 0;
-	setAttr ".phl[63]" 0;
-	setAttr ".phl[64]" 0;
-	setAttr ".phl[65]" 0;
-	setAttr ".phl[66]" 0;
-	setAttr ".phl[67]" 0;
-	setAttr ".phl[68]" 0;
-	setAttr ".phl[69]" 0;
-	setAttr ".phl[70]" 0;
-	setAttr ".phl[71]" 0;
-	setAttr ".phl[72]" 0;
-	setAttr ".phl[73]" 0;
-	setAttr ".phl[74]" 0;
-	setAttr ".phl[75]" 0;
-	setAttr ".phl[76]" 0;
-	setAttr ".phl[77]" 0;
-	setAttr ".phl[78]" 0;
-	setAttr ".phl[79]" 0;
-	setAttr ".phl[80]" 0;
-	setAttr ".phl[81]" 0;
-	setAttr ".phl[82]" 0;
-	setAttr ".phl[83]" 0;
-	setAttr ".phl[84]" 0;
-	setAttr ".phl[85]" 0;
-	setAttr ".phl[86]" 0;
-	setAttr ".phl[87]" 0;
-	setAttr ".phl[88]" 0;
-	setAttr ".phl[89]" 0;
-	setAttr ".phl[90]" 0;
-	setAttr ".phl[91]" 0;
-	setAttr ".phl[92]" 0;
-	setAttr ".phl[93]" 0;
-	setAttr ".phl[94]" 0;
-	setAttr ".phl[95]" 0;
-	setAttr ".phl[96]" 0;
-	setAttr ".phl[97]" 0;
-	setAttr ".phl[98]" 0;
-	setAttr ".phl[99]" 0;
-	setAttr ".phl[100]" 0;
-	setAttr ".phl[101]" 0;
-	setAttr ".phl[102]" 0;
-	setAttr ".phl[103]" 0;
-	setAttr ".phl[104]" 0;
-	setAttr ".phl[105]" 0;
-	setAttr ".phl[106]" 0;
-	setAttr ".phl[107]" 0;
-	setAttr ".phl[108]" 0;
-	setAttr ".phl[109]" 0;
-	setAttr ".phl[110]" 0;
-	setAttr ".phl[111]" 0;
-	setAttr ".phl[112]" 0;
-	setAttr ".phl[113]" 0;
-	setAttr ".phl[114]" 0;
-	setAttr ".phl[115]" 0;
-	setAttr ".phl[116]" 0;
-	setAttr ".phl[117]" 0;
-	setAttr ".phl[118]" 0;
-	setAttr ".phl[119]" 0;
-	setAttr ".phl[120]" 0;
-	setAttr ".phl[121]" 0;
-	setAttr ".phl[122]" 0;
-	setAttr ".phl[123]" 0;
-	setAttr ".phl[124]" 0;
-	setAttr ".phl[125]" 0;
-	setAttr ".phl[126]" 0;
-	setAttr ".phl[127]" 0;
-	setAttr ".phl[128]" 0;
-	setAttr ".phl[129]" 0;
-	setAttr ".phl[130]" 0;
-	setAttr ".phl[131]" 0;
-	setAttr ".phl[132]" 0;
-	setAttr ".phl[133]" 0;
-	setAttr ".phl[134]" 0;
-	setAttr ".phl[135]" 0;
-	setAttr ".phl[136]" 0;
-	setAttr ".phl[137]" 0;
-	setAttr ".phl[138]" 0;
-	setAttr ".phl[139]" 0;
-	setAttr ".phl[140]" 0;
-	setAttr ".phl[141]" 0;
-	setAttr ".phl[142]" 0;
-	setAttr ".phl[143]" 0;
-	setAttr ".phl[144]" 0;
-	setAttr ".phl[145]" 0;
-	setAttr ".phl[146]" 0;
-	setAttr ".phl[147]" 0;
-	setAttr ".phl[148]" 0;
-	setAttr ".phl[149]" 0;
-	setAttr ".phl[150]" 0;
-	setAttr ".phl[151]" 0;
-	setAttr ".phl[152]" 0;
-	setAttr ".phl[153]" 0;
-	setAttr ".phl[154]" 0;
-	setAttr ".phl[155]" 0;
-	setAttr ".phl[156]" 0;
-	setAttr ".phl[157]" 0;
-	setAttr ".phl[158]" 0;
-	setAttr ".phl[159]" 0;
-	setAttr ".phl[160]" 0;
-	setAttr ".phl[161]" 0;
-	setAttr ".phl[162]" 0;
-	setAttr ".phl[163]" 0;
-	setAttr ".phl[164]" 0;
-	setAttr ".phl[165]" 0;
-	setAttr ".phl[166]" 0;
-	setAttr ".phl[167]" 0;
-	setAttr ".phl[168]" 0;
-	setAttr ".phl[169]" 0;
-	setAttr ".phl[170]" 0;
-	setAttr ".phl[171]" 0;
-	setAttr ".phl[172]" 0;
-	setAttr ".phl[173]" 0;
-	setAttr ".phl[174]" 0;
-	setAttr ".phl[175]" 0;
-	setAttr ".phl[176]" 0;
-	setAttr ".phl[177]" 0;
-	setAttr ".phl[178]" 0;
-	setAttr ".phl[179]" 0;
-	setAttr ".phl[180]" 0;
-	setAttr ".phl[181]" 0;
-	setAttr ".phl[182]" 0;
-	setAttr ".phl[183]" 0;
-	setAttr ".phl[184]" 0;
-	setAttr ".phl[185]" 0;
-	setAttr ".phl[186]" 0;
-	setAttr ".phl[187]" 0;
-	setAttr ".phl[188]" 0;
-	setAttr ".phl[189]" 0;
-	setAttr ".phl[190]" 0;
-	setAttr ".phl[191]" 0;
-	setAttr ".phl[192]" 0;
-	setAttr ".phl[193]" 0;
-	setAttr ".phl[194]" 0;
-	setAttr ".phl[195]" 0;
-	setAttr ".phl[196]" 0;
-	setAttr ".phl[197]" 0;
-	setAttr ".phl[198]" 0;
-	setAttr ".phl[199]" 0;
-	setAttr ".phl[200]" 0;
-	setAttr ".phl[201]" 0;
-	setAttr ".phl[202]" 0;
-	setAttr ".phl[203]" 0;
-	setAttr ".phl[204]" 0;
-	setAttr ".phl[205]" 0;
-	setAttr ".phl[206]" 0;
-	setAttr ".phl[207]" 0;
-	setAttr ".phl[208]" 0;
-	setAttr ".phl[209]" 0;
-	setAttr ".phl[210]" 0;
-	setAttr ".phl[211]" 0;
-	setAttr ".phl[212]" 0;
-	setAttr ".phl[213]" 0;
-	setAttr ".phl[214]" 0;
-	setAttr ".phl[215]" 0;
-	setAttr ".phl[216]" 0;
-	setAttr ".phl[217]" 0;
-	setAttr ".phl[218]" 0;
-	setAttr ".phl[219]" 0;
-	setAttr ".phl[220]" 0;
-	setAttr ".phl[221]" 0;
-	setAttr ".phl[222]" 0;
-	setAttr ".phl[223]" 0;
-	setAttr ".phl[224]" 0;
-	setAttr ".phl[225]" 0;
-	setAttr ".phl[226]" 0;
-	setAttr ".phl[227]" 0;
-	setAttr ".phl[228]" 0;
-	setAttr ".phl[229]" 0;
-	setAttr ".phl[230]" 0;
-	setAttr ".phl[231]" 0;
-	setAttr ".phl[232]" 0;
-	setAttr ".phl[233]" 0;
-	setAttr ".phl[234]" 0;
-	setAttr ".phl[235]" 0;
-	setAttr ".phl[236]" 0;
-	setAttr ".phl[237]" 0;
-	setAttr ".phl[238]" 0;
-	setAttr ".phl[239]" 0;
-	setAttr ".phl[240]" 0;
-	setAttr ".phl[241]" 0;
-	setAttr ".phl[242]" 0;
-	setAttr ".phl[243]" 0;
-	setAttr ".phl[244]" 0;
-	setAttr ".phl[245]" 0;
-	setAttr ".phl[246]" 0;
-	setAttr ".phl[247]" 0;
-	setAttr ".phl[248]" 0;
-	setAttr ".phl[249]" 0;
-	setAttr ".phl[250]" 0;
-	setAttr ".phl[251]" 0;
-	setAttr ".phl[252]" 0;
-	setAttr ".phl[253]" 0;
-	setAttr ".phl[254]" 0;
-	setAttr ".phl[255]" 0;
-	setAttr ".phl[256]" 0;
-	setAttr ".phl[257]" 0;
+	setAttr ".phl[22]" -type "double3" 1 1 1 ;
+	setAttr ".phl[26]" -type "matrix" -19.872221954893327 0 -22.474314106896685 0 0 30 0 0
+		 22.474314106896685 0 -19.872221954893327 0 47.182670429313625 19.490721286050977 -110.70829681729124 1;
 	setAttr ".phl[258]" 0;
 	setAttr ".phl[259]" 0;
-	setAttr ".phl[260]" 0;
 	setAttr ".phl[261]" 0;
-	setAttr ".phl[262]" 0;
-	setAttr ".phl[263]" 0;
-	setAttr ".phl[264]" 0;
-	setAttr ".phl[265]" 0;
-	setAttr ".phl[266]" 0;
-	setAttr ".phl[267]" 0;
-	setAttr ".phl[268]" 0;
-	setAttr ".phl[269]" 0;
-	setAttr ".phl[270]" 0;
-	setAttr ".phl[271]" 0;
-	setAttr ".phl[272]" 0;
-	setAttr ".phl[273]" 0;
-	setAttr ".phl[274]" 0;
-	setAttr ".phl[275]" 0;
-	setAttr ".phl[276]" 0;
-	setAttr ".phl[277]" 0;
-	setAttr ".phl[278]" 0;
-	setAttr ".phl[279]" 0;
-	setAttr ".phl[280]" 0;
-	setAttr ".phl[281]" 0;
-	setAttr ".phl[282]" 0;
-	setAttr ".phl[283]" 0;
-	setAttr ".phl[284]" 0;
-	setAttr ".phl[285]" 0;
-	setAttr ".phl[286]" 0;
-	setAttr ".phl[287]" 0;
-	setAttr ".phl[288]" 0;
-	setAttr ".phl[289]" 0;
-	setAttr ".phl[290]" 0;
-	setAttr ".phl[291]" 0;
-	setAttr ".phl[292]" 0;
-	setAttr ".phl[293]" 0;
-	setAttr ".phl[294]" 0;
-	setAttr ".phl[295]" 0;
-	setAttr ".phl[296]" 0;
-	setAttr ".phl[297]" 0;
-	setAttr ".phl[298]" 0;
-	setAttr ".phl[299]" 0;
-	setAttr ".phl[300]" 0;
-	setAttr ".phl[301]" 0;
-	setAttr ".phl[302]" 0;
-	setAttr ".phl[303]" 0;
-	setAttr ".phl[304]" 0;
-	setAttr ".phl[305]" 0;
-	setAttr ".phl[306]" 0;
-	setAttr ".phl[307]" 0;
-	setAttr ".phl[308]" 0;
-	setAttr ".phl[309]" 0;
-	setAttr ".phl[310]" 0;
-	setAttr ".phl[311]" 0;
-	setAttr ".phl[312]" 0;
-	setAttr ".phl[313]" 0;
-	setAttr ".phl[314]" 0;
-	setAttr ".phl[315]" 0;
-	setAttr ".phl[316]" 0;
-	setAttr ".phl[317]" 0;
-	setAttr ".phl[318]" 0;
-	setAttr ".phl[319]" 0;
-	setAttr ".phl[320]" 0;
-	setAttr ".phl[321]" 0;
-	setAttr ".phl[322]" 0;
-	setAttr ".phl[323]" 0;
-	setAttr ".phl[324]" 0;
-	setAttr ".phl[325]" 0;
-	setAttr ".phl[326]" 0;
-	setAttr ".phl[327]" 0;
-	setAttr ".phl[328]" 0;
-	setAttr ".phl[329]" 0;
-	setAttr ".phl[330]" 0;
-	setAttr ".phl[331]" 0;
-	setAttr ".phl[332]" 0;
-	setAttr ".phl[333]" 0;
-	setAttr ".phl[334]" 0;
-	setAttr ".phl[335]" 0;
-	setAttr ".phl[336]" 0;
-	setAttr ".phl[337]" 0;
-	setAttr ".phl[338]" 0;
-	setAttr ".phl[339]" 0;
-	setAttr ".phl[340]" 0;
-	setAttr ".phl[341]" 0;
-	setAttr ".phl[342]" 0;
-	setAttr ".phl[343]" 0;
-	setAttr ".phl[344]" 0;
-	setAttr ".phl[345]" 0;
-	setAttr ".phl[346]" 0;
-	setAttr ".phl[347]" 0;
-	setAttr ".phl[348]" 0;
-	setAttr ".phl[349]" 0;
-	setAttr ".phl[350]" 0;
-	setAttr ".phl[351]" 0;
-	setAttr ".phl[352]" 0;
-	setAttr ".phl[353]" 0;
-	setAttr ".phl[354]" 0;
-	setAttr ".phl[355]" 0;
-	setAttr ".phl[356]" 0;
-	setAttr ".phl[357]" 0;
-	setAttr ".phl[358]" 0;
-	setAttr ".phl[359]" 0;
-	setAttr ".phl[360]" 0;
-	setAttr ".phl[361]" 0;
-	setAttr ".phl[362]" 0;
-	setAttr ".phl[363]" 0;
-	setAttr ".phl[364]" 0;
-	setAttr ".phl[365]" 0;
-	setAttr ".phl[366]" 0;
-	setAttr ".phl[367]" 0;
-	setAttr ".phl[368]" 0;
-	setAttr ".phl[369]" 0;
-	setAttr ".phl[370]" 0;
-	setAttr ".phl[371]" 0;
-	setAttr ".phl[372]" 0;
-	setAttr ".phl[373]" 0;
-	setAttr ".phl[374]" 0;
-	setAttr ".phl[375]" 0;
-	setAttr ".phl[376]" 0;
-	setAttr ".phl[377]" 0;
-	setAttr ".phl[378]" 0;
-	setAttr ".phl[379]" 0;
-	setAttr ".phl[380]" 0;
-	setAttr ".phl[381]" 0;
+	setAttr ".phl[268]" -type "matrix" 0.97374024978259144 0.10156635139756943 -0.2037503428638108 -0
+		 0.13659566346938176 -0.97662453675028016 0.16597029535027924 0 -0.18213058687297504 -0.18944337011646767 -0.96485214351434223 0
+		 -132.71244209832244 -13.323110676905777 -162.14590072914828 1;
+	setAttr ".phl[269]" -type "double3" -4.9699598765329256e-06 -6.4540315491967704e-07 
+		7.2811328410971043e-08 ;
+	setAttr ".phl[270]" -type "double3" 0 0 0 ;
 	setAttr ".phl[382]" 0;
-	setAttr ".phl[383]" 0;
 	setAttr ".phl[384]" 0;
-	setAttr ".phl[385]" 0;
-	setAttr ".phl[386]" 0;
-	setAttr ".phl[387]" 0;
-	setAttr ".phl[388]" 0;
-	setAttr ".phl[389]" 0;
-	setAttr ".phl[390]" 0;
-	setAttr ".phl[391]" 0;
-	setAttr ".phl[392]" 0;
-	setAttr ".phl[393]" 0;
-	setAttr ".phl[394]" 0;
-	setAttr ".phl[395]" 0;
-	setAttr ".phl[396]" 0;
-	setAttr ".phl[397]" 0;
-	setAttr ".phl[398]" 0;
-	setAttr ".phl[399]" 0;
-	setAttr ".phl[400]" 0;
-	setAttr ".phl[401]" 0;
-	setAttr ".phl[402]" 0;
-	setAttr ".phl[403]" 0;
-	setAttr ".phl[404]" 0;
-	setAttr ".phl[405]" 0;
-	setAttr ".phl[406]" 0;
-	setAttr ".phl[407]" 0;
-	setAttr ".phl[408]" 0;
-	setAttr ".phl[409]" 0;
-	setAttr ".phl[410]" 0;
-	setAttr ".phl[411]" 0;
-	setAttr ".phl[412]" 0;
-	setAttr ".phl[413]" 0;
-	setAttr ".phl[414]" 0;
-	setAttr ".phl[415]" 0;
-	setAttr ".phl[416]" 0;
-	setAttr ".phl[417]" 0;
-	setAttr ".phl[418]" 0;
-	setAttr ".phl[419]" 0;
-	setAttr ".phl[420]" 0;
-	setAttr ".phl[421]" 0;
-	setAttr ".phl[422]" 0;
-	setAttr ".phl[423]" 0;
-	setAttr ".phl[424]" 0;
-	setAttr ".phl[425]" 0;
-	setAttr ".phl[426]" 0;
-	setAttr ".phl[427]" 0;
-	setAttr ".phl[428]" 0;
-	setAttr ".phl[429]" 0;
-	setAttr ".phl[430]" 0;
-	setAttr ".phl[431]" 0;
-	setAttr ".phl[432]" 0;
-	setAttr ".phl[433]" 0;
-	setAttr ".phl[434]" 0;
-	setAttr ".phl[435]" 0;
-	setAttr ".phl[436]" 0;
-	setAttr ".phl[437]" 0;
-	setAttr ".phl[438]" 0;
-	setAttr ".phl[439]" 0;
-	setAttr ".phl[440]" 0;
-	setAttr ".phl[441]" 0;
-	setAttr ".phl[442]" 0;
-	setAttr ".phl[443]" 0;
-	setAttr ".phl[444]" 0;
-	setAttr ".phl[445]" 0;
-	setAttr ".phl[446]" 0;
-	setAttr ".phl[447]" 0;
-	setAttr ".phl[448]" 0;
-	setAttr ".phl[449]" 0;
-	setAttr ".phl[450]" 0;
-	setAttr ".phl[451]" 0;
-	setAttr ".phl[452]" 0;
-	setAttr ".phl[453]" 0;
-	setAttr ".phl[454]" 0;
-	setAttr ".phl[455]" 0;
-	setAttr ".phl[456]" 0;
-	setAttr ".phl[457]" 0;
-	setAttr ".phl[458]" 0;
-	setAttr ".phl[459]" 0;
-	setAttr ".phl[460]" 0;
-	setAttr ".phl[461]" 0;
-	setAttr ".phl[462]" 0;
-	setAttr ".phl[463]" 0;
-	setAttr ".phl[464]" 0;
-	setAttr ".phl[465]" 0;
-	setAttr ".phl[466]" 0;
-	setAttr ".phl[467]" 0;
-	setAttr ".phl[468]" 0;
-	setAttr ".phl[469]" 0;
-	setAttr ".phl[470]" 0;
-	setAttr ".phl[471]" 0;
-	setAttr ".phl[472]" 0;
-	setAttr ".phl[473]" 0;
-	setAttr ".phl[474]" 0;
-	setAttr ".phl[475]" 0;
-	setAttr ".phl[476]" 0;
-	setAttr ".phl[477]" 0;
-	setAttr ".phl[478]" 0;
-	setAttr ".phl[479]" 0;
-	setAttr ".phl[480]" 0;
-	setAttr ".phl[481]" 0;
-	setAttr ".phl[482]" 0;
-	setAttr ".phl[483]" 0;
-	setAttr ".phl[484]" 0;
-	setAttr ".phl[485]" 0;
-	setAttr ".phl[486]" 0;
-	setAttr ".phl[487]" 0;
-	setAttr ".phl[488]" 0;
-	setAttr ".phl[489]" 0;
-	setAttr ".phl[490]" 0;
-	setAttr ".phl[491]" 0;
-	setAttr ".phl[492]" 0;
-	setAttr ".phl[493]" 0;
-	setAttr ".phl[494]" 0;
-	setAttr ".phl[495]" 0;
-	setAttr ".phl[496]" 0;
-	setAttr ".phl[497]" 0;
-	setAttr ".phl[498]" 0;
-	setAttr ".phl[499]" 0;
-	setAttr ".phl[500]" 0;
-	setAttr ".phl[501]" 0;
-	setAttr ".phl[502]" 0;
-	setAttr ".phl[503]" 0;
-	setAttr ".phl[504]" 0;
-	setAttr ".phl[505]" 0;
-	setAttr ".phl[506]" 0;
-	setAttr ".phl[507]" 0;
-	setAttr ".phl[508]" 0;
-	setAttr ".phl[509]" 0;
-	setAttr ".phl[510]" 0;
-	setAttr ".phl[511]" 0;
-	setAttr ".phl[512]" 0;
-	setAttr ".phl[513]" 0;
-	setAttr ".phl[514]" 0;
-	setAttr ".phl[515]" 0;
-	setAttr ".phl[516]" 0;
-	setAttr ".phl[517]" 0;
-	setAttr ".phl[518]" 0;
-	setAttr ".phl[519]" 0;
-	setAttr ".phl[520]" 0;
-	setAttr ".phl[521]" 0;
-	setAttr ".phl[522]" 0;
-	setAttr ".phl[523]" 0;
-	setAttr ".phl[524]" 0;
-	setAttr ".phl[525]" 0;
-	setAttr ".phl[526]" 0;
-	setAttr ".phl[527]" 0;
-	setAttr ".phl[528]" 0;
-	setAttr ".phl[529]" 0;
-	setAttr ".phl[530]" 0;
-	setAttr ".phl[531]" 0;
-	setAttr ".phl[532]" 0;
-	setAttr ".phl[533]" 0;
-	setAttr ".phl[534]" 0;
-	setAttr ".phl[535]" 0;
-	setAttr ".phl[536]" 0;
-	setAttr ".phl[537]" 0;
-	setAttr ".phl[538]" 0;
-	setAttr ".phl[539]" 0;
-	setAttr ".phl[540]" 0;
+	setAttr ".phl[392]" -type "matrix" 0.982429232073881 0.16948425754041033 -0.078152993625962147 -0
+		 -0.17569672161332789 0.98111004774076216 -0.08095514953631866 0 0.062956063894215278 0.093263930155740651 0.99364901919684523 -0
+		 -103.977978035753 -34.099600491433371 195.78108285056408 1;
+	setAttr ".phl[393]" -type "double3" 3.9265636289087524e-06 2.4578438448941142e-06 
+		-2.8971911136821404e-07 ;
+	setAttr ".phl[394]" -type "double3" 0 0 0 ;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"_meetGrandma:MC_control_rigRN"
-		"MC_control_rigRN" 0
 		"MC_control_rigRN" 836
 		0 "|MC_control_rigRNfosterParent1|armR_IK_Ctrl_parentConstraint1" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl" 
 		"-s -r "
@@ -21281,12 +20915,12 @@ createNode reference -n "_meetGrandma:grannyCranny_SET_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"_meetGrandma:grannyCranny_SET_latestRN"
 		"grannyCranny_SET_latest:string_of_pearls_latestRN" 0
+		"grannyCranny_SET_latest:tableRN" 0
 		"grannyCranny_SET_latest:chairRN2" 2
 		3 "grannyCranny_SET_latest:chair2:layerManager.displayLayerId[3]" "grannyCranny_SET_latest:chair2:windsor_seat_layer.identification" 
 		""
 		5 4 "_meetGrandma:grannyCranny_SET_latestRN" "grannyCranny_SET_latest:chair2:windsor_seat_layer.identification" 
 		"_meetGrandma:grannyCranny_SET_latestRN.placeHolderList[3]" ""
-		"grannyCranny_SET_latest:tableRN" 0
 		"grannyCranny_SET_latest:chairRN" 9
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod5" 
 		"visibility" " 1"
@@ -26277,8 +25911,8 @@ createNode animCurveTU -n "eye_blinkBoth";
 	rename -uid "7B19D983-8A4B-C7EF-97F8-7AA3E3027F33";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 11 ".ktv[0:10]"  130 0 138 1 146 0 172 0 180 1 188 0 212 0.13727678590024778
-		 218 0 232 0 238 1 245 0;
+	setAttr -s 11 ".ktv[0:10]"  120 0 128 1 136 0 162 0 170 1 178 0 202 0.13727678590024778
+		 208 0 222 0 228 1 235 0;
 	setAttr -s 11 ".kit[0:10]"  18 18 1 18 18 1 1 1 
 		18 18 1;
 	setAttr -s 11 ".kot[1:10]"  18 1 1 18 1 1 1 18 
@@ -26713,58 +26347,53 @@ createNode animCurveTL -n "making_food_cam_alt_translateX";
 	rename -uid "87063C50-E344-9A7C-6BF7-1AA2A08E769B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  128 140.25938665881048 183 176.30297376513772
-		 220 201.45936190337684;
+	setAttr -s 2 ".ktv[0:1]"  128 140.25938665881048 220 185.18750924643058;
 createNode animCurveTL -n "making_food_cam_alt_translateY";
 	rename -uid "9DDCF00C-5C48-FE69-939C-019CAA338520";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  128 71.112301438308691 183 69.052087740444776
-		 220 57.97680951129059;
+	setAttr -s 2 ".ktv[0:1]"  128 71.112301438308691 220 55.07379859504838;
 createNode animCurveTL -n "making_food_cam_alt_translateZ";
 	rename -uid "267F93DA-6949-9E7A-7003-FA94E86899D7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  128 -157.82771039337376 183 -156.52963247107826
-		 220 -156.96004108998127;
+	setAttr -s 2 ".ktv[0:1]"  128 -157.82771039337376 220 -159.03462599041995;
 createNode animCurveTU -n "making_food_cam_alt_visibility";
 	rename -uid "343B371C-EB4D-3337-555A-C48D42F3CBE1";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  128 1 183 1 220 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 2 ".ktv[0:1]"  128 1 220 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTA -n "making_food_cam_alt_rotateX";
 	rename -uid "10389C57-E149-D3A6-5D45-E888232E0400";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  128 4986.8616472711255 183 5012.0114505295605
-		 220 5025.8616472705362;
+	setAttr -s 2 ".ktv[0:1]"  128 4986.8616472711255 220 5027.0616472705251;
 createNode animCurveTA -n "making_food_cam_alt_rotateY";
 	rename -uid "1663DABC-1141-A8E8-9510-D68B0365B683";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  128 -631.39999999996894 183 -631.14205329987874
-		 220 -630.99999999996919;
+	setAttr -s 2 ".ktv[0:1]"  128 -631.39999999996894 220 -627.79999999996687;
 createNode animCurveTA -n "making_food_cam_alt_rotateZ";
 	rename -uid "8F19FE11-6A4F-50E9-F54D-F7B64F7402B0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  128 0 183 -5.8760778027524864e-14 220 -9.1120805975699033e-14;
+	setAttr -s 2 ".ktv[0:1]"  128 0 220 0;
 createNode animCurveTU -n "making_food_cam_alt_scaleX";
 	rename -uid "D1F09586-9D4C-544F-15A8-D1B089BC23F3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  128 1 183 1 220 1;
+	setAttr -s 2 ".ktv[0:1]"  128 1 220 1;
 createNode animCurveTU -n "making_food_cam_alt_scaleY";
 	rename -uid "C77CB8B7-8F4F-4D37-2374-83AE10F18B23";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  128 1 183 1 220 1;
+	setAttr -s 2 ".ktv[0:1]"  128 1 220 1;
 createNode animCurveTU -n "making_food_cam_alt_scaleZ";
 	rename -uid "4786E0AA-2047-F73C-4C18-3A888CA13C2F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  128 1 183 1 220 1;
+	setAttr -s 2 ".ktv[0:1]"  128 1 220 1;
 createNode animCurveTU -n "end_cam_alt_visibility";
 	rename -uid "7DB5239F-9048-CFC2-AF92-6AA029360AD6";
 	setAttr ".tan" 9;
@@ -26929,6 +26558,124 @@ createNode animCurveTU -n "footR_Ctrl_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  140 1;
+createNode reference -n "livingRoom_SET_latestRN";
+	rename -uid "B01E0761-B84D-0455-F58E-68A01E330129";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"livingRoom_SET_latestRN"
+		"livingRoom_SET_latest:boardGames_latestRN" 0
+		"livingRoom_SET_latest:rice_partyservingRN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN10" 0
+		"livingRoom_SET_latest:bambooRN" 0
+		"livingRoom_SET_latest:hiking_boot_latestRN" 0
+		"livingRoom_SET_latest:hiking_boot_latestRN1" 0
+		"livingRoom_SET_latest:fish4RN" 0
+		"livingRoom_SET_latest:edamame_latestRN" 0
+		"livingRoom_SET_latest:wooden_pictureRN" 0
+		"livingRoom_SET_latest:running_shoe_latest3RN" 0
+		"livingRoom_SET_latest:bookStack_LEFT_SHELFRN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN3" 0
+		"livingRoom_SET_latest:ping_shoes_latestRN2" 0
+		"livingRoom_SET_latest:croc3RN" 0
+		"livingRoom_SET_latest:house_INTERIOR:door_v01_latestRN" 0
+		"livingRoom_SET_latest:shoe_jicRN" 0
+		"livingRoom_SET_latest:croc_pile:croc3RN" 0
+		"livingRoom_SET_latest:frame2RN" 0
+		"livingRoom_SET_latest:ping_shoes_latestRN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN1" 0
+		"livingRoom_SET_latest:running_shoe_latestRN3" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN2" 0
+		"livingRoom_SET_latest:large_painting_ARN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN4" 0
+		"livingRoom_SET_latest:meat_stirFry_latestRN" 0
+		"livingRoom_SET_latest:napkinStack_latestRN" 0
+		"livingRoom_SET_latest:gingkoBiloba_latestRN" 0
+		"livingRoom_SET_latest:jackie_shoe_latest_purpleRN" 0
+		"livingRoom_SET_latest:console_tableRN" 0
+		"livingRoom_SET_latest:plateRN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN5" 0
+		"livingRoom_SET_latest:croc3RN2" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN6" 0
+		"livingRoom_SET_latestRN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN12" 0
+		"livingRoom_SET_latest:napkinStack_latestRN1" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN13" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN11" 0
+		"livingRoom_SET_latest:house_INTERIORRN" 0
+		"livingRoom_SET_latest:orchid_latestRN" 0
+		"livingRoom_SET_latest:running_shoe_latestRN2" 0
+		"livingRoom_SET_latest:bookStack_RIGHT_SHELFRN" 0
+		"livingRoom_SET_latest:jackie_shoe_latest_purpleRN1" 0
+		"livingRoom_SET_latest:soy_sauce_latestRN" 0
+		"livingRoom_SET_latest:guianaChestnutPlant_latestRN" 0
+		"livingRoom_SET_latest:eggroll_platterRN1" 0
+		"livingRoom_SET_latest:running_shoe_latestRN" 0
+		"livingRoom_SET_latest:shoe_rack_latestRN" 0
+		"livingRoom_SET_latest:frame1RN" 0
+		"livingRoom_SET_latest:bookshelf_v01_latestRN" 0
+		"livingRoom_SET_latest:flatsRN" 0
+		"livingRoom_SET_latest:sofa_latestRN" 0
+		"livingRoom_SET_latest:frame3RN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
+		"livingRoom_SET_latest:shoe_jicRN2" 0
+		"livingRoom_SET_latest:flats_redRN" 0
+		"livingRoom_SET_latest:house_INTERIOR:curtainsRN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN7" 0
+		"livingRoom_SET_latest:greenbeansRN" 0
+		"livingRoom_SET_latest:mooncake_latestRN" 0
+		"livingRoom_SET_latest:rice_partyserving:bowl_blueceramic_pattern1_latestRN" 0
+		
+		"livingRoom_SET_latest:shoe_swooshRN" 0
+		"livingRoom_SET_latest:large_painting_BRN" 0
+		"livingRoom_SET_latest:meat_stirFry_latest:bowl_smallwhite_pattern1_latestRN" 
+		0
+		"livingRoom_SET_latest:croc_pileRN" 0
+		"livingRoom_SET_latest:fork_latestRN1" 0
+		"livingRoom_SET_latest:lamp_latestRN" 0
+		"livingRoom_SET_latest:chopsticks_round_latestRN" 0
+		"livingRoom_SET_latest:jackie_shoe_latestRN" 0
+		"livingRoom_SET_latest:shoe_converse_latestRN" 0
+		"livingRoom_SET_latest:shoe_swooshRN1" 0
+		"livingRoom_SET_latest:chopsticks_square_latestRN" 0
+		"livingRoom_SET_latest:fork_latestRN" 0
+		"livingRoom_SET_latest:windchime_latestRN" 0
+		"livingRoom_SET_latest:side_tableRN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN8" 0
+		"livingRoom_SET_latest:coffee_table_latestRN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN9" 0
+		"livingRoom_SET_latestRN" 15
+		2 "|livingRoom_SET_latest:LIVING_ROOM_SET" "translate" " -type \"double3\" 23.64135667542716135 0 0"
+		
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:livingroom_roof|livingRoom_SET_latest:livingroom_roofShape" 
+		"color" " -type \"float3\" 1 0.83124423000000003 0.59299999000000003"
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:livingroom_window|livingRoom_SET_latest:livingroom_windowShape" 
+		"color" " -type \"float3\" 0.11799997 0.18253290999999999 1"
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:kitchen|livingRoom_SET_latest:kitchenShape" 
+		"color" " -type \"float3\" 0.56900001 0.44609815000000003 0.28905201000000003"
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:kitchen_door_lamp|livingRoom_SET_latest:kitchen_door_lampShape" 
+		"color" " -type \"float3\" 1 0.4831 0.21510001000000001"
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:left_table_lamp1|livingRoom_SET_latest:left_table_lamp1Shape" 
+		"color" " -type \"float3\" 1 0.37373483000000002 0.049000025000000003"
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:left_table_lamp2|livingRoom_SET_latest:left_table_lamp2Shape" 
+		"color" " -type \"float3\" 1 0.37373483000000002 0.049000025000000003"
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:right_table_lamp1|livingRoom_SET_latest:right_table_lamp1Shape" 
+		"color" " -type \"float3\" 1 0.37373483000000002 0.049000025000000003"
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:right_table_lamp2|livingRoom_SET_latest:right_table_lamp2Shape" 
+		"color" " -type \"float3\" 1 0.37373483000000002 0.049000025000000003"
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:left_lamp_fill|livingRoom_SET_latest:left_lamp_fillShape" 
+		"color" " -type \"float3\" 1 0.37373483000000002 0.049000025000000003"
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:right_lamp_fill|livingRoom_SET_latest:right_lamp_fillShape" 
+		"color" " -type \"float3\" 1 0.37373483000000002 0.049000025000000003"
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:sofa_key|livingRoom_SET_latest:sofa_keyShape" 
+		"color" " -type \"float3\" 0.986 0.75388014000000003 0.48511198"
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:tabletop_light|livingRoom_SET_latest:tabletop_lightShape" 
+		"color" " -type \"float3\" 0.73400003000000003 0.42837077000000001 0.16441599000000001"
+		
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:doorLight|livingRoom_SET_latest:doorLightShape" 
+		"color" " -type \"float3\" 0.56300002000000005 0.4921 0.2494"
+		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:sofa_fill|livingRoom_SET_latest:sofa_fillShape" 
+		"color" " -type \"float3\" 0.56300002000000005 0.4921 0.2494";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -26949,7 +26696,7 @@ select -ne :renderPartition;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 454 ".st";
+	setAttr -s 778 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -26962,7 +26709,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 387 ".s";
+	setAttr -s 697 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -26974,23 +26721,23 @@ select -ne :defaultRenderUtilityList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 2787 ".u";
+	setAttr -s 1807 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 125 ".r";
+	setAttr -s 288 ".r";
 select -ne :lightList1;
-	setAttr -s 7 ".l";
+	setAttr -s 25 ".l";
 select -ne :defaultTextureList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 498 ".tx";
+	setAttr -s 953 ".tx";
 select -ne :initialShadingGroup;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 12 ".dsm";
+	setAttr -s 148 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -26999,7 +26746,7 @@ select -ne :initialShadingGroup;
 	setAttr -cb on ".fo";
 	setAttr -cb on ".epo";
 	setAttr -k on ".ro" yes;
-	setAttr -s 5 ".gn";
+	setAttr -s 101 ".gn";
 select -ne :initialParticleSE;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -27126,7 +26873,7 @@ select -ne :defaultLightSet;
 	setAttr -k on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -k on ".bnm";
-	setAttr -s 7 ".dsm";
+	setAttr -s 25 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -k on ".an";
 	setAttr -k on ".il";
@@ -27179,7 +26926,7 @@ select -ne :ikSystem;
 	setAttr -k on ".bnm";
 	setAttr -av -k on ".gsn";
 	setAttr -k on ".gsv";
-	setAttr -s 4 ".sol";
+	setAttr -s 5 ".sol";
 connectAttr "grandma_controlrigRN.phl[1]" "grandma_controlrigRN.phl[2]";
 connectAttr "eye_blinkRight.o" "grandma_controlrigRN.phl[3]";
 connectAttr "eye_blinkLeft.o" "grandma_controlrigRN.phl[4]";
@@ -27428,8 +27175,8 @@ connectAttr "fork_scaleZ.o" "fork_latestRN.phl[12]";
 connectAttr "fork_latestRN.phl[13]" "fork_parentConstraint1.crp";
 connectAttr "fork_latestRN.phl[14]" "fork_parentConstraint1.crt";
 connectAttr "fork_latestRN.phl[15]" "fork_parentConstraint1.cpim";
-connectAttr "fork_latestRN.phl[16]" "fork_parentConstraint1.cro";
-connectAttr "fork_latestRN.phl[17]" "pairBlend1.ro";
+connectAttr "fork_latestRN.phl[16]" "pairBlend1.ro";
+connectAttr "fork_latestRN.phl[17]" "fork_parentConstraint1.cro";
 connectAttr "knife_visibility1.o" "butter_knife_latestRN.phl[1]";
 connectAttr "knife_translateX1.o" "butter_knife_latestRN.phl[2]";
 connectAttr "knife_translateZ1.o" "butter_knife_latestRN.phl[3]";
@@ -27511,1112 +27258,6 @@ connectAttr "knife_scaleX2.o" "knife_v01_latestRN.phl[8]";
 connectAttr "knife_scaleY2.o" "knife_v01_latestRN.phl[9]";
 connectAttr "knife_scaleZ2.o" "knife_v01_latestRN.phl[10]";
 connectAttr "pSphereShape1.iog" "fillingRN.phl[1]";
-connectAttr "_meetGrandma:grandma_controlrigRN.phl[1]" "_meetGrandma:grandma_controlrigRN.phl[2]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_translateX1.o" "_meetGrandma:grandma_controlrigRN.phl[3]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_translateY1.o" "_meetGrandma:grandma_controlrigRN.phl[4]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_translateZ1.o" "_meetGrandma:grandma_controlrigRN.phl[5]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_rotateX1.o" "_meetGrandma:grandma_controlrigRN.phl[6]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_rotateY1.o" "_meetGrandma:grandma_controlrigRN.phl[7]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_rotateZ1.o" "_meetGrandma:grandma_controlrigRN.phl[8]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_scaleX1.o" "_meetGrandma:grandma_controlrigRN.phl[9]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_scaleY1.o" "_meetGrandma:grandma_controlrigRN.phl[10]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_scaleZ1.o" "_meetGrandma:grandma_controlrigRN.phl[11]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_visibility1.o" "_meetGrandma:grandma_controlrigRN.phl[12]"
-		;
-connectAttr "layerManager.dli[7]" "_meetGrandma:grandma_controlrigRN.phl[13]";
-connectAttr "layerManager.dli[8]" "_meetGrandma:grandma_controlrigRN.phl[14]";
-connectAttr "_meetGrandma:eye_blinkRight.o" "_meetGrandma:grandma_controlrigRN.phl[15]"
-		;
-connectAttr "_meetGrandma:eye_blinkLeft.o" "_meetGrandma:grandma_controlrigRN.phl[16]"
-		;
-connectAttr "_meetGrandma:eye_blinkBoth.o" "_meetGrandma:grandma_controlrigRN.phl[17]"
-		;
-connectAttr "_meetGrandma:mouth_closed.o" "_meetGrandma:grandma_controlrigRN.phl[18]"
-		;
-connectAttr "_meetGrandma:mouth_smileRight.o" "_meetGrandma:grandma_controlrigRN.phl[19]"
-		;
-connectAttr "_meetGrandma:mouth_smileLeft.o" "_meetGrandma:grandma_controlrigRN.phl[20]"
-		;
-connectAttr "_meetGrandma:mouth_O.o" "_meetGrandma:grandma_controlrigRN.phl[21]"
-		;
-connectAttr "_meetGrandma:mouth_O_closed.o" "_meetGrandma:grandma_controlrigRN.phl[22]"
-		;
-connectAttr "_meetGrandma:cheeks_laughlineRight.o" "_meetGrandma:grandma_controlrigRN.phl[23]"
-		;
-connectAttr "_meetGrandma:cheeks_laughlineRight_Copy.o" "_meetGrandma:grandma_controlrigRN.phl[24]"
-		;
-connectAttr "May_ControlRig_visibility1.o" "_meetGrandma:MC_control_rigRN.phl[1]"
-		;
-connectAttr "May_ControlRig_translateX1.o" "_meetGrandma:MC_control_rigRN.phl[2]"
-		;
-connectAttr "May_ControlRig_translateY1.o" "_meetGrandma:MC_control_rigRN.phl[3]"
-		;
-connectAttr "May_ControlRig_translateZ1.o" "_meetGrandma:MC_control_rigRN.phl[4]"
-		;
-connectAttr "May_ControlRig_rotateX1.o" "_meetGrandma:MC_control_rigRN.phl[5]";
-connectAttr "May_ControlRig_rotateY1.o" "_meetGrandma:MC_control_rigRN.phl[6]";
-connectAttr "May_ControlRig_rotateZ1.o" "_meetGrandma:MC_control_rigRN.phl[7]";
-connectAttr "May_ControlRig_scaleX1.o" "_meetGrandma:MC_control_rigRN.phl[8]";
-connectAttr "May_ControlRig_scaleY1.o" "_meetGrandma:MC_control_rigRN.phl[9]";
-connectAttr "May_ControlRig_scaleZ1.o" "_meetGrandma:MC_control_rigRN.phl[10]";
-connectAttr "_meetGrandma:MC_control_rigRN.phl[11]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tt"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[12]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[13]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[14]"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[15]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].trp"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[16]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].trt"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[17]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tr"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[18]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[19]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[20]"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[21]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tro"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[22]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].ts"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[23]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[24]"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[25]"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[26]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "_meetGrandma:ROOT_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[27]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[28]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[29]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[30]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[31]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[32]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[33]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[34]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[35]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[36]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[37]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[38]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[39]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[40]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[41]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[42]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[43]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[44]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[45]"
-		;
-connectAttr "_meetGrandma:hipR_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[46]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[47]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[48]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[49]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[50]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[51]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[52]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[53]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[54]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[55]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[56]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[57]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[58]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[59]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[60]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[61]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[62]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[63]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[64]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[65]"
-		;
-connectAttr "_meetGrandma:kneeR_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[66]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[67]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[68]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[69]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[70]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[71]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[72]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[73]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[74]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[75]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[76]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[77]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[78]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[79]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[80]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[81]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[82]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[83]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[84]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[85]"
-		;
-connectAttr "_meetGrandma:ankleR_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[86]"
-		;
-connectAttr "_meetGrandma:spine1_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[87]"
-		;
-connectAttr "_meetGrandma:spine1_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[88]"
-		;
-connectAttr "_meetGrandma:spine1_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[89]"
-		;
-connectAttr "_meetGrandma:spine1_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[90]"
-		;
-connectAttr "_meetGrandma:spine1_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[91]"
-		;
-connectAttr "_meetGrandma:spine1_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[92]"
-		;
-connectAttr "_meetGrandma:spine1_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[93]"
-		;
-connectAttr "_meetGrandma:spine1_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[94]"
-		;
-connectAttr "_meetGrandma:spine1_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[95]"
-		;
-connectAttr "_meetGrandma:spine1_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[96]"
-		;
-connectAttr "_meetGrandma:spine1_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[97]"
-		;
-connectAttr "_meetGrandma:spine1_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[98]"
-		;
-connectAttr "_meetGrandma:spine1_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[99]"
-		;
-connectAttr "_meetGrandma:spine1_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[100]"
-		;
-connectAttr "_meetGrandma:spine1_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[101]"
-		;
-connectAttr "_meetGrandma:spine1_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[102]"
-		;
-connectAttr "_meetGrandma:spine1_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[103]"
-		;
-connectAttr "_meetGrandma:spine1_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[104]"
-		;
-connectAttr "_meetGrandma:spine1_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[105]"
-		;
-connectAttr "_meetGrandma:spine1_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[106]"
-		;
-connectAttr "_meetGrandma:spine2_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[107]"
-		;
-connectAttr "_meetGrandma:spine2_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[108]"
-		;
-connectAttr "_meetGrandma:spine2_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[109]"
-		;
-connectAttr "_meetGrandma:spine2_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[110]"
-		;
-connectAttr "_meetGrandma:spine2_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[111]"
-		;
-connectAttr "_meetGrandma:spine2_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[112]"
-		;
-connectAttr "_meetGrandma:spine2_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[113]"
-		;
-connectAttr "_meetGrandma:spine2_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[114]"
-		;
-connectAttr "_meetGrandma:spine2_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[115]"
-		;
-connectAttr "_meetGrandma:spine2_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[116]"
-		;
-connectAttr "_meetGrandma:spine2_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[117]"
-		;
-connectAttr "_meetGrandma:spine2_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[118]"
-		;
-connectAttr "_meetGrandma:spine2_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[119]"
-		;
-connectAttr "_meetGrandma:spine2_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[120]"
-		;
-connectAttr "_meetGrandma:spine2_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[121]"
-		;
-connectAttr "_meetGrandma:spine2_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[122]"
-		;
-connectAttr "_meetGrandma:spine2_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[123]"
-		;
-connectAttr "_meetGrandma:spine2_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[124]"
-		;
-connectAttr "_meetGrandma:spine2_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[125]"
-		;
-connectAttr "_meetGrandma:spine2_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[126]"
-		;
-connectAttr "_meetGrandma:spine3_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[127]"
-		;
-connectAttr "_meetGrandma:spine3_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[128]"
-		;
-connectAttr "_meetGrandma:spine3_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[129]"
-		;
-connectAttr "_meetGrandma:spine3_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[130]"
-		;
-connectAttr "_meetGrandma:spine3_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[131]"
-		;
-connectAttr "_meetGrandma:spine3_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[132]"
-		;
-connectAttr "_meetGrandma:spine3_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[133]"
-		;
-connectAttr "_meetGrandma:spine3_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[134]"
-		;
-connectAttr "_meetGrandma:spine3_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[135]"
-		;
-connectAttr "_meetGrandma:spine3_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[136]"
-		;
-connectAttr "_meetGrandma:spine3_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[137]"
-		;
-connectAttr "_meetGrandma:spine3_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[138]"
-		;
-connectAttr "_meetGrandma:spine3_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[139]"
-		;
-connectAttr "_meetGrandma:spine3_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[140]"
-		;
-connectAttr "_meetGrandma:spine3_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[141]"
-		;
-connectAttr "_meetGrandma:spine3_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[142]"
-		;
-connectAttr "_meetGrandma:spine3_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[143]"
-		;
-connectAttr "_meetGrandma:spine3_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[144]"
-		;
-connectAttr "_meetGrandma:spine3_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[145]"
-		;
-connectAttr "_meetGrandma:spine3_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[146]"
-		;
-connectAttr "_meetGrandma:neck_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[147]"
-		;
-connectAttr "_meetGrandma:neck_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[148]"
-		;
-connectAttr "_meetGrandma:neck_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[149]"
-		;
-connectAttr "_meetGrandma:neck_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[150]"
-		;
-connectAttr "_meetGrandma:neck_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[151]"
-		;
-connectAttr "_meetGrandma:neck_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[152]"
-		;
-connectAttr "_meetGrandma:neck_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[153]"
-		;
-connectAttr "_meetGrandma:neck_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[154]"
-		;
-connectAttr "_meetGrandma:neck_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[155]"
-		;
-connectAttr "_meetGrandma:neck_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[156]"
-		;
-connectAttr "_meetGrandma:neck_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[157]"
-		;
-connectAttr "_meetGrandma:neck_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[158]"
-		;
-connectAttr "_meetGrandma:neck_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[159]"
-		;
-connectAttr "_meetGrandma:neck_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[160]"
-		;
-connectAttr "_meetGrandma:neck_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[161]"
-		;
-connectAttr "_meetGrandma:neck_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[162]"
-		;
-connectAttr "_meetGrandma:neck_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[163]"
-		;
-connectAttr "_meetGrandma:neck_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[164]"
-		;
-connectAttr "_meetGrandma:neck_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[165]"
-		;
-connectAttr "_meetGrandma:neck_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[166]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[167]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[168]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[169]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[170]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[171]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[172]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[173]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[174]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[175]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[176]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[177]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[178]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[179]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[180]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[181]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[182]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[183]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[184]"
-		;
-connectAttr "_meetGrandma:clavicleR_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[185]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[186]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[187]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[188]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[189]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[190]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[191]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[192]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[193]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[194]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[195]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[196]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[197]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[198]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[199]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[200]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[201]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[202]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[203]"
-		;
-connectAttr "_meetGrandma:shoulderR_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[204]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[205]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[206]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[207]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[208]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[209]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[210]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[211]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[212]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[213]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[214]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[215]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[216]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[217]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[218]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[219]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[220]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[221]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[222]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[223]"
-		;
-connectAttr "_meetGrandma:elbowR_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[224]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[225]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[226]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[227]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[228]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[229]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[230]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[231]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[232]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[233]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[234]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_rotateX1.o" "_meetGrandma:MC_control_rigRN.phl[235]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_rotateY1.o" "_meetGrandma:MC_control_rigRN.phl[236]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_rotateZ1.o" "_meetGrandma:MC_control_rigRN.phl[237]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_visibility1.o" "_meetGrandma:MC_control_rigRN.phl[238]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_translateX1.o" "_meetGrandma:MC_control_rigRN.phl[239]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_translateY1.o" "_meetGrandma:MC_control_rigRN.phl[240]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_translateZ1.o" "_meetGrandma:MC_control_rigRN.phl[241]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_scaleX1.o" "_meetGrandma:MC_control_rigRN.phl[242]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_scaleY1.o" "_meetGrandma:MC_control_rigRN.phl[243]"
-		;
-connectAttr "_meetGrandma:wristR_FK_Grp_scaleZ1.o" "_meetGrandma:MC_control_rigRN.phl[244]"
-		;
-connectAttr "_meetGrandma:armR_IK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[245]"
-		;
-connectAttr "_meetGrandma:armR_IK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[246]"
-		;
-connectAttr "_meetGrandma:armR_IK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[247]"
-		;
-connectAttr "_meetGrandma:armR_IK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[248]"
-		;
-connectAttr "_meetGrandma:armR_IK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[249]"
-		;
-connectAttr "_meetGrandma:armR_IK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[250]"
-		;
-connectAttr "_meetGrandma:armR_IK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[251]"
-		;
-connectAttr "_meetGrandma:armR_IK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[252]"
-		;
-connectAttr "_meetGrandma:armR_IK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[253]"
-		;
-connectAttr "_meetGrandma:armR_IK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[254]"
-		;
-connectAttr "_meetGrandma:pairBlend3.orx" "_meetGrandma:MC_control_rigRN.phl[255]"
-		;
-connectAttr "_meetGrandma:pairBlend3.ory" "_meetGrandma:MC_control_rigRN.phl[256]"
-		;
-connectAttr "_meetGrandma:pairBlend3.orz" "_meetGrandma:MC_control_rigRN.phl[257]"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[258]" "_meetGrandma:pairBlend3.ro"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[259]" "_meetGrandma:armR_IK_Ctrl_parentConstraint1.cro"
-		;
-connectAttr "_meetGrandma:armR_IK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[260]"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[261]" "_meetGrandma:pairBlend3.w"
-		;
-connectAttr "_meetGrandma:pairBlend3.otx" "_meetGrandma:MC_control_rigRN.phl[262]"
-		;
-connectAttr "_meetGrandma:pairBlend3.oty" "_meetGrandma:MC_control_rigRN.phl[263]"
-		;
-connectAttr "_meetGrandma:pairBlend3.otz" "_meetGrandma:MC_control_rigRN.phl[264]"
-		;
-connectAttr "_meetGrandma:armR_IK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[265]"
-		;
-connectAttr "_meetGrandma:armR_IK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[266]"
-		;
-connectAttr "_meetGrandma:armR_IK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[267]"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[268]" "_meetGrandma:armR_IK_Ctrl_parentConstraint1.cpim"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[269]" "_meetGrandma:armR_IK_Ctrl_parentConstraint1.crp"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[270]" "_meetGrandma:armR_IK_Ctrl_parentConstraint1.crt"
-		;
-connectAttr "_meetGrandma:RightArm_IK_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[271]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[272]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[273]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_visibility.o" "_meetGrandma:MC_control_rigRN.phl[274]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_translateX.o" "_meetGrandma:MC_control_rigRN.phl[275]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_translateY.o" "_meetGrandma:MC_control_rigRN.phl[276]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[277]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[278]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[279]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[280]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_offset.o" "_meetGrandma:MC_control_rigRN.phl[281]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_roll.o" "_meetGrandma:MC_control_rigRN.phl[282]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_twist.o" "_meetGrandma:MC_control_rigRN.phl[283]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_ikBlend.o" "_meetGrandma:MC_control_rigRN.phl[284]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_poleVectorConstraint1_nodeState.o" "_meetGrandma:MC_control_rigRN.phl[285]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_poleVectorConstraint1_ArmR_PoleW0.o" "_meetGrandma:MC_control_rigRN.phl[286]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_poleVectorConstraint1_offsetX.o" "_meetGrandma:MC_control_rigRN.phl[287]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_poleVectorConstraint1_offsetY.o" "_meetGrandma:MC_control_rigRN.phl[288]"
-		;
-connectAttr "_meetGrandma:RightArm_IK_poleVectorConstraint1_offsetZ.o" "_meetGrandma:MC_control_rigRN.phl[289]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[290]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[291]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[292]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[293]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[294]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[295]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[296]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[297]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[298]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[299]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[300]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[301]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[302]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[303]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[304]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[305]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[306]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[307]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[308]"
-		;
-connectAttr "_meetGrandma:clavicleL_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[309]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[310]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[311]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[312]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[313]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[314]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[315]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[316]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[317]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[318]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[319]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[320]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[321]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[322]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[323]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[324]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[325]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[326]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[327]"
-		;
-connectAttr "_meetGrandma:shoulderL_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[328]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[329]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[330]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[331]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[332]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[333]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[334]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[335]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[336]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[337]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[338]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[339]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[340]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[341]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[342]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[343]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[344]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[345]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[346]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[347]"
-		;
-connectAttr "_meetGrandma:elbowL_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[348]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_visibility1.o" "_meetGrandma:MC_control_rigRN.phl[349]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_rotateX1.o" "_meetGrandma:MC_control_rigRN.phl[350]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_rotateY1.o" "_meetGrandma:MC_control_rigRN.phl[351]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_rotateZ1.o" "_meetGrandma:MC_control_rigRN.phl[352]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_translateX1.o" "_meetGrandma:MC_control_rigRN.phl[353]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_translateY1.o" "_meetGrandma:MC_control_rigRN.phl[354]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_translateZ1.o" "_meetGrandma:MC_control_rigRN.phl[355]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_scaleX1.o" "_meetGrandma:MC_control_rigRN.phl[356]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_scaleY1.o" "_meetGrandma:MC_control_rigRN.phl[357]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_scaleZ1.o" "_meetGrandma:MC_control_rigRN.phl[358]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[359]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[360]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[361]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[362]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[363]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[364]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[365]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[366]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[367]"
-		;
-connectAttr "_meetGrandma:wristL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[368]"
-		;
-connectAttr "_meetGrandma:armL_IK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[369]"
-		;
-connectAttr "_meetGrandma:armL_IK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[370]"
-		;
-connectAttr "_meetGrandma:armL_IK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[371]"
-		;
-connectAttr "_meetGrandma:armL_IK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[372]"
-		;
-connectAttr "_meetGrandma:armL_IK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[373]"
-		;
-connectAttr "_meetGrandma:armL_IK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[374]"
-		;
-connectAttr "_meetGrandma:armL_IK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[375]"
-		;
-connectAttr "_meetGrandma:armL_IK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[376]"
-		;
-connectAttr "_meetGrandma:armL_IK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[377]"
-		;
-connectAttr "_meetGrandma:armL_IK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[378]"
-		;
-connectAttr "pairBlend4.orx" "_meetGrandma:MC_control_rigRN.phl[379]";
-connectAttr "pairBlend4.ory" "_meetGrandma:MC_control_rigRN.phl[380]";
-connectAttr "pairBlend4.orz" "_meetGrandma:MC_control_rigRN.phl[381]";
-connectAttr "_meetGrandma:MC_control_rigRN.phl[382]" "_meetGrandma:armL_IK_Grp1_parentConstraint1.cro"
-		;
-connectAttr "armL_IK_Grp1_visibility.o" "_meetGrandma:MC_control_rigRN.phl[383]"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[384]" "pairBlend4.w";
-connectAttr "armL_IK_Grp1_blendParent1.o" "_meetGrandma:MC_control_rigRN.phl[385]"
-		;
-connectAttr "pairBlend4.otx" "_meetGrandma:MC_control_rigRN.phl[386]";
-connectAttr "pairBlend4.oty" "_meetGrandma:MC_control_rigRN.phl[387]";
-connectAttr "pairBlend4.otz" "_meetGrandma:MC_control_rigRN.phl[388]";
-connectAttr "armL_IK_Grp1_scaleX1.o" "_meetGrandma:MC_control_rigRN.phl[389]";
-connectAttr "armL_IK_Grp1_scaleY1.o" "_meetGrandma:MC_control_rigRN.phl[390]";
-connectAttr "armL_IK_Grp1_scaleZ1.o" "_meetGrandma:MC_control_rigRN.phl[391]";
-connectAttr "_meetGrandma:MC_control_rigRN.phl[392]" "_meetGrandma:armL_IK_Grp1_parentConstraint1.cpim"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[393]" "_meetGrandma:armL_IK_Grp1_parentConstraint1.crp"
-		;
-connectAttr "_meetGrandma:MC_control_rigRN.phl[394]" "_meetGrandma:armL_IK_Grp1_parentConstraint1.crt"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[395]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[396]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[397]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_visibility.o" "_meetGrandma:MC_control_rigRN.phl[398]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_translateX.o" "_meetGrandma:MC_control_rigRN.phl[399]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_translateY.o" "_meetGrandma:MC_control_rigRN.phl[400]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[401]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[402]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[403]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[404]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_offset.o" "_meetGrandma:MC_control_rigRN.phl[405]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_roll.o" "_meetGrandma:MC_control_rigRN.phl[406]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_twist.o" "_meetGrandma:MC_control_rigRN.phl[407]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_ikBlend.o" "_meetGrandma:MC_control_rigRN.phl[408]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_poleVectorConstraint1_nodeState.o" "_meetGrandma:MC_control_rigRN.phl[409]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_poleVectorConstraint1_ArmL_PoleW0.o" "_meetGrandma:MC_control_rigRN.phl[410]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_poleVectorConstraint1_offsetX.o" "_meetGrandma:MC_control_rigRN.phl[411]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_poleVectorConstraint1_offsetY.o" "_meetGrandma:MC_control_rigRN.phl[412]"
-		;
-connectAttr "_meetGrandma:LeftArm_IK_poleVectorConstraint1_offsetZ.o" "_meetGrandma:MC_control_rigRN.phl[413]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[414]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[415]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[416]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[417]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[418]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[419]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[420]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[421]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[422]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[423]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[424]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[425]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[426]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[427]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[428]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[429]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[430]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[431]"
-		;
-connectAttr "_meetGrandma:hipL_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[432]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[433]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[434]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[435]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[436]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[437]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[438]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[439]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[440]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[441]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[442]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[443]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[444]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[445]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[446]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[447]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[448]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[449]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[450]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[451]"
-		;
-connectAttr "_meetGrandma:kneeL_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[452]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[453]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[454]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[455]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[456]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[457]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[458]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[459]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[460]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[461]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[462]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[463]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[464]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[465]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[466]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[467]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[468]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[469]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[470]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[471]"
-		;
-connectAttr "_meetGrandma:ankleL_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[472]"
-		;
-connectAttr "_meetGrandma:footL_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[473]"
-		;
-connectAttr "_meetGrandma:footL_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[474]"
-		;
-connectAttr "_meetGrandma:footL_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[475]"
-		;
-connectAttr "_meetGrandma:footL_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[476]"
-		;
-connectAttr "_meetGrandma:footL_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[477]"
-		;
-connectAttr "_meetGrandma:footL_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[478]"
-		;
-connectAttr "_meetGrandma:footL_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[479]"
-		;
-connectAttr "_meetGrandma:footL_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[480]"
-		;
-connectAttr "_meetGrandma:footL_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[481]"
-		;
-connectAttr "_meetGrandma:footL_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[482]"
-		;
-connectAttr "_meetGrandma:footR_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[483]"
-		;
-connectAttr "_meetGrandma:footR_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[484]"
-		;
-connectAttr "_meetGrandma:footR_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[485]"
-		;
-connectAttr "_meetGrandma:footR_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[486]"
-		;
-connectAttr "_meetGrandma:footR_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[487]"
-		;
-connectAttr "_meetGrandma:footR_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[488]"
-		;
-connectAttr "_meetGrandma:footR_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[489]"
-		;
-connectAttr "_meetGrandma:footR_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[490]"
-		;
-connectAttr "_meetGrandma:footR_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[491]"
-		;
-connectAttr "_meetGrandma:footR_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[492]"
-		;
-connectAttr "_meetGrandma:LegL_Pole_translateX.o" "_meetGrandma:MC_control_rigRN.phl[493]"
-		;
-connectAttr "_meetGrandma:LegL_Pole_translateY.o" "_meetGrandma:MC_control_rigRN.phl[494]"
-		;
-connectAttr "_meetGrandma:LegL_Pole_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[495]"
-		;
-connectAttr "_meetGrandma:LegL_Pole_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[496]"
-		;
-connectAttr "_meetGrandma:LegL_Pole_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[497]"
-		;
-connectAttr "_meetGrandma:LegL_Pole_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[498]"
-		;
-connectAttr "_meetGrandma:LegL_Pole_visibility.o" "_meetGrandma:MC_control_rigRN.phl[499]"
-		;
-connectAttr "_meetGrandma:LegL_Pole_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[500]"
-		;
-connectAttr "_meetGrandma:LegL_Pole_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[501]"
-		;
-connectAttr "_meetGrandma:LegL_Pole_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[502]"
-		;
-connectAttr "_meetGrandma:LegR_Pole_translateX.o" "_meetGrandma:MC_control_rigRN.phl[503]"
-		;
-connectAttr "_meetGrandma:LegR_Pole_translateY.o" "_meetGrandma:MC_control_rigRN.phl[504]"
-		;
-connectAttr "_meetGrandma:LegR_Pole_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[505]"
-		;
-connectAttr "_meetGrandma:LegR_Pole_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[506]"
-		;
-connectAttr "_meetGrandma:LegR_Pole_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[507]"
-		;
-connectAttr "_meetGrandma:LegR_Pole_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[508]"
-		;
-connectAttr "_meetGrandma:LegR_Pole_visibility.o" "_meetGrandma:MC_control_rigRN.phl[509]"
-		;
-connectAttr "_meetGrandma:LegR_Pole_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[510]"
-		;
-connectAttr "_meetGrandma:LegR_Pole_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[511]"
-		;
-connectAttr "_meetGrandma:LegR_Pole_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[512]"
-		;
-connectAttr "_meetGrandma:ArmL_Pole_translateX.o" "_meetGrandma:MC_control_rigRN.phl[513]"
-		;
-connectAttr "_meetGrandma:ArmL_Pole_translateY.o" "_meetGrandma:MC_control_rigRN.phl[514]"
-		;
-connectAttr "_meetGrandma:ArmL_Pole_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[515]"
-		;
-connectAttr "_meetGrandma:ArmL_Pole_visibility.o" "_meetGrandma:MC_control_rigRN.phl[516]"
-		;
-connectAttr "_meetGrandma:ArmL_Pole_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[517]"
-		;
-connectAttr "_meetGrandma:ArmL_Pole_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[518]"
-		;
-connectAttr "_meetGrandma:ArmL_Pole_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[519]"
-		;
-connectAttr "_meetGrandma:ArmL_Pole_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[520]"
-		;
-connectAttr "_meetGrandma:ArmL_Pole_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[521]"
-		;
-connectAttr "_meetGrandma:ArmL_Pole_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[522]"
-		;
-connectAttr "_meetGrandma:ArmR_Pole_translateX.o" "_meetGrandma:MC_control_rigRN.phl[523]"
-		;
-connectAttr "_meetGrandma:ArmR_Pole_translateY.o" "_meetGrandma:MC_control_rigRN.phl[524]"
-		;
-connectAttr "_meetGrandma:ArmR_Pole_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[525]"
-		;
-connectAttr "_meetGrandma:ArmR_Pole_visibility.o" "_meetGrandma:MC_control_rigRN.phl[526]"
-		;
-connectAttr "_meetGrandma:ArmR_Pole_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[527]"
-		;
-connectAttr "_meetGrandma:ArmR_Pole_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[528]"
-		;
-connectAttr "_meetGrandma:ArmR_Pole_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[529]"
-		;
-connectAttr "_meetGrandma:ArmR_Pole_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[530]"
-		;
-connectAttr "_meetGrandma:ArmR_Pole_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[531]"
-		;
-connectAttr "_meetGrandma:ArmR_Pole_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[532]"
-		;
-connectAttr "layerManager.dli[9]" "_meetGrandma:MC_control_rigRN.phl[533]";
-connectAttr "layerManager.dli[10]" "_meetGrandma:MC_control_rigRN.phl[534]";
-connectAttr "_meetGrandma:blendShape1_mouth_smile_wide.o" "_meetGrandma:MC_control_rigRN.phl[535]"
-		;
-connectAttr "_meetGrandma:blendShape2_mouth_smile_nervous.o" "_meetGrandma:MC_control_rigRN.phl[536]"
-		;
-connectAttr "_meetGrandma:blendShape3_lips_pursed.o" "_meetGrandma:MC_control_rigRN.phl[537]"
-		;
-connectAttr "_meetGrandma:blendShape4_mouth_open.o" "_meetGrandma:MC_control_rigRN.phl[538]"
-		;
-connectAttr "_meetGrandma:blendShape5_right_eye.o" "_meetGrandma:MC_control_rigRN.phl[539]"
-		;
-connectAttr "_meetGrandma:blendShape5_left__eye.o" "_meetGrandma:MC_control_rigRN.phl[540]"
-		;
 connectAttr "persp1_translateX.o" "trans_cam.tx" -l on;
 connectAttr "persp1_translateY.o" "trans_cam.ty" -l on;
 connectAttr "persp1_translateZ.o" "trans_cam.tz" -l on;
@@ -28669,6 +27310,20 @@ connectAttr "_meetGrandma:bowl_blueceramic_pattern1_CTRL_visibility.o" "_meetGra
 		;
 connectAttr "_meetGrandma:bowl_blueceramic_pattern1_CTRL_blendParent1.o" "_meetGrandma:bowl_blueceramic_pattern1_CTRL.blendParent1"
 		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[11]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tt"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[15]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].trp"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[16]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].trt"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[17]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tr"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[21]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tro"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[22]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].ts"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[26]" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tpm"
+		;
 connectAttr "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.w0" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tw"
 		;
 connectAttr "_meetGrandma:bowl_blueceramic_pattern1_CTRL.ro" "_meetGrandma:bowl_blueceramic_pattern1_CTRL_parentConstraint1.cro"
@@ -28693,25 +27348,15 @@ connectAttr "end_cam_alt_visibility.o" "end_cam_alt.v";
 connectAttr "end_cam_alt_scaleX.o" "end_cam_alt.sx";
 connectAttr "end_cam_alt_scaleY.o" "end_cam_alt.sy";
 connectAttr "end_cam_alt_scaleZ.o" "end_cam_alt.sz";
-connectAttr "fork_parentConstraint1.w0" "fork_parentConstraint1.tg[0].tw";
-connectAttr "pairBlend2.otx" "pSphere1.tx";
-connectAttr "pairBlend2.oty" "pSphere1.ty";
-connectAttr "pairBlend2.otz" "pSphere1.tz";
-connectAttr "pSphere1_visibility.o" "pSphere1.v";
-connectAttr "pairBlend2.orx" "pSphere1.rx";
-connectAttr "pairBlend2.ory" "pSphere1.ry";
-connectAttr "pairBlend2.orz" "pSphere1.rz";
-connectAttr "pSphere1_scaleX.o" "pSphere1.sx";
-connectAttr "pSphere1_scaleY.o" "pSphere1.sy";
-connectAttr "pSphere1_scaleZ.o" "pSphere1.sz";
-connectAttr "pSphere1_blendParent1.o" "pSphere1.blendParent1";
-connectAttr "pSphere1_parentConstraint1.w0" "pSphere1_parentConstraint1.tg[0].tw"
-		;
-connectAttr "pSphere1.ro" "pSphere1_parentConstraint1.cro";
-connectAttr "pSphere1.pim" "pSphere1_parentConstraint1.cpim";
-connectAttr "pSphere1.rp" "pSphere1_parentConstraint1.crp";
-connectAttr "pSphere1.rpt" "pSphere1_parentConstraint1.crt";
 connectAttr "_meetGrandma:armL_IK_Grp1_parentConstraint1_nodeState.o" "_meetGrandma:armL_IK_Grp1_parentConstraint1.nds"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[382]" "_meetGrandma:armL_IK_Grp1_parentConstraint1.cro"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[392]" "_meetGrandma:armL_IK_Grp1_parentConstraint1.cpim"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[393]" "_meetGrandma:armL_IK_Grp1_parentConstraint1.crp"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[394]" "_meetGrandma:armL_IK_Grp1_parentConstraint1.crt"
 		;
 connectAttr "_meetGrandma:bowl_blueceramic_pattern1_CTRL.t" "_meetGrandma:armL_IK_Grp1_parentConstraint1.tg[0].tt"
 		;
@@ -28751,6 +27396,14 @@ connectAttr "_meetGrandma:armL_IK_Grp1_parentConstraint1_rotationDecompositionTa
 		;
 connectAttr "_meetGrandma:armL_IK_Grp1_parentConstraint1_rotationDecompositionTargetZ.o" "_meetGrandma:armL_IK_Grp1_parentConstraint1.rdtz"
 		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[259]" "_meetGrandma:armR_IK_Ctrl_parentConstraint1.cro"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[268]" "_meetGrandma:armR_IK_Ctrl_parentConstraint1.cpim"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[269]" "_meetGrandma:armR_IK_Ctrl_parentConstraint1.crp"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[270]" "_meetGrandma:armR_IK_Ctrl_parentConstraint1.crt"
+		;
 connectAttr "_meetGrandma:bowl_blueceramic_pattern1_CTRL.t" "_meetGrandma:armR_IK_Ctrl_parentConstraint1.tg[0].tt"
 		;
 connectAttr "_meetGrandma:bowl_blueceramic_pattern1_CTRL.rp" "_meetGrandma:armR_IK_Ctrl_parentConstraint1.tg[0].trp"
@@ -28773,6 +27426,24 @@ connectAttr "_meetGrandma:armR_IK_Ctrl_parentConstraint1_rotationDecompositionTa
 		;
 connectAttr "_meetGrandma:armR_IK_Ctrl_parentConstraint1_rotationDecompositionTargetZ.o" "_meetGrandma:armR_IK_Ctrl_parentConstraint1.rdtz"
 		;
+connectAttr "fork_parentConstraint1.w0" "fork_parentConstraint1.tg[0].tw";
+connectAttr "pairBlend2.otx" "pSphere1.tx";
+connectAttr "pairBlend2.oty" "pSphere1.ty";
+connectAttr "pairBlend2.otz" "pSphere1.tz";
+connectAttr "pSphere1_visibility.o" "pSphere1.v";
+connectAttr "pairBlend2.orx" "pSphere1.rx";
+connectAttr "pairBlend2.ory" "pSphere1.ry";
+connectAttr "pairBlend2.orz" "pSphere1.rz";
+connectAttr "pSphere1_scaleX.o" "pSphere1.sx";
+connectAttr "pSphere1_scaleY.o" "pSphere1.sy";
+connectAttr "pSphere1_scaleZ.o" "pSphere1.sz";
+connectAttr "pSphere1_blendParent1.o" "pSphere1.blendParent1";
+connectAttr "pSphere1_parentConstraint1.w0" "pSphere1_parentConstraint1.tg[0].tw"
+		;
+connectAttr "pSphere1.ro" "pSphere1_parentConstraint1.cro";
+connectAttr "pSphere1.pim" "pSphere1_parentConstraint1.cpim";
+connectAttr "pSphere1.rp" "pSphere1_parentConstraint1.crp";
+connectAttr "pSphere1.rpt" "pSphere1_parentConstraint1.crt";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "grandma_controlrig:grandma_shaderSG.message" ":defaultLightSet.message";
@@ -29736,8 +28407,1081 @@ connectAttr "_meetGrandma:renderLayerManager.rlmi[0]" "_meetGrandma:defaultRende
 		;
 connectAttr "_meetGrandma:sharedReferenceNode.sr" "_meetGrandma:full_SET_latestRN.sr"
 		;
+connectAttr "_meetGrandma:grandma_controlrigRN.phl[1]" "_meetGrandma:grandma_controlrigRN.phl[2]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_translateX1.o" "_meetGrandma:grandma_controlrigRN.phl[3]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_translateY1.o" "_meetGrandma:grandma_controlrigRN.phl[4]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_translateZ1.o" "_meetGrandma:grandma_controlrigRN.phl[5]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_rotateX1.o" "_meetGrandma:grandma_controlrigRN.phl[6]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_rotateY1.o" "_meetGrandma:grandma_controlrigRN.phl[7]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_rotateZ1.o" "_meetGrandma:grandma_controlrigRN.phl[8]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_scaleX1.o" "_meetGrandma:grandma_controlrigRN.phl[9]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_scaleY1.o" "_meetGrandma:grandma_controlrigRN.phl[10]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_scaleZ1.o" "_meetGrandma:grandma_controlrigRN.phl[11]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_visibility1.o" "_meetGrandma:grandma_controlrigRN.phl[12]"
+		;
+connectAttr "layerManager.dli[7]" "_meetGrandma:grandma_controlrigRN.phl[13]";
+connectAttr "layerManager.dli[8]" "_meetGrandma:grandma_controlrigRN.phl[14]";
+connectAttr "_meetGrandma:eye_blinkRight.o" "_meetGrandma:grandma_controlrigRN.phl[15]"
+		;
+connectAttr "_meetGrandma:eye_blinkLeft.o" "_meetGrandma:grandma_controlrigRN.phl[16]"
+		;
+connectAttr "_meetGrandma:eye_blinkBoth.o" "_meetGrandma:grandma_controlrigRN.phl[17]"
+		;
+connectAttr "_meetGrandma:mouth_closed.o" "_meetGrandma:grandma_controlrigRN.phl[18]"
+		;
+connectAttr "_meetGrandma:mouth_smileRight.o" "_meetGrandma:grandma_controlrigRN.phl[19]"
+		;
+connectAttr "_meetGrandma:mouth_smileLeft.o" "_meetGrandma:grandma_controlrigRN.phl[20]"
+		;
+connectAttr "_meetGrandma:mouth_O.o" "_meetGrandma:grandma_controlrigRN.phl[21]"
+		;
+connectAttr "_meetGrandma:mouth_O_closed.o" "_meetGrandma:grandma_controlrigRN.phl[22]"
+		;
+connectAttr "_meetGrandma:cheeks_laughlineRight.o" "_meetGrandma:grandma_controlrigRN.phl[23]"
+		;
+connectAttr "_meetGrandma:cheeks_laughlineRight_Copy.o" "_meetGrandma:grandma_controlrigRN.phl[24]"
+		;
+connectAttr "sharedReferenceNode.sr" "_meetGrandma:grandma_controlrigRN.sr";
+connectAttr "May_ControlRig_visibility1.o" "_meetGrandma:MC_control_rigRN.phl[1]"
+		;
+connectAttr "May_ControlRig_translateX1.o" "_meetGrandma:MC_control_rigRN.phl[2]"
+		;
+connectAttr "May_ControlRig_translateY1.o" "_meetGrandma:MC_control_rigRN.phl[3]"
+		;
+connectAttr "May_ControlRig_translateZ1.o" "_meetGrandma:MC_control_rigRN.phl[4]"
+		;
+connectAttr "May_ControlRig_rotateX1.o" "_meetGrandma:MC_control_rigRN.phl[5]";
+connectAttr "May_ControlRig_rotateY1.o" "_meetGrandma:MC_control_rigRN.phl[6]";
+connectAttr "May_ControlRig_rotateZ1.o" "_meetGrandma:MC_control_rigRN.phl[7]";
+connectAttr "May_ControlRig_scaleX1.o" "_meetGrandma:MC_control_rigRN.phl[8]";
+connectAttr "May_ControlRig_scaleY1.o" "_meetGrandma:MC_control_rigRN.phl[9]";
+connectAttr "May_ControlRig_scaleZ1.o" "_meetGrandma:MC_control_rigRN.phl[10]";
+connectAttr "_meetGrandma:ROOT_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[12]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[13]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[14]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[18]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[19]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[20]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[23]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[24]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[25]"
+		;
+connectAttr "_meetGrandma:ROOT_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[27]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[28]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[29]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[30]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[31]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[32]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[33]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[34]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[35]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[36]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[37]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[38]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[39]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[40]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[41]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[42]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[43]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[44]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[45]"
+		;
+connectAttr "_meetGrandma:hipR_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[46]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[47]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[48]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[49]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[50]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[51]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[52]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[53]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[54]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[55]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[56]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[57]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[58]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[59]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[60]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[61]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[62]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[63]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[64]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[65]"
+		;
+connectAttr "_meetGrandma:kneeR_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[66]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[67]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[68]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[69]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[70]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[71]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[72]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[73]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[74]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[75]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[76]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[77]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[78]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[79]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[80]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[81]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[82]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[83]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[84]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[85]"
+		;
+connectAttr "_meetGrandma:ankleR_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[86]"
+		;
+connectAttr "_meetGrandma:spine1_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[87]"
+		;
+connectAttr "_meetGrandma:spine1_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[88]"
+		;
+connectAttr "_meetGrandma:spine1_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[89]"
+		;
+connectAttr "_meetGrandma:spine1_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[90]"
+		;
+connectAttr "_meetGrandma:spine1_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[91]"
+		;
+connectAttr "_meetGrandma:spine1_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[92]"
+		;
+connectAttr "_meetGrandma:spine1_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[93]"
+		;
+connectAttr "_meetGrandma:spine1_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[94]"
+		;
+connectAttr "_meetGrandma:spine1_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[95]"
+		;
+connectAttr "_meetGrandma:spine1_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[96]"
+		;
+connectAttr "_meetGrandma:spine1_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[97]"
+		;
+connectAttr "_meetGrandma:spine1_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[98]"
+		;
+connectAttr "_meetGrandma:spine1_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[99]"
+		;
+connectAttr "_meetGrandma:spine1_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[100]"
+		;
+connectAttr "_meetGrandma:spine1_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[101]"
+		;
+connectAttr "_meetGrandma:spine1_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[102]"
+		;
+connectAttr "_meetGrandma:spine1_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[103]"
+		;
+connectAttr "_meetGrandma:spine1_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[104]"
+		;
+connectAttr "_meetGrandma:spine1_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[105]"
+		;
+connectAttr "_meetGrandma:spine1_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[106]"
+		;
+connectAttr "_meetGrandma:spine2_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[107]"
+		;
+connectAttr "_meetGrandma:spine2_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[108]"
+		;
+connectAttr "_meetGrandma:spine2_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[109]"
+		;
+connectAttr "_meetGrandma:spine2_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[110]"
+		;
+connectAttr "_meetGrandma:spine2_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[111]"
+		;
+connectAttr "_meetGrandma:spine2_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[112]"
+		;
+connectAttr "_meetGrandma:spine2_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[113]"
+		;
+connectAttr "_meetGrandma:spine2_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[114]"
+		;
+connectAttr "_meetGrandma:spine2_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[115]"
+		;
+connectAttr "_meetGrandma:spine2_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[116]"
+		;
+connectAttr "_meetGrandma:spine2_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[117]"
+		;
+connectAttr "_meetGrandma:spine2_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[118]"
+		;
+connectAttr "_meetGrandma:spine2_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[119]"
+		;
+connectAttr "_meetGrandma:spine2_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[120]"
+		;
+connectAttr "_meetGrandma:spine2_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[121]"
+		;
+connectAttr "_meetGrandma:spine2_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[122]"
+		;
+connectAttr "_meetGrandma:spine2_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[123]"
+		;
+connectAttr "_meetGrandma:spine2_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[124]"
+		;
+connectAttr "_meetGrandma:spine2_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[125]"
+		;
+connectAttr "_meetGrandma:spine2_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[126]"
+		;
+connectAttr "_meetGrandma:spine3_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[127]"
+		;
+connectAttr "_meetGrandma:spine3_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[128]"
+		;
+connectAttr "_meetGrandma:spine3_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[129]"
+		;
+connectAttr "_meetGrandma:spine3_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[130]"
+		;
+connectAttr "_meetGrandma:spine3_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[131]"
+		;
+connectAttr "_meetGrandma:spine3_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[132]"
+		;
+connectAttr "_meetGrandma:spine3_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[133]"
+		;
+connectAttr "_meetGrandma:spine3_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[134]"
+		;
+connectAttr "_meetGrandma:spine3_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[135]"
+		;
+connectAttr "_meetGrandma:spine3_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[136]"
+		;
+connectAttr "_meetGrandma:spine3_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[137]"
+		;
+connectAttr "_meetGrandma:spine3_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[138]"
+		;
+connectAttr "_meetGrandma:spine3_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[139]"
+		;
+connectAttr "_meetGrandma:spine3_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[140]"
+		;
+connectAttr "_meetGrandma:spine3_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[141]"
+		;
+connectAttr "_meetGrandma:spine3_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[142]"
+		;
+connectAttr "_meetGrandma:spine3_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[143]"
+		;
+connectAttr "_meetGrandma:spine3_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[144]"
+		;
+connectAttr "_meetGrandma:spine3_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[145]"
+		;
+connectAttr "_meetGrandma:spine3_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[146]"
+		;
+connectAttr "_meetGrandma:neck_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[147]"
+		;
+connectAttr "_meetGrandma:neck_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[148]"
+		;
+connectAttr "_meetGrandma:neck_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[149]"
+		;
+connectAttr "_meetGrandma:neck_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[150]"
+		;
+connectAttr "_meetGrandma:neck_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[151]"
+		;
+connectAttr "_meetGrandma:neck_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[152]"
+		;
+connectAttr "_meetGrandma:neck_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[153]"
+		;
+connectAttr "_meetGrandma:neck_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[154]"
+		;
+connectAttr "_meetGrandma:neck_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[155]"
+		;
+connectAttr "_meetGrandma:neck_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[156]"
+		;
+connectAttr "_meetGrandma:neck_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[157]"
+		;
+connectAttr "_meetGrandma:neck_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[158]"
+		;
+connectAttr "_meetGrandma:neck_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[159]"
+		;
+connectAttr "_meetGrandma:neck_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[160]"
+		;
+connectAttr "_meetGrandma:neck_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[161]"
+		;
+connectAttr "_meetGrandma:neck_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[162]"
+		;
+connectAttr "_meetGrandma:neck_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[163]"
+		;
+connectAttr "_meetGrandma:neck_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[164]"
+		;
+connectAttr "_meetGrandma:neck_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[165]"
+		;
+connectAttr "_meetGrandma:neck_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[166]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[167]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[168]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[169]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[170]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[171]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[172]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[173]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[174]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[175]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[176]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[177]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[178]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[179]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[180]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[181]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[182]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[183]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[184]"
+		;
+connectAttr "_meetGrandma:clavicleR_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[185]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[186]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[187]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[188]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[189]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[190]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[191]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[192]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[193]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[194]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[195]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[196]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[197]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[198]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[199]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[200]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[201]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[202]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[203]"
+		;
+connectAttr "_meetGrandma:shoulderR_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[204]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[205]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[206]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[207]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[208]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[209]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[210]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[211]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[212]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[213]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[214]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[215]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[216]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[217]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[218]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[219]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[220]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[221]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[222]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[223]"
+		;
+connectAttr "_meetGrandma:elbowR_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[224]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[225]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[226]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[227]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[228]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[229]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[230]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[231]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[232]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[233]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[234]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_rotateX1.o" "_meetGrandma:MC_control_rigRN.phl[235]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_rotateY1.o" "_meetGrandma:MC_control_rigRN.phl[236]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_rotateZ1.o" "_meetGrandma:MC_control_rigRN.phl[237]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_visibility1.o" "_meetGrandma:MC_control_rigRN.phl[238]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_translateX1.o" "_meetGrandma:MC_control_rigRN.phl[239]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_translateY1.o" "_meetGrandma:MC_control_rigRN.phl[240]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_translateZ1.o" "_meetGrandma:MC_control_rigRN.phl[241]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_scaleX1.o" "_meetGrandma:MC_control_rigRN.phl[242]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_scaleY1.o" "_meetGrandma:MC_control_rigRN.phl[243]"
+		;
+connectAttr "_meetGrandma:wristR_FK_Grp_scaleZ1.o" "_meetGrandma:MC_control_rigRN.phl[244]"
+		;
+connectAttr "_meetGrandma:armR_IK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[245]"
+		;
+connectAttr "_meetGrandma:armR_IK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[246]"
+		;
+connectAttr "_meetGrandma:armR_IK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[247]"
+		;
+connectAttr "_meetGrandma:armR_IK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[248]"
+		;
+connectAttr "_meetGrandma:armR_IK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[249]"
+		;
+connectAttr "_meetGrandma:armR_IK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[250]"
+		;
+connectAttr "_meetGrandma:armR_IK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[251]"
+		;
+connectAttr "_meetGrandma:armR_IK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[252]"
+		;
+connectAttr "_meetGrandma:armR_IK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[253]"
+		;
+connectAttr "_meetGrandma:armR_IK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[254]"
+		;
+connectAttr "_meetGrandma:pairBlend3.orx" "_meetGrandma:MC_control_rigRN.phl[255]"
+		;
+connectAttr "_meetGrandma:pairBlend3.ory" "_meetGrandma:MC_control_rigRN.phl[256]"
+		;
+connectAttr "_meetGrandma:pairBlend3.orz" "_meetGrandma:MC_control_rigRN.phl[257]"
+		;
+connectAttr "_meetGrandma:armR_IK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[260]"
+		;
+connectAttr "_meetGrandma:pairBlend3.otx" "_meetGrandma:MC_control_rigRN.phl[262]"
+		;
+connectAttr "_meetGrandma:pairBlend3.oty" "_meetGrandma:MC_control_rigRN.phl[263]"
+		;
+connectAttr "_meetGrandma:pairBlend3.otz" "_meetGrandma:MC_control_rigRN.phl[264]"
+		;
+connectAttr "_meetGrandma:armR_IK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[265]"
+		;
+connectAttr "_meetGrandma:armR_IK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[266]"
+		;
+connectAttr "_meetGrandma:armR_IK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[267]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[271]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[272]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[273]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_visibility.o" "_meetGrandma:MC_control_rigRN.phl[274]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_translateX.o" "_meetGrandma:MC_control_rigRN.phl[275]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_translateY.o" "_meetGrandma:MC_control_rigRN.phl[276]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[277]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[278]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[279]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[280]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_offset.o" "_meetGrandma:MC_control_rigRN.phl[281]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_roll.o" "_meetGrandma:MC_control_rigRN.phl[282]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_twist.o" "_meetGrandma:MC_control_rigRN.phl[283]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_ikBlend.o" "_meetGrandma:MC_control_rigRN.phl[284]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_poleVectorConstraint1_nodeState.o" "_meetGrandma:MC_control_rigRN.phl[285]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_poleVectorConstraint1_ArmR_PoleW0.o" "_meetGrandma:MC_control_rigRN.phl[286]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_poleVectorConstraint1_offsetX.o" "_meetGrandma:MC_control_rigRN.phl[287]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_poleVectorConstraint1_offsetY.o" "_meetGrandma:MC_control_rigRN.phl[288]"
+		;
+connectAttr "_meetGrandma:RightArm_IK_poleVectorConstraint1_offsetZ.o" "_meetGrandma:MC_control_rigRN.phl[289]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[290]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[291]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[292]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[293]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[294]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[295]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[296]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[297]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[298]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[299]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[300]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[301]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[302]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[303]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[304]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[305]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[306]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[307]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[308]"
+		;
+connectAttr "_meetGrandma:clavicleL_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[309]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[310]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[311]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[312]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[313]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[314]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[315]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[316]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[317]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[318]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[319]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[320]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[321]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[322]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[323]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[324]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[325]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[326]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[327]"
+		;
+connectAttr "_meetGrandma:shoulderL_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[328]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[329]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[330]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[331]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[332]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[333]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[334]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[335]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[336]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[337]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[338]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[339]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[340]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[341]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[342]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[343]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[344]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[345]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[346]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[347]"
+		;
+connectAttr "_meetGrandma:elbowL_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[348]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_visibility1.o" "_meetGrandma:MC_control_rigRN.phl[349]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_rotateX1.o" "_meetGrandma:MC_control_rigRN.phl[350]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_rotateY1.o" "_meetGrandma:MC_control_rigRN.phl[351]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_rotateZ1.o" "_meetGrandma:MC_control_rigRN.phl[352]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_translateX1.o" "_meetGrandma:MC_control_rigRN.phl[353]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_translateY1.o" "_meetGrandma:MC_control_rigRN.phl[354]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_translateZ1.o" "_meetGrandma:MC_control_rigRN.phl[355]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_scaleX1.o" "_meetGrandma:MC_control_rigRN.phl[356]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_scaleY1.o" "_meetGrandma:MC_control_rigRN.phl[357]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_scaleZ1.o" "_meetGrandma:MC_control_rigRN.phl[358]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[359]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[360]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[361]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[362]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[363]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[364]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[365]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[366]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[367]"
+		;
+connectAttr "_meetGrandma:wristL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[368]"
+		;
+connectAttr "_meetGrandma:armL_IK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[369]"
+		;
+connectAttr "_meetGrandma:armL_IK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[370]"
+		;
+connectAttr "_meetGrandma:armL_IK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[371]"
+		;
+connectAttr "_meetGrandma:armL_IK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[372]"
+		;
+connectAttr "_meetGrandma:armL_IK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[373]"
+		;
+connectAttr "_meetGrandma:armL_IK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[374]"
+		;
+connectAttr "_meetGrandma:armL_IK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[375]"
+		;
+connectAttr "_meetGrandma:armL_IK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[376]"
+		;
+connectAttr "_meetGrandma:armL_IK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[377]"
+		;
+connectAttr "_meetGrandma:armL_IK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[378]"
+		;
+connectAttr "pairBlend4.orx" "_meetGrandma:MC_control_rigRN.phl[379]";
+connectAttr "pairBlend4.ory" "_meetGrandma:MC_control_rigRN.phl[380]";
+connectAttr "pairBlend4.orz" "_meetGrandma:MC_control_rigRN.phl[381]";
+connectAttr "armL_IK_Grp1_visibility.o" "_meetGrandma:MC_control_rigRN.phl[383]"
+		;
+connectAttr "armL_IK_Grp1_blendParent1.o" "_meetGrandma:MC_control_rigRN.phl[385]"
+		;
+connectAttr "pairBlend4.otx" "_meetGrandma:MC_control_rigRN.phl[386]";
+connectAttr "pairBlend4.oty" "_meetGrandma:MC_control_rigRN.phl[387]";
+connectAttr "pairBlend4.otz" "_meetGrandma:MC_control_rigRN.phl[388]";
+connectAttr "armL_IK_Grp1_scaleX1.o" "_meetGrandma:MC_control_rigRN.phl[389]";
+connectAttr "armL_IK_Grp1_scaleY1.o" "_meetGrandma:MC_control_rigRN.phl[390]";
+connectAttr "armL_IK_Grp1_scaleZ1.o" "_meetGrandma:MC_control_rigRN.phl[391]";
+connectAttr "_meetGrandma:LeftArm_IK_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[395]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[396]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[397]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_visibility.o" "_meetGrandma:MC_control_rigRN.phl[398]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_translateX.o" "_meetGrandma:MC_control_rigRN.phl[399]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_translateY.o" "_meetGrandma:MC_control_rigRN.phl[400]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[401]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[402]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[403]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[404]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_offset.o" "_meetGrandma:MC_control_rigRN.phl[405]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_roll.o" "_meetGrandma:MC_control_rigRN.phl[406]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_twist.o" "_meetGrandma:MC_control_rigRN.phl[407]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_ikBlend.o" "_meetGrandma:MC_control_rigRN.phl[408]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_poleVectorConstraint1_nodeState.o" "_meetGrandma:MC_control_rigRN.phl[409]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_poleVectorConstraint1_ArmL_PoleW0.o" "_meetGrandma:MC_control_rigRN.phl[410]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_poleVectorConstraint1_offsetX.o" "_meetGrandma:MC_control_rigRN.phl[411]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_poleVectorConstraint1_offsetY.o" "_meetGrandma:MC_control_rigRN.phl[412]"
+		;
+connectAttr "_meetGrandma:LeftArm_IK_poleVectorConstraint1_offsetZ.o" "_meetGrandma:MC_control_rigRN.phl[413]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[414]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[415]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[416]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[417]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[418]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[419]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[420]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[421]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[422]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[423]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[424]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[425]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[426]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[427]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[428]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[429]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[430]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[431]"
+		;
+connectAttr "_meetGrandma:hipL_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[432]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[433]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[434]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[435]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[436]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[437]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[438]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[439]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[440]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[441]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[442]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[443]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[444]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[445]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[446]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[447]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[448]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[449]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[450]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[451]"
+		;
+connectAttr "_meetGrandma:kneeL_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[452]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Grp_visibility.o" "_meetGrandma:MC_control_rigRN.phl[453]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Grp_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[454]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Grp_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[455]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Grp_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[456]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Grp_translateX.o" "_meetGrandma:MC_control_rigRN.phl[457]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Grp_translateY.o" "_meetGrandma:MC_control_rigRN.phl[458]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Grp_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[459]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Grp_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[460]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Grp_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[461]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Grp_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[462]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[463]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[464]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[465]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[466]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[467]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[468]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[469]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[470]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[471]"
+		;
+connectAttr "_meetGrandma:ankleL_FK_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[472]"
+		;
+connectAttr "_meetGrandma:footL_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[473]"
+		;
+connectAttr "_meetGrandma:footL_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[474]"
+		;
+connectAttr "_meetGrandma:footL_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[475]"
+		;
+connectAttr "_meetGrandma:footL_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[476]"
+		;
+connectAttr "_meetGrandma:footL_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[477]"
+		;
+connectAttr "_meetGrandma:footL_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[478]"
+		;
+connectAttr "_meetGrandma:footL_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[479]"
+		;
+connectAttr "_meetGrandma:footL_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[480]"
+		;
+connectAttr "_meetGrandma:footL_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[481]"
+		;
+connectAttr "_meetGrandma:footL_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[482]"
+		;
+connectAttr "_meetGrandma:footR_Ctrl_visibility.o" "_meetGrandma:MC_control_rigRN.phl[483]"
+		;
+connectAttr "_meetGrandma:footR_Ctrl_translateX.o" "_meetGrandma:MC_control_rigRN.phl[484]"
+		;
+connectAttr "_meetGrandma:footR_Ctrl_translateY.o" "_meetGrandma:MC_control_rigRN.phl[485]"
+		;
+connectAttr "_meetGrandma:footR_Ctrl_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[486]"
+		;
+connectAttr "_meetGrandma:footR_Ctrl_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[487]"
+		;
+connectAttr "_meetGrandma:footR_Ctrl_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[488]"
+		;
+connectAttr "_meetGrandma:footR_Ctrl_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[489]"
+		;
+connectAttr "_meetGrandma:footR_Ctrl_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[490]"
+		;
+connectAttr "_meetGrandma:footR_Ctrl_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[491]"
+		;
+connectAttr "_meetGrandma:footR_Ctrl_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[492]"
+		;
+connectAttr "_meetGrandma:LegL_Pole_translateX.o" "_meetGrandma:MC_control_rigRN.phl[493]"
+		;
+connectAttr "_meetGrandma:LegL_Pole_translateY.o" "_meetGrandma:MC_control_rigRN.phl[494]"
+		;
+connectAttr "_meetGrandma:LegL_Pole_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[495]"
+		;
+connectAttr "_meetGrandma:LegL_Pole_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[496]"
+		;
+connectAttr "_meetGrandma:LegL_Pole_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[497]"
+		;
+connectAttr "_meetGrandma:LegL_Pole_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[498]"
+		;
+connectAttr "_meetGrandma:LegL_Pole_visibility.o" "_meetGrandma:MC_control_rigRN.phl[499]"
+		;
+connectAttr "_meetGrandma:LegL_Pole_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[500]"
+		;
+connectAttr "_meetGrandma:LegL_Pole_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[501]"
+		;
+connectAttr "_meetGrandma:LegL_Pole_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[502]"
+		;
+connectAttr "_meetGrandma:LegR_Pole_translateX.o" "_meetGrandma:MC_control_rigRN.phl[503]"
+		;
+connectAttr "_meetGrandma:LegR_Pole_translateY.o" "_meetGrandma:MC_control_rigRN.phl[504]"
+		;
+connectAttr "_meetGrandma:LegR_Pole_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[505]"
+		;
+connectAttr "_meetGrandma:LegR_Pole_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[506]"
+		;
+connectAttr "_meetGrandma:LegR_Pole_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[507]"
+		;
+connectAttr "_meetGrandma:LegR_Pole_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[508]"
+		;
+connectAttr "_meetGrandma:LegR_Pole_visibility.o" "_meetGrandma:MC_control_rigRN.phl[509]"
+		;
+connectAttr "_meetGrandma:LegR_Pole_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[510]"
+		;
+connectAttr "_meetGrandma:LegR_Pole_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[511]"
+		;
+connectAttr "_meetGrandma:LegR_Pole_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[512]"
+		;
+connectAttr "_meetGrandma:ArmL_Pole_translateX.o" "_meetGrandma:MC_control_rigRN.phl[513]"
+		;
+connectAttr "_meetGrandma:ArmL_Pole_translateY.o" "_meetGrandma:MC_control_rigRN.phl[514]"
+		;
+connectAttr "_meetGrandma:ArmL_Pole_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[515]"
+		;
+connectAttr "_meetGrandma:ArmL_Pole_visibility.o" "_meetGrandma:MC_control_rigRN.phl[516]"
+		;
+connectAttr "_meetGrandma:ArmL_Pole_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[517]"
+		;
+connectAttr "_meetGrandma:ArmL_Pole_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[518]"
+		;
+connectAttr "_meetGrandma:ArmL_Pole_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[519]"
+		;
+connectAttr "_meetGrandma:ArmL_Pole_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[520]"
+		;
+connectAttr "_meetGrandma:ArmL_Pole_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[521]"
+		;
+connectAttr "_meetGrandma:ArmL_Pole_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[522]"
+		;
+connectAttr "_meetGrandma:ArmR_Pole_translateX.o" "_meetGrandma:MC_control_rigRN.phl[523]"
+		;
+connectAttr "_meetGrandma:ArmR_Pole_translateY.o" "_meetGrandma:MC_control_rigRN.phl[524]"
+		;
+connectAttr "_meetGrandma:ArmR_Pole_translateZ.o" "_meetGrandma:MC_control_rigRN.phl[525]"
+		;
+connectAttr "_meetGrandma:ArmR_Pole_visibility.o" "_meetGrandma:MC_control_rigRN.phl[526]"
+		;
+connectAttr "_meetGrandma:ArmR_Pole_rotateX.o" "_meetGrandma:MC_control_rigRN.phl[527]"
+		;
+connectAttr "_meetGrandma:ArmR_Pole_rotateY.o" "_meetGrandma:MC_control_rigRN.phl[528]"
+		;
+connectAttr "_meetGrandma:ArmR_Pole_rotateZ.o" "_meetGrandma:MC_control_rigRN.phl[529]"
+		;
+connectAttr "_meetGrandma:ArmR_Pole_scaleX.o" "_meetGrandma:MC_control_rigRN.phl[530]"
+		;
+connectAttr "_meetGrandma:ArmR_Pole_scaleY.o" "_meetGrandma:MC_control_rigRN.phl[531]"
+		;
+connectAttr "_meetGrandma:ArmR_Pole_scaleZ.o" "_meetGrandma:MC_control_rigRN.phl[532]"
+		;
+connectAttr "layerManager.dli[9]" "_meetGrandma:MC_control_rigRN.phl[533]";
+connectAttr "layerManager.dli[10]" "_meetGrandma:MC_control_rigRN.phl[534]";
+connectAttr "_meetGrandma:blendShape1_mouth_smile_wide.o" "_meetGrandma:MC_control_rigRN.phl[535]"
+		;
+connectAttr "_meetGrandma:blendShape2_mouth_smile_nervous.o" "_meetGrandma:MC_control_rigRN.phl[536]"
+		;
+connectAttr "_meetGrandma:blendShape3_lips_pursed.o" "_meetGrandma:MC_control_rigRN.phl[537]"
+		;
+connectAttr "_meetGrandma:blendShape4_mouth_open.o" "_meetGrandma:MC_control_rigRN.phl[538]"
+		;
+connectAttr "_meetGrandma:blendShape5_right_eye.o" "_meetGrandma:MC_control_rigRN.phl[539]"
+		;
+connectAttr "_meetGrandma:blendShape5_left__eye.o" "_meetGrandma:MC_control_rigRN.phl[540]"
+		;
 connectAttr "_meetGrandma:MC_control_rigRNfosterParent1.msg" "_meetGrandma:MC_control_rigRN.fp"
 		;
+connectAttr "sharedReferenceNode.sr" "_meetGrandma:MC_control_rigRN.sr";
 connectAttr "layerManager.dli[14]" "_meetGrandma:grannyCranny_SET_latestRN.phl[1]"
 		;
 connectAttr "layerManager.dli[15]" "_meetGrandma:grannyCranny_SET_latestRN.phl[2]"
@@ -29820,6 +29564,10 @@ connectAttr "_meetGrandma:pairBlend1_inTranslateY1.o" "_meetGrandma:pairBlend1.i
 		;
 connectAttr "_meetGrandma:pairBlend1_inTranslateZ1.o" "_meetGrandma:pairBlend1.itz1"
 		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[258]" "_meetGrandma:pairBlend3.ro"
+		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[261]" "_meetGrandma:pairBlend3.w"
+		;
 connectAttr "_meetGrandma:armR_IK_Ctrl_translateX.o" "_meetGrandma:pairBlend3.itx1"
 		;
 connectAttr "_meetGrandma:armR_IK_Ctrl_translateY.o" "_meetGrandma:pairBlend3.ity1"
@@ -29871,6 +29619,7 @@ connectAttr "_meetGrandma:MC_control_rig2:lambert2.oc" "_meetGrandma:MC_control_
 		;
 connectAttr "_meetGrandma:MC_control_rig2:PxrNormalMap1.resultN" "_meetGrandma:MC_control_rig2:PxrSurface1.bumpNormal"
 		;
+connectAttr "_meetGrandma:MC_control_rigRN.phl[384]" "pairBlend4.w";
 connectAttr "_meetGrandma:armL_IK_Grp1_parentConstraint1.ctx" "pairBlend4.itx2";
 connectAttr "_meetGrandma:armL_IK_Grp1_parentConstraint1.cty" "pairBlend4.ity2";
 connectAttr "_meetGrandma:armL_IK_Grp1_parentConstraint1.ctz" "pairBlend4.itz2";
