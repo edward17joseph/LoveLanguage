@@ -1,0 +1,78 @@
+{
+    "format": {
+        "version": "1.0"
+    },
+    "shaders": {
+        "Main shader": {
+            "parameters": {
+                "Common Parameters": {
+                    "alpha_dither": false,
+                    "alpha_threshold": 0.33000001311302185,
+                    "ao_intensity": 0.75,
+                    "emissive_intensity": 1,
+                    "horizonFade": 1.2999999523162842,
+                    "nbSamples": 16
+                },
+                "Parallax Occlusion Mapping": {
+                    "maxPOMSamples": 16,
+                    "minPOMSamples": 4,
+                    "pomStrength": 1,
+                    "usePOM": false
+                },
+                "Subsurface Scattering Parameters": {
+                    "sssColor": [
+                        0.7009999752044678,
+                        0.3009999990463257,
+                        0.3050000071525574
+                    ],
+                    "sssEnabled": true,
+                    "sssScale": 0.5,
+                    "sssType": 1
+                }
+            },
+            "shader": "pbr-metal-rough-with-alpha-test",
+            "shaderInstance": "Main shader"
+        }
+    },
+    "texturesets": {
+        "bun": {
+            "shader": "Main shader"
+        },
+        "cape": {
+            "shader": "Main shader"
+        },
+        "eyes": {
+            "shader": "Main shader"
+        },
+        "grandma_shaderSG": {
+            "shader": "Main shader"
+        },
+        "hair": {
+            "shader": "Main shader"
+        },
+        "hairpin_pearl": {
+            "shader": "Main shader"
+        },
+        "hairpin_stick": {
+            "shader": "Main shader"
+        },
+        "hairpin_thing": {
+            "shader": "Main shader"
+        },
+        "pants": {
+            "shader": "Main shader"
+        },
+        "shirt": {
+            "shader": "Main shader"
+        },
+        "shoe_base": {
+            "shader": "Main shader"
+        },
+        "shoe_bottom": {
+            "shader": "Main shader"
+        },
+        "shoe_top": {
+            "shader": "Main shader"
+        }
+    }
+}
