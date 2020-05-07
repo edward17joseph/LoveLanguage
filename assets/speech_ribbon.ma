@@ -1,12 +1,13 @@
 //Maya ASCII 2020 scene
 //Name: speech_ribbon.ma
-//Last modified: Thu, May 07, 2020 01:14:43 AM
+//Last modified: Thu, May 07, 2020 01:21:52 AM
 //Codeset: 1252
 requires maya "2020";
 requires "stereoCamera" "10.0";
 requires -nodeType "MASH_Waiter" -nodeType "MASH_Distribute" -nodeType "MASH_Curve"
 		 -nodeType "MASH_Trails" -nodeType "MASH_Repro" "MASH" "450";
-requires -nodeType "rmanGlobals" -nodeType "PxrPathTracer" "RenderMan_for_Maya.py" "23.2 @ 2046737";
+requires -nodeType "rmanDisplayChannel" -nodeType "d_openexr" -nodeType "rmanGlobals"
+		 -nodeType "PxrPathTracer" -nodeType "rmanDisplay" "RenderMan_for_Maya.py" "23.2 @ 2046737";
 requires "mtoa" "4.0.2";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
@@ -14,18 +15,18 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "202002251615-329d215872";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18362)\n";
-fileInfo "UUID" "A3D31C61-489A-8F66-C923-A8BCB49F2BDC";
+fileInfo "UUID" "B0B1D294-474B-EE3F-5C1D-5690BAA82028";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "108A6890-4193-E3A4-5197-82B05783597E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 57.349003145417328 10.144401733448953 -5.6618757264612398 ;
-	setAttr ".r" -type "double3" -6.3383527286391343 -986.6000000005314 0 ;
+	setAttr ".t" -type "double3" 22.445614278913062 14.370451637340469 -2.8706257565635527 ;
+	setAttr ".r" -type "double3" -23.138352728634935 -988.20000000050277 5.0888874903416268e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "807AC0FD-47E8-3348-72B3-D1B3D2191659";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 61.026019459696528;
+	setAttr ".coi" 27.899791694790736;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -82,55 +83,185 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
-createNode transform -n "pCube1";
-	rename -uid "F2C42A99-4FC5-955C-35B3-0F8D2500158C";
-	addAttr -ci true -sn "mashOutFilter" -ln "mashOutFilter" -min 0 -max 1 -at "bool";
-	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0 3.6517328584627244 0 ;
-	setAttr ".s" -type "double3" 0.37821063782507852 0.37821063782507852 0.37821063782507852 ;
-createNode mesh -n "pCubeShape1" -p "pCube1";
-	rename -uid "D66A8A02-4262-5258-97B6-5AB918FAD76F";
+createNode transform -n "Ribbon_Grp";
+	rename -uid "893B2148-468C-EB87-5AA6-98B59B485D02";
+createNode transform -n "Ribbon_Master" -p "Ribbon_Grp";
+	rename -uid "B17C18D1-4D99-2627-81C2-7195B0AEAD20";
+	addAttr -ci true -sn "Length" -ln "Length" -at "double";
+	addAttr -ci true -sn "Speed" -ln "Speed" -at "double";
+	addAttr -ci true -sn "Thickness" -ln "Thickness" -dv 2 -at "double";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 17;
+	setAttr ".t" -type "double3" 0 6.2730713314687172 0 ;
+	setAttr ".rp" -type "double3" 0 0 6 ;
+	setAttr ".sp" -type "double3" 0 0 6 ;
+	setAttr -cb off ".rman_matteObject";
+	setAttr -cb off ".rman_holdout";
+	setAttr -cb off ".rman_nestedInstancing";
+	setAttr -cb off ".rman_maxDiffuseDepth";
+	setAttr -cb off ".rman_maxSpecularDepth";
+	setAttr -cb off ".rman_relativePixelVariance";
+	setAttr -cb off ".rman_intersectPriority";
+	setAttr -cb off ".rman_visibilityCamera";
+	setAttr -cb off ".rman_visibilityIndirect";
+	setAttr -cb off ".rman_visibilityTransmission";
+	setAttr -cb off ".rman_motionSamples";
+	setAttr -k on ".Length" 0.5;
+	setAttr -k on ".Speed" 5;
+	setAttr -k on ".Thickness";
+createNode nurbsCurve -n "Ribbon_MasterShape" -p "Ribbon_Master";
+	rename -uid "C12EAB6F-403D-3A65-033E-5DB1B4A52F66";
 	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "MASH1_ReproMesh";
-	rename -uid "41F40EC8-4836-655A-6068-65B49C468FF8";
-	addAttr -ci true -sn "mashOutFilter" -ln "mashOutFilter" -min 0 -max 1 -at "bool";
-	setAttr ".v" no;
-createNode mesh -n "MASH1_ReproMeshShape" -p "MASH1_ReproMesh";
-	rename -uid "6E239CBC-401D-6098-BE81-D3A9EF6D46E4";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 13;
+	setAttr ".tw" yes;
+createNode transform -n "nurbsCircle5" -p "Ribbon_Master";
+	rename -uid "89F7EE4C-4621-9CF2-5AC4-859EC5F20672";
+	setAttr ".rp" -type "double3" 0 0 2.5 ;
+	setAttr ".sp" -type "double3" 0 0 2.5 ;
+createNode nurbsCurve -n "nurbsCircleShape5" -p "nurbsCircle5";
+	rename -uid "98B162FD-458D-D9C0-7A95-698E10ABC24E";
 	setAttr -k off ".v";
-	setAttr -s 2 ".iog[0].og";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "MASH1_Trails_Mesh";
-	rename -uid "0B78BEE2-4731-BB4E-9817-76BA9504D121";
-createNode mesh -n "MASH1_Trails_MeshShape" -p "MASH1_Trails_Mesh";
-	rename -uid "CD0F7B3C-470E-0841-2129-6C86DBE56A32";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.78361162489122449 0.7836116248912246 2.5000000000000004
+		6.7857323231109122e-17 1.1081941875543877 2.5000000000000004
+		-0.78361162489122449 0.78361162489122438 2.5000000000000004
+		-1.1081941875543881 5.7448982375248304e-17 2.5000000000000004
+		-0.78361162489122449 -0.78361162489122449 2.5000000000000004
+		-1.1100856969603225e-16 -1.1081941875543884 2.5000000000000004
+		0.78361162489122449 -0.78361162489122438 2.5000000000000004
+		1.1081941875543881 -1.511240500779959e-16 2.5000000000000004
+		0.78361162489122449 0.7836116248912246 2.5000000000000004
+		6.7857323231109122e-17 1.1081941875543877 2.5000000000000004
+		-0.78361162489122449 0.78361162489122438 2.5000000000000004
+		;
+createNode transform -n "nurbsCircle6" -p "Ribbon_Master";
+	rename -uid "FE0CAC48-4589-91B3-90C5-AEABC557ADD8";
+	setAttr ".rp" -type "double3" 0 0 -0.5 ;
+	setAttr ".sp" -type "double3" 0 0 -0.5 ;
+createNode nurbsCurve -n "nurbsCircleShape6" -p "nurbsCircle6";
+	rename -uid "AAFF22AB-4CFD-FAAC-5F06-019D6109CA53";
 	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 1 0.65625 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".dr" 1;
-	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "curve1";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.78361162489122449 0.7836116248912246 -0.5
+		6.7857323231109122e-17 1.1081941875543877 -0.5
+		-0.78361162489122449 0.78361162489122438 -0.5
+		-1.1081941875543881 5.7448982375248304e-17 -0.5
+		-0.78361162489122449 -0.78361162489122449 -0.5
+		-1.1100856969603225e-16 -1.1081941875543884 -0.5
+		0.78361162489122449 -0.78361162489122438 -0.5
+		1.1081941875543881 -1.511240500779959e-16 -0.5
+		0.78361162489122449 0.7836116248912246 -0.5
+		6.7857323231109122e-17 1.1081941875543877 -0.5
+		-0.78361162489122449 0.78361162489122438 -0.5
+		;
+createNode transform -n "nurbsCircle7" -p "Ribbon_Master";
+	rename -uid "ED39F979-4464-6811-C61F-1A9EF9F92F0E";
+	setAttr ".rp" -type "double3" 0 0 -3.5 ;
+	setAttr ".sp" -type "double3" 0 0 -3.5 ;
+createNode nurbsCurve -n "nurbsCircleShape7" -p "nurbsCircle7";
+	rename -uid "641AD638-485C-E096-F213-97B54AA34B89";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.78361162489122449 0.7836116248912246 -3.4999999999999991
+		6.7857323231109122e-17 1.1081941875543877 -3.4999999999999991
+		-0.78361162489122449 0.78361162489122438 -3.4999999999999991
+		-1.1081941875543881 5.7448982375248304e-17 -3.4999999999999991
+		-0.78361162489122449 -0.78361162489122449 -3.4999999999999991
+		-1.1100856969603225e-16 -1.1081941875543884 -3.4999999999999991
+		0.78361162489122449 -0.78361162489122438 -3.4999999999999991
+		1.1081941875543881 -1.511240500779959e-16 -3.4999999999999991
+		0.78361162489122449 0.7836116248912246 -3.4999999999999991
+		6.7857323231109122e-17 1.1081941875543877 -3.4999999999999991
+		-0.78361162489122449 0.78361162489122438 -3.4999999999999991
+		;
+createNode transform -n "nurbsCircle4" -p "Ribbon_Master";
+	rename -uid "5D84355D-4106-E675-E84A-ED8E28B8E552";
+	setAttr ".rp" -type "double3" 0.026913497596979141 0 -5.0078916549682617 ;
+	setAttr ".sp" -type "double3" 0.026913497596979141 0 -5.0078916549682617 ;
+createNode nurbsCurve -n "nurbsCircleShape4" -p "nurbsCircle4";
+	rename -uid "00B34FF6-4539-123A-48E0-5D9C56DE5E88";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.81052512248820363 0.7836116248912246 -5.0078916549682608
+		0.026913497596979211 1.1081941875543877 -5.0078916549682608
+		-0.75669812729424535 0.78361162489122438 -5.0078916549682608
+		-1.081280689957409 5.7448982375248304e-17 -5.0078916549682608
+		-0.75669812729424535 -0.78361162489122449 -5.0078916549682608
+		0.02691349759697903 -1.1081941875543884 -5.0078916549682608
+		0.81052512248820363 -0.78361162489122438 -5.0078916549682608
+		1.1351076851513673 -1.511240500779959e-16 -5.0078916549682608
+		0.81052512248820363 0.7836116248912246 -5.0078916549682608
+		0.026913497596979211 1.1081941875543877 -5.0078916549682608
+		-0.75669812729424535 0.78361162489122438 -5.0078916549682608
+		;
+createNode transform -n "nurbsCircle3" -p "Ribbon_Master";
+	rename -uid "92AE038B-4559-9B2C-27C6-B2B349C9D818";
+	setAttr ".rp" -type "double3" 0 0 -2 ;
+	setAttr ".sp" -type "double3" 0 0 -2 ;
+createNode nurbsCurve -n "nurbsCircleShape3" -p "nurbsCircle3";
+	rename -uid "552D9982-4F74-B114-8F28-F8A262ED8D97";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.78361162489122449 0.7836116248912246 -2
+		6.7857323231109122e-17 1.1081941875543877 -2
+		-0.78361162489122449 0.78361162489122438 -2
+		-1.1081941875543881 5.7448982375248304e-17 -2
+		-0.78361162489122449 -0.78361162489122449 -2
+		-1.1100856969603225e-16 -1.1081941875543884 -2
+		0.78361162489122449 -0.78361162489122438 -2
+		1.1081941875543881 -1.511240500779959e-16 -2
+		0.78361162489122449 0.7836116248912246 -2
+		6.7857323231109122e-17 1.1081941875543877 -2
+		-0.78361162489122449 0.78361162489122438 -2
+		;
+createNode transform -n "nurbsCircle2" -p "Ribbon_Master";
+	rename -uid "239F9221-4690-5ABB-C229-FA9894FF6001";
+	setAttr ".rp" -type "double3" 0 0 1 ;
+	setAttr ".sp" -type "double3" 0 0 1 ;
+createNode nurbsCurve -n "nurbsCircleShape2" -p "nurbsCircle2";
+	rename -uid "7223CAE6-43EF-185F-7C44-1CAA096002BF";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.78361162489122449 0.7836116248912246 1
+		6.7857323231109122e-17 1.1081941875543877 1
+		-0.78361162489122449 0.78361162489122438 1
+		-1.1081941875543881 5.7448982375248304e-17 1
+		-0.78361162489122449 -0.78361162489122449 1
+		-1.1100856969603225e-16 -1.1081941875543884 1
+		0.78361162489122449 -0.78361162489122438 1
+		1.1081941875543881 -1.511240500779959e-16 1
+		0.78361162489122449 0.7836116248912246 1
+		6.7857323231109122e-17 1.1081941875543877 1
+		-0.78361162489122449 0.78361162489122438 1
+		;
+createNode transform -n "nurbsCircle1" -p "Ribbon_Master";
+	rename -uid "09E59C0D-47E1-BF33-561B-24BEC51FADE2";
+	setAttr ".rp" -type "double3" 0 0 4 ;
+	setAttr ".sp" -type "double3" 0 0 4 ;
+createNode nurbsCurve -n "nurbsCircleShape1" -p "nurbsCircle1";
+	rename -uid "7874FA78-411F-4A86-08B7-7C8D9BCE48CA";
+	setAttr -k off ".v";
+	setAttr ".tw" yes;
+createNode transform -n "guideCurve" -p "Ribbon_Grp";
 	rename -uid "8A092A28-4D5E-1CAA-C56E-919B96E2146E";
 	setAttr -l on ".tx";
 	setAttr -l on ".ty";
@@ -143,13 +274,13 @@ createNode transform -n "curve1";
 	setAttr -l on ".sz";
 	setAttr ".rp" -type "double3" 0 0 -0.37401741178257719 ;
 	setAttr ".sp" -type "double3" 0 0 -0.37401741178257719 ;
-createNode nurbsCurve -n "curveShape1" -p "curve1";
+createNode nurbsCurve -n "guideCurveShape" -p "guideCurve";
 	rename -uid "49D07EAE-44F8-EAD6-E2BD-A38437E21533";
 	addAttr -ci true -sn "mashOutFilter" -ln "mashOutFilter" -min 0 -max 1 -at "bool";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".tw" yes;
-createNode nurbsCurve -n "curveShape1Orig" -p "curve1";
+createNode nurbsCurve -n "guideCurveShape1Orig" -p "guideCurve";
 	rename -uid "D74009B1-4CDE-08B8-1CBA-CBAA3EE97F19";
 	setAttr -k off ".v";
 	setAttr ".io" yes;
@@ -171,7 +302,58 @@ createNode nurbsCurve -n "curveShape1Orig" -p "curve1";
 		0 0 -4.6746564717631927
 		0 0 -5.0079920079920122
 		;
-createNode joint -n "joint1";
+createNode transform -n "MASH1_Trails_Mesh" -p "Ribbon_Grp";
+	rename -uid "0B78BEE2-4731-BB4E-9817-76BA9504D121";
+createNode mesh -n "MASH1_Trails_MeshShape" -p "MASH1_Trails_Mesh";
+	rename -uid "CD0F7B3C-470E-0841-2129-6C86DBE56A32";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 1 0.65625 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".dr" 1;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "MASH1_ReproMesh" -p "Ribbon_Grp";
+	rename -uid "41F40EC8-4836-655A-6068-65B49C468FF8";
+	addAttr -ci true -sn "mashOutFilter" -ln "mashOutFilter" -min 0 -max 1 -at "bool";
+	setAttr ".v" no;
+createNode mesh -n "MASH1_ReproMeshShape" -p "MASH1_ReproMesh";
+	rename -uid "6E239CBC-401D-6098-BE81-D3A9EF6D46E4";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "pCube1" -p "Ribbon_Grp";
+	rename -uid "F2C42A99-4FC5-955C-35B3-0F8D2500158C";
+	addAttr -ci true -sn "mashOutFilter" -ln "mashOutFilter" -min 0 -max 1 -at "bool";
+	setAttr ".v" no;
+	setAttr ".t" -type "double3" 0 3.6517328584627244 0 ;
+	setAttr ".s" -type "double3" 0.37821063782507852 0.37821063782507852 0.37821063782507852 ;
+createNode mesh -n "pCubeShape1" -p "pCube1";
+	rename -uid "D66A8A02-4262-5258-97B6-5AB918FAD76F";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "group1" -p "Ribbon_Grp";
+	rename -uid "64097798-489B-E9E6-27F2-68819A8070D9";
+	setAttr ".v" no;
+createNode joint -n "joint1" -p "group1";
 	rename -uid "975623DF-44FC-FE2F-C5FC-56B28B523C37";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
@@ -195,7 +377,7 @@ createNode parentConstraint -n "joint1_parentConstraint1" -p "joint1";
 	setAttr ".erp" yes;
 	setAttr ".rst" -type "double3" 0 0 4 ;
 	setAttr -k on ".w0";
-createNode joint -n "joint2";
+createNode joint -n "joint2" -p "group1";
 	rename -uid "BEC3ABDC-4C40-D169-2276-76A604755417";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
@@ -219,7 +401,7 @@ createNode parentConstraint -n "joint2_parentConstraint1" -p "joint2";
 	setAttr ".erp" yes;
 	setAttr ".rst" -type "double3" 0 0 1 ;
 	setAttr -k on ".w0";
-createNode joint -n "joint3";
+createNode joint -n "joint3" -p "group1";
 	rename -uid "24CF8EC4-44C6-DEC2-A998-2EABD659F367";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
@@ -243,7 +425,7 @@ createNode parentConstraint -n "joint3_parentConstraint1" -p "joint3";
 	setAttr ".erp" yes;
 	setAttr ".rst" -type "double3" 0 0 -2 ;
 	setAttr -k on ".w0";
-createNode joint -n "joint4";
+createNode joint -n "joint4" -p "group1";
 	rename -uid "95562BFF-4835-2854-FAF1-929504071BF3";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
@@ -268,7 +450,7 @@ createNode parentConstraint -n "joint4_parentConstraint1" -p "joint4";
 	setAttr ".tg[0].tot" -type "double3" -0.026913497596979141 0 0.0078916549682617188 ;
 	setAttr ".rst" -type "double3" 0 0 -5 ;
 	setAttr -k on ".w0";
-createNode joint -n "joint5";
+createNode joint -n "joint5" -p "group1";
 	rename -uid "34EFAA07-4559-F1DD-5B68-B1B17619981A";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -293,7 +475,7 @@ createNode parentConstraint -n "joint5_parentConstraint1" -p "joint5";
 	setAttr ".erp" yes;
 	setAttr ".rst" -type "double3" 0 0 2.5 ;
 	setAttr -k on ".w0";
-createNode joint -n "joint6";
+createNode joint -n "joint6" -p "group1";
 	rename -uid "CA830443-4EC2-C093-F8A4-D89869A790EE";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
@@ -317,7 +499,7 @@ createNode parentConstraint -n "joint6_parentConstraint1" -p "joint6";
 	setAttr ".erp" yes;
 	setAttr ".rst" -type "double3" 0 0 -0.5 ;
 	setAttr -k on ".w0";
-createNode joint -n "joint7";
+createNode joint -n "joint7" -p "group1";
 	rename -uid "ACC5784A-48E8-6161-92AC-52BCB2CB931E";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
@@ -341,182 +523,6 @@ createNode parentConstraint -n "joint7_parentConstraint1" -p "joint7";
 	setAttr ".erp" yes;
 	setAttr ".rst" -type "double3" 0 0 -3.5 ;
 	setAttr -k on ".w0";
-createNode transform -n "nurbsCircle8";
-	rename -uid "B17C18D1-4D99-2627-81C2-7195B0AEAD20";
-	addAttr -ci true -sn "Length" -ln "Length" -at "double";
-	addAttr -ci true -sn "Speed" -ln "Speed" -at "double";
-	addAttr -ci true -sn "Thickness" -ln "Thickness" -dv 2 -at "double";
-	setAttr ".ove" yes;
-	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" 0 6.2730713314687172 0 ;
-	setAttr ".rp" -type "double3" 0 0 6 ;
-	setAttr ".sp" -type "double3" 0 0 6 ;
-	setAttr -cb off ".rman_matteObject";
-	setAttr -cb off ".rman_holdout";
-	setAttr -cb off ".rman_nestedInstancing";
-	setAttr -cb off ".rman_maxDiffuseDepth";
-	setAttr -cb off ".rman_maxSpecularDepth";
-	setAttr -cb off ".rman_relativePixelVariance";
-	setAttr -cb off ".rman_intersectPriority";
-	setAttr -cb off ".rman_visibilityCamera";
-	setAttr -cb off ".rman_visibilityIndirect";
-	setAttr -cb off ".rman_visibilityTransmission";
-	setAttr -cb off ".rman_motionSamples";
-	setAttr -k on ".Length" 0.5;
-	setAttr -k on ".Speed" 5;
-	setAttr -k on ".Thickness";
-createNode nurbsCurve -n "nurbsCircleShape8" -p "nurbsCircle8";
-	rename -uid "C12EAB6F-403D-3A65-033E-5DB1B4A52F66";
-	setAttr -k off ".v";
-	setAttr ".ove" yes;
-	setAttr ".ovc" 13;
-	setAttr ".tw" yes;
-createNode transform -n "nurbsCircle5" -p "nurbsCircle8";
-	rename -uid "89F7EE4C-4621-9CF2-5AC4-859EC5F20672";
-	setAttr ".rp" -type "double3" 0 0 2.5 ;
-	setAttr ".sp" -type "double3" 0 0 2.5 ;
-createNode nurbsCurve -n "nurbsCircleShape5" -p "nurbsCircle5";
-	rename -uid "98B162FD-458D-D9C0-7A95-698E10ABC24E";
-	setAttr -k off ".v";
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		0.78361162489122449 0.7836116248912246 2.5000000000000004
-		6.7857323231109122e-17 1.1081941875543877 2.5000000000000004
-		-0.78361162489122449 0.78361162489122438 2.5000000000000004
-		-1.1081941875543881 5.7448982375248304e-17 2.5000000000000004
-		-0.78361162489122449 -0.78361162489122449 2.5000000000000004
-		-1.1100856969603225e-16 -1.1081941875543884 2.5000000000000004
-		0.78361162489122449 -0.78361162489122438 2.5000000000000004
-		1.1081941875543881 -1.511240500779959e-16 2.5000000000000004
-		0.78361162489122449 0.7836116248912246 2.5000000000000004
-		6.7857323231109122e-17 1.1081941875543877 2.5000000000000004
-		-0.78361162489122449 0.78361162489122438 2.5000000000000004
-		;
-createNode transform -n "nurbsCircle6" -p "nurbsCircle8";
-	rename -uid "FE0CAC48-4589-91B3-90C5-AEABC557ADD8";
-	setAttr ".rp" -type "double3" 0 0 -0.5 ;
-	setAttr ".sp" -type "double3" 0 0 -0.5 ;
-createNode nurbsCurve -n "nurbsCircleShape6" -p "nurbsCircle6";
-	rename -uid "AAFF22AB-4CFD-FAAC-5F06-019D6109CA53";
-	setAttr -k off ".v";
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		0.78361162489122449 0.7836116248912246 -0.5
-		6.7857323231109122e-17 1.1081941875543877 -0.5
-		-0.78361162489122449 0.78361162489122438 -0.5
-		-1.1081941875543881 5.7448982375248304e-17 -0.5
-		-0.78361162489122449 -0.78361162489122449 -0.5
-		-1.1100856969603225e-16 -1.1081941875543884 -0.5
-		0.78361162489122449 -0.78361162489122438 -0.5
-		1.1081941875543881 -1.511240500779959e-16 -0.5
-		0.78361162489122449 0.7836116248912246 -0.5
-		6.7857323231109122e-17 1.1081941875543877 -0.5
-		-0.78361162489122449 0.78361162489122438 -0.5
-		;
-createNode transform -n "nurbsCircle7" -p "nurbsCircle8";
-	rename -uid "ED39F979-4464-6811-C61F-1A9EF9F92F0E";
-	setAttr ".rp" -type "double3" 0 0 -3.5 ;
-	setAttr ".sp" -type "double3" 0 0 -3.5 ;
-createNode nurbsCurve -n "nurbsCircleShape7" -p "nurbsCircle7";
-	rename -uid "641AD638-485C-E096-F213-97B54AA34B89";
-	setAttr -k off ".v";
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		0.78361162489122449 0.7836116248912246 -3.4999999999999991
-		6.7857323231109122e-17 1.1081941875543877 -3.4999999999999991
-		-0.78361162489122449 0.78361162489122438 -3.4999999999999991
-		-1.1081941875543881 5.7448982375248304e-17 -3.4999999999999991
-		-0.78361162489122449 -0.78361162489122449 -3.4999999999999991
-		-1.1100856969603225e-16 -1.1081941875543884 -3.4999999999999991
-		0.78361162489122449 -0.78361162489122438 -3.4999999999999991
-		1.1081941875543881 -1.511240500779959e-16 -3.4999999999999991
-		0.78361162489122449 0.7836116248912246 -3.4999999999999991
-		6.7857323231109122e-17 1.1081941875543877 -3.4999999999999991
-		-0.78361162489122449 0.78361162489122438 -3.4999999999999991
-		;
-createNode transform -n "nurbsCircle4" -p "nurbsCircle8";
-	rename -uid "5D84355D-4106-E675-E84A-ED8E28B8E552";
-	setAttr ".rp" -type "double3" 0.026913497596979141 0 -5.0078916549682617 ;
-	setAttr ".sp" -type "double3" 0.026913497596979141 0 -5.0078916549682617 ;
-createNode nurbsCurve -n "nurbsCircleShape4" -p "nurbsCircle4";
-	rename -uid "00B34FF6-4539-123A-48E0-5D9C56DE5E88";
-	setAttr -k off ".v";
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		0.81052512248820363 0.7836116248912246 -5.0078916549682608
-		0.026913497596979211 1.1081941875543877 -5.0078916549682608
-		-0.75669812729424535 0.78361162489122438 -5.0078916549682608
-		-1.081280689957409 5.7448982375248304e-17 -5.0078916549682608
-		-0.75669812729424535 -0.78361162489122449 -5.0078916549682608
-		0.02691349759697903 -1.1081941875543884 -5.0078916549682608
-		0.81052512248820363 -0.78361162489122438 -5.0078916549682608
-		1.1351076851513673 -1.511240500779959e-16 -5.0078916549682608
-		0.81052512248820363 0.7836116248912246 -5.0078916549682608
-		0.026913497596979211 1.1081941875543877 -5.0078916549682608
-		-0.75669812729424535 0.78361162489122438 -5.0078916549682608
-		;
-createNode transform -n "nurbsCircle3" -p "nurbsCircle8";
-	rename -uid "92AE038B-4559-9B2C-27C6-B2B349C9D818";
-	setAttr ".rp" -type "double3" 0 0 -2 ;
-	setAttr ".sp" -type "double3" 0 0 -2 ;
-createNode nurbsCurve -n "nurbsCircleShape3" -p "nurbsCircle3";
-	rename -uid "552D9982-4F74-B114-8F28-F8A262ED8D97";
-	setAttr -k off ".v";
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		0.78361162489122449 0.7836116248912246 -2
-		6.7857323231109122e-17 1.1081941875543877 -2
-		-0.78361162489122449 0.78361162489122438 -2
-		-1.1081941875543881 5.7448982375248304e-17 -2
-		-0.78361162489122449 -0.78361162489122449 -2
-		-1.1100856969603225e-16 -1.1081941875543884 -2
-		0.78361162489122449 -0.78361162489122438 -2
-		1.1081941875543881 -1.511240500779959e-16 -2
-		0.78361162489122449 0.7836116248912246 -2
-		6.7857323231109122e-17 1.1081941875543877 -2
-		-0.78361162489122449 0.78361162489122438 -2
-		;
-createNode transform -n "nurbsCircle2" -p "nurbsCircle8";
-	rename -uid "239F9221-4690-5ABB-C229-FA9894FF6001";
-	setAttr ".rp" -type "double3" 0 0 1 ;
-	setAttr ".sp" -type "double3" 0 0 1 ;
-createNode nurbsCurve -n "nurbsCircleShape2" -p "nurbsCircle2";
-	rename -uid "7223CAE6-43EF-185F-7C44-1CAA096002BF";
-	setAttr -k off ".v";
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		0.78361162489122449 0.7836116248912246 1
-		6.7857323231109122e-17 1.1081941875543877 1
-		-0.78361162489122449 0.78361162489122438 1
-		-1.1081941875543881 5.7448982375248304e-17 1
-		-0.78361162489122449 -0.78361162489122449 1
-		-1.1100856969603225e-16 -1.1081941875543884 1
-		0.78361162489122449 -0.78361162489122438 1
-		1.1081941875543881 -1.511240500779959e-16 1
-		0.78361162489122449 0.7836116248912246 1
-		6.7857323231109122e-17 1.1081941875543877 1
-		-0.78361162489122449 0.78361162489122438 1
-		;
-createNode transform -n "nurbsCircle1" -p "nurbsCircle8";
-	rename -uid "09E59C0D-47E1-BF33-561B-24BEC51FADE2";
-	setAttr ".rp" -type "double3" 0 0 4 ;
-	setAttr ".sp" -type "double3" 0 0 4 ;
-createNode nurbsCurve -n "nurbsCircleShape1" -p "nurbsCircle1";
-	rename -uid "7874FA78-411F-4A86-08B7-7C8D9BCE48CA";
-	setAttr -k off ".v";
-	setAttr ".tw" yes;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "C7365F69-4E29-7D32-1697-8681F4C44AD8";
 	setAttr -s 2 ".lnk";
@@ -612,9 +618,9 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n"
 		+ "                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -connectionMinSegment 0.03\n                -connectionOffset 0.03\n                -connectionRoundness 0.8\n                -connectionTension -100\n                -defaultPinnedState 0\n"
-		+ "                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n"
-		+ "                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -connectionMinSegment 0.03\n                -connectionOffset 0.03\n                -connectionRoundness 0.8\n                -connectionTension -100\n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n"
-		+ "                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n"
+		+ "                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"rmanNodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n"
+		+ "                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -connectionMinSegment 0.03\n                -connectionOffset 0.03\n                -connectionRoundness 0.8\n                -connectionTension -100\n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"rmanNodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n"
+		+ "                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n"
@@ -869,12 +875,73 @@ createNode transformGeometry -n "transformGeometry2";
 	rename -uid "A3A9F640-4103-3EEE-82A9-94972E7C4E43";
 	setAttr ".txf" -type "matrix" 1.6218625772477866 0 0 0 0 0 1.6218625772477866 0
 		 0 -1.6218625772477866 0 0 0 0 6 1;
+createNode rmanDisplay -s -n "rmanDefaultDisplay";
+	rename -uid "EC3A8CFB-452E-F3B2-E213-9680F7FF7BE8";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".enable" yes;
+	setAttr ".denoise" no;
+	setAttr ".frameMode" 0;
+	setAttr ".remapBreakPoint" 0;
+	setAttr ".remapMaxValue" 0;
+	setAttr ".remapSmoothness" 0;
+	setAttr -s 2 ".displayChannels";
+	setAttr ".name" -type "string" "";
+createNode d_openexr -n "d_openexr";
+	rename -uid "81C6C0F4-497B-56D3-C03F-AEB6D525959F";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".asrgba" yes;
+	setAttr ".storage" -type "string" "scanline";
+	setAttr ".exrpixeltype" -type "string" "half";
+	setAttr ".compression" -type "string" "zips";
+	setAttr ".compressionlevel" 45;
+createNode rmanDisplayChannel -n "Ci";
+	rename -uid "08BDA239-4FEB-74CA-7452-718B45507802";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".enable" yes;
+	setAttr ".channelType" -type "string" "color";
+	setAttr ".channelSource" -type "string" "Ci";
+	setAttr ".lpeLightGroup" -type "string" "";
+	setAttr ".filter" -type "string" "inherit from display";
+	setAttr ".filterwidth" -type "float2" -1 -1 ;
+	setAttr ".statistics" -type "string" "";
+	setAttr ".relativepixelvariance" 1;
+	setAttr ".remapBreakPoint" 0;
+	setAttr ".remapMaxValue" 0;
+	setAttr ".remapSmoothness" 0;
+	setAttr ".name" -type "string" "";
+createNode rmanDisplayChannel -n "a";
+	rename -uid "FF474760-41D3-4C10-DD63-089FBB9159F1";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".enable" yes;
+	setAttr ".channelType" -type "string" "float";
+	setAttr ".channelSource" -type "string" "a";
+	setAttr ".lpeLightGroup" -type "string" "";
+	setAttr ".filter" -type "string" "inherit from display";
+	setAttr ".filterwidth" -type "float2" -1 -1 ;
+	setAttr ".statistics" -type "string" "";
+	setAttr ".relativepixelvariance" -1;
+	setAttr ".remapBreakPoint" 0;
+	setAttr ".remapMaxValue" 0;
+	setAttr ".remapSmoothness" 0;
+	setAttr ".name" -type "string" "";
 createNode nodeGraphEditorInfo -n "MayaNodeEditorSavedTabsInfo";
-	rename -uid "27227867-41FE-7823-8D02-B59E87C01EF6";
+	rename -uid "5A3CEC7B-4DDC-A864-A6A8-A19BBE784582";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -1389.1421522179883 -187.2672554489389 ;
 	setAttr ".tgi[0].vh" -type "double2" 690.01575243025741 870.51444117657934 ;
-	setAttr -s 20 ".tgi[0].ni";
+	setAttr -s 26 ".tgi[0].ni";
 	setAttr ".tgi[0].ni[0].x" -1361.4285888671875;
 	setAttr ".tgi[0].ni[0].y" -438.57144165039063;
 	setAttr ".tgi[0].ni[0].nvs" 18304;
@@ -935,6 +1002,24 @@ createNode nodeGraphEditorInfo -n "MayaNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[19].x" 174.28572082519531;
 	setAttr ".tgi[0].ni[19].y" -25.714284896850586;
 	setAttr ".tgi[0].ni[19].nvs" 18304;
+	setAttr ".tgi[0].ni[20].x" 130;
+	setAttr ".tgi[0].ni[20].y" 474.28570556640625;
+	setAttr ".tgi[0].ni[20].nvs" 18304;
+	setAttr ".tgi[0].ni[21].x" -177.14285278320313;
+	setAttr ".tgi[0].ni[21].y" 575.71429443359375;
+	setAttr ".tgi[0].ni[21].nvs" 18304;
+	setAttr ".tgi[0].ni[22].x" -177.14285278320313;
+	setAttr ".tgi[0].ni[22].y" 474.28570556640625;
+	setAttr ".tgi[0].ni[22].nvs" 18304;
+	setAttr ".tgi[0].ni[23].x" -177.14285278320313;
+	setAttr ".tgi[0].ni[23].y" 372.85714721679688;
+	setAttr ".tgi[0].ni[23].nvs" 18304;
+	setAttr ".tgi[0].ni[24].x" -1162.857177734375;
+	setAttr ".tgi[0].ni[24].y" 555.71429443359375;
+	setAttr ".tgi[0].ni[24].nvs" 18304;
+	setAttr ".tgi[0].ni[25].x" -440;
+	setAttr ".tgi[0].ni[25].y" 801.4285888671875;
+	setAttr ".tgi[0].ni[25].nvs" 18304;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -av -k on ".ihi";
@@ -979,7 +1064,7 @@ select -ne :postProcessList1;
 	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
-	setAttr -s 3 ".r";
+	setAttr -s 5 ".r";
 select -ne :initialShadingGroup;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".ihi";
@@ -1169,17 +1254,19 @@ select -ne :ikSystem;
 	setAttr -av -k on ".gsn";
 	setAttr -k on ".gsv";
 	setAttr -s 4 ".sol";
-connectAttr "polyCube1.out" "pCubeShape1.i";
+connectAttr "transformGeometry2.og" "Ribbon_MasterShape.cr";
+connectAttr "transformGeometry1.og" "nurbsCircleShape1.cr";
+connectAttr "skinCluster1.og[0]" "guideCurveShape.cr";
+connectAttr "tweak1.pl[0].cp[0]" "guideCurveShape.twl";
+connectAttr "skinCluster1GroupId.id" "guideCurveShape.iog.og[2].gid";
+connectAttr "skinCluster1Set.mwc" "guideCurveShape.iog.og[2].gco";
+connectAttr "groupId3.id" "guideCurveShape.iog.og[3].gid";
+connectAttr "tweakSet1.mwc" "guideCurveShape.iog.og[3].gco";
+connectAttr "MASH1_Trails.outMesh" "MASH1_Trails_MeshShape.i";
 connectAttr "MASH1_Repro.out" "MASH1_ReproMeshShape.i";
 connectAttr "groupId1.id" "MASH1_ReproMeshShape.iog.og[1].gid";
 connectAttr ":initialShadingGroup.mwc" "MASH1_ReproMeshShape.iog.og[1].gco";
-connectAttr "MASH1_Trails.outMesh" "MASH1_Trails_MeshShape.i";
-connectAttr "skinCluster1.og[0]" "curveShape1.cr";
-connectAttr "tweak1.pl[0].cp[0]" "curveShape1.twl";
-connectAttr "skinCluster1GroupId.id" "curveShape1.iog.og[2].gid";
-connectAttr "skinCluster1Set.mwc" "curveShape1.iog.og[2].gco";
-connectAttr "groupId3.id" "curveShape1.iog.og[3].gid";
-connectAttr "tweakSet1.mwc" "curveShape1.iog.og[3].gco";
+connectAttr "polyCube1.out" "pCubeShape1.i";
 connectAttr "joint1_parentConstraint1.ctx" "joint1.tx";
 connectAttr "joint1_parentConstraint1.cty" "joint1.ty";
 connectAttr "joint1_parentConstraint1.ctz" "joint1.tz";
@@ -1313,8 +1400,6 @@ connectAttr "nurbsCircle7.ro" "joint7_parentConstraint1.tg[0].tro";
 connectAttr "nurbsCircle7.s" "joint7_parentConstraint1.tg[0].ts";
 connectAttr "nurbsCircle7.pm" "joint7_parentConstraint1.tg[0].tpm";
 connectAttr "joint7_parentConstraint1.w0" "joint7_parentConstraint1.tg[0].tw";
-connectAttr "transformGeometry2.og" "nurbsCircleShape8.cr";
-connectAttr "transformGeometry1.og" "nurbsCircleShape1.cr";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -1334,14 +1419,15 @@ connectAttr "pCubeShape1.wm" "MASH1_Repro.instancedGroup[0].inMesh[0].matrix";
 connectAttr "groupId1.id" "MASH1_Repro.instancedGroup[0].inMesh[0].groupId[0]";
 connectAttr ":time1.o" "MASH1_Trails.tm";
 connectAttr "MASH1.outputPoints" "MASH1_Trails.inputPoints";
-connectAttr "nurbsCircle8.Thickness" "MASH1_Trails.trailWidth";
+connectAttr "Ribbon_Master.Thickness" "MASH1_Trails.trailWidth";
 connectAttr ":time1.o" "MASH1_Curve.ti";
 connectAttr "MASH1_Distribute.outputPoints" "MASH1_Curve.inputPoints";
-connectAttr "curveShape1.ws" "MASH1_Curve.inCurves[0]";
-connectAttr "curveShape1.ws" "MASH1_Curve.aimCurve";
-connectAttr "nurbsCircle8.Length" "MASH1_Curve.ts";
-connectAttr "nurbsCircle8.Speed" "MASH1_Curve.tsli";
+connectAttr "guideCurveShape.ws" "MASH1_Curve.inCurves[0]";
+connectAttr "guideCurveShape.ws" "MASH1_Curve.aimCurve";
+connectAttr "Ribbon_Master.Length" "MASH1_Curve.ts";
+connectAttr "Ribbon_Master.Speed" "MASH1_Curve.tsli";
 connectAttr ":PxrPathTracer.msg" ":rmanGlobals.ri_integrator";
+connectAttr ":rmanDefaultDisplay.msg" ":rmanGlobals.displays[0]";
 connectAttr "makeNurbCircle1.oc" "transformGeometry1.ig";
 connectAttr "skinCluster1GroupParts.og" "skinCluster1.ip[0].ig";
 connectAttr "skinCluster1GroupId.id" "skinCluster1.ip[0].gi";
@@ -1370,14 +1456,14 @@ connectAttr "joint1.obcc" "skinCluster1.ifcl[6]";
 connectAttr "groupParts2.og" "tweak1.ip[0].ig";
 connectAttr "groupId3.id" "tweak1.ip[0].gi";
 connectAttr "skinCluster1GroupId.msg" "skinCluster1Set.gn" -na;
-connectAttr "curveShape1.iog.og[2]" "skinCluster1Set.dsm" -na;
+connectAttr "guideCurveShape.iog.og[2]" "skinCluster1Set.dsm" -na;
 connectAttr "skinCluster1.msg" "skinCluster1Set.ub[0]";
 connectAttr "tweak1.og[0]" "skinCluster1GroupParts.ig";
 connectAttr "skinCluster1GroupId.id" "skinCluster1GroupParts.gi";
 connectAttr "groupId3.msg" "tweakSet1.gn" -na;
-connectAttr "curveShape1.iog.og[3]" "tweakSet1.dsm" -na;
+connectAttr "guideCurveShape.iog.og[3]" "tweakSet1.dsm" -na;
 connectAttr "tweak1.msg" "tweakSet1.ub[0]";
-connectAttr "curveShape1Orig.ws" "groupParts2.ig";
+connectAttr "guideCurveShape1Orig.ws" "groupParts2.ig";
 connectAttr "groupId3.id" "groupParts2.gi";
 connectAttr "joint5.msg" "bindPose1.m[0]";
 connectAttr "joint6.msg" "bindPose1.m[1]";
@@ -1401,10 +1487,13 @@ connectAttr "joint3.bps" "bindPose1.wm[4]";
 connectAttr "joint2.bps" "bindPose1.wm[5]";
 connectAttr "joint1.bps" "bindPose1.wm[6]";
 connectAttr "makeNurbCircle2.oc" "transformGeometry2.ig";
+connectAttr "d_openexr.msg" ":rmanDefaultDisplay.displayType";
+connectAttr "Ci.msg" ":rmanDefaultDisplay.displayChannels[0]";
+connectAttr "a.msg" ":rmanDefaultDisplay.displayChannels[1]";
 connectAttr "joint2.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[0].dn";
-connectAttr "nurbsCircle8.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[1].dn";
+connectAttr "Ribbon_Master.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[1].dn";
 connectAttr "MASH1.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[2].dn";
-connectAttr "curveShape1.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[3].dn";
+connectAttr "guideCurveShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[3].dn";
 connectAttr "MASH1_Distribute.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
 		;
 connectAttr "MASH1_Curve.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[5].dn";
@@ -1415,7 +1504,7 @@ connectAttr "MASH1_Repro.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[8].dn";
 connectAttr "joint5.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[9].dn";
 connectAttr ":time1.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[10].dn";
 connectAttr "joint6.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[11].dn";
-connectAttr "curveShape1Orig.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[12].dn"
+connectAttr "guideCurveShape1Orig.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[12].dn"
 		;
 connectAttr "joint1.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[13].dn";
 connectAttr "joint3.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[14].dn";
@@ -1425,9 +1514,18 @@ connectAttr "MASH1_ReproMeshShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[16
 connectAttr "joint7.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[17].dn";
 connectAttr "skinCluster1.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[18].dn";
 connectAttr "MASH1_Trails.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[19].dn";
+connectAttr ":rmanDefaultDisplay.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[20].dn"
+		;
+connectAttr "d_openexr.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[21].dn";
+connectAttr "Ci.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[22].dn";
+connectAttr "a.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[23].dn";
+connectAttr "Ribbon_Grp.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[24].dn";
+connectAttr "group1.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[25].dn";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr ":rmanGlobals.msg" ":defaultRenderingList1.r" -na;
 connectAttr ":PxrPathTracer.msg" ":defaultRenderingList1.r" -na;
+connectAttr ":rmanDefaultDisplay.msg" ":defaultRenderingList1.r" -na;
+connectAttr "d_openexr.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "MASH1_ReproMeshShape.iog.og[1]" ":initialShadingGroup.dsm" -na;
 connectAttr "MASH1_Trails_MeshShape.iog" ":initialShadingGroup.dsm" -na;
