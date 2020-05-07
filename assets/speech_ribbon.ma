@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: speech_ribbon.ma
-//Last modified: Thu, May 07, 2020 01:21:52 AM
+//Last modified: Thu, May 07, 2020 01:23:37 AM
 //Codeset: 1252
 requires maya "2020";
 requires "stereoCamera" "10.0";
@@ -15,18 +15,18 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "202002251615-329d215872";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18362)\n";
-fileInfo "UUID" "B0B1D294-474B-EE3F-5C1D-5690BAA82028";
+fileInfo "UUID" "5F3F756C-4C8B-6735-3834-BBBE88FCBB21";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "108A6890-4193-E3A4-5197-82B05783597E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 22.445614278913062 14.370451637340469 -2.8706257565635527 ;
-	setAttr ".r" -type "double3" -23.138352728634935 -988.20000000050277 5.0888874903416268e-14 ;
+	setAttr ".t" -type "double3" 33.915795148246609 17.905627515558464 -1.9352177812602158 ;
+	setAttr ".r" -type "double3" -21.338352728580364 -990.20000000046343 -4.5558182352762488e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "807AC0FD-47E8-3348-72B3-D1B3D2191659";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 27.899791694790736;
+	setAttr ".coi" 39.844680752644159;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -92,7 +92,6 @@ createNode transform -n "Ribbon_Master" -p "Ribbon_Grp";
 	addAttr -ci true -sn "Thickness" -ln "Thickness" -dv 2 -at "double";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" 0 6.2730713314687172 0 ;
 	setAttr ".rp" -type "double3" 0 0 6 ;
 	setAttr ".sp" -type "double3" 0 0 6 ;
 	setAttr -cb off ".rman_matteObject";
@@ -937,7 +936,7 @@ createNode rmanDisplayChannel -n "a";
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
 createNode nodeGraphEditorInfo -n "MayaNodeEditorSavedTabsInfo";
-	rename -uid "5A3CEC7B-4DDC-A864-A6A8-A19BBE784582";
+	rename -uid "7B7A0B63-460F-68BC-DF8C-6D939BE52352";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -1389.1421522179883 -187.2672554489389 ;
 	setAttr ".tgi[0].vh" -type "double2" 690.01575243025741 870.51444117657934 ;
@@ -1025,8 +1024,8 @@ select -ne :time1;
 	setAttr -av -k on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr ".o" 1;
-	setAttr -av ".unw" 1;
+	setAttr ".o" 141;
+	setAttr -av ".unw" 141;
 	setAttr -k on ".etw";
 	setAttr -k on ".tps";
 	setAttr -k on ".tms";
