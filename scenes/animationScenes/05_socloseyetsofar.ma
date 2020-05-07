@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: 05_socloseyetsofar.ma
-//Last modified: Thu, May 07, 2020 02:47:50 PM
+//Last modified: Thu, May 07, 2020 02:52:06 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "grandma_controlrig" -dr 1 -rfn "grandma_controlrigRN" -op "v=0;"
 		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/grandma/grandma_controlrig.ma";
@@ -322,28 +322,7 @@ createNode camera -n "leftShape" -p "left";
 	setAttr ".hc" -type "string" "viewSet -ls %camera";
 	setAttr ".o" yes;
 createNode fosterParent -n "grannyCranny_SET_latestRNfosterParent1";
-	rename -uid "BC184C2E-0A45-17B1-1EE3-5EB268DE915D";
-createNode parentConstraint -n "bean_bowl_parentConstraint1" -p "grannyCranny_SET_latestRNfosterParent1";
-	rename -uid "6279C243-F343-BBE0-FFC4-708BD46D8C74";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "HandR_IK_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".tg[0].tot" -type "double3" 0.77855502715505454 -6.2412030531432841 2.4908452602373519 ;
-	setAttr ".tg[0].tor" -type "double3" 143.0242018757549 -43.099794556887318 174.36784257387646 ;
-	setAttr ".lr" -type "double3" -59.586593870107549 13.23557620661246 10.083395426095157 ;
-	setAttr ".rst" -type "double3" 21.613603013890739 10.892765669018349 -36.023722893520166 ;
-	setAttr ".rsrr" -type "double3" -2.4079420121915071e-15 1.941916458454905e-31 9.2413867670505152e-15 ;
-	setAttr -k on ".w0";
+	rename -uid "3B306990-8249-D2B5-623E-E28F5A732277";
 createNode transform -n "soybeans" -p "grannyCranny_SET_latestRNfosterParent1";
 	rename -uid "852CC1EA-5E4F-4EAC-9CD3-4FA94CF3EBBD";
 	setAttr ".rp" -type "double3" 0.017914831638336182 1.1967858672142029 0.0068949460983276367 ;
@@ -388,7 +367,7 @@ createNode parentConstraint -n "polySurface1_parentConstraint1" -p "polySurface1
 	setAttr ".tg[0].tot" -type "double3" -0.098896339962738583 0.051047587372632625 
 		0.026402384082379167 ;
 	setAttr ".tg[0].tor" -type "double3" 11.514137240243672 32.805334992777595 158.77880503712956 ;
-	setAttr ".lr" -type "double3" 31.115225552921142 37.746988517312367 58.244890379711308 ;
+	setAttr ".lr" -type "double3" 40.419893008140463 49.689792644525504 73.54574008342405 ;
 	setAttr ".rst" -type "double3" -0.68754691489373698 0.12857985237677205 -1.1505405081406934 ;
 	setAttr ".rsrr" -type "double3" 1.8171815275157307e-14 -30.882905482232562 -1.2031282055385785e-14 ;
 	setAttr -k on ".w0";
@@ -2264,8 +2243,29 @@ createNode mesh -n "polySurfaceShape1Orig" -p "polySurface1";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+createNode parentConstraint -n "bean_bowl_parentConstraint1" -p "grannyCranny_SET_latestRNfosterParent1";
+	rename -uid "6279C243-F343-BBE0-FFC4-708BD46D8C74";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "HandR_IK_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0.77855502715505454 -6.2412030531432841 2.4908452602373519 ;
+	setAttr ".tg[0].tor" -type "double3" 143.0242018757549 -43.099794556887318 174.36784257387646 ;
+	setAttr ".lr" -type "double3" -59.586593870107549 13.23557620661246 10.083395426095157 ;
+	setAttr ".rst" -type "double3" 21.613603013890739 10.892765669018349 -36.023722893520166 ;
+	setAttr ".rsrr" -type "double3" -2.4079420121915071e-15 1.941916458454905e-31 9.2413867670505152e-15 ;
+	setAttr -k on ".w0";
 createNode fosterParent -n "grandma_controlrigRN1fosterParent1";
-	rename -uid "B576FAA4-1E40-2AFF-7D51-DDAEAF703129";
+	rename -uid "58A8B80D-CA4F-9BF3-CB5A-3695B039C9A0";
 createNode mesh -n "grandma_controlrig1:bodyShapeOrig2" -p "grandma_controlrigRN1fosterParent1";
 	rename -uid "6FAAD064-C74E-A667-C783-86863854CC8F";
 	setAttr -k off ".v";
@@ -41595,9 +41595,9 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:support4|grannyCranny_SET_latest:chair:polySurfaceShape1" 
 		"intermediateObject" " 1"
 		"grannyCranny_SET_latest:edamame_latestRN" 51
-		0 "|grannyCranny_SET_latestRNfosterParent1|soybeans" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl" 
-		"-s -r "
 		0 "|grannyCranny_SET_latestRNfosterParent1|bean_bowl_parentConstraint1" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl" 
+		"-s -r "
+		0 "|grannyCranny_SET_latestRNfosterParent1|soybeans" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl" 
 		"-s -r "
 		1 |grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl 
 		"blendParent1" "blendParent1" " -ci 1 -k 1 -dv 1 -smn 0 -smx 1 -at \"double\""
@@ -45074,7 +45074,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl" 
-		"rotate" " -type \"double3\" -10.78034392409558784 35.68755925568714815 -6.53194543766422964"
+		"rotate" " -type \"double3\" -10.51332464012168622 35.68755925568714815 -6.53194543766422964"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl" 
 		"rotateX" " -av"
@@ -45099,7 +45099,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl|MC_control_rig1:spine3_Grp|MC_control_rig1:spine3_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl|MC_control_rig1:spine3_Grp|MC_control_rig1:spine3_Ctrl" 
-		"rotate" " -type \"double3\" -2.34382260337851678 -4.4278005732461887 -0.066367292730378905"
+		"rotate" " -type \"double3\" -2.76535994029034304 -4.42780057324618781 -0.066367292730378905"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl|MC_control_rig1:spine3_Grp|MC_control_rig1:spine3_Ctrl" 
 		"rotateX" " -av"
@@ -45118,7 +45118,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl|MC_control_rig1:spine3_Grp|MC_control_rig1:spine3_Ctrl|MC_control_rig1:neck_Grp|MC_control_rig1:neck_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl|MC_control_rig1:spine3_Grp|MC_control_rig1:spine3_Ctrl|MC_control_rig1:neck_Grp|MC_control_rig1:neck_Ctrl" 
-		"rotate" " -type \"double3\" 1.68317881497683475 7.50105882801834944 -1.53505296138554859"
+		"rotate" " -type \"double3\" -0.32210738250788351 7.00551344253037378 -0.17456910926564551"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl|MC_control_rig1:spine3_Grp|MC_control_rig1:spine3_Ctrl|MC_control_rig1:neck_Grp|MC_control_rig1:neck_Ctrl" 
 		"rotateX" " -av"
@@ -45190,7 +45190,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl|MC_control_rig1:spine3_Grp|MC_control_rig1:spine3_Ctrl|MC_control_rig1:clavicleR_FK_Grp|MC_control_rig1:clavicleR_FK_Ctrl|MC_control_rig1:shoulderR_FK_Grp|MC_control_rig1:shoulderR_FK_Ctrl|MC_control_rig1:elbowR_FK_Grp|MC_control_rig1:elbowR_FK_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl|MC_control_rig1:spine3_Grp|MC_control_rig1:spine3_Ctrl|MC_control_rig1:clavicleR_FK_Grp|MC_control_rig1:clavicleR_FK_Ctrl|MC_control_rig1:shoulderR_FK_Grp|MC_control_rig1:shoulderR_FK_Ctrl|MC_control_rig1:elbowR_FK_Grp|MC_control_rig1:elbowR_FK_Ctrl" 
-		"rotate" " -type \"double3\" -278.9987340900316326 -78.02038177065925595 259.41469750485237"
+		"rotate" " -type \"double3\" -190.18787578035397701 -85.5411003913113035 177.32869958039935909"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl|MC_control_rig1:spine3_Grp|MC_control_rig1:spine3_Ctrl|MC_control_rig1:clavicleR_FK_Grp|MC_control_rig1:clavicleR_FK_Ctrl|MC_control_rig1:shoulderR_FK_Grp|MC_control_rig1:shoulderR_FK_Ctrl|MC_control_rig1:elbowR_FK_Grp|MC_control_rig1:elbowR_FK_Ctrl" 
 		"rotateX" " -av"
@@ -45217,7 +45217,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl|MC_control_rig1:spine3_Grp|MC_control_rig1:spine3_Ctrl|MC_control_rig1:clavicleR_FK_Grp|MC_control_rig1:clavicleR_FK_Ctrl|MC_control_rig1:shoulderR_FK_Grp|MC_control_rig1:shoulderR_FK_Ctrl|MC_control_rig1:elbowR_FK_Grp|MC_control_rig1:elbowR_FK_Ctrl|MC_control_rig1:wristR_FK_Grp|MC_control_rig1:wristR_FK_Grp" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl|MC_control_rig1:spine3_Grp|MC_control_rig1:spine3_Ctrl|MC_control_rig1:clavicleR_FK_Grp|MC_control_rig1:clavicleR_FK_Ctrl|MC_control_rig1:shoulderR_FK_Grp|MC_control_rig1:shoulderR_FK_Ctrl|MC_control_rig1:elbowR_FK_Grp|MC_control_rig1:elbowR_FK_Ctrl|MC_control_rig1:wristR_FK_Grp|MC_control_rig1:wristR_FK_Grp" 
-		"rotate" " -type \"double3\" 8.89337986947971615 -22.08827965317369646 1.95039583287853957"
+		"rotate" " -type \"double3\" -8.78499311510738323 -30.07124398785902386 0.28588992179885281"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:ROOT_Grp|MC_control_rig1:ROOT_Ctrl|MC_control_rig1:spine1_Grp|MC_control_rig1:spine1_Ctrl|MC_control_rig1:spine2_Grp|MC_control_rig1:spine2_Ctrl|MC_control_rig1:spine3_Grp|MC_control_rig1:spine3_Ctrl|MC_control_rig1:clavicleR_FK_Grp|MC_control_rig1:clavicleR_FK_Ctrl|MC_control_rig1:shoulderR_FK_Grp|MC_control_rig1:shoulderR_FK_Ctrl|MC_control_rig1:elbowR_FK_Grp|MC_control_rig1:elbowR_FK_Ctrl|MC_control_rig1:wristR_FK_Grp|MC_control_rig1:wristR_FK_Grp" 
 		"rotateX" " -av"
@@ -45314,7 +45314,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RPinky_Knuckle" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RPinky_Knuckle" 
-		"rotate" " -type \"double3\" -5.77058058411954011 -16.21893807968363888 -5.31579595300667052"
+		"rotate" " -type \"double3\" -6.54148100204917782 -34.6542386331066794 -3.30836628289910584"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RPinky_Knuckle" 
 		"rotateX" " -av"
@@ -45341,7 +45341,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RPinky_Knuckle|MC_control_rig1:RPinky_Mid" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RPinky_Knuckle|MC_control_rig1:RPinky_Mid" 
-		"rotate" " -type \"double3\" -5.7853906747028585 -5.94374539587922435 15.61575128942777013"
+		"rotate" " -type \"double3\" -5.82039789239565941 -8.6360071688066693 15.8915623863066422"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RPinky_Knuckle|MC_control_rig1:RPinky_Mid" 
 		"rotateX" " -av"
@@ -45368,7 +45368,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RRing_Knuckle" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RRing_Knuckle" 
-		"rotate" " -type \"double3\" -6.879029434571585 -20.27288639075395693 1.62979612950512731"
+		"rotate" " -type \"double3\" -7.68579836207178424 -35.24756632473498286 3.70069403906743011"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RRing_Knuckle" 
 		"rotateX" " -av"
@@ -45395,7 +45395,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RRing_Knuckle|MC_control_rig1:RRing_Mid" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RRing_Knuckle|MC_control_rig1:RRing_Mid" 
-		"rotate" " -type \"double3\" -5.61361263837042035 -8.91389342152289821 14.30871573590906465"
+		"rotate" " -type \"double3\" -5.6617436250454265 -11.60693279078247109 14.57885364948257312"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RRing_Knuckle|MC_control_rig1:RRing_Mid" 
 		"rotateX" " -av"
@@ -45422,7 +45422,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RMiddle_Knuckle" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RMiddle_Knuckle" 
-		"rotate" " -type \"double3\" -16.10220613690203351 -24.12264359096945654 17.87619296381209466"
+		"rotate" " -type \"double3\" -15.81724400349025927 -33.78180742964912753 16.2542740239125898"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RMiddle_Knuckle" 
 		"rotateX" " -av"
@@ -45449,7 +45449,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RMiddle_Knuckle|MC_control_rig1:RMiddle_Mid" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RMiddle_Knuckle|MC_control_rig1:RMiddle_Mid" 
-		"rotate" " -type \"double3\" -5.68746448821919603 -7.97140913609716772 11.63513932442768173"
+		"rotate" " -type \"double3\" -5.73164496081723485 -10.66411297706888917 11.90793451101884415"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RMiddle_Knuckle|MC_control_rig1:RMiddle_Mid" 
 		"rotateX" " -av"
@@ -45476,7 +45476,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RIndex_Knuckle" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RIndex_Knuckle" 
-		"rotate" " -type \"double3\" -19.47785436189132113 -34.3770897200060972 25.18513377079352011"
+		"rotate" " -type \"double3\" -5.78723662608303169 -42.72338750855615075 -1.42244669711327032"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RIndex_Knuckle" 
 		"rotateX" " -av"
@@ -45503,7 +45503,7 @@ createNode reference -n "MC_control_rigRN1";
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RIndex_Knuckle|MC_control_rig1:RIndex_Mid" 
 		"translateZ" " -av"
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RIndex_Knuckle|MC_control_rig1:RIndex_Mid" 
-		"rotate" " -type \"double3\" -5.73301971805951815 -7.46980793011392041 10.64041607892625763"
+		"rotate" " -type \"double3\" -5.77510674692406134 -10.16230188107739707 10.91494681150445523"
 		
 		2 "|MC_control_rig1:May_ControlRig|MC_control_rig1:MAIN_Grp|MC_control_rig1:MAIN_Ctrl|MC_control_rig1:MAIN_Children|MC_control_rig1:RFingers_Grp|MC_control_rig1:RIndex_Knuckle|MC_control_rig1:RIndex_Mid" 
 		"rotateX" " -av"
@@ -45657,13 +45657,13 @@ createNode reference -n "MC_control_rigRN1";
 		"intermediateObject" " 1"
 		2 "MC_control_rig1:blendShape1" "weight[0]" " 0.19553073000000001"
 		2 "MC_control_rig1:blendShape1" "weight[0]" " -av"
-		2 "MC_control_rig1:blendShape2" "weight[0]" " 0.15254736999999999"
+		2 "MC_control_rig1:blendShape2" "weight[0]" " 0.0045540588999999996"
 		2 "MC_control_rig1:blendShape2" "weight[0]" " -av"
 		2 "MC_control_rig1:blendShape3" "weight[0]" " 0"
 		2 "MC_control_rig1:blendShape3" "weight[0]" " -av"
-		2 "MC_control_rig1:blendShape4" "weight[0]" " 0.50837988000000001"
+		2 "MC_control_rig1:blendShape4" "weight[0]" " 0.33868714999999999"
 		2 "MC_control_rig1:blendShape4" "weight[0]" " -av"
-		2 "MC_control_rig1:blendShape5" "w[0:1]" " -s 2 0.423987 0.40569696"
+		2 "MC_control_rig1:blendShape5" "w[0:1]" " -s 2 0.16607495 0.18675786"
 		2 "MC_control_rig1:blendShape5" "weight" " -s 2"
 		2 "MC_control_rig1:blendShape5" "weight[0]" " -av"
 		2 "MC_control_rig1:blendShape5" "weight[1]" " -av"
@@ -55066,8 +55066,8 @@ select -ne :time1;
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 389;
-	setAttr -av ".unw" 389;
+	setAttr -k on ".o" 369;
+	setAttr -av ".unw" 369;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -56159,8 +56159,6 @@ connectAttr "persp1_scaleX.o" "persp1.sx";
 connectAttr "persp1_scaleY.o" "persp1.sy";
 connectAttr "persp1_scaleZ.o" "persp1.sz";
 connectAttr "persp1Shape_focalLength.o" "persp1Shape.fl";
-connectAttr "bean_bowl_parentConstraint1.w0" "bean_bowl_parentConstraint1.tg[0].tw"
-		;
 connectAttr "polySurface1_parentConstraint1.ctx" "polySurface1.tx";
 connectAttr "polySurface1_parentConstraint1.cty" "polySurface1.ty";
 connectAttr "polySurface1_parentConstraint1.ctz" "polySurface1.tz";
@@ -56182,6 +56180,8 @@ connectAttr "polySurface1.ro" "polySurface1_parentConstraint1.cro";
 connectAttr "polySurface1.pim" "polySurface1_parentConstraint1.cpim";
 connectAttr "polySurface1.rp" "polySurface1_parentConstraint1.crp";
 connectAttr "polySurface1.rpt" "polySurface1_parentConstraint1.crt";
+connectAttr "bean_bowl_parentConstraint1.w0" "bean_bowl_parentConstraint1.tg[0].tw"
+		;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "PxrSurface1SG.message" ":defaultLightSet.message";
