@@ -1,6 +1,6 @@
-//Maya ASCII 2019 scene
+//Maya ASCII 2020 scene
 //Name: 06_transition_and_07_end.ma
-//Last modified: Wed, May 06, 2020 11:42:26 PM
+//Last modified: Thu, May 07, 2020 03:54:43 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "chair" -dr 1 -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
 file -rdi 1 -ns "chair1" -dr 1 -rfn "chairRN1" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
@@ -90,7 +90,7 @@ file -rdi 1 -ns "knife_v01_latest" -rfn "knife_v01_latestRN" -op "v=0;" -typ
 		 "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/kitchenprops/knife_v01_latest.ma";
 file -rdi 1 -ns "filling" -rfn "fillingRN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/foodprops/filling.ma";
 file -rdi 2 -ns "bowl_conic_latest" -rfn "filling:bowl_conic_latestRN" -op "v=0;"
-		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/bowl_conic_latest.ma";
+		 -typ "mayaAscii" "/Users/edwardzamora//LoveLanguage/assets/kitchenprops/bowl_conic_latest.ma";
 file -rdi 1 -ns "full_SET_latest" -dr 1 -rfn "_meetGrandma:full_SET_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//scenes/full_SET_latest.ma";
 file -rdi 1 -ns "grandma_controlrig" -dr 1 -rfn "_meetGrandma:grandma_controlrigRN"
@@ -270,7 +270,7 @@ file -rdi 3 -ns "croc3" -rfn "livingRoom_SET_latest:croc_pile:croc3RN" -op "v=0;
 file -rdi 2 -ns "mooncake_latest" -rfn "livingRoom_SET_latest:mooncake_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/foodprops/mooncake_latest.ma";
 file -rdi 2 -ns "plate" -rfn "livingRoom_SET_latest:plateRN" -op "v=0;" -typ
-		 "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/kitchenprops/plate.ma";
+		 "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/kitchenprops/plate.ma";
 file -rdi 1 -ns "eggroll_sheets" -rfn "eggroll_sheetsRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/edwardzamora/LoveLanguage//assets/foodprops/eggroll_sheets.ma";
 file -rdi 1 -ns "soy_bean_blendshape" -rfn "soy_bean_blendshapeRN" -op "v=0;"
@@ -279,6 +279,14 @@ file -rdi 2 -ns "edamame_latest" -rfn "soy_bean_blendshape:edamame_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/edwardzamora/LoveLanguage//assets/foodprops/edamame_latest.ma";
 file -rdi 3 -ns "soy_bean_latest" -dr 1 -rfn "soy_bean_blendshape:edamame_latest:soy_bean_latestRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ethanbuttimer/Documents/GitHub/LoveLanguage//assets/foodprops/soy_bean_latest.ma";
+file -rdi 1 -ns "speech_ribbon" -rfn "may_gma_speech:speech_ribbonRN" -op "v=0;"
+		 -typ "mayaAscii" "/Users/edwardzamora/LoveLanguage//assets/speech_ribbon.ma";
+file -rdi 1 -ns "speech_ribbon1" -rfn "may_gma_speech:speech_ribbonRN1" -op
+		 "v=0;" -typ "mayaAscii" "/Users/edwardzamora/LoveLanguage//assets/speech_ribbon.ma";
+file -rdi 1 -ns "speech_ribbon2" -rfn "may_gma_speech:speech_ribbonRN2" -op
+		 "v=0;" -typ "mayaAscii" "/Users/edwardzamora/LoveLanguage//assets/speech_ribbon.ma";
+file -rdi 1 -ns "speech_ribbon4" -rfn "may_gma_speech:speech_ribbonRN3" -op
+		 "v=0;" -typ "mayaAscii" "/Users/edwardzamora/LoveLanguage//assets/speech_ribbon.ma";
 file -r -ns "chair" -dr 1 -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
 file -r -ns "chair1" -dr 1 -rfn "chairRN1" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
 file -r -ns "chair2" -dr 1 -rfn "chairRN2" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
@@ -334,37 +342,47 @@ file -r -ns "eggroll_sheets" -dr 1 -rfn "eggroll_sheetsRN" -op "v=0;" -typ "maya
 		 "/Users/edwardzamora/LoveLanguage//assets/foodprops/eggroll_sheets.ma";
 file -r -ns "soy_bean_blendshape" -dr 1 -rfn "soy_bean_blendshapeRN" -op "v=0;" 
 		-typ "mayaAscii" "/Users/edwardzamora/LoveLanguage//assets/foodprops/soy_bean_blendshape.ma";
-requires maya "2019";
+file -r -ns "speech_ribbon" -dr 1 -rfn "may_gma_speech:speech_ribbonRN" -op "v=0;"
+		 -typ "mayaAscii" "/Users/edwardzamora/LoveLanguage//assets/speech_ribbon.ma";
+file -r -ns "speech_ribbon1" -dr 1 -rfn "may_gma_speech:speech_ribbonRN1" -op "v=0;"
+		 -typ "mayaAscii" "/Users/edwardzamora/LoveLanguage//assets/speech_ribbon.ma";
+file -r -ns "speech_ribbon2" -dr 1 -rfn "may_gma_speech:speech_ribbonRN2" -op "v=0;"
+		 -typ "mayaAscii" "/Users/edwardzamora/LoveLanguage//assets/speech_ribbon.ma";
+file -r -ns "speech_ribbon4" -dr 1 -rfn "may_gma_speech:speech_ribbonRN3" -op "v=0;"
+		 -typ "mayaAscii" "/Users/edwardzamora/LoveLanguage//assets/speech_ribbon.ma";
+requires maya "2020";
 requires -nodeType "hairPhysicalShader" "hairPhysicalShader" "1.0";
-requires -nodeType "floatLogic" "lookdevKit" "1.0";
+requires -nodeType "floatLogic" -nodeType "floatMath" "lookdevKit" "1.0";
 requires "stereoCamera" "10.0";
+requires -nodeType "MASH_Waiter" -nodeType "MASH_Distribute" -nodeType "MASH_Curve"
+		 -nodeType "MASH_Trails" -nodeType "MASH_Repro" "MASH" "450";
 requires -nodeType "PxrVisualizer" -nodeType "PxrDispTransform" -nodeType "PxrLayer"
 		 -nodeType "PxrNormalMap" -nodeType "PxrSurface" -nodeType "PxrDisplace" -nodeType "PxrGamma"
 		 -nodeType "PxrFractal" -nodeType "PxrDefault" -nodeType "PxrTexture" -nodeType "rmanDisplayChannel"
 		 -nodeType "PxrInvert" -nodeType "PxrMarschnerHair" -nodeType "PxrLayerMixer" -nodeType "d_openexr"
 		 -nodeType "PxrCamera" -nodeType "OmnidirectionalStereo" -nodeType "rmanGlobals" -nodeType "PxrOcclusion"
 		 -nodeType "PxrDirectLighting" -nodeType "PxrVCM" -nodeType "PxrPathTracer" -nodeType "PxrDirt"
-		 -nodeType "rmanDisplay" "RenderMan_for_Maya.py" "23.0 @ 2025012";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "3.1.2";
+		 -nodeType "rmanDisplay" "RenderMan_for_Maya.py" "23.2 @ 2046737";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "4.0.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
-fileInfo "product" "Maya 2019";
-fileInfo "version" "2019";
-fileInfo "cutIdentifier" "201812112215-434d8d9c04";
-fileInfo "osv" "Mac OS X 10.15.3";
+fileInfo "product" "Maya 2020";
+fileInfo "version" "2020";
+fileInfo "cutIdentifier" "201911140446-42a737a01c";
+fileInfo "osv" "Mac OS X 10.15.4";
 fileInfo "license" "student";
-fileInfo "UUID" "D2D60F6A-0043-D21B-64FB-FF8786B72CCC";
+fileInfo "UUID" "0B82F345-8F47-CE86-A78E-0ABA2F4F3167";
 createNode transform -s -n "persp";
 	rename -uid "37815538-8644-BCD7-AD49-938A2ADB8C19";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 126.43021864258858 50.167560499892353 -168.70363521460391 ;
-	setAttr ".r" -type "double3" 4637.6616472233127 2580.9999999995644 1.3120839804308438e-14 ;
+	setAttr ".t" -type "double3" 155.11948639706918 59.135776999966808 -136.65701076268189 ;
+	setAttr ".r" -type "double3" 4656.86164722175 1866.1999999998038 3.9407653988134526e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3A622C15-C24B-A8CD-2858-14AC596DF0A6";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 29.635319834409749;
+	setAttr ".coi" 243.2379842848562;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -589,7 +607,7 @@ createNode parentConstraint -n "_meetGrandma:armL_IK_Grp1_parentConstraint1" -p 
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -105.88387951811613 33.845880522070864 13.727071177569467 ;
+	setAttr ".lr" -type "double3" -101.49984227681995 33.922104913103887 18.169929051585139 ;
 	setAttr ".rst" -type "double3" -5.8603317357442037 -1.9574813848107517 7.1097108584675937 ;
 	setAttr ".rsrr" -type "double3" -33.64095564377417 -99.833356191941732 -60.536049465608805 ;
 	setAttr -k on ".w0";
@@ -609,12 +627,890 @@ createNode parentConstraint -n "_meetGrandma:armR_IK_Ctrl_parentConstraint1" -p 
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 167.26955551007094 12.480354376425215 8.2093680186134428 ;
+	setAttr ".lr" -type "double3" 170.23971167328773 11.756355087086586 5.9547255869350799 ;
 	setAttr ".rst" -type "double3" 5.3721462521421781 0.84904557742057207 -7.4009585660128714 ;
 	setAttr ".rsrr" -type "double3" -37.553413617181484 -98.288570174533817 -54.943896127099329 ;
 	setAttr -k on ".w0";
+createNode transform -n "may_gma_speech:curve1";
+	rename -uid "1B2EEAAA-3A4E-647B-E981-5BA59A03CD35";
+	setAttr ".t" -type "double3" 85.568717716827948 38.658892118215341 -154.67524530120912 ;
+	setAttr ".r" -type "double3" 0 -86.617719317264246 0 ;
+	setAttr ".s" -type "double3" 3.5056301084843842 3.9315997904302851 3.9315997904302851 ;
+	setAttr ".rpt" -type "double3" 20.899184116587168 0 -23.445841631059217 ;
+createNode nurbsCurve -n "may_gma_speech:curveShape1" -p "may_gma_speech:curve1";
+	rename -uid "882720F3-9046-4561-6350-6D91FC85917E";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 20 0 no 3
+		25 0 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 20 20
+		23
+		-0.33230961169210149 0.49641826354421204 -1.4311813936294651
+		0.33619753958472054 0 0.757521886086018
+		0.92503614363862374 0.9072052748877022 2.3232926989099481
+		2.0597482762246706 -0.4292806463586058 -2.6475972773695138
+		2.9874283874677254 0.80991715263748632 2.2105534713197215
+		3.911119817695488 -0.41210275262845747 -0.52826879274603822
+		4.7445649116973909 0.83849385787620179 0.17223721594522604
+		3.9744014727701251 2.0955128995049996 0.17980365353977351
+		3.3427192979783582 0.78576501887062322 0.18866455332010842
+		3.8639866344668241 -0.20118739660537116 0.18055025546747883
+		5.1969574444119111 0.018984567550863158 -0.0078207199125137055
+		5.7930475680518319 0.12524912640200636 1.4732958577013817
+		7.5188561645494731 0.43678625296130469 0.042293685325848665
+		6.1266527204654935 0.60894012900212879 -1.4448160249124793
+		4.5986262497762516 0.70754781703845882 -0.069839073014503789
+		6.1019091063315543 0.67688851402529104 1.303982541049957
+		7.2801266555226887 0.89616898082281604 0.039631821681744346
+		5.9663956784586416 0.88086136471124932 -1.2894456149345905
+		5.0919648687665626 0.86511785089622739 0.020294641025031569
+		6.0233581350256422 1.0264599710567592 1.2509691296295464
+		7.0901316915530526 1.0391872980961363 -0.13199549449898346
+		6.542814610560729 1.3397128531135951 -0.48852394651658027
+		6.0630324682690171 1.5711330514557906 -0.80407720577063402
+		;
+createNode transform -n "may_gma_speech:positionMarker1" -p "may_gma_speech:curveShape1";
+	rename -uid "B38328BA-D245-BD88-CC03-E39BFE9D3717";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape1" -p "may_gma_speech:positionMarker1";
+	rename -uid "68AF219B-9D45-9298-41FF-2AA6650F36D9";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 131;
+createNode transform -n "may_gma_speech:positionMarker2" -p "may_gma_speech:curveShape1";
+	rename -uid "131F7EA0-C949-11EA-40C1-EE994FD353F7";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape2" -p "may_gma_speech:positionMarker2";
+	rename -uid "C0F0F2A7-1F47-0CD0-F110-84B1B77C7747";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:positionMarker3" -p "may_gma_speech:curveShape1";
+	rename -uid "F923FFEC-7647-27FB-F190-8FABFD04A4A5";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape3" -p "may_gma_speech:positionMarker3";
+	rename -uid "6EAA75A6-8644-88FA-8141-DBA97C2BFE83";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 135;
+createNode transform -n "may_gma_speech:positionMarker4" -p "may_gma_speech:curveShape1";
+	rename -uid "6300B085-9C43-2820-51E6-4292FA337552";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape4" -p "may_gma_speech:positionMarker4";
+	rename -uid "70AFD3B7-BB45-0239-30A8-A49EABB81F30";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:positionMarker5" -p "may_gma_speech:curveShape1";
+	rename -uid "1E33EEA7-384E-E524-3087-6CA95961F658";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape5" -p "may_gma_speech:positionMarker5";
+	rename -uid "208CB3A1-7147-F044-1065-A6B1D4BC0E70";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 140;
+createNode transform -n "may_gma_speech:positionMarker6" -p "may_gma_speech:curveShape1";
+	rename -uid "CF877F37-3D44-751F-6E61-9CA48BA476EE";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape6" -p "may_gma_speech:positionMarker6";
+	rename -uid "E8C79905-2349-9B62-2688-DEA17B48B1BD";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:positionMarker7" -p "may_gma_speech:curveShape1";
+	rename -uid "0C043CD5-8C4A-E199-CE0A-44B21F9359BD";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape7" -p "may_gma_speech:positionMarker7";
+	rename -uid "69D837E4-434A-3C3B-B292-7C99742349D2";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 146;
+createNode transform -n "may_gma_speech:positionMarker8" -p "may_gma_speech:curveShape1";
+	rename -uid "287182FB-A341-4758-778C-969BDF2FCE13";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape8" -p "may_gma_speech:positionMarker8";
+	rename -uid "552690E2-4C42-35C2-AAAE-ECA720EA0739";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:positionMarker9" -p "may_gma_speech:curveShape1";
+	rename -uid "918D0E2A-F948-4CBD-5F4F-8EB5324D8057";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape9" -p "may_gma_speech:positionMarker9";
+	rename -uid "2BA070F4-D84D-36AC-9105-98A8FB6C304C";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 151;
+createNode transform -n "may_gma_speech:positionMarker10" -p "may_gma_speech:curveShape1";
+	rename -uid "83AB4F82-6F40-AA66-7049-92A05DA1E44B";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape10" -p "may_gma_speech:positionMarker10";
+	rename -uid "93C7F43B-BD46-02C0-8D84-34807120EB83";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:positionMarker11" -p "may_gma_speech:curveShape1";
+	rename -uid "D4FF53EE-8749-35E2-9A49-A7A0937C5DF5";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape11" -p "may_gma_speech:positionMarker11";
+	rename -uid "7D90E474-C143-EFBE-3B60-9EAC6E1B1620";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 155;
+createNode transform -n "may_gma_speech:positionMarker12" -p "may_gma_speech:curveShape1";
+	rename -uid "9118CDE2-E443-3BCA-36A3-C7BAF8B3E007";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape12" -p "may_gma_speech:positionMarker12";
+	rename -uid "5CFB4472-714A-BD0D-DD42-BBB05467C04A";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:positionMarker13" -p "may_gma_speech:curveShape1";
+	rename -uid "B9A8B584-5149-4456-2EF5-99A2870C1886";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape13" -p "may_gma_speech:positionMarker13";
+	rename -uid "86E7307E-2042-9457-64E8-489DA89A60FA";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 160;
+createNode transform -n "may_gma_speech:positionMarker14" -p "may_gma_speech:curveShape1";
+	rename -uid "56DC1728-C44A-C054-AF8A-EC8D601DE999";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape14" -p "may_gma_speech:positionMarker14";
+	rename -uid "DFDBEC9B-BF46-048E-EBB9-71A5F62AB0B6";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:path2";
+	rename -uid "DC6315AC-054C-C461-3344-E8AE4D0878A9";
+	setAttr ".t" -type "double3" 133.13211300979467 38.658892118215341 -158.33382858882817 ;
+	setAttr ".r" -type "double3" 0 93.382280682735669 0 ;
+	setAttr ".s" -type "double3" 3.7539539134830555 3.9315997904302851 -3.9315997904302851 ;
+	setAttr ".rpt" -type "double3" -23.858082406005011 0 24.034703996798548 ;
+createNode nurbsCurve -n "may_gma_speech:pathShape2" -p "may_gma_speech:path2";
+	rename -uid "D99D1EDB-9443-0412-E0D2-B487E51BF442";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 20 0 no 3
+		25 0 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 20 20
+		23
+		1.1474565315084715 1.9548593301617017 -0.7190946909125151
+		0.33619753958458626 0 1.0270235126745335
+		0.94058172089776404 1.8861377699193078 0.36949291592815031
+		2.0053387558178399 -0.5520249281971582 -1.9997953962209467
+		1.6858949213654273 0.32196165225343132 1.5731457916798093
+		3.2165361239766987 1.6624634950175614 -0.35747591973712622
+		3.4188514383363153 -1.4883815888620242 0.12647340354947209
+		3.6801213139947251 1.8450037083019164 0.19206603011376666
+		4.4238067842257793 0.5625891810281719 0.18537885941983459
+		4.0848339163986456 -1.7867003368465084 0.18143065449459239
+		5.1377815935679179 0.4438214776363249 -0.0080566221207379017
+		5.8089036894967103 0.011414426301263481 1.4733590675073984
+		7.5146075296124284 0.46728814327881268 0.04227674830942095
+		6.1277911387668853 0.60076726783275647 -1.4448114866527391
+		4.5983212115091971 0.70973737139847481 -0.069840289037470124
+		6.101990841099675 0.67630315775464211 1.303982866882289
+		7.2801047547194759 0.89632085154548802 0.039631734375091737
+		5.9664015469056784 0.88083923809129527 -1.2894455915402792
+		5.091963295781599 0.86505448665326279 0.02029463475434936
+		6.0233585470386721 1.0267355546491665 1.2509690955243573
+		7.0901315738348742 1.0381483279694845 -0.13199548475469408
+		6.542814610560729 1.3419533943475035 -0.48852394651658015
+		6.0630324682690171 1.573373592689699 -0.80407720577063391
+		;
+createNode transform -n "may_gma_speech:pasted__positionMarker1" -p "may_gma_speech:pathShape2";
+	rename -uid "71D45792-E948-8F2F-695E-CAAA72AC914E";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape1" -p "may_gma_speech:pasted__positionMarker1";
+	rename -uid "D89EF3C0-BC4C-A7F0-C158-64BB950554F2";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 1;
+createNode transform -n "may_gma_speech:pasted__positionMarker2" -p "may_gma_speech:pathShape2";
+	rename -uid "F22050BA-A645-A608-CCA4-E3A3F50FDB16";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape2" -p "may_gma_speech:pasted__positionMarker2";
+	rename -uid "B25405DD-7141-AB9B-C018-D1A94A3285E9";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 120;
+createNode transform -n "may_gma_speech:pasted__positionMarker3" -p "may_gma_speech:pathShape2";
+	rename -uid "31F1B6EB-0B44-122D-B1E9-54B58B21CC83";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape3" -p "may_gma_speech:pasted__positionMarker3";
+	rename -uid "0BC8B24B-5240-F065-A367-F29DCBA6EEE8";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 5;
+createNode transform -n "may_gma_speech:pasted__positionMarker4" -p "may_gma_speech:pathShape2";
+	rename -uid "DC02545C-0D4D-144C-14AD-5383000C8BB0";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape4" -p "may_gma_speech:pasted__positionMarker4";
+	rename -uid "A37955A9-AC42-AF5D-961B-16AEDC1BD35F";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 120;
+createNode transform -n "may_gma_speech:pasted__positionMarker5" -p "may_gma_speech:pathShape2";
+	rename -uid "7B0846D7-8141-BEEE-802B-80B5DA8402A4";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape5" -p "may_gma_speech:pasted__positionMarker5";
+	rename -uid "22966C50-154D-EE45-E863-A08740C5C7AB";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 10;
+createNode transform -n "may_gma_speech:pasted__positionMarker6" -p "may_gma_speech:pathShape2";
+	rename -uid "187C59CF-BC4A-5B1E-794A-E190CC8401AB";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape6" -p "may_gma_speech:pasted__positionMarker6";
+	rename -uid "57EDDD31-734A-EFFB-3AA1-96BEE6A9DBA7";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 120;
+createNode transform -n "may_gma_speech:pasted__positionMarker7" -p "may_gma_speech:pathShape2";
+	rename -uid "B9470908-A545-6317-B990-9B8F3EF194CF";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape7" -p "may_gma_speech:pasted__positionMarker7";
+	rename -uid "438DAA67-A84D-1EB2-4A9A-4DB5960AFD3C";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 16;
+createNode transform -n "may_gma_speech:pasted__positionMarker8" -p "may_gma_speech:pathShape2";
+	rename -uid "BAABDA97-8643-2339-A567-AAB802B82714";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape8" -p "may_gma_speech:pasted__positionMarker8";
+	rename -uid "87FE5BF7-7849-5A59-13A7-69835ACF89D7";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 120;
+createNode transform -n "may_gma_speech:pasted__positionMarker9" -p "may_gma_speech:pathShape2";
+	rename -uid "96E84B85-E74D-00FE-4C84-D4A8A8706B1F";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape9" -p "may_gma_speech:pasted__positionMarker9";
+	rename -uid "3EB82587-4640-D43A-43D3-CEB035DB0016";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 21;
+createNode transform -n "may_gma_speech:pasted__positionMarker10" -p "may_gma_speech:pathShape2";
+	rename -uid "51814315-7148-2F70-43E4-F885CA716F55";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape10" -p "may_gma_speech:pasted__positionMarker10";
+	rename -uid "A2FA7EB6-1C44-9A68-1743-C0B592F00F3C";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 120;
+createNode transform -n "may_gma_speech:pasted__positionMarker11" -p "may_gma_speech:pathShape2";
+	rename -uid "1A926023-A442-883C-F2FD-9AA295A523D2";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape11" -p "may_gma_speech:pasted__positionMarker11";
+	rename -uid "44A75262-BA44-9611-459D-B4B0AF320CEC";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 25;
+createNode transform -n "may_gma_speech:pasted__positionMarker12" -p "may_gma_speech:pathShape2";
+	rename -uid "B1ACAF42-6E44-DA8A-8A4F-2CA64542CCE3";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape12" -p "may_gma_speech:pasted__positionMarker12";
+	rename -uid "ED4DE9D5-BC4A-FA82-723B-71B79299266F";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 120;
+createNode transform -n "may_gma_speech:pasted__positionMarker13" -p "may_gma_speech:pathShape2";
+	rename -uid "B89AAFA3-114E-BA7F-A761-2C99CA38865F";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape13" -p "may_gma_speech:pasted__positionMarker13";
+	rename -uid "DE463443-4745-0B32-7482-E292D6841B41";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 30;
+createNode transform -n "may_gma_speech:pasted__positionMarker14" -p "may_gma_speech:pathShape2";
+	rename -uid "FABAFD6E-4F4E-817F-190C-46B6C088C6F8";
+createNode positionMarker -n "may_gma_speech:pasted__positionMarkerShape14" -p "may_gma_speech:pasted__positionMarker14";
+	rename -uid "71FB2A9A-D04D-4C50-1E9D-6B8EA5B4B16E";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 120;
+createNode transform -n "may_gma_speech:positionMarker15" -p "may_gma_speech:pathShape2";
+	rename -uid "5924B042-2F46-C50C-3C7E-0DAA6F43CB2C";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape15" -p "may_gma_speech:positionMarker15";
+	rename -uid "7FD5598A-DF4E-A036-D5D7-0C948715B75D";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 131;
+createNode transform -n "may_gma_speech:positionMarker16" -p "may_gma_speech:pathShape2";
+	rename -uid "763959DE-144A-4440-8A55-B9A04E85BB36";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape16" -p "may_gma_speech:positionMarker16";
+	rename -uid "BA7479FA-0745-22B0-CE06-1980FAF6DB8C";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:positionMarker17" -p "may_gma_speech:pathShape2";
+	rename -uid "410D875E-0248-DB9D-4B8A-F68BD7EE2F76";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape17" -p "may_gma_speech:positionMarker17";
+	rename -uid "619648AA-D242-7237-820D-17B99169895E";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 135;
+createNode transform -n "may_gma_speech:positionMarker18" -p "may_gma_speech:pathShape2";
+	rename -uid "4E613544-7944-678E-9A91-A5B690AA8941";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape18" -p "may_gma_speech:positionMarker18";
+	rename -uid "3E34F868-7C41-7B9E-2994-6C98E1DDACF3";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:positionMarker19" -p "may_gma_speech:pathShape2";
+	rename -uid "82ACA651-FC42-4784-C44D-168ABD9DC35D";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape19" -p "may_gma_speech:positionMarker19";
+	rename -uid "4AEADDD6-684B-89C8-74E5-F7AA1F52A677";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 140;
+createNode transform -n "may_gma_speech:positionMarker20" -p "may_gma_speech:pathShape2";
+	rename -uid "87E52D2E-CF4B-0DA8-169C-AF8DF56E6D8C";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape20" -p "may_gma_speech:positionMarker20";
+	rename -uid "AAE61D5B-C04D-5335-53CE-A282DA5DCC0A";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:positionMarker21" -p "may_gma_speech:pathShape2";
+	rename -uid "3CAF2E48-4547-2D6E-CA69-8D83ACF03F66";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape21" -p "may_gma_speech:positionMarker21";
+	rename -uid "BCC41483-8841-E2F7-7CA2-51B78848537D";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 145;
+createNode transform -n "may_gma_speech:positionMarker22" -p "may_gma_speech:pathShape2";
+	rename -uid "7F40A598-1446-8444-4855-CCB38C2A4B0A";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape22" -p "may_gma_speech:positionMarker22";
+	rename -uid "64664B43-F947-77AC-B869-919DBA0D5B73";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:positionMarker23" -p "may_gma_speech:pathShape2";
+	rename -uid "35E9B761-F844-D1EF-C2ED-8D98337197D8";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape23" -p "may_gma_speech:positionMarker23";
+	rename -uid "EF1AA978-E342-304D-56BD-E98CC3773756";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 150;
+createNode transform -n "may_gma_speech:positionMarker24" -p "may_gma_speech:pathShape2";
+	rename -uid "04DF35A1-6048-B33D-AD33-91B8A1DC3E0B";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape24" -p "may_gma_speech:positionMarker24";
+	rename -uid "74944213-AE4B-F8B6-82F8-9DB149CE35A5";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:positionMarker25" -p "may_gma_speech:pathShape2";
+	rename -uid "0AC77FD2-4B44-95CA-2D43-4B9A6221E72D";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape25" -p "may_gma_speech:positionMarker25";
+	rename -uid "F4D8AE7E-0B4F-C851-3D72-ABB877D57A50";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 155;
+createNode transform -n "may_gma_speech:positionMarker26" -p "may_gma_speech:pathShape2";
+	rename -uid "4F5F0D1D-BC4C-9E55-EAB9-7E8DF0434696";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape26" -p "may_gma_speech:positionMarker26";
+	rename -uid "06D7962B-C349-E6B0-2D96-A8AFE313ABDC";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:positionMarker27" -p "may_gma_speech:pathShape2";
+	rename -uid "D2FBE82D-044A-4DD0-0FB1-F09D790FCFA1";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape27" -p "may_gma_speech:positionMarker27";
+	rename -uid "43F337CC-7946-1A6A-9B69-6098512A01B5";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".t" 160;
+createNode transform -n "may_gma_speech:positionMarker28" -p "may_gma_speech:pathShape2";
+	rename -uid "A392F6AF-E942-FE10-10E6-50843FABCB3F";
+createNode positionMarker -n "may_gma_speech:positionMarkerShape28" -p "may_gma_speech:positionMarker28";
+	rename -uid "E47A1F8B-6741-BECF-753C-99ACFE9D9B14";
+	setAttr -k off ".v";
+	setAttr ".uwo" yes;
+	setAttr ".lp" -type "double3" 1 0 0 ;
+	setAttr ".t" 250;
+createNode transform -n "may_gma_speech:speech_ribbon6:Ribbon_Grp";
+	rename -uid "E50D9C59-944A-427F-65D2-C6BAC51D330B";
+createNode transform -n "may_gma_speech:speech_ribbon6:Ribbon_Master" -p "may_gma_speech:speech_ribbon6:Ribbon_Grp";
+	rename -uid "DC9C9DA9-C54A-51E7-D494-3CBA59D01CB7";
+	addAttr -ci true -sn "Length" -ln "Length" -at "double";
+	addAttr -ci true -sn "Speed" -ln "Speed" -at "double";
+	addAttr -ci true -sn "Thickness" -ln "Thickness" -dv 2 -at "double";
+	addAttr -ci true -sn "FrameOffset" -ln "FrameOffset" -nn "Frame Offset" -at "long";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 17;
+	setAttr ".t" -type "double3" 137.4156223062455 47.171614794275932 -162.56526201134935 ;
+	setAttr ".r" -type "double3" -150.41632053882682 -137.0369153013944 -187.62582733639417 ;
+	setAttr ".s" -type "double3" 1 1 0.57358266476775299 ;
+	setAttr ".rp" -type "double3" 0 0 6 ;
+	setAttr ".rpt" -type "double3" -24.827580988065698 -0.95120828962321502 18.370623778306765 ;
+	setAttr ".sp" -type "double3" 0 0 6 ;
+	setAttr -cb off ".rman_matteObject";
+	setAttr -cb off ".rman_holdout";
+	setAttr -cb off ".rman_nestedInstancing";
+	setAttr -cb off ".rman_maxDiffuseDepth";
+	setAttr -cb off ".rman_maxSpecularDepth";
+	setAttr -cb off ".rman_relativePixelVariance";
+	setAttr -cb off ".rman_intersectPriority";
+	setAttr -cb off ".rman_visibilityCamera";
+	setAttr -cb off ".rman_visibilityIndirect";
+	setAttr -cb off ".rman_visibilityTransmission";
+	setAttr -cb off ".rman_motionSamples";
+	setAttr -k on ".Length" 0.5;
+	setAttr -k on ".Speed" 5;
+	setAttr -k on ".Thickness" 3;
+	setAttr -k on ".FrameOffset" 140;
+createNode nurbsCurve -n "may_gma_speech:speech_ribbon6:Ribbon_MasterShape" -p "may_gma_speech:speech_ribbon6:Ribbon_Master";
+	rename -uid "B7106006-B349-599A-88D6-E3ABE68C542F";
+	setAttr -k off ".v";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 13;
+	setAttr ".tw" yes;
+createNode transform -n "may_gma_speech:speech_ribbon6:nurbsCircle5" -p "may_gma_speech:speech_ribbon6:Ribbon_Master";
+	rename -uid "9D6283ED-EC44-D3F0-9C66-0C811713524C";
+	setAttr ".t" -type "double3" -0.0027610913142964433 -0.14908979257117799 -0.040820600104219826 ;
+	setAttr ".r" -type "double3" -3.1180880555217176 -0.14276522196390862 0.81668363346371764 ;
+	setAttr ".rp" -type "double3" 0 0 2.5 ;
+	setAttr ".rpt" -type "double3" -0.012248000126627207 0.20384662530023659 -0.0056027029809673171 ;
+	setAttr ".sp" -type "double3" 0 0 2.5 ;
+createNode nurbsCurve -n "may_gma_speech:speech_ribbon6:nurbsCircleShape5" -p "may_gma_speech:speech_ribbon6:nurbsCircle5";
+	rename -uid "995278D6-3840-C3FF-B003-A8B95849E697";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.78361162489122449 0.7836116248912246 2.5000000000000004
+		6.7857323231109122e-17 1.1081941875543877 2.5000000000000004
+		-0.78361162489122449 0.78361162489122438 2.5000000000000004
+		-1.1081941875543881 5.7448982375248304e-17 2.5000000000000004
+		-0.78361162489122449 -0.78361162489122449 2.5000000000000004
+		-1.1100856969603225e-16 -1.1081941875543884 2.5000000000000004
+		0.78361162489122449 -0.78361162489122438 2.5000000000000004
+		1.1081941875543881 -1.511240500779959e-16 2.5000000000000004
+		0.78361162489122449 0.7836116248912246 2.5000000000000004
+		6.7857323231109122e-17 1.1081941875543877 2.5000000000000004
+		-0.78361162489122449 0.78361162489122438 2.5000000000000004
+		;
+createNode transform -n "may_gma_speech:speech_ribbon6:nurbsCircle6" -p "may_gma_speech:speech_ribbon6:Ribbon_Master";
+	rename -uid "F5029DCB-094A-8A05-EB92-DDA48612EFF1";
+	setAttr ".t" -type "double3" -0.0027610913142964433 -0.14908979257117799 -0.040820600104219826 ;
+	setAttr ".r" -type "double3" -4.1648269891153964 -0.18066685205721436 1.0915347382519829 ;
+	setAttr ".rp" -type "double3" 0 0 -0.5 ;
+	setAttr ".rpt" -type "double3" -0.004359799767744906 0.06809443107788668 -0.0029087717208554943 ;
+	setAttr ".sp" -type "double3" 0 0 -0.5 ;
+createNode nurbsCurve -n "may_gma_speech:speech_ribbon6:nurbsCircleShape6" -p "may_gma_speech:speech_ribbon6:nurbsCircle6";
+	rename -uid "6975F9F7-E545-EAFA-F2E1-158680AB2E73";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.78361162489122449 0.7836116248912246 -0.5
+		6.7857323231109122e-17 1.1081941875543877 -0.5
+		-0.78361162489122449 0.78361162489122438 -0.5
+		-1.1081941875543881 5.7448982375248304e-17 -0.5
+		-0.78361162489122449 -0.78361162489122449 -0.5
+		-1.1100856969603225e-16 -1.1081941875543884 -0.5
+		0.78361162489122449 -0.78361162489122438 -0.5
+		1.1081941875543881 -1.511240500779959e-16 -0.5
+		0.78361162489122449 0.7836116248912246 -0.5
+		6.7857323231109122e-17 1.1081941875543877 -0.5
+		-0.78361162489122449 0.78361162489122438 -0.5
+		;
+createNode transform -n "may_gma_speech:speech_ribbon6:nurbsCircle7" -p "may_gma_speech:speech_ribbon6:Ribbon_Master";
+	rename -uid "F45DD101-F049-992E-97D7-33A900CFF2F5";
+	setAttr ".t" -type "double3" -0.0027610913142964433 -0.14908979257117799 -0.040820600104219826 ;
+	setAttr ".r" -type "double3" -4.1648269891153964 -0.18066685205721436 1.0915347382519829 ;
+	setAttr ".rp" -type "double3" 0 0 -3.5 ;
+	setAttr ".rpt" -type "double3" 0.0092236985779709599 -0.1495641452595399 0.0050283558248496712 ;
+	setAttr ".sp" -type "double3" 0 0 -3.5 ;
+createNode nurbsCurve -n "may_gma_speech:speech_ribbon6:nurbsCircleShape7" -p "may_gma_speech:speech_ribbon6:nurbsCircle7";
+	rename -uid "A44861EC-7F4F-FB74-CD01-DDAEE592EADD";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.78361162489122449 0.7836116248912246 -3.4999999999999991
+		6.7857323231109122e-17 1.1081941875543877 -3.4999999999999991
+		-0.78361162489122449 0.78361162489122438 -3.4999999999999991
+		-1.1081941875543881 5.7448982375248304e-17 -3.4999999999999991
+		-0.78361162489122449 -0.78361162489122449 -3.4999999999999991
+		-1.1100856969603225e-16 -1.1081941875543884 -3.4999999999999991
+		0.78361162489122449 -0.78361162489122438 -3.4999999999999991
+		1.1081941875543881 -1.511240500779959e-16 -3.4999999999999991
+		0.78361162489122449 0.7836116248912246 -3.4999999999999991
+		6.7857323231109122e-17 1.1081941875543877 -3.4999999999999991
+		-0.78361162489122449 0.78361162489122438 -3.4999999999999991
+		;
+createNode transform -n "may_gma_speech:speech_ribbon6:nurbsCircle4" -p "may_gma_speech:speech_ribbon6:Ribbon_Master";
+	rename -uid "0C325049-A745-F085-BA87-B28A67BF0C6A";
+	setAttr ".t" -type "double3" -0.0027610913142964433 -0.14908979257117799 -0.040820600104219826 ;
+	setAttr ".r" -type "double3" -4.1648269891153964 -0.18066685205721436 1.0915347382519829 ;
+	setAttr ".rp" -type "double3" 0.026913497596979141 0 -5.0078916549682617 ;
+	setAttr ".rpt" -type "double3" 0.01604616228186935 -0.25845330343863282 0.0091026629672544251 ;
+	setAttr ".sp" -type "double3" 0.026913497596979141 0 -5.0078916549682617 ;
+createNode nurbsCurve -n "may_gma_speech:speech_ribbon6:nurbsCircleShape4" -p "may_gma_speech:speech_ribbon6:nurbsCircle4";
+	rename -uid "4965468E-8E4F-65B1-126F-7FA8D4CC2228";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.81052512248820363 0.7836116248912246 -5.0078916549682608
+		0.026913497596979211 1.1081941875543877 -5.0078916549682608
+		-0.75669812729424535 0.78361162489122438 -5.0078916549682608
+		-1.081280689957409 5.7448982375248304e-17 -5.0078916549682608
+		-0.75669812729424535 -0.78361162489122449 -5.0078916549682608
+		0.02691349759697903 -1.1081941875543884 -5.0078916549682608
+		0.81052512248820363 -0.78361162489122438 -5.0078916549682608
+		1.1351076851513673 -1.511240500779959e-16 -5.0078916549682608
+		0.81052512248820363 0.7836116248912246 -5.0078916549682608
+		0.026913497596979211 1.1081941875543877 -5.0078916549682608
+		-0.75669812729424535 0.78361162489122438 -5.0078916549682608
+		;
+createNode transform -n "may_gma_speech:speech_ribbon6:nurbsCircle3" -p "may_gma_speech:speech_ribbon6:Ribbon_Master";
+	rename -uid "DE5019F2-6748-C86F-F662-AFBBF82D3A6F";
+	setAttr ".t" -type "double3" -0.0027610913142964433 -0.14908979257117799 -0.040820600104219826 ;
+	setAttr ".r" -type "double3" -4.1648269891153964 -0.18066685205721436 1.0915347382519829 ;
+	setAttr ".rp" -type "double3" 0 0 -2 ;
+	setAttr ".rpt" -type "double3" 0.0024319494051130205 -0.040734857090826609 0.0010597920519971179 ;
+	setAttr ".sp" -type "double3" 0 0 -2 ;
+createNode nurbsCurve -n "may_gma_speech:speech_ribbon6:nurbsCircleShape3" -p "may_gma_speech:speech_ribbon6:nurbsCircle3";
+	rename -uid "CA0B3054-7D48-363A-C8EF-A3A5B2C2A0BD";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.78361162489122449 0.7836116248912246 -2
+		6.7857323231109122e-17 1.1081941875543877 -2
+		-0.78361162489122449 0.78361162489122438 -2
+		-1.1081941875543881 5.7448982375248304e-17 -2
+		-0.78361162489122449 -0.78361162489122449 -2
+		-1.1100856969603225e-16 -1.1081941875543884 -2
+		0.78361162489122449 -0.78361162489122438 -2
+		1.1081941875543881 -1.511240500779959e-16 -2
+		0.78361162489122449 0.7836116248912246 -2
+		6.7857323231109122e-17 1.1081941875543877 -2
+		-0.78361162489122449 0.78361162489122438 -2
+		;
+createNode transform -n "may_gma_speech:speech_ribbon6:nurbsCircle2" -p "may_gma_speech:speech_ribbon6:Ribbon_Master";
+	rename -uid "DBA9E11B-4645-E72E-E614-7F9AAF4A2151";
+	setAttr ".t" -type "double3" -0.0027610913142964433 -0.14908979257117799 -0.040820600104219826 ;
+	setAttr ".r" -type "double3" -4.1648269891153964 -0.18066685205721436 1.0915347382519829 ;
+	setAttr ".rp" -type "double3" 0 0 1 ;
+	setAttr ".rpt" -type "double3" -0.011151548940602838 0.17692371924660016 -0.0068773354937083295 ;
+	setAttr ".sp" -type "double3" 0 0 1 ;
+createNode nurbsCurve -n "may_gma_speech:speech_ribbon6:nurbsCircleShape2" -p "may_gma_speech:speech_ribbon6:nurbsCircle2";
+	rename -uid "AFB997F8-294F-8F5B-B521-9BA2BDDF9FDC";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.78361162489122449 0.7836116248912246 1
+		6.7857323231109122e-17 1.1081941875543877 1
+		-0.78361162489122449 0.78361162489122438 1
+		-1.1081941875543881 5.7448982375248304e-17 1
+		-0.78361162489122449 -0.78361162489122449 1
+		-1.1100856969603225e-16 -1.1081941875543884 1
+		0.78361162489122449 -0.78361162489122438 1
+		1.1081941875543881 -1.511240500779959e-16 1
+		0.78361162489122449 0.7836116248912246 1
+		6.7857323231109122e-17 1.1081941875543877 1
+		-0.78361162489122449 0.78361162489122438 1
+		;
+createNode transform -n "may_gma_speech:speech_ribbon6:nurbsCircle1" -p "may_gma_speech:speech_ribbon6:Ribbon_Master";
+	rename -uid "F9CFAF3F-EE4C-7C57-4AC3-E7961DD71D7B";
+	setAttr ".rp" -type "double3" 0 0 4 ;
+	setAttr ".sp" -type "double3" 0 0 4 ;
+createNode nurbsCurve -n "may_gma_speech:speech_ribbon6:nurbsCircleShape1" -p "may_gma_speech:speech_ribbon6:nurbsCircle1";
+	rename -uid "1D01A28A-A042-629F-9269-9FA2FCFDDF38";
+	setAttr -k off ".v";
+	setAttr ".tw" yes;
+createNode transform -n "may_gma_speech:speech_ribbon6:guideCurve" -p "may_gma_speech:speech_ribbon6:Ribbon_Grp";
+	rename -uid "4930CFA3-CF43-3933-1610-1E9AD336B1AC";
+	setAttr ".rp" -type "double3" 0 0 -0.37401741178257719 ;
+	setAttr ".sp" -type "double3" 0 0 -0.37401741178257719 ;
+createNode nurbsCurve -n "may_gma_speech:speech_ribbon6:guideCurveShape" -p "may_gma_speech:speech_ribbon6:guideCurve";
+	rename -uid "A9FF01AB-FB4B-6791-C121-6BB463F10338";
+	addAttr -ci true -sn "mashOutFilter" -ln "mashOutFilter" -min 0 -max 1 -at "bool";
+	setAttr -k off ".v";
+	setAttr -s 4 ".iog[0].og";
+	setAttr ".tw" yes;
+createNode nurbsCurve -n "may_gma_speech:speech_ribbon6:guideCurveShape1Orig" -p "may_gma_speech:speech_ribbon6:guideCurve";
+	rename -uid "06BD9E6A-FE47-3ED0-B85F-EA9057F3327F";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr ".cc" -type "nurbsCurve" 
+		3 10 0 no 3
+		15 0 0 0 1 2 3 4 5 6 7 8 9 10 10 10
+		13
+		0 0 3.9920079920082299
+		0 0 4.0813243894811198
+		0 0 4.2599571844268578
+		0 0 2.9202112223337333
+		0 0 2.0112458782858531
+		0 0 0.9868532165711037
+		0 0 -0.006610792522359521
+		0 0 -1.0083620944336369
+		0 0 -2.007892877695145
+		0 0 -3.008018442737824
+		0 0 -4.0079853993055563
+		0 0 -4.6746564717631927
+		0 0 -5.0079920079920122
+		;
+createNode transform -n "may_gma_speech:speech_ribbon6:MASH1_Trails_Mesh" -p "may_gma_speech:speech_ribbon6:Ribbon_Grp";
+	rename -uid "3F37862C-AB44-AADA-E358-34B3B8199DD5";
+createNode mesh -n "may_gma_speech:speech_ribbon6:MASH1_Trails_MeshShape" -p "may_gma_speech:speech_ribbon6:MASH1_Trails_Mesh";
+	rename -uid "18B4B8A1-F242-F5FB-0366-DF90EC7923FF";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 1 0.65625 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".dr" 1;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "may_gma_speech:speech_ribbon6:MASH1_ReproMesh" -p "may_gma_speech:speech_ribbon6:Ribbon_Grp";
+	rename -uid "F04FFFC5-2548-D431-A6E8-72B34040E928";
+	addAttr -ci true -sn "mashOutFilter" -ln "mashOutFilter" -min 0 -max 1 -at "bool";
+	setAttr ".v" no;
+createNode mesh -n "may_gma_speech:speech_ribbon6:MASH1_ReproMeshShape" -p "may_gma_speech:speech_ribbon6:MASH1_ReproMesh";
+	rename -uid "9DBE9765-464B-7A75-C3E8-7D8A625587E2";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "may_gma_speech:speech_ribbon6:pCube1" -p "may_gma_speech:speech_ribbon6:Ribbon_Grp";
+	rename -uid "B1C9AEBA-3C4E-38F6-8F1E-C885B95AE105";
+	addAttr -ci true -sn "mashOutFilter" -ln "mashOutFilter" -min 0 -max 1 -at "bool";
+	setAttr ".v" no;
+	setAttr ".t" -type "double3" 0 3.6517328584627244 0 ;
+	setAttr ".s" -type "double3" 0.37821063782507852 0.37821063782507852 0.37821063782507852 ;
+createNode mesh -n "may_gma_speech:speech_ribbon6:pCubeShape1" -p "may_gma_speech:speech_ribbon6:pCube1";
+	rename -uid "5937B668-4F43-AA75-3E75-90B7BCA782D9";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "may_gma_speech:speech_ribbon6:group1" -p "may_gma_speech:speech_ribbon6:Ribbon_Grp";
+	rename -uid "65C3635F-6E41-5719-F435-D3A1A97C440C";
+	setAttr ".v" no;
+createNode joint -n "may_gma_speech:speech_ribbon6:joint1" -p "may_gma_speech:speech_ribbon6:group1";
+	rename -uid "E7FF7B54-814D-ADE6-8D24-54A0BEFA369C";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 4 1;
+	setAttr ".radi" 0.5;
+createNode parentConstraint -n "may_gma_speech:speech_ribbon6:joint1_parentConstraint1" 
+		-p "may_gma_speech:speech_ribbon6:joint1";
+	rename -uid "6F47B162-EF4D-5BD1-B725-539A08337D57";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "nurbsCircle1W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" 29.583679461173162 -42.963084698605591 -7.6258273363941491 ;
+	setAttr ".rst" -type "double3" 0 0 4 ;
+	setAttr -k on ".w0";
+createNode joint -n "may_gma_speech:speech_ribbon6:joint2" -p "may_gma_speech:speech_ribbon6:group1";
+	rename -uid "6336C83F-D445-A012-2EA9-0C96F73C9081";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 1;
+	setAttr ".radi" 0.60344827586206895;
+createNode parentConstraint -n "may_gma_speech:speech_ribbon6:joint2_parentConstraint1" 
+		-p "may_gma_speech:speech_ribbon6:joint2";
+	rename -uid "27415719-F848-5496-17A5-65ACF6479D45";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "nurbsCircle2W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" 24.605210149778902 -43.652984600500979 -6.4371572779724895 ;
+	setAttr ".rst" -type "double3" 0 0 1 ;
+	setAttr -k on ".w0";
+createNode joint -n "may_gma_speech:speech_ribbon6:joint3" -p "may_gma_speech:speech_ribbon6:group1";
+	rename -uid "726C975D-F14C-D051-64CC-8FA89AA947D9";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 -2 1;
+	setAttr ".radi" 0.5;
+createNode parentConstraint -n "may_gma_speech:speech_ribbon6:joint3_parentConstraint1" 
+		-p "may_gma_speech:speech_ribbon6:joint3";
+	rename -uid "C0FFFC1F-4A43-1CEC-6772-928BD6D9BD59";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "nurbsCircle3W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" 24.605210149778902 -43.652984600500979 -6.4371572779724895 ;
+	setAttr ".rst" -type "double3" 0 0 -2 ;
+	setAttr -k on ".w0";
+createNode joint -n "may_gma_speech:speech_ribbon6:joint4" -p "may_gma_speech:speech_ribbon6:group1";
+	rename -uid "77AEC610-D14D-9577-319A-16A79DBA0839";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 -5 1;
+	setAttr ".radi" 0.5;
+createNode parentConstraint -n "may_gma_speech:speech_ribbon6:joint4_parentConstraint1" 
+		-p "may_gma_speech:speech_ribbon6:joint4";
+	rename -uid "43A3EB32-084A-6935-6C7B-B68C826CF479";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "nurbsCircle4W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -0.026913497596979141 0 0.0078916549682617188 ;
+	setAttr ".lr" -type "double3" 24.605210149778902 -43.652984600500979 -6.4371572779724895 ;
+	setAttr ".rst" -type "double3" 0 0 -5 ;
+	setAttr -k on ".w0";
+createNode joint -n "may_gma_speech:speech_ribbon6:joint5" -p "may_gma_speech:speech_ribbon6:group1";
+	rename -uid "E33F0E3A-D542-31F1-6589-DCB9110F9773";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 2.5 1;
+	setAttr ".radi" 0.60344827586206895;
+createNode parentConstraint -n "may_gma_speech:speech_ribbon6:joint5_parentConstraint1" 
+		-p "may_gma_speech:speech_ribbon6:joint5";
+	rename -uid "5FA49AE1-4A4B-8DA2-05C6-FCB55E28A3F6";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "nurbsCircle5W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" 25.862717440944351 -43.487067849307358 -6.7440800421608635 ;
+	setAttr ".rst" -type "double3" 0 0 2.5 ;
+	setAttr -k on ".w0";
+createNode joint -n "may_gma_speech:speech_ribbon6:joint6" -p "may_gma_speech:speech_ribbon6:group1";
+	rename -uid "1F48C201-6346-C233-4E5C-2BB5B8320599";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 -0.5 1;
+	setAttr ".radi" 0.60344827586206895;
+createNode parentConstraint -n "may_gma_speech:speech_ribbon6:joint6_parentConstraint1" 
+		-p "may_gma_speech:speech_ribbon6:joint6";
+	rename -uid "7FC6C517-7440-D7D5-F749-A6B84307C4CC";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "nurbsCircle6W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" 24.605210149778902 -43.652984600500979 -6.4371572779724895 ;
+	setAttr ".rst" -type "double3" 0 0 -0.5 ;
+	setAttr -k on ".w0";
+createNode joint -n "may_gma_speech:speech_ribbon6:joint7" -p "may_gma_speech:speech_ribbon6:group1";
+	rename -uid "F1E18DEC-944C-8D93-FC41-B68D18E00007";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 -3.5 1;
+	setAttr ".radi" 0.60344827586206895;
+createNode parentConstraint -n "may_gma_speech:speech_ribbon6:joint7_parentConstraint1" 
+		-p "may_gma_speech:speech_ribbon6:joint7";
+	rename -uid "503C63EE-8C40-B273-8305-0FBD2E67EFA4";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "nurbsCircle7W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" 24.605210149778902 -43.652984600500979 -6.4371572779724895 ;
+	setAttr ".rst" -type "double3" 0 0 -3.5 ;
+	setAttr -k on ".w0";
 createNode fosterParent -n "fork_latestRNfosterParent1";
-	rename -uid "55ADAAFF-6248-0A3E-51CA-3BA01B3B94F4";
+	rename -uid "1D612BA3-7D4D-C987-BC1C-7BAA85F686BC";
+createNode parentConstraint -n "fork_parentConstraint1" -p "fork_latestRNfosterParent1";
+	rename -uid "55B5E00C-8748-5464-8FAE-FF93F15B0266";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "armR_IK_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -5.6164946117852406 0.78402968297042541 -1.540960095964186 ;
+	setAttr ".tg[0].tor" -type "double3" -77.997720837944186 -63.959631168584714 -101.38327482432764 ;
+	setAttr ".lr" -type "double3" -164.41965351137245 -22.107849057694622 154.32837483684807 ;
+	setAttr ".rst" -type "double3" 101.15519133793217 46.966615659941674 -172.88585710005049 ;
+	setAttr ".rsrr" -type "double3" 8.7557102415118813 -195.14126999337267 -4.3512897793757057 ;
+	setAttr -k on ".w0";
 createNode transform -n "pSphere1" -p "fork_latestRNfosterParent1";
 	rename -uid "84BECDDC-9545-BD34-1357-D0A26B6E8F20";
 	addAttr -ci true -k true -sn "blendParent1" -ln "blendParent1" -dv 1 -smn 0 -smx 
@@ -3248,29 +4144,8 @@ createNode parentConstraint -n "pSphere1_parentConstraint1" -p "pSphere1";
 	setAttr ".rsrr" -type "double3" 13.870928013785015 -156.43602484393111 -35.355023518486519 ;
 	setAttr -k on ".w0";
 	setAttr -k on ".w1" 0;
-createNode parentConstraint -n "fork_parentConstraint1" -p "fork_latestRNfosterParent1";
-	rename -uid "55B5E00C-8748-5464-8FAE-FF93F15B0266";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "armR_IK_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".tg[0].tot" -type "double3" -5.6164946117852406 0.78402968297042541 -1.540960095964186 ;
-	setAttr ".tg[0].tor" -type "double3" -77.997720837944186 -63.959631168584714 -101.38327482432764 ;
-	setAttr ".lr" -type "double3" -159.63173312184711 -37.01361680370092 149.64418619817098 ;
-	setAttr ".rst" -type "double3" 101.15519133793217 46.966615659941674 -172.88585710005049 ;
-	setAttr ".rsrr" -type "double3" 8.7557102415118813 -195.14126999337267 -4.3512897793757057 ;
-	setAttr -k on ".w0";
 createNode fosterParent -n "eggroll_sheetsRNfosterParent1";
-	rename -uid "4F14FCAF-CD4F-DB9F-6FD0-72BBDA83DE41";
+	rename -uid "6CFD1FFB-FE45-8C44-DB74-F181E80A800D";
 createNode parentConstraint -n "sheet_parentConstraint1" -p "eggroll_sheetsRNfosterParent1";
 	rename -uid "7BB72949-6E4E-8666-4990-57B52EF2BC03";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "armR_IK_CtrlW0" -dv 1 -min 0 -at "double";
@@ -3288,12 +4163,12 @@ createNode parentConstraint -n "sheet_parentConstraint1" -p "eggroll_sheetsRNfos
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -3.7448958401967332 0.56555035485967764 0.51938036604415805 ;
 	setAttr ".tg[0].tor" -type "double3" -172.77144942902868 60.981504536396216 17.412653566899419 ;
-	setAttr ".lr" -type "double3" -204.71183441375831 -242.97200327501804 163.68463895326371 ;
+	setAttr ".lr" -type "double3" -203.6015742508408 -227.51405198990471 166.90609455435569 ;
 	setAttr ".rst" -type "double3" 99.477012944074801 32.679370917207912 -174.23709628692453 ;
 	setAttr ".rsrr" -type "double3" 3.0686641967548325 -2.3556600978862656 -0.11388756849137689 ;
 	setAttr -k on ".w0";
 createNode fosterParent -n "soy_bean_blendshapeRNfosterParent1";
-	rename -uid "2C9ECC01-4E4B-EA35-41B1-2F80AA7EBECE";
+	rename -uid "488A2210-2542-9CE1-3221-7B95BE6AEC56";
 createNode parentConstraint -n "polySurface18_parentConstraint1" -p "soy_bean_blendshapeRNfosterParent1";
 	rename -uid "737E373B-D449-6D31-BEB9-1DB275B286A6";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "armR_IK_CtrlW0" -dv 1 -min 0 -at "double";
@@ -3311,34 +4186,34 @@ createNode parentConstraint -n "polySurface18_parentConstraint1" -p "soy_bean_bl
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -2.2307450861192137 0.65487811458416445 -1.644993415760041 ;
 	setAttr ".tg[0].tor" -type "double3" 117.22113055607704 81.809548814777841 -74.265723413299426 ;
-	setAttr ".lr" -type "double3" -162.37670461544002 -218.0887902060374 192.28711409221432 ;
+	setAttr ".lr" -type "double3" -169.67060424735919 -203.92271970804114 190.79813600874246 ;
 	setAttr ".rst" -type "double3" 5.8676835475217359 0.13054413231273543 -6.8091950381039226 ;
 	setAttr ".rsrr" -type "double3" -319.04063211164618 31.889343943034326 114.85118821558011 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "D2E0F1B9-D247-C11C-3A4B-D786AEC07A93";
-	setAttr -s 799 ".lnk";
+	rename -uid "0A0F64A7-7B46-FDB6-E375-24A962C23A0C";
+	setAttr -s 801 ".lnk";
 	setAttr -s 1208 ".ign";
-	setAttr -s 799 ".slnk";
+	setAttr -s 801 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "F508D9FE-3146-35B1-96E5-5A974B3A095E";
+	rename -uid "23F0B235-6E4C-10E6-D113-A5B2C1011298";
 	setAttr -s 17 ".dli[1:16]"  1 2 3 4 5 6 7 8 
 		9 10 11 12 13 14 15 16;
 	setAttr -s 17 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "68A0196B-D24C-924B-9F47-BDB45E9DD1B0";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "90E224EF-6841-9E02-71E5-A18E1C372C05";
+	rename -uid "58C9C86F-F440-F84E-ED25-33AEFD932815";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "2F4F00D2-EF47-E196-0F28-1FA9CC37941D";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "CC35A6D9-D74E-794E-F15C-80AEC3444215";
+	rename -uid "37C04E7A-6441-D4A0-5C32-E892A977B198";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 3 1 0 2 ;
 	setAttr -s 3 ".bspr";
 	setAttr -s 3 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "DF849A4E-A342-813B-DDAF-F3A7EBE07606";
+	rename -uid "36783F43-E541-57F1-66E7-FD928D5881A8";
 createNode rmanGlobals -s -n "rmanGlobals";
 	rename -uid "8FE3CD77-7742-010A-4E99-71B980D5197F";
 	setAttr ".cch" no;
@@ -3541,53 +4416,53 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 586\n            -height 327\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
 		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
 		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 0\n            -nurbsCurves 1\n            -nurbsSurfaces 0\n            -polymeshes 1\n            -subdivSurfaces 0\n            -planes 0\n            -lights 0\n            -cameras 0\n            -controlVertices 1\n            -hulls 0\n            -grid 1\n            -imagePlane 0\n            -joints 0\n            -ikHandles 0\n            -deformers 0\n            -dynamics 0\n            -particleInstancers 0\n            -fluids 0\n            -hairSystems 0\n            -follicles 0\n            -nCloths 0\n            -nParticles 0\n            -nRigids 0\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 0\n            -dimensions 0\n            -handles 0\n            -pivots 0\n            -textures 0\n            -strokes 0\n            -motionTrails 0\n            -clipGhosts 0\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 585\n            -height 327\n"
+		+ "            -sortTransparent 1\n            -controllers 0\n            -nurbsCurves 1\n            -nurbsSurfaces 0\n            -polymeshes 1\n            -subdivSurfaces 0\n            -planes 0\n            -lights 0\n            -cameras 0\n            -controlVertices 1\n            -hulls 0\n            -grid 1\n            -imagePlane 0\n            -joints 0\n            -ikHandles 0\n            -deformers 0\n            -dynamics 0\n            -particleInstancers 0\n            -fluids 0\n            -hairSystems 0\n            -follicles 0\n            -nCloths 0\n            -nParticles 0\n            -nRigids 0\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 0\n            -dimensions 0\n            -handles 0\n            -pivots 0\n            -textures 0\n            -strokes 0\n            -motionTrails 0\n            -clipGhosts 0\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n"
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 0 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
 		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 586\n            -height 327\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"making_food_cam_alt\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
+		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"wireframe\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
 		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
-		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 0\n            -nurbsCurves 0\n            -nurbsSurfaces 0\n            -polymeshes 1\n            -subdivSurfaces 0\n            -planes 0\n            -lights 0\n            -cameras 0\n            -controlVertices 0\n            -hulls 0\n            -grid 1\n            -imagePlane 0\n            -joints 0\n            -ikHandles 0\n            -deformers 0\n            -dynamics 0\n            -particleInstancers 0\n            -fluids 0\n            -hairSystems 0\n            -follicles 0\n"
-		+ "            -nCloths 0\n            -nParticles 0\n            -nRigids 0\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 0\n            -dimensions 0\n            -handles 0\n            -pivots 0\n            -textures 0\n            -strokes 0\n            -motionTrails 0\n            -clipGhosts 0\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1182\n            -height 703\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 0 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 0\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 0\n            -lights 0\n            -cameras 1\n            -controlVertices 1\n            -hulls 0\n            -grid 1\n            -imagePlane 0\n            -joints 0\n            -ikHandles 0\n            -deformers 0\n            -dynamics 0\n            -particleInstancers 0\n            -fluids 0\n            -hairSystems 0\n            -follicles 0\n"
+		+ "            -nCloths 0\n            -nParticles 0\n            -nRigids 0\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 0\n            -dimensions 0\n            -handles 0\n            -pivots 0\n            -textures 0\n            -strokes 0\n            -motionTrails 0\n            -clipGhosts 0\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 679\n            -height 447\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 0 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
 		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n"
 		+ "            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
 		+ "            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n"
 		+ "            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n"
-		+ "                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n"
-		+ "                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -autoFitTime 0\n"
-		+ "                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
-		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n"
-		+ "                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n"
-		+ "                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n"
-		+ "                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"rmanNodeEdKeyPressCommand\" \n"
-		+ "                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n"
-		+ "                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"rmanNodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -editorChanged \"updateModelPanelBar\" \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n"
-		+ "                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererOverrideName \"stereoOverrideVP2\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n"
-		+ "                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n"
-		+ "                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
-		+ "                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n"
-		+ "            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n"
-		+ "            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"making_food_cam_alt\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 0\\n    -nurbsCurves 0\\n    -nurbsSurfaces 0\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1182\\n    -height 703\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 0 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"making_food_cam_alt\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 0\\n    -nurbsCurves 0\\n    -nurbsSurfaces 0\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1182\\n    -height 703\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 0 \\n    $editorName\"\n"
+		+ "                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n"
+		+ "                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -selectionOrder \"display\" \n                -expandAttribute 1\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n"
+		+ "                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n"
+		+ "                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n"
+		+ "                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n"
+		+ "\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
+		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n"
+		+ "                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n"
+		+ "                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"rmanNodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n"
+		+ "                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"rmanNodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n"
+		+ "                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -editorChanged \"updateModelPanelBar\" \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n"
+		+ "                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererOverrideName \"stereoOverrideVP2\" \n"
+		+ "                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n"
+		+ "                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n"
+		+ "            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n"
+		+ "            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n"
+		+ "            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n"
+		+ "\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"wireframe\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 0\\n    -lights 0\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 679\\n    -height 447\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 0 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"wireframe\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 0\\n    -lights 0\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 679\\n    -height 447\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 0 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "A6F7FC0A-B74B-697A-950F-FD8F16A2E62A";
-	setAttr ".b" -type "string" "playbackOptions -min 73 -max 258 -ast -50 -aet 600 ";
+	setAttr ".b" -type "string" "playbackOptions -min -40 -max 258 -ast -50 -aet 600 ";
 	setAttr ".st" 6;
 createNode reference -n "house_INTERIORRN";
 	rename -uid "55367DA3-AA40-34A9-58FC-5BBF08712FA3";
@@ -4111,6 +4986,7 @@ createNode PxrSurface -n "grandma_controlrig:grandma_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -4129,6 +5005,7 @@ createNode PxrSurface -n "grandma_controlrig:grandma_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -4153,7 +5030,7 @@ createNode PxrNormalMap -n "grandma_controlrig:gma_tex_norm";
 	setAttr ".nds" 0;
 	setAttr ".bumpScale" 1.5;
 	setAttr ".inputRGB" -type "float3" 0 0 0 ;
-	setAttr ".filename" -type "string" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/grandma/grandma_normalmap.png";
+	setAttr ".filename" -type "string" "/Users/edwardzamora/LoveLanguage//sourceimages/grandma/grandma_normalmap.png";
 	setAttr ".bumpOverlay" -type "float3" 0 0 0 ;
 	setAttr ".invertBump" yes;
 	setAttr ".orientation" 2;
@@ -4398,6 +5275,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_shirt_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -4416,6 +5294,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_shirt_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -4556,6 +5435,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_pants_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -4574,6 +5454,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_pants_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -4714,6 +5595,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_cardigan_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -4732,6 +5614,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_cardigan_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -4872,6 +5755,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_eyes_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -4890,6 +5774,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_eyes_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -5030,6 +5915,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_hair_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -5048,6 +5934,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_hair_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -5188,6 +6075,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_hairstick_base_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -5206,6 +6094,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_hairstick_base_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -5346,6 +6235,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_hairstick_tip_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -5364,6 +6254,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_hairstick_tip_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -5504,6 +6395,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_hairstick_pearl_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -5522,6 +6414,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_hairstick_pearl_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -5546,7 +6439,7 @@ createNode PxrNormalMap -n "grandma_controlrig:PxrNormalMap1";
 	setAttr ".nds" 0;
 	setAttr ".bumpScale" 1;
 	setAttr ".inputRGB" -type "float3" 0 0 0 ;
-	setAttr ".filename" -type "string" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/grandma/grandma_hairstick/grandma_hairstick_base_normal.png";
+	setAttr ".filename" -type "string" "/Users/edwardzamora/LoveLanguage//sourceimages/grandma/grandma_hairstick/grandma_hairstick_base_normal.png";
 	setAttr ".bumpOverlay" -type "float3" 0 0 0 ;
 	setAttr ".invertBump" yes;
 	setAttr ".orientation" 2;
@@ -5718,6 +6611,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_bun_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -5736,6 +6630,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_bun_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -5876,6 +6771,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_sole_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -5894,6 +6790,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_sole_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -6034,6 +6931,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_shoetop_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -6052,6 +6950,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_shoetop_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -6192,6 +7091,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_shoebase_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -6210,6 +7110,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_shoebase_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -6350,6 +7251,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_necklace_pendant_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 0.4844 0.73400003 0.63380003 ;
 	setAttr ".glassRoughness" 0;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -6368,6 +7270,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_necklace_pendant_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -6392,7 +7295,7 @@ createNode PxrNormalMap -n "grandma_controlrig:gma_pendant_tex_normal";
 	setAttr ".nds" 0;
 	setAttr ".bumpScale" 1;
 	setAttr ".inputRGB" -type "float3" 0 0 0 ;
-	setAttr ".filename" -type "string" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/grandma/grandma_necklace/gma_necklace_pendant_normal.png";
+	setAttr ".filename" -type "string" "/Users/edwardzamora/LoveLanguage//sourceimages/grandma/grandma_necklace/gma_necklace_pendant_normal.png";
 	setAttr ".bumpOverlay" -type "float3" 0 0 0 ;
 	setAttr ".invertBump" yes;
 	setAttr ".orientation" 2;
@@ -6536,6 +7439,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_necklace_string_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -6554,6 +7458,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_necklace_string_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -6694,6 +7599,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_necklace_bead_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 0.85699999 0.72502202 0.76062965 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -6712,6 +7618,7 @@ createNode PxrSurface -n "grandma_controlrig:gma_necklace_bead_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -6857,6 +7764,7 @@ createNode PxrLayerMixer -n "grandma_controlrig:gma_necklace_string_layermxer";
 	setAttr ".baselayer_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".baselayer_reflectionGain" 0;
 	setAttr ".baselayer_glassRoughness" 0.10000000149011612;
+	setAttr ".baselayer_glassRefractionRoughness" -1;
 	setAttr ".baselayer_glassIor" 1.5;
 	setAttr ".baselayer_enableSubsurface" 0;
 	setAttr ".baselayer_subsurfaceGain" 0;
@@ -6938,6 +7846,7 @@ createNode PxrLayerMixer -n "grandma_controlrig:gma_necklace_string_layermxer";
 	setAttr ".layer1_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".layer1_reflectionGain" 0;
 	setAttr ".layer1_glassRoughness" 0.10000000149011612;
+	setAttr ".layer1_glassRefractionRoughness" -1;
 	setAttr ".layer1_glassIor" 1.5;
 	setAttr ".layer1_enableSubsurface" 0;
 	setAttr ".layer1_subsurfaceGain" 0;
@@ -7020,6 +7929,7 @@ createNode PxrLayerMixer -n "grandma_controlrig:gma_necklace_string_layermxer";
 	setAttr ".layer2_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".layer2_reflectionGain" 0;
 	setAttr ".layer2_glassRoughness" 0.10000000149011612;
+	setAttr ".layer2_glassRefractionRoughness" -1;
 	setAttr ".layer2_glassIor" 1.5;
 	setAttr ".layer2_enableSubsurface" 0;
 	setAttr ".layer2_subsurfaceGain" 0;
@@ -7102,6 +8012,7 @@ createNode PxrLayerMixer -n "grandma_controlrig:gma_necklace_string_layermxer";
 	setAttr ".layer3_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".layer3_reflectionGain" 0;
 	setAttr ".layer3_glassRoughness" 0.10000000149011612;
+	setAttr ".layer3_glassRefractionRoughness" -1;
 	setAttr ".layer3_glassIor" 1.5;
 	setAttr ".layer3_enableSubsurface" 0;
 	setAttr ".layer3_subsurfaceGain" 0;
@@ -7184,6 +8095,7 @@ createNode PxrLayerMixer -n "grandma_controlrig:gma_necklace_string_layermxer";
 	setAttr ".layer4_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".layer4_reflectionGain" 0;
 	setAttr ".layer4_glassRoughness" 0.10000000149011612;
+	setAttr ".layer4_glassRefractionRoughness" -1;
 	setAttr ".layer4_glassIor" 1.5;
 	setAttr ".layer4_enableSubsurface" 0;
 	setAttr ".layer4_subsurfaceGain" 0;
@@ -7296,6 +8208,7 @@ createNode PxrLayer -n "grandma_controlrig:necklace_string_base";
 	setAttr ".rrReflectionGain" 0;
 	setAttr ".rrRefractionColor" -type "float3" 1 1 1 ;
 	setAttr ".rrRoughness" 0.10000000149011612;
+	setAttr ".rrRefractionRoughness" -1;
 	setAttr ".rrIor" 1.5;
 	setAttr ".enableGlow" no;
 	setAttr ".glowGain" 0;
@@ -7385,6 +8298,7 @@ createNode PxrLayer -n "grandma_controlrig:necklace_string_dirt";
 	setAttr ".rrReflectionGain" 0;
 	setAttr ".rrRefractionColor" -type "float3" 1 1 1 ;
 	setAttr ".rrRoughness" 0.10000000149011612;
+	setAttr ".rrRefractionRoughness" -1;
 	setAttr ".rrIor" 1.5;
 	setAttr ".enableGlow" no;
 	setAttr ".glowGain" 0;
@@ -7618,6 +8532,7 @@ createNode PxrSurface -n "grandma_latest:grandma_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -7636,6 +8551,7 @@ createNode PxrSurface -n "grandma_latest:grandma_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -7660,7 +8576,7 @@ createNode PxrNormalMap -n "grandma_latest:gma_tex_norm";
 	setAttr ".nds" 0;
 	setAttr ".bumpScale" 1.5;
 	setAttr ".inputRGB" -type "float3" 0 0 0 ;
-	setAttr ".filename" -type "string" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/grandma/grandma_normalmap.png";
+	setAttr ".filename" -type "string" "/Users/edwardzamora/LoveLanguage//sourceimages/grandma/grandma_normalmap.png";
 	setAttr ".bumpOverlay" -type "float3" 0 0 0 ;
 	setAttr ".invertBump" yes;
 	setAttr ".orientation" 2;
@@ -7905,6 +8821,7 @@ createNode PxrSurface -n "grandma_latest:gma_shirt_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -7923,6 +8840,7 @@ createNode PxrSurface -n "grandma_latest:gma_shirt_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -8063,6 +8981,7 @@ createNode PxrSurface -n "grandma_latest:gma_pants_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -8081,6 +9000,7 @@ createNode PxrSurface -n "grandma_latest:gma_pants_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -8221,6 +9141,7 @@ createNode PxrSurface -n "grandma_latest:gma_cardigan_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -8239,6 +9160,7 @@ createNode PxrSurface -n "grandma_latest:gma_cardigan_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -8379,6 +9301,7 @@ createNode PxrSurface -n "grandma_latest:gma_eyes_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -8397,6 +9320,7 @@ createNode PxrSurface -n "grandma_latest:gma_eyes_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -8537,6 +9461,7 @@ createNode PxrSurface -n "grandma_latest:gma_hair_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -8555,6 +9480,7 @@ createNode PxrSurface -n "grandma_latest:gma_hair_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -8695,6 +9621,7 @@ createNode PxrSurface -n "grandma_latest:gma_hairstick_base_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -8713,6 +9640,7 @@ createNode PxrSurface -n "grandma_latest:gma_hairstick_base_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -8853,6 +9781,7 @@ createNode PxrSurface -n "grandma_latest:gma_hairstick_tip_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -8871,6 +9800,7 @@ createNode PxrSurface -n "grandma_latest:gma_hairstick_tip_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -9011,6 +9941,7 @@ createNode PxrSurface -n "grandma_latest:gma_hairstick_pearl_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -9029,6 +9960,7 @@ createNode PxrSurface -n "grandma_latest:gma_hairstick_pearl_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -9053,7 +9985,7 @@ createNode PxrNormalMap -n "grandma_latest:PxrNormalMap1";
 	setAttr ".nds" 0;
 	setAttr ".bumpScale" 1;
 	setAttr ".inputRGB" -type "float3" 0 0 0 ;
-	setAttr ".filename" -type "string" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/grandma/grandma_hairstick/grandma_hairstick_base_normal.png";
+	setAttr ".filename" -type "string" "/Users/edwardzamora/LoveLanguage//sourceimages/grandma/grandma_hairstick/grandma_hairstick_base_normal.png";
 	setAttr ".bumpOverlay" -type "float3" 0 0 0 ;
 	setAttr ".invertBump" yes;
 	setAttr ".orientation" 2;
@@ -9225,6 +10157,7 @@ createNode PxrSurface -n "grandma_latest:gma_bun_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -9243,6 +10176,7 @@ createNode PxrSurface -n "grandma_latest:gma_bun_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -9383,6 +10317,7 @@ createNode PxrSurface -n "grandma_latest:gma_sole_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -9401,6 +10336,7 @@ createNode PxrSurface -n "grandma_latest:gma_sole_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -9541,6 +10477,7 @@ createNode PxrSurface -n "grandma_latest:gma_shoetop_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -9559,6 +10496,7 @@ createNode PxrSurface -n "grandma_latest:gma_shoetop_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -9699,6 +10637,7 @@ createNode PxrSurface -n "grandma_latest:gma_shoebase_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -9717,6 +10656,7 @@ createNode PxrSurface -n "grandma_latest:gma_shoebase_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -9857,6 +10797,7 @@ createNode PxrSurface -n "grandma_latest:gma_necklace_pendant_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 0.4844 0.73400003 0.63380003 ;
 	setAttr ".glassRoughness" 0;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -9875,6 +10816,7 @@ createNode PxrSurface -n "grandma_latest:gma_necklace_pendant_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -9899,7 +10841,7 @@ createNode PxrNormalMap -n "grandma_latest:gma_pendant_tex_normal";
 	setAttr ".nds" 0;
 	setAttr ".bumpScale" 1;
 	setAttr ".inputRGB" -type "float3" 0 0 0 ;
-	setAttr ".filename" -type "string" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/grandma/grandma_necklace/gma_necklace_pendant_normal.png";
+	setAttr ".filename" -type "string" "/Users/edwardzamora/LoveLanguage//sourceimages/grandma/grandma_necklace/gma_necklace_pendant_normal.png";
 	setAttr ".bumpOverlay" -type "float3" 0 0 0 ;
 	setAttr ".invertBump" yes;
 	setAttr ".orientation" 2;
@@ -10043,6 +10985,7 @@ createNode PxrSurface -n "grandma_latest:gma_necklace_string_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -10061,6 +11004,7 @@ createNode PxrSurface -n "grandma_latest:gma_necklace_string_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -10201,6 +11145,7 @@ createNode PxrSurface -n "grandma_latest:gma_necklace_bead_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 0.85699999 0.72502202 0.76062965 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -10219,6 +11164,7 @@ createNode PxrSurface -n "grandma_latest:gma_necklace_bead_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -10364,6 +11310,7 @@ createNode PxrLayerMixer -n "grandma_latest:gma_necklace_string_layermxer";
 	setAttr ".baselayer_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".baselayer_reflectionGain" 0;
 	setAttr ".baselayer_glassRoughness" 0.10000000149011612;
+	setAttr ".baselayer_glassRefractionRoughness" -1;
 	setAttr ".baselayer_glassIor" 1.5;
 	setAttr ".baselayer_enableSubsurface" 0;
 	setAttr ".baselayer_subsurfaceGain" 0;
@@ -10445,6 +11392,7 @@ createNode PxrLayerMixer -n "grandma_latest:gma_necklace_string_layermxer";
 	setAttr ".layer1_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".layer1_reflectionGain" 0;
 	setAttr ".layer1_glassRoughness" 0.10000000149011612;
+	setAttr ".layer1_glassRefractionRoughness" -1;
 	setAttr ".layer1_glassIor" 1.5;
 	setAttr ".layer1_enableSubsurface" 0;
 	setAttr ".layer1_subsurfaceGain" 0;
@@ -10527,6 +11475,7 @@ createNode PxrLayerMixer -n "grandma_latest:gma_necklace_string_layermxer";
 	setAttr ".layer2_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".layer2_reflectionGain" 0;
 	setAttr ".layer2_glassRoughness" 0.10000000149011612;
+	setAttr ".layer2_glassRefractionRoughness" -1;
 	setAttr ".layer2_glassIor" 1.5;
 	setAttr ".layer2_enableSubsurface" 0;
 	setAttr ".layer2_subsurfaceGain" 0;
@@ -10609,6 +11558,7 @@ createNode PxrLayerMixer -n "grandma_latest:gma_necklace_string_layermxer";
 	setAttr ".layer3_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".layer3_reflectionGain" 0;
 	setAttr ".layer3_glassRoughness" 0.10000000149011612;
+	setAttr ".layer3_glassRefractionRoughness" -1;
 	setAttr ".layer3_glassIor" 1.5;
 	setAttr ".layer3_enableSubsurface" 0;
 	setAttr ".layer3_subsurfaceGain" 0;
@@ -10691,6 +11641,7 @@ createNode PxrLayerMixer -n "grandma_latest:gma_necklace_string_layermxer";
 	setAttr ".layer4_refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".layer4_reflectionGain" 0;
 	setAttr ".layer4_glassRoughness" 0.10000000149011612;
+	setAttr ".layer4_glassRefractionRoughness" -1;
 	setAttr ".layer4_glassIor" 1.5;
 	setAttr ".layer4_enableSubsurface" 0;
 	setAttr ".layer4_subsurfaceGain" 0;
@@ -10803,6 +11754,7 @@ createNode PxrLayer -n "grandma_latest:necklace_string_base";
 	setAttr ".rrReflectionGain" 0;
 	setAttr ".rrRefractionColor" -type "float3" 1 1 1 ;
 	setAttr ".rrRoughness" 0.10000000149011612;
+	setAttr ".rrRefractionRoughness" -1;
 	setAttr ".rrIor" 1.5;
 	setAttr ".enableGlow" no;
 	setAttr ".glowGain" 0;
@@ -10892,6 +11844,7 @@ createNode PxrLayer -n "grandma_latest:necklace_string_dirt";
 	setAttr ".rrReflectionGain" 0;
 	setAttr ".rrRefractionColor" -type "float3" 1 1 1 ;
 	setAttr ".rrRoughness" 0.10000000149011612;
+	setAttr ".rrRefractionRoughness" -1;
 	setAttr ".rrIor" 1.5;
 	setAttr ".enableGlow" no;
 	setAttr ".glowGain" 0;
@@ -11120,6 +12073,7 @@ createNode PxrSurface -n "MC_control_rig1:PxrSurface1";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -11138,6 +12092,7 @@ createNode PxrSurface -n "MC_control_rig1:PxrSurface1";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -11368,6 +12323,7 @@ createNode PxrSurface -n "MC_control_rig1:MC_overalls_latest:PxrSurface1";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -11386,6 +12342,7 @@ createNode PxrSurface -n "MC_control_rig1:MC_overalls_latest:PxrSurface1";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -11554,6 +12511,7 @@ createNode PxrSurface -n "MC_control_rig1:MC_overalls_latest:PxrSurface2";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -11572,6 +12530,7 @@ createNode PxrSurface -n "MC_control_rig1:MC_overalls_latest:PxrSurface2";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -11712,6 +12671,7 @@ createNode PxrSurface -n "MC_control_rig1:MC_overalls_latest:PxrSurface3";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -11730,6 +12690,7 @@ createNode PxrSurface -n "MC_control_rig1:MC_overalls_latest:PxrSurface3";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -11870,6 +12831,7 @@ createNode PxrSurface -n "MC_control_rig1:MC_overalls_latest:PxrSurface4";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -11888,6 +12850,7 @@ createNode PxrSurface -n "MC_control_rig1:MC_overalls_latest:PxrSurface4";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -12062,6 +13025,7 @@ createNode PxrSurface -n "MC_control_rig1:MC_overalls_latest:PxrSurface5";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -12080,6 +13044,7 @@ createNode PxrSurface -n "MC_control_rig1:MC_overalls_latest:PxrSurface5";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -12264,6 +13229,7 @@ createNode PxrSurface -n "MC_control_rig1:MC_overalls_latest:PxrSurface6";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -12282,6 +13248,7 @@ createNode PxrSurface -n "MC_control_rig1:MC_overalls_latest:PxrSurface6";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -12466,6 +13433,7 @@ createNode PxrSurface -n "MC_control_rig1:PxrSurface2";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -12484,6 +13452,7 @@ createNode PxrSurface -n "MC_control_rig1:PxrSurface2";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -12708,6 +13677,7 @@ createNode PxrSurface -n "MC_control_rig1:gma_cardigan_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -12726,6 +13696,7 @@ createNode PxrSurface -n "MC_control_rig1:gma_cardigan_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -12906,6 +13877,7 @@ createNode PxrSurface -n "MC_control_rig1:gma_bun_shader";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -12924,6 +13896,7 @@ createNode PxrSurface -n "MC_control_rig1:gma_bun_shader";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -13392,6 +14365,7 @@ createNode PxrSurface -n "teapot:PxrSurface1";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -13410,6 +14384,7 @@ createNode PxrSurface -n "teapot:PxrSurface1";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -13550,6 +14525,7 @@ createNode PxrSurface -n "teapot:PxrSurface2";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -13568,6 +14544,7 @@ createNode PxrSurface -n "teapot:PxrSurface2";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -13708,6 +14685,7 @@ createNode PxrSurface -n "teapot:PxrSurface3";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -13726,6 +14704,7 @@ createNode PxrSurface -n "teapot:PxrSurface3";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -13866,6 +14845,7 @@ createNode PxrSurface -n "teapot:PxrSurface4";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -13884,6 +14864,7 @@ createNode PxrSurface -n "teapot:PxrSurface4";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -14024,6 +15005,7 @@ createNode PxrSurface -n "temp_glass";
 	setAttr ".reflectionGain" 0.55719554424285889;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -14042,6 +15024,7 @@ createNode PxrSurface -n "temp_glass";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -14068,8 +15051,8 @@ createNode reference -n "grandma_latestRN";
 lockNode -l 1 ;
 createNode reference -n "grandma_controlrigRN";
 	rename -uid "990F3D4E-7840-A564-641E-399835C2E320";
-	setAttr ".fn[0]" -type "string" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/grandma/grandma_controlrig.ma";
-	setAttr -s 42 ".phl";
+	setAttr ".fn[0]" -type "string" "/Users/edwardzamora/LoveLanguage//assets/grandma/grandma_controlrig.ma";
+	setAttr -s 122 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -14112,9 +15095,89 @@ createNode reference -n "grandma_controlrigRN";
 	setAttr ".phl[40]" 0;
 	setAttr ".phl[41]" 0;
 	setAttr ".phl[42]" 0;
+	setAttr ".phl[43]" 0;
+	setAttr ".phl[44]" 0;
+	setAttr ".phl[45]" 0;
+	setAttr ".phl[46]" 0;
+	setAttr ".phl[47]" 0;
+	setAttr ".phl[48]" 0;
+	setAttr ".phl[49]" 0;
+	setAttr ".phl[50]" 0;
+	setAttr ".phl[51]" 0;
+	setAttr ".phl[52]" 0;
+	setAttr ".phl[53]" 0;
+	setAttr ".phl[54]" 0;
+	setAttr ".phl[55]" 0;
+	setAttr ".phl[56]" 0;
+	setAttr ".phl[57]" 0;
+	setAttr ".phl[58]" 0;
+	setAttr ".phl[59]" 0;
+	setAttr ".phl[60]" 0;
+	setAttr ".phl[61]" 0;
+	setAttr ".phl[62]" 0;
+	setAttr ".phl[63]" 0;
+	setAttr ".phl[64]" 0;
+	setAttr ".phl[65]" 0;
+	setAttr ".phl[66]" 0;
+	setAttr ".phl[67]" 0;
+	setAttr ".phl[68]" 0;
+	setAttr ".phl[69]" 0;
+	setAttr ".phl[70]" 0;
+	setAttr ".phl[71]" 0;
+	setAttr ".phl[72]" 0;
+	setAttr ".phl[73]" 0;
+	setAttr ".phl[74]" 0;
+	setAttr ".phl[75]" 0;
+	setAttr ".phl[76]" 0;
+	setAttr ".phl[77]" 0;
+	setAttr ".phl[78]" 0;
+	setAttr ".phl[79]" 0;
+	setAttr ".phl[80]" 0;
+	setAttr ".phl[81]" 0;
+	setAttr ".phl[82]" 0;
+	setAttr ".phl[83]" 0;
+	setAttr ".phl[84]" 0;
+	setAttr ".phl[85]" 0;
+	setAttr ".phl[86]" 0;
+	setAttr ".phl[87]" 0;
+	setAttr ".phl[88]" 0;
+	setAttr ".phl[89]" 0;
+	setAttr ".phl[90]" 0;
+	setAttr ".phl[91]" 0;
+	setAttr ".phl[92]" 0;
+	setAttr ".phl[93]" 0;
+	setAttr ".phl[94]" 0;
+	setAttr ".phl[95]" 0;
+	setAttr ".phl[96]" 0;
+	setAttr ".phl[97]" 0;
+	setAttr ".phl[98]" 0;
+	setAttr ".phl[99]" 0;
+	setAttr ".phl[100]" 0;
+	setAttr ".phl[101]" 0;
+	setAttr ".phl[102]" 0;
+	setAttr ".phl[103]" 0;
+	setAttr ".phl[104]" 0;
+	setAttr ".phl[105]" 0;
+	setAttr ".phl[106]" 0;
+	setAttr ".phl[107]" 0;
+	setAttr ".phl[108]" 0;
+	setAttr ".phl[109]" 0;
+	setAttr ".phl[110]" 0;
+	setAttr ".phl[111]" 0;
+	setAttr ".phl[112]" 0;
+	setAttr ".phl[113]" 0;
+	setAttr ".phl[114]" 0;
+	setAttr ".phl[115]" 0;
+	setAttr ".phl[116]" 0;
+	setAttr ".phl[117]" 0;
+	setAttr ".phl[118]" 0;
+	setAttr ".phl[119]" 0;
+	setAttr ".phl[120]" 0;
+	setAttr ".phl[121]" 0;
+	setAttr ".phl[122]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"grandma_controlrigRN"
-		"grandma_controlrigRN" 8
+		"grandma_controlrigRN" 9
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_GEO|grandma_controlrig1:necklace" 
 		"translate" " -type \"double3\" 4.39964542355721822 0.40641451301898152 -5.16907070731008034"
 		
@@ -14132,8 +15195,10 @@ createNode reference -n "grandma_controlrigRN";
 		"rotateY" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_GEO|grandma_controlrig1:necklace" 
 		"rotateZ" " -av"
-		"grandma_controlrigRN" 77
-		2 "|grandma_controlrig1:gma_ControlRig" "visibility" " 0"
+		2 "grandma_controlrig1:PxrNormalMap1" "filename" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/grandma/grandma_hairstick/grandma_hairstick_base_normal.png\""
+		
+		"grandma_controlrigRN" 216
+		2 "|grandma_controlrig1:gma_ControlRig" "visibility" " 1"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_GEO|grandma_controlrig1:eyes|grandma_controlrig1:eye_L|grandma_controlrig1:eye_LShape" 
 		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_JOINT|grandma_controlrig1:ROOT" 
@@ -14166,15 +15231,163 @@ createNode reference -n "grandma_controlrigRN";
 		"scaleY" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl" 
 		"scaleZ" " -av"
-		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl" 
-		"translate" " -type \"double3\" 0.67652188689581094 -14.61547060633593631 -13.6294382813370234"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl" 
+		"rotate" " -type \"double3\" 0.8869484736567842 0 0"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl" 
+		"rotateX" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl" 
+		"rotatePivot" " -type \"double3\" 0 11.37695024078025341 -2.15475287498213097"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl" 
+		"rotatePivotTranslate" " -type \"double3\" 0 -0.0015751315765372073 -0.0015339281772838165"
 		
-		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl" 
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl" 
+		"translate" " -type \"double3\" 0 0.21954102702681855 0"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl" 
 		"translateX" " -av"
-		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl" 
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl" 
 		"translateY" " -av"
-		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl" 
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl" 
 		"translateZ" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl" 
+		"rotate" " -type \"double3\" 3.87745905906398391 -0.6386720774316762 -3.75745765320736869"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl" 
+		"rotateX" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl" 
+		"rotateY" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl" 
+		"rotateZ" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl" 
+		"rotatePivot" " -type \"double3\" 0 21.02433268337989603 1.74158426758366125"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl" 
+		"rotatePivotTranslate" " -type \"double3\" 0.1282583348814037 1.02456732803698936 0.030512038353766924"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl" 
+		"rotate" " -type \"double3\" 0.022840861037790944 4.06806880957342365 26.77776625039909675"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl" 
+		"rotateX" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl" 
+		"rotateY" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl" 
+		"rotateZ" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl" 
+		"rotatePivot" " -type \"double3\" -8.15271310065988963 18.62985739729082724 0"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl" 
+		"rotatePivotTranslate" " -type \"double3\" -4.42712196363090804 2.97291773051308006 -0.57956395551521678"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl" 
+		"rotate" " -type \"double3\" -23.89383831887748144 23.42151370799919263 7.73539602141035854"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl" 
+		"rotateX" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl" 
+		"rotateY" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl" 
+		"rotateZ" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl" 
+		"rotatePivot" " -type \"double3\" -15.30132331842103532 11.09691329685432493 -1.19616903485417891"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl" 
+		"rotatePivotTranslate" " -type \"double3\" -1.76905897214037644 -0.35803096310730842 -2.95434154335792165"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
+		"visibility" " -av 1"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
+		"rotate" " -type \"double3\" 0.39939061402131559 6.1211643439249519 -9.49099853556097806"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
+		"rotateX" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
+		"rotateY" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
+		"rotateZ" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
+		"scaleX" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
+		"scaleY" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
+		"scaleZ" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
+		"rotatePivot" " -type \"double3\" -23.69207758414553666 1.1792435388397422 1.44556378647506634"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl" 
+		"rotate" " -type \"double3\" -0.50167472074470354 -7.64356904404024373 -20.75330081329107301"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl" 
+		"rotateX" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl" 
+		"rotateY" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl" 
+		"rotateZ" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl" 
+		"rotatePivot" " -type \"double3\" 8.26636114233234132 18.62985739729082724 0"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl" 
+		"rotatePivotTranslate" " -type \"double3\" 3.36930142445259539 2.4463441791180216 -0.86236719441287635"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
+		"visibility" " -av 1"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
+		"rotate" " -type \"double3\" -15.78167684844224183 -39.37021634012519655 0.15645400461385933"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
+		"rotateX" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
+		"rotateY" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
+		"rotateZ" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
+		"scaleX" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
+		"scaleY" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
+		"scaleZ" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
+		"rotatePivot" " -type \"double3\" 15.41497136009348701 11.09691329685432493 -1.19616903485417891"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
+		"rotatePivotTranslate" " -type \"double3\" 3.60579158831768032 -0.66210305349281795 -5.81124774343678308"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl" 
+		"rotate" " -type \"double3\" -15.07659705705791886 -15.54601020816388335 7.32613838870814593"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl" 
+		"rotateX" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl" 
+		"rotateY" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl" 
+		"rotateZ" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl" 
+		"rotatePivot" " -type \"double3\" 23.80572562581798479 1.1792435388397422 1.44556378647506634"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl" 
+		"rotatePivotTranslate" " -type \"double3\" -1.96390474830435124 1.65907524488112745 -0.047913406135490888"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl" 
+		"translate" " -type \"double3\" 0 -20.58397735353328528 0"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl" 
+		"translateY" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl" 
+		"rotate" " -type \"double3\" 5.73324883698490684 -0.5164858038375606 -3.77616655749891628"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl" 
+		"rotateX" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl" 
+		"rotateY" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl" 
+		"rotateZ" " -av"
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl" 
+		"rotatePivot" " -type \"double3\" 0.00019951189206135478 65.04334322052622497 20.44702287093714332"
+		
+		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl" 
+		"rotatePivotTranslate" " -type \"double3\" -0.97987002017220082 -1.52631341451780167 -0.45497141384828588"
+		
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ArmPole_Grp|grandma_controlrig1:ArmL_Pole" 
 		"translate" " -type \"double3\" 44.02445413386164574 0 11.63130495528124797"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl" 
@@ -14183,26 +15396,16 @@ createNode reference -n "grandma_controlrigRN";
 		"rotateY" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl|grandma_controlrig1:heelL_Grp|grandma_controlrig1:heelL_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl" 
-		"translateX" " -av"
-		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl" 
-		"translateY" " -av"
-		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl" 
-		"translateZ" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl|grandma_controlrig1:heelR_Grp|grandma_controlrig1:heelR_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl|grandma_controlrig1:heelR_Grp|grandma_controlrig1:heelR_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "grandma_controlrig1:PxrNormalMap1" "filename" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/grandma/grandma_hairstick/grandma_hairstick_base_normal.png\""
-		
-		2 "grandma_controlrig1:gma_pendant_tex_normal" "filename" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/grandma/grandma_necklace/gma_necklace_pendant_normal.png\""
+		2 "grandma_controlrig1:gma_pendant_tex_normal" "filename" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/grandma/grandma_necklace/gma_necklace_pendant_normal.png\""
 		
 		2 "grandma_controlrig1:mouth" "inputTarget[0].sculptTargetIndex" " -1"
 		2 "grandma_controlrig1:mouth" "inputTarget[0].sculptInbetweenWeight" " 1"
 		
-		3 "grandma_controlrig1:tweak20.vlist[0].vertex[0]" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_GEO|grandma_controlrig1:body|grandma_controlrig1:bodyShape.tweakLocation" 
+		3 "grandma_controlrig1:tweak19.vlist[0].vertex[0]" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_GEO|grandma_controlrig1:body|grandma_controlrig1:bodyShape.tweakLocation" 
 		""
 		5 0 "grandma_controlrigRN" "grandma_controlrig1:tweak18.vlist[0].vertex[0]" 
 		"|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_GEO|grandma_controlrig1:body|grandma_controlrig1:bodyShape.tweakLocation" 
@@ -14228,65 +15431,225 @@ createNode reference -n "grandma_controlrigRN";
 		"grandma_controlrigRN.placeHolderList[11]" ""
 		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[12]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[13]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[14]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[15]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[16]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[17]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[18]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[19]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[20]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[21]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[22]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[23]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[24]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[25]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[26]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[27]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[28]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[29]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[30]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[31]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[32]" ""
-		5 4 "grandma_controlrigRN" "grandma_controlrig1:eye.weight[0]" "grandma_controlrigRN.placeHolderList[33]" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl.rotateX" 
+		"grandma_controlrigRN.placeHolderList[33]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl.rotateY" 
+		"grandma_controlrigRN.placeHolderList[34]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl.rotateZ" 
+		"grandma_controlrigRN.placeHolderList[35]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl.visibility" 
+		"grandma_controlrigRN.placeHolderList[36]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl.translateX" 
+		"grandma_controlrigRN.placeHolderList[37]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl.translateY" 
+		"grandma_controlrigRN.placeHolderList[38]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl.translateZ" 
+		"grandma_controlrigRN.placeHolderList[39]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl.scaleX" 
+		"grandma_controlrigRN.placeHolderList[40]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl.scaleY" 
+		"grandma_controlrigRN.placeHolderList[41]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl.scaleZ" 
+		"grandma_controlrigRN.placeHolderList[42]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl.rotateX" 
+		"grandma_controlrigRN.placeHolderList[43]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl.rotateY" 
+		"grandma_controlrigRN.placeHolderList[44]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl.rotateZ" 
+		"grandma_controlrigRN.placeHolderList[45]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl.scaleX" 
+		"grandma_controlrigRN.placeHolderList[46]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl.scaleY" 
+		"grandma_controlrigRN.placeHolderList[47]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl.scaleZ" 
+		"grandma_controlrigRN.placeHolderList[48]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl.rotateX" 
+		"grandma_controlrigRN.placeHolderList[49]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl.rotateY" 
+		"grandma_controlrigRN.placeHolderList[50]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl.rotateZ" 
+		"grandma_controlrigRN.placeHolderList[51]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl.visibility" 
+		"grandma_controlrigRN.placeHolderList[52]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl.scaleX" 
+		"grandma_controlrigRN.placeHolderList[53]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl.scaleY" 
+		"grandma_controlrigRN.placeHolderList[54]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl.scaleZ" 
+		"grandma_controlrigRN.placeHolderList[55]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl.rotateX" 
+		"grandma_controlrigRN.placeHolderList[56]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl.rotateY" 
+		"grandma_controlrigRN.placeHolderList[57]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl.rotateZ" 
+		"grandma_controlrigRN.placeHolderList[58]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl.visibility" 
+		"grandma_controlrigRN.placeHolderList[59]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl.scaleX" 
+		"grandma_controlrigRN.placeHolderList[60]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl.scaleY" 
+		"grandma_controlrigRN.placeHolderList[61]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl.scaleZ" 
+		"grandma_controlrigRN.placeHolderList[62]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl.rotateX" 
+		"grandma_controlrigRN.placeHolderList[63]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl.rotateY" 
+		"grandma_controlrigRN.placeHolderList[64]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl.rotateZ" 
+		"grandma_controlrigRN.placeHolderList[65]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl.scaleX" 
+		"grandma_controlrigRN.placeHolderList[66]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl.scaleY" 
+		"grandma_controlrigRN.placeHolderList[67]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl.scaleZ" 
+		"grandma_controlrigRN.placeHolderList[68]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl.rotateX" 
+		"grandma_controlrigRN.placeHolderList[69]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl.rotateY" 
+		"grandma_controlrigRN.placeHolderList[70]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl.rotateZ" 
+		"grandma_controlrigRN.placeHolderList[71]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl.visibility" 
+		"grandma_controlrigRN.placeHolderList[72]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl.scaleX" 
+		"grandma_controlrigRN.placeHolderList[73]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl.scaleY" 
+		"grandma_controlrigRN.placeHolderList[74]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl.scaleZ" 
+		"grandma_controlrigRN.placeHolderList[75]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl.rotateX" 
+		"grandma_controlrigRN.placeHolderList[76]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl.rotateY" 
+		"grandma_controlrigRN.placeHolderList[77]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl.rotateZ" 
+		"grandma_controlrigRN.placeHolderList[78]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl.visibility" 
+		"grandma_controlrigRN.placeHolderList[79]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl.scaleX" 
+		"grandma_controlrigRN.placeHolderList[80]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl.scaleY" 
+		"grandma_controlrigRN.placeHolderList[81]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl.scaleZ" 
+		"grandma_controlrigRN.placeHolderList[82]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl.translateX" 
+		"grandma_controlrigRN.placeHolderList[83]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl.translateY" 
+		"grandma_controlrigRN.placeHolderList[84]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl.translateZ" 
+		"grandma_controlrigRN.placeHolderList[85]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl.rotateX" 
+		"grandma_controlrigRN.placeHolderList[86]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl.rotateY" 
+		"grandma_controlrigRN.placeHolderList[87]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl.rotateZ" 
+		"grandma_controlrigRN.placeHolderList[88]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl.visibility" 
+		"grandma_controlrigRN.placeHolderList[89]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl.scaleX" 
+		"grandma_controlrigRN.placeHolderList[90]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl.scaleY" 
+		"grandma_controlrigRN.placeHolderList[91]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl.scaleZ" 
+		"grandma_controlrigRN.placeHolderList[92]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.rotateX" 
+		"grandma_controlrigRN.placeHolderList[93]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.rotateY" 
+		"grandma_controlrigRN.placeHolderList[94]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.rotateZ" 
+		"grandma_controlrigRN.placeHolderList[95]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.translateX" 
+		"grandma_controlrigRN.placeHolderList[96]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.translateY" 
+		"grandma_controlrigRN.placeHolderList[97]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.translateZ" 
+		"grandma_controlrigRN.placeHolderList[98]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.visibility" 
+		"grandma_controlrigRN.placeHolderList[99]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.scaleX" 
+		"grandma_controlrigRN.placeHolderList[100]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.scaleY" 
+		"grandma_controlrigRN.placeHolderList[101]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootL_Ctrl.scaleZ" 
+		"grandma_controlrigRN.placeHolderList[102]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.translateX" 
+		"grandma_controlrigRN.placeHolderList[103]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.translateY" 
+		"grandma_controlrigRN.placeHolderList[104]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.translateZ" 
+		"grandma_controlrigRN.placeHolderList[105]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.visibility" 
+		"grandma_controlrigRN.placeHolderList[106]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.rotateX" 
+		"grandma_controlrigRN.placeHolderList[107]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.rotateY" 
+		"grandma_controlrigRN.placeHolderList[108]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.rotateZ" 
+		"grandma_controlrigRN.placeHolderList[109]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.scaleX" 
+		"grandma_controlrigRN.placeHolderList[110]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.scaleY" 
+		"grandma_controlrigRN.placeHolderList[111]" ""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:FootR_Grp|grandma_controlrig1:FootR_Ctrl.scaleZ" 
+		"grandma_controlrigRN.placeHolderList[112]" ""
+		5 4 "grandma_controlrigRN" "grandma_controlrig1:eye.weight[0]" "grandma_controlrigRN.placeHolderList[113]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig1:eye.weight[1]" "grandma_controlrigRN.placeHolderList[34]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig1:eye.weight[1]" "grandma_controlrigRN.placeHolderList[114]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig1:eye.weight[2]" "grandma_controlrigRN.placeHolderList[35]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig1:eye.weight[2]" "grandma_controlrigRN.placeHolderList[115]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig1:mouth.weight[0]" "grandma_controlrigRN.placeHolderList[36]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig1:mouth.weight[0]" "grandma_controlrigRN.placeHolderList[116]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig1:mouth.weight[1]" "grandma_controlrigRN.placeHolderList[37]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig1:mouth.weight[1]" "grandma_controlrigRN.placeHolderList[117]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig1:mouth.weight[2]" "grandma_controlrigRN.placeHolderList[38]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig1:mouth.weight[2]" "grandma_controlrigRN.placeHolderList[118]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig1:mouth.weight[3]" "grandma_controlrigRN.placeHolderList[39]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig1:mouth.weight[3]" "grandma_controlrigRN.placeHolderList[119]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig1:mouth.weight[4]" "grandma_controlrigRN.placeHolderList[40]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig1:mouth.weight[4]" "grandma_controlrigRN.placeHolderList[120]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig1:cheeks.weight[0]" "grandma_controlrigRN.placeHolderList[41]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig1:cheeks.weight[0]" "grandma_controlrigRN.placeHolderList[121]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig1:cheeks.weight[1]" "grandma_controlrigRN.placeHolderList[42]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig1:cheeks.weight[1]" "grandma_controlrigRN.placeHolderList[122]" 
 		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -14686,7 +16049,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl" 
-		"rotate" " -type \"double3\" -0.47413229423230058 18.15858152515895796 -0.082262672897375891"
+		"rotate" " -type \"double3\" -0.31683316731316502 17.53198658531666609 -0.12277927469805307"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl" 
 		"rotateX" " -av"
@@ -14721,8 +16084,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl" 
-		"rotate" " -type \"double3\" 13.48407438507034151 -10.72459970882199087 0.58446530132301988"
-		
+		"rotate" " -type \"double3\" 14.34463189932930938 -12.57090238914352476 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl" 
 		"rotateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl" 
@@ -14756,7 +16118,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl" 
-		"rotate" " -type \"double3\" -5.5589969025157 -4.96045809690545436 0"
+		"rotate" " -type \"double3\" -8.22163413238649454 -4.96045809690544992 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl" 
 		"rotateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl" 
@@ -14790,7 +16152,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl" 
-		"rotate" " -type \"double3\" -2.92916927838852148 11.73726654458625696 -2.55055856192193842"
+		"rotate" " -type \"double3\" -13.53522107680186792 8.01272439662256097 0.36112123642568122"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl" 
 		"rotateX" " -av"
@@ -14888,7 +16250,7 @@ createNode reference -n "MC_control_rigRN";
 		"scale" " -type \"double3\" 1.00000000000000111 1.00000000000000067 0.99999999999999989"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl" 
-		"translate" " -type \"double3\" 7.05506130569245826 -2.84579714678062379 -7.6071199245300134"
+		"translate" " -type \"double3\" 7.01058319263688112 -0.63607002445966188 -5.07937953676762532"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl" 
 		"translateX" " -av"
@@ -14897,7 +16259,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl" 
-		"rotate" " -type \"double3\" -157.86434239088231379 -68.32051341502929631 164.77670196426865346"
+		"rotate" " -type \"double3\" -125.86159836986537641 -76.85587996619908324 130.33128547330235847"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl" 
 		"rotateX" " -av"
@@ -14964,7 +16326,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl" 
-		"rotate" " -type \"double3\" 80.32960858156911854 -8.26429283934119674 -48.52073207827765344"
+		"rotate" " -type \"double3\" 76.67960851210938245 -10.5050558996960941 -30.80243562142203118"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl" 
 		"rotateX" " -av"
@@ -14999,7 +16361,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl" 
-		"rotate" " -type \"double3\" -32.91472068760628389 -16.21413848673061153 28.51034826308744385"
+		"rotate" " -type \"double3\" -26.00542553813430047 11.67805387060870181 104.15932027341618493"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl" 
 		"rotateX" " -av"
@@ -15034,7 +16396,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp" 
-		"rotate" " -type \"double3\" -3.9624903206373463 14.49052512574582963 25.8864822727537458"
+		"rotate" " -type \"double3\" -14.4994027522216431 17.36341637730499343 -5.16210957939587445"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp" 
 		"rotateX" " -av"
@@ -15131,7 +16493,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl" 
 		"scale" " -type \"double3\" 1 1 1"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl" 
-		"translate" " -type \"double3\" 0 0.00011153594436879785 -0.081202701587244089"
+		"translate" " -type \"double3\" 0 0.00025123361882659935 -0.025537975496927087"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl" 
 		"translateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl" 
@@ -15139,7 +16501,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl" 
-		"rotate" " -type \"double3\" 20.43666318262419068 0 0"
+		"rotate" " -type \"double3\" 13.45341521768554571 0 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl" 
 		"rotateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole" 
@@ -15173,7 +16535,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole" 
 		"scaleZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole" 
-		"translate" " -type \"double3\" -0.35151106450111513 -0.33421011726226801 0.11939551331949382"
+		"translate" " -type \"double3\" 0.036389970211709886 -0.53129722527778522 0.73967886072793476"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole" 
 		"translateX" " -av"
@@ -15209,36 +16571,36 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:armL_IKFK" 
 		"IKFKSwitch" " -k 1 1"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle" 
-		"rotate" " -type \"double3\" 9.69348581330014092 -1.38329779525686147 53.77136626395611785"
+		"rotate" " -type \"double3\" 15.73574359850835158 11.53413320310681023 21.74076720857136635"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle" 
-		"rotateY" " -av"
-		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle" 
 		"rotateX" " -av"
+		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle" 
+		"rotateY" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle" 
 		"rotateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle|MC_control_rig:RPinky_Mid" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle" 
-		"rotate" " -type \"double3\" 8.73994602674512144 11.68973189076398356 29.40822826951237801"
+		"rotate" " -type \"double3\" 7.23598758845565815 22.20367268780045222 -4.91805029302062646"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle" 
-		"rotateY" " -av"
-		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle" 
 		"rotateX" " -av"
+		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle" 
+		"rotateY" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle" 
 		"rotateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle" 
-		"rotate" " -type \"double3\" 3.27411661385590769 1.88132498571726337 28.81266021108106656"
+		"rotate" " -type \"double3\" 8.23048125879953396 10.77148939167837582 -4.63438853948824114"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle" 
-		"rotateY" " -av"
-		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle" 
 		"rotateX" " -av"
+		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle" 
+		"rotateY" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle" 
 		"rotateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle" 
-		"rotate" " -type \"double3\" -1.39507162720449029 -9.90373850997562322 33.36144370418686833"
+		"rotate" " -type \"double3\" 10.82898019483968355 -1.80695537077070534 -0.22912472063142469"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle" 
 		"rotateX" " -av"
@@ -15277,13 +16639,13 @@ createNode reference -n "MC_control_rigRN";
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:SCALE_Grp|MC_control_rig:SOCKS_Grp|MC_control_rig:MC_overalls_latest:polySurface1|MC_control_rig:MC_overalls_latest:polySurfaceShape2" 
 		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "MC_control_rig:blendShape1" "weight[0]" " 0.16216215"
+		2 "MC_control_rig:blendShape1" "weight[0]" " 0.77027029000000002"
 		2 "MC_control_rig:blendShape1" "weight[0]" " -av"
-		2 "MC_control_rig:blendShape2" "weight[0]" " 0"
+		2 "MC_control_rig:blendShape2" "weight[0]" " 0.051056191000000001"
 		2 "MC_control_rig:blendShape2" "weight[0]" " -av"
-		2 "MC_control_rig:blendShape3" "weight[0]" " 0.20945944999999999"
+		2 "MC_control_rig:blendShape3" "weight[0]" " 0"
 		2 "MC_control_rig:blendShape3" "weight[0]" " -av"
-		2 "MC_control_rig:blendShape4" "weight[0]" " 0"
+		2 "MC_control_rig:blendShape4" "weight[0]" " -0.35944327999999998"
 		2 "MC_control_rig:blendShape4" "weight[0]" " -av"
 		2 "MC_control_rig:blendShape5" "w[0:1]" " -s 2 0 0"
 		2 "MC_control_rig:blendShape5" "weight" " -s 2"
@@ -15670,9 +17032,9 @@ createNode reference -n "MC_control_rigRN";
 		"MC_control_rigRN.placeHolderList[189]" ""
 		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.scaleZ" 
 		"MC_control_rigRN.placeHolderList[190]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.rotateY" 
-		"MC_control_rigRN.placeHolderList[191]" ""
 		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.rotateX" 
+		"MC_control_rigRN.placeHolderList[191]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.rotateY" 
 		"MC_control_rigRN.placeHolderList[192]" ""
 		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.rotateZ" 
 		"MC_control_rigRN.placeHolderList[193]" ""
@@ -15690,9 +17052,9 @@ createNode reference -n "MC_control_rigRN";
 		"MC_control_rigRN.placeHolderList[199]" ""
 		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.scaleZ" 
 		"MC_control_rigRN.placeHolderList[200]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.rotateY" 
-		"MC_control_rigRN.placeHolderList[201]" ""
 		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.rotateX" 
+		"MC_control_rigRN.placeHolderList[201]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.rotateY" 
 		"MC_control_rigRN.placeHolderList[202]" ""
 		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.rotateZ" 
 		"MC_control_rigRN.placeHolderList[203]" ""
@@ -15710,9 +17072,9 @@ createNode reference -n "MC_control_rigRN";
 		"MC_control_rigRN.placeHolderList[209]" ""
 		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.scaleZ" 
 		"MC_control_rigRN.placeHolderList[210]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.rotateY" 
-		"MC_control_rigRN.placeHolderList[211]" ""
 		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.rotateX" 
+		"MC_control_rigRN.placeHolderList[211]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.rotateY" 
 		"MC_control_rigRN.placeHolderList[212]" ""
 		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.rotateZ" 
 		"MC_control_rigRN.placeHolderList[213]" ""
@@ -15770,9 +17132,9 @@ createNode reference -n "MC_control_rigRN";
 		"MC_control_rigRN.placeHolderList[239]" ""
 		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RThumb_Knuckle.scaleZ" 
 		"MC_control_rigRN.placeHolderList[240]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RThumb_Knuckle|MC_control_rig:RThumb_Mid.rotateY" 
-		"MC_control_rigRN.placeHolderList[241]" ""
 		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RThumb_Knuckle|MC_control_rig:RThumb_Mid.rotateX" 
+		"MC_control_rigRN.placeHolderList[241]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RThumb_Knuckle|MC_control_rig:RThumb_Mid.rotateY" 
 		"MC_control_rigRN.placeHolderList[242]" ""
 		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RThumb_Knuckle|MC_control_rig:RThumb_Mid.rotateZ" 
 		"MC_control_rigRN.placeHolderList[243]" ""
@@ -15934,20 +17296,20 @@ createNode reference -n "eggroll_platterRN";
 		"eggroll_platter:eggrollRN6" 0
 		"eggroll_platter:eggrollRN" 0
 		"eggroll_platter:eggrollRN4" 4
-		2 "eggroll_platter:eggroll4:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll4:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll4:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll4:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll4:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll4:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
 		"eggroll_platter:eggrollRN9" 4
-		2 "eggroll_platter:eggroll9:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll9:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll9:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll9:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll9:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll9:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
@@ -15974,110 +17336,110 @@ createNode reference -n "eggroll_platterRN";
 		5 4 "eggroll_platterRN" "|eggroll_platter:eggroll_platter.rotateZ" "eggroll_platterRN.placeHolderList[10]" 
 		""
 		"eggroll_platter:eggrollRN10" 4
-		2 "eggroll_platter:eggroll10:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll10:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll10:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll10:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll10:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll10:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
 		"eggroll_platter:eggrollRN7" 4
-		2 "eggroll_platter:eggroll7:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll7:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll7:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll7:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll7:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll7:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
 		"eggroll_platter:eggrollRN2" 4
-		2 "eggroll_platter:eggroll2:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll2:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll2:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll2:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll2:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll2:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
 		"eggroll_platter:eggrollRN1" 4
-		2 "eggroll_platter:eggroll1:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll1:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll1:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll1:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll1:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll1:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
 		"eggroll_platter:eggrollRN3" 4
-		2 "eggroll_platter:eggroll3:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll3:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll3:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll3:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll3:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll3:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
 		"eggroll_platter:eggrollRN5" 4
-		2 "eggroll_platter:eggroll5:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll5:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll5:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll5:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll5:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll5:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
 		"eggroll_platter:eggrollRN11" 4
-		2 "eggroll_platter:eggroll11:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll11:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll11:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll11:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll11:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll11:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
 		"eggroll_platter:eggrollRN13" 4
-		2 "eggroll_platter:eggroll13:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll13:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll13:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll13:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll13:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll13:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
 		"eggroll_platter:eggrollRN8" 4
-		2 "eggroll_platter:eggroll8:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll8:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll8:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll8:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll8:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll8:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
 		"eggroll_platter:eggrollRN12" 4
-		2 "eggroll_platter:eggroll12:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll12:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll12:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll12:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll12:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll12:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
 		"eggroll_platter:eggrollRN6" 4
-		2 "eggroll_platter:eggroll6:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll6:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll6:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll6:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll6:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll6:file2" "colorSpace" " -type \"string\" \"sRGB\""
 		
 		"eggroll_platter:eggrollRN" 4
-		2 "eggroll_platter:eggroll:file1" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll:file1" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		2 "eggroll_platter:eggroll:file2" "fileTextureName" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
+		2 "eggroll_platter:eggroll:file2" "fileTextureName" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/kitchenprops/eggroll/eggroll_initialShadingGroup_Diffuse.png\""
 		
 		2 "eggroll_platter:eggroll:file2" "colorSpace" " -type \"string\" \"sRGB\"";
 	setAttr ".ptag" -type "string" "";
@@ -16260,9 +17622,9 @@ createNode reference -n "fork_latestRN";
 		"fork_latestRN"
 		"fork_latestRN" 0
 		"fork_latestRN" 38
+		0 "|fork_latestRNfosterParent1|pSphere1" "|fork_latest:fork" "-s -r "
 		0 "|fork_latestRNfosterParent1|fork_parentConstraint1" "|fork_latest:fork" 
 		"-s -r "
-		0 "|fork_latestRNfosterParent1|pSphere1" "|fork_latest:fork" "-s -r "
 		1 |fork_latest:fork "blendParent1" "blendParent1" " -ci 1 -k 1 -dv 1 -smn 0 -smx 1 -at \"double\""
 		
 		2 "|fork_latest:fork" "visibility" " -av 1"
@@ -17191,7 +18553,7 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:table:table|grannyCranny_SET_latest:table:pCylinder1.visibility" 
 		"grannyCranny_SET_latestRN.placeHolderList[20]" ""
 		"grannyCranny_SET_latest:chairRN" 1
-		2 "grannyCranny_SET_latest:chair:PxrNormalMap16" "filename" " -type \"string\" \"/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//sourceimages/livingroomprops/chair/chair_support_lambert1_normal.png\""
+		2 "grannyCranny_SET_latest:chair:PxrNormalMap16" "filename" " -type \"string\" \"/Users/edwardzamora/LoveLanguage//sourceimages/livingroomprops/chair/chair_support_lambert1_normal.png\""
 		
 		"grannyCranny_SET_latest:edamame_latestRN" 14
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl" 
@@ -17207,9 +18569,9 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		"grannyCranny_SET_latestRN.placeHolderList[1]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.translateX" 
 		"grannyCranny_SET_latestRN.placeHolderList[2]" ""
-		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.translateZ" 
-		"grannyCranny_SET_latestRN.placeHolderList[3]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.translateY" 
+		"grannyCranny_SET_latestRN.placeHolderList[3]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.translateZ" 
 		"grannyCranny_SET_latestRN.placeHolderList[4]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.rotateX" 
 		"grannyCranny_SET_latestRN.placeHolderList[5]" ""
@@ -19621,6 +20983,7 @@ createNode reference -n "_meetGrandma:full_SET_latestRN";
 lockNode -l 1 ;
 createNode timeEditor -s -n "timeEditor";
 	rename -uid "52A33E5A-E443-DF40-BB54-8BAE0D9DF12F";
+	setAttr -s 2 ".cmp";
 	setAttr ".ac" 0;
 createNode reference -n "_meetGrandma:grandma_controlrigRN";
 	rename -uid "EF47CF81-6645-343A-C549-0AA69D8CC481";
@@ -24003,6 +25366,7 @@ createNode PxrSurface -n "_meetGrandma:grannyCranny_SET_latest1:edamame_latest:P
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -24021,6 +25385,7 @@ createNode PxrSurface -n "_meetGrandma:grannyCranny_SET_latest1:edamame_latest:P
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -24245,6 +25610,7 @@ createNode PxrSurface -n "_meetGrandma:grannyCranny_SET_latest2:edamame_latest:P
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -24263,6 +25629,7 @@ createNode PxrSurface -n "_meetGrandma:grannyCranny_SET_latest2:edamame_latest:P
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -24435,6 +25802,7 @@ createNode PxrSurface -n "_meetGrandma:MC_control_rig2:PxrSurface1";
 	setAttr ".reflectionGain" 0;
 	setAttr ".refractionColor" -type "float3" 1 1 1 ;
 	setAttr ".glassRoughness" 0.10000000149011612;
+	setAttr ".glassRefractionRoughness" -1;
 	setAttr ".glassAnisotropy" 0;
 	setAttr ".glassAnisotropyDirection" -type "float3" 0 0 0 ;
 	setAttr ".glassBumpNormal" -type "float3" 0 0 0 ;
@@ -24453,6 +25821,7 @@ createNode PxrSurface -n "_meetGrandma:MC_control_rig2:PxrSurface1";
 	setAttr ".glowGain" 0;
 	setAttr ".glowColor" -type "float3" 1 1 1 ;
 	setAttr ".bumpNormal" -type "float3" 0 0 0 ;
+	setAttr ".shadowBumpTerminator" no;
 	setAttr ".shadowColor" -type "float3" 0 0 0 ;
 	setAttr ".shadowMode" 0;
 	setAttr ".presence" 1;
@@ -27656,7 +29025,7 @@ createNode reference -n "soy_bean_blendshapeRN";
 		2 "|soy_bean_blendshape:edamame_latestRNfosterParent1|soy_bean_blendshape:polySurface18" 
 		"visibility" " -av 0"
 		2 "|soy_bean_blendshape:edamame_latestRNfosterParent1|soy_bean_blendshape:polySurface18" 
-		"translate" " -type \"double3\" 9.58480026680624064 -2.93752954480653727 -4.3202310952535754"
+		"translate" " -type \"double3\" 8.46697946550735026 -4.36372663160241814 -6.50706372542052236"
 		
 		2 "|soy_bean_blendshape:edamame_latestRNfosterParent1|soy_bean_blendshape:polySurface18" 
 		"translateX" " -av"
@@ -27741,12 +29110,12 @@ createNode animCurveTA -n "RThumb_Knuckle_rotateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 6 ".ktv[0:5]"  65 0 73 19.132610710603601 78 40.041884109202066
-		 103 40.041884109202066 113 32.629831084173375 128 1.7922178949319922;
+		 103 40.041884109202066 113 32.629831084173382 128 1.7922178949319922;
 createNode animCurveTA -n "RThumb_Knuckle_rotateY";
 	rename -uid "1E32E674-EA4F-4C91-F365-A98DD84854A6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  65 0 73 23.145545764131679 78 -37.221099585015644
+	setAttr -s 6 ".ktv[0:5]"  65 0 73 23.145545764131683 78 -37.221099585015644
 		 103 -37.221099585015644 113 18.176714998494184 128 36.438226453897229;
 createNode animCurveTA -n "RThumb_Knuckle_rotateZ";
 	rename -uid "2C147AA1-9F4F-3AC0-88B8-A0A0C842E5BF";
@@ -27851,7 +29220,7 @@ createNode animCurveTA -n "RIndex_Knuckle_rotateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 15 ".ktv[0:14]"  72 0 78 1.6939888172922295 109 1.6939888172922295
-		 113 2.5736449432684836 119 2.5812333021554723 133 0.048065093937938098 148 9.9783525541272322
+		 113 2.5736449432684836 119 2.5812333021554723 133 0.048065093937938105 148 9.9783525541272322
 		 162 0.045477335892286738 173 2.3887676173607093 187 4.3007873915467734 197 2.6033326371490206
 		 206 -2.4736201317811091 213 5.4105452318571707 220 3.9590688995455912 244 10.828980194839684;
 createNode animCurveTA -n "RIndex_Knuckle_rotateY";
@@ -27859,8 +29228,8 @@ createNode animCurveTA -n "RIndex_Knuckle_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 15 ".ktv[0:14]"  72 0 78 21.064656818727705 109 21.064656818727705
-		 113 9.0345525036836793 119 -10.037979457560647 133 -10.361138685457332 148 -9.7881988033068268
-		 162 -10.35768567078537 173 -10.085054694836261 187 -9.4353737421825468 197 -10.032325387178362
+		 113 9.0345525036836793 119 -10.037979457560649 133 -10.361138685457332 148 -9.7881988033068268
+		 162 -10.35768567078537 173 -10.085054694836263 187 -9.4353737421825468 197 -10.032325387178362
 		 206 -9.5983446766191225 213 -7.5816455086626426 220 -8.4275260816369517 244 -1.8069553707707053;
 createNode animCurveTA -n "RIndex_Knuckle_rotateZ";
 	rename -uid "7B506AF0-3648-AB2D-8172-969F678AE097";
@@ -27989,7 +29358,7 @@ createNode animCurveTA -n "RRing_Knuckle_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 16 ".ktv[0:15]"  72 0 78 0 92 0 109 0 113 3.9781644260324098
 		 119 3.4306221415020279 133 6.8200301752975738 148 8.7756881412260679 162 6.8207628568013909
-		 173 3.7044027468814775 187 0.85454809951667032 197 3.3990071006113096 206 10.168106113392573
+		 173 3.7044027468814775 187 0.85454809951667043 197 3.3990071006113096 206 10.168106113392573
 		 213 -0.85617374101002608 220 2.0786919355901556 244 7.2359875884556581;
 createNode animCurveTA -n "RRing_Knuckle_rotateY";
 	rename -uid "64FCD87E-854B-A9B0-58D5-B79C2245355A";
@@ -27998,7 +29367,7 @@ createNode animCurveTA -n "RRing_Knuckle_rotateY";
 	setAttr -s 16 ".ktv[0:15]"  72 19.658370018368309 78 48.017163098940443
 		 92 45.290103111727753 109 45.290103111727753 113 33.265418967210884 119 14.212871295459266
 		 133 12.95436756275442 148 14.447954514258809 162 12.948386616069818 173 14.145311604946121
-		 187 14.588283624888401 197 14.220317534591748 206 10.903377759804364 213 15.876901197418189
+		 187 14.588283624888401 197 14.220317534591748 206 10.903377759804366 213 15.876901197418189
 		 220 15.766382990478514 244 22.203672687800452;
 createNode animCurveTA -n "RRing_Knuckle_rotateZ";
 	rename -uid "CE9EB55B-524E-F22C-8A99-1A99573C799C";
@@ -28059,14 +29428,14 @@ createNode animCurveTA -n "RPinky_Knuckle_rotateX";
 	setAttr -s 16 ".ktv[0:15]"  72 0 78 12.356007966917652 92 8.9094129521526852
 		 109 8.9094129521526852 113 10.346993435389127 119 9.6538946888301886 133 9.920671899914284
 		 148 15.995922071444696 162 9.9174218109979133 173 9.6951392774612177 187 9.1146258325579073
-		 197 9.6489263571058981 206 9.6951996385383801 213 8.6623039459911801 220 9.6332552449538476
+		 197 9.6489263571058999 206 9.6951996385383801 213 8.6623039459911801 220 9.6332552449538476
 		 244 15.735743598508352;
 createNode animCurveTA -n "RPinky_Knuckle_rotateY";
 	rename -uid "B704BE16-8941-7FFF-CF00-6DAA89077590";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 16 ".ktv[0:15]"  72 17.136548755130253 78 53.005468221505602
-		 92 33.755752178698245 109 33.755752178698245 113 21.105051327755451 119 2.2980714641764908
+		 92 33.755752178698245 109 33.755752178698245 113 21.105051327755454 119 2.2980714641764908
 		 133 -0.095386719557473368 148 3.0898267626358198 162 -0.09775240771589222 173 2.1156126237816233
 		 187 3.9348703715778064 197 2.3190300491857831 206 -2.3799876854775852 213 6.2478965844692533
 		 220 4.6015201341307668 244 11.53413320310681;
@@ -28077,7 +29446,7 @@ createNode animCurveTA -n "RPinky_Knuckle_rotateZ";
 	setAttr -s 16 ".ktv[0:15]"  72 0 78 34.828726350447972 92 29.882908356993305
 		 109 29.882908356993305 113 34.331687636688756 119 30.961130243632816 133 44.770450804723261
 		 148 26.249034428044716 162 44.783982617038063 173 32.032187203097678 187 21.067470785534361
-		 197 30.837788203013236 206 59.956028986302378 213 14.597902831517484 220 24.840252547417489
+		 197 30.837788203013236 206 59.956028986302378 213 14.597902831517484 220 24.840252547417492
 		 244 21.740767208571366;
 createNode animCurveTU -n "RPinky_Knuckle_scaleX";
 	rename -uid "A4DF9EDC-7242-C2BA-2E87-F7ACE5CD0340";
@@ -28148,13 +29517,1885 @@ createNode animCurveTU -n "LIndex_Knuckle_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  244 1;
+createNode animCurveTA -n "ShoulderL_Ctrl_rotateX";
+	rename -uid "09A8FC41-A748-0A76-CCC2-5FBB567475AC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  -18 -4.0114891086803968e-16 80 -4.0114891086803968e-16
+		 100 0.14289201563688766 140 -4.0114891086803968e-16 160 -0.50167472074470354;
+createNode animCurveTA -n "ShoulderL_Ctrl_rotateY";
+	rename -uid "80CE9427-EE45-A172-2B5D-258CD2A2A251";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  -18 -7.659917129990208 80 -7.659917129990208
+		 100 -7.6585921721403478 140 -7.659917129990208 160 -7.6435690440402437;
+createNode animCurveTA -n "ShoulderL_Ctrl_rotateZ";
+	rename -uid "EC7F5481-F645-CD0E-C2B6-E6A74246107B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  -18 -24.519666884609936 80 -24.519666884609936
+		 100 -25.591743675924103 140 -24.519666884609936 160 -20.753300813291073;
+createNode animCurveTU -n "ShoulderL_Ctrl_scaleX";
+	rename -uid "AF3EA9CF-C547-6147-C068-E7984D601D2E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  -18 1 80 1 100 1 140 1 160 1;
+createNode animCurveTU -n "ShoulderL_Ctrl_scaleY";
+	rename -uid "54C9FAD7-F04F-4F63-DFF2-8C9D2FC5B2F2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  -18 1 80 1 100 1 140 1 160 1;
+createNode animCurveTU -n "ShoulderL_Ctrl_scaleZ";
+	rename -uid "67905AD7-9F45-0F5C-A3EB-769F602DA378";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  -18 1 80 1 100 1 140 1 160 1;
+createNode animCurveTA -n "ShoulderR_Ctrl_rotateX";
+	rename -uid "D340F83C-E74F-17DA-BE6E-508F024C40FA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -18 -0.19453800755681566 -5 -0.15161799671423362
+		 80 -0.15161799671423362 99 0.022840861037790944;
+createNode animCurveTA -n "ShoulderR_Ctrl_rotateY";
+	rename -uid "98B0A9F4-B447-E1C4-9010-1DA8A4F1D890";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -18 4.0634865698779841 -5 4.0653112107091056
+		 80 4.0653112107091056 99 4.0680688095734236;
+createNode animCurveTA -n "ShoulderR_Ctrl_rotateZ";
+	rename -uid "2FED5803-8D46-46B8-464C-39A5778DB4E6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -18 23.712573468026619 -5 24.318118442374711
+		 80 24.318118442374711 99 26.777766250399097;
+createNode animCurveTU -n "ShoulderR_Ctrl_scaleX";
+	rename -uid "AE1CC760-D343-BCAA-829C-2C9F6941D19E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -18 1 -5 1 80 1 99 1;
+createNode animCurveTU -n "ShoulderR_Ctrl_scaleY";
+	rename -uid "D8123294-E846-3214-4F33-A3B0F8FC9331";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -18 1 -5 1 80 1 99 1;
+createNode animCurveTU -n "ShoulderR_Ctrl_scaleZ";
+	rename -uid "21816396-6B42-2E57-CBF4-3EA2ACA7F24E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -18 1 -5 1 80 1 99 1;
+createNode animCurveTA -n "ElbowL_Ctrl_rotateX";
+	rename -uid "E2C36488-4B44-72B9-5DDF-94961E84F988";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 0.37226345650590847 -5 -14.443702305654883
+		 80 -14.443702305654883 100 -16.175119442295024 140 -14.443702305654883 160 -15.781676848442242;
+createNode animCurveTA -n "ElbowL_Ctrl_rotateY";
+	rename -uid "D22FCC07-6742-D62F-7F75-AE8B15F2BE80";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 -2.5604027315917639 -5 -37.98823143542149
+		 80 -37.98823143542149 100 -37.37453593414665 140 -37.98823143542149 160 -39.370216340125197;
+createNode animCurveTA -n "ElbowL_Ctrl_rotateZ";
+	rename -uid "D1EC5FC2-AE4A-7BAA-BB86-458E733C438C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 -3.4314567766234654 -5 2.2863332115535036
+		 80 2.2863332115535036 100 5.118423323030119 140 2.2863332115535036 160 0.15645400461385933;
+createNode animCurveTU -n "ElbowL_Ctrl_visibility";
+	rename -uid "27B5A548-C241-D380-8F74-FBA837313A6A";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 1 -5 1 80 1 100 1 140 1 160 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "ElbowL_Ctrl_scaleX";
+	rename -uid "C1E96498-A045-1185-10CD-0CADE421BFFB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 1 -5 1 80 1 100 1 140 1 160 1;
+createNode animCurveTU -n "ElbowL_Ctrl_scaleY";
+	rename -uid "B4CA6ECD-6C45-B333-C6B8-5492A76A0AD2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 1 -5 1 80 1 100 1 140 1 160 1;
+createNode animCurveTU -n "ElbowL_Ctrl_scaleZ";
+	rename -uid "64B2033D-224D-90A1-34C8-D895C820E9F2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 1 -5 1 80 1 100 1 140 1 160 1;
+createNode animCurveTA -n "ElbowR_Ctrl_rotateX";
+	rename -uid "E8E7A47B-934D-44F0-79B7-72A861EE9CA0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 0 -5 -21.542675773336939 100 -21.542675773336939
+		 120 -22.032550350226614 140 -21.523301435950401 161 -23.893838318877481;
+createNode animCurveTA -n "ElbowR_Ctrl_rotateY";
+	rename -uid "1CC2B821-C24D-E52C-D858-999D93FB3366";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 0 -5 23.317526189269852 100 23.317526189269852
+		 120 23.654542845965555 140 22.517133580769556 161 23.421513707999193;
+createNode animCurveTA -n "ElbowR_Ctrl_rotateZ";
+	rename -uid "EE932EF1-3F46-B22C-2DB5-8DB6F94C6445";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 5.201027726709329 -5 8.2664766451073248
+		 100 8.2664766451073248 120 8.1830006739523427 140 8.1955089058623685 161 7.7353960214103585;
+createNode animCurveTU -n "ElbowR_Ctrl_visibility";
+	rename -uid "AB66D9DA-7640-87C8-18B0-85B45DC818E4";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 1 -5 1 100 1 120 1 140 1 161 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "ElbowR_Ctrl_scaleX";
+	rename -uid "D4C9DA6F-874F-452B-3C30-44B9FB30D121";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 1 -5 1 100 1 120 1 140 1 161 1;
+createNode animCurveTU -n "ElbowR_Ctrl_scaleY";
+	rename -uid "2E3B31CA-AF4B-AA6B-5E06-518FE1F50DAD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 1 -5 1 100 1 120 1 140 1 161 1;
+createNode animCurveTU -n "ElbowR_Ctrl_scaleZ";
+	rename -uid "0D930B98-E240-0393-7FAF-C787DFAC260B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -18 1 -5 1 100 1 120 1 140 1 161 1;
+createNode animCurveTA -n "spine2_Ctrl_rotateX1";
+	rename -uid "9729C976-A44B-2C7C-BE1D-3BBA1B15EFF9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -13 0 -5 2.5590249515851369 0 0.76078319487693546
+		 80 0.76078319487693546 100 1.3169401847336877 160 0.8869484736567842;
+createNode animCurveTA -n "spine2_Ctrl_rotateY1";
+	rename -uid "137E92CB-1142-7588-1619-81AE7B22EEA5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -13 0 -5 0 0 0 80 0 100 0 160 0;
+createNode animCurveTA -n "spine2_Ctrl_rotateZ1";
+	rename -uid "DFCF40A3-A243-05C8-EF25-CEA03EF68D43";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -13 0 -5 0 0 0 80 0 100 0 160 0;
+createNode animCurveTU -n "spine2_Ctrl_visibility1";
+	rename -uid "5C771D1E-E040-F0C1-FA05-A4A47A7CBED3";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -13 1 -5 1 0 1 80 1 100 1 160 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "spine2_Ctrl_translateX1";
+	rename -uid "2183AC2F-2748-0196-8DB9-F2977406F4EE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -13 0 -5 0 0 0 80 0 100 0 160 0;
+createNode animCurveTL -n "spine2_Ctrl_translateY1";
+	rename -uid "D4B289E5-BA4A-B740-05DB-4DB277589557";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -13 0 -5 0 0 0 80 0 100 0 160 0;
+createNode animCurveTL -n "spine2_Ctrl_translateZ1";
+	rename -uid "BB63D9FB-214A-B83C-5F44-5FA240AD2172";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -13 0 -5 0 0 0 80 0 100 0 160 0;
+createNode animCurveTU -n "spine2_Ctrl_scaleX1";
+	rename -uid "BEC108E0-E747-FD95-A8C2-BB8762767605";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -13 1 -5 1 0 1 80 1 100 1 160 1;
+createNode animCurveTU -n "spine2_Ctrl_scaleY1";
+	rename -uid "41A0A55A-C844-E557-CF86-1F9E2058F5FE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -13 1 -5 1 0 1 80 1 100 1 160 1;
+createNode animCurveTU -n "spine2_Ctrl_scaleZ1";
+	rename -uid "48B2F362-4941-9C18-09AA-DD8851B74DF2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  -13 1 -5 1 0 1 80 1 100 1 160 1;
+createNode animCurveTA -n "neck_Ctrl_rotateX1";
+	rename -uid "7F079F23-284B-AA78-A718-75BE72F4A9F7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 10 ".ktv[0:9]"  -13 0 -5 -3.5175564395147361 0 -1.8597133885902828
+		 40 -2.8124804331148794 80 -1.8597133885902828 100 -0.69905271380787259 180 -0.69905271380787259
+		 199 11.765139253607623 205 11.765139253607623 214 3.8774590590639839;
+	setAttr -s 10 ".kit[8:9]"  1 18;
+	setAttr -s 10 ".kot[8:9]"  1 18;
+	setAttr -s 10 ".kix[8:9]"  1 1;
+	setAttr -s 10 ".kiy[8:9]"  0 0;
+	setAttr -s 10 ".kox[8:9]"  1 1;
+	setAttr -s 10 ".koy[8:9]"  0 0;
+createNode animCurveTA -n "neck_Ctrl_rotateY1";
+	rename -uid "C987F081-4946-5820-B02D-04AEA5D89456";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 10 ".ktv[0:9]"  -13 0 -5 0 0 0 40 0 80 0 100 -0.17029248248086054
+		 180 -0.17029248248086054 199 -0.14870930834599966 205 -0.14870930834599966 214 -0.6386720774316762;
+	setAttr -s 10 ".kit[8:9]"  1 18;
+	setAttr -s 10 ".kot[8:9]"  1 18;
+	setAttr -s 10 ".kix[8:9]"  1 1;
+	setAttr -s 10 ".kiy[8:9]"  0 0;
+	setAttr -s 10 ".kox[8:9]"  1 1;
+	setAttr -s 10 ".koy[8:9]"  0 0;
+createNode animCurveTA -n "neck_Ctrl_rotateZ1";
+	rename -uid "64F13221-DB4E-0520-52B5-1888A07394F4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 10 ".ktv[0:9]"  -13 0 -5 0 0 0 40 0 80 0 100 -10.461480929365425
+		 180 -10.461480929365425 199 -8.6988876276002678 205 -8.6988876276002678 214 -3.7574576532073687;
+	setAttr -s 10 ".kit[8:9]"  1 18;
+	setAttr -s 10 ".kot[8:9]"  1 18;
+	setAttr -s 10 ".kix[8:9]"  0.99500838662465463 1;
+	setAttr -s 10 ".kiy[8:9]"  0.099791335027656067 0;
+	setAttr -s 10 ".kox[8:9]"  0.99500838662465463 1;
+	setAttr -s 10 ".koy[8:9]"  0.099791335027656081 0;
+createNode animCurveTU -n "neck_Ctrl_visibility1";
+	rename -uid "A4F1BDD2-BB45-04D8-EC89-89B2FA0A41D4";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 10 ".ktv[0:9]"  -13 1 -5 1 0 1 40 1 80 1 100 1 180 1 199 1
+		 205 1 214 1;
+	setAttr -s 10 ".kit[0:9]"  9 9 9 9 9 9 9 9 
+		1 9;
+	setAttr -s 10 ".kix[8:9]"  1 1;
+	setAttr -s 10 ".kiy[8:9]"  0 0;
+createNode animCurveTL -n "neck_Ctrl_translateX1";
+	rename -uid "6BD5EE8B-3947-5517-BC48-8CB149E26DB7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 10 ".ktv[0:9]"  -13 0 -5 0 0 0 40 0 80 0 100 0 180 0 199 0
+		 205 0 214 0;
+	setAttr -s 10 ".kit[8:9]"  1 18;
+	setAttr -s 10 ".kot[8:9]"  1 18;
+	setAttr -s 10 ".kix[8:9]"  1 1;
+	setAttr -s 10 ".kiy[8:9]"  0 0;
+	setAttr -s 10 ".kox[8:9]"  1 1;
+	setAttr -s 10 ".koy[8:9]"  0 0;
+createNode animCurveTL -n "neck_Ctrl_translateY1";
+	rename -uid "A4585DBA-5543-6FE0-021F-5A8700851DC5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 10 ".ktv[0:9]"  -13 0 -5 0 0 0 40 0 80 0 100 0 180 0 199 0
+		 205 0 214 0;
+	setAttr -s 10 ".kit[8:9]"  1 18;
+	setAttr -s 10 ".kot[8:9]"  1 18;
+	setAttr -s 10 ".kix[8:9]"  1 1;
+	setAttr -s 10 ".kiy[8:9]"  0 0;
+	setAttr -s 10 ".kox[8:9]"  1 1;
+	setAttr -s 10 ".koy[8:9]"  0 0;
+createNode animCurveTL -n "neck_Ctrl_translateZ1";
+	rename -uid "5AAA54C4-0D49-4E15-6E5D-CBB5D8BEB883";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 10 ".ktv[0:9]"  -13 0 -5 0 0 0 40 0 80 0 100 0 180 0 199 0
+		 205 0 214 0;
+	setAttr -s 10 ".kit[8:9]"  1 18;
+	setAttr -s 10 ".kot[8:9]"  1 18;
+	setAttr -s 10 ".kix[8:9]"  1 1;
+	setAttr -s 10 ".kiy[8:9]"  0 0;
+	setAttr -s 10 ".kox[8:9]"  1 1;
+	setAttr -s 10 ".koy[8:9]"  0 0;
+createNode animCurveTU -n "neck_Ctrl_scaleX1";
+	rename -uid "774E940E-9744-0429-49C4-7494599ABB52";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 10 ".ktv[0:9]"  -13 1 -5 1 0 1 40 1 80 1 100 1 180 1 199 1
+		 205 1 214 1;
+	setAttr -s 10 ".kit[8:9]"  1 18;
+	setAttr -s 10 ".kot[8:9]"  1 18;
+	setAttr -s 10 ".kix[8:9]"  1 1;
+	setAttr -s 10 ".kiy[8:9]"  0 0;
+	setAttr -s 10 ".kox[8:9]"  1 1;
+	setAttr -s 10 ".koy[8:9]"  0 0;
+createNode animCurveTU -n "neck_Ctrl_scaleY1";
+	rename -uid "75F4764F-5B4A-9A8D-6D25-DEA90A84F42F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 10 ".ktv[0:9]"  -13 1 -5 1 0 1 40 1 80 1 100 1 180 1 199 1
+		 205 1 214 1;
+	setAttr -s 10 ".kit[8:9]"  1 18;
+	setAttr -s 10 ".kot[8:9]"  1 18;
+	setAttr -s 10 ".kix[8:9]"  1 1;
+	setAttr -s 10 ".kiy[8:9]"  0 0;
+	setAttr -s 10 ".kox[8:9]"  1 1;
+	setAttr -s 10 ".koy[8:9]"  0 0;
+createNode animCurveTU -n "neck_Ctrl_scaleZ1";
+	rename -uid "1911972B-0D48-1ECD-459C-0BB144D3B40A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 10 ".ktv[0:9]"  -13 1 -5 1 0 1 40 1 80 1 100 1 180 1 199 1
+		 205 1 214 1;
+	setAttr -s 10 ".kit[8:9]"  1 18;
+	setAttr -s 10 ".kot[8:9]"  1 18;
+	setAttr -s 10 ".kix[8:9]"  1 1;
+	setAttr -s 10 ".kiy[8:9]"  0 0;
+	setAttr -s 10 ".kox[8:9]"  1 1;
+	setAttr -s 10 ".koy[8:9]"  0 0;
+createNode animCurveTL -n "EyeMaster_Ctrl_translateX";
+	rename -uid "7620A1F9-7048-C85F-E33A-E691B39A407A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  -25 0 40 0 80 0 100 0 180 0 199 0 205 0
+		 214 0;
+	setAttr -s 8 ".kit[6:7]"  1 18;
+	setAttr -s 8 ".kot[6:7]"  1 18;
+	setAttr -s 8 ".kix[6:7]"  1 1;
+	setAttr -s 8 ".kiy[6:7]"  0 0;
+	setAttr -s 8 ".kox[6:7]"  1 1;
+	setAttr -s 8 ".koy[6:7]"  0 0;
+createNode animCurveTL -n "EyeMaster_Ctrl_translateY";
+	rename -uid "188EE098-BD4C-052E-5BF7-D1AC43EB2064";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  -25 -20.583977353533285 40 -20.583977353533285
+		 80 -20.583977353533285 100 -20.583977353533285 180 -20.583977353533285 199 -20.583977353533285
+		 205 -20.583977353533285 214 -20.583977353533285;
+	setAttr -s 8 ".kit[6:7]"  1 18;
+	setAttr -s 8 ".kot[6:7]"  1 18;
+	setAttr -s 8 ".kix[6:7]"  1 1;
+	setAttr -s 8 ".kiy[6:7]"  0 0;
+	setAttr -s 8 ".kox[6:7]"  1 1;
+	setAttr -s 8 ".koy[6:7]"  0 0;
+createNode animCurveTL -n "EyeMaster_Ctrl_translateZ";
+	rename -uid "FEB1C582-9346-8CC5-23A8-55AABBFA27FF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  -25 0 40 0 80 0 100 0 180 0 199 0 205 0
+		 214 0;
+	setAttr -s 8 ".kit[6:7]"  1 18;
+	setAttr -s 8 ".kot[6:7]"  1 18;
+	setAttr -s 8 ".kix[6:7]"  1 1;
+	setAttr -s 8 ".kiy[6:7]"  0 0;
+	setAttr -s 8 ".kox[6:7]"  1 1;
+	setAttr -s 8 ".koy[6:7]"  0 0;
+createNode animCurveTU -n "EyeMaster_Ctrl_visibility";
+	rename -uid "E4961B4A-FF4A-8752-C00B-B8B5F74251DA";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  -25 1 40 1 80 1 100 1 180 1 199 1 205 1
+		 214 1;
+	setAttr -s 8 ".kit[0:7]"  9 9 9 9 9 9 1 9;
+	setAttr -s 8 ".kix[6:7]"  1 1;
+	setAttr -s 8 ".kiy[6:7]"  0 0;
+createNode animCurveTA -n "EyeMaster_Ctrl_rotateX";
+	rename -uid "F8846701-614D-FC8F-685A-5B8BD537D5D6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  -25 0 40 -0.95276704452459571 80 0 100 1.129744248271549
+		 180 1.129744248271549 199 13.603457567571782 205 13.603457567571782 214 5.7332488369849068;
+	setAttr -s 8 ".kit[6:7]"  1 18;
+	setAttr -s 8 ".kot[6:7]"  1 18;
+	setAttr -s 8 ".kix[6:7]"  1 1;
+	setAttr -s 8 ".kiy[6:7]"  0 0;
+	setAttr -s 8 ".kox[6:7]"  1 1;
+	setAttr -s 8 ".koy[6:7]"  0 0;
+createNode animCurveTA -n "EyeMaster_Ctrl_rotateY";
+	rename -uid "9AA8E302-F840-52D8-A4DF-3AB1F16E53CD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  -25 0 40 0 80 0 100 0.16741337154296954
+		 180 0.16741337154296954 199 0.13258505563224426 205 0.13258505563224426 214 -0.5164858038375606;
+	setAttr -s 8 ".kit[6:7]"  1 18;
+	setAttr -s 8 ".kot[6:7]"  1 18;
+	setAttr -s 8 ".kix[6:7]"  0.99999734694806086 1;
+	setAttr -s 8 ".kiy[6:7]"  -0.0023034966550462381 0;
+	setAttr -s 8 ".kox[6:7]"  0.99999734694806075 1;
+	setAttr -s 8 ".koy[6:7]"  -0.0023034966550462381 0;
+createNode animCurveTA -n "EyeMaster_Ctrl_rotateZ";
+	rename -uid "8DBEB3FB-234C-02AD-574A-FF92F11D4102";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  -25 0 40 0 80 0 100 -10.461526881958404
+		 180 -10.461526881958404 199 -8.6991463215355846 205 -8.6991463215355846 214 -3.7761665574989163;
+	setAttr -s 8 ".kit[6:7]"  1 18;
+	setAttr -s 8 ".kot[6:7]"  1 18;
+	setAttr -s 8 ".kix[6:7]"  0.99503593337259677 1;
+	setAttr -s 8 ".kiy[6:7]"  0.099516286593327577 0;
+	setAttr -s 8 ".kox[6:7]"  0.99503593337259677 1;
+	setAttr -s 8 ".koy[6:7]"  0.099516286593327591 0;
+createNode animCurveTU -n "EyeMaster_Ctrl_scaleX";
+	rename -uid "AFA274A6-C44D-3A15-C08A-8E8728993397";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  -25 1 40 1 80 1 100 1 180 1 199 1 205 1
+		 214 1;
+	setAttr -s 8 ".kit[6:7]"  1 18;
+	setAttr -s 8 ".kot[6:7]"  1 18;
+	setAttr -s 8 ".kix[6:7]"  1 1;
+	setAttr -s 8 ".kiy[6:7]"  0 0;
+	setAttr -s 8 ".kox[6:7]"  1 1;
+	setAttr -s 8 ".koy[6:7]"  0 0;
+createNode animCurveTU -n "EyeMaster_Ctrl_scaleY";
+	rename -uid "4FEF70FE-BA44-77B7-3F5E-57A3F5AEE9D2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  -25 1 40 1 80 1 100 1 180 1 199 1 205 1
+		 214 1;
+	setAttr -s 8 ".kit[6:7]"  1 18;
+	setAttr -s 8 ".kot[6:7]"  1 18;
+	setAttr -s 8 ".kix[6:7]"  1 1;
+	setAttr -s 8 ".kiy[6:7]"  0 0;
+	setAttr -s 8 ".kox[6:7]"  1 1;
+	setAttr -s 8 ".koy[6:7]"  0 0;
+createNode animCurveTU -n "EyeMaster_Ctrl_scaleZ";
+	rename -uid "B1C15F52-6842-2FFA-20CE-338B624C6056";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  -25 1 40 1 80 1 100 1 180 1 199 1 205 1
+		 214 1;
+	setAttr -s 8 ".kit[6:7]"  1 18;
+	setAttr -s 8 ".kot[6:7]"  1 18;
+	setAttr -s 8 ".kix[6:7]"  1 1;
+	setAttr -s 8 ".kiy[6:7]"  0 0;
+	setAttr -s 8 ".kox[6:7]"  1 1;
+	setAttr -s 8 ".koy[6:7]"  0 0;
+createNode animCurveTA -n "WristL_Ctrl_rotateX";
+	rename -uid "B684CFB7-A947-E63B-31F6-CEAD3D55BB5B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  -18 0 -6 -15.076597057057919;
+createNode animCurveTA -n "WristL_Ctrl_rotateY";
+	rename -uid "3332FB09-274C-CB3B-37B5-4B91D1E80955";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  -18 0 -6 -15.546010208163883;
+createNode animCurveTA -n "WristL_Ctrl_rotateZ";
+	rename -uid "1F41976B-9848-78B0-9123-A29797339E90";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  -18 0 -6 7.3261383887081459;
+createNode animCurveTU -n "WristL_Ctrl_visibility";
+	rename -uid "03A125FD-7E41-33FF-F59B-02A69A0ECDF3";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  -18 1 -6 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "WristL_Ctrl_scaleX";
+	rename -uid "4A09FE84-104E-9F04-A355-7E917799E9A4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  -18 1 -6 1;
+createNode animCurveTU -n "WristL_Ctrl_scaleY";
+	rename -uid "19133E96-1946-8AE2-A224-5A8774273C4B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  -18 1 -6 1;
+createNode animCurveTU -n "WristL_Ctrl_scaleZ";
+	rename -uid "3FDD4EC8-2F42-A31F-583F-59AF1FFA0812";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  -18 1 -6 1;
+createNode animCurveTA -n "WristR_Ctrl_rotateX";
+	rename -uid "E59895A8-744A-4077-06E8-A1B271228AD4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -20 0 -5 0.37251960309664151 80 0.37251960309664151
+		 99 0.39939061402131559;
+createNode animCurveTA -n "WristR_Ctrl_rotateY";
+	rename -uid "C32CEE2C-BA4E-3D80-0C09-8C86FD2E0AB5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -20 0 -5 6.0765647540276424 80 6.0765647540276424
+		 99 6.1211643439249519;
+createNode animCurveTA -n "WristR_Ctrl_rotateZ";
+	rename -uid "D3548753-D84D-A33E-01F1-AC84BDD5BE25";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -20 0 -5 -2.4187433867429546 80 -2.4187433867429546
+		 99 -9.4909985355609781;
+createNode animCurveTU -n "WristR_Ctrl_visibility";
+	rename -uid "8EF338F3-F945-4CFE-28A1-358770496705";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -20 1 -5 1 80 1 99 1;
+	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+createNode animCurveTU -n "WristR_Ctrl_scaleX";
+	rename -uid "B1A4A3B8-4E4F-4471-D55B-83999E307219";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -20 1 -5 1 80 1 99 1;
+createNode animCurveTU -n "WristR_Ctrl_scaleY";
+	rename -uid "21BFE45C-2246-4B03-3FED-4CA72193FFBC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -20 1 -5 1 80 1 99 1;
+createNode animCurveTU -n "WristR_Ctrl_scaleZ";
+	rename -uid "01B6BD10-994F-3876-FCB2-F092FD1B6DE2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  -20 1 -5 1 80 1 99 1;
+createNode animCurveTL -n "spine1_Ctrl_translateX1";
+	rename -uid "FCC4E12F-D345-658E-1163-A78758314885";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  0 0 28 1.7575350896859021e-14 56 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  1;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  1;
+	setAttr -s 3 ".koy[2]"  0;
+createNode animCurveTL -n "spine1_Ctrl_translateY1";
+	rename -uid "46C55E0A-4946-C530-9F95-04A242EA0E09";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 13 ".ktv[0:12]"  0 0 28 0.22679362942553982 56 0 84 0.22679362942553982
+		 112 0 140 0.22679362942553982 168 0 196 0.22679362942553982 224 0 252 0.22679362942553982
+		 280 0 308 0.22679362942553982 336 0;
+	setAttr -s 13 ".kit[12]"  1;
+	setAttr -s 13 ".kot[12]"  1;
+	setAttr -s 13 ".kix[12]"  1;
+	setAttr -s 13 ".kiy[12]"  0;
+	setAttr -s 13 ".kox[12]"  1;
+	setAttr -s 13 ".koy[12]"  0;
+createNode animCurveTL -n "spine1_Ctrl_translateZ1";
+	rename -uid "7B18A910-094F-839C-AC8D-019CB438D7BA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  0 0 28 3.9382559713363463e-14 56 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  1;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  1;
+	setAttr -s 3 ".koy[2]"  0;
+createNode animCurveTU -n "spine1_Ctrl_visibility1";
+	rename -uid "A0BD50D5-F142-1150-6630-F8B54B8F7CA1";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  0 1 28 1 56 1;
+	setAttr -s 3 ".kit[0:2]"  9 9 1;
+	setAttr -s 3 ".kix[2]"  1;
+	setAttr -s 3 ".kiy[2]"  0;
+createNode animCurveTA -n "spine1_Ctrl_rotateX1";
+	rename -uid "006D355A-9D43-A9BA-540C-4E8BA0159025";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  0 0 28 0 56 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  1;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  1;
+	setAttr -s 3 ".koy[2]"  0;
+createNode animCurveTA -n "spine1_Ctrl_rotateY1";
+	rename -uid "DF7F6D55-1A4E-4DC8-5829-22BCDAAA5133";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  0 0 28 0 56 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  1;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  1;
+	setAttr -s 3 ".koy[2]"  0;
+createNode animCurveTA -n "spine1_Ctrl_rotateZ1";
+	rename -uid "6F870870-3148-1A0A-DBA0-AE8E4F117458";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  0 0 28 0 56 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  1;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  1;
+	setAttr -s 3 ".koy[2]"  0;
+createNode animCurveTU -n "spine1_Ctrl_scaleX1";
+	rename -uid "CBCE66C1-3D41-0767-82F2-43B15610F783";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  0 1 28 1 56 1;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  1;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  1;
+	setAttr -s 3 ".koy[2]"  0;
+createNode animCurveTU -n "spine1_Ctrl_scaleY1";
+	rename -uid "D76F7359-CC42-59CA-ED30-A580B71910D1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  0 1 28 1 56 1;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  1;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  1;
+	setAttr -s 3 ".koy[2]"  0;
+createNode animCurveTU -n "spine1_Ctrl_scaleZ1";
+	rename -uid "9FDFD1F2-A14F-F1C1-04C2-BE97346490FC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  0 1 28 1 56 1;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  1;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  1;
+	setAttr -s 3 ".koy[2]"  0;
+createNode renderLayerManager -n "may_gma_speech:renderLayerManager";
+	rename -uid "2104DB49-5142-D246-E299-AC8465423DB7";
+createNode renderLayer -n "may_gma_speech:defaultRenderLayer";
+	rename -uid "20F245D3-7543-6057-734D-45B8641F7501";
+	setAttr ".g" yes;
+createNode reference -n "may_gma_speech:speech_ribbonRN";
+	rename -uid "A09A91D1-BF48-E4E7-9F87-9C831FFB79D0";
+	setAttr -s 79 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
+	setAttr ".phl[7]" 0;
+	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
+	setAttr ".phl[11]" 0;
+	setAttr ".phl[12]" 0;
+	setAttr ".phl[13]" 0;
+	setAttr ".phl[14]" 0;
+	setAttr ".phl[15]" 0;
+	setAttr ".phl[16]" 0;
+	setAttr ".phl[17]" 0;
+	setAttr ".phl[18]" 0;
+	setAttr ".phl[19]" 0;
+	setAttr ".phl[20]" 0;
+	setAttr ".phl[21]" 0;
+	setAttr ".phl[22]" 0;
+	setAttr ".phl[23]" 0;
+	setAttr ".phl[24]" 0;
+	setAttr ".phl[25]" 0;
+	setAttr ".phl[26]" 0;
+	setAttr ".phl[27]" 0;
+	setAttr ".phl[28]" 0;
+	setAttr ".phl[29]" 0;
+	setAttr ".phl[30]" 0;
+	setAttr ".phl[31]" 0;
+	setAttr ".phl[32]" 0;
+	setAttr ".phl[33]" 0;
+	setAttr ".phl[34]" 0;
+	setAttr ".phl[35]" 0;
+	setAttr ".phl[36]" 0;
+	setAttr ".phl[37]" 0;
+	setAttr ".phl[38]" 0;
+	setAttr ".phl[39]" 0;
+	setAttr ".phl[40]" 0;
+	setAttr ".phl[41]" 0;
+	setAttr ".phl[42]" 0;
+	setAttr ".phl[43]" 0;
+	setAttr ".phl[44]" 0;
+	setAttr ".phl[45]" 0;
+	setAttr ".phl[46]" 0;
+	setAttr ".phl[47]" 0;
+	setAttr ".phl[48]" 0;
+	setAttr ".phl[49]" 0;
+	setAttr ".phl[50]" 0;
+	setAttr ".phl[51]" 0;
+	setAttr ".phl[52]" 0;
+	setAttr ".phl[53]" 0;
+	setAttr ".phl[54]" 0;
+	setAttr ".phl[55]" 0;
+	setAttr ".phl[56]" 0;
+	setAttr ".phl[57]" 0;
+	setAttr ".phl[58]" 0;
+	setAttr ".phl[59]" 0;
+	setAttr ".phl[60]" 0;
+	setAttr ".phl[61]" 0;
+	setAttr ".phl[62]" 0;
+	setAttr ".phl[63]" 0;
+	setAttr ".phl[64]" 0;
+	setAttr ".phl[65]" 0;
+	setAttr ".phl[66]" 0;
+	setAttr ".phl[67]" 0;
+	setAttr ".phl[68]" 0;
+	setAttr ".phl[69]" 0;
+	setAttr ".phl[70]" 0;
+	setAttr ".phl[71]" 0;
+	setAttr ".phl[72]" 0;
+	setAttr ".phl[73]" 0;
+	setAttr ".phl[74]" 0;
+	setAttr ".phl[75]" 0;
+	setAttr ".phl[76]" 0;
+	setAttr ".phl[77]" 0;
+	setAttr ".phl[78]" 0;
+	setAttr ".phl[79]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"may_gma_speech:speech_ribbonRN"
+		"speech_ribbonRN" 0
+		"speech_ribbonRN" 119
+		2 "|speech_ribbon:Ribbon_Grp" "visibility" " 1"
+		2 "|speech_ribbon:Ribbon_Grp" "translate" " -type \"double3\" 0 0 0"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master" "translate" " -type \"double3\" 0 0 0"
+		
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master" "rotate" " -type \"double3\" 0 0 0"
+		
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master" "rotateOrder" " 0"
+		
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master" "rotatePivot" " -type \"double3\" 0 0 6"
+		
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master" "rotatePivotTranslate" 
+		" -type \"double3\" 0 0 0"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master" "Length" " -av -k 1 1"
+		
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master" "Speed" " -k 1 1"
+		
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master" "Thickness" " -av -k 1 2.4"
+		
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master" "FrameOffset" " -k 1 130"
+		
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5" 
+		"visibility" " 1"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5" 
+		"rotatePivot" " -type \"double3\" 0 0 2.5"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6" 
+		"rotatePivot" " -type \"double3\" 0 0 -0.5"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7" 
+		"rotatePivot" " -type \"double3\" 0 0 -3.5"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4" 
+		"visibility" " 1"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4" 
+		"rotatePivot" " -type \"double3\" 0.026913497596979141 0 -5.00789165496826172"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3" 
+		"rotatePivot" " -type \"double3\" 0 0 -2"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2" 
+		"rotatePivot" " -type \"double3\" 0 0 1"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1" 
+		"rotatePivot" " -type \"double3\" 0 0 4"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:MASH1_Trails_Mesh" "scale" " -type \"double3\" 1 1 1"
+		
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:MASH1_Trails_Mesh" "rotatePivot" 
+		" -type \"double3\" 106.46335601806640625 39.03455352783203125 -165.412384033203125"
+		
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:MASH1_Trails_Mesh" "scalePivot" 
+		" -type \"double3\" 106.46335601806640625 39.03455352783203125 -165.412384033203125"
+		
+		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:pCube1" "visibility" " 0"
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master.Length" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[1]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master.Thickness" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[2]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5.translateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[3]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5.translateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[4]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5.translateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[5]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5.rotateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[6]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5.rotateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[7]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5.rotateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[8]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[9]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[10]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[11]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[12]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle5.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[13]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6.translateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[14]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6.translateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[15]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6.translateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[16]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6.rotateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[17]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6.rotateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[18]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6.rotateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[19]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[20]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[21]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[22]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[23]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle6.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[24]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7.translateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[25]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7.translateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[26]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7.translateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[27]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7.rotateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[28]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7.rotateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[29]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7.rotateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[30]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[31]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[32]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[33]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[34]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle7.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[35]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4.translateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[36]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4.translateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[37]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4.translateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[38]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4.rotateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[39]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4.rotateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[40]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4.rotateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[41]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[42]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[43]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[44]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[45]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle4.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[46]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3.translateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[47]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3.translateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[48]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3.translateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[49]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3.rotateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[50]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3.rotateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[51]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3.rotateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[52]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[53]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[54]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[55]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[56]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle3.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[57]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2.translateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[58]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2.translateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[59]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2.translateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[60]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2.rotateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[61]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2.rotateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[62]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2.rotateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[63]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[64]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[65]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[66]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[67]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle2.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[68]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1.translateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[69]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1.translateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[70]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1.translateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[71]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1.rotateX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[72]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1.rotateY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[73]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1.rotateZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[74]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[75]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[76]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[77]" ""
+		5 3 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[78]" ""
+		5 4 "may_gma_speech:speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master|speech_ribbon:nurbsCircle1.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN.placeHolderList[79]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode motionPath -n "may_gma_speech:motionPath1";
+	rename -uid "014CA5B5-0A48-BB29-C1AE-BEA3FEE6183D";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath1_uValue";
+	rename -uid "6C9E8B4C-D848-F992-F351-9B8DD76CE8F8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  131 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear1";
+	rename -uid "8674BAB5-094B-3511-5E4E-1D8138EE50E7";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear2";
+	rename -uid "BD68D6B8-494C-B626-3EB0-098A680899C8";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear3";
+	rename -uid "C800FF8B-444C-2379-24DD-4A8EEF3710B0";
+createNode motionPath -n "may_gma_speech:motionPath2";
+	rename -uid "4D6DDCD9-D648-2183-184E-EFBFC103CFAE";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath2_uValue";
+	rename -uid "3824F585-C84B-0C77-43F0-5E85ED43FA94";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  135 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear4";
+	rename -uid "ADC3F09B-494D-726F-4464-448C1FBB997C";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear5";
+	rename -uid "3B6EB759-9744-FCD2-8286-5EB5B1BFD7BC";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear6";
+	rename -uid "95D10F97-9E4C-7092-D07A-52BE05A639BB";
+createNode motionPath -n "may_gma_speech:motionPath3";
+	rename -uid "AAD9E89B-FC47-4956-0D73-41925BD8614E";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath3_uValue";
+	rename -uid "A4360CFC-C040-BA44-A668-3D8B0AA5F0AB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  140 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear7";
+	rename -uid "E8EA4C70-9C42-D6B5-775F-47A7D9EFA0D8";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear8";
+	rename -uid "B7B02C00-F949-5513-EBD5-A18251BF68F2";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear9";
+	rename -uid "70DDF365-5A4E-6979-BACE-D5BF56EC6DA4";
+createNode motionPath -n "may_gma_speech:motionPath4";
+	rename -uid "347BD828-E641-7CD3-B24D-3293BE2FF8AC";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath4_uValue";
+	rename -uid "61C2584D-5C46-9157-B6F4-2B9ABBFF5ED6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  146 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear10";
+	rename -uid "4343F7B4-E64F-38A5-2B8B-60B6B8F2DB5E";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear11";
+	rename -uid "5CF6C631-9243-D475-98CE-5C992905A10B";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear12";
+	rename -uid "5AC06E12-AA4B-F3A4-051E-9183A1ED856F";
+createNode motionPath -n "may_gma_speech:motionPath5";
+	rename -uid "70052080-2F42-9E37-6494-5086B15E7104";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath5_uValue";
+	rename -uid "33D1C066-E54B-E3F0-26C6-779A9FC2928E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  151 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear13";
+	rename -uid "0B772C69-2F47-F77E-C90F-269450D0B6C3";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear14";
+	rename -uid "CC48A6F3-274C-0980-03DB-77A8ECC9AD48";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear15";
+	rename -uid "73C0E579-F54A-9312-99B0-56BA756F1069";
+createNode timeEditorTracks -n "may_gma_speech:Composition1";
+	rename -uid "47F50133-B044-8BA3-61F0-21B433723737";
+createNode motionPath -n "may_gma_speech:motionPath6";
+	rename -uid "73292157-EA40-D028-7E28-8F8D92171610";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath6_uValue";
+	rename -uid "4DD668DF-044C-EFC3-EC8C-6582385DB9B3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  155 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear16";
+	rename -uid "07CAE6FE-7E4D-1B6B-12D6-9CB865B1E5AD";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear17";
+	rename -uid "FDE604AD-AF48-55A8-8FDE-5B84301A38D6";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear18";
+	rename -uid "6936AB58-8343-9343-AC72-8AA6911F2A69";
+createNode motionPath -n "may_gma_speech:motionPath7";
+	rename -uid "3BC90CF7-0D4A-23CD-F2AB-AEA62F60406D";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath7_uValue";
+	rename -uid "EC48B830-3F43-CBDE-BEA4-ABA97E0FC7AB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  160 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear19";
+	rename -uid "192CFFFD-8C47-DEDD-75CE-1BB30737A4E6";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear20";
+	rename -uid "9AE24BF2-E546-DB73-2605-118F89524103";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear21";
+	rename -uid "38C7F0E4-3D42-3C37-5BF0-9CB893978827";
+createNode reference -n "may_gma_speech:speech_ribbonRN1";
+	rename -uid "7FE23FC6-594C-3D3C-EFDA-54AF66B1F401";
+	setAttr -s 78 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
+	setAttr ".phl[7]" 0;
+	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
+	setAttr ".phl[11]" 0;
+	setAttr ".phl[12]" 0;
+	setAttr ".phl[13]" 0;
+	setAttr ".phl[14]" 0;
+	setAttr ".phl[15]" 0;
+	setAttr ".phl[16]" 0;
+	setAttr ".phl[17]" 0;
+	setAttr ".phl[18]" 0;
+	setAttr ".phl[19]" 0;
+	setAttr ".phl[20]" 0;
+	setAttr ".phl[21]" 0;
+	setAttr ".phl[22]" 0;
+	setAttr ".phl[23]" 0;
+	setAttr ".phl[24]" 0;
+	setAttr ".phl[25]" 0;
+	setAttr ".phl[26]" 0;
+	setAttr ".phl[27]" 0;
+	setAttr ".phl[28]" 0;
+	setAttr ".phl[29]" 0;
+	setAttr ".phl[30]" 0;
+	setAttr ".phl[31]" 0;
+	setAttr ".phl[32]" 0;
+	setAttr ".phl[33]" 0;
+	setAttr ".phl[34]" 0;
+	setAttr ".phl[35]" 0;
+	setAttr ".phl[36]" 0;
+	setAttr ".phl[37]" 0;
+	setAttr ".phl[38]" 0;
+	setAttr ".phl[39]" 0;
+	setAttr ".phl[40]" 0;
+	setAttr ".phl[41]" 0;
+	setAttr ".phl[42]" 0;
+	setAttr ".phl[43]" 0;
+	setAttr ".phl[44]" 0;
+	setAttr ".phl[45]" 0;
+	setAttr ".phl[46]" 0;
+	setAttr ".phl[47]" 0;
+	setAttr ".phl[48]" 0;
+	setAttr ".phl[49]" 0;
+	setAttr ".phl[50]" 0;
+	setAttr ".phl[51]" 0;
+	setAttr ".phl[52]" 0;
+	setAttr ".phl[53]" 0;
+	setAttr ".phl[54]" 0;
+	setAttr ".phl[55]" 0;
+	setAttr ".phl[56]" 0;
+	setAttr ".phl[57]" 0;
+	setAttr ".phl[58]" 0;
+	setAttr ".phl[59]" 0;
+	setAttr ".phl[60]" 0;
+	setAttr ".phl[61]" 0;
+	setAttr ".phl[62]" 0;
+	setAttr ".phl[63]" 0;
+	setAttr ".phl[64]" 0;
+	setAttr ".phl[65]" 0;
+	setAttr ".phl[66]" 0;
+	setAttr ".phl[67]" 0;
+	setAttr ".phl[68]" 0;
+	setAttr ".phl[69]" 0;
+	setAttr ".phl[70]" 0;
+	setAttr ".phl[71]" 0;
+	setAttr ".phl[72]" 0;
+	setAttr ".phl[73]" 0;
+	setAttr ".phl[74]" 0;
+	setAttr ".phl[75]" 0;
+	setAttr ".phl[76]" 0;
+	setAttr ".phl[77]" 0;
+	setAttr ".phl[78]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"may_gma_speech:speech_ribbonRN1"
+		"speech_ribbonRN1" 0
+		"speech_ribbonRN1" 90
+		2 "|speech_ribbon1:Ribbon_Grp" "translate" " -type \"double3\" 0 0 0"
+		2 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master" "Length" " -k 1 1"
+		
+		2 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master" "Speed" " -k 1 1"
+		
+		2 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master" "Thickness" " -av -k 1 3.4"
+		
+		2 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master" "FrameOffset" 
+		" -k 1 130"
+		2 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle5" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle6" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle7" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle4" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle3" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle2" 
+		"showManipDefault" " 7"
+		2 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle1" 
+		"showManipDefault" " 7"
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master.Thickness" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[1]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle5.translateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[2]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle5.translateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[3]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle5.translateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[4]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle5.rotateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[5]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle5.rotateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[6]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle5.rotateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[7]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle5.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[8]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle5.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[9]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle5.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[10]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle5.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[11]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle5.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[12]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle6.translateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[13]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle6.translateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[14]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle6.translateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[15]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle6.rotateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[16]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle6.rotateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[17]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle6.rotateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[18]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle6.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[19]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle6.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[20]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle6.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[21]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle6.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[22]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle6.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[23]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle7.translateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[24]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle7.translateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[25]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle7.translateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[26]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle7.rotateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[27]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle7.rotateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[28]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle7.rotateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[29]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle7.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[30]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle7.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[31]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle7.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[32]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle7.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[33]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle7.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[34]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle4.translateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[35]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle4.translateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[36]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle4.translateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[37]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle4.rotateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[38]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle4.rotateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[39]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle4.rotateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[40]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle4.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[41]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle4.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[42]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle4.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[43]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle4.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[44]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle4.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[45]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle3.translateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[46]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle3.translateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[47]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle3.translateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[48]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle3.rotateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[49]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle3.rotateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[50]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle3.rotateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[51]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle3.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[52]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle3.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[53]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle3.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[54]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle3.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[55]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle3.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[56]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle2.translateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[57]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle2.translateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[58]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle2.translateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[59]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle2.rotateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[60]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle2.rotateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[61]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle2.rotateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[62]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle2.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[63]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle2.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[64]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle2.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[65]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle2.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[66]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle2.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[67]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle1.translateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[68]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle1.translateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[69]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle1.translateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[70]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle1.rotateX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[71]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle1.rotateY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[72]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle1.rotateZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[73]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle1.rotateOrder" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[74]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle1.transMinusRotatePivotX" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[75]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle1.transMinusRotatePivotY" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[76]" ""
+		5 3 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle1.transMinusRotatePivotZ" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[77]" ""
+		5 4 "may_gma_speech:speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master|speech_ribbon1:nurbsCircle1.specifiedManipLocation" 
+		"may_gma_speech:speech_ribbonRN1.placeHolderList[78]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode motionPath -n "may_gma_speech:motionPath8";
+	rename -uid "439C0A5B-CF42-5551-BBD0-2596CBB35409";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath8_uValue";
+	rename -uid "9E41DCD1-DD4B-DE1C-738F-D5B040F75204";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  131 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear22";
+	rename -uid "F36070F7-EB40-34FF-3E5D-09AC3BCA33A3";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear23";
+	rename -uid "BCDA4876-2042-2F55-6B00-58B31925105A";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear24";
+	rename -uid "131A6E79-3F4B-BBCB-81C6-CB99DA1B5B4F";
+createNode motionPath -n "may_gma_speech:motionPath9";
+	rename -uid "A8D85B81-C044-FFF3-4818-90B364F7A1CE";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath9_uValue";
+	rename -uid "DA6560B7-2F4E-40F3-18E5-48B1A255902D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  135 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear25";
+	rename -uid "D924E3D6-9B45-D507-AC50-969F7C22BB28";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear26";
+	rename -uid "065E6F06-B548-EEAA-B4E1-67843997B3EF";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear27";
+	rename -uid "5AF40E6B-0A49-A9C5-7B3F-53AEDFBA0203";
+createNode motionPath -n "may_gma_speech:motionPath10";
+	rename -uid "B8E03859-8840-B1EB-9CC9-8C83E168A11F";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath10_uValue";
+	rename -uid "07E60A8B-1A43-45E7-CF2B-7C9098828870";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  140 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear28";
+	rename -uid "8CD37E70-5E41-3620-F425-0DAE9583C125";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear29";
+	rename -uid "403E6596-CB4D-8722-AD2F-648CB288DB7B";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear30";
+	rename -uid "E370AF5B-214F-0AE2-969D-F9B2EE8F77BC";
+createNode motionPath -n "may_gma_speech:motionPath11";
+	rename -uid "E2A523AB-C84D-66D5-6F89-08AB37A469E4";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath11_uValue";
+	rename -uid "8E3EF1D3-9144-AF3E-F72E-B8AB7790F2FC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  145 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear31";
+	rename -uid "BE8787E4-9949-E2C2-8E9B-928BBAD1036E";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear32";
+	rename -uid "047C2116-E448-ADFD-433C-A4A1461FA258";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear33";
+	rename -uid "0324B126-A44D-BC5B-F752-BB947F24DF11";
+createNode motionPath -n "may_gma_speech:motionPath12";
+	rename -uid "940C44CF-E444-D7C6-06FC-29AD6A0EB22B";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath12_uValue";
+	rename -uid "AFA07C79-554B-DA7D-CB05-1D9D1E30C2FE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  150 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear34";
+	rename -uid "1A46B4C4-0145-E9A9-7C0A-F3937511430E";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear35";
+	rename -uid "4C37686B-8447-8626-D1F2-B3B068BED77B";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear36";
+	rename -uid "58AA8BBA-894E-EC89-AF68-08ACF22FFFE5";
+createNode motionPath -n "may_gma_speech:motionPath13";
+	rename -uid "256994F2-B047-EDB6-4442-72BB2F47C001";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath13_uValue";
+	rename -uid "2404181F-194B-3AA9-10DD-2DA0F953649F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  155 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear37";
+	rename -uid "E6616D12-664C-1AE8-AAC4-14B96071A801";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear38";
+	rename -uid "F59F442F-F049-A81C-49C7-DB9FFE50100A";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear39";
+	rename -uid "79D2C6D6-714D-DAFF-2CA7-20966A6E4780";
+createNode motionPath -n "may_gma_speech:motionPath14";
+	rename -uid "300FA562-8F46-9D13-CF51-AF84ABE6DB61";
+	setAttr -s 2 ".pmt";
+	setAttr -s 2 ".pmt";
+	setAttr ".f" yes;
+	setAttr ".if" yes;
+	setAttr ".fa" 2;
+	setAttr ".ua" 0;
+	setAttr ".fm" yes;
+createNode animCurveTL -n "may_gma_speech:motionPath14_uValue";
+	rename -uid "CB73ED12-F94A-1B93-75C8-049E171E5165";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  160 0 250 1;
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear40";
+	rename -uid "79C78E1C-DA47-C53A-B811-2B959A6425AA";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear41";
+	rename -uid "C0B25D6A-CE4A-35EE-56F8-3FB8B249F444";
+createNode addDoubleLinear -n "may_gma_speech:addDoubleLinear42";
+	rename -uid "C5521EB5-DA4A-CB16-7A5E-C58DB609B8CF";
+createNode reference -n "may_gma_speech:speech_ribbonRN2";
+	rename -uid "CF83E167-DF4B-0734-D37E-2CB296358B73";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"may_gma_speech:speech_ribbonRN2"
+		"speech_ribbonRN2" 0
+		"speech_ribbonRN2" 34
+		2 "|speech_ribbon2:Ribbon_Grp" "rotate" " -type \"double3\" 0 0 0"
+		2 "|speech_ribbon2:Ribbon_Grp" "rotatePivot" " -type \"double3\" 0 0 0"
+		2 "|speech_ribbon2:Ribbon_Grp" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master" "visibility" 
+		" 1"
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master" "translate" " -type \"double3\" 93.43820909093449245 41.50471146192490579 -160.50970991938339694"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master" "rotate" " -type \"double3\" 27.95185043688766058 -167.47740062645021908 -4.82039475826437513"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master" "rotatePivot" 
+		" -type \"double3\" 0 0 6"
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master" "rotatePivotTranslate" 
+		" -type \"double3\" 16.81730903894453988 -2.50542257049095829 -28.63858796692369069"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master" "Speed" " -k 1 5"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master" "FrameOffset" 
+		" -k 1 140"
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle5" 
+		"translate" " -type \"double3\" -0.73051873210586327 0.24652726195531993 -0.12509375664874048"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle5" 
+		"rotate" " -type \"double3\" 5.46517493907063745 10.12545654198249423 -1.22335496338194938"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle5" 
+		"rotatePivot" " -type \"double3\" 0 0 2.5"
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle5" 
+		"rotatePivotTranslate" " -type \"double3\" 0.65555313096788081 -0.41166871342012845 -0.124485043238349"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle6" 
+		"translate" " -type \"double3\" -1.87022459286234799 1.20672997164027551 0.36732814453095397"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle6" 
+		"rotate" " -type \"double3\" 35.69552915057272457 26.82136551453500672 12.45247891267788276"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle6" 
+		"rotatePivot" " -type \"double3\" 0 0 -0.5"
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle6" 
+		"rotatePivotTranslate" " -type \"double3\" 0.78179891202944329 -0.88489357947992642 -0.62004479117657263"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle7" 
+		"translate" " -type \"double3\" -1.85590367418579083 1.37734687372198117 2.41382185664308846"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle7" 
+		"rotate" " -type \"double3\" 94.56243695884072054 47.69589819558403576 45.08785099180746414"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle7" 
+		"rotatePivot" " -type \"double3\" 0 0 -3.5"
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle7" 
+		"rotatePivotTranslate" " -type \"double3\" -0.66727242704632439 0.45641678613078085 0.039271697304788855"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle4" 
+		"translate" " -type \"double3\" -2.07293865235253039 1.37734687372198117 2.41382185664308757"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle4" 
+		"rotate" " -type \"double3\" 107.73240373783920631 45.05285401523529742 63.41400414729280044"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle4" 
+		"rotatePivot" " -type \"double3\" 0.026913497596979141 0 -5.00789165496826172"
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle4" 
+		"rotatePivotTranslate" " -type \"double3\" -1.63005839903627781 1.58893603033025643 1.75026566095948777"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle3" 
+		"translate" " -type \"double3\" -2.34218956646461907 1.65502095746006384 1.7055591340873153"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle3" 
+		"rotate" " -type \"double3\" 68.0678591735494507 30.11799899785403412 33.81645512805535247"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle3" 
+		"rotatePivot" " -type \"double3\" 0 0 -2"
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle3" 
+		"rotatePivotTranslate" " -type \"double3\" 0.35442707705371079 -0.43714641873585669 -0.79223710530323732"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle2" 
+		"translate" " -type \"double3\" -1.13742151781710898 0.61944496164037444 -0.31432100723518774"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle2" 
+		"rotate" " -type \"double3\" 18.10056205211835589 14.88654562747805166 4.84999024592761696"
+		
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle2" 
+		"rotatePivot" " -type \"double3\" 0 0 1"
+		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master|speech_ribbon2:nurbsCircle2" 
+		"rotatePivotTranslate" " -type \"double3\" 0.68819719520327216 -0.82071882856632095 -0.25965191005596283";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "may_gma_speech:speech_ribbonRN3";
+	rename -uid "E10029EC-2F44-9ED0-75FF-FAAA803918A9";
+	setAttr -s 3 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"may_gma_speech:speech_ribbonRN3"
+		"speech_ribbonRN3" 0
+		"speech_ribbonRN3" 37
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master" "visibility" 
+		" 1"
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master" "translate" " -type \"double3\" 93.79887002983520006 38.94198672378518467 -157.32361725932321406"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master" "rotate" " -type \"double3\" -9.33174467604919222 -201.19834967207364684 -1.12421254473812415"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master" "scale" " -type \"double3\" 1 1 0.57358266476775299"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master" "rotatePivot" 
+		" -type \"double3\" 0 0 6"
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master" "rotatePivotTranslate" 
+		" -type \"double3\" 16.86382864116107072 0.85376497487325342 -31.1384442270967412"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master" "FrameOffset" 
+		" -k 1 135"
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle5" 
+		"translate" " -type \"double3\" -0.0027610913142964433 -0.14908979257117799 -0.040820600104219826"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle5" 
+		"rotate" " -type \"double3\" -3.11808805552171764 -0.14276522196390862 0.81668363346371764"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle5" 
+		"rotatePivot" " -type \"double3\" 0 0 2.5"
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle5" 
+		"rotatePivotTranslate" " -type \"double3\" -0.012248000126627207 0.20384662530023659 -0.0056027029809673171"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle6" 
+		"translate" " -type \"double3\" -0.0027610913142964433 -0.14908979257117799 -0.040820600104219826"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle6" 
+		"rotate" " -type \"double3\" -4.16482698911539639 -0.18066685205721436 1.09153473825198288"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle6" 
+		"rotatePivot" " -type \"double3\" 0 0 -0.5"
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle6" 
+		"rotatePivotTranslate" " -type \"double3\" -0.004359799767744906 0.06809443107788668 -0.0029087717208554943"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle7" 
+		"translate" " -type \"double3\" -0.0027610913142964433 -0.14908979257117799 -0.040820600104219826"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle7" 
+		"rotate" " -type \"double3\" -4.16482698911539639 -0.18066685205721436 1.09153473825198288"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle7" 
+		"rotatePivot" " -type \"double3\" 0 0 -3.5"
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle7" 
+		"rotatePivotTranslate" " -type \"double3\" 0.0092236985779709599 -0.1495641452595399 0.0050283558248496712"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle4" 
+		"translate" " -type \"double3\" -0.0027610913142964433 -0.14908979257117799 -0.040820600104219826"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle4" 
+		"rotate" " -type \"double3\" -4.16482698911539639 -0.18066685205721436 1.09153473825198288"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle4" 
+		"rotatePivot" " -type \"double3\" 0.026913497596979141 0 -5.00789165496826172"
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle4" 
+		"rotatePivotTranslate" " -type \"double3\" 0.01604616228186935 -0.25845330343863282 0.0091026629672544251"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle3" 
+		"translate" " -type \"double3\" -0.0027610913142964433 -0.14908979257117799 -0.040820600104219826"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle3" 
+		"rotate" " -type \"double3\" -4.16482698911539639 -0.18066685205721436 1.09153473825198288"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle3" 
+		"rotatePivot" " -type \"double3\" 0 0 -2"
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle3" 
+		"rotatePivotTranslate" " -type \"double3\" 0.0024319494051130205 -0.040734857090826609 0.0010597920519971179"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle2" 
+		"translate" " -type \"double3\" -0.0027610913142964433 -0.14908979257117799 -0.040820600104219826"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle2" 
+		"rotate" " -type \"double3\" -4.16482698911539639 -0.18066685205721436 1.09153473825198288"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle2" 
+		"rotatePivot" " -type \"double3\" 0 0 1"
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master|speech_ribbon4:nurbsCircle2" 
+		"rotatePivotTranslate" " -type \"double3\" -0.011151548940602838 0.17692371924660016 -0.0068773354937083295"
+		
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:MASH1_Trails_Mesh|speech_ribbon4:MASH1_Trails_MeshShape" 
+		"uvPivot" " -type \"double2\" 0.5 0.5"
+		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:MASH1_Trails_Mesh|speech_ribbon4:MASH1_Trails_MeshShape" 
+		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
+		3 "speech_ribbon4:MASH1_Trails.outputMesh" "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:MASH1_Trails_Mesh|speech_ribbon4:MASH1_Trails_MeshShape.inMesh" 
+		""
+		5 4 "may_gma_speech:speech_ribbonRN3" "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:MASH1_Trails_Mesh|speech_ribbon4:MASH1_Trails_MeshShape.inMesh" 
+		"may_gma_speech:speech_ribbonRN3.placeHolderList[1]" ""
+		5 3 "may_gma_speech:speech_ribbonRN3" "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:MASH1_Trails_Mesh|speech_ribbon4:MASH1_Trails_MeshShape.worldMatrix" 
+		"may_gma_speech:speech_ribbonRN3.placeHolderList[2]" ""
+		5 3 "may_gma_speech:speech_ribbonRN3" "speech_ribbon4:MASH1_Trails.outputMesh" 
+		"may_gma_speech:speech_ribbonRN3.placeHolderList[3]" "may_gma_speech:speech_ribbon4:MASH1_Trails_MeshShape.i";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode transformGeometry -n "may_gma_speech:speech_ribbon6:transformGeometry2";
+	rename -uid "24328B6A-F14A-A544-6F1E-C0B0160F5C04";
+	setAttr ".txf" -type "matrix" 1.6218625772477866 0 0 0 0 0 1.6218625772477866 0
+		 0 -1.6218625772477866 0 0 0 0 6 1;
+createNode makeNurbCircle -n "may_gma_speech:speech_ribbon6:makeNurbCircle2";
+	rename -uid "5EF102C1-634D-C6B7-00E2-DC943D981615";
+	setAttr ".nr" -type "double3" 0 1 0 ;
+createNode transformGeometry -n "may_gma_speech:speech_ribbon6:transformGeometry1";
+	rename -uid "44422FAE-BE44-3B52-579B-F48D758D81F6";
+	setAttr ".txf" -type "matrix" 1 0 0 0 0 0 1 0 0 -1 0 0 0 0 4 1;
+createNode makeNurbCircle -n "may_gma_speech:speech_ribbon6:makeNurbCircle1";
+	rename -uid "21484426-9A49-6402-0A52-39A529C76146";
+	setAttr ".nr" -type "double3" 0 1 0 ;
+createNode skinCluster -n "may_gma_speech:speech_ribbon6:skinCluster1";
+	rename -uid "584AD995-8A4F-CF66-9FDB-6591732E5169";
+	setAttr -s 13 ".wl";
+	setAttr ".wl[0:12].w"
+		1 6 1
+		1 6 1
+		3 0 2.2656753322070883e-07 5 1.6350059128111676e-09 6 0.99999977179746091
+		5 0 0.99946891344917621 1 5.1890402919292646e-08 4 2.8290491089310699e-09 
+		5 5.2567634671588957e-06 6 0.00052577506790458389
+		5 0 0.99701589682069558 1 2.0526346238117057e-06 4 4.8438565722477095e-08 
+		5 0.002968734981633611 6 1.326712448123796e-05
+		1 5 1
+		5 0 2.2457964127698889e-06 1 0.99666329097468576 2 1.5779376263850278e-07 
+		4 1.4038761791266377e-05 5 0.003320266673347515
+		5 0 1.9340801927350214e-07 1 0.99523232991368149 2 2.9883421756082082e-06 
+		4 0.0047477167695547141 5 1.6771566568901257e-05
+		1 4 1
+		5 1 2.1854540109218411e-06 2 0.99677444554624273 3 1.3800822571328944e-05 
+		4 0.0032095168024172528 5 5.1374757863977928e-08
+		5 1 1.9243844236052868e-07 2 0.9952775574889684 3 0.0047055407186152613 
+		4 1.6698199486564286e-05 5 1.115448740945075e-08
+		5 1 1.3606811462421442e-09 2 3.4628630005341394e-05 3 0.9999653219657989 
+		4 4.7926778398356424e-08 5 1.1673624274132926e-10
+		1 3 1;
+	setAttr -s 7 ".pm";
+	setAttr ".pm[0]" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 -2.5 1;
+	setAttr ".pm[1]" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 1;
+	setAttr ".pm[2]" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 3.5 1;
+	setAttr ".pm[3]" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 5 1;
+	setAttr ".pm[4]" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 2 1;
+	setAttr ".pm[5]" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 -1 1;
+	setAttr ".pm[6]" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 -4 1;
+	setAttr ".gm" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+	setAttr -s 7 ".ma";
+	setAttr -s 7 ".dpf[0:6]"  8 8 8 8 8 8 8;
+	setAttr -s 7 ".lw";
+	setAttr -s 7 ".lw";
+	setAttr ".mmi" yes;
+	setAttr ".mi" 5;
+	setAttr ".ucm" yes;
+	setAttr -s 7 ".ifcl";
+	setAttr -s 7 ".ifcl";
+createNode objectSet -n "may_gma_speech:speech_ribbon6:skinCluster1Set";
+	rename -uid "43E9B8D7-8947-F9AD-2404-739B9ED7A6B8";
+	setAttr ".ihi" 0;
+	setAttr ".vo" yes;
+createNode dagPose -n "may_gma_speech:speech_ribbon6:bindPose1";
+	rename -uid "51842BFA-ED4F-A79F-8C49-4DBB369718EC";
+	setAttr -s 7 ".wm";
+	setAttr -s 7 ".xm";
+	setAttr ".xm[0]" -type "matrix" "xform" 1 1 1 0 0 0 0 0 0 2.5 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 yes;
+	setAttr ".xm[1]" -type "matrix" "xform" 1 1 1 0 0 0 0 0 0 -0.5 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 yes;
+	setAttr ".xm[2]" -type "matrix" "xform" 1 1 1 0 0 0 0 0 0 -3.5 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 yes;
+	setAttr ".xm[3]" -type "matrix" "xform" 1 1 1 0 0 0 0 0 0 -5 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 yes;
+	setAttr ".xm[4]" -type "matrix" "xform" 1 1 1 0 0 0 0 0 0 -2 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 yes;
+	setAttr ".xm[5]" -type "matrix" "xform" 1 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 yes;
+	setAttr ".xm[6]" -type "matrix" "xform" 1 1 1 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 yes;
+	setAttr -s 7 ".m";
+	setAttr -s 7 ".p";
+	setAttr ".bp" yes;
+createNode groupId -n "may_gma_speech:speech_ribbon6:skinCluster1GroupId";
+	rename -uid "EE33F912-EB47-F76D-5ECA-CFA0BF98786A";
+	setAttr ".ihi" 0;
+createNode groupParts -n "may_gma_speech:speech_ribbon6:skinCluster1GroupParts";
+	rename -uid "CD2531FD-7149-AB5F-E2AE-96858F87A56E";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "cv[*]";
+createNode tweak -n "may_gma_speech:speech_ribbon6:tweak1";
+	rename -uid "1EBAA17E-0D41-27D8-4026-E1A561ABAD74";
+createNode objectSet -n "may_gma_speech:speech_ribbon6:tweakSet1";
+	rename -uid "CD3BDE69-D74A-79C8-7F99-E480583F9894";
+	setAttr ".ihi" 0;
+	setAttr ".vo" yes;
+createNode groupId -n "may_gma_speech:speech_ribbon6:groupId3";
+	rename -uid "B664BB30-AE42-3E4A-605B-23AE03A0A710";
+	setAttr ".ihi" 0;
+createNode groupParts -n "may_gma_speech:speech_ribbon6:groupParts2";
+	rename -uid "D9BF13D0-A242-9AA8-2BB8-C68F3A43A4B9";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "cv[*]";
+createNode MASH_Trails -n "may_gma_speech:speech_ribbon6:MASH1_Trails";
+	rename -uid "5246FDFA-B04C-881D-B131-AAA1ACACD152";
+	setAttr ".trailLength" 42;
+	setAttr ".maxTrails" 54;
+	setAttr ".trailsMode" 2;
+	setAttr -s 4 ".trailTaperCurve[1:3]"  0.333 0.33000001 0.667 0.66000003
+		 1 1;
+	setAttr -s 4 ".bevelCapCurve[0:3]"  0 1 0.375 1 0.667 0.33000001 1
+		 0;
+createNode MASH_Waiter -n "may_gma_speech:speech_ribbon6:MASH1";
+	rename -uid "A09EFCEA-7540-80E8-56E6-1BAC79368338";
+	addAttr -s false -ci true -h true -sn "instancerMessage" -ln "instancerMessage" 
+		-at "message";
+	setAttr ".filename" -type "string" "0";
+createNode MASH_Curve -n "may_gma_speech:speech_ribbon6:MASH1_Curve";
+	rename -uid "F4B95CAE-D849-5C25-E2BE-4C8ACBA391E7";
+	setAttr ".savedData" -type "newParticles" ;
+	setAttr ".offsetAlongCurve" -0.5;
+	setAttr ".curveLengthAffectsSpeed" yes;
+	setAttr ".velocityNoise" 0.0736842080950737;
+	setAttr ".velocityNoiseScale" 0;
+	setAttr ".sae" yes;
+	setAttr ".scaleRamp[0]"  0 1 1;
+createNode unitToTimeConversion -n "may_gma_speech:speech_ribbon6:unitToTimeConversion2";
+	rename -uid "5883B434-4546-A444-D649-20A87F96E63A";
+	setAttr ".cf" 250;
+createNode floatMath -n "may_gma_speech:speech_ribbon6:floatMath1";
+	rename -uid "A7F78B5A-F549-DB9F-D2A5-A8B67D4972B9";
+	setAttr "._cnd" 1;
+createNode timeToUnitConversion -n "may_gma_speech:speech_ribbon6:timeToUnitConversion1";
+	rename -uid "3902896A-844D-6520-EB6B-F9B8186F3FF4";
+	setAttr ".cf" 0.004;
+createNode MASH_Distribute -n "may_gma_speech:speech_ribbon6:MASH1_Distribute";
+	rename -uid "67955884-3A42-2775-CD89-9DADBCC4A451";
+	setAttr ".savedData" -type "newParticles" ;
+	setAttr ".mapDirection" 4;
+	setAttr ".pointCount" 65;
+	setAttr -s 3 ".scaleRamp[0:2]"  0 0 1 0 0 1 1 1 1;
+	setAttr -s 3 ".rotationRamp[0:2]"  0 0 1 0 0 1 1 1 1;
+	setAttr -s 3 ".bRmp[0:2]"  0 0 1 0 0 1 1 1 1;
+	setAttr ".bRmpX[0]"  0 1 1;
+	setAttr ".bRmpY[0]"  0 1 1;
+	setAttr ".bRmpZ[0]"  0 1 1;
+	setAttr ".ampX" 0;
+createNode MASH_Repro -n "may_gma_speech:speech_ribbon6:MASH1_Repro";
+	rename -uid "BC4FA00D-1A45-806D-B28D-AB8A8D55D039";
+	addAttr -s false -ci true -h true -sn "instancerMessage" -ln "instancerMessage" 
+		-at "message";
+	setAttr ".numberOfObjects" 1;
+	setAttr ".instancedGroup[0].inMesh[0].inShGroupId[0]"  -1;
+createNode groupId -n "may_gma_speech:speech_ribbon6:groupId1";
+	rename -uid "D5C68B1F-E542-003E-D06B-14BF7EC2FD0A";
+createNode polyCube -n "may_gma_speech:speech_ribbon6:polyCube1";
+	rename -uid "89B53601-0749-DC16-B924-AB93122FCB78";
+	setAttr ".cuv" 4;
+createNode polyExtrudeFace -n "polyExtrudeFace1";
+	rename -uid "4CA397D6-0D4B-6B20-A84E-78A34720DAC7";
+	setAttr ".ics" -type "componentList" 1 "f[0:63]";
+	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" 108.72989 38.681576 -177.51598 ;
+	setAttr ".rs" 1109756;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" 108.38601684570312 38.410186767578125 -178.40193176269531 ;
+	setAttr ".cbx" -type "double3" 109.07376861572266 38.952964782714844 -176.63002014160156 ;
+createNode animCurveTU -n "Ribbon_Master_Thickness";
+	rename -uid "E4C5A88F-2549-69D8-068C-FBA7963AEFF0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  160 2.4;
+createNode animCurveTU -n "Ribbon_Master_Length";
+	rename -uid "39179E81-624E-AAA1-61AA-DAA579851EA8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  130 0 160 1;
+createNode animCurveTU -n "Ribbon_Master_Thickness1";
+	rename -uid "BBA9FA09-9541-C20D-34FE-C082187645FF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  130 0 160 3.4;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 203;
-	setAttr -av ".unw" 203;
+	setAttr -k on ".o" 249;
+	setAttr -av ".unw" 249;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -28168,7 +31409,7 @@ select -ne :renderPartition;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 799 ".st";
+	setAttr -s 801 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -28181,7 +31422,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 715 ".s";
+	setAttr -s 718 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -28193,9 +31434,9 @@ select -ne :defaultRenderUtilityList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 1833 ".u";
+	setAttr -s 1841 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 296 ".r";
+	setAttr -s 305 ".r";
 select -ne :lightList1;
 	setAttr -s 25 ".l";
 select -ne :defaultTextureList1;
@@ -28203,13 +31444,13 @@ select -ne :defaultTextureList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 994 ".tx";
+	setAttr -s 1022 ".tx";
 select -ne :initialShadingGroup;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 144 ".dsm";
+	setAttr -s 157 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -28218,7 +31459,7 @@ select -ne :initialShadingGroup;
 	setAttr -cb on ".fo";
 	setAttr -cb on ".epo";
 	setAttr -k on ".ro" yes;
-	setAttr -s 99 ".gn";
+	setAttr -s 104 ".gn";
 select -ne :initialParticleSE;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -28400,7 +31641,7 @@ select -ne :ikSystem;
 	setAttr -k on ".bnm";
 	setAttr -av -k on ".gsn";
 	setAttr -k on ".gsv";
-	setAttr -s 5 ".sol";
+	setAttr -s 2 ".sol";
 connectAttr "grandma_controlrigRN.phl[1]" "grandma_controlrigRN.phl[2]";
 connectAttr "ROOT_Ctrl_translateX1.o" "grandma_controlrigRN.phl[3]";
 connectAttr "ROOT_Ctrl_translateY1.o" "grandma_controlrigRN.phl[4]";
@@ -28412,36 +31653,116 @@ connectAttr "ROOT_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[9]";
 connectAttr "ROOT_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[10]";
 connectAttr "ROOT_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[11]";
 connectAttr "ROOT_Ctrl_visibility1.o" "grandma_controlrigRN.phl[12]";
-connectAttr "FootL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[13]";
-connectAttr "FootL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[14]";
-connectAttr "FootL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[15]";
-connectAttr "FootL_Ctrl_translateX.o" "grandma_controlrigRN.phl[16]";
-connectAttr "FootL_Ctrl_translateY.o" "grandma_controlrigRN.phl[17]";
-connectAttr "FootL_Ctrl_translateZ.o" "grandma_controlrigRN.phl[18]";
-connectAttr "FootL_Ctrl_visibility.o" "grandma_controlrigRN.phl[19]";
-connectAttr "FootL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[20]";
-connectAttr "FootL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[21]";
-connectAttr "FootL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[22]";
-connectAttr "FootR_Ctrl_translateX.o" "grandma_controlrigRN.phl[23]";
-connectAttr "FootR_Ctrl_translateY.o" "grandma_controlrigRN.phl[24]";
-connectAttr "FootR_Ctrl_translateZ.o" "grandma_controlrigRN.phl[25]";
-connectAttr "FootR_Ctrl_visibility.o" "grandma_controlrigRN.phl[26]";
-connectAttr "FootR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[27]";
-connectAttr "FootR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[28]";
-connectAttr "FootR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[29]";
-connectAttr "FootR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[30]";
-connectAttr "FootR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[31]";
-connectAttr "FootR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[32]";
-connectAttr "eye_blinkRight.o" "grandma_controlrigRN.phl[33]";
-connectAttr "eye_blinkLeft.o" "grandma_controlrigRN.phl[34]";
-connectAttr "eye_blinkBoth.o" "grandma_controlrigRN.phl[35]";
-connectAttr "mouth_closed.o" "grandma_controlrigRN.phl[36]";
-connectAttr "mouth_smileRight.o" "grandma_controlrigRN.phl[37]";
-connectAttr "mouth_smileLeft.o" "grandma_controlrigRN.phl[38]";
-connectAttr "mouth_O.o" "grandma_controlrigRN.phl[39]";
-connectAttr "mouth_O_closed.o" "grandma_controlrigRN.phl[40]";
-connectAttr "cheeks_laughlineRight.o" "grandma_controlrigRN.phl[41]";
-connectAttr "cheeks_laughlineRight_Copy.o" "grandma_controlrigRN.phl[42]";
+connectAttr "spine2_Ctrl_translateX1.o" "grandma_controlrigRN.phl[13]";
+connectAttr "spine2_Ctrl_translateY1.o" "grandma_controlrigRN.phl[14]";
+connectAttr "spine2_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[15]";
+connectAttr "spine2_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[16]";
+connectAttr "spine2_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[17]";
+connectAttr "spine2_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[18]";
+connectAttr "spine2_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[19]";
+connectAttr "spine2_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[20]";
+connectAttr "spine2_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[21]";
+connectAttr "spine2_Ctrl_visibility1.o" "grandma_controlrigRN.phl[22]";
+connectAttr "spine1_Ctrl_translateX1.o" "grandma_controlrigRN.phl[23]";
+connectAttr "spine1_Ctrl_translateY1.o" "grandma_controlrigRN.phl[24]";
+connectAttr "spine1_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[25]";
+connectAttr "spine1_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[26]";
+connectAttr "spine1_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[27]";
+connectAttr "spine1_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[28]";
+connectAttr "spine1_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[29]";
+connectAttr "spine1_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[30]";
+connectAttr "spine1_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[31]";
+connectAttr "spine1_Ctrl_visibility1.o" "grandma_controlrigRN.phl[32]";
+connectAttr "neck_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[33]";
+connectAttr "neck_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[34]";
+connectAttr "neck_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[35]";
+connectAttr "neck_Ctrl_visibility1.o" "grandma_controlrigRN.phl[36]";
+connectAttr "neck_Ctrl_translateX1.o" "grandma_controlrigRN.phl[37]";
+connectAttr "neck_Ctrl_translateY1.o" "grandma_controlrigRN.phl[38]";
+connectAttr "neck_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[39]";
+connectAttr "neck_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[40]";
+connectAttr "neck_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[41]";
+connectAttr "neck_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[42]";
+connectAttr "ShoulderR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[43]";
+connectAttr "ShoulderR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[44]";
+connectAttr "ShoulderR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[45]";
+connectAttr "ShoulderR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[46]";
+connectAttr "ShoulderR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[47]";
+connectAttr "ShoulderR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[48]";
+connectAttr "ElbowR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[49]";
+connectAttr "ElbowR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[50]";
+connectAttr "ElbowR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[51]";
+connectAttr "ElbowR_Ctrl_visibility.o" "grandma_controlrigRN.phl[52]";
+connectAttr "ElbowR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[53]";
+connectAttr "ElbowR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[54]";
+connectAttr "ElbowR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[55]";
+connectAttr "WristR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[56]";
+connectAttr "WristR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[57]";
+connectAttr "WristR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[58]";
+connectAttr "WristR_Ctrl_visibility.o" "grandma_controlrigRN.phl[59]";
+connectAttr "WristR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[60]";
+connectAttr "WristR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[61]";
+connectAttr "WristR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[62]";
+connectAttr "ShoulderL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[63]";
+connectAttr "ShoulderL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[64]";
+connectAttr "ShoulderL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[65]";
+connectAttr "ShoulderL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[66]";
+connectAttr "ShoulderL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[67]";
+connectAttr "ShoulderL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[68]";
+connectAttr "ElbowL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[69]";
+connectAttr "ElbowL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[70]";
+connectAttr "ElbowL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[71]";
+connectAttr "ElbowL_Ctrl_visibility.o" "grandma_controlrigRN.phl[72]";
+connectAttr "ElbowL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[73]";
+connectAttr "ElbowL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[74]";
+connectAttr "ElbowL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[75]";
+connectAttr "WristL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[76]";
+connectAttr "WristL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[77]";
+connectAttr "WristL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[78]";
+connectAttr "WristL_Ctrl_visibility.o" "grandma_controlrigRN.phl[79]";
+connectAttr "WristL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[80]";
+connectAttr "WristL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[81]";
+connectAttr "WristL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[82]";
+connectAttr "EyeMaster_Ctrl_translateX.o" "grandma_controlrigRN.phl[83]";
+connectAttr "EyeMaster_Ctrl_translateY.o" "grandma_controlrigRN.phl[84]";
+connectAttr "EyeMaster_Ctrl_translateZ.o" "grandma_controlrigRN.phl[85]";
+connectAttr "EyeMaster_Ctrl_rotateX.o" "grandma_controlrigRN.phl[86]";
+connectAttr "EyeMaster_Ctrl_rotateY.o" "grandma_controlrigRN.phl[87]";
+connectAttr "EyeMaster_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[88]";
+connectAttr "EyeMaster_Ctrl_visibility.o" "grandma_controlrigRN.phl[89]";
+connectAttr "EyeMaster_Ctrl_scaleX.o" "grandma_controlrigRN.phl[90]";
+connectAttr "EyeMaster_Ctrl_scaleY.o" "grandma_controlrigRN.phl[91]";
+connectAttr "EyeMaster_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[92]";
+connectAttr "FootL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[93]";
+connectAttr "FootL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[94]";
+connectAttr "FootL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[95]";
+connectAttr "FootL_Ctrl_translateX.o" "grandma_controlrigRN.phl[96]";
+connectAttr "FootL_Ctrl_translateY.o" "grandma_controlrigRN.phl[97]";
+connectAttr "FootL_Ctrl_translateZ.o" "grandma_controlrigRN.phl[98]";
+connectAttr "FootL_Ctrl_visibility.o" "grandma_controlrigRN.phl[99]";
+connectAttr "FootL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[100]";
+connectAttr "FootL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[101]";
+connectAttr "FootL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[102]";
+connectAttr "FootR_Ctrl_translateX.o" "grandma_controlrigRN.phl[103]";
+connectAttr "FootR_Ctrl_translateY.o" "grandma_controlrigRN.phl[104]";
+connectAttr "FootR_Ctrl_translateZ.o" "grandma_controlrigRN.phl[105]";
+connectAttr "FootR_Ctrl_visibility.o" "grandma_controlrigRN.phl[106]";
+connectAttr "FootR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[107]";
+connectAttr "FootR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[108]";
+connectAttr "FootR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[109]";
+connectAttr "FootR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[110]";
+connectAttr "FootR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[111]";
+connectAttr "FootR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[112]";
+connectAttr "eye_blinkRight.o" "grandma_controlrigRN.phl[113]";
+connectAttr "eye_blinkLeft.o" "grandma_controlrigRN.phl[114]";
+connectAttr "eye_blinkBoth.o" "grandma_controlrigRN.phl[115]";
+connectAttr "mouth_closed.o" "grandma_controlrigRN.phl[116]";
+connectAttr "mouth_smileRight.o" "grandma_controlrigRN.phl[117]";
+connectAttr "mouth_smileLeft.o" "grandma_controlrigRN.phl[118]";
+connectAttr "mouth_O.o" "grandma_controlrigRN.phl[119]";
+connectAttr "mouth_O_closed.o" "grandma_controlrigRN.phl[120]";
+connectAttr "cheeks_laughlineRight.o" "grandma_controlrigRN.phl[121]";
+connectAttr "cheeks_laughlineRight_Copy.o" "grandma_controlrigRN.phl[122]";
 connectAttr "May_ControlRig_visibility.o" "MC_control_rigRN.phl[1]";
 connectAttr "May_ControlRig_translateX.o" "MC_control_rigRN.phl[2]";
 connectAttr "May_ControlRig_translateY.o" "MC_control_rigRN.phl[3]";
@@ -28639,8 +31960,8 @@ connectAttr "ArmR_Pole_rotateZ.o" "MC_control_rigRN.phl[187]";
 connectAttr "ArmR_Pole_scaleX.o" "MC_control_rigRN.phl[188]";
 connectAttr "ArmR_Pole_scaleY.o" "MC_control_rigRN.phl[189]";
 connectAttr "ArmR_Pole_scaleZ.o" "MC_control_rigRN.phl[190]";
-connectAttr "RPinky_Knuckle_rotateY.o" "MC_control_rigRN.phl[191]";
-connectAttr "RPinky_Knuckle_rotateX.o" "MC_control_rigRN.phl[192]";
+connectAttr "RPinky_Knuckle_rotateX.o" "MC_control_rigRN.phl[191]";
+connectAttr "RPinky_Knuckle_rotateY.o" "MC_control_rigRN.phl[192]";
 connectAttr "RPinky_Knuckle_rotateZ.o" "MC_control_rigRN.phl[193]";
 connectAttr "RPinky_Knuckle_visibility.o" "MC_control_rigRN.phl[194]";
 connectAttr "RPinky_Knuckle_translateX.o" "MC_control_rigRN.phl[195]";
@@ -28649,8 +31970,8 @@ connectAttr "RPinky_Knuckle_translateZ.o" "MC_control_rigRN.phl[197]";
 connectAttr "RPinky_Knuckle_scaleX.o" "MC_control_rigRN.phl[198]";
 connectAttr "RPinky_Knuckle_scaleY.o" "MC_control_rigRN.phl[199]";
 connectAttr "RPinky_Knuckle_scaleZ.o" "MC_control_rigRN.phl[200]";
-connectAttr "RRing_Knuckle_rotateY.o" "MC_control_rigRN.phl[201]";
-connectAttr "RRing_Knuckle_rotateX.o" "MC_control_rigRN.phl[202]";
+connectAttr "RRing_Knuckle_rotateX.o" "MC_control_rigRN.phl[201]";
+connectAttr "RRing_Knuckle_rotateY.o" "MC_control_rigRN.phl[202]";
 connectAttr "RRing_Knuckle_rotateZ.o" "MC_control_rigRN.phl[203]";
 connectAttr "RRing_Knuckle_visibility.o" "MC_control_rigRN.phl[204]";
 connectAttr "RRing_Knuckle_translateX.o" "MC_control_rigRN.phl[205]";
@@ -28659,8 +31980,8 @@ connectAttr "RRing_Knuckle_translateZ.o" "MC_control_rigRN.phl[207]";
 connectAttr "RRing_Knuckle_scaleX.o" "MC_control_rigRN.phl[208]";
 connectAttr "RRing_Knuckle_scaleY.o" "MC_control_rigRN.phl[209]";
 connectAttr "RRing_Knuckle_scaleZ.o" "MC_control_rigRN.phl[210]";
-connectAttr "RMiddle_Knuckle_rotateY.o" "MC_control_rigRN.phl[211]";
-connectAttr "RMiddle_Knuckle_rotateX.o" "MC_control_rigRN.phl[212]";
+connectAttr "RMiddle_Knuckle_rotateX.o" "MC_control_rigRN.phl[211]";
+connectAttr "RMiddle_Knuckle_rotateY.o" "MC_control_rigRN.phl[212]";
 connectAttr "RMiddle_Knuckle_rotateZ.o" "MC_control_rigRN.phl[213]";
 connectAttr "RMiddle_Knuckle_visibility.o" "MC_control_rigRN.phl[214]";
 connectAttr "RMiddle_Knuckle_translateX.o" "MC_control_rigRN.phl[215]";
@@ -28689,8 +32010,8 @@ connectAttr "RThumb_Knuckle_visibility.o" "MC_control_rigRN.phl[237]";
 connectAttr "RThumb_Knuckle_scaleX.o" "MC_control_rigRN.phl[238]";
 connectAttr "RThumb_Knuckle_scaleY.o" "MC_control_rigRN.phl[239]";
 connectAttr "RThumb_Knuckle_scaleZ.o" "MC_control_rigRN.phl[240]";
-connectAttr "RThumb_Mid_rotateY.o" "MC_control_rigRN.phl[241]";
-connectAttr "RThumb_Mid_rotateX.o" "MC_control_rigRN.phl[242]";
+connectAttr "RThumb_Mid_rotateX.o" "MC_control_rigRN.phl[241]";
+connectAttr "RThumb_Mid_rotateY.o" "MC_control_rigRN.phl[242]";
 connectAttr "RThumb_Mid_rotateZ.o" "MC_control_rigRN.phl[243]";
 connectAttr "RThumb_Mid_visibility.o" "MC_control_rigRN.phl[244]";
 connectAttr "RThumb_Mid_translateX.o" "MC_control_rigRN.phl[245]";
@@ -28822,8 +32143,8 @@ connectAttr "pCylinder1_scaleZ.o" "grannyCranny_SET_latestRN.phl[19]";
 connectAttr "pCylinder1_visibility.o" "grannyCranny_SET_latestRN.phl[20]";
 connectAttr "bean_bowl_visibility1.o" "grannyCranny_SET_latestRN.phl[1]";
 connectAttr "bean_bowl_translateX1.o" "grannyCranny_SET_latestRN.phl[2]";
-connectAttr "bean_bowl_translateZ1.o" "grannyCranny_SET_latestRN.phl[3]";
-connectAttr "bean_bowl_translateY1.o" "grannyCranny_SET_latestRN.phl[4]";
+connectAttr "bean_bowl_translateY1.o" "grannyCranny_SET_latestRN.phl[3]";
+connectAttr "bean_bowl_translateZ1.o" "grannyCranny_SET_latestRN.phl[4]";
 connectAttr "bean_bowl_rotateX1.o" "grannyCranny_SET_latestRN.phl[5]";
 connectAttr "bean_bowl_rotateY1.o" "grannyCranny_SET_latestRN.phl[6]";
 connectAttr "bean_bowl_rotateZ1.o" "grannyCranny_SET_latestRN.phl[7]";
@@ -28900,6 +32221,321 @@ connectAttr "soy_bean_blendshapeRN.phl[11]" "polySurface18_parentConstraint1.crt
 		;
 connectAttr "transformGeometry1.og" "soy_bean_blendshapeRN.phl[12]";
 connectAttr "soy_bean_blendshapeRN.phl[13]" "transformGeometry1.ig";
+connectAttr "Ribbon_Master_Length.o" "may_gma_speech:speech_ribbonRN.phl[1]";
+connectAttr "Ribbon_Master_Thickness.o" "may_gma_speech:speech_ribbonRN.phl[2]";
+connectAttr "may_gma_speech:addDoubleLinear16.o" "may_gma_speech:speech_ribbonRN.phl[3]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear17.o" "may_gma_speech:speech_ribbonRN.phl[4]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear18.o" "may_gma_speech:speech_ribbonRN.phl[5]"
+		;
+connectAttr "may_gma_speech:motionPath6.rx" "may_gma_speech:speech_ribbonRN.phl[6]"
+		;
+connectAttr "may_gma_speech:motionPath6.ry" "may_gma_speech:speech_ribbonRN.phl[7]"
+		;
+connectAttr "may_gma_speech:motionPath6.rz" "may_gma_speech:speech_ribbonRN.phl[8]"
+		;
+connectAttr "may_gma_speech:motionPath6.ro" "may_gma_speech:speech_ribbonRN.phl[9]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[10]" "may_gma_speech:addDoubleLinear16.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[11]" "may_gma_speech:addDoubleLinear17.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[12]" "may_gma_speech:addDoubleLinear18.i1"
+		;
+connectAttr "may_gma_speech:motionPath6.msg" "may_gma_speech:speech_ribbonRN.phl[13]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear10.o" "may_gma_speech:speech_ribbonRN.phl[14]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear11.o" "may_gma_speech:speech_ribbonRN.phl[15]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear12.o" "may_gma_speech:speech_ribbonRN.phl[16]"
+		;
+connectAttr "may_gma_speech:motionPath4.rx" "may_gma_speech:speech_ribbonRN.phl[17]"
+		;
+connectAttr "may_gma_speech:motionPath4.ry" "may_gma_speech:speech_ribbonRN.phl[18]"
+		;
+connectAttr "may_gma_speech:motionPath4.rz" "may_gma_speech:speech_ribbonRN.phl[19]"
+		;
+connectAttr "may_gma_speech:motionPath4.ro" "may_gma_speech:speech_ribbonRN.phl[20]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[21]" "may_gma_speech:addDoubleLinear10.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[22]" "may_gma_speech:addDoubleLinear11.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[23]" "may_gma_speech:addDoubleLinear12.i1"
+		;
+connectAttr "may_gma_speech:motionPath4.msg" "may_gma_speech:speech_ribbonRN.phl[24]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear4.o" "may_gma_speech:speech_ribbonRN.phl[25]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear5.o" "may_gma_speech:speech_ribbonRN.phl[26]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear6.o" "may_gma_speech:speech_ribbonRN.phl[27]"
+		;
+connectAttr "may_gma_speech:motionPath2.rx" "may_gma_speech:speech_ribbonRN.phl[28]"
+		;
+connectAttr "may_gma_speech:motionPath2.ry" "may_gma_speech:speech_ribbonRN.phl[29]"
+		;
+connectAttr "may_gma_speech:motionPath2.rz" "may_gma_speech:speech_ribbonRN.phl[30]"
+		;
+connectAttr "may_gma_speech:motionPath2.ro" "may_gma_speech:speech_ribbonRN.phl[31]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[32]" "may_gma_speech:addDoubleLinear4.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[33]" "may_gma_speech:addDoubleLinear5.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[34]" "may_gma_speech:addDoubleLinear6.i1"
+		;
+connectAttr "may_gma_speech:motionPath2.msg" "may_gma_speech:speech_ribbonRN.phl[35]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear1.o" "may_gma_speech:speech_ribbonRN.phl[36]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear2.o" "may_gma_speech:speech_ribbonRN.phl[37]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear3.o" "may_gma_speech:speech_ribbonRN.phl[38]"
+		;
+connectAttr "may_gma_speech:motionPath1.rx" "may_gma_speech:speech_ribbonRN.phl[39]"
+		;
+connectAttr "may_gma_speech:motionPath1.ry" "may_gma_speech:speech_ribbonRN.phl[40]"
+		;
+connectAttr "may_gma_speech:motionPath1.rz" "may_gma_speech:speech_ribbonRN.phl[41]"
+		;
+connectAttr "may_gma_speech:motionPath1.ro" "may_gma_speech:speech_ribbonRN.phl[42]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[43]" "may_gma_speech:addDoubleLinear1.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[44]" "may_gma_speech:addDoubleLinear2.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[45]" "may_gma_speech:addDoubleLinear3.i1"
+		;
+connectAttr "may_gma_speech:motionPath1.msg" "may_gma_speech:speech_ribbonRN.phl[46]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear7.o" "may_gma_speech:speech_ribbonRN.phl[47]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear8.o" "may_gma_speech:speech_ribbonRN.phl[48]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear9.o" "may_gma_speech:speech_ribbonRN.phl[49]"
+		;
+connectAttr "may_gma_speech:motionPath3.rx" "may_gma_speech:speech_ribbonRN.phl[50]"
+		;
+connectAttr "may_gma_speech:motionPath3.ry" "may_gma_speech:speech_ribbonRN.phl[51]"
+		;
+connectAttr "may_gma_speech:motionPath3.rz" "may_gma_speech:speech_ribbonRN.phl[52]"
+		;
+connectAttr "may_gma_speech:motionPath3.ro" "may_gma_speech:speech_ribbonRN.phl[53]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[54]" "may_gma_speech:addDoubleLinear7.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[55]" "may_gma_speech:addDoubleLinear8.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[56]" "may_gma_speech:addDoubleLinear9.i1"
+		;
+connectAttr "may_gma_speech:motionPath3.msg" "may_gma_speech:speech_ribbonRN.phl[57]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear13.o" "may_gma_speech:speech_ribbonRN.phl[58]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear14.o" "may_gma_speech:speech_ribbonRN.phl[59]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear15.o" "may_gma_speech:speech_ribbonRN.phl[60]"
+		;
+connectAttr "may_gma_speech:motionPath5.rx" "may_gma_speech:speech_ribbonRN.phl[61]"
+		;
+connectAttr "may_gma_speech:motionPath5.ry" "may_gma_speech:speech_ribbonRN.phl[62]"
+		;
+connectAttr "may_gma_speech:motionPath5.rz" "may_gma_speech:speech_ribbonRN.phl[63]"
+		;
+connectAttr "may_gma_speech:motionPath5.ro" "may_gma_speech:speech_ribbonRN.phl[64]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[65]" "may_gma_speech:addDoubleLinear13.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[66]" "may_gma_speech:addDoubleLinear14.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[67]" "may_gma_speech:addDoubleLinear15.i1"
+		;
+connectAttr "may_gma_speech:motionPath5.msg" "may_gma_speech:speech_ribbonRN.phl[68]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear19.o" "may_gma_speech:speech_ribbonRN.phl[69]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear20.o" "may_gma_speech:speech_ribbonRN.phl[70]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear21.o" "may_gma_speech:speech_ribbonRN.phl[71]"
+		;
+connectAttr "may_gma_speech:motionPath7.rx" "may_gma_speech:speech_ribbonRN.phl[72]"
+		;
+connectAttr "may_gma_speech:motionPath7.ry" "may_gma_speech:speech_ribbonRN.phl[73]"
+		;
+connectAttr "may_gma_speech:motionPath7.rz" "may_gma_speech:speech_ribbonRN.phl[74]"
+		;
+connectAttr "may_gma_speech:motionPath7.ro" "may_gma_speech:speech_ribbonRN.phl[75]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[76]" "may_gma_speech:addDoubleLinear19.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[77]" "may_gma_speech:addDoubleLinear20.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN.phl[78]" "may_gma_speech:addDoubleLinear21.i1"
+		;
+connectAttr "may_gma_speech:motionPath7.msg" "may_gma_speech:speech_ribbonRN.phl[79]"
+		;
+connectAttr "Ribbon_Master_Thickness1.o" "may_gma_speech:speech_ribbonRN1.phl[1]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear37.o" "may_gma_speech:speech_ribbonRN1.phl[2]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear38.o" "may_gma_speech:speech_ribbonRN1.phl[3]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear39.o" "may_gma_speech:speech_ribbonRN1.phl[4]"
+		;
+connectAttr "may_gma_speech:motionPath13.rx" "may_gma_speech:speech_ribbonRN1.phl[5]"
+		;
+connectAttr "may_gma_speech:motionPath13.ry" "may_gma_speech:speech_ribbonRN1.phl[6]"
+		;
+connectAttr "may_gma_speech:motionPath13.rz" "may_gma_speech:speech_ribbonRN1.phl[7]"
+		;
+connectAttr "may_gma_speech:motionPath13.ro" "may_gma_speech:speech_ribbonRN1.phl[8]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[9]" "may_gma_speech:addDoubleLinear37.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[10]" "may_gma_speech:addDoubleLinear38.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[11]" "may_gma_speech:addDoubleLinear39.i1"
+		;
+connectAttr "may_gma_speech:motionPath13.msg" "may_gma_speech:speech_ribbonRN1.phl[12]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear31.o" "may_gma_speech:speech_ribbonRN1.phl[13]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear32.o" "may_gma_speech:speech_ribbonRN1.phl[14]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear33.o" "may_gma_speech:speech_ribbonRN1.phl[15]"
+		;
+connectAttr "may_gma_speech:motionPath11.rx" "may_gma_speech:speech_ribbonRN1.phl[16]"
+		;
+connectAttr "may_gma_speech:motionPath11.ry" "may_gma_speech:speech_ribbonRN1.phl[17]"
+		;
+connectAttr "may_gma_speech:motionPath11.rz" "may_gma_speech:speech_ribbonRN1.phl[18]"
+		;
+connectAttr "may_gma_speech:motionPath11.ro" "may_gma_speech:speech_ribbonRN1.phl[19]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[20]" "may_gma_speech:addDoubleLinear31.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[21]" "may_gma_speech:addDoubleLinear32.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[22]" "may_gma_speech:addDoubleLinear33.i1"
+		;
+connectAttr "may_gma_speech:motionPath11.msg" "may_gma_speech:speech_ribbonRN1.phl[23]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear25.o" "may_gma_speech:speech_ribbonRN1.phl[24]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear26.o" "may_gma_speech:speech_ribbonRN1.phl[25]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear27.o" "may_gma_speech:speech_ribbonRN1.phl[26]"
+		;
+connectAttr "may_gma_speech:motionPath9.rx" "may_gma_speech:speech_ribbonRN1.phl[27]"
+		;
+connectAttr "may_gma_speech:motionPath9.ry" "may_gma_speech:speech_ribbonRN1.phl[28]"
+		;
+connectAttr "may_gma_speech:motionPath9.rz" "may_gma_speech:speech_ribbonRN1.phl[29]"
+		;
+connectAttr "may_gma_speech:motionPath9.ro" "may_gma_speech:speech_ribbonRN1.phl[30]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[31]" "may_gma_speech:addDoubleLinear25.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[32]" "may_gma_speech:addDoubleLinear26.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[33]" "may_gma_speech:addDoubleLinear27.i1"
+		;
+connectAttr "may_gma_speech:motionPath9.msg" "may_gma_speech:speech_ribbonRN1.phl[34]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear22.o" "may_gma_speech:speech_ribbonRN1.phl[35]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear23.o" "may_gma_speech:speech_ribbonRN1.phl[36]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear24.o" "may_gma_speech:speech_ribbonRN1.phl[37]"
+		;
+connectAttr "may_gma_speech:motionPath8.rx" "may_gma_speech:speech_ribbonRN1.phl[38]"
+		;
+connectAttr "may_gma_speech:motionPath8.ry" "may_gma_speech:speech_ribbonRN1.phl[39]"
+		;
+connectAttr "may_gma_speech:motionPath8.rz" "may_gma_speech:speech_ribbonRN1.phl[40]"
+		;
+connectAttr "may_gma_speech:motionPath8.ro" "may_gma_speech:speech_ribbonRN1.phl[41]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[42]" "may_gma_speech:addDoubleLinear22.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[43]" "may_gma_speech:addDoubleLinear23.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[44]" "may_gma_speech:addDoubleLinear24.i1"
+		;
+connectAttr "may_gma_speech:motionPath8.msg" "may_gma_speech:speech_ribbonRN1.phl[45]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear28.o" "may_gma_speech:speech_ribbonRN1.phl[46]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear29.o" "may_gma_speech:speech_ribbonRN1.phl[47]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear30.o" "may_gma_speech:speech_ribbonRN1.phl[48]"
+		;
+connectAttr "may_gma_speech:motionPath10.rx" "may_gma_speech:speech_ribbonRN1.phl[49]"
+		;
+connectAttr "may_gma_speech:motionPath10.ry" "may_gma_speech:speech_ribbonRN1.phl[50]"
+		;
+connectAttr "may_gma_speech:motionPath10.rz" "may_gma_speech:speech_ribbonRN1.phl[51]"
+		;
+connectAttr "may_gma_speech:motionPath10.ro" "may_gma_speech:speech_ribbonRN1.phl[52]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[53]" "may_gma_speech:addDoubleLinear28.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[54]" "may_gma_speech:addDoubleLinear29.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[55]" "may_gma_speech:addDoubleLinear30.i1"
+		;
+connectAttr "may_gma_speech:motionPath10.msg" "may_gma_speech:speech_ribbonRN1.phl[56]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear34.o" "may_gma_speech:speech_ribbonRN1.phl[57]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear35.o" "may_gma_speech:speech_ribbonRN1.phl[58]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear36.o" "may_gma_speech:speech_ribbonRN1.phl[59]"
+		;
+connectAttr "may_gma_speech:motionPath12.rx" "may_gma_speech:speech_ribbonRN1.phl[60]"
+		;
+connectAttr "may_gma_speech:motionPath12.ry" "may_gma_speech:speech_ribbonRN1.phl[61]"
+		;
+connectAttr "may_gma_speech:motionPath12.rz" "may_gma_speech:speech_ribbonRN1.phl[62]"
+		;
+connectAttr "may_gma_speech:motionPath12.ro" "may_gma_speech:speech_ribbonRN1.phl[63]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[64]" "may_gma_speech:addDoubleLinear34.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[65]" "may_gma_speech:addDoubleLinear35.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[66]" "may_gma_speech:addDoubleLinear36.i1"
+		;
+connectAttr "may_gma_speech:motionPath12.msg" "may_gma_speech:speech_ribbonRN1.phl[67]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear40.o" "may_gma_speech:speech_ribbonRN1.phl[68]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear41.o" "may_gma_speech:speech_ribbonRN1.phl[69]"
+		;
+connectAttr "may_gma_speech:addDoubleLinear42.o" "may_gma_speech:speech_ribbonRN1.phl[70]"
+		;
+connectAttr "may_gma_speech:motionPath14.rx" "may_gma_speech:speech_ribbonRN1.phl[71]"
+		;
+connectAttr "may_gma_speech:motionPath14.ry" "may_gma_speech:speech_ribbonRN1.phl[72]"
+		;
+connectAttr "may_gma_speech:motionPath14.rz" "may_gma_speech:speech_ribbonRN1.phl[73]"
+		;
+connectAttr "may_gma_speech:motionPath14.ro" "may_gma_speech:speech_ribbonRN1.phl[74]"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[75]" "may_gma_speech:addDoubleLinear40.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[76]" "may_gma_speech:addDoubleLinear41.i1"
+		;
+connectAttr "may_gma_speech:speech_ribbonRN1.phl[77]" "may_gma_speech:addDoubleLinear42.i1"
+		;
+connectAttr "may_gma_speech:motionPath14.msg" "may_gma_speech:speech_ribbonRN1.phl[78]"
+		;
+connectAttr "polyExtrudeFace1.out" "may_gma_speech:speech_ribbonRN3.phl[1]";
+connectAttr "may_gma_speech:speech_ribbonRN3.phl[2]" "polyExtrudeFace1.mp";
+connectAttr "may_gma_speech:speech_ribbonRN3.phl[3]" "polyExtrudeFace1.ip";
 connectAttr "persp1_translateX.o" "trans_cam.tx" -l on;
 connectAttr "persp1_translateY.o" "trans_cam.ty" -l on;
 connectAttr "persp1_translateZ.o" "trans_cam.tz" -l on;
@@ -29068,6 +32704,299 @@ connectAttr "_meetGrandma:armR_IK_Ctrl_parentConstraint1_rotationDecompositionTa
 		;
 connectAttr "_meetGrandma:armR_IK_Ctrl_parentConstraint1_rotationDecompositionTargetZ.o" "_meetGrandma:armR_IK_Ctrl_parentConstraint1.rdtz"
 		;
+connectAttr "may_gma_speech:speech_ribbon6:transformGeometry2.og" "may_gma_speech:speech_ribbon6:Ribbon_MasterShape.cr"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:transformGeometry1.og" "may_gma_speech:speech_ribbon6:nurbsCircleShape1.cr"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:skinCluster1.og[0]" "may_gma_speech:speech_ribbon6:guideCurveShape.cr"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:tweak1.pl[0].cp[0]" "may_gma_speech:speech_ribbon6:guideCurveShape.twl"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:skinCluster1GroupId.id" "may_gma_speech:speech_ribbon6:guideCurveShape.iog.og[2].gid"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:skinCluster1Set.mwc" "may_gma_speech:speech_ribbon6:guideCurveShape.iog.og[2].gco"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:groupId3.id" "may_gma_speech:speech_ribbon6:guideCurveShape.iog.og[3].gid"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:tweakSet1.mwc" "may_gma_speech:speech_ribbon6:guideCurveShape.iog.og[3].gco"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:MASH1_Trails.outMesh" "may_gma_speech:speech_ribbon6:MASH1_Trails_MeshShape.i"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:MASH1_Repro.out" "may_gma_speech:speech_ribbon6:MASH1_ReproMeshShape.i"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:groupId1.id" "may_gma_speech:speech_ribbon6:MASH1_ReproMeshShape.iog.og[1].gid"
+		;
+connectAttr ":initialShadingGroup.mwc" "may_gma_speech:speech_ribbon6:MASH1_ReproMeshShape.iog.og[1].gco"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:polyCube1.out" "may_gma_speech:speech_ribbon6:pCubeShape1.i"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.ctx" "may_gma_speech:speech_ribbon6:joint1.tx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.cty" "may_gma_speech:speech_ribbon6:joint1.ty"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.ctz" "may_gma_speech:speech_ribbon6:joint1.tz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.crx" "may_gma_speech:speech_ribbon6:joint1.rx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.cry" "may_gma_speech:speech_ribbon6:joint1.ry"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.crz" "may_gma_speech:speech_ribbon6:joint1.rz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1.ro" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.cro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1.pim" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.cpim"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1.rp" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.crp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1.rpt" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.crt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1.jo" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.cjo"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle1.t" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.tg[0].tt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle1.rp" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.tg[0].trp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle1.rpt" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.tg[0].trt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle1.r" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.tg[0].tr"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle1.ro" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.tg[0].tro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle1.s" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.tg[0].ts"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle1.pm" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.w0" "may_gma_speech:speech_ribbon6:joint1_parentConstraint1.tg[0].tw"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.ctx" "may_gma_speech:speech_ribbon6:joint2.tx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.cty" "may_gma_speech:speech_ribbon6:joint2.ty"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.ctz" "may_gma_speech:speech_ribbon6:joint2.tz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.crx" "may_gma_speech:speech_ribbon6:joint2.rx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.cry" "may_gma_speech:speech_ribbon6:joint2.ry"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.crz" "may_gma_speech:speech_ribbon6:joint2.rz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2.ro" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.cro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2.pim" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.cpim"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2.rp" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.crp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2.rpt" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.crt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2.jo" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.cjo"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle2.t" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.tg[0].tt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle2.rp" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.tg[0].trp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle2.rpt" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.tg[0].trt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle2.r" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.tg[0].tr"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle2.ro" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.tg[0].tro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle2.s" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.tg[0].ts"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle2.pm" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.w0" "may_gma_speech:speech_ribbon6:joint2_parentConstraint1.tg[0].tw"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.ctx" "may_gma_speech:speech_ribbon6:joint3.tx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.cty" "may_gma_speech:speech_ribbon6:joint3.ty"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.ctz" "may_gma_speech:speech_ribbon6:joint3.tz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.crx" "may_gma_speech:speech_ribbon6:joint3.rx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.cry" "may_gma_speech:speech_ribbon6:joint3.ry"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.crz" "may_gma_speech:speech_ribbon6:joint3.rz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3.ro" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.cro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3.pim" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.cpim"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3.rp" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.crp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3.rpt" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.crt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3.jo" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.cjo"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle3.t" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.tg[0].tt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle3.rp" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.tg[0].trp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle3.rpt" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.tg[0].trt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle3.r" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.tg[0].tr"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle3.ro" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.tg[0].tro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle3.s" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.tg[0].ts"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle3.pm" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.w0" "may_gma_speech:speech_ribbon6:joint3_parentConstraint1.tg[0].tw"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.ctx" "may_gma_speech:speech_ribbon6:joint4.tx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.cty" "may_gma_speech:speech_ribbon6:joint4.ty"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.ctz" "may_gma_speech:speech_ribbon6:joint4.tz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.crx" "may_gma_speech:speech_ribbon6:joint4.rx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.cry" "may_gma_speech:speech_ribbon6:joint4.ry"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.crz" "may_gma_speech:speech_ribbon6:joint4.rz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4.ro" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.cro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4.pim" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.cpim"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4.rp" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.crp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4.rpt" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.crt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4.jo" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.cjo"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle4.t" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.tg[0].tt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle4.rp" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.tg[0].trp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle4.rpt" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.tg[0].trt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle4.r" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.tg[0].tr"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle4.ro" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.tg[0].tro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle4.s" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.tg[0].ts"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle4.pm" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.w0" "may_gma_speech:speech_ribbon6:joint4_parentConstraint1.tg[0].tw"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.ctx" "may_gma_speech:speech_ribbon6:joint5.tx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.cty" "may_gma_speech:speech_ribbon6:joint5.ty"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.ctz" "may_gma_speech:speech_ribbon6:joint5.tz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.crx" "may_gma_speech:speech_ribbon6:joint5.rx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.cry" "may_gma_speech:speech_ribbon6:joint5.ry"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.crz" "may_gma_speech:speech_ribbon6:joint5.rz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5.ro" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.cro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5.pim" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.cpim"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5.rp" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.crp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5.rpt" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.crt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5.jo" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.cjo"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle5.t" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.tg[0].tt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle5.rp" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.tg[0].trp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle5.rpt" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.tg[0].trt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle5.r" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.tg[0].tr"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle5.ro" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.tg[0].tro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle5.s" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.tg[0].ts"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle5.pm" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.w0" "may_gma_speech:speech_ribbon6:joint5_parentConstraint1.tg[0].tw"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.ctx" "may_gma_speech:speech_ribbon6:joint6.tx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.cty" "may_gma_speech:speech_ribbon6:joint6.ty"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.ctz" "may_gma_speech:speech_ribbon6:joint6.tz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.crx" "may_gma_speech:speech_ribbon6:joint6.rx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.cry" "may_gma_speech:speech_ribbon6:joint6.ry"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.crz" "may_gma_speech:speech_ribbon6:joint6.rz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6.ro" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.cro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6.pim" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.cpim"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6.rp" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.crp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6.rpt" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.crt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6.jo" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.cjo"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle6.t" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.tg[0].tt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle6.rp" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.tg[0].trp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle6.rpt" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.tg[0].trt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle6.r" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.tg[0].tr"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle6.ro" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.tg[0].tro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle6.s" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.tg[0].ts"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle6.pm" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.w0" "may_gma_speech:speech_ribbon6:joint6_parentConstraint1.tg[0].tw"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.ctx" "may_gma_speech:speech_ribbon6:joint7.tx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.cty" "may_gma_speech:speech_ribbon6:joint7.ty"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.ctz" "may_gma_speech:speech_ribbon6:joint7.tz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.crx" "may_gma_speech:speech_ribbon6:joint7.rx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.cry" "may_gma_speech:speech_ribbon6:joint7.ry"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.crz" "may_gma_speech:speech_ribbon6:joint7.rz"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7.ro" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.cro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7.pim" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.cpim"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7.rp" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.crp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7.rpt" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.crt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7.jo" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.cjo"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle7.t" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.tg[0].tt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle7.rp" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.tg[0].trp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle7.rpt" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.tg[0].trt"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle7.r" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.tg[0].tr"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle7.ro" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.tg[0].tro"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle7.s" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.tg[0].ts"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:nurbsCircle7.pm" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.w0" "may_gma_speech:speech_ribbon6:joint7_parentConstraint1.tg[0].tw"
+		;
+connectAttr "fork_parentConstraint1.w0" "fork_parentConstraint1.tg[0].tw";
 connectAttr "pairBlend2.otx" "pSphere1.tx";
 connectAttr "pairBlend2.oty" "pSphere1.ty";
 connectAttr "pairBlend2.otz" "pSphere1.tz";
@@ -29087,7 +33016,6 @@ connectAttr "pSphere1.ro" "pSphere1_parentConstraint1.cro";
 connectAttr "pSphere1.pim" "pSphere1_parentConstraint1.cpim";
 connectAttr "pSphere1.rp" "pSphere1_parentConstraint1.crp";
 connectAttr "pSphere1.rpt" "pSphere1_parentConstraint1.crt";
-connectAttr "fork_parentConstraint1.w0" "fork_parentConstraint1.tg[0].tw";
 connectAttr "sheet_parentConstraint1.w0" "sheet_parentConstraint1.tg[0].tw";
 connectAttr "polySurface18_parentConstraint1.w0" "polySurface18_parentConstraint1.tg[0].tw"
 		;
@@ -31294,6 +35222,355 @@ connectAttr "pairBlend5_inRotateX1.o" "pairBlend5.irx1";
 connectAttr "pairBlend5_inRotateY1.o" "pairBlend5.iry1";
 connectAttr "pairBlend5_inRotateZ1.o" "pairBlend5.irz1";
 connectAttr "soy_bean_blendshapeRNfosterParent1.msg" "soy_bean_blendshapeRN.fp";
+connectAttr "may_gma_speech:renderLayerManager.rlmi[0]" "may_gma_speech:defaultRenderLayer.rlid"
+		;
+connectAttr "may_gma_speech:motionPath1_uValue.o" "may_gma_speech:motionPath1.u"
+		;
+connectAttr "may_gma_speech:curveShape1.ws" "may_gma_speech:motionPath1.gp";
+connectAttr "may_gma_speech:positionMarkerShape1.t" "may_gma_speech:motionPath1.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape2.t" "may_gma_speech:motionPath1.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath1.xc" "may_gma_speech:addDoubleLinear1.i2"
+		;
+connectAttr "may_gma_speech:motionPath1.yc" "may_gma_speech:addDoubleLinear2.i2"
+		;
+connectAttr "may_gma_speech:motionPath1.zc" "may_gma_speech:addDoubleLinear3.i2"
+		;
+connectAttr "may_gma_speech:motionPath2_uValue.o" "may_gma_speech:motionPath2.u"
+		;
+connectAttr "may_gma_speech:curveShape1.ws" "may_gma_speech:motionPath2.gp";
+connectAttr "may_gma_speech:positionMarkerShape3.t" "may_gma_speech:motionPath2.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape4.t" "may_gma_speech:motionPath2.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath2.xc" "may_gma_speech:addDoubleLinear4.i2"
+		;
+connectAttr "may_gma_speech:motionPath2.yc" "may_gma_speech:addDoubleLinear5.i2"
+		;
+connectAttr "may_gma_speech:motionPath2.zc" "may_gma_speech:addDoubleLinear6.i2"
+		;
+connectAttr "may_gma_speech:motionPath3_uValue.o" "may_gma_speech:motionPath3.u"
+		;
+connectAttr "may_gma_speech:curveShape1.ws" "may_gma_speech:motionPath3.gp";
+connectAttr "may_gma_speech:positionMarkerShape5.t" "may_gma_speech:motionPath3.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape6.t" "may_gma_speech:motionPath3.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath3.xc" "may_gma_speech:addDoubleLinear7.i2"
+		;
+connectAttr "may_gma_speech:motionPath3.yc" "may_gma_speech:addDoubleLinear8.i2"
+		;
+connectAttr "may_gma_speech:motionPath3.zc" "may_gma_speech:addDoubleLinear9.i2"
+		;
+connectAttr "may_gma_speech:motionPath4_uValue.o" "may_gma_speech:motionPath4.u"
+		;
+connectAttr "may_gma_speech:curveShape1.ws" "may_gma_speech:motionPath4.gp";
+connectAttr "may_gma_speech:positionMarkerShape7.t" "may_gma_speech:motionPath4.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape8.t" "may_gma_speech:motionPath4.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath4.xc" "may_gma_speech:addDoubleLinear10.i2"
+		;
+connectAttr "may_gma_speech:motionPath4.yc" "may_gma_speech:addDoubleLinear11.i2"
+		;
+connectAttr "may_gma_speech:motionPath4.zc" "may_gma_speech:addDoubleLinear12.i2"
+		;
+connectAttr "may_gma_speech:motionPath5_uValue.o" "may_gma_speech:motionPath5.u"
+		;
+connectAttr "may_gma_speech:curveShape1.ws" "may_gma_speech:motionPath5.gp";
+connectAttr "may_gma_speech:positionMarkerShape9.t" "may_gma_speech:motionPath5.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape10.t" "may_gma_speech:motionPath5.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath5.xc" "may_gma_speech:addDoubleLinear13.i2"
+		;
+connectAttr "may_gma_speech:motionPath5.yc" "may_gma_speech:addDoubleLinear14.i2"
+		;
+connectAttr "may_gma_speech:motionPath5.zc" "may_gma_speech:addDoubleLinear15.i2"
+		;
+connectAttr ":timeEditor.cmp[1]" "may_gma_speech:Composition1.cmp";
+connectAttr "may_gma_speech:motionPath6_uValue.o" "may_gma_speech:motionPath6.u"
+		;
+connectAttr "may_gma_speech:curveShape1.ws" "may_gma_speech:motionPath6.gp";
+connectAttr "may_gma_speech:positionMarkerShape11.t" "may_gma_speech:motionPath6.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape12.t" "may_gma_speech:motionPath6.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath6.xc" "may_gma_speech:addDoubleLinear16.i2"
+		;
+connectAttr "may_gma_speech:motionPath6.yc" "may_gma_speech:addDoubleLinear17.i2"
+		;
+connectAttr "may_gma_speech:motionPath6.zc" "may_gma_speech:addDoubleLinear18.i2"
+		;
+connectAttr "may_gma_speech:motionPath7_uValue.o" "may_gma_speech:motionPath7.u"
+		;
+connectAttr "may_gma_speech:curveShape1.ws" "may_gma_speech:motionPath7.gp";
+connectAttr "may_gma_speech:positionMarkerShape13.t" "may_gma_speech:motionPath7.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape14.t" "may_gma_speech:motionPath7.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath7.xc" "may_gma_speech:addDoubleLinear19.i2"
+		;
+connectAttr "may_gma_speech:motionPath7.yc" "may_gma_speech:addDoubleLinear20.i2"
+		;
+connectAttr "may_gma_speech:motionPath7.zc" "may_gma_speech:addDoubleLinear21.i2"
+		;
+connectAttr "may_gma_speech:motionPath8_uValue.o" "may_gma_speech:motionPath8.u"
+		;
+connectAttr "may_gma_speech:pathShape2.ws" "may_gma_speech:motionPath8.gp";
+connectAttr "may_gma_speech:positionMarkerShape15.t" "may_gma_speech:motionPath8.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape16.t" "may_gma_speech:motionPath8.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath8.xc" "may_gma_speech:addDoubleLinear22.i2"
+		;
+connectAttr "may_gma_speech:motionPath8.yc" "may_gma_speech:addDoubleLinear23.i2"
+		;
+connectAttr "may_gma_speech:motionPath8.zc" "may_gma_speech:addDoubleLinear24.i2"
+		;
+connectAttr "may_gma_speech:motionPath9_uValue.o" "may_gma_speech:motionPath9.u"
+		;
+connectAttr "may_gma_speech:pathShape2.ws" "may_gma_speech:motionPath9.gp";
+connectAttr "may_gma_speech:positionMarkerShape17.t" "may_gma_speech:motionPath9.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape18.t" "may_gma_speech:motionPath9.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath9.xc" "may_gma_speech:addDoubleLinear25.i2"
+		;
+connectAttr "may_gma_speech:motionPath9.yc" "may_gma_speech:addDoubleLinear26.i2"
+		;
+connectAttr "may_gma_speech:motionPath9.zc" "may_gma_speech:addDoubleLinear27.i2"
+		;
+connectAttr "may_gma_speech:motionPath10_uValue.o" "may_gma_speech:motionPath10.u"
+		;
+connectAttr "may_gma_speech:pathShape2.ws" "may_gma_speech:motionPath10.gp";
+connectAttr "may_gma_speech:positionMarkerShape19.t" "may_gma_speech:motionPath10.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape20.t" "may_gma_speech:motionPath10.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath10.xc" "may_gma_speech:addDoubleLinear28.i2"
+		;
+connectAttr "may_gma_speech:motionPath10.yc" "may_gma_speech:addDoubleLinear29.i2"
+		;
+connectAttr "may_gma_speech:motionPath10.zc" "may_gma_speech:addDoubleLinear30.i2"
+		;
+connectAttr "may_gma_speech:motionPath11_uValue.o" "may_gma_speech:motionPath11.u"
+		;
+connectAttr "may_gma_speech:pathShape2.ws" "may_gma_speech:motionPath11.gp";
+connectAttr "may_gma_speech:positionMarkerShape21.t" "may_gma_speech:motionPath11.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape22.t" "may_gma_speech:motionPath11.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath11.xc" "may_gma_speech:addDoubleLinear31.i2"
+		;
+connectAttr "may_gma_speech:motionPath11.yc" "may_gma_speech:addDoubleLinear32.i2"
+		;
+connectAttr "may_gma_speech:motionPath11.zc" "may_gma_speech:addDoubleLinear33.i2"
+		;
+connectAttr "may_gma_speech:motionPath12_uValue.o" "may_gma_speech:motionPath12.u"
+		;
+connectAttr "may_gma_speech:pathShape2.ws" "may_gma_speech:motionPath12.gp";
+connectAttr "may_gma_speech:positionMarkerShape23.t" "may_gma_speech:motionPath12.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape24.t" "may_gma_speech:motionPath12.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath12.xc" "may_gma_speech:addDoubleLinear34.i2"
+		;
+connectAttr "may_gma_speech:motionPath12.yc" "may_gma_speech:addDoubleLinear35.i2"
+		;
+connectAttr "may_gma_speech:motionPath12.zc" "may_gma_speech:addDoubleLinear36.i2"
+		;
+connectAttr "may_gma_speech:motionPath13_uValue.o" "may_gma_speech:motionPath13.u"
+		;
+connectAttr "may_gma_speech:pathShape2.ws" "may_gma_speech:motionPath13.gp";
+connectAttr "may_gma_speech:positionMarkerShape25.t" "may_gma_speech:motionPath13.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape26.t" "may_gma_speech:motionPath13.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath13.xc" "may_gma_speech:addDoubleLinear37.i2"
+		;
+connectAttr "may_gma_speech:motionPath13.yc" "may_gma_speech:addDoubleLinear38.i2"
+		;
+connectAttr "may_gma_speech:motionPath13.zc" "may_gma_speech:addDoubleLinear39.i2"
+		;
+connectAttr "may_gma_speech:motionPath14_uValue.o" "may_gma_speech:motionPath14.u"
+		;
+connectAttr "may_gma_speech:pathShape2.ws" "may_gma_speech:motionPath14.gp";
+connectAttr "may_gma_speech:positionMarkerShape27.t" "may_gma_speech:motionPath14.pmt[0]"
+		;
+connectAttr "may_gma_speech:positionMarkerShape28.t" "may_gma_speech:motionPath14.pmt[1]"
+		;
+connectAttr "may_gma_speech:motionPath14.xc" "may_gma_speech:addDoubleLinear40.i2"
+		;
+connectAttr "may_gma_speech:motionPath14.yc" "may_gma_speech:addDoubleLinear41.i2"
+		;
+connectAttr "may_gma_speech:motionPath14.zc" "may_gma_speech:addDoubleLinear42.i2"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:makeNurbCircle2.oc" "may_gma_speech:speech_ribbon6:transformGeometry2.ig"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:makeNurbCircle1.oc" "may_gma_speech:speech_ribbon6:transformGeometry1.ig"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:skinCluster1GroupParts.og" "may_gma_speech:speech_ribbon6:skinCluster1.ip[0].ig"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:skinCluster1GroupId.id" "may_gma_speech:speech_ribbon6:skinCluster1.ip[0].gi"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:bindPose1.msg" "may_gma_speech:speech_ribbon6:skinCluster1.bp"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5.wm" "may_gma_speech:speech_ribbon6:skinCluster1.ma[0]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6.wm" "may_gma_speech:speech_ribbon6:skinCluster1.ma[1]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7.wm" "may_gma_speech:speech_ribbon6:skinCluster1.ma[2]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4.wm" "may_gma_speech:speech_ribbon6:skinCluster1.ma[3]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3.wm" "may_gma_speech:speech_ribbon6:skinCluster1.ma[4]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2.wm" "may_gma_speech:speech_ribbon6:skinCluster1.ma[5]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1.wm" "may_gma_speech:speech_ribbon6:skinCluster1.ma[6]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5.liw" "may_gma_speech:speech_ribbon6:skinCluster1.lw[0]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6.liw" "may_gma_speech:speech_ribbon6:skinCluster1.lw[1]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7.liw" "may_gma_speech:speech_ribbon6:skinCluster1.lw[2]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4.liw" "may_gma_speech:speech_ribbon6:skinCluster1.lw[3]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3.liw" "may_gma_speech:speech_ribbon6:skinCluster1.lw[4]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2.liw" "may_gma_speech:speech_ribbon6:skinCluster1.lw[5]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1.liw" "may_gma_speech:speech_ribbon6:skinCluster1.lw[6]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5.obcc" "may_gma_speech:speech_ribbon6:skinCluster1.ifcl[0]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6.obcc" "may_gma_speech:speech_ribbon6:skinCluster1.ifcl[1]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7.obcc" "may_gma_speech:speech_ribbon6:skinCluster1.ifcl[2]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4.obcc" "may_gma_speech:speech_ribbon6:skinCluster1.ifcl[3]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3.obcc" "may_gma_speech:speech_ribbon6:skinCluster1.ifcl[4]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2.obcc" "may_gma_speech:speech_ribbon6:skinCluster1.ifcl[5]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1.obcc" "may_gma_speech:speech_ribbon6:skinCluster1.ifcl[6]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:skinCluster1GroupId.msg" "may_gma_speech:speech_ribbon6:skinCluster1Set.gn"
+		 -na;
+connectAttr "may_gma_speech:speech_ribbon6:guideCurveShape.iog.og[2]" "may_gma_speech:speech_ribbon6:skinCluster1Set.dsm"
+		 -na;
+connectAttr "may_gma_speech:speech_ribbon6:skinCluster1.msg" "may_gma_speech:speech_ribbon6:skinCluster1Set.ub[0]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5.msg" "may_gma_speech:speech_ribbon6:bindPose1.m[0]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6.msg" "may_gma_speech:speech_ribbon6:bindPose1.m[1]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7.msg" "may_gma_speech:speech_ribbon6:bindPose1.m[2]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4.msg" "may_gma_speech:speech_ribbon6:bindPose1.m[3]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3.msg" "may_gma_speech:speech_ribbon6:bindPose1.m[4]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2.msg" "may_gma_speech:speech_ribbon6:bindPose1.m[5]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1.msg" "may_gma_speech:speech_ribbon6:bindPose1.m[6]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:bindPose1.w" "may_gma_speech:speech_ribbon6:bindPose1.p[0]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:bindPose1.w" "may_gma_speech:speech_ribbon6:bindPose1.p[1]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:bindPose1.w" "may_gma_speech:speech_ribbon6:bindPose1.p[2]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:bindPose1.w" "may_gma_speech:speech_ribbon6:bindPose1.p[3]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:bindPose1.w" "may_gma_speech:speech_ribbon6:bindPose1.p[4]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:bindPose1.w" "may_gma_speech:speech_ribbon6:bindPose1.p[5]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:bindPose1.w" "may_gma_speech:speech_ribbon6:bindPose1.p[6]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint5.bps" "may_gma_speech:speech_ribbon6:bindPose1.wm[0]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint6.bps" "may_gma_speech:speech_ribbon6:bindPose1.wm[1]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint7.bps" "may_gma_speech:speech_ribbon6:bindPose1.wm[2]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint4.bps" "may_gma_speech:speech_ribbon6:bindPose1.wm[3]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint3.bps" "may_gma_speech:speech_ribbon6:bindPose1.wm[4]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint2.bps" "may_gma_speech:speech_ribbon6:bindPose1.wm[5]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:joint1.bps" "may_gma_speech:speech_ribbon6:bindPose1.wm[6]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:tweak1.og[0]" "may_gma_speech:speech_ribbon6:skinCluster1GroupParts.ig"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:skinCluster1GroupId.id" "may_gma_speech:speech_ribbon6:skinCluster1GroupParts.gi"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:groupParts2.og" "may_gma_speech:speech_ribbon6:tweak1.ip[0].ig"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:groupId3.id" "may_gma_speech:speech_ribbon6:tweak1.ip[0].gi"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:groupId3.msg" "may_gma_speech:speech_ribbon6:tweakSet1.gn"
+		 -na;
+connectAttr "may_gma_speech:speech_ribbon6:guideCurveShape.iog.og[3]" "may_gma_speech:speech_ribbon6:tweakSet1.dsm"
+		 -na;
+connectAttr "may_gma_speech:speech_ribbon6:tweak1.msg" "may_gma_speech:speech_ribbon6:tweakSet1.ub[0]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:guideCurveShape1Orig.ws" "may_gma_speech:speech_ribbon6:groupParts2.ig"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:groupId3.id" "may_gma_speech:speech_ribbon6:groupParts2.gi"
+		;
+connectAttr ":time1.o" "may_gma_speech:speech_ribbon6:MASH1_Trails.tm";
+connectAttr "may_gma_speech:speech_ribbon6:MASH1.outputPoints" "may_gma_speech:speech_ribbon6:MASH1_Trails.inputPoints"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:Ribbon_Master.Thickness" "may_gma_speech:speech_ribbon6:MASH1_Trails.trailWidth"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:MASH1_Curve.outputPoints" "may_gma_speech:speech_ribbon6:MASH1.inputPoints"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:MASH1_Distribute.waiterMessage" "may_gma_speech:speech_ribbon6:MASH1.waiterMessage"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:unitToTimeConversion2.o" "may_gma_speech:speech_ribbon6:MASH1_Curve.ti"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:MASH1_Distribute.outputPoints" "may_gma_speech:speech_ribbon6:MASH1_Curve.inputPoints"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:guideCurveShape.ws" "may_gma_speech:speech_ribbon6:MASH1_Curve.inCurves[0]"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:guideCurveShape.ws" "may_gma_speech:speech_ribbon6:MASH1_Curve.aimCurve"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:Ribbon_Master.Length" "may_gma_speech:speech_ribbon6:MASH1_Curve.ts"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:Ribbon_Master.Speed" "may_gma_speech:speech_ribbon6:MASH1_Curve.tsli"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:floatMath1.of" "may_gma_speech:speech_ribbon6:unitToTimeConversion2.i"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:Ribbon_Master.FrameOffset" "may_gma_speech:speech_ribbon6:floatMath1._fb"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:timeToUnitConversion1.o" "may_gma_speech:speech_ribbon6:floatMath1._fa"
+		;
+connectAttr ":time1.o" "may_gma_speech:speech_ribbon6:timeToUnitConversion1.i";
+connectAttr "may_gma_speech:speech_ribbon6:MASH1_ReproMeshShape.wim" "may_gma_speech:speech_ribbon6:MASH1_Repro.mmtx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:MASH1_ReproMeshShape.msg" "may_gma_speech:speech_ribbon6:MASH1_Repro.meshmessage"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:MASH1.outputPoints" "may_gma_speech:speech_ribbon6:MASH1_Repro.inputPoints"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:MASH1.instancerMessage" "may_gma_speech:speech_ribbon6:MASH1_Repro.instancerMessage"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:pCube1.msg" "may_gma_speech:speech_ribbon6:MASH1_Repro.instancedGroup[0].gmsg"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:pCube1.wm" "may_gma_speech:speech_ribbon6:MASH1_Repro.instancedGroup[0].gmtx"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:pCubeShape1.o" "may_gma_speech:speech_ribbon6:MASH1_Repro.instancedGroup[0].inMesh[0].mesh"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:pCubeShape1.wm" "may_gma_speech:speech_ribbon6:MASH1_Repro.instancedGroup[0].inMesh[0].matrix"
+		;
+connectAttr "may_gma_speech:speech_ribbon6:groupId1.id" "may_gma_speech:speech_ribbon6:MASH1_Repro.instancedGroup[0].inMesh[0].groupId[0]"
+		;
 connectAttr "grandma_controlrig:grandma_shaderSG.pa" ":renderPartition.st" -na;
 connectAttr "grandma_controlrig:PxrSurface1SG.pa" ":renderPartition.st" -na;
 connectAttr "grandma_controlrig:PxrSurface2SG.pa" ":renderPartition.st" -na;
@@ -31536,6 +35813,8 @@ connectAttr "_meetGrandma:MC_control_rig2:floatLogic3.msg" ":defaultRenderUtilit
 		 -na;
 connectAttr "_meetGrandma:MC_control_rig2:floatLogic4.msg" ":defaultRenderUtilityList1.u"
 		 -na;
+connectAttr "may_gma_speech:speech_ribbon6:floatMath1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr ":rmanGlobals.msg" ":defaultRenderingList1.r" -na;
 connectAttr ":PxrPathTracer.msg" ":defaultRenderingList1.r" -na;
@@ -31559,6 +35838,8 @@ connectAttr "MC_control_rig1:MC_hair_latest:defaultRenderLayer.msg" ":defaultRen
 connectAttr "MC_control_rig1:d_openexr1.msg" ":defaultRenderingList1.r" -na;
 connectAttr "teapot:defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "_meetGrandma:defaultRenderLayer.msg" ":defaultRenderingList1.r" -na
+		;
+connectAttr "may_gma_speech:defaultRenderLayer.msg" ":defaultRenderingList1.r" -na
 		;
 connectAttr "grandma_controlrig:gma_tex_norm.msg" ":defaultTextureList1.tx" -na;
 connectAttr "grandma_controlrig:gma_tex_disp.msg" ":defaultTextureList1.tx" -na;
@@ -31630,5 +35911,13 @@ connectAttr "MC_control_rig1:file1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "MC_control_rig1:file2.msg" ":defaultTextureList1.tx" -na;
 connectAttr "MC_control_rig1:densityMask.msg" ":defaultTextureList1.tx" -na;
 connectAttr "_meetGrandma:MC_control_rig2:PxrNormalMap1.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "may_gma_speech:speech_ribbon6:pCubeShape1.iog" ":initialShadingGroup.dsm"
+		 -na;
+connectAttr "may_gma_speech:speech_ribbon6:MASH1_ReproMeshShape.iog.og[1]" ":initialShadingGroup.dsm"
+		 -na;
+connectAttr "may_gma_speech:speech_ribbon6:MASH1_Trails_MeshShape.iog" ":initialShadingGroup.dsm"
+		 -na;
+connectAttr "may_gma_speech:speech_ribbon6:groupId1.msg" ":initialShadingGroup.gn"
 		 -na;
 // End of 06_transition_and_07_end.ma
