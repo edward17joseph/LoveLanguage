@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: 03_meetGrandma.ma
-//Last modified: Thu, May 07, 2020 06:02:07 PM
+//Last modified: Thu, May 07, 2020 06:08:22 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "full_SET_latest" -dr 1 -rfn "full_SET_latestRN" -op "v=0;" 
 		-typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//scenes/full_SET_latest.ma";
@@ -271,7 +271,6 @@ requires -nodeType "PxrVisualizer" -nodeType "PxrNormalMap" -nodeType "PxrSurfac
 		 -nodeType "rmanDisplay" "RenderMan_for_Maya.py" "23.1 @ 2036321";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "3.1.2";
 requires -nodeType "renderSetup" "renderSetup.py" "1.0";
-requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2019";
@@ -464,7 +463,7 @@ createNode camera -n "SHOT5_395_525Shape" -p "SHOT5_395_525";
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".dr" yes;
 createNode fosterParent -n "MC_control_rigRNfosterParent1";
-	rename -uid "95660C53-C443-3B97-46BC-D6A359F28FAC";
+	rename -uid "175B77E3-604A-2F91-4D02-268D9BC9254C";
 createNode parentConstraint -n "armL_IK_Grp1_parentConstraint1" -p "MC_control_rigRNfosterParent1";
 	rename -uid "BB84B2E8-F649-159A-4314-778BB0F58433";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bowl_blueceramic_pattern1_CTRLW0" 
@@ -506,7 +505,7 @@ createNode parentConstraint -n "armR_IK_Ctrl_parentConstraint1" -p "MC_control_r
 	setAttr ".rsrr" -type "double3" -37.553413617181484 -98.288570174533817 -54.943896127099329 ;
 	setAttr -k on ".w0";
 createNode fosterParent -n "grannyCranny_SET_latestRNfosterParent1";
-	rename -uid "6B45F571-7545-E1B7-747B-95A10B968B14";
+	rename -uid "4B8CD680-4F48-EE58-ACE4-E596F34EC3CE";
 createNode transform -n "bowl_blueceramic_pattern1_CTRL" -p "grannyCranny_SET_latestRNfosterParent1";
 	rename -uid "75972CC6-F446-1085-8B0F-88987CDC9E04";
 	addAttr -ci true -k true -sn "blendParent1" -ln "blendParent1" -dv 1 -smn 0 -smx 
@@ -4519,29 +4518,29 @@ createNode parentConstraint -n "bowl_blueceramic_pattern1_CTRL_parentConstraint1
 	setAttr ".rsrr" -type "double3" 0 -1.2722218725854067e-14 0 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "31CA8830-E043-72D7-8026-83BFA7497623";
-	setAttr -s 789 ".lnk";
+	rename -uid "349B548D-5C46-C785-5A9E-2C86E79D325C";
+	setAttr -s 800 ".lnk";
 	setAttr -s 1166 ".ign";
-	setAttr -s 789 ".slnk";
+	setAttr -s 800 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "E1CA2447-B44F-476D-EBBC-53AD65C26B4F";
+	rename -uid "3BCA63C9-3F4E-613F-70FE-908EDEEE1D6D";
 	setAttr ".cdl" 4;
 	setAttr -s 5 ".dli[1:4]"  2 1 3 4;
 	setAttr -s 5 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "5EC36289-FD40-C38D-C1A2-3D96E77404E1";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "1DBB9AA4-3A47-9DE3-BE98-0A8740562D84";
+	rename -uid "1A008A8E-FD46-57F7-7D33-CA852808240D";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "3C180EB4-574D-5205-6A5F-06AFB5C3C173";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8EA1ADD7-404D-3F10-288B-A9920107D25B";
+	rename -uid "CD9A64B7-9F46-A0EC-C2B2-3E99CEE91E45";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 0 1 ;
 	setAttr -s 2 ".bspr";
 	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "18A788D9-D943-298F-2747-B1B4B1100364";
+	rename -uid "F25DA5D8-C243-8CC0-E8C4-E8956C98C822";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "A3ED8780-1145-8901-E206-CB9D269FB2A6";
 	setAttr ".b" -type "string" (
@@ -4602,8 +4601,8 @@ createNode reference -n "full_SET_latestRN";
 		"full_SET_latestRN"
 		"full_SET_latest:kitchen_SET_latest:house_INTERIORRN" 0
 		"full_SET_latest:kitchen_SET_latest:plate_latestRN" 0
-		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN13" 0
 		"full_SET_latest:livingRoom_SET_latest:napkinStack_latestRN1" 0
+		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN13" 0
 		"full_SET_latest:kitchen_SET_latest:water_kettle_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:orchid_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:frame2RN" 0
@@ -4632,9 +4631,9 @@ createNode reference -n "full_SET_latestRN";
 		
 		"full_SET_latest:livingRoom_SET_latest:coffee_table_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:mug_WALL_HANGINGRN" 0
+		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:bowl_blueceramic_pattern1_latestRN" 
 		0
-		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
 		"full_SET_latest:livingRoom_SET_latest:wooden_pictureRN" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN2" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platterRN1" 0
@@ -4737,8 +4736,8 @@ createNode reference -n "full_SET_latestRN";
 		
 		"full_SET_latest:livingRoom_SET_latest:fish4RN" 0
 		"full_SET_latest:kitchen_SET_latest:cutting_boardRN" 0
-		"full_SET_latest:kitchen_SET_latest:chopsticks_round_latestRN1" 0
 		"full_SET_latest:kitchen_SET_latest:pot_small_handle_latestRN" 0
+		"full_SET_latest:kitchen_SET_latest:chopsticks_round_latestRN1" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN10" 0
 		"full_SET_latest:kitchen_SET_latest:butter_knife_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latestRN" 2
@@ -4752,21 +4751,21 @@ createNode reference -n "full_SET_latestRN";
 		
 		"full_SET_latest:kitchen_SET_latest:house_INTERIOR:door_v01_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN9" 0
-		"full_SET_latest:kitchen_SET_latest:mug_round_latestRN3" 0
 		"full_SET_latest:kitchen_SET_latest:bowl_conic_latestRN2" 0
+		"full_SET_latest:kitchen_SET_latest:mug_round_latestRN3" 0
 		"full_SET_latest:livingRoom_SET_latest:boardGames_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:mug_round_latestRN" 0
 		
 		"full_SET_latest:kitchen_SET_latest:pho_spoon_latestRN1" 0
-		"full_SET_latest:livingRoom_SET_latest:shoe_jicRN1" 0
 		"full_SET_latest:livingRoom_SET_latest:bambooRN" 0
+		"full_SET_latest:livingRoom_SET_latest:shoe_jicRN1" 0
+		"full_SET_latest:livingRoom_SET_latest:croc3RN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:butter_knife_latestRN" 0
 		
-		"full_SET_latest:livingRoom_SET_latest:croc3RN" 0
 		"full_SET_latest:livingRoom_SET_latest:meat_stirFry_latest:bowl_smallwhite_pattern1_latestRN" 
 		0
-		"full_SET_latest:livingRoom_SET_latest:soy_sauce_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN11" 0
+		"full_SET_latest:livingRoom_SET_latest:soy_sauce_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:takeout_box_v01_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:chopsticks_round_latestRN" 
 		0
@@ -4776,8 +4775,8 @@ createNode reference -n "full_SET_latestRN";
 		"full_SET_latest:kitchen_SET_latest:towelRN" 0
 		"full_SET_latest:livingRoom_SET_latest:bookshelf_v01_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:sofa_latestRN" 0
-		"full_SET_latest:kitchen_SET_latest:utensil_holderRN" 0
 		"full_SET_latest:kitchen_SET_latest:pot_big_handle_latestRN1" 0
+		"full_SET_latest:kitchen_SET_latest:utensil_holderRN" 0
 		"full_SET_latest:kitchen_SET_latest:plate_latestRN1" 0
 		"full_SET_latest:kitchen_SET_latest:bowl_smallwhite_pattern1_latestRN3" 0;
 	setAttr ".ptag" -type "string" "";
@@ -4893,7 +4892,7 @@ createNode rmanGlobals -s -n "rmanGlobals";
 	setAttr ".UserTokens[9].userTokenKeys" -type "string" "";
 	setAttr ".UserTokens[9].userTokenValues" -type "string" "";
 	setAttr ".rlfData" -type "string" "init";
-	setAttr ".jobid" -type "string" "";
+	setAttr ".jobid" -type "string" "200507180317";
 createNode PxrPathTracer -s -n "PxrPathTracer";
 	rename -uid "3FC60EBC-6741-769D-51AD-578F1A792769";
 	setAttr ".cch" no;
@@ -19329,11 +19328,11 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:ping_shoes_latestRN2" 0
 		"livingRoom_SET_latest:house_INTERIOR:window_REALRN1" 0
 		"livingRoom_SET_latest:croc3RN" 0
-		"livingRoom_SET_latest:shoe_jicRN" 0
 		"livingRoom_SET_latest:house_INTERIOR:door_v01_latestRN" 0
+		"livingRoom_SET_latest:shoe_jicRN" 0
 		"livingRoom_SET_latest:croc_pile:croc3RN" 0
-		"livingRoom_SET_latest:ping_shoes_latestRN" 0
 		"livingRoom_SET_latest:frame2RN" 0
+		"livingRoom_SET_latest:ping_shoes_latestRN" 0
 		"livingRoom_SET_latest:eggroll_platter1:eggrollRN1" 0
 		"livingRoom_SET_latest:running_shoe_latestRN3" 0
 		"livingRoom_SET_latest:eggroll_platter1:eggrollRN2" 0
@@ -19361,8 +19360,8 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:running_shoe_latestRN2" 0
 		"livingRoom_SET_latest:bookStack_RIGHT_SHELFRN" 0
 		"livingRoom_SET_latest:jackie_shoe_latest_purpleRN1" 0
-		"livingRoom_SET_latest:guianaChestnutPlant_latestRN" 0
 		"livingRoom_SET_latest:soy_sauce_latestRN" 0
+		"livingRoom_SET_latest:guianaChestnutPlant_latestRN" 0
 		"livingRoom_SET_latest:eggroll_platterRN1" 0
 		"livingRoom_SET_latest:running_shoe_latestRN" 0
 		"livingRoom_SET_latest:shoe_rack_latestRN" 0
@@ -19370,8 +19369,8 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:bookshelf_v01_latestRN" 0
 		"livingRoom_SET_latest:flatsRN" 0
 		"livingRoom_SET_latest:sofa_latestRN" 0
-		"livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
 		"livingRoom_SET_latest:frame3RN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
 		"livingRoom_SET_latest:shoe_jicRN2" 0
 		"livingRoom_SET_latest:flats_redRN" 0
 		"livingRoom_SET_latest:house_INTERIOR:curtainsRN" 0
@@ -19390,14 +19389,14 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:chopsticks_round_latestRN" 0
 		"livingRoom_SET_latest:jackie_shoe_latestRN" 0
 		"livingRoom_SET_latest:shoe_converse_latestRN" 0
-		"livingRoom_SET_latest:chopsticks_square_latestRN" 0
 		"livingRoom_SET_latest:shoe_swooshRN1" 0
-		"livingRoom_SET_latest:windchime_latestRN" 0
+		"livingRoom_SET_latest:chopsticks_square_latestRN" 0
 		"livingRoom_SET_latest:fork_latestRN" 0
+		"livingRoom_SET_latest:windchime_latestRN" 0
 		"livingRoom_SET_latest:side_tableRN" 0
 		"livingRoom_SET_latest:eggroll_platter1:eggrollRN8" 0
-		"livingRoom_SET_latest:eggroll_platter1:eggrollRN9" 0
 		"livingRoom_SET_latest:coffee_table_latestRN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN9" 0
 		"livingRoom_SET_latest:house_INTERIOR:window_REALRN" 0
 		"livingRoom_SET_latest:house_INTERIOR:window_REALRN4" 1
 		5 4 "livingRoom_SET_latestRN" "|livingRoom_SET_latest:house_INTERIOR:window_REAL4:HOUSE_INTERIOR.drawOverride" 
@@ -19457,6 +19456,7 @@ createNode renderSetup -n "renderSetup";
 	rename -uid "0776E93A-5142-E429-2C51-3485FA27C474";
 createNode displayLayer -n "background";
 	rename -uid "C81551AE-E84F-139B-AFE1-588EF1BAE793";
+	setAttr ".v" no;
 	setAttr ".do" 3;
 select -ne :time1;
 	setAttr -av -k on ".cch";
@@ -19478,7 +19478,7 @@ select -ne :renderPartition;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 789 ".st";
+	setAttr -s 796 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -19491,7 +19491,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 686 ".s";
+	setAttr -s 693 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -19503,7 +19503,7 @@ select -ne :defaultRenderUtilityList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 1819 ".u";
+	setAttr -s 1834 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 290 ".r";
 select -ne :lightList1;
@@ -19513,13 +19513,13 @@ select -ne :defaultTextureList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 1003 ".tx";
+	setAttr -s 1024 ".tx";
 select -ne :initialShadingGroup;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 145 ".dsm";
+	setAttr -s 138 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -19528,7 +19528,7 @@ select -ne :initialShadingGroup;
 	setAttr -cb on ".fo";
 	setAttr -cb on ".epo";
 	setAttr -k on ".ro" yes;
-	setAttr -s 95 ".gn";
+	setAttr -s 91 ".gn";
 select -ne :initialParticleSE;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -20845,6 +20845,7 @@ connectAttr "ShoulderL_Ctrl_translateZ.o" "grandma_controlrigRN.phl[226]";
 connectAttr "MC_control_rigRNfosterParent1.msg" "MC_control_rigRN.fp";
 connectAttr "grannyCranny_SET_latestRNfosterParent1.msg" "grannyCranny_SET_latestRN.fp"
 		;
+connectAttr "sharedReferenceNode.sr" "grannyCranny_SET_latestRN.sr";
 connectAttr "bowl_blueceramic_pattern1_CTRL_parentConstraint1.ctx" "pairBlend1.itx2"
 		;
 connectAttr "bowl_blueceramic_pattern1_CTRL_parentConstraint1.cty" "pairBlend1.ity2"
