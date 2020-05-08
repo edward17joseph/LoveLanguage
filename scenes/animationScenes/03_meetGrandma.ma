@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: 03_meetGrandma.ma
-//Last modified: Thu, May 07, 2020 09:29:50 PM
+//Last modified: Fri, May 08, 2020 01:01:26 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "full_SET_latest" -dr 1 -rfn "full_SET_latestRN" -op "v=0;" 
 		-typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//scenes/full_SET_latest.ma";
@@ -64,8 +64,8 @@ file -rdi 2 -ns "coffee_table_latest" -rfn "livingRoom_SET_latest:coffee_table_l
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/coffee_table_latest.ma";
 file -rdi 2 -ns "console_table" -rfn "livingRoom_SET_latest:console_tableRN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/console_table.ma";
-file -rdi 2 -ns "sofa_latest" -rfn "livingRoom_SET_latest:sofa_latestRN" -op
-		 "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/sofa_latest.ma";
+file -rdi 2 -ns "sofa_latest" -dr 1 -rfn "livingRoom_SET_latest:sofa_latestRN"
+		 -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/sofa_latest.ma";
 file -rdi 2 -ns "side_table" -rfn "livingRoom_SET_latest:side_tableRN" -op "v=0;"
 		 -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/side_table.ma";
 file -rdi 2 -ns "lamp_latest" -rfn "livingRoom_SET_latest:lamp_latestRN" -op
@@ -298,14 +298,14 @@ createNode camera -s -n "perspShape" -p "persp";
 createNode transform -s -n "top";
 	rename -uid "EEF10863-1340-EEB0-E815-5AA4BB68036E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0 1000.1 0 ;
+	setAttr ".t" -type "double3" 108.54414658926277 1000.1 -159.402807841233 ;
 	setAttr ".r" -type "double3" -89.999999999999986 0 0 ;
 createNode camera -s -n "topShape" -p "top";
 	rename -uid "F09758F9-B245-6218-89C3-7CBB61333574";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30;
+	setAttr ".ow" 281.71343731187056;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
 	setAttr ".man" -type "string" "top_mask";
@@ -464,7 +464,7 @@ createNode camera -n "SHOT5_395_525Shape" -p "SHOT5_395_525";
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".dr" yes;
 createNode fosterParent -n "MC_control_rigRNfosterParent1";
-	rename -uid "7B59F2E2-6B4C-06F1-4AD6-BCA1DC82369D";
+	rename -uid "66AA6EC3-C248-A069-752F-15AE781D4BBF";
 createNode parentConstraint -n "armL_IK_Grp1_parentConstraint1" -p "MC_control_rigRNfosterParent1";
 	rename -uid "BB84B2E8-F649-159A-4314-778BB0F58433";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bowl_blueceramic_pattern1_CTRLW0" 
@@ -481,7 +481,7 @@ createNode parentConstraint -n "armL_IK_Grp1_parentConstraint1" -p "MC_control_r
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -88.213949981409826 54.545757551498532 24.378398253094282 ;
+	setAttr ".lr" -type "double3" -97.136788638262715 27.596037560609638 18.697166447051782 ;
 	setAttr ".rst" -type "double3" -5.8603317357442037 -1.9574813848107517 7.1097108584675937 ;
 	setAttr ".rsrr" -type "double3" -33.64095564377417 -99.833356191941732 -60.536049465608805 ;
 	setAttr -k on ".w0";
@@ -501,19 +501,20 @@ createNode parentConstraint -n "armR_IK_Ctrl_parentConstraint1" -p "MC_control_r
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -115.87630459320781 117.98111839630565 -8.5239530882158245 ;
+	setAttr ".lr" -type "double3" -105.83247553329181 144.97435736197937 -0.98890313552313236 ;
 	setAttr ".rst" -type "double3" 5.3721462521421781 0.84904557742057207 -7.4009585660128714 ;
 	setAttr ".rsrr" -type "double3" -37.553413617181484 -98.288570174533817 -54.943896127099329 ;
 	setAttr -k on ".w0";
 createNode fosterParent -n "grannyCranny_SET_latestRNfosterParent1";
-	rename -uid "CAC896D3-7840-1942-97AC-57A407CD1B5E";
+	rename -uid "E9E5E8D7-CA42-D77F-F294-62BFDF5FC8BA";
 createNode transform -n "bowl_blueceramic_pattern1_CTRL" -p "grannyCranny_SET_latestRNfosterParent1";
 	rename -uid "75972CC6-F446-1085-8B0F-88987CDC9E04";
 	addAttr -ci true -k true -sn "blendParent1" -ln "blendParent1" -dv 1 -smn 0 -smx 
 		1 -at "double";
-	setAttr ".rp" -type "double3" 0 1.9938405562222572 1.1071288033251293e-15 ;
+	setAttr ".rp" -type "double3" 0 0.6148773214600971 3.0820468474079244e-16 ;
+	setAttr ".rpt" -type "double3" 2.7718630341919536e-17 0 -6.1516039038598722e-16 ;
 	setAttr ".sp" -type "double3" 0 0.59982389211654663 3.3306690738754696e-16 ;
-	setAttr ".spt" -type "double3" 0 1.3940166641057106 7.7406189593758224e-16 ;
+	setAttr ".spt" -type "double3" 0 0.01505342934355048 -2.4862222646754545e-17 ;
 	setAttr -k on ".blendParent1";
 createNode nurbsCurve -n "bowl_blueceramic_pattern1_CTRLShape" -p "bowl_blueceramic_pattern1_CTRL";
 	rename -uid "17798C90-0740-2649-2F38-EBA17933B51A";
@@ -534,10 +535,38 @@ createNode nurbsCurve -n "bowl_blueceramic_pattern1_CTRLShape" -p "bowl_bluecera
 		6.7857323231109122e-17 6.7857323231109122e-17 -1.1081941875543877
 		-0.78361162489122449 4.7982373409884719e-17 -0.78361162489122438
 		;
-createNode transform -n "bowl_blueceramic_pattern1" -p "bowl_blueceramic_pattern1_CTRL";
+createNode parentConstraint -n "bowl_blueceramic_pattern1_CTRL_parentConstraint1" 
+		-p "bowl_blueceramic_pattern1_CTRL";
+	rename -uid "F1822055-FE4B-F71E-5D16-2184EE62F1EF";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "ROOT_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -0.0054595735636438214 0.29533025076596892 
+		0.32628385420728367 ;
+	setAttr ".tg[0].tor" -type "double3" 0 228.51626585036607 0 ;
+	setAttr ".lr" -type "double3" 0 -121.59931936799858 0 ;
+	setAttr ".rst" -type "double3" 85.424795682290963 26.356788252807789 -144.30408894048745 ;
+	setAttr ".rsrr" -type "double3" 0 -1.2722218725854067e-14 0 ;
+	setAttr -k on ".w0";
+createNode transform -n "bowl_blueceramic_pattern1" -p "grannyCranny_SET_latestRNfosterParent1";
 	rename -uid "44085C20-E74D-63E3-8A4A-26ABF14B9926";
-	setAttr ".rp" -type "double3" 5.9604644775390625e-08 0.60141348838806152 1.1920928955078125e-07 ;
+	setAttr ".t" -type "double3" 0.30124431004046315 5.186797734307703 5.1399241376812768 ;
+	setAttr ".r" -type "double3" 0 174.8400871242097 0 ;
+	setAttr ".s" -type "double3" 0.92535366890164916 1.0250964150334738 0.92535366890164916 ;
+	setAttr ".rp" -type "double3" 5.5155376726487236e-08 0.61650681089937764 1.1031075345297447e-07 ;
+	setAttr ".rpt" -type "double3" -1.0016635570356215e-07 0 -2.251349219922197e-07 ;
 	setAttr ".sp" -type "double3" 5.9604644775390625e-08 0.60141348838806152 1.1920928955078125e-07 ;
+	setAttr ".spt" -type "double3" -4.4492680489033927e-09 0.015093322511316079 -8.8985360978067854e-09 ;
 createNode mesh -n "bowl_blueceramic_patternShape1" -p "bowl_blueceramic_pattern1";
 	rename -uid "CB173C79-EC42-574A-F458-BDBCBE7DC6A6";
 	setAttr -k off ".v";
@@ -4495,53 +4524,30 @@ createNode mesh -n "bowl_blueceramic_patternShape1" -p "bowl_blueceramic_pattern
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode parentConstraint -n "bowl_blueceramic_pattern1_CTRL_parentConstraint1" 
-		-p "bowl_blueceramic_pattern1_CTRL";
-	rename -uid "F1822055-FE4B-F71E-5D16-2184EE62F1EF";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "ROOT_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".tg[0].tot" -type "double3" -0.0054595735636438214 0.29533025076596892 
-		0.32628385420728367 ;
-	setAttr ".tg[0].tor" -type "double3" 0 228.51626585036607 0 ;
-	setAttr ".lr" -type "double3" 0 -151.29109744817373 0 ;
-	setAttr ".rst" -type "double3" 85.424795682290963 26.356788252807789 -144.30408894048745 ;
-	setAttr ".rsrr" -type "double3" 0 -1.2722218725854067e-14 0 ;
-	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "D740133E-494E-0CB2-E86F-DE975E6A736B";
-	setAttr -s 796 ".lnk";
-	setAttr -s 1166 ".ign";
-	setAttr -s 796 ".slnk";
+	rename -uid "788F3814-3D49-F0E6-AC10-BCA8459CE418";
+	setAttr -s 837 ".lnk";
+	setAttr -s 1164 ".ign";
+	setAttr -s 837 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C96FEF09-5744-DCCA-2399-CEA1AD6629BB";
-	setAttr ".cdl" 4;
-	setAttr -s 5 ".dli[1:4]"  2 1 3 4;
-	setAttr -s 5 ".dli";
+	rename -uid "C8010F60-304E-9D21-BB27-0DA3A8E769D4";
+	setAttr ".cdl" 5;
+	setAttr -s 6 ".dli[1:5]"  2 1 3 4 5;
+	setAttr -s 6 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "5EC36289-FD40-C38D-C1A2-3D96E77404E1";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "ABBD512D-F74C-E6D2-593A-F5B0626AD864";
+	rename -uid "A91B8F08-9643-2BE2-8820-36A2BB612464";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "3C180EB4-574D-5205-6A5F-06AFB5C3C173";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "0B21199A-404E-2EA2-F915-DCB44FA55792";
+	rename -uid "824CB306-5442-6DD7-E9F1-2B85A9E68B70";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 0 1 ;
 	setAttr -s 2 ".bspr";
 	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "20667660-9E48-4038-3981-A3AD8013A70B";
+	rename -uid "7A9BCCE3-C14E-9E54-2BCE-7390838A6A0A";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "A3ED8780-1145-8901-E206-CB9D269FB2A6";
 	setAttr ".b" -type "string" (
@@ -4555,10 +4561,10 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"wireframe\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
 		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 0\n            -nurbsCurves 1\n            -nurbsSurfaces 0\n            -polymeshes 1\n            -subdivSurfaces 0\n            -planes 0\n            -lights 0\n            -cameras 0\n            -controlVertices 0\n            -hulls 0\n            -grid 1\n            -imagePlane 0\n            -joints 0\n            -ikHandles 0\n            -deformers 0\n            -dynamics 0\n            -particleInstancers 0\n            -fluids 0\n            -hairSystems 0\n            -follicles 0\n            -nCloths 0\n            -nParticles 0\n            -nRigids 0\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 0\n            -dimensions 0\n            -handles 0\n            -pivots 0\n"
-		+ "            -textures 0\n            -strokes 0\n            -motionTrails 0\n            -clipGhosts 0\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 0 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
+		+ "            -textures 0\n            -strokes 0\n            -motionTrails 0\n            -clipGhosts 0\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 0 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"SHOT4_300_385\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
 		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 0\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 1\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
 		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 0\n            -nurbsCurves 0\n            -nurbsSurfaces 0\n            -polymeshes 1\n            -subdivSurfaces 0\n            -planes 0\n            -lights 0\n            -cameras 0\n            -controlVertices 0\n            -hulls 0\n            -grid 1\n            -imagePlane 0\n            -joints 0\n            -ikHandles 0\n            -deformers 0\n            -dynamics 0\n            -particleInstancers 0\n            -fluids 0\n            -hairSystems 0\n            -follicles 0\n"
-		+ "            -nCloths 0\n            -nParticles 0\n            -nRigids 0\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 0\n            -dimensions 0\n            -handles 0\n            -pivots 0\n            -textures 0\n            -strokes 0\n            -motionTrails 0\n            -clipGhosts 0\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 852\n            -height 495\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 0 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -nCloths 0\n            -nParticles 0\n            -nRigids 0\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 0\n            -dimensions 0\n            -handles 0\n            -pivots 0\n            -textures 0\n            -strokes 0\n            -motionTrails 0\n            -clipGhosts 0\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 852\n            -height 493\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 0 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
 		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n"
 		+ "            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
@@ -4588,8 +4594,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
 		+ "            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n"
 		+ "            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"top\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 0\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 1\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 0\\n    -nurbsCurves 0\\n    -nurbsSurfaces 0\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 852\\n    -height 495\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 0 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"top\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 0\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 1\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 0\\n    -nurbsCurves 0\\n    -nurbsSurfaces 0\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 852\\n    -height 495\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 0 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"SHOT4_300_385\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 0\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 1\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 0\\n    -nurbsCurves 0\\n    -nurbsSurfaces 0\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 852\\n    -height 493\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 0 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"SHOT4_300_385\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 0\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 1\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 0\\n    -nurbsCurves 0\\n    -nurbsSurfaces 0\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 852\\n    -height 493\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 0 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -4602,8 +4608,8 @@ createNode reference -n "full_SET_latestRN";
 		"full_SET_latestRN"
 		"full_SET_latest:kitchen_SET_latest:house_INTERIORRN" 0
 		"full_SET_latest:kitchen_SET_latest:plate_latestRN" 0
-		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN13" 0
 		"full_SET_latest:livingRoom_SET_latest:napkinStack_latestRN1" 0
+		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN13" 0
 		"full_SET_latest:kitchen_SET_latest:water_kettle_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:orchid_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:frame2RN" 0
@@ -4632,9 +4638,9 @@ createNode reference -n "full_SET_latestRN";
 		
 		"full_SET_latest:livingRoom_SET_latest:coffee_table_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:mug_WALL_HANGINGRN" 0
+		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:bowl_blueceramic_pattern1_latestRN" 
 		0
-		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
 		"full_SET_latest:livingRoom_SET_latest:wooden_pictureRN" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN2" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platterRN1" 0
@@ -4737,8 +4743,8 @@ createNode reference -n "full_SET_latestRN";
 		
 		"full_SET_latest:livingRoom_SET_latest:fish4RN" 0
 		"full_SET_latest:kitchen_SET_latest:cutting_boardRN" 0
-		"full_SET_latest:kitchen_SET_latest:chopsticks_round_latestRN1" 0
 		"full_SET_latest:kitchen_SET_latest:pot_small_handle_latestRN" 0
+		"full_SET_latest:kitchen_SET_latest:chopsticks_round_latestRN1" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN10" 0
 		"full_SET_latest:kitchen_SET_latest:butter_knife_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latestRN" 2
@@ -4752,21 +4758,21 @@ createNode reference -n "full_SET_latestRN";
 		
 		"full_SET_latest:kitchen_SET_latest:house_INTERIOR:door_v01_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN9" 0
-		"full_SET_latest:kitchen_SET_latest:mug_round_latestRN3" 0
 		"full_SET_latest:kitchen_SET_latest:bowl_conic_latestRN2" 0
+		"full_SET_latest:kitchen_SET_latest:mug_round_latestRN3" 0
 		"full_SET_latest:livingRoom_SET_latest:boardGames_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:mug_round_latestRN" 0
 		
 		"full_SET_latest:kitchen_SET_latest:pho_spoon_latestRN1" 0
-		"full_SET_latest:livingRoom_SET_latest:shoe_jicRN1" 0
 		"full_SET_latest:livingRoom_SET_latest:bambooRN" 0
+		"full_SET_latest:livingRoom_SET_latest:shoe_jicRN1" 0
+		"full_SET_latest:livingRoom_SET_latest:croc3RN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:butter_knife_latestRN" 0
 		
-		"full_SET_latest:livingRoom_SET_latest:croc3RN" 0
 		"full_SET_latest:livingRoom_SET_latest:meat_stirFry_latest:bowl_smallwhite_pattern1_latestRN" 
 		0
-		"full_SET_latest:livingRoom_SET_latest:soy_sauce_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN11" 0
+		"full_SET_latest:livingRoom_SET_latest:soy_sauce_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:takeout_box_v01_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:chopsticks_round_latestRN" 
 		0
@@ -4776,8 +4782,8 @@ createNode reference -n "full_SET_latestRN";
 		"full_SET_latest:kitchen_SET_latest:towelRN" 0
 		"full_SET_latest:livingRoom_SET_latest:bookshelf_v01_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:sofa_latestRN" 0
-		"full_SET_latest:kitchen_SET_latest:utensil_holderRN" 0
 		"full_SET_latest:kitchen_SET_latest:pot_big_handle_latestRN1" 0
+		"full_SET_latest:kitchen_SET_latest:utensil_holderRN" 0
 		"full_SET_latest:kitchen_SET_latest:plate_latestRN1" 0
 		"full_SET_latest:kitchen_SET_latest:bowl_smallwhite_pattern1_latestRN3" 0;
 	setAttr ".ptag" -type "string" "";
@@ -4789,7 +4795,7 @@ createNode rmanGlobals -s -n "rmanGlobals";
 	setAttr ".ihi" 2;
 	setAttr ".nds" 0;
 	setAttr ".hider_minSamples" 0;
-	setAttr ".hider_maxSamples" 64;
+	setAttr ".hider_maxSamples" 512;
 	setAttr ".ri_pixelVariance" 0.014999999664723873;
 	setAttr ".hider_incremental" yes;
 	setAttr ".ipr_hider_maxSamples" 64;
@@ -4869,8 +4875,8 @@ createNode rmanGlobals -s -n "rmanGlobals";
 	setAttr ".ribFileFormat" -type "string" "<camera><layer>.<f4>.rib";
 	setAttr ".version" 1;
 	setAttr ".take" 1;
-	setAttr ".imageOutputDir" -type "string" "/Users/ethanbuttimer/Desktop/scene_5_renders";
-	setAttr ".ribOutputDir" -type "string" "/Users/ethanbuttimer/Desktop/scene_5_renders";
+	setAttr ".imageOutputDir" -type "string" "/Users/ethanbuttimer/Desktop/back";
+	setAttr ".ribOutputDir" -type "string" "/Users/ethanbuttimer/Desktop/back";
 	setAttr -s 10 ".UserTokens";
 	setAttr ".UserTokens[0].userTokenKeys" -type "string" "";
 	setAttr ".UserTokens[0].userTokenValues" -type "string" "";
@@ -5065,7 +5071,7 @@ createNode timeEditor -s -n "timeEditor";
 	rename -uid "02BDA58E-2D41-A467-ACB8-E59F677DF419";
 createNode reference -n "grandma_controlrigRN";
 	rename -uid "E7971A28-C04D-A565-D145-879379FCD6B2";
-	setAttr -s 263 ".phl";
+	setAttr -s 264 ".phl";
 	setAttr ".phl[227]" 0;
 	setAttr ".phl[228]" 0;
 	setAttr ".phl[229]" 0;
@@ -5317,6 +5323,7 @@ createNode reference -n "grandma_controlrigRN";
 	setAttr ".phl[475]" 0;
 	setAttr ".phl[476]" 0;
 	setAttr ".phl[477]" 0;
+	setAttr ".phl[478]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"grandma_controlrigRN"
 		"grandma_controlrigRN" 14
@@ -5348,7 +5355,7 @@ createNode reference -n "grandma_controlrigRN";
 		"grandma_controlrigRN.placeHolderList[225]" ""
 		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[226]" ""
-		"grandma_controlrigRN" 361
+		"grandma_controlrigRN" 362
 		2 "|grandma_controlrig:gma_ControlRig" "visibility" " 1"
 		2 "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_GEO|grandma_controlrig:body_broken" 
 		"visibility" " 0"
@@ -5546,13 +5553,12 @@ createNode reference -n "grandma_controlrigRN";
 		
 		2 "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:HandL_IK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "grandma_controlrig:eye" "w[0:2]" " -s 3 0.10920605999999999 0.10324709999999999 0"
-		
+		2 "grandma_controlrig:eye" "w[0:2]" " -s 3 0 0 0"
 		2 "grandma_controlrig:eye" "weight" " -s 3"
 		2 "grandma_controlrig:eye" "weight[0]" " -av"
 		2 "grandma_controlrig:eye" "weight[1]" " -av"
 		2 "grandma_controlrig:eye" "weight[2]" " -av"
-		2 "grandma_controlrig:mouth" "w[0:4]" " -s 5 0.84375 1.10070372000000005 0.31440032000000001 0.48817569 0.93876689999999996"
+		2 "grandma_controlrig:mouth" "w[0:4]" " -s 5 0.89037937 1.05837833899999989 1.05837833899999989 0.16216215 0.054054054999999997"
 		
 		2 "grandma_controlrig:mouth" "weight" " -s 5"
 		2 "grandma_controlrig:mouth" "weight[0]" " -av"
@@ -5562,520 +5568,522 @@ createNode reference -n "grandma_controlrigRN";
 		2 "grandma_controlrig:mouth" "weight[4]" " -av"
 		2 "grandma_controlrig:mouth" "inputTarget[0].sculptTargetIndex" " -1"
 		2 "grandma_controlrig:mouth" "inputTarget[0].sculptInbetweenWeight" " 1"
-		2 "grandma_controlrig:cheeks" "w[0:1]" " -s 2 0.85315227999999999 0.87806558999999995"
+		2 "grandma_controlrig:cheeks" "w[0:1]" " -s 2 1.17743741999999996 1.17743741999999996"
 		
 		2 "grandma_controlrig:cheeks" "weight" " -s 2"
 		2 "grandma_controlrig:cheeks" "weight[0]" " -av"
 		2 "grandma_controlrig:cheeks" "weight[1]" " -av"
 		3 "grandma_controlrig:tweak19.vlist[0].vertex[0]" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_GEO|grandma_controlrig:body|grandma_controlrig:bodyShape.tweakLocation" 
 		""
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig.drawOverride" 
+		"grandma_controlrigRN.placeHolderList[227]" ""
 		5 0 "grandma_controlrigRN" "grandma_controlrig:tweak18.vlist[0].vertex[0]" 
 		"|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_GEO|grandma_controlrig:body|grandma_controlrig:bodyShape.tweakLocation" 
-		"grandma_controlrigRN.placeHolderList[227]" "grandma_controlrigRN.placeHolderList[228]" 
+		"grandma_controlrigRN.placeHolderList[228]" "grandma_controlrigRN.placeHolderList[229]" 
 		""
 		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.translateX" 
-		"grandma_controlrigRN.placeHolderList[229]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[230]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[231]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[232]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[233]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[234]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[235]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[236]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[237]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[238]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[239]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.visibility" 
 		"grandma_controlrigRN.placeHolderList[240]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.translateX" 
 		"grandma_controlrigRN.placeHolderList[241]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.translateY" 
 		"grandma_controlrigRN.placeHolderList[242]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.translateZ" 
 		"grandma_controlrigRN.placeHolderList[243]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.rotateX" 
 		"grandma_controlrigRN.placeHolderList[244]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.rotateY" 
 		"grandma_controlrigRN.placeHolderList[245]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[246]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.scaleX" 
 		"grandma_controlrigRN.placeHolderList[247]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.scaleY" 
 		"grandma_controlrigRN.placeHolderList[248]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[249]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.translateX" 
 		"grandma_controlrigRN.placeHolderList[250]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.translateY" 
 		"grandma_controlrigRN.placeHolderList[251]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.translateZ" 
 		"grandma_controlrigRN.placeHolderList[252]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.rotateX" 
 		"grandma_controlrigRN.placeHolderList[253]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.rotateY" 
 		"grandma_controlrigRN.placeHolderList[254]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[255]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.scaleX" 
 		"grandma_controlrigRN.placeHolderList[256]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.scaleY" 
 		"grandma_controlrigRN.placeHolderList[257]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[258]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[259]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[260]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[261]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[262]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[263]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[264]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[265]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[266]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[267]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[268]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.visibility" 
 		"grandma_controlrigRN.placeHolderList[269]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.translateX" 
 		"grandma_controlrigRN.placeHolderList[270]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.translateY" 
 		"grandma_controlrigRN.placeHolderList[271]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.translateZ" 
 		"grandma_controlrigRN.placeHolderList[272]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.rotateX" 
 		"grandma_controlrigRN.placeHolderList[273]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.rotateY" 
 		"grandma_controlrigRN.placeHolderList[274]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[275]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.scaleX" 
 		"grandma_controlrigRN.placeHolderList[276]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.scaleY" 
 		"grandma_controlrigRN.placeHolderList[277]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[278]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[279]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[280]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[281]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[282]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[283]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[284]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[285]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[286]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[287]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[288]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.visibility" 
 		"grandma_controlrigRN.placeHolderList[289]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.translateX" 
 		"grandma_controlrigRN.placeHolderList[290]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.translateY" 
 		"grandma_controlrigRN.placeHolderList[291]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.translateZ" 
 		"grandma_controlrigRN.placeHolderList[292]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.rotateX" 
 		"grandma_controlrigRN.placeHolderList[293]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.rotateY" 
 		"grandma_controlrigRN.placeHolderList[294]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[295]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.scaleX" 
 		"grandma_controlrigRN.placeHolderList[296]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.scaleY" 
 		"grandma_controlrigRN.placeHolderList[297]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[298]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[299]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[300]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[301]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[302]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[303]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[304]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[305]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[306]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[307]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipR_Grp|grandma_controlrig:FK_hipR_Ctrl|grandma_controlrig:FK_kneeR_Grp|grandma_controlrig:FK_kneeR_Ctrl|grandma_controlrig:FK_ankleR_Grp|grandma_controlrig:FK_ankleR_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[308]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.translateX" 
 		"grandma_controlrigRN.placeHolderList[309]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.translateY" 
 		"grandma_controlrigRN.placeHolderList[310]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.translateZ" 
 		"grandma_controlrigRN.placeHolderList[311]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.rotateX" 
 		"grandma_controlrigRN.placeHolderList[312]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.rotateY" 
 		"grandma_controlrigRN.placeHolderList[313]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[314]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.scaleX" 
 		"grandma_controlrigRN.placeHolderList[315]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.scaleY" 
 		"grandma_controlrigRN.placeHolderList[316]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[317]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[318]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[319]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[320]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[321]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[322]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[323]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[324]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[325]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[326]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[327]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.visibility" 
 		"grandma_controlrigRN.placeHolderList[328]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.translateX" 
 		"grandma_controlrigRN.placeHolderList[329]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.translateY" 
 		"grandma_controlrigRN.placeHolderList[330]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.translateZ" 
 		"grandma_controlrigRN.placeHolderList[331]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.rotateX" 
 		"grandma_controlrigRN.placeHolderList[332]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.rotateY" 
 		"grandma_controlrigRN.placeHolderList[333]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[334]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.scaleX" 
 		"grandma_controlrigRN.placeHolderList[335]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.scaleY" 
 		"grandma_controlrigRN.placeHolderList[336]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[337]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[338]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[339]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[340]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[341]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[342]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[343]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[344]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[345]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[346]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[347]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.visibility" 
 		"grandma_controlrigRN.placeHolderList[348]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.translateX" 
 		"grandma_controlrigRN.placeHolderList[349]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.translateY" 
 		"grandma_controlrigRN.placeHolderList[350]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.translateZ" 
 		"grandma_controlrigRN.placeHolderList[351]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.rotateX" 
 		"grandma_controlrigRN.placeHolderList[352]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.rotateY" 
 		"grandma_controlrigRN.placeHolderList[353]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[354]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.scaleX" 
 		"grandma_controlrigRN.placeHolderList[355]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.scaleY" 
 		"grandma_controlrigRN.placeHolderList[356]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[357]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[358]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[359]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[360]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[361]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[362]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[363]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[364]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[365]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[366]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:Legs_FK_Grp|grandma_controlrig:FK_hipL_Grp|grandma_controlrig:FK_hipL_Ctrl|grandma_controlrig:FK_kneeL_Grp|grandma_controlrig:FK_kneeL_Ctrl|grandma_controlrig:FK_ankleL_Grp|grandma_controlrig:FK_ankleL_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[367]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[368]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[369]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[370]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[371]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[372]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[373]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[374]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[375]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[376]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[377]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[378]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[379]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[380]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[381]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[382]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[383]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[384]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[385]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[386]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[387]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[388]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[389]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[390]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[391]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[392]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[393]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[394]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[395]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[396]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[397]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[398]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[399]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[400]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[401]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[402]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[403]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[404]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[405]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[406]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[407]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.rotateX" 
 		"grandma_controlrigRN.placeHolderList[408]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.rotateY" 
 		"grandma_controlrigRN.placeHolderList[409]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[410]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.visibility" 
 		"grandma_controlrigRN.placeHolderList[411]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.translateX" 
 		"grandma_controlrigRN.placeHolderList[412]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.translateY" 
 		"grandma_controlrigRN.placeHolderList[413]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.translateZ" 
 		"grandma_controlrigRN.placeHolderList[414]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.scaleX" 
 		"grandma_controlrigRN.placeHolderList[415]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.scaleY" 
 		"grandma_controlrigRN.placeHolderList[416]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:neck_Ctrl|grandma_controlrig:curve2.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[417]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[418]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[419]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[420]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[421]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[422]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[423]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[424]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[425]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[426]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[427]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[428]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[429]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[430]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[431]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[432]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[433]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[434]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[435]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[436]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderR_trans_Ctrl|grandma_controlrig:ShoulderR_Ctrl|grandma_controlrig:ElbowR_Ctrl|grandma_controlrig:WristR_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[437]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[438]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[439]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[440]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[441]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[442]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[443]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[444]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[445]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[446]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[447]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[448]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[449]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[450]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[451]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[452]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[453]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[454]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[455]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[456]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[457]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.translateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:ROOT_Grp|grandma_controlrig:ROOT_Ctrl|grandma_controlrig:spine3_Ctrl|grandma_controlrig:spine2_Ctrl|grandma_controlrig:spine1_Ctrl|grandma_controlrig:ShoulderL_trans_Ctrl|grandma_controlrig:ShoulderL_Ctrl|grandma_controlrig:ElbowL_Ctrl|grandma_controlrig:WristL_Ctrl.scaleZ" 
 		"grandma_controlrigRN.placeHolderList[458]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.translateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.translateX" 
 		"grandma_controlrigRN.placeHolderList[459]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.translateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.translateY" 
 		"grandma_controlrigRN.placeHolderList[460]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.visibility" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.translateZ" 
 		"grandma_controlrigRN.placeHolderList[461]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.rotateX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.visibility" 
 		"grandma_controlrigRN.placeHolderList[462]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.rotateY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.rotateX" 
 		"grandma_controlrigRN.placeHolderList[463]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.rotateZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.rotateY" 
 		"grandma_controlrigRN.placeHolderList[464]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.scaleX" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.rotateZ" 
 		"grandma_controlrigRN.placeHolderList[465]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.scaleY" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.scaleX" 
 		"grandma_controlrigRN.placeHolderList[466]" ""
-		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.scaleZ" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.scaleY" 
 		"grandma_controlrigRN.placeHolderList[467]" ""
-		5 4 "grandma_controlrigRN" "grandma_controlrig:eye.weight[0]" "grandma_controlrigRN.placeHolderList[468]" 
+		5 4 "grandma_controlrigRN" "|grandma_controlrig:gma_ControlRig|grandma_controlrig:gma_CTRL|grandma_controlrig:MAIN_Grp|grandma_controlrig:MAIN_Ctrl|grandma_controlrig:MAIN_Children|grandma_controlrig:EyeMaster_Ctrl.scaleZ" 
+		"grandma_controlrigRN.placeHolderList[468]" ""
+		5 4 "grandma_controlrigRN" "grandma_controlrig:eye.weight[0]" "grandma_controlrigRN.placeHolderList[469]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig:eye.weight[1]" "grandma_controlrigRN.placeHolderList[469]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig:eye.weight[1]" "grandma_controlrigRN.placeHolderList[470]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig:eye.weight[2]" "grandma_controlrigRN.placeHolderList[470]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig:eye.weight[2]" "grandma_controlrigRN.placeHolderList[471]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig:mouth.weight[0]" "grandma_controlrigRN.placeHolderList[471]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig:mouth.weight[0]" "grandma_controlrigRN.placeHolderList[472]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig:mouth.weight[1]" "grandma_controlrigRN.placeHolderList[472]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig:mouth.weight[1]" "grandma_controlrigRN.placeHolderList[473]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig:mouth.weight[2]" "grandma_controlrigRN.placeHolderList[473]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig:mouth.weight[2]" "grandma_controlrigRN.placeHolderList[474]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig:mouth.weight[3]" "grandma_controlrigRN.placeHolderList[474]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig:mouth.weight[3]" "grandma_controlrigRN.placeHolderList[475]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig:mouth.weight[4]" "grandma_controlrigRN.placeHolderList[475]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig:mouth.weight[4]" "grandma_controlrigRN.placeHolderList[476]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig:cheeks.weight[0]" "grandma_controlrigRN.placeHolderList[476]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig:cheeks.weight[0]" "grandma_controlrigRN.placeHolderList[477]" 
 		""
-		5 4 "grandma_controlrigRN" "grandma_controlrig:cheeks.weight[1]" "grandma_controlrigRN.placeHolderList[477]" 
+		5 4 "grandma_controlrigRN" "grandma_controlrig:cheeks.weight[1]" "grandma_controlrigRN.placeHolderList[478]" 
 		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "MC_control_rigRN";
 	rename -uid "CFD71356-9346-AF4E-8CAD-E498BF662A84";
-	setAttr -s 667 ".phl";
+	setAttr -s 678 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -6743,10 +6751,21 @@ createNode reference -n "MC_control_rigRN";
 	setAttr ".phl[665]" 0;
 	setAttr ".phl[666]" 0;
 	setAttr ".phl[667]" 0;
+	setAttr ".phl[668]" 0;
+	setAttr ".phl[669]" 0;
+	setAttr ".phl[670]" 0;
+	setAttr ".phl[671]" 0;
+	setAttr ".phl[672]" 0;
+	setAttr ".phl[673]" 0;
+	setAttr ".phl[674]" 0;
+	setAttr ".phl[675]" 0;
+	setAttr ".phl[676]" 0;
+	setAttr ".phl[677]" 0;
+	setAttr ".phl[678]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"MC_control_rigRN"
 		"MC_control_rigRN" 0
-		"MC_control_rigRN" 1019
+		"MC_control_rigRN" 1030
 		0 "|MC_control_rigRNfosterParent1|armR_IK_Ctrl_parentConstraint1" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl" 
 		"-s -r "
 		0 "|MC_control_rigRNfosterParent1|armL_IK_Grp1_parentConstraint1" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1" 
@@ -6763,7 +6782,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl" 
 		"visibility" " -av 1"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl" 
-		"translate" " -type \"double3\" 0.46326504185400913 0.20078913809623575 3.33399081528279595"
+		"translate" " -type \"double3\" 0.59905364416076112 0.20078913809626417 3.25845927622063591"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl" 
 		"translateX" " -av"
@@ -6772,7 +6791,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl" 
-		"rotate" " -type \"double3\" 0 -151.29109744817372984 0"
+		"rotate" " -type \"double3\" 0 -121.5993193679985751 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl" 
 		"rotateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl" 
@@ -6798,7 +6817,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl" 
-		"rotate" " -type \"double3\" 0 21.27823430945043981 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl" 
 		"rotateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl" 
@@ -6824,7 +6843,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl" 
-		"rotate" " -type \"double3\" 0 -13.85641128689481683 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl" 
 		"rotateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl" 
@@ -6850,8 +6869,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl" 
-		"rotate" " -type \"double3\" -0.41100411178600055 -5.45116557289986225 0.41760920983730565"
-		
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl" 
 		"rotateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl" 
@@ -6877,8 +6895,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl" 
-		"rotate" " -type \"double3\" -6.87774512688983908 4.16306201594224934 -1.67512872443053951"
-		
+		"rotate" " -type \"double3\" -8.30157439398374031 0 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl" 
 		"rotateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl" 
@@ -6896,7 +6913,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl" 
 		"visibility" " -av 1"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl" 
-		"translate" " -type \"double3\" -0.011159360869601826 -0.45811753105617364 0"
+		"translate" " -type \"double3\" -0.011159360869596841 -0.19407783258700984 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl" 
 		"translateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl" 
@@ -6930,7 +6947,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl" 
-		"rotate" " -type \"double3\" 0.9207339580983942 -4.08872071912535873 -51.22410880884721962"
+		"rotate" " -type \"double3\" -0.0078765913016621367 -1.22859824627312397 -48.0922971366244667"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl" 
 		"rotateX" " -av"
@@ -6957,7 +6974,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl" 
-		"rotate" " -type \"double3\" 234.67485967264178726 -140.79072181356505666 -200.76723349134775276"
+		"rotate" " -type \"double3\" 235.69240157827883309 -132.47241188597035944 -199.64229436631151771"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl" 
 		"rotateX" " -av"
@@ -7064,7 +7081,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl" 
-		"rotate" " -type \"double3\" -9.77633195475929284 -13.11483916924645321 -29.39219883823137636"
+		"rotate" " -type \"double3\" -1.30763544904848983 -10.2848764088462552 -42.96785522635143195"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl" 
 		"rotateX" " -av"
@@ -7091,7 +7108,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl" 
-		"rotate" " -type \"double3\" 265.27915791640293719 -159.16104691818830474 -228.01489068927503467"
+		"rotate" " -type \"double3\" 267.66656243215390987 -156.5104717050741101 -228.25662231294006688"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl" 
 		"rotateX" " -av"
@@ -7108,7 +7125,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl" 
 		"scaleZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp" 
-		"rotate" " -type \"double3\" -9.56715438777780669 -6.55846380369060977 3.84689411264355874"
+		"rotate" " -type \"double3\" -8.76955030851717865 -6.30957862657734925 5.74046523955950505"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp" 
 		"rotateX" " -av"
@@ -7269,7 +7286,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:armR_IKFK" 
 		"IKFKSwitch" " -av -k 1 1"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:armL_IKFK" 
-		"IKFKSwitch" " -av -k 1 0"
+		"IKFKSwitch" " -av -k 1 1"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:armL_IKFK|MC_control_rig:pasted__polyToCurveShape2" 
 		"lockLength" " -k 1 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RThumb_Knuckle" 
@@ -7426,16 +7443,16 @@ createNode reference -n "MC_control_rigRN";
 		"rotateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:SCALE_Grp|MC_control_rig:SOCKS_Grp|MC_control_rig:MC_overalls_latest:polySurface1|MC_control_rig:MC_overalls_latest:polySurfaceShape2" 
 		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "MC_control_rig:blendShape1" "weight[0]" " 0.23538201"
+		2 "MC_control_rig:blendShape1" "weight[0]" " 0.23648648"
 		2 "MC_control_rig:blendShape1" "weight[0]" " -av"
 		2 "MC_control_rig:blendShape1" "midLayerParent" " 0"
-		2 "MC_control_rig:blendShape2" "weight[0]" " 0.68243635000000002"
+		2 "MC_control_rig:blendShape2" "weight[0]" " 0.41891890999999998"
 		2 "MC_control_rig:blendShape2" "weight[0]" " -av"
 		2 "MC_control_rig:blendShape2" "midLayerParent" " 0"
 		2 "MC_control_rig:blendShape3" "weight[0]" " 0"
 		2 "MC_control_rig:blendShape3" "weight[0]" " -av"
 		2 "MC_control_rig:blendShape3" "midLayerParent" " 0"
-		2 "MC_control_rig:blendShape4" "weight[0]" " 0.099600411999999999"
+		2 "MC_control_rig:blendShape4" "weight[0]" " 0.10135135000000001"
 		2 "MC_control_rig:blendShape4" "weight[0]" " -av"
 		2 "MC_control_rig:blendShape4" "midLayerParent" " 0"
 		2 "MC_control_rig:blendShape5" "w[0:1]" " -s 2 0 0"
@@ -7443,1347 +7460,1368 @@ createNode reference -n "MC_control_rigRN";
 		2 "MC_control_rig:blendShape5" "weight[0]" " -av"
 		2 "MC_control_rig:blendShape5" "weight[1]" " -av"
 		2 "MC_control_rig:blendShape5" "midLayerParent" " 0"
-		2 "MC_control_rig:blendShape6" "w[0:9]" " -s 10 0.0015393562 0.0068823458000000001 8.4976898999999993e-05 0.010736459 0 0 0 0 0 0"
-		
+		2 "MC_control_rig:blendShape6" "w[0:9]" " -s 10 0 0 0 0 0 0 0 0 0 0"
 		2 "MC_control_rig:blendShape6" "weight" " -s 4"
 		2 "MC_control_rig:blendShape6" "weight[0]" " -av"
 		2 "MC_control_rig:blendShape6" "weight[1]" " -av"
 		2 "MC_control_rig:blendShape6" "weight[2]" " -av"
 		2 "MC_control_rig:blendShape6" "weight[3]" " -av"
 		2 "MC_control_rig:blendShape6" "midLayerParent" " 0"
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.translate" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig.drawOverride" 
 		"MC_control_rigRN.placeHolderList[1]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.translateX" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.translate" 
 		"MC_control_rigRN.placeHolderList[2]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[3]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[4]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotatePivot" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[5]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotatePivotTranslate" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotatePivot" 
 		"MC_control_rigRN.placeHolderList[6]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotate" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotatePivotTranslate" 
 		"MC_control_rigRN.placeHolderList[7]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotateX" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotate" 
 		"MC_control_rigRN.placeHolderList[8]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[9]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[10]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotateOrder" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[11]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.scale" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.rotateOrder" 
 		"MC_control_rigRN.placeHolderList[12]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.scaleX" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.scale" 
 		"MC_control_rigRN.placeHolderList[13]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[14]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[15]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.parentMatrix" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[16]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.visibility" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.parentMatrix" 
 		"MC_control_rigRN.placeHolderList[17]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[18]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[19]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[20]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[21]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[22]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[23]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[24]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[25]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[26]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[27]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[28]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[29]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[30]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[31]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[32]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[33]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[34]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[35]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[36]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[37]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[38]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[39]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[40]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[41]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[42]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[43]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[44]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[45]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[46]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[47]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[48]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[49]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[50]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[51]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[52]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[53]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[54]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[55]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[56]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[57]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[58]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[59]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[60]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[61]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[62]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[63]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[64]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[65]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[66]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[67]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[68]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[69]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[70]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[71]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[72]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[73]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[74]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[75]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[76]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipR_FK_Grp|MC_control_rig:hipR_FK_Ctrl|MC_control_rig:kneeR_FK_Grp|MC_control_rig:kneeR_FK_Ctrl|MC_control_rig:ankleR_FK_Grp|MC_control_rig:ankleR_FK_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[77]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[78]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[79]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[80]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[81]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[82]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[83]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[84]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[85]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[86]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[87]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[88]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[89]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[90]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[91]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[92]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[93]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[94]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[95]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[96]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[97]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[98]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[99]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[100]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[101]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[102]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[103]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[104]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[105]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[106]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[107]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[108]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[109]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[110]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[111]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[112]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[113]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[114]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[115]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[116]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[117]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[118]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[119]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[120]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[121]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[122]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[123]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[124]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[125]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[126]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[127]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[128]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[129]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[130]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[131]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[132]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[133]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[134]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[135]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[136]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[137]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[138]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[139]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[140]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[141]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[142]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[143]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[144]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[145]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[146]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[147]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[148]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[149]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[150]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[151]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[152]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[153]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[154]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[155]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[156]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[157]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[158]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[159]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[160]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[161]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[162]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[163]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[164]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[165]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[166]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[167]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[168]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[169]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[170]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[171]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[172]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[173]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[174]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[175]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[176]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[177]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[178]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[179]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[180]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[181]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[182]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[183]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[184]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[185]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[186]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[187]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[188]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[189]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[190]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[191]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[192]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[193]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[194]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[195]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[196]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[197]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[198]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[199]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[200]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[201]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[202]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[203]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[204]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[205]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[206]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[207]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[208]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[209]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[210]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[211]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[212]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[213]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[214]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[215]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[216]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[217]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[218]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[219]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[220]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[221]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[222]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[223]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[224]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[225]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[226]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[227]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[228]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[229]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[230]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[231]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[232]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[233]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[234]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[235]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:shoulderR_FK_Grp|MC_control_rig:shoulderR_FK_Ctrl|MC_control_rig:elbowR_FK_Grp|MC_control_rig:elbowR_FK_Ctrl|MC_control_rig:wristR_FK_Grp|MC_control_rig:wristR_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[236]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[237]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[238]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[239]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[240]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[241]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[242]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[243]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[244]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[245]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[246]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[247]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[248]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotateOrder" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[249]" ""
 		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotateOrder" 
 		"MC_control_rigRN.placeHolderList[250]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.visibility" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotateOrder" 
 		"MC_control_rigRN.placeHolderList[251]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.blendParent1" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[252]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.blendParent1" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.blendParent1" 
 		"MC_control_rigRN.placeHolderList[253]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.blendParent1" 
 		"MC_control_rigRN.placeHolderList[254]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[255]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[256]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[257]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[258]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[259]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.parentInverseMatrix" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[260]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotatePivot" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.parentInverseMatrix" 
 		"MC_control_rigRN.placeHolderList[261]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotatePivotTranslate" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotatePivot" 
 		"MC_control_rigRN.placeHolderList[262]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.rotateX" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl.rotatePivotTranslate" 
 		"MC_control_rigRN.placeHolderList[263]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.rotateX" 
 		"MC_control_rigRN.placeHolderList[264]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.rotateY" 
 		"MC_control_rigRN.placeHolderList[265]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.rotateZ" 
 		"MC_control_rigRN.placeHolderList[266]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.visibility" 
 		"MC_control_rigRN.placeHolderList[267]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.translateX" 
 		"MC_control_rigRN.placeHolderList[268]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.translateY" 
 		"MC_control_rigRN.placeHolderList[269]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.translateZ" 
 		"MC_control_rigRN.placeHolderList[270]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.scaleX" 
 		"MC_control_rigRN.placeHolderList[271]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.scaleY" 
 		"MC_control_rigRN.placeHolderList[272]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.offset" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.scaleZ" 
 		"MC_control_rigRN.placeHolderList[273]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.roll" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.offset" 
 		"MC_control_rigRN.placeHolderList[274]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.twist" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.roll" 
 		"MC_control_rigRN.placeHolderList[275]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.ikBlend" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.twist" 
 		"MC_control_rigRN.placeHolderList[276]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK|MC_control_rig:RightArm_IK_poleVectorConstraint1.nodeState" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK.ikBlend" 
 		"MC_control_rigRN.placeHolderList[277]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK|MC_control_rig:RightArm_IK_poleVectorConstraint1.ArmR_PoleW0" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK|MC_control_rig:RightArm_IK_poleVectorConstraint1.nodeState" 
 		"MC_control_rigRN.placeHolderList[278]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK|MC_control_rig:RightArm_IK_poleVectorConstraint1.offsetX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK|MC_control_rig:RightArm_IK_poleVectorConstraint1.ArmR_PoleW0" 
 		"MC_control_rigRN.placeHolderList[279]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK|MC_control_rig:RightArm_IK_poleVectorConstraint1.offsetY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK|MC_control_rig:RightArm_IK_poleVectorConstraint1.offsetX" 
 		"MC_control_rigRN.placeHolderList[280]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK|MC_control_rig:RightArm_IK_poleVectorConstraint1.offsetZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK|MC_control_rig:RightArm_IK_poleVectorConstraint1.offsetY" 
 		"MC_control_rigRN.placeHolderList[281]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK|MC_control_rig:RightArm_IK_poleVectorConstraint1.offsetZ" 
 		"MC_control_rigRN.placeHolderList[282]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[283]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[284]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[285]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[286]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[287]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[288]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[289]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[290]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[291]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[292]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[293]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[294]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[295]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[296]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[297]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[298]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[299]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[300]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[301]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[302]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[303]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[304]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[305]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[306]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[307]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[308]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[309]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[310]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[311]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[312]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[313]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[314]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[315]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[316]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[317]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[318]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[319]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[320]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[321]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[322]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[323]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[324]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[325]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[326]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[327]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[328]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[329]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[330]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[331]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[332]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[333]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[334]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[335]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[336]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[337]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[338]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[339]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[340]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[341]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[342]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[343]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[344]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[345]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[346]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[347]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[348]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[349]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[350]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[351]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[352]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[353]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[354]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[355]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[356]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[357]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[358]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[359]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[360]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl|MC_control_rig:wristL_FK_Grp|MC_control_rig:wristL_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[361]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[362]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[363]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[364]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[365]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[366]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[367]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[368]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[369]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[370]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[371]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotateX" 
 		"MC_control_rigRN.placeHolderList[372]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotateY" 
 		"MC_control_rigRN.placeHolderList[373]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotateOrder" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotateZ" 
 		"MC_control_rigRN.placeHolderList[374]" ""
 		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotateOrder" 
 		"MC_control_rigRN.placeHolderList[375]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.visibility" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotateOrder" 
 		"MC_control_rigRN.placeHolderList[376]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.blendParent1" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.visibility" 
 		"MC_control_rigRN.placeHolderList[377]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.blendParent1" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.blendParent1" 
 		"MC_control_rigRN.placeHolderList[378]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.blendParent1" 
 		"MC_control_rigRN.placeHolderList[379]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.translateX" 
 		"MC_control_rigRN.placeHolderList[380]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.translateY" 
 		"MC_control_rigRN.placeHolderList[381]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.translateZ" 
 		"MC_control_rigRN.placeHolderList[382]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.scaleX" 
 		"MC_control_rigRN.placeHolderList[383]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.scaleY" 
 		"MC_control_rigRN.placeHolderList[384]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.parentInverseMatrix" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.scaleZ" 
 		"MC_control_rigRN.placeHolderList[385]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotatePivot" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.parentInverseMatrix" 
 		"MC_control_rigRN.placeHolderList[386]" ""
-		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotatePivotTranslate" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotatePivot" 
 		"MC_control_rigRN.placeHolderList[387]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.rotateX" 
+		5 3 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1.rotatePivotTranslate" 
 		"MC_control_rigRN.placeHolderList[388]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.rotateX" 
 		"MC_control_rigRN.placeHolderList[389]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.rotateY" 
 		"MC_control_rigRN.placeHolderList[390]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.rotateZ" 
 		"MC_control_rigRN.placeHolderList[391]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.visibility" 
 		"MC_control_rigRN.placeHolderList[392]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.translateX" 
 		"MC_control_rigRN.placeHolderList[393]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.translateY" 
 		"MC_control_rigRN.placeHolderList[394]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.translateZ" 
 		"MC_control_rigRN.placeHolderList[395]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.scaleX" 
 		"MC_control_rigRN.placeHolderList[396]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.scaleY" 
 		"MC_control_rigRN.placeHolderList[397]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.offset" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.scaleZ" 
 		"MC_control_rigRN.placeHolderList[398]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.roll" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.offset" 
 		"MC_control_rigRN.placeHolderList[399]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.twist" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.roll" 
 		"MC_control_rigRN.placeHolderList[400]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.ikBlend" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.twist" 
 		"MC_control_rigRN.placeHolderList[401]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK|MC_control_rig:LeftArm_IK_poleVectorConstraint1.nodeState" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK.ikBlend" 
 		"MC_control_rigRN.placeHolderList[402]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK|MC_control_rig:LeftArm_IK_poleVectorConstraint1.ArmL_PoleW0" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK|MC_control_rig:LeftArm_IK_poleVectorConstraint1.nodeState" 
 		"MC_control_rigRN.placeHolderList[403]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK|MC_control_rig:LeftArm_IK_poleVectorConstraint1.offsetX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK|MC_control_rig:LeftArm_IK_poleVectorConstraint1.ArmL_PoleW0" 
 		"MC_control_rigRN.placeHolderList[404]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK|MC_control_rig:LeftArm_IK_poleVectorConstraint1.offsetY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK|MC_control_rig:LeftArm_IK_poleVectorConstraint1.offsetX" 
 		"MC_control_rigRN.placeHolderList[405]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK|MC_control_rig:LeftArm_IK_poleVectorConstraint1.offsetZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK|MC_control_rig:LeftArm_IK_poleVectorConstraint1.offsetY" 
 		"MC_control_rigRN.placeHolderList[406]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1|MC_control_rig:LeftArm_IK|MC_control_rig:LeftArm_IK_poleVectorConstraint1.offsetZ" 
 		"MC_control_rigRN.placeHolderList[407]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[408]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[409]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[410]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[411]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[412]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[413]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[414]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[415]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[416]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[417]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[418]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[419]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[420]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[421]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[422]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[423]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[424]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[425]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[426]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[427]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[428]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[429]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[430]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[431]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[432]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[433]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[434]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[435]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[436]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[437]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[438]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[439]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[440]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[441]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[442]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[443]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[444]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[445]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[446]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.visibility" 
 		"MC_control_rigRN.placeHolderList[447]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.rotateX" 
 		"MC_control_rigRN.placeHolderList[448]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.rotateY" 
 		"MC_control_rigRN.placeHolderList[449]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.rotateZ" 
 		"MC_control_rigRN.placeHolderList[450]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.translateX" 
 		"MC_control_rigRN.placeHolderList[451]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.translateY" 
 		"MC_control_rigRN.placeHolderList[452]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.translateZ" 
 		"MC_control_rigRN.placeHolderList[453]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.scaleX" 
 		"MC_control_rigRN.placeHolderList[454]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.scaleY" 
 		"MC_control_rigRN.placeHolderList[455]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp.scaleZ" 
 		"MC_control_rigRN.placeHolderList[456]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[457]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[458]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[459]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[460]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[461]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[462]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[463]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[464]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[465]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:hipL_FK_Grp|MC_control_rig:hipL_FK_Ctrl|MC_control_rig:kneeL_FK_Grp|MC_control_rig:kneeL_FK_Ctrl|MC_control_rig:ankleL_FK_Grp|MC_control_rig:ankleL_FK_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[466]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[467]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[468]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[469]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[470]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[471]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[472]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[473]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[474]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[475]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footL_IK_Grp|MC_control_rig:footL_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[476]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.visibility" 
 		"MC_control_rigRN.placeHolderList[477]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.translateX" 
 		"MC_control_rigRN.placeHolderList[478]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.translateY" 
 		"MC_control_rigRN.placeHolderList[479]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.translateZ" 
 		"MC_control_rigRN.placeHolderList[480]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.rotateX" 
 		"MC_control_rigRN.placeHolderList[481]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.rotateY" 
 		"MC_control_rigRN.placeHolderList[482]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.rotateZ" 
 		"MC_control_rigRN.placeHolderList[483]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.scaleX" 
 		"MC_control_rigRN.placeHolderList[484]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.scaleY" 
 		"MC_control_rigRN.placeHolderList[485]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:footR_IK_Grp|MC_control_rig:footR_Ctrl.scaleZ" 
 		"MC_control_rigRN.placeHolderList[486]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.translateX" 
 		"MC_control_rigRN.placeHolderList[487]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.translateY" 
 		"MC_control_rigRN.placeHolderList[488]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.translateZ" 
 		"MC_control_rigRN.placeHolderList[489]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.rotateX" 
 		"MC_control_rigRN.placeHolderList[490]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.rotateY" 
 		"MC_control_rigRN.placeHolderList[491]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.rotateZ" 
 		"MC_control_rigRN.placeHolderList[492]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.visibility" 
 		"MC_control_rigRN.placeHolderList[493]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.scaleX" 
 		"MC_control_rigRN.placeHolderList[494]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.scaleY" 
 		"MC_control_rigRN.placeHolderList[495]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegL_Pole.scaleZ" 
 		"MC_control_rigRN.placeHolderList[496]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.translateX" 
 		"MC_control_rigRN.placeHolderList[497]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.translateY" 
 		"MC_control_rigRN.placeHolderList[498]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.translateZ" 
 		"MC_control_rigRN.placeHolderList[499]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.rotateX" 
 		"MC_control_rigRN.placeHolderList[500]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.rotateY" 
 		"MC_control_rigRN.placeHolderList[501]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.rotateZ" 
 		"MC_control_rigRN.placeHolderList[502]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.visibility" 
 		"MC_control_rigRN.placeHolderList[503]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.scaleX" 
 		"MC_control_rigRN.placeHolderList[504]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.scaleY" 
 		"MC_control_rigRN.placeHolderList[505]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Leg_Pole_Grp|MC_control_rig:LegR_Pole.scaleZ" 
 		"MC_control_rigRN.placeHolderList[506]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.translateX" 
 		"MC_control_rigRN.placeHolderList[507]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.translateY" 
 		"MC_control_rigRN.placeHolderList[508]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.translateZ" 
 		"MC_control_rigRN.placeHolderList[509]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.visibility" 
 		"MC_control_rigRN.placeHolderList[510]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.rotateX" 
 		"MC_control_rigRN.placeHolderList[511]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.rotateY" 
 		"MC_control_rigRN.placeHolderList[512]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.rotateZ" 
 		"MC_control_rigRN.placeHolderList[513]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.scaleX" 
 		"MC_control_rigRN.placeHolderList[514]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.scaleY" 
 		"MC_control_rigRN.placeHolderList[515]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole.scaleZ" 
 		"MC_control_rigRN.placeHolderList[516]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.translateX" 
 		"MC_control_rigRN.placeHolderList[517]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.translateY" 
 		"MC_control_rigRN.placeHolderList[518]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.translateZ" 
 		"MC_control_rigRN.placeHolderList[519]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.visibility" 
 		"MC_control_rigRN.placeHolderList[520]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.rotateX" 
 		"MC_control_rigRN.placeHolderList[521]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.rotateY" 
 		"MC_control_rigRN.placeHolderList[522]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.rotateZ" 
 		"MC_control_rigRN.placeHolderList[523]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.scaleX" 
 		"MC_control_rigRN.placeHolderList[524]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.scaleY" 
 		"MC_control_rigRN.placeHolderList[525]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:armR_IKFK.IKFKSwitch" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole.scaleZ" 
 		"MC_control_rigRN.placeHolderList[526]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:armL_IKFK.IKFKSwitch" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:armR_IKFK.IKFKSwitch" 
 		"MC_control_rigRN.placeHolderList[527]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:armL_IKFK.IKFKSwitch" 
 		"MC_control_rigRN.placeHolderList[528]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.rotateZ" 
 		"MC_control_rigRN.placeHolderList[529]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.rotateX" 
 		"MC_control_rigRN.placeHolderList[530]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.rotateY" 
 		"MC_control_rigRN.placeHolderList[531]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.visibility" 
 		"MC_control_rigRN.placeHolderList[532]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.translateX" 
 		"MC_control_rigRN.placeHolderList[533]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.translateY" 
 		"MC_control_rigRN.placeHolderList[534]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.translateZ" 
 		"MC_control_rigRN.placeHolderList[535]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.scaleX" 
 		"MC_control_rigRN.placeHolderList[536]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.scaleY" 
 		"MC_control_rigRN.placeHolderList[537]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RPinky_Knuckle.scaleZ" 
 		"MC_control_rigRN.placeHolderList[538]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.rotateZ" 
 		"MC_control_rigRN.placeHolderList[539]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.rotateX" 
 		"MC_control_rigRN.placeHolderList[540]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.rotateY" 
 		"MC_control_rigRN.placeHolderList[541]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.visibility" 
 		"MC_control_rigRN.placeHolderList[542]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.translateX" 
 		"MC_control_rigRN.placeHolderList[543]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.translateY" 
 		"MC_control_rigRN.placeHolderList[544]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.translateZ" 
 		"MC_control_rigRN.placeHolderList[545]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.scaleX" 
 		"MC_control_rigRN.placeHolderList[546]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.scaleY" 
 		"MC_control_rigRN.placeHolderList[547]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RRing_Knuckle.scaleZ" 
 		"MC_control_rigRN.placeHolderList[548]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.rotateZ" 
 		"MC_control_rigRN.placeHolderList[549]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.rotateX" 
 		"MC_control_rigRN.placeHolderList[550]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.rotateY" 
 		"MC_control_rigRN.placeHolderList[551]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.visibility" 
 		"MC_control_rigRN.placeHolderList[552]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.translateX" 
 		"MC_control_rigRN.placeHolderList[553]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.translateY" 
 		"MC_control_rigRN.placeHolderList[554]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.translateZ" 
 		"MC_control_rigRN.placeHolderList[555]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.scaleX" 
 		"MC_control_rigRN.placeHolderList[556]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.scaleY" 
 		"MC_control_rigRN.placeHolderList[557]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RMiddle_Knuckle.scaleZ" 
 		"MC_control_rigRN.placeHolderList[558]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.rotateZ" 
 		"MC_control_rigRN.placeHolderList[559]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.rotateX" 
 		"MC_control_rigRN.placeHolderList[560]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.rotateY" 
 		"MC_control_rigRN.placeHolderList[561]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.visibility" 
 		"MC_control_rigRN.placeHolderList[562]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.translateX" 
 		"MC_control_rigRN.placeHolderList[563]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.translateY" 
 		"MC_control_rigRN.placeHolderList[564]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.translateZ" 
 		"MC_control_rigRN.placeHolderList[565]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.scaleX" 
 		"MC_control_rigRN.placeHolderList[566]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.scaleY" 
 		"MC_control_rigRN.placeHolderList[567]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:RFingers_Grp|MC_control_rig:RIndex_Knuckle.scaleZ" 
 		"MC_control_rigRN.placeHolderList[568]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.rotateX" 
 		"MC_control_rigRN.placeHolderList[569]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.rotateY" 
 		"MC_control_rigRN.placeHolderList[570]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.rotateZ" 
 		"MC_control_rigRN.placeHolderList[571]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.visibility" 
 		"MC_control_rigRN.placeHolderList[572]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.translateX" 
 		"MC_control_rigRN.placeHolderList[573]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.translateY" 
 		"MC_control_rigRN.placeHolderList[574]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.translateZ" 
 		"MC_control_rigRN.placeHolderList[575]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.scaleX" 
 		"MC_control_rigRN.placeHolderList[576]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.scaleY" 
 		"MC_control_rigRN.placeHolderList[577]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle.scaleZ" 
 		"MC_control_rigRN.placeHolderList[578]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.rotateX" 
 		"MC_control_rigRN.placeHolderList[579]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.rotateY" 
 		"MC_control_rigRN.placeHolderList[580]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.rotateZ" 
 		"MC_control_rigRN.placeHolderList[581]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.visibility" 
 		"MC_control_rigRN.placeHolderList[582]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.translateX" 
 		"MC_control_rigRN.placeHolderList[583]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.translateY" 
 		"MC_control_rigRN.placeHolderList[584]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.translateZ" 
 		"MC_control_rigRN.placeHolderList[585]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.scaleX" 
 		"MC_control_rigRN.placeHolderList[586]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.scaleY" 
 		"MC_control_rigRN.placeHolderList[587]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LPinky_Knuckle|MC_control_rig:LPinky_Mid.scaleZ" 
 		"MC_control_rigRN.placeHolderList[588]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.rotateX" 
 		"MC_control_rigRN.placeHolderList[589]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.rotateY" 
 		"MC_control_rigRN.placeHolderList[590]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.rotateZ" 
 		"MC_control_rigRN.placeHolderList[591]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.visibility" 
 		"MC_control_rigRN.placeHolderList[592]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.translateX" 
 		"MC_control_rigRN.placeHolderList[593]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.translateY" 
 		"MC_control_rigRN.placeHolderList[594]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.translateZ" 
 		"MC_control_rigRN.placeHolderList[595]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.scaleX" 
 		"MC_control_rigRN.placeHolderList[596]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.scaleY" 
 		"MC_control_rigRN.placeHolderList[597]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle.scaleZ" 
 		"MC_control_rigRN.placeHolderList[598]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.rotateX" 
 		"MC_control_rigRN.placeHolderList[599]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.rotateY" 
 		"MC_control_rigRN.placeHolderList[600]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.rotateZ" 
 		"MC_control_rigRN.placeHolderList[601]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.visibility" 
 		"MC_control_rigRN.placeHolderList[602]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.translateX" 
 		"MC_control_rigRN.placeHolderList[603]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.translateY" 
 		"MC_control_rigRN.placeHolderList[604]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.translateZ" 
 		"MC_control_rigRN.placeHolderList[605]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.scaleX" 
 		"MC_control_rigRN.placeHolderList[606]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.scaleY" 
 		"MC_control_rigRN.placeHolderList[607]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LRing_Knuckle|MC_control_rig:LRing_Mid.scaleZ" 
 		"MC_control_rigRN.placeHolderList[608]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.rotateX" 
 		"MC_control_rigRN.placeHolderList[609]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.rotateY" 
 		"MC_control_rigRN.placeHolderList[610]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.rotateZ" 
 		"MC_control_rigRN.placeHolderList[611]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.visibility" 
 		"MC_control_rigRN.placeHolderList[612]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.translateX" 
 		"MC_control_rigRN.placeHolderList[613]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.translateY" 
 		"MC_control_rigRN.placeHolderList[614]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.translateZ" 
 		"MC_control_rigRN.placeHolderList[615]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.scaleX" 
 		"MC_control_rigRN.placeHolderList[616]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.scaleY" 
 		"MC_control_rigRN.placeHolderList[617]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle.scaleZ" 
 		"MC_control_rigRN.placeHolderList[618]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.rotateX" 
 		"MC_control_rigRN.placeHolderList[619]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.rotateY" 
 		"MC_control_rigRN.placeHolderList[620]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.rotateZ" 
 		"MC_control_rigRN.placeHolderList[621]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.visibility" 
 		"MC_control_rigRN.placeHolderList[622]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.translateX" 
 		"MC_control_rigRN.placeHolderList[623]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.translateY" 
 		"MC_control_rigRN.placeHolderList[624]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.translateZ" 
 		"MC_control_rigRN.placeHolderList[625]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.scaleX" 
 		"MC_control_rigRN.placeHolderList[626]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.scaleY" 
 		"MC_control_rigRN.placeHolderList[627]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LMiddle_Knuckle|MC_control_rig:LMiddle_Mid.scaleZ" 
 		"MC_control_rigRN.placeHolderList[628]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.rotateX" 
 		"MC_control_rigRN.placeHolderList[629]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.rotateY" 
 		"MC_control_rigRN.placeHolderList[630]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.rotateZ" 
 		"MC_control_rigRN.placeHolderList[631]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.visibility" 
 		"MC_control_rigRN.placeHolderList[632]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.translateX" 
 		"MC_control_rigRN.placeHolderList[633]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.translateY" 
 		"MC_control_rigRN.placeHolderList[634]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.translateZ" 
 		"MC_control_rigRN.placeHolderList[635]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.scaleX" 
 		"MC_control_rigRN.placeHolderList[636]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.scaleY" 
 		"MC_control_rigRN.placeHolderList[637]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle.scaleZ" 
 		"MC_control_rigRN.placeHolderList[638]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.rotateX" 
 		"MC_control_rigRN.placeHolderList[639]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.rotateY" 
 		"MC_control_rigRN.placeHolderList[640]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.rotateZ" 
 		"MC_control_rigRN.placeHolderList[641]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.visibility" 
 		"MC_control_rigRN.placeHolderList[642]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.translateX" 
 		"MC_control_rigRN.placeHolderList[643]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.translateY" 
 		"MC_control_rigRN.placeHolderList[644]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.translateZ" 
 		"MC_control_rigRN.placeHolderList[645]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.scaleX" 
 		"MC_control_rigRN.placeHolderList[646]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.scaleY" 
 		"MC_control_rigRN.placeHolderList[647]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.rotateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LIndex_Knuckle|MC_control_rig:LIndex_Mid.scaleZ" 
 		"MC_control_rigRN.placeHolderList[648]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.rotateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.rotateX" 
 		"MC_control_rigRN.placeHolderList[649]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.rotateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.rotateY" 
 		"MC_control_rigRN.placeHolderList[650]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.visibility" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.rotateZ" 
 		"MC_control_rigRN.placeHolderList[651]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.translateX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.visibility" 
 		"MC_control_rigRN.placeHolderList[652]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.translateY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.translateX" 
 		"MC_control_rigRN.placeHolderList[653]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.translateZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.translateY" 
 		"MC_control_rigRN.placeHolderList[654]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.scaleX" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.translateZ" 
 		"MC_control_rigRN.placeHolderList[655]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.scaleY" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.scaleX" 
 		"MC_control_rigRN.placeHolderList[656]" ""
-		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.scaleZ" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.scaleY" 
 		"MC_control_rigRN.placeHolderList[657]" ""
-		5 4 "MC_control_rigRN" "MC_control_rig:blendShape1.weight[0]" "MC_control_rigRN.placeHolderList[658]" 
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:LFingers_Grp|MC_control_rig:LThumb_Knuckle.scaleZ" 
+		"MC_control_rigRN.placeHolderList[658]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:RETOPO_MAY.drawOverride" 
+		"MC_control_rigRN.placeHolderList[659]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:pSphere2.drawOverride" 
+		"MC_control_rigRN.placeHolderList[660]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:pSphere1.drawOverride" 
+		"MC_control_rigRN.placeHolderList[661]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:SCALE_Grp|MC_control_rig:SOCKS_Grp|MC_control_rig:MC_overalls_latest:polySurface1.drawOverride" 
+		"MC_control_rigRN.placeHolderList[662]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:SCALE_Grp|MC_control_rig:SOCKS_Grp|MC_control_rig:MC_overalls_latest:polySurface2.drawOverride" 
+		"MC_control_rigRN.placeHolderList[663]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:SCALE_Grp|MC_control_rig:HAIR_Grp|MC_control_rig:MC_hair_latest:MC_hair.drawOverride" 
+		"MC_control_rigRN.placeHolderList[664]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:SCALE_Grp|MC_control_rig:HAIR_Grp|MC_control_rig:pCube2.drawOverride" 
+		"MC_control_rigRN.placeHolderList[665]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:SCALE_Grp|MC_control_rig:HAIR_Grp|MC_control_rig:pCube1.drawOverride" 
+		"MC_control_rigRN.placeHolderList[666]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:SCALE_Grp|MC_control_rig:MC_shirt_latest:MC_shirt.drawOverride" 
+		"MC_control_rigRN.placeHolderList[667]" ""
+		5 4 "MC_control_rigRN" "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:SCALE_Grp|MC_control_rig:MC_overalls_latest:MC_overalls.drawOverride" 
+		"MC_control_rigRN.placeHolderList[668]" ""
+		5 4 "MC_control_rigRN" "MC_control_rig:blendShape1.weight[0]" "MC_control_rigRN.placeHolderList[669]" 
 		""
-		5 4 "MC_control_rigRN" "MC_control_rig:blendShape2.weight[0]" "MC_control_rigRN.placeHolderList[659]" 
+		5 4 "MC_control_rigRN" "MC_control_rig:blendShape2.weight[0]" "MC_control_rigRN.placeHolderList[670]" 
 		""
-		5 4 "MC_control_rigRN" "MC_control_rig:blendShape3.weight[0]" "MC_control_rigRN.placeHolderList[660]" 
+		5 4 "MC_control_rigRN" "MC_control_rig:blendShape3.weight[0]" "MC_control_rigRN.placeHolderList[671]" 
 		""
-		5 4 "MC_control_rigRN" "MC_control_rig:blendShape4.weight[0]" "MC_control_rigRN.placeHolderList[661]" 
+		5 4 "MC_control_rigRN" "MC_control_rig:blendShape4.weight[0]" "MC_control_rigRN.placeHolderList[672]" 
 		""
-		5 4 "MC_control_rigRN" "MC_control_rig:blendShape5.weight[0]" "MC_control_rigRN.placeHolderList[662]" 
+		5 4 "MC_control_rigRN" "MC_control_rig:blendShape5.weight[0]" "MC_control_rigRN.placeHolderList[673]" 
 		""
-		5 4 "MC_control_rigRN" "MC_control_rig:blendShape5.weight[1]" "MC_control_rigRN.placeHolderList[663]" 
+		5 4 "MC_control_rigRN" "MC_control_rig:blendShape5.weight[1]" "MC_control_rigRN.placeHolderList[674]" 
 		""
-		5 4 "MC_control_rigRN" "MC_control_rig:blendShape6.weight[0]" "MC_control_rigRN.placeHolderList[664]" 
+		5 4 "MC_control_rigRN" "MC_control_rig:blendShape6.weight[0]" "MC_control_rigRN.placeHolderList[675]" 
 		""
-		5 4 "MC_control_rigRN" "MC_control_rig:blendShape6.weight[1]" "MC_control_rigRN.placeHolderList[665]" 
+		5 4 "MC_control_rigRN" "MC_control_rig:blendShape6.weight[1]" "MC_control_rigRN.placeHolderList[676]" 
 		""
-		5 4 "MC_control_rigRN" "MC_control_rig:blendShape6.weight[2]" "MC_control_rigRN.placeHolderList[666]" 
+		5 4 "MC_control_rigRN" "MC_control_rig:blendShape6.weight[2]" "MC_control_rigRN.placeHolderList[677]" 
 		""
-		5 4 "MC_control_rigRN" "MC_control_rig:blendShape6.weight[3]" "MC_control_rigRN.placeHolderList[667]" 
+		5 4 "MC_control_rigRN" "MC_control_rig:blendShape6.weight[3]" "MC_control_rigRN.placeHolderList[678]" 
 		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -9053,7 +9091,7 @@ createNode reference -n "sharedReferenceNode";
 		"sharedReferenceNode";
 createNode reference -n "grannyCranny_SET_latestRN";
 	rename -uid "9E47F0D2-3341-74BC-72A0-FFBBC320CC93";
-	setAttr -s 28 ".phl";
+	setAttr -s 136 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -9082,6 +9120,114 @@ createNode reference -n "grannyCranny_SET_latestRN";
 	setAttr ".phl[26]" 0;
 	setAttr ".phl[27]" 0;
 	setAttr ".phl[28]" 0;
+	setAttr ".phl[29]" 0;
+	setAttr ".phl[30]" 0;
+	setAttr ".phl[31]" 0;
+	setAttr ".phl[32]" 0;
+	setAttr ".phl[33]" 0;
+	setAttr ".phl[34]" 0;
+	setAttr ".phl[35]" 0;
+	setAttr ".phl[36]" 0;
+	setAttr ".phl[37]" 0;
+	setAttr ".phl[38]" 0;
+	setAttr ".phl[39]" 0;
+	setAttr ".phl[40]" 0;
+	setAttr ".phl[41]" 0;
+	setAttr ".phl[42]" 0;
+	setAttr ".phl[43]" 0;
+	setAttr ".phl[44]" 0;
+	setAttr ".phl[45]" 0;
+	setAttr ".phl[46]" 0;
+	setAttr ".phl[47]" 0;
+	setAttr ".phl[48]" 0;
+	setAttr ".phl[49]" 0;
+	setAttr ".phl[50]" 0;
+	setAttr ".phl[51]" 0;
+	setAttr ".phl[52]" 0;
+	setAttr ".phl[53]" 0;
+	setAttr ".phl[54]" 0;
+	setAttr ".phl[55]" 0;
+	setAttr ".phl[56]" 0;
+	setAttr ".phl[57]" 0;
+	setAttr ".phl[58]" 0;
+	setAttr ".phl[59]" 0;
+	setAttr ".phl[60]" 0;
+	setAttr ".phl[61]" 0;
+	setAttr ".phl[62]" 0;
+	setAttr ".phl[63]" 0;
+	setAttr ".phl[64]" 0;
+	setAttr ".phl[65]" 0;
+	setAttr ".phl[66]" 0;
+	setAttr ".phl[67]" 0;
+	setAttr ".phl[68]" 0;
+	setAttr ".phl[69]" 0;
+	setAttr ".phl[70]" 0;
+	setAttr ".phl[71]" 0;
+	setAttr ".phl[72]" 0;
+	setAttr ".phl[73]" 0;
+	setAttr ".phl[74]" 0;
+	setAttr ".phl[75]" 0;
+	setAttr ".phl[76]" 0;
+	setAttr ".phl[77]" 0;
+	setAttr ".phl[78]" 0;
+	setAttr ".phl[79]" 0;
+	setAttr ".phl[80]" 0;
+	setAttr ".phl[81]" 0;
+	setAttr ".phl[82]" 0;
+	setAttr ".phl[83]" 0;
+	setAttr ".phl[84]" 0;
+	setAttr ".phl[85]" 0;
+	setAttr ".phl[86]" 0;
+	setAttr ".phl[87]" 0;
+	setAttr ".phl[88]" 0;
+	setAttr ".phl[89]" 0;
+	setAttr ".phl[90]" 0;
+	setAttr ".phl[91]" 0;
+	setAttr ".phl[92]" 0;
+	setAttr ".phl[93]" 0;
+	setAttr ".phl[94]" 0;
+	setAttr ".phl[95]" 0;
+	setAttr ".phl[96]" 0;
+	setAttr ".phl[97]" 0;
+	setAttr ".phl[98]" 0;
+	setAttr ".phl[99]" 0;
+	setAttr ".phl[100]" 0;
+	setAttr ".phl[101]" 0;
+	setAttr ".phl[102]" 0;
+	setAttr ".phl[103]" 0;
+	setAttr ".phl[104]" 0;
+	setAttr ".phl[105]" 0;
+	setAttr ".phl[106]" 0;
+	setAttr ".phl[107]" 0;
+	setAttr ".phl[108]" 0;
+	setAttr ".phl[109]" 0;
+	setAttr ".phl[110]" 0;
+	setAttr ".phl[111]" 0;
+	setAttr ".phl[112]" 0;
+	setAttr ".phl[113]" 0;
+	setAttr ".phl[114]" 0;
+	setAttr ".phl[115]" 0;
+	setAttr ".phl[116]" 0;
+	setAttr ".phl[117]" 0;
+	setAttr ".phl[118]" 0;
+	setAttr ".phl[119]" 0;
+	setAttr ".phl[120]" 0;
+	setAttr ".phl[121]" 0;
+	setAttr ".phl[122]" 0;
+	setAttr ".phl[123]" 0;
+	setAttr ".phl[124]" 0;
+	setAttr ".phl[125]" 0;
+	setAttr ".phl[126]" 0;
+	setAttr ".phl[127]" 0;
+	setAttr ".phl[128]" 0;
+	setAttr ".phl[129]" 0;
+	setAttr ".phl[130]" 0;
+	setAttr ".phl[131]" 0;
+	setAttr ".phl[132]" 0;
+	setAttr ".phl[133]" 0;
+	setAttr ".phl[134]" 0;
+	setAttr ".phl[135]" 0;
+	setAttr ".phl[136]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"grannyCranny_SET_latestRN"
 		"grannyCranny_SET_latest:string_of_pearls_latestRN" 0
@@ -9101,10 +9247,33 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		"grannyCranny_SET_latest:house_INTERIOR:window_REALRN1" 0
 		"grannyCranny_SET_latest:house_INTERIOR:window_REALRN2" 0
 		"grannyCranny_SET_latest:house_INTERIOR:window_REALRN5" 0
-		"grannyCranny_SET_latest:string_of_pearls_latestRN" 1
+		"grannyCranny_SET_latest:string_of_pearls_latestRN" 9
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:string_of_pearls_latest:string_of_pearls" 
 		"visibility" " 1"
-		"grannyCranny_SET_latest:chairRN" 7
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:string_of_pearls_latest:string_of_pearls.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[68]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:string_of_pearls_latest:string_of_pearls|grannyCranny_SET_latest:string_of_pearls_latest:dirt.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[69]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:string_of_pearls_latest:string_of_pearls|grannyCranny_SET_latest:string_of_pearls_latest:pot.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[70]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:string_of_pearls_latest:string_of_pearls|grannyCranny_SET_latest:string_of_pearls_latest:stems.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[71]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:string_of_pearls_latest:string_of_pearls|grannyCranny_SET_latest:string_of_pearls_latest:pearls.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[72]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:string_of_pearls_latest:string_of_pearls|grannyCranny_SET_latest:string_of_pearls_latest:holder|grannyCranny_SET_latest:string_of_pearls_latest:chain.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[73]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:string_of_pearls_latest:string_of_pearls|grannyCranny_SET_latest:string_of_pearls_latest:holder|grannyCranny_SET_latest:string_of_pearls_latest:holder_canopy.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[74]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:string_of_pearls_latest:string_of_pearls|grannyCranny_SET_latest:string_of_pearls_latest:holder|grannyCranny_SET_latest:string_of_pearls_latest:ring.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[75]" ""
+		"grannyCranny_SET_latest:tableRN" 3
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:table:table.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[123]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:table:table|grannyCranny_SET_latest:table:table_body.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[124]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:table:table|grannyCranny_SET_latest:table:pCylinder1.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[125]" ""
+		"grannyCranny_SET_latest:chairRN" 28
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod5" 
 		"visibility" " 1"
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod5" 
@@ -9119,7 +9288,49 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		"rotateZ" " -av"
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod5" 
 		"scale" " -type \"double3\" 1 1 1"
-		"grannyCranny_SET_latest:edamame_latestRN" 24
+		3 "grannyCranny_SET_latest:chair:windsor_seat_layer.drawInfo" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:seat.drawOverride" 
+		""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[8]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:seat.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[9]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_arch.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[10]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod1.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[11]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod3.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[12]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod4.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[13]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod5.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[14]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod6.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[15]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod7.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[16]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod8.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[17]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod9.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[18]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod10.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[19]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:leg1.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[20]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:leg2.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[21]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:leg3.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[22]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:leg4.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[23]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:support2.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[24]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:support3.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[25]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:support4.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[26]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:pCube1.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[27]" ""
+		"grannyCranny_SET_latest:edamame_latestRN" 28
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl" 
 		"visibility" " -av 1"
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl" 
@@ -9149,27 +9360,83 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl" 
 		"scaleZ" " -av"
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.visibility" 
-		"grannyCranny_SET_latestRN.placeHolderList[8]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[108]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.translateX" 
-		"grannyCranny_SET_latestRN.placeHolderList[9]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[109]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.translateY" 
-		"grannyCranny_SET_latestRN.placeHolderList[10]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[110]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.translateZ" 
-		"grannyCranny_SET_latestRN.placeHolderList[11]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[111]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.rotateX" 
-		"grannyCranny_SET_latestRN.placeHolderList[12]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[112]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.rotateY" 
-		"grannyCranny_SET_latestRN.placeHolderList[13]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[113]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.rotateZ" 
-		"grannyCranny_SET_latestRN.placeHolderList[14]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[114]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.scaleX" 
-		"grannyCranny_SET_latestRN.placeHolderList[15]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[115]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.scaleY" 
-		"grannyCranny_SET_latestRN.placeHolderList[16]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[116]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.scaleZ" 
-		"grannyCranny_SET_latestRN.placeHolderList[17]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[117]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[118]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl|grannyCranny_SET_latest:edamame_latest:bowl_blueceramic_pattern1_latest:bowl_blueceramic_pattern1_CTRL|grannyCranny_SET_latest:edamame_latest:bowl_blueceramic_pattern1_latest:bowl_blueceramic_pattern1.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[119]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl|grannyCranny_SET_latest:edamame_latest:soybeans.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[120]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl|grannyCranny_SET_latest:edamame_latest:sauce.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[121]" ""
 		5 4 "grannyCranny_SET_latestRN" "grannyCranny_SET_latest:edamame_latest:PxrSurface2SG.dagSetMembers" 
-		"grannyCranny_SET_latestRN.placeHolderList[18]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[122]" ""
+		"grannyCranny_SET_latest:chairRN1" 23
+		0 "|grannyCranny_SET_latestRNfosterParent1|bowl_blueceramic_pattern1" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair" 
+		"-s -r "
+		0 "|grannyCranny_SET_latestRNfosterParent1|bowl_blueceramic_pattern1_CTRL" 
+		"|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair" 
+		"-s -r "
+		3 "grannyCranny_SET_latest:chair1:windsor_seat_layer.drawInfo" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:seat.drawOverride" 
+		""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[28]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:seat.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[29]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:back_arch.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[30]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:back_rod1.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[31]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:back_rod3.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[32]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:back_rod4.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[33]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:back_rod5.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[34]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:back_rod6.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[35]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:back_rod7.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[36]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:back_rod8.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[37]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:back_rod9.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[38]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:back_rod10.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[39]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:leg1.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[40]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:leg2.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[41]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:leg3.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[42]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:leg4.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[43]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:support2.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[44]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:support3.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[45]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:support4.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[46]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair1:chair|grannyCranny_SET_latest:chair1:pCube1.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[47]" ""
 		"grannyCranny_SET_latest:house_INTERIOR:window_REALRN3" 1
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:house_INTERIOR:window_REAL3:HOUSE_INTERIOR.drawOverride" 
 		"grannyCranny_SET_latestRN.placeHolderList[4]" ""
@@ -9185,19 +9452,123 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		"translate" " -type \"double3\" 0 0 0"
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:house_INTERIOR:HOUSE_INTERIOR.drawOverride" 
 		"grannyCranny_SET_latestRN.placeHolderList[7]" ""
-		"grannyCranny_SET_latest:talllwhiteLantern_latestRN" 1
+		"grannyCranny_SET_latest:talllwhiteLantern_latestRN" 33
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern" 
 		"visibility" " 1"
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[76]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:chain.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[77]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:ringHandle.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[78]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:topKnob.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[79]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:cageLid.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[80]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:lanternBase|grannyCranny_SET_latest:talllwhiteLantern_latest:glass.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[81]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:lanternBase|grannyCranny_SET_latest:talllwhiteLantern_latest:Frame.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[82]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:crosses.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[83]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration|grannyCranny_SET_latest:talllwhiteLantern_latest:smallStems.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[84]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration|grannyCranny_SET_latest:talllwhiteLantern_latest:smallPollen.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[85]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerCenters.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[86]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration|grannyCranny_SET_latest:talllwhiteLantern_latest:petals.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[87]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration1|grannyCranny_SET_latest:talllwhiteLantern_latest:smallStems.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[88]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration1|grannyCranny_SET_latest:talllwhiteLantern_latest:smallPollen.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[89]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration1|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerCenters.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[90]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration1|grannyCranny_SET_latest:talllwhiteLantern_latest:petals.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[91]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration2|grannyCranny_SET_latest:talllwhiteLantern_latest:smallStems.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[92]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration2|grannyCranny_SET_latest:talllwhiteLantern_latest:smallPollen.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[93]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration2|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerCenters.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[94]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration2|grannyCranny_SET_latest:talllwhiteLantern_latest:petals.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[95]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration3|grannyCranny_SET_latest:talllwhiteLantern_latest:smallStems.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[96]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration3|grannyCranny_SET_latest:talllwhiteLantern_latest:smallPollen.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[97]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration3|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerCenters.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[98]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration3|grannyCranny_SET_latest:talllwhiteLantern_latest:petals.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[99]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration4|grannyCranny_SET_latest:talllwhiteLantern_latest:smallStems.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[100]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration4|grannyCranny_SET_latest:talllwhiteLantern_latest:smallPollen.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[101]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration4|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerCenters.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[102]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration4|grannyCranny_SET_latest:talllwhiteLantern_latest:petals.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[103]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration5|grannyCranny_SET_latest:talllwhiteLantern_latest:smallStems.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[104]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration5|grannyCranny_SET_latest:talllwhiteLantern_latest:smallPollen.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[105]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration5|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerCenters.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[106]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:talllwhiteLantern_latest:tallwhiteLantern|grannyCranny_SET_latest:talllwhiteLantern_latest:flowers|grannyCranny_SET_latest:talllwhiteLantern_latest:flowerDecoration5|grannyCranny_SET_latest:talllwhiteLantern_latest:petals.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[107]" ""
 		"grannyCranny_SET_latest:house_INTERIOR:window_REALRN4" 1
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:house_INTERIOR:window_REAL4:HOUSE_INTERIOR.drawOverride" 
 		"grannyCranny_SET_latestRN.placeHolderList[5]" ""
-		"grannyCranny_SET_latest:chairRN2" 2
+		"grannyCranny_SET_latest:chairRN2" 23
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair" 
 		"visibility" " 1"
 		2 "grannyCranny_SET_latest:chair2:windsor_seat_layer" "visibility" " 1"
+		3 "grannyCranny_SET_latest:chair2:windsor_seat_layer.drawInfo" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:seat.drawOverride" 
+		""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[48]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:seat.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[49]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:back_arch.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[50]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:back_rod1.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[51]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:back_rod3.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[52]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:back_rod4.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[53]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:back_rod5.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[54]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:back_rod6.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[55]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:back_rod7.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[56]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:back_rod8.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[57]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:back_rod9.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[58]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:back_rod10.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[59]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:leg1.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[60]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:leg2.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[61]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:leg3.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[62]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:leg4.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[63]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:support2.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[64]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:support3.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[65]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:support4.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[66]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair2:chair|grannyCranny_SET_latest:chair2:pCube1.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[67]" ""
 		"grannyCranny_SET_latestRN" 31
-		0 "|grannyCranny_SET_latestRNfosterParent1|bowl_blueceramic_pattern1_CTRL" 
-		"|grannyCranny_SET_latest:GRANNY_CRANNY_SET" "-s -r "
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET" "visibility" " 1"
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup" 
 		"visibility" " -av 1"
@@ -9243,25 +9614,27 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		2 "|grannyCranny_SET_latest:nookLight|grannyCranny_SET_latest:roofLight|grannyCranny_SET_latest:roofLightShape" 
 		"color" " -type \"float3\" 1 0.68840968999999996 0.41900003000000002"
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.visibility" 
-		"grannyCranny_SET_latestRN.placeHolderList[19]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[126]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.translateX" 
-		"grannyCranny_SET_latestRN.placeHolderList[20]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[127]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.translateY" 
-		"grannyCranny_SET_latestRN.placeHolderList[21]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[128]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.translateZ" 
-		"grannyCranny_SET_latestRN.placeHolderList[22]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[129]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.rotateX" 
-		"grannyCranny_SET_latestRN.placeHolderList[23]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[130]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.rotateY" 
-		"grannyCranny_SET_latestRN.placeHolderList[24]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[131]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.rotateZ" 
-		"grannyCranny_SET_latestRN.placeHolderList[25]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[132]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.scaleX" 
-		"grannyCranny_SET_latestRN.placeHolderList[26]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[133]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.scaleY" 
-		"grannyCranny_SET_latestRN.placeHolderList[27]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[134]" ""
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.scaleZ" 
-		"grannyCranny_SET_latestRN.placeHolderList[28]" ""
+		"grannyCranny_SET_latestRN.placeHolderList[135]" ""
+		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup.drawOverride" 
+		"grannyCranny_SET_latestRN.placeHolderList[136]" ""
 		"grannyCranny_SET_latest:house_INTERIOR:window_REALRN1" 1
 		5 4 "grannyCranny_SET_latestRN" "|grannyCranny_SET_latest:house_INTERIOR:window_REAL1:HOUSE_INTERIOR.drawOverride" 
 		"grannyCranny_SET_latestRN.placeHolderList[2]" ""
@@ -16307,15 +16680,17 @@ createNode animCurveTU -n "LThumb_Knuckle_scaleZ";
 		 175 0.6 178 0.6 187 0.6 199 0.6;
 createNode reference -n "speech_ribbonRN";
 	rename -uid "479DA224-054A-6E88-FB34-57A86095AE94";
-	setAttr -s 4 ".phl";
+	setAttr -s 6 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
 	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"speech_ribbonRN"
 		"speech_ribbonRN" 0
-		"speech_ribbonRN" 29
+		"speech_ribbonRN" 31
 		2 "|speech_ribbon:Ribbon_Grp" "visibility" " 1"
 		2 "|speech_ribbon:Ribbon_Grp" "translate" " -type \"double3\" 0 0 0"
 		2 "|speech_ribbon:Ribbon_Grp|speech_ribbon:Ribbon_Master" "translate" " -type \"double3\" 109.00316069241364403 41.04600237852654487 -189.23803532875305677"
@@ -16371,27 +16746,33 @@ createNode reference -n "speech_ribbonRN";
 		""
 		3 "|speech_ribbon:Ribbon_Grp|speech_ribbon:MASH1_Trails_Mesh|speech_ribbon:MASH1_Trails_MeshShape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
+		5 4 "speech_ribbonRN" "|speech_ribbon:Ribbon_Grp.drawOverride" "speech_ribbonRN.placeHolderList[1]" 
+		""
+		5 4 "speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:MASH1_Trails_Mesh.drawOverride" 
+		"speech_ribbonRN.placeHolderList[2]" ""
 		5 4 "speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:MASH1_Trails_Mesh|speech_ribbon:MASH1_Trails_MeshShape.inMesh" 
-		"speech_ribbonRN.placeHolderList[1]" ""
-		5 3 "speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:MASH1_Trails_Mesh|speech_ribbon:MASH1_Trails_MeshShape.instObjGroups" 
-		"speech_ribbonRN.placeHolderList[2]" ":initialShadingGroup.dsm"
-		5 3 "speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:MASH1_Trails_Mesh|speech_ribbon:MASH1_Trails_MeshShape.worldMatrix" 
 		"speech_ribbonRN.placeHolderList[3]" ""
-		5 3 "speech_ribbonRN" "speech_ribbon:MASH1_Trails.outputMesh" "speech_ribbonRN.placeHolderList[4]" 
+		5 3 "speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:MASH1_Trails_Mesh|speech_ribbon:MASH1_Trails_MeshShape.instObjGroups" 
+		"speech_ribbonRN.placeHolderList[4]" ":initialShadingGroup.dsm"
+		5 3 "speech_ribbonRN" "|speech_ribbon:Ribbon_Grp|speech_ribbon:MASH1_Trails_Mesh|speech_ribbon:MASH1_Trails_MeshShape.worldMatrix" 
+		"speech_ribbonRN.placeHolderList[5]" ""
+		5 3 "speech_ribbonRN" "speech_ribbon:MASH1_Trails.outputMesh" "speech_ribbonRN.placeHolderList[6]" 
 		"speech_ribbon:MASH1_Trails_MeshShape.i";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "speech_ribbonRN1";
 	rename -uid "17EE7046-4A4F-126A-13EA-25BC19400718";
-	setAttr -s 4 ".phl";
+	setAttr -s 6 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
 	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"speech_ribbonRN1"
 		"speech_ribbonRN1" 0
-		"speech_ribbonRN1" 24
+		"speech_ribbonRN1" 26
 		2 "|speech_ribbon1:Ribbon_Grp" "visibility" " 1"
 		2 "|speech_ribbon1:Ribbon_Grp" "translate" " -type \"double3\" 0 0 0"
 		2 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:Ribbon_Master" "translate" " -type \"double3\" 108.49313127096779397 37.97549369569347988 -188.63994912717373609"
@@ -16438,27 +16819,33 @@ createNode reference -n "speech_ribbonRN1";
 		""
 		3 "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:MASH1_Trails_Mesh|speech_ribbon1:MASH1_Trails_MeshShape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
+		5 4 "speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp.drawOverride" "speech_ribbonRN1.placeHolderList[1]" 
+		""
+		5 4 "speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:MASH1_Trails_Mesh.drawOverride" 
+		"speech_ribbonRN1.placeHolderList[2]" ""
 		5 4 "speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:MASH1_Trails_Mesh|speech_ribbon1:MASH1_Trails_MeshShape.inMesh" 
-		"speech_ribbonRN1.placeHolderList[1]" ""
-		5 3 "speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:MASH1_Trails_Mesh|speech_ribbon1:MASH1_Trails_MeshShape.instObjGroups" 
-		"speech_ribbonRN1.placeHolderList[2]" ":initialShadingGroup.dsm"
-		5 3 "speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:MASH1_Trails_Mesh|speech_ribbon1:MASH1_Trails_MeshShape.worldMatrix" 
 		"speech_ribbonRN1.placeHolderList[3]" ""
-		5 3 "speech_ribbonRN1" "speech_ribbon1:MASH1_Trails.outputMesh" "speech_ribbonRN1.placeHolderList[4]" 
+		5 3 "speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:MASH1_Trails_Mesh|speech_ribbon1:MASH1_Trails_MeshShape.instObjGroups" 
+		"speech_ribbonRN1.placeHolderList[4]" ":initialShadingGroup.dsm"
+		5 3 "speech_ribbonRN1" "|speech_ribbon1:Ribbon_Grp|speech_ribbon1:MASH1_Trails_Mesh|speech_ribbon1:MASH1_Trails_MeshShape.worldMatrix" 
+		"speech_ribbonRN1.placeHolderList[5]" ""
+		5 3 "speech_ribbonRN1" "speech_ribbon1:MASH1_Trails.outputMesh" "speech_ribbonRN1.placeHolderList[6]" 
 		"speech_ribbon1:MASH1_Trails_MeshShape.i";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "speech_ribbonRN2";
 	rename -uid "C91667F5-1041-82DD-A049-448882E1936A";
-	setAttr -s 4 ".phl";
+	setAttr -s 6 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
 	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"speech_ribbonRN2"
 		"speech_ribbonRN2" 0
-		"speech_ribbonRN2" 24
+		"speech_ribbonRN2" 26
 		2 "|speech_ribbon2:Ribbon_Grp" "visibility" " 1"
 		2 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:Ribbon_Master" "translate" " -type \"double3\" 108.71418715883790185 52.43139222936747501 -168.48635331758285361"
 		
@@ -16507,27 +16894,33 @@ createNode reference -n "speech_ribbonRN2";
 		""
 		3 "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:MASH1_Trails_Mesh|speech_ribbon2:MASH1_Trails_MeshShape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
+		5 4 "speech_ribbonRN2" "|speech_ribbon2:Ribbon_Grp.drawOverride" "speech_ribbonRN2.placeHolderList[1]" 
+		""
+		5 4 "speech_ribbonRN2" "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:MASH1_Trails_Mesh.drawOverride" 
+		"speech_ribbonRN2.placeHolderList[2]" ""
 		5 4 "speech_ribbonRN2" "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:MASH1_Trails_Mesh|speech_ribbon2:MASH1_Trails_MeshShape.inMesh" 
-		"speech_ribbonRN2.placeHolderList[1]" ""
-		5 3 "speech_ribbonRN2" "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:MASH1_Trails_Mesh|speech_ribbon2:MASH1_Trails_MeshShape.instObjGroups" 
-		"speech_ribbonRN2.placeHolderList[2]" ":initialShadingGroup.dsm"
-		5 3 "speech_ribbonRN2" "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:MASH1_Trails_Mesh|speech_ribbon2:MASH1_Trails_MeshShape.worldMatrix" 
 		"speech_ribbonRN2.placeHolderList[3]" ""
-		5 3 "speech_ribbonRN2" "speech_ribbon2:MASH1_Trails.outputMesh" "speech_ribbonRN2.placeHolderList[4]" 
+		5 3 "speech_ribbonRN2" "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:MASH1_Trails_Mesh|speech_ribbon2:MASH1_Trails_MeshShape.instObjGroups" 
+		"speech_ribbonRN2.placeHolderList[4]" ":initialShadingGroup.dsm"
+		5 3 "speech_ribbonRN2" "|speech_ribbon2:Ribbon_Grp|speech_ribbon2:MASH1_Trails_Mesh|speech_ribbon2:MASH1_Trails_MeshShape.worldMatrix" 
+		"speech_ribbonRN2.placeHolderList[5]" ""
+		5 3 "speech_ribbonRN2" "speech_ribbon2:MASH1_Trails.outputMesh" "speech_ribbonRN2.placeHolderList[6]" 
 		"speech_ribbon2:MASH1_Trails_MeshShape.i";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "speech_ribbonRN3";
 	rename -uid "468A05F6-6E4C-BCEE-34FF-FF984DA24CE8";
-	setAttr -s 4 ".phl";
+	setAttr -s 6 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
 	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"speech_ribbonRN3"
 		"speech_ribbonRN3" 0
-		"speech_ribbonRN3" 24
+		"speech_ribbonRN3" 26
 		2 "|speech_ribbon3:Ribbon_Grp" "visibility" " 1"
 		2 "|speech_ribbon3:Ribbon_Grp|speech_ribbon3:Ribbon_Master" "translate" " -type \"double3\" 108.3381020846471614 52.06519134197386478 -167.41070034367416497"
 		
@@ -16576,27 +16969,33 @@ createNode reference -n "speech_ribbonRN3";
 		""
 		3 "|speech_ribbon3:Ribbon_Grp|speech_ribbon3:MASH1_Trails_Mesh|speech_ribbon3:MASH1_Trails_MeshShape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
+		5 4 "speech_ribbonRN3" "|speech_ribbon3:Ribbon_Grp.drawOverride" "speech_ribbonRN3.placeHolderList[1]" 
+		""
+		5 4 "speech_ribbonRN3" "|speech_ribbon3:Ribbon_Grp|speech_ribbon3:MASH1_Trails_Mesh.drawOverride" 
+		"speech_ribbonRN3.placeHolderList[2]" ""
 		5 4 "speech_ribbonRN3" "|speech_ribbon3:Ribbon_Grp|speech_ribbon3:MASH1_Trails_Mesh|speech_ribbon3:MASH1_Trails_MeshShape.inMesh" 
-		"speech_ribbonRN3.placeHolderList[1]" ""
-		5 3 "speech_ribbonRN3" "|speech_ribbon3:Ribbon_Grp|speech_ribbon3:MASH1_Trails_Mesh|speech_ribbon3:MASH1_Trails_MeshShape.instObjGroups" 
-		"speech_ribbonRN3.placeHolderList[2]" ":initialShadingGroup.dsm"
-		5 3 "speech_ribbonRN3" "|speech_ribbon3:Ribbon_Grp|speech_ribbon3:MASH1_Trails_Mesh|speech_ribbon3:MASH1_Trails_MeshShape.worldMatrix" 
 		"speech_ribbonRN3.placeHolderList[3]" ""
-		5 3 "speech_ribbonRN3" "speech_ribbon3:MASH1_Trails.outputMesh" "speech_ribbonRN3.placeHolderList[4]" 
+		5 3 "speech_ribbonRN3" "|speech_ribbon3:Ribbon_Grp|speech_ribbon3:MASH1_Trails_Mesh|speech_ribbon3:MASH1_Trails_MeshShape.instObjGroups" 
+		"speech_ribbonRN3.placeHolderList[4]" ":initialShadingGroup.dsm"
+		5 3 "speech_ribbonRN3" "|speech_ribbon3:Ribbon_Grp|speech_ribbon3:MASH1_Trails_Mesh|speech_ribbon3:MASH1_Trails_MeshShape.worldMatrix" 
+		"speech_ribbonRN3.placeHolderList[5]" ""
+		5 3 "speech_ribbonRN3" "speech_ribbon3:MASH1_Trails.outputMesh" "speech_ribbonRN3.placeHolderList[6]" 
 		"speech_ribbon3:MASH1_Trails_MeshShape.i";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "speech_ribbonRN4";
 	rename -uid "78B32949-0E45-3B45-97CE-E4A2E9C41B30";
-	setAttr -s 4 ".phl";
+	setAttr -s 6 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
 	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"speech_ribbonRN4"
 		"speech_ribbonRN4" 0
-		"speech_ribbonRN4" 22
+		"speech_ribbonRN4" 24
 		2 "|speech_ribbon4:Ribbon_Grp" "visibility" " 1"
 		2 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:Ribbon_Master" "translate" " -type \"double3\" 113.33935713138752988 47.7871299673500971 -146.50929145797627484"
 		
@@ -16641,27 +17040,33 @@ createNode reference -n "speech_ribbonRN4";
 		""
 		3 "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:MASH1_Trails_Mesh|speech_ribbon4:MASH1_Trails_MeshShape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
+		5 4 "speech_ribbonRN4" "|speech_ribbon4:Ribbon_Grp.drawOverride" "speech_ribbonRN4.placeHolderList[1]" 
+		""
+		5 4 "speech_ribbonRN4" "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:MASH1_Trails_Mesh.drawOverride" 
+		"speech_ribbonRN4.placeHolderList[2]" ""
 		5 4 "speech_ribbonRN4" "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:MASH1_Trails_Mesh|speech_ribbon4:MASH1_Trails_MeshShape.inMesh" 
-		"speech_ribbonRN4.placeHolderList[1]" ""
-		5 3 "speech_ribbonRN4" "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:MASH1_Trails_Mesh|speech_ribbon4:MASH1_Trails_MeshShape.instObjGroups" 
-		"speech_ribbonRN4.placeHolderList[2]" ":initialShadingGroup.dsm"
-		5 3 "speech_ribbonRN4" "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:MASH1_Trails_Mesh|speech_ribbon4:MASH1_Trails_MeshShape.worldMatrix" 
 		"speech_ribbonRN4.placeHolderList[3]" ""
-		5 3 "speech_ribbonRN4" "speech_ribbon4:MASH1_Trails.outputMesh" "speech_ribbonRN4.placeHolderList[4]" 
+		5 3 "speech_ribbonRN4" "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:MASH1_Trails_Mesh|speech_ribbon4:MASH1_Trails_MeshShape.instObjGroups" 
+		"speech_ribbonRN4.placeHolderList[4]" ":initialShadingGroup.dsm"
+		5 3 "speech_ribbonRN4" "|speech_ribbon4:Ribbon_Grp|speech_ribbon4:MASH1_Trails_Mesh|speech_ribbon4:MASH1_Trails_MeshShape.worldMatrix" 
+		"speech_ribbonRN4.placeHolderList[5]" ""
+		5 3 "speech_ribbonRN4" "speech_ribbon4:MASH1_Trails.outputMesh" "speech_ribbonRN4.placeHolderList[6]" 
 		"speech_ribbon4:MASH1_Trails_MeshShape.i";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "speech_ribbonRN5";
 	rename -uid "AF458078-4847-C1A8-A099-96A64E866FEA";
-	setAttr -s 4 ".phl";
+	setAttr -s 6 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
 	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"speech_ribbonRN5"
 		"speech_ribbonRN5" 0
-		"speech_ribbonRN5" 24
+		"speech_ribbonRN5" 26
 		2 "|speech_ribbon5:Ribbon_Grp" "visibility" " 1"
 		2 "|speech_ribbon5:Ribbon_Grp|speech_ribbon5:Ribbon_Master" "translate" " -type \"double3\" 112.97060058798398074 47.90785140743381731 -142.97956275734199494"
 		
@@ -16709,13 +17114,17 @@ createNode reference -n "speech_ribbonRN5";
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "speech_ribbon5:MASH1_Trails.outputMesh" "|speech_ribbon5:Ribbon_Grp|speech_ribbon5:MASH1_Trails_Mesh|speech_ribbon5:MASH1_Trails_MeshShape.inMesh" 
 		""
+		5 4 "speech_ribbonRN5" "|speech_ribbon5:Ribbon_Grp.drawOverride" "speech_ribbonRN5.placeHolderList[1]" 
+		""
+		5 4 "speech_ribbonRN5" "|speech_ribbon5:Ribbon_Grp|speech_ribbon5:MASH1_Trails_Mesh.drawOverride" 
+		"speech_ribbonRN5.placeHolderList[2]" ""
 		5 4 "speech_ribbonRN5" "|speech_ribbon5:Ribbon_Grp|speech_ribbon5:MASH1_Trails_Mesh|speech_ribbon5:MASH1_Trails_MeshShape.inMesh" 
-		"speech_ribbonRN5.placeHolderList[1]" ""
-		5 3 "speech_ribbonRN5" "|speech_ribbon5:Ribbon_Grp|speech_ribbon5:MASH1_Trails_Mesh|speech_ribbon5:MASH1_Trails_MeshShape.instObjGroups" 
-		"speech_ribbonRN5.placeHolderList[2]" ":initialShadingGroup.dsm"
-		5 3 "speech_ribbonRN5" "|speech_ribbon5:Ribbon_Grp|speech_ribbon5:MASH1_Trails_Mesh|speech_ribbon5:MASH1_Trails_MeshShape.worldMatrix" 
 		"speech_ribbonRN5.placeHolderList[3]" ""
-		5 3 "speech_ribbonRN5" "speech_ribbon5:MASH1_Trails.outputMesh" "speech_ribbonRN5.placeHolderList[4]" 
+		5 3 "speech_ribbonRN5" "|speech_ribbon5:Ribbon_Grp|speech_ribbon5:MASH1_Trails_Mesh|speech_ribbon5:MASH1_Trails_MeshShape.instObjGroups" 
+		"speech_ribbonRN5.placeHolderList[4]" ":initialShadingGroup.dsm"
+		5 3 "speech_ribbonRN5" "|speech_ribbon5:Ribbon_Grp|speech_ribbon5:MASH1_Trails_Mesh|speech_ribbon5:MASH1_Trails_MeshShape.worldMatrix" 
+		"speech_ribbonRN5.placeHolderList[5]" ""
+		5 3 "speech_ribbonRN5" "speech_ribbon5:MASH1_Trails.outputMesh" "speech_ribbonRN5.placeHolderList[6]" 
 		"speech_ribbon5:MASH1_Trails_MeshShape.i";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -19329,11 +19738,11 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:ping_shoes_latestRN2" 0
 		"livingRoom_SET_latest:house_INTERIOR:window_REALRN1" 0
 		"livingRoom_SET_latest:croc3RN" 0
-		"livingRoom_SET_latest:shoe_jicRN" 0
 		"livingRoom_SET_latest:house_INTERIOR:door_v01_latestRN" 0
+		"livingRoom_SET_latest:shoe_jicRN" 0
 		"livingRoom_SET_latest:croc_pile:croc3RN" 0
-		"livingRoom_SET_latest:ping_shoes_latestRN" 0
 		"livingRoom_SET_latest:frame2RN" 0
+		"livingRoom_SET_latest:ping_shoes_latestRN" 0
 		"livingRoom_SET_latest:eggroll_platter1:eggrollRN1" 0
 		"livingRoom_SET_latest:running_shoe_latestRN3" 0
 		"livingRoom_SET_latest:eggroll_platter1:eggrollRN2" 0
@@ -19361,17 +19770,19 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:running_shoe_latestRN2" 0
 		"livingRoom_SET_latest:bookStack_RIGHT_SHELFRN" 0
 		"livingRoom_SET_latest:jackie_shoe_latest_purpleRN1" 0
-		"livingRoom_SET_latest:guianaChestnutPlant_latestRN" 0
 		"livingRoom_SET_latest:soy_sauce_latestRN" 0
+		"livingRoom_SET_latest:guianaChestnutPlant_latestRN" 0
 		"livingRoom_SET_latest:eggroll_platterRN1" 0
 		"livingRoom_SET_latest:running_shoe_latestRN" 0
 		"livingRoom_SET_latest:shoe_rack_latestRN" 0
 		"livingRoom_SET_latest:frame1RN" 0
 		"livingRoom_SET_latest:bookshelf_v01_latestRN" 0
 		"livingRoom_SET_latest:flatsRN" 0
-		"livingRoom_SET_latest:sofa_latestRN" 0
-		"livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
+		"livingRoom_SET_latest:sofa_latestRN" 1
+		2 "|livingRoom_SET_latest:LIVING_ROOM_SET|livingRoom_SET_latest:PROPS|livingRoom_SET_latest:FRONT_WALL|livingRoom_SET_latest:sofa_latest:sofa_CTRL" 
+		"visibility" " 0"
 		"livingRoom_SET_latest:frame3RN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
 		"livingRoom_SET_latest:shoe_jicRN2" 0
 		"livingRoom_SET_latest:flats_redRN" 0
 		"livingRoom_SET_latest:house_INTERIOR:curtainsRN" 0
@@ -19390,22 +19801,50 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:chopsticks_round_latestRN" 0
 		"livingRoom_SET_latest:jackie_shoe_latestRN" 0
 		"livingRoom_SET_latest:shoe_converse_latestRN" 0
-		"livingRoom_SET_latest:chopsticks_square_latestRN" 0
 		"livingRoom_SET_latest:shoe_swooshRN1" 0
-		"livingRoom_SET_latest:windchime_latestRN" 0
+		"livingRoom_SET_latest:chopsticks_square_latestRN" 0
 		"livingRoom_SET_latest:fork_latestRN" 0
+		"livingRoom_SET_latest:windchime_latestRN" 0
 		"livingRoom_SET_latest:side_tableRN" 0
 		"livingRoom_SET_latest:eggroll_platter1:eggrollRN8" 0
-		"livingRoom_SET_latest:eggroll_platter1:eggrollRN9" 0
 		"livingRoom_SET_latest:coffee_table_latestRN" 0
+		"livingRoom_SET_latest:eggroll_platter1:eggrollRN9" 0
 		"livingRoom_SET_latest:house_INTERIOR:window_REALRN" 0
+		"livingRoom_SET_latest:soy_sauce_latestRN" 1
+		2 "|livingRoom_SET_latest:LIVING_ROOM_SET|livingRoom_SET_latest:PROPS|livingRoom_SET_latest:soy_sauce_latest:soy_sauce" 
+		"visibility" " 0"
 		"livingRoom_SET_latest:house_INTERIOR:window_REALRN4" 1
 		5 4 "livingRoom_SET_latestRN" "|livingRoom_SET_latest:house_INTERIOR:window_REAL4:HOUSE_INTERIOR.drawOverride" 
 		"livingRoom_SET_latestRN.placeHolderList[5]" ""
+		"livingRoom_SET_latest:rice_partyserving:bowl_blueceramic_pattern1_latestRN" 1
+		
+		2 "|livingRoom_SET_latest:LIVING_ROOM_SET|livingRoom_SET_latest:PROPS|livingRoom_SET_latest:FRONT_WALL|livingRoom_SET_latest:COFFEE_TABLE|livingRoom_SET_latest:rice_partyserving:rice_party_serving_CTRL|livingRoom_SET_latest:rice_partyserving:rice_party_serving|livingRoom_SET_latest:rice_partyserving:bowl_blueceramic_pattern1_latest:bowl_blueceramic_pattern1_CTRL|livingRoom_SET_latest:rice_partyserving:bowl_blueceramic_pattern1_latest:group1|livingRoom_SET_latest:rice_partyserving:bowl_blueceramic_pattern1_latest:pho_v3:nRigid1|livingRoom_SET_latest:rice_partyserving:bowl_blueceramic_pattern1_latest:pho_v3:nRigidShape1" 
+		"cacheWidth" " 302"
 		"livingRoom_SET_latest:house_INTERIOR:window_REALRN5" 1
 		5 4 "livingRoom_SET_latestRN" "|livingRoom_SET_latest:house_INTERIOR:window_REAL5:HOUSE_INTERIOR.drawOverride" 
 		"livingRoom_SET_latestRN.placeHolderList[6]" ""
-		"livingRoom_SET_latestRN" 16
+		"livingRoom_SET_latest:large_painting_BRN" 1
+		2 "|livingRoom_SET_latest:LIVING_ROOM_SET|livingRoom_SET_latest:PROPS|livingRoom_SET_latest:large_painting_B:large_painting_B" 
+		"visibility" " 0"
+		"livingRoom_SET_latest:wooden_pictureRN" 1
+		2 "|livingRoom_SET_latest:LIVING_ROOM_SET|livingRoom_SET_latest:PROPS|livingRoom_SET_latest:wooden_picture:wooden_picture" 
+		"visibility" " 0"
+		"livingRoom_SET_latest:house_INTERIOR:window_REALRN1" 1
+		5 4 "livingRoom_SET_latestRN" "|livingRoom_SET_latest:house_INTERIOR:window_REAL1:HOUSE_INTERIOR.drawOverride" 
+		"livingRoom_SET_latestRN.placeHolderList[2]" ""
+		"livingRoom_SET_latest:house_INTERIOR:window_REALRN2" 1
+		5 4 "livingRoom_SET_latestRN" "|livingRoom_SET_latest:house_INTERIOR:window_REAL2:HOUSE_INTERIOR.drawOverride" 
+		"livingRoom_SET_latestRN.placeHolderList[3]" ""
+		"livingRoom_SET_latest:house_INTERIOR:window_REALRN3" 1
+		5 4 "livingRoom_SET_latestRN" "|livingRoom_SET_latest:house_INTERIOR:window_REAL3:HOUSE_INTERIOR.drawOverride" 
+		"livingRoom_SET_latestRN.placeHolderList[4]" ""
+		"livingRoom_SET_latestRN" 19
+		2 "|livingRoom_SET_latest:LIVING_ROOM_SET|livingRoom_SET_latest:PROPS|livingRoom_SET_latest:BOOKSHELF" 
+		"visibility" " 0"
+		2 "|livingRoom_SET_latest:LIVING_ROOM_SET|livingRoom_SET_latest:PROPS|livingRoom_SET_latest:LEFT_WALL" 
+		"visibility" " 0"
+		2 "|livingRoom_SET_latest:LIVING_ROOM_SET|livingRoom_SET_latest:PROPS|livingRoom_SET_latest:picture_frames" 
+		"visibility" " 0"
 		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:livingroom_roof|livingRoom_SET_latest:livingroom_roofShape" 
 		"color" " -type \"float3\" 1 0.83124423000000003 0.59299999000000003"
 		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:livingroom_window|livingRoom_SET_latest:livingroom_windowShape" 
@@ -19439,15 +19878,12 @@ createNode reference -n "livingRoom_SET_latestRN";
 		" 0"
 		5 4 "livingRoom_SET_latestRN" "|livingRoom_SET_latest:LIVING_ROOM_SET.drawOverride" 
 		"livingRoom_SET_latestRN.placeHolderList[7]" ""
-		"livingRoom_SET_latest:house_INTERIOR:window_REALRN1" 1
-		5 4 "livingRoom_SET_latestRN" "|livingRoom_SET_latest:house_INTERIOR:window_REAL1:HOUSE_INTERIOR.drawOverride" 
-		"livingRoom_SET_latestRN.placeHolderList[2]" ""
-		"livingRoom_SET_latest:house_INTERIOR:window_REALRN2" 1
-		5 4 "livingRoom_SET_latestRN" "|livingRoom_SET_latest:house_INTERIOR:window_REAL2:HOUSE_INTERIOR.drawOverride" 
-		"livingRoom_SET_latestRN.placeHolderList[3]" ""
-		"livingRoom_SET_latest:house_INTERIOR:window_REALRN3" 1
-		5 4 "livingRoom_SET_latestRN" "|livingRoom_SET_latest:house_INTERIOR:window_REAL3:HOUSE_INTERIOR.drawOverride" 
-		"livingRoom_SET_latestRN.placeHolderList[4]" ""
+		"livingRoom_SET_latest:windchime_latestRN" 1
+		2 "|livingRoom_SET_latest:LIVING_ROOM_SET|livingRoom_SET_latest:PROPS|livingRoom_SET_latest:windchime_latest:wind_chime" 
+		"visibility" " 0"
+		"livingRoom_SET_latest:large_painting_ARN" 1
+		2 "|livingRoom_SET_latest:LIVING_ROOM_SET|livingRoom_SET_latest:PROPS|livingRoom_SET_latest:large_painting_A:large_painting_A" 
+		"visibility" " 0"
 		"livingRoom_SET_latest:house_INTERIOR:window_REALRN" 1
 		5 4 "livingRoom_SET_latestRN" "|livingRoom_SET_latest:house_INTERIOR:window_REAL:HOUSE_INTERIOR.drawOverride" 
 		"livingRoom_SET_latestRN.placeHolderList[1]" "";
@@ -19457,15 +19893,18 @@ createNode renderSetup -n "renderSetup";
 	rename -uid "0776E93A-5142-E429-2C51-3485FA27C474";
 createNode displayLayer -n "background";
 	rename -uid "C81551AE-E84F-139B-AFE1-588EF1BAE793";
-	setAttr ".v" no;
 	setAttr ".do" 3;
+createNode displayLayer -n "foreground";
+	rename -uid "05EABD88-824F-84A2-C652-52887E84E38F";
+	setAttr ".v" no;
+	setAttr ".do" 4;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 269;
-	setAttr -av ".unw" 269;
+	setAttr -k on ".o" 300;
+	setAttr -av ".unw" 300;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -19479,7 +19918,7 @@ select -ne :renderPartition;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 796 ".st";
+	setAttr -s 832 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -19492,7 +19931,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 693 ".s";
+	setAttr -s 729 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -19504,9 +19943,9 @@ select -ne :defaultRenderUtilityList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 1834 ".u";
+	setAttr -s 1839 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 290 ".r";
+	setAttr -s 293 ".r";
 select -ne :lightList1;
 	setAttr -s 25 ".l";
 select -ne :defaultTextureList1;
@@ -19514,13 +19953,13 @@ select -ne :defaultTextureList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 1024 ".tx";
+	setAttr -s 1047 ".tx";
 select -ne :initialShadingGroup;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 138 ".dsm";
+	setAttr -s 100 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -19529,7 +19968,7 @@ select -ne :initialShadingGroup;
 	setAttr -cb on ".fo";
 	setAttr -cb on ".epo";
 	setAttr -k on ".ro" yes;
-	setAttr -s 91 ".gn";
+	setAttr -s 78 ".gn";
 select -ne :initialParticleSE;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -19563,10 +20002,10 @@ select -ne :defaultRenderGlobals;
 	setAttr -av -k on ".outf";
 	setAttr -k on ".imfkey";
 	setAttr -k on ".gama";
-	setAttr -k on ".an" yes;
+	setAttr -k on ".an";
 	setAttr -cb on ".ar";
-	setAttr -k on ".fs" 383;
-	setAttr -k on ".ef" 385;
+	setAttr -k on ".fs" 300;
+	setAttr -k on ".ef" 300;
 	setAttr -av -k on ".bfs";
 	setAttr -cb on ".me";
 	setAttr -cb on ".se";
@@ -19710,999 +20149,1131 @@ select -ne :ikSystem;
 	setAttr -av -k on ".gsn";
 	setAttr -k on ".gsv";
 	setAttr -s 5 ".sol";
-connectAttr "grandma_controlrigRN.phl[227]" "grandma_controlrigRN.phl[228]";
-connectAttr "ROOT_Ctrl_translateX1.o" "grandma_controlrigRN.phl[229]";
-connectAttr "ROOT_Ctrl_translateY1.o" "grandma_controlrigRN.phl[230]";
-connectAttr "ROOT_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[231]";
-connectAttr "ROOT_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[232]";
-connectAttr "ROOT_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[233]";
-connectAttr "ROOT_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[234]";
-connectAttr "ROOT_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[235]";
-connectAttr "ROOT_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[236]";
-connectAttr "ROOT_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[237]";
-connectAttr "ROOT_Ctrl_visibility1.o" "grandma_controlrigRN.phl[238]";
-connectAttr "Legs_FK_Grp_visibility.o" "grandma_controlrigRN.phl[239]";
-connectAttr "Legs_FK_Grp_translateX.o" "grandma_controlrigRN.phl[240]";
-connectAttr "Legs_FK_Grp_translateY.o" "grandma_controlrigRN.phl[241]";
-connectAttr "Legs_FK_Grp_translateZ.o" "grandma_controlrigRN.phl[242]";
-connectAttr "Legs_FK_Grp_rotateX.o" "grandma_controlrigRN.phl[243]";
-connectAttr "Legs_FK_Grp_rotateY.o" "grandma_controlrigRN.phl[244]";
-connectAttr "Legs_FK_Grp_rotateZ.o" "grandma_controlrigRN.phl[245]";
-connectAttr "Legs_FK_Grp_scaleX.o" "grandma_controlrigRN.phl[246]";
-connectAttr "Legs_FK_Grp_scaleY.o" "grandma_controlrigRN.phl[247]";
-connectAttr "Legs_FK_Grp_scaleZ.o" "grandma_controlrigRN.phl[248]";
-connectAttr "FK_hipR_Grp_translateX.o" "grandma_controlrigRN.phl[249]";
-connectAttr "FK_hipR_Grp_translateY.o" "grandma_controlrigRN.phl[250]";
-connectAttr "FK_hipR_Grp_translateZ.o" "grandma_controlrigRN.phl[251]";
-connectAttr "FK_hipR_Grp_rotateX.o" "grandma_controlrigRN.phl[252]";
-connectAttr "FK_hipR_Grp_rotateY.o" "grandma_controlrigRN.phl[253]";
-connectAttr "FK_hipR_Grp_rotateZ.o" "grandma_controlrigRN.phl[254]";
-connectAttr "FK_hipR_Grp_scaleX.o" "grandma_controlrigRN.phl[255]";
-connectAttr "FK_hipR_Grp_scaleY.o" "grandma_controlrigRN.phl[256]";
-connectAttr "FK_hipR_Grp_scaleZ.o" "grandma_controlrigRN.phl[257]";
-connectAttr "FK_hipR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[258]";
-connectAttr "FK_hipR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[259]";
-connectAttr "FK_hipR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[260]";
-connectAttr "FK_hipR_Ctrl_visibility.o" "grandma_controlrigRN.phl[261]";
-connectAttr "FK_hipR_Ctrl_translateX.o" "grandma_controlrigRN.phl[262]";
-connectAttr "FK_hipR_Ctrl_translateY.o" "grandma_controlrigRN.phl[263]";
-connectAttr "FK_hipR_Ctrl_translateZ.o" "grandma_controlrigRN.phl[264]";
-connectAttr "FK_hipR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[265]";
-connectAttr "FK_hipR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[266]";
-connectAttr "FK_hipR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[267]";
-connectAttr "FK_kneeR_Grp_visibility.o" "grandma_controlrigRN.phl[268]";
-connectAttr "FK_kneeR_Grp_translateX.o" "grandma_controlrigRN.phl[269]";
-connectAttr "FK_kneeR_Grp_translateY.o" "grandma_controlrigRN.phl[270]";
-connectAttr "FK_kneeR_Grp_translateZ.o" "grandma_controlrigRN.phl[271]";
-connectAttr "FK_kneeR_Grp_rotateX.o" "grandma_controlrigRN.phl[272]";
-connectAttr "FK_kneeR_Grp_rotateY.o" "grandma_controlrigRN.phl[273]";
-connectAttr "FK_kneeR_Grp_rotateZ.o" "grandma_controlrigRN.phl[274]";
-connectAttr "FK_kneeR_Grp_scaleX.o" "grandma_controlrigRN.phl[275]";
-connectAttr "FK_kneeR_Grp_scaleY.o" "grandma_controlrigRN.phl[276]";
-connectAttr "FK_kneeR_Grp_scaleZ.o" "grandma_controlrigRN.phl[277]";
-connectAttr "FK_kneeR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[278]";
-connectAttr "FK_kneeR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[279]";
-connectAttr "FK_kneeR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[280]";
-connectAttr "FK_kneeR_Ctrl_visibility.o" "grandma_controlrigRN.phl[281]";
-connectAttr "FK_kneeR_Ctrl_translateX.o" "grandma_controlrigRN.phl[282]";
-connectAttr "FK_kneeR_Ctrl_translateY.o" "grandma_controlrigRN.phl[283]";
-connectAttr "FK_kneeR_Ctrl_translateZ.o" "grandma_controlrigRN.phl[284]";
-connectAttr "FK_kneeR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[285]";
-connectAttr "FK_kneeR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[286]";
-connectAttr "FK_kneeR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[287]";
-connectAttr "FK_ankleR_Grp_visibility.o" "grandma_controlrigRN.phl[288]";
-connectAttr "FK_ankleR_Grp_translateX.o" "grandma_controlrigRN.phl[289]";
-connectAttr "FK_ankleR_Grp_translateY.o" "grandma_controlrigRN.phl[290]";
-connectAttr "FK_ankleR_Grp_translateZ.o" "grandma_controlrigRN.phl[291]";
-connectAttr "FK_ankleR_Grp_rotateX.o" "grandma_controlrigRN.phl[292]";
-connectAttr "FK_ankleR_Grp_rotateY.o" "grandma_controlrigRN.phl[293]";
-connectAttr "FK_ankleR_Grp_rotateZ.o" "grandma_controlrigRN.phl[294]";
-connectAttr "FK_ankleR_Grp_scaleX.o" "grandma_controlrigRN.phl[295]";
-connectAttr "FK_ankleR_Grp_scaleY.o" "grandma_controlrigRN.phl[296]";
-connectAttr "FK_ankleR_Grp_scaleZ.o" "grandma_controlrigRN.phl[297]";
-connectAttr "FK_ankleR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[298]";
-connectAttr "FK_ankleR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[299]";
-connectAttr "FK_ankleR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[300]";
-connectAttr "FK_ankleR_Ctrl_visibility.o" "grandma_controlrigRN.phl[301]";
-connectAttr "FK_ankleR_Ctrl_translateX.o" "grandma_controlrigRN.phl[302]";
-connectAttr "FK_ankleR_Ctrl_translateY.o" "grandma_controlrigRN.phl[303]";
-connectAttr "FK_ankleR_Ctrl_translateZ.o" "grandma_controlrigRN.phl[304]";
-connectAttr "FK_ankleR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[305]";
-connectAttr "FK_ankleR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[306]";
-connectAttr "FK_ankleR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[307]";
-connectAttr "FK_hipL_Grp_translateX.o" "grandma_controlrigRN.phl[308]";
-connectAttr "FK_hipL_Grp_translateY.o" "grandma_controlrigRN.phl[309]";
-connectAttr "FK_hipL_Grp_translateZ.o" "grandma_controlrigRN.phl[310]";
-connectAttr "FK_hipL_Grp_rotateX.o" "grandma_controlrigRN.phl[311]";
-connectAttr "FK_hipL_Grp_rotateY.o" "grandma_controlrigRN.phl[312]";
-connectAttr "FK_hipL_Grp_rotateZ.o" "grandma_controlrigRN.phl[313]";
-connectAttr "FK_hipL_Grp_scaleX.o" "grandma_controlrigRN.phl[314]";
-connectAttr "FK_hipL_Grp_scaleY.o" "grandma_controlrigRN.phl[315]";
-connectAttr "FK_hipL_Grp_scaleZ.o" "grandma_controlrigRN.phl[316]";
-connectAttr "FK_hipL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[317]";
-connectAttr "FK_hipL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[318]";
-connectAttr "FK_hipL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[319]";
-connectAttr "FK_hipL_Ctrl_visibility.o" "grandma_controlrigRN.phl[320]";
-connectAttr "FK_hipL_Ctrl_translateX.o" "grandma_controlrigRN.phl[321]";
-connectAttr "FK_hipL_Ctrl_translateY.o" "grandma_controlrigRN.phl[322]";
-connectAttr "FK_hipL_Ctrl_translateZ.o" "grandma_controlrigRN.phl[323]";
-connectAttr "FK_hipL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[324]";
-connectAttr "FK_hipL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[325]";
-connectAttr "FK_hipL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[326]";
-connectAttr "FK_kneeL_Grp_visibility.o" "grandma_controlrigRN.phl[327]";
-connectAttr "FK_kneeL_Grp_translateX.o" "grandma_controlrigRN.phl[328]";
-connectAttr "FK_kneeL_Grp_translateY.o" "grandma_controlrigRN.phl[329]";
-connectAttr "FK_kneeL_Grp_translateZ.o" "grandma_controlrigRN.phl[330]";
-connectAttr "FK_kneeL_Grp_rotateX.o" "grandma_controlrigRN.phl[331]";
-connectAttr "FK_kneeL_Grp_rotateY.o" "grandma_controlrigRN.phl[332]";
-connectAttr "FK_kneeL_Grp_rotateZ.o" "grandma_controlrigRN.phl[333]";
-connectAttr "FK_kneeL_Grp_scaleX.o" "grandma_controlrigRN.phl[334]";
-connectAttr "FK_kneeL_Grp_scaleY.o" "grandma_controlrigRN.phl[335]";
-connectAttr "FK_kneeL_Grp_scaleZ.o" "grandma_controlrigRN.phl[336]";
-connectAttr "FK_kneeL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[337]";
-connectAttr "FK_kneeL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[338]";
-connectAttr "FK_kneeL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[339]";
-connectAttr "FK_kneeL_Ctrl_visibility.o" "grandma_controlrigRN.phl[340]";
-connectAttr "FK_kneeL_Ctrl_translateX.o" "grandma_controlrigRN.phl[341]";
-connectAttr "FK_kneeL_Ctrl_translateY.o" "grandma_controlrigRN.phl[342]";
-connectAttr "FK_kneeL_Ctrl_translateZ.o" "grandma_controlrigRN.phl[343]";
-connectAttr "FK_kneeL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[344]";
-connectAttr "FK_kneeL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[345]";
-connectAttr "FK_kneeL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[346]";
-connectAttr "FK_ankleL_Grp_visibility.o" "grandma_controlrigRN.phl[347]";
-connectAttr "FK_ankleL_Grp_translateX.o" "grandma_controlrigRN.phl[348]";
-connectAttr "FK_ankleL_Grp_translateY.o" "grandma_controlrigRN.phl[349]";
-connectAttr "FK_ankleL_Grp_translateZ.o" "grandma_controlrigRN.phl[350]";
-connectAttr "FK_ankleL_Grp_rotateX.o" "grandma_controlrigRN.phl[351]";
-connectAttr "FK_ankleL_Grp_rotateY.o" "grandma_controlrigRN.phl[352]";
-connectAttr "FK_ankleL_Grp_rotateZ.o" "grandma_controlrigRN.phl[353]";
-connectAttr "FK_ankleL_Grp_scaleX.o" "grandma_controlrigRN.phl[354]";
-connectAttr "FK_ankleL_Grp_scaleY.o" "grandma_controlrigRN.phl[355]";
-connectAttr "FK_ankleL_Grp_scaleZ.o" "grandma_controlrigRN.phl[356]";
-connectAttr "FK_ankleL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[357]";
-connectAttr "FK_ankleL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[358]";
-connectAttr "FK_ankleL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[359]";
-connectAttr "FK_ankleL_Ctrl_visibility.o" "grandma_controlrigRN.phl[360]";
-connectAttr "FK_ankleL_Ctrl_translateX.o" "grandma_controlrigRN.phl[361]";
-connectAttr "FK_ankleL_Ctrl_translateY.o" "grandma_controlrigRN.phl[362]";
-connectAttr "FK_ankleL_Ctrl_translateZ.o" "grandma_controlrigRN.phl[363]";
-connectAttr "FK_ankleL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[364]";
-connectAttr "FK_ankleL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[365]";
-connectAttr "FK_ankleL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[366]";
-connectAttr "spine3_Ctrl_translateX1.o" "grandma_controlrigRN.phl[367]";
-connectAttr "spine3_Ctrl_translateY1.o" "grandma_controlrigRN.phl[368]";
-connectAttr "spine3_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[369]";
-connectAttr "spine3_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[370]";
-connectAttr "spine3_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[371]";
-connectAttr "spine3_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[372]";
-connectAttr "spine3_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[373]";
-connectAttr "spine3_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[374]";
-connectAttr "spine3_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[375]";
-connectAttr "spine3_Ctrl_visibility1.o" "grandma_controlrigRN.phl[376]";
-connectAttr "spine2_Ctrl_translateX1.o" "grandma_controlrigRN.phl[377]";
-connectAttr "spine2_Ctrl_translateY1.o" "grandma_controlrigRN.phl[378]";
-connectAttr "spine2_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[379]";
-connectAttr "spine2_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[380]";
-connectAttr "spine2_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[381]";
-connectAttr "spine2_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[382]";
-connectAttr "spine2_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[383]";
-connectAttr "spine2_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[384]";
-connectAttr "spine2_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[385]";
-connectAttr "spine2_Ctrl_visibility1.o" "grandma_controlrigRN.phl[386]";
-connectAttr "spine1_Ctrl_translateX1.o" "grandma_controlrigRN.phl[387]";
-connectAttr "spine1_Ctrl_translateY1.o" "grandma_controlrigRN.phl[388]";
-connectAttr "spine1_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[389]";
-connectAttr "spine1_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[390]";
-connectAttr "spine1_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[391]";
-connectAttr "spine1_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[392]";
-connectAttr "spine1_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[393]";
-connectAttr "spine1_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[394]";
-connectAttr "spine1_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[395]";
-connectAttr "spine1_Ctrl_visibility1.o" "grandma_controlrigRN.phl[396]";
-connectAttr "neck_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[397]";
-connectAttr "neck_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[398]";
-connectAttr "neck_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[399]";
-connectAttr "neck_Ctrl_visibility1.o" "grandma_controlrigRN.phl[400]";
-connectAttr "neck_Ctrl_translateX1.o" "grandma_controlrigRN.phl[401]";
-connectAttr "neck_Ctrl_translateY1.o" "grandma_controlrigRN.phl[402]";
-connectAttr "neck_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[403]";
-connectAttr "neck_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[404]";
-connectAttr "neck_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[405]";
-connectAttr "neck_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[406]";
-connectAttr "curve2_rotateX.o" "grandma_controlrigRN.phl[407]";
-connectAttr "curve2_rotateY.o" "grandma_controlrigRN.phl[408]";
-connectAttr "curve2_rotateZ.o" "grandma_controlrigRN.phl[409]";
-connectAttr "curve2_visibility.o" "grandma_controlrigRN.phl[410]";
-connectAttr "curve2_translateX.o" "grandma_controlrigRN.phl[411]";
-connectAttr "curve2_translateY.o" "grandma_controlrigRN.phl[412]";
-connectAttr "curve2_translateZ.o" "grandma_controlrigRN.phl[413]";
-connectAttr "curve2_scaleX.o" "grandma_controlrigRN.phl[414]";
-connectAttr "curve2_scaleY.o" "grandma_controlrigRN.phl[415]";
-connectAttr "curve2_scaleZ.o" "grandma_controlrigRN.phl[416]";
-connectAttr "ShoulderR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[417]";
-connectAttr "ShoulderR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[418]";
-connectAttr "ShoulderR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[419]";
-connectAttr "ShoulderR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[420]";
-connectAttr "ShoulderR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[421]";
-connectAttr "ShoulderR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[422]";
-connectAttr "ElbowR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[423]";
-connectAttr "ElbowR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[424]";
-connectAttr "ElbowR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[425]";
-connectAttr "ElbowR_Ctrl_visibility.o" "grandma_controlrigRN.phl[426]";
-connectAttr "ElbowR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[427]";
-connectAttr "ElbowR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[428]";
-connectAttr "ElbowR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[429]";
-connectAttr "WristR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[430]";
-connectAttr "WristR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[431]";
-connectAttr "WristR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[432]";
-connectAttr "WristR_Ctrl_visibility.o" "grandma_controlrigRN.phl[433]";
-connectAttr "WristR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[434]";
-connectAttr "WristR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[435]";
-connectAttr "WristR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[436]";
-connectAttr "ShoulderL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[437]";
-connectAttr "ShoulderL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[438]";
-connectAttr "ShoulderL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[439]";
-connectAttr "ShoulderL_Ctrl_visibility.o" "grandma_controlrigRN.phl[440]";
-connectAttr "ShoulderL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[441]";
-connectAttr "ShoulderL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[442]";
-connectAttr "ShoulderL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[443]";
-connectAttr "ElbowL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[444]";
-connectAttr "ElbowL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[445]";
-connectAttr "ElbowL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[446]";
-connectAttr "ElbowL_Ctrl_visibility.o" "grandma_controlrigRN.phl[447]";
-connectAttr "ElbowL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[448]";
-connectAttr "ElbowL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[449]";
-connectAttr "ElbowL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[450]";
-connectAttr "WristL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[451]";
-connectAttr "WristL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[452]";
-connectAttr "WristL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[453]";
-connectAttr "WristL_Ctrl_visibility.o" "grandma_controlrigRN.phl[454]";
-connectAttr "WristL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[455]";
-connectAttr "WristL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[456]";
-connectAttr "WristL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[457]";
-connectAttr "EyeMaster_Ctrl_translateX.o" "grandma_controlrigRN.phl[458]";
-connectAttr "EyeMaster_Ctrl_translateY.o" "grandma_controlrigRN.phl[459]";
-connectAttr "EyeMaster_Ctrl_translateZ.o" "grandma_controlrigRN.phl[460]";
-connectAttr "EyeMaster_Ctrl_visibility.o" "grandma_controlrigRN.phl[461]";
-connectAttr "EyeMaster_Ctrl_rotateX.o" "grandma_controlrigRN.phl[462]";
-connectAttr "EyeMaster_Ctrl_rotateY.o" "grandma_controlrigRN.phl[463]";
-connectAttr "EyeMaster_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[464]";
-connectAttr "EyeMaster_Ctrl_scaleX.o" "grandma_controlrigRN.phl[465]";
-connectAttr "EyeMaster_Ctrl_scaleY.o" "grandma_controlrigRN.phl[466]";
-connectAttr "EyeMaster_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[467]";
-connectAttr "eye_blinkRight.o" "grandma_controlrigRN.phl[468]";
-connectAttr "eye_blinkLeft.o" "grandma_controlrigRN.phl[469]";
-connectAttr "eye_blinkBoth.o" "grandma_controlrigRN.phl[470]";
-connectAttr "mouth_closed.o" "grandma_controlrigRN.phl[471]";
-connectAttr "mouth_smileRight.o" "grandma_controlrigRN.phl[472]";
-connectAttr "mouth_smileLeft.o" "grandma_controlrigRN.phl[473]";
-connectAttr "mouth_O.o" "grandma_controlrigRN.phl[474]";
-connectAttr "mouth_O_closed.o" "grandma_controlrigRN.phl[475]";
-connectAttr "cheeks_laughlineRight.o" "grandma_controlrigRN.phl[476]";
-connectAttr "cheeks_laughlineRight_Copy.o" "grandma_controlrigRN.phl[477]";
-connectAttr "MC_control_rigRN.phl[1]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tt"
+connectAttr "foreground.di" "grandma_controlrigRN.phl[227]";
+connectAttr "grandma_controlrigRN.phl[228]" "grandma_controlrigRN.phl[229]";
+connectAttr "ROOT_Ctrl_translateX1.o" "grandma_controlrigRN.phl[230]";
+connectAttr "ROOT_Ctrl_translateY1.o" "grandma_controlrigRN.phl[231]";
+connectAttr "ROOT_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[232]";
+connectAttr "ROOT_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[233]";
+connectAttr "ROOT_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[234]";
+connectAttr "ROOT_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[235]";
+connectAttr "ROOT_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[236]";
+connectAttr "ROOT_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[237]";
+connectAttr "ROOT_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[238]";
+connectAttr "ROOT_Ctrl_visibility1.o" "grandma_controlrigRN.phl[239]";
+connectAttr "Legs_FK_Grp_visibility.o" "grandma_controlrigRN.phl[240]";
+connectAttr "Legs_FK_Grp_translateX.o" "grandma_controlrigRN.phl[241]";
+connectAttr "Legs_FK_Grp_translateY.o" "grandma_controlrigRN.phl[242]";
+connectAttr "Legs_FK_Grp_translateZ.o" "grandma_controlrigRN.phl[243]";
+connectAttr "Legs_FK_Grp_rotateX.o" "grandma_controlrigRN.phl[244]";
+connectAttr "Legs_FK_Grp_rotateY.o" "grandma_controlrigRN.phl[245]";
+connectAttr "Legs_FK_Grp_rotateZ.o" "grandma_controlrigRN.phl[246]";
+connectAttr "Legs_FK_Grp_scaleX.o" "grandma_controlrigRN.phl[247]";
+connectAttr "Legs_FK_Grp_scaleY.o" "grandma_controlrigRN.phl[248]";
+connectAttr "Legs_FK_Grp_scaleZ.o" "grandma_controlrigRN.phl[249]";
+connectAttr "FK_hipR_Grp_translateX.o" "grandma_controlrigRN.phl[250]";
+connectAttr "FK_hipR_Grp_translateY.o" "grandma_controlrigRN.phl[251]";
+connectAttr "FK_hipR_Grp_translateZ.o" "grandma_controlrigRN.phl[252]";
+connectAttr "FK_hipR_Grp_rotateX.o" "grandma_controlrigRN.phl[253]";
+connectAttr "FK_hipR_Grp_rotateY.o" "grandma_controlrigRN.phl[254]";
+connectAttr "FK_hipR_Grp_rotateZ.o" "grandma_controlrigRN.phl[255]";
+connectAttr "FK_hipR_Grp_scaleX.o" "grandma_controlrigRN.phl[256]";
+connectAttr "FK_hipR_Grp_scaleY.o" "grandma_controlrigRN.phl[257]";
+connectAttr "FK_hipR_Grp_scaleZ.o" "grandma_controlrigRN.phl[258]";
+connectAttr "FK_hipR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[259]";
+connectAttr "FK_hipR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[260]";
+connectAttr "FK_hipR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[261]";
+connectAttr "FK_hipR_Ctrl_visibility.o" "grandma_controlrigRN.phl[262]";
+connectAttr "FK_hipR_Ctrl_translateX.o" "grandma_controlrigRN.phl[263]";
+connectAttr "FK_hipR_Ctrl_translateY.o" "grandma_controlrigRN.phl[264]";
+connectAttr "FK_hipR_Ctrl_translateZ.o" "grandma_controlrigRN.phl[265]";
+connectAttr "FK_hipR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[266]";
+connectAttr "FK_hipR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[267]";
+connectAttr "FK_hipR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[268]";
+connectAttr "FK_kneeR_Grp_visibility.o" "grandma_controlrigRN.phl[269]";
+connectAttr "FK_kneeR_Grp_translateX.o" "grandma_controlrigRN.phl[270]";
+connectAttr "FK_kneeR_Grp_translateY.o" "grandma_controlrigRN.phl[271]";
+connectAttr "FK_kneeR_Grp_translateZ.o" "grandma_controlrigRN.phl[272]";
+connectAttr "FK_kneeR_Grp_rotateX.o" "grandma_controlrigRN.phl[273]";
+connectAttr "FK_kneeR_Grp_rotateY.o" "grandma_controlrigRN.phl[274]";
+connectAttr "FK_kneeR_Grp_rotateZ.o" "grandma_controlrigRN.phl[275]";
+connectAttr "FK_kneeR_Grp_scaleX.o" "grandma_controlrigRN.phl[276]";
+connectAttr "FK_kneeR_Grp_scaleY.o" "grandma_controlrigRN.phl[277]";
+connectAttr "FK_kneeR_Grp_scaleZ.o" "grandma_controlrigRN.phl[278]";
+connectAttr "FK_kneeR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[279]";
+connectAttr "FK_kneeR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[280]";
+connectAttr "FK_kneeR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[281]";
+connectAttr "FK_kneeR_Ctrl_visibility.o" "grandma_controlrigRN.phl[282]";
+connectAttr "FK_kneeR_Ctrl_translateX.o" "grandma_controlrigRN.phl[283]";
+connectAttr "FK_kneeR_Ctrl_translateY.o" "grandma_controlrigRN.phl[284]";
+connectAttr "FK_kneeR_Ctrl_translateZ.o" "grandma_controlrigRN.phl[285]";
+connectAttr "FK_kneeR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[286]";
+connectAttr "FK_kneeR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[287]";
+connectAttr "FK_kneeR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[288]";
+connectAttr "FK_ankleR_Grp_visibility.o" "grandma_controlrigRN.phl[289]";
+connectAttr "FK_ankleR_Grp_translateX.o" "grandma_controlrigRN.phl[290]";
+connectAttr "FK_ankleR_Grp_translateY.o" "grandma_controlrigRN.phl[291]";
+connectAttr "FK_ankleR_Grp_translateZ.o" "grandma_controlrigRN.phl[292]";
+connectAttr "FK_ankleR_Grp_rotateX.o" "grandma_controlrigRN.phl[293]";
+connectAttr "FK_ankleR_Grp_rotateY.o" "grandma_controlrigRN.phl[294]";
+connectAttr "FK_ankleR_Grp_rotateZ.o" "grandma_controlrigRN.phl[295]";
+connectAttr "FK_ankleR_Grp_scaleX.o" "grandma_controlrigRN.phl[296]";
+connectAttr "FK_ankleR_Grp_scaleY.o" "grandma_controlrigRN.phl[297]";
+connectAttr "FK_ankleR_Grp_scaleZ.o" "grandma_controlrigRN.phl[298]";
+connectAttr "FK_ankleR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[299]";
+connectAttr "FK_ankleR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[300]";
+connectAttr "FK_ankleR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[301]";
+connectAttr "FK_ankleR_Ctrl_visibility.o" "grandma_controlrigRN.phl[302]";
+connectAttr "FK_ankleR_Ctrl_translateX.o" "grandma_controlrigRN.phl[303]";
+connectAttr "FK_ankleR_Ctrl_translateY.o" "grandma_controlrigRN.phl[304]";
+connectAttr "FK_ankleR_Ctrl_translateZ.o" "grandma_controlrigRN.phl[305]";
+connectAttr "FK_ankleR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[306]";
+connectAttr "FK_ankleR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[307]";
+connectAttr "FK_ankleR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[308]";
+connectAttr "FK_hipL_Grp_translateX.o" "grandma_controlrigRN.phl[309]";
+connectAttr "FK_hipL_Grp_translateY.o" "grandma_controlrigRN.phl[310]";
+connectAttr "FK_hipL_Grp_translateZ.o" "grandma_controlrigRN.phl[311]";
+connectAttr "FK_hipL_Grp_rotateX.o" "grandma_controlrigRN.phl[312]";
+connectAttr "FK_hipL_Grp_rotateY.o" "grandma_controlrigRN.phl[313]";
+connectAttr "FK_hipL_Grp_rotateZ.o" "grandma_controlrigRN.phl[314]";
+connectAttr "FK_hipL_Grp_scaleX.o" "grandma_controlrigRN.phl[315]";
+connectAttr "FK_hipL_Grp_scaleY.o" "grandma_controlrigRN.phl[316]";
+connectAttr "FK_hipL_Grp_scaleZ.o" "grandma_controlrigRN.phl[317]";
+connectAttr "FK_hipL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[318]";
+connectAttr "FK_hipL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[319]";
+connectAttr "FK_hipL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[320]";
+connectAttr "FK_hipL_Ctrl_visibility.o" "grandma_controlrigRN.phl[321]";
+connectAttr "FK_hipL_Ctrl_translateX.o" "grandma_controlrigRN.phl[322]";
+connectAttr "FK_hipL_Ctrl_translateY.o" "grandma_controlrigRN.phl[323]";
+connectAttr "FK_hipL_Ctrl_translateZ.o" "grandma_controlrigRN.phl[324]";
+connectAttr "FK_hipL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[325]";
+connectAttr "FK_hipL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[326]";
+connectAttr "FK_hipL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[327]";
+connectAttr "FK_kneeL_Grp_visibility.o" "grandma_controlrigRN.phl[328]";
+connectAttr "FK_kneeL_Grp_translateX.o" "grandma_controlrigRN.phl[329]";
+connectAttr "FK_kneeL_Grp_translateY.o" "grandma_controlrigRN.phl[330]";
+connectAttr "FK_kneeL_Grp_translateZ.o" "grandma_controlrigRN.phl[331]";
+connectAttr "FK_kneeL_Grp_rotateX.o" "grandma_controlrigRN.phl[332]";
+connectAttr "FK_kneeL_Grp_rotateY.o" "grandma_controlrigRN.phl[333]";
+connectAttr "FK_kneeL_Grp_rotateZ.o" "grandma_controlrigRN.phl[334]";
+connectAttr "FK_kneeL_Grp_scaleX.o" "grandma_controlrigRN.phl[335]";
+connectAttr "FK_kneeL_Grp_scaleY.o" "grandma_controlrigRN.phl[336]";
+connectAttr "FK_kneeL_Grp_scaleZ.o" "grandma_controlrigRN.phl[337]";
+connectAttr "FK_kneeL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[338]";
+connectAttr "FK_kneeL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[339]";
+connectAttr "FK_kneeL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[340]";
+connectAttr "FK_kneeL_Ctrl_visibility.o" "grandma_controlrigRN.phl[341]";
+connectAttr "FK_kneeL_Ctrl_translateX.o" "grandma_controlrigRN.phl[342]";
+connectAttr "FK_kneeL_Ctrl_translateY.o" "grandma_controlrigRN.phl[343]";
+connectAttr "FK_kneeL_Ctrl_translateZ.o" "grandma_controlrigRN.phl[344]";
+connectAttr "FK_kneeL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[345]";
+connectAttr "FK_kneeL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[346]";
+connectAttr "FK_kneeL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[347]";
+connectAttr "FK_ankleL_Grp_visibility.o" "grandma_controlrigRN.phl[348]";
+connectAttr "FK_ankleL_Grp_translateX.o" "grandma_controlrigRN.phl[349]";
+connectAttr "FK_ankleL_Grp_translateY.o" "grandma_controlrigRN.phl[350]";
+connectAttr "FK_ankleL_Grp_translateZ.o" "grandma_controlrigRN.phl[351]";
+connectAttr "FK_ankleL_Grp_rotateX.o" "grandma_controlrigRN.phl[352]";
+connectAttr "FK_ankleL_Grp_rotateY.o" "grandma_controlrigRN.phl[353]";
+connectAttr "FK_ankleL_Grp_rotateZ.o" "grandma_controlrigRN.phl[354]";
+connectAttr "FK_ankleL_Grp_scaleX.o" "grandma_controlrigRN.phl[355]";
+connectAttr "FK_ankleL_Grp_scaleY.o" "grandma_controlrigRN.phl[356]";
+connectAttr "FK_ankleL_Grp_scaleZ.o" "grandma_controlrigRN.phl[357]";
+connectAttr "FK_ankleL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[358]";
+connectAttr "FK_ankleL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[359]";
+connectAttr "FK_ankleL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[360]";
+connectAttr "FK_ankleL_Ctrl_visibility.o" "grandma_controlrigRN.phl[361]";
+connectAttr "FK_ankleL_Ctrl_translateX.o" "grandma_controlrigRN.phl[362]";
+connectAttr "FK_ankleL_Ctrl_translateY.o" "grandma_controlrigRN.phl[363]";
+connectAttr "FK_ankleL_Ctrl_translateZ.o" "grandma_controlrigRN.phl[364]";
+connectAttr "FK_ankleL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[365]";
+connectAttr "FK_ankleL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[366]";
+connectAttr "FK_ankleL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[367]";
+connectAttr "spine3_Ctrl_translateX1.o" "grandma_controlrigRN.phl[368]";
+connectAttr "spine3_Ctrl_translateY1.o" "grandma_controlrigRN.phl[369]";
+connectAttr "spine3_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[370]";
+connectAttr "spine3_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[371]";
+connectAttr "spine3_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[372]";
+connectAttr "spine3_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[373]";
+connectAttr "spine3_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[374]";
+connectAttr "spine3_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[375]";
+connectAttr "spine3_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[376]";
+connectAttr "spine3_Ctrl_visibility1.o" "grandma_controlrigRN.phl[377]";
+connectAttr "spine2_Ctrl_translateX1.o" "grandma_controlrigRN.phl[378]";
+connectAttr "spine2_Ctrl_translateY1.o" "grandma_controlrigRN.phl[379]";
+connectAttr "spine2_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[380]";
+connectAttr "spine2_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[381]";
+connectAttr "spine2_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[382]";
+connectAttr "spine2_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[383]";
+connectAttr "spine2_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[384]";
+connectAttr "spine2_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[385]";
+connectAttr "spine2_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[386]";
+connectAttr "spine2_Ctrl_visibility1.o" "grandma_controlrigRN.phl[387]";
+connectAttr "spine1_Ctrl_translateX1.o" "grandma_controlrigRN.phl[388]";
+connectAttr "spine1_Ctrl_translateY1.o" "grandma_controlrigRN.phl[389]";
+connectAttr "spine1_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[390]";
+connectAttr "spine1_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[391]";
+connectAttr "spine1_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[392]";
+connectAttr "spine1_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[393]";
+connectAttr "spine1_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[394]";
+connectAttr "spine1_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[395]";
+connectAttr "spine1_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[396]";
+connectAttr "spine1_Ctrl_visibility1.o" "grandma_controlrigRN.phl[397]";
+connectAttr "neck_Ctrl_rotateX1.o" "grandma_controlrigRN.phl[398]";
+connectAttr "neck_Ctrl_rotateY1.o" "grandma_controlrigRN.phl[399]";
+connectAttr "neck_Ctrl_rotateZ1.o" "grandma_controlrigRN.phl[400]";
+connectAttr "neck_Ctrl_visibility1.o" "grandma_controlrigRN.phl[401]";
+connectAttr "neck_Ctrl_translateX1.o" "grandma_controlrigRN.phl[402]";
+connectAttr "neck_Ctrl_translateY1.o" "grandma_controlrigRN.phl[403]";
+connectAttr "neck_Ctrl_translateZ1.o" "grandma_controlrigRN.phl[404]";
+connectAttr "neck_Ctrl_scaleX1.o" "grandma_controlrigRN.phl[405]";
+connectAttr "neck_Ctrl_scaleY1.o" "grandma_controlrigRN.phl[406]";
+connectAttr "neck_Ctrl_scaleZ1.o" "grandma_controlrigRN.phl[407]";
+connectAttr "curve2_rotateX.o" "grandma_controlrigRN.phl[408]";
+connectAttr "curve2_rotateY.o" "grandma_controlrigRN.phl[409]";
+connectAttr "curve2_rotateZ.o" "grandma_controlrigRN.phl[410]";
+connectAttr "curve2_visibility.o" "grandma_controlrigRN.phl[411]";
+connectAttr "curve2_translateX.o" "grandma_controlrigRN.phl[412]";
+connectAttr "curve2_translateY.o" "grandma_controlrigRN.phl[413]";
+connectAttr "curve2_translateZ.o" "grandma_controlrigRN.phl[414]";
+connectAttr "curve2_scaleX.o" "grandma_controlrigRN.phl[415]";
+connectAttr "curve2_scaleY.o" "grandma_controlrigRN.phl[416]";
+connectAttr "curve2_scaleZ.o" "grandma_controlrigRN.phl[417]";
+connectAttr "ShoulderR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[418]";
+connectAttr "ShoulderR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[419]";
+connectAttr "ShoulderR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[420]";
+connectAttr "ShoulderR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[421]";
+connectAttr "ShoulderR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[422]";
+connectAttr "ShoulderR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[423]";
+connectAttr "ElbowR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[424]";
+connectAttr "ElbowR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[425]";
+connectAttr "ElbowR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[426]";
+connectAttr "ElbowR_Ctrl_visibility.o" "grandma_controlrigRN.phl[427]";
+connectAttr "ElbowR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[428]";
+connectAttr "ElbowR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[429]";
+connectAttr "ElbowR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[430]";
+connectAttr "WristR_Ctrl_rotateX.o" "grandma_controlrigRN.phl[431]";
+connectAttr "WristR_Ctrl_rotateY.o" "grandma_controlrigRN.phl[432]";
+connectAttr "WristR_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[433]";
+connectAttr "WristR_Ctrl_visibility.o" "grandma_controlrigRN.phl[434]";
+connectAttr "WristR_Ctrl_scaleX.o" "grandma_controlrigRN.phl[435]";
+connectAttr "WristR_Ctrl_scaleY.o" "grandma_controlrigRN.phl[436]";
+connectAttr "WristR_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[437]";
+connectAttr "ShoulderL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[438]";
+connectAttr "ShoulderL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[439]";
+connectAttr "ShoulderL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[440]";
+connectAttr "ShoulderL_Ctrl_visibility.o" "grandma_controlrigRN.phl[441]";
+connectAttr "ShoulderL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[442]";
+connectAttr "ShoulderL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[443]";
+connectAttr "ShoulderL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[444]";
+connectAttr "ElbowL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[445]";
+connectAttr "ElbowL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[446]";
+connectAttr "ElbowL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[447]";
+connectAttr "ElbowL_Ctrl_visibility.o" "grandma_controlrigRN.phl[448]";
+connectAttr "ElbowL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[449]";
+connectAttr "ElbowL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[450]";
+connectAttr "ElbowL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[451]";
+connectAttr "WristL_Ctrl_rotateX.o" "grandma_controlrigRN.phl[452]";
+connectAttr "WristL_Ctrl_rotateY.o" "grandma_controlrigRN.phl[453]";
+connectAttr "WristL_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[454]";
+connectAttr "WristL_Ctrl_visibility.o" "grandma_controlrigRN.phl[455]";
+connectAttr "WristL_Ctrl_scaleX.o" "grandma_controlrigRN.phl[456]";
+connectAttr "WristL_Ctrl_scaleY.o" "grandma_controlrigRN.phl[457]";
+connectAttr "WristL_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[458]";
+connectAttr "EyeMaster_Ctrl_translateX.o" "grandma_controlrigRN.phl[459]";
+connectAttr "EyeMaster_Ctrl_translateY.o" "grandma_controlrigRN.phl[460]";
+connectAttr "EyeMaster_Ctrl_translateZ.o" "grandma_controlrigRN.phl[461]";
+connectAttr "EyeMaster_Ctrl_visibility.o" "grandma_controlrigRN.phl[462]";
+connectAttr "EyeMaster_Ctrl_rotateX.o" "grandma_controlrigRN.phl[463]";
+connectAttr "EyeMaster_Ctrl_rotateY.o" "grandma_controlrigRN.phl[464]";
+connectAttr "EyeMaster_Ctrl_rotateZ.o" "grandma_controlrigRN.phl[465]";
+connectAttr "EyeMaster_Ctrl_scaleX.o" "grandma_controlrigRN.phl[466]";
+connectAttr "EyeMaster_Ctrl_scaleY.o" "grandma_controlrigRN.phl[467]";
+connectAttr "EyeMaster_Ctrl_scaleZ.o" "grandma_controlrigRN.phl[468]";
+connectAttr "eye_blinkRight.o" "grandma_controlrigRN.phl[469]";
+connectAttr "eye_blinkLeft.o" "grandma_controlrigRN.phl[470]";
+connectAttr "eye_blinkBoth.o" "grandma_controlrigRN.phl[471]";
+connectAttr "mouth_closed.o" "grandma_controlrigRN.phl[472]";
+connectAttr "mouth_smileRight.o" "grandma_controlrigRN.phl[473]";
+connectAttr "mouth_smileLeft.o" "grandma_controlrigRN.phl[474]";
+connectAttr "mouth_O.o" "grandma_controlrigRN.phl[475]";
+connectAttr "mouth_O_closed.o" "grandma_controlrigRN.phl[476]";
+connectAttr "cheeks_laughlineRight.o" "grandma_controlrigRN.phl[477]";
+connectAttr "cheeks_laughlineRight_Copy.o" "grandma_controlrigRN.phl[478]";
+connectAttr "foreground.di" "MC_control_rigRN.phl[1]";
+connectAttr "MC_control_rigRN.phl[2]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tt"
 		;
-connectAttr "ROOT_Ctrl_translateX.o" "MC_control_rigRN.phl[2]";
-connectAttr "ROOT_Ctrl_translateY.o" "MC_control_rigRN.phl[3]";
-connectAttr "ROOT_Ctrl_translateZ.o" "MC_control_rigRN.phl[4]";
-connectAttr "MC_control_rigRN.phl[5]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].trp"
+connectAttr "ROOT_Ctrl_translateX.o" "MC_control_rigRN.phl[3]";
+connectAttr "ROOT_Ctrl_translateY.o" "MC_control_rigRN.phl[4]";
+connectAttr "ROOT_Ctrl_translateZ.o" "MC_control_rigRN.phl[5]";
+connectAttr "MC_control_rigRN.phl[6]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].trp"
 		;
-connectAttr "MC_control_rigRN.phl[6]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].trt"
+connectAttr "MC_control_rigRN.phl[7]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].trt"
 		;
-connectAttr "MC_control_rigRN.phl[7]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tr"
+connectAttr "MC_control_rigRN.phl[8]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tr"
 		;
-connectAttr "ROOT_Ctrl_rotateX.o" "MC_control_rigRN.phl[8]";
-connectAttr "ROOT_Ctrl_rotateY.o" "MC_control_rigRN.phl[9]";
-connectAttr "ROOT_Ctrl_rotateZ.o" "MC_control_rigRN.phl[10]";
-connectAttr "MC_control_rigRN.phl[11]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tro"
+connectAttr "ROOT_Ctrl_rotateX.o" "MC_control_rigRN.phl[9]";
+connectAttr "ROOT_Ctrl_rotateY.o" "MC_control_rigRN.phl[10]";
+connectAttr "ROOT_Ctrl_rotateZ.o" "MC_control_rigRN.phl[11]";
+connectAttr "MC_control_rigRN.phl[12]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tro"
 		;
-connectAttr "MC_control_rigRN.phl[12]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].ts"
+connectAttr "MC_control_rigRN.phl[13]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].ts"
 		;
-connectAttr "ROOT_Ctrl_scaleX.o" "MC_control_rigRN.phl[13]";
-connectAttr "ROOT_Ctrl_scaleY.o" "MC_control_rigRN.phl[14]";
-connectAttr "ROOT_Ctrl_scaleZ.o" "MC_control_rigRN.phl[15]";
-connectAttr "MC_control_rigRN.phl[16]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tpm"
+connectAttr "ROOT_Ctrl_scaleX.o" "MC_control_rigRN.phl[14]";
+connectAttr "ROOT_Ctrl_scaleY.o" "MC_control_rigRN.phl[15]";
+connectAttr "ROOT_Ctrl_scaleZ.o" "MC_control_rigRN.phl[16]";
+connectAttr "MC_control_rigRN.phl[17]" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tpm"
 		;
-connectAttr "ROOT_Ctrl_visibility.o" "MC_control_rigRN.phl[17]";
-connectAttr "hipR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[18]";
-connectAttr "hipR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[19]";
-connectAttr "hipR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[20]";
-connectAttr "hipR_FK_Grp_translateX.o" "MC_control_rigRN.phl[21]";
-connectAttr "hipR_FK_Grp_translateY.o" "MC_control_rigRN.phl[22]";
-connectAttr "hipR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[23]";
-connectAttr "hipR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[24]";
-connectAttr "hipR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[25]";
-connectAttr "hipR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[26]";
-connectAttr "hipR_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[27]";
-connectAttr "hipR_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[28]";
-connectAttr "hipR_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[29]";
-connectAttr "hipR_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[30]";
-connectAttr "hipR_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[31]";
-connectAttr "hipR_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[32]";
-connectAttr "hipR_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[33]";
-connectAttr "hipR_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[34]";
-connectAttr "hipR_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[35]";
-connectAttr "hipR_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[36]";
-connectAttr "kneeR_FK_Grp_visibility.o" "MC_control_rigRN.phl[37]";
-connectAttr "kneeR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[38]";
-connectAttr "kneeR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[39]";
-connectAttr "kneeR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[40]";
-connectAttr "kneeR_FK_Grp_translateX.o" "MC_control_rigRN.phl[41]";
-connectAttr "kneeR_FK_Grp_translateY.o" "MC_control_rigRN.phl[42]";
-connectAttr "kneeR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[43]";
-connectAttr "kneeR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[44]";
-connectAttr "kneeR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[45]";
-connectAttr "kneeR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[46]";
-connectAttr "kneeR_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[47]";
-connectAttr "kneeR_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[48]";
-connectAttr "kneeR_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[49]";
-connectAttr "kneeR_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[50]";
-connectAttr "kneeR_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[51]";
-connectAttr "kneeR_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[52]";
-connectAttr "kneeR_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[53]";
-connectAttr "kneeR_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[54]";
-connectAttr "kneeR_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[55]";
-connectAttr "kneeR_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[56]";
-connectAttr "ankleR_FK_Grp_visibility.o" "MC_control_rigRN.phl[57]";
-connectAttr "ankleR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[58]";
-connectAttr "ankleR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[59]";
-connectAttr "ankleR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[60]";
-connectAttr "ankleR_FK_Grp_translateX.o" "MC_control_rigRN.phl[61]";
-connectAttr "ankleR_FK_Grp_translateY.o" "MC_control_rigRN.phl[62]";
-connectAttr "ankleR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[63]";
-connectAttr "ankleR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[64]";
-connectAttr "ankleR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[65]";
-connectAttr "ankleR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[66]";
-connectAttr "ankleR_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[67]";
-connectAttr "ankleR_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[68]";
-connectAttr "ankleR_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[69]";
-connectAttr "ankleR_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[70]";
-connectAttr "ankleR_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[71]";
-connectAttr "ankleR_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[72]";
-connectAttr "ankleR_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[73]";
-connectAttr "ankleR_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[74]";
-connectAttr "ankleR_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[75]";
-connectAttr "ankleR_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[76]";
-connectAttr "spine1_Grp_visibility.o" "MC_control_rigRN.phl[77]";
-connectAttr "spine1_Grp_rotateX.o" "MC_control_rigRN.phl[78]";
-connectAttr "spine1_Grp_rotateY.o" "MC_control_rigRN.phl[79]";
-connectAttr "spine1_Grp_rotateZ.o" "MC_control_rigRN.phl[80]";
-connectAttr "spine1_Grp_translateX.o" "MC_control_rigRN.phl[81]";
-connectAttr "spine1_Grp_translateY.o" "MC_control_rigRN.phl[82]";
-connectAttr "spine1_Grp_translateZ.o" "MC_control_rigRN.phl[83]";
-connectAttr "spine1_Grp_scaleX.o" "MC_control_rigRN.phl[84]";
-connectAttr "spine1_Grp_scaleY.o" "MC_control_rigRN.phl[85]";
-connectAttr "spine1_Grp_scaleZ.o" "MC_control_rigRN.phl[86]";
-connectAttr "spine1_Ctrl_rotateX.o" "MC_control_rigRN.phl[87]";
-connectAttr "spine1_Ctrl_rotateY.o" "MC_control_rigRN.phl[88]";
-connectAttr "spine1_Ctrl_rotateZ.o" "MC_control_rigRN.phl[89]";
-connectAttr "spine1_Ctrl_visibility.o" "MC_control_rigRN.phl[90]";
-connectAttr "spine1_Ctrl_translateX.o" "MC_control_rigRN.phl[91]";
-connectAttr "spine1_Ctrl_translateY.o" "MC_control_rigRN.phl[92]";
-connectAttr "spine1_Ctrl_translateZ.o" "MC_control_rigRN.phl[93]";
-connectAttr "spine1_Ctrl_scaleX.o" "MC_control_rigRN.phl[94]";
-connectAttr "spine1_Ctrl_scaleY.o" "MC_control_rigRN.phl[95]";
-connectAttr "spine1_Ctrl_scaleZ.o" "MC_control_rigRN.phl[96]";
-connectAttr "spine2_Grp_visibility.o" "MC_control_rigRN.phl[97]";
-connectAttr "spine2_Grp_rotateX.o" "MC_control_rigRN.phl[98]";
-connectAttr "spine2_Grp_rotateY.o" "MC_control_rigRN.phl[99]";
-connectAttr "spine2_Grp_rotateZ.o" "MC_control_rigRN.phl[100]";
-connectAttr "spine2_Grp_translateX.o" "MC_control_rigRN.phl[101]";
-connectAttr "spine2_Grp_translateY.o" "MC_control_rigRN.phl[102]";
-connectAttr "spine2_Grp_translateZ.o" "MC_control_rigRN.phl[103]";
-connectAttr "spine2_Grp_scaleX.o" "MC_control_rigRN.phl[104]";
-connectAttr "spine2_Grp_scaleY.o" "MC_control_rigRN.phl[105]";
-connectAttr "spine2_Grp_scaleZ.o" "MC_control_rigRN.phl[106]";
-connectAttr "spine2_Ctrl_rotateX.o" "MC_control_rigRN.phl[107]";
-connectAttr "spine2_Ctrl_rotateY.o" "MC_control_rigRN.phl[108]";
-connectAttr "spine2_Ctrl_rotateZ.o" "MC_control_rigRN.phl[109]";
-connectAttr "spine2_Ctrl_visibility.o" "MC_control_rigRN.phl[110]";
-connectAttr "spine2_Ctrl_translateX.o" "MC_control_rigRN.phl[111]";
-connectAttr "spine2_Ctrl_translateY.o" "MC_control_rigRN.phl[112]";
-connectAttr "spine2_Ctrl_translateZ.o" "MC_control_rigRN.phl[113]";
-connectAttr "spine2_Ctrl_scaleX.o" "MC_control_rigRN.phl[114]";
-connectAttr "spine2_Ctrl_scaleY.o" "MC_control_rigRN.phl[115]";
-connectAttr "spine2_Ctrl_scaleZ.o" "MC_control_rigRN.phl[116]";
-connectAttr "spine3_Grp_visibility.o" "MC_control_rigRN.phl[117]";
-connectAttr "spine3_Grp_rotateX.o" "MC_control_rigRN.phl[118]";
-connectAttr "spine3_Grp_rotateY.o" "MC_control_rigRN.phl[119]";
-connectAttr "spine3_Grp_rotateZ.o" "MC_control_rigRN.phl[120]";
-connectAttr "spine3_Grp_translateX.o" "MC_control_rigRN.phl[121]";
-connectAttr "spine3_Grp_translateY.o" "MC_control_rigRN.phl[122]";
-connectAttr "spine3_Grp_translateZ.o" "MC_control_rigRN.phl[123]";
-connectAttr "spine3_Grp_scaleX.o" "MC_control_rigRN.phl[124]";
-connectAttr "spine3_Grp_scaleY.o" "MC_control_rigRN.phl[125]";
-connectAttr "spine3_Grp_scaleZ.o" "MC_control_rigRN.phl[126]";
-connectAttr "spine3_Ctrl_rotateX.o" "MC_control_rigRN.phl[127]";
-connectAttr "spine3_Ctrl_rotateY.o" "MC_control_rigRN.phl[128]";
-connectAttr "spine3_Ctrl_rotateZ.o" "MC_control_rigRN.phl[129]";
-connectAttr "spine3_Ctrl_visibility.o" "MC_control_rigRN.phl[130]";
-connectAttr "spine3_Ctrl_translateX.o" "MC_control_rigRN.phl[131]";
-connectAttr "spine3_Ctrl_translateY.o" "MC_control_rigRN.phl[132]";
-connectAttr "spine3_Ctrl_translateZ.o" "MC_control_rigRN.phl[133]";
-connectAttr "spine3_Ctrl_scaleX.o" "MC_control_rigRN.phl[134]";
-connectAttr "spine3_Ctrl_scaleY.o" "MC_control_rigRN.phl[135]";
-connectAttr "spine3_Ctrl_scaleZ.o" "MC_control_rigRN.phl[136]";
-connectAttr "neck_Grp_visibility.o" "MC_control_rigRN.phl[137]";
-connectAttr "neck_Grp_rotateX.o" "MC_control_rigRN.phl[138]";
-connectAttr "neck_Grp_rotateY.o" "MC_control_rigRN.phl[139]";
-connectAttr "neck_Grp_rotateZ.o" "MC_control_rigRN.phl[140]";
-connectAttr "neck_Grp_translateX.o" "MC_control_rigRN.phl[141]";
-connectAttr "neck_Grp_translateY.o" "MC_control_rigRN.phl[142]";
-connectAttr "neck_Grp_translateZ.o" "MC_control_rigRN.phl[143]";
-connectAttr "neck_Grp_scaleX.o" "MC_control_rigRN.phl[144]";
-connectAttr "neck_Grp_scaleY.o" "MC_control_rigRN.phl[145]";
-connectAttr "neck_Grp_scaleZ.o" "MC_control_rigRN.phl[146]";
-connectAttr "neck_Ctrl_rotateX.o" "MC_control_rigRN.phl[147]";
-connectAttr "neck_Ctrl_rotateY.o" "MC_control_rigRN.phl[148]";
-connectAttr "neck_Ctrl_rotateZ.o" "MC_control_rigRN.phl[149]";
-connectAttr "neck_Ctrl_visibility.o" "MC_control_rigRN.phl[150]";
-connectAttr "neck_Ctrl_translateX.o" "MC_control_rigRN.phl[151]";
-connectAttr "neck_Ctrl_translateY.o" "MC_control_rigRN.phl[152]";
-connectAttr "neck_Ctrl_translateZ.o" "MC_control_rigRN.phl[153]";
-connectAttr "neck_Ctrl_scaleX.o" "MC_control_rigRN.phl[154]";
-connectAttr "neck_Ctrl_scaleY.o" "MC_control_rigRN.phl[155]";
-connectAttr "neck_Ctrl_scaleZ.o" "MC_control_rigRN.phl[156]";
-connectAttr "clavicleR_FK_Grp_visibility.o" "MC_control_rigRN.phl[157]";
-connectAttr "clavicleR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[158]";
-connectAttr "clavicleR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[159]";
-connectAttr "clavicleR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[160]";
-connectAttr "clavicleR_FK_Grp_translateX.o" "MC_control_rigRN.phl[161]";
-connectAttr "clavicleR_FK_Grp_translateY.o" "MC_control_rigRN.phl[162]";
-connectAttr "clavicleR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[163]";
-connectAttr "clavicleR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[164]";
-connectAttr "clavicleR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[165]";
-connectAttr "clavicleR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[166]";
-connectAttr "clavicleR_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[167]";
-connectAttr "clavicleR_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[168]";
-connectAttr "clavicleR_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[169]";
-connectAttr "clavicleR_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[170]";
-connectAttr "clavicleR_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[171]";
-connectAttr "clavicleR_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[172]";
-connectAttr "clavicleR_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[173]";
-connectAttr "clavicleR_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[174]";
-connectAttr "clavicleR_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[175]";
-connectAttr "clavicleR_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[176]";
-connectAttr "shoulderR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[177]";
-connectAttr "shoulderR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[178]";
-connectAttr "shoulderR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[179]";
-connectAttr "shoulderR_FK_Grp_translateX.o" "MC_control_rigRN.phl[180]";
-connectAttr "shoulderR_FK_Grp_translateY.o" "MC_control_rigRN.phl[181]";
-connectAttr "shoulderR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[182]";
-connectAttr "shoulderR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[183]";
-connectAttr "shoulderR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[184]";
-connectAttr "shoulderR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[185]";
-connectAttr "shoulderR_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[186]";
-connectAttr "shoulderR_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[187]";
-connectAttr "shoulderR_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[188]";
-connectAttr "shoulderR_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[189]";
-connectAttr "shoulderR_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[190]";
-connectAttr "shoulderR_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[191]";
-connectAttr "shoulderR_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[192]";
-connectAttr "shoulderR_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[193]";
-connectAttr "shoulderR_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[194]";
-connectAttr "shoulderR_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[195]";
-connectAttr "elbowR_FK_Grp_visibility.o" "MC_control_rigRN.phl[196]";
-connectAttr "elbowR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[197]";
-connectAttr "elbowR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[198]";
-connectAttr "elbowR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[199]";
-connectAttr "elbowR_FK_Grp_translateX.o" "MC_control_rigRN.phl[200]";
-connectAttr "elbowR_FK_Grp_translateY.o" "MC_control_rigRN.phl[201]";
-connectAttr "elbowR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[202]";
-connectAttr "elbowR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[203]";
-connectAttr "elbowR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[204]";
-connectAttr "elbowR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[205]";
-connectAttr "elbowR_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[206]";
-connectAttr "elbowR_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[207]";
-connectAttr "elbowR_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[208]";
-connectAttr "elbowR_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[209]";
-connectAttr "elbowR_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[210]";
-connectAttr "elbowR_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[211]";
-connectAttr "elbowR_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[212]";
-connectAttr "elbowR_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[213]";
-connectAttr "elbowR_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[214]";
-connectAttr "elbowR_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[215]";
-connectAttr "wristR_FK_Grp_visibility.o" "MC_control_rigRN.phl[216]";
-connectAttr "wristR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[217]";
-connectAttr "wristR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[218]";
-connectAttr "wristR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[219]";
-connectAttr "wristR_FK_Grp_translateX.o" "MC_control_rigRN.phl[220]";
-connectAttr "wristR_FK_Grp_translateY.o" "MC_control_rigRN.phl[221]";
-connectAttr "wristR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[222]";
-connectAttr "wristR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[223]";
-connectAttr "wristR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[224]";
-connectAttr "wristR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[225]";
-connectAttr "wristR_FK_Grp_rotateX1.o" "MC_control_rigRN.phl[226]";
-connectAttr "wristR_FK_Grp_rotateY1.o" "MC_control_rigRN.phl[227]";
-connectAttr "wristR_FK_Grp_rotateZ1.o" "MC_control_rigRN.phl[228]";
-connectAttr "wristR_FK_Grp_visibility1.o" "MC_control_rigRN.phl[229]";
-connectAttr "wristR_FK_Grp_translateX1.o" "MC_control_rigRN.phl[230]";
-connectAttr "wristR_FK_Grp_translateY1.o" "MC_control_rigRN.phl[231]";
-connectAttr "wristR_FK_Grp_translateZ1.o" "MC_control_rigRN.phl[232]";
-connectAttr "wristR_FK_Grp_scaleX1.o" "MC_control_rigRN.phl[233]";
-connectAttr "wristR_FK_Grp_scaleY1.o" "MC_control_rigRN.phl[234]";
-connectAttr "wristR_FK_Grp_scaleZ1.o" "MC_control_rigRN.phl[235]";
-connectAttr "armR_IK_Grp_visibility.o" "MC_control_rigRN.phl[236]";
-connectAttr "armR_IK_Grp_rotateX.o" "MC_control_rigRN.phl[237]";
-connectAttr "armR_IK_Grp_rotateY.o" "MC_control_rigRN.phl[238]";
-connectAttr "armR_IK_Grp_rotateZ.o" "MC_control_rigRN.phl[239]";
-connectAttr "armR_IK_Grp_translateX.o" "MC_control_rigRN.phl[240]";
-connectAttr "armR_IK_Grp_translateY.o" "MC_control_rigRN.phl[241]";
-connectAttr "armR_IK_Grp_translateZ.o" "MC_control_rigRN.phl[242]";
-connectAttr "armR_IK_Grp_scaleX.o" "MC_control_rigRN.phl[243]";
-connectAttr "armR_IK_Grp_scaleY.o" "MC_control_rigRN.phl[244]";
-connectAttr "armR_IK_Grp_scaleZ.o" "MC_control_rigRN.phl[245]";
-connectAttr "pairBlend3.orx" "MC_control_rigRN.phl[246]";
-connectAttr "pairBlend3.ory" "MC_control_rigRN.phl[247]";
-connectAttr "pairBlend3.orz" "MC_control_rigRN.phl[248]";
-connectAttr "MC_control_rigRN.phl[249]" "pairBlend3.ro";
-connectAttr "MC_control_rigRN.phl[250]" "armR_IK_Ctrl_parentConstraint1.cro";
-connectAttr "armR_IK_Ctrl_visibility.o" "MC_control_rigRN.phl[251]";
-connectAttr "MC_control_rigRN.phl[252]" "pairBlend3.w";
-connectAttr "armR_IK_Ctrl_blendParent1.o" "MC_control_rigRN.phl[253]";
-connectAttr "pairBlend3.otx" "MC_control_rigRN.phl[254]";
-connectAttr "pairBlend3.oty" "MC_control_rigRN.phl[255]";
-connectAttr "pairBlend3.otz" "MC_control_rigRN.phl[256]";
-connectAttr "armR_IK_Ctrl_scaleX.o" "MC_control_rigRN.phl[257]";
-connectAttr "armR_IK_Ctrl_scaleY.o" "MC_control_rigRN.phl[258]";
-connectAttr "armR_IK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[259]";
-connectAttr "MC_control_rigRN.phl[260]" "armR_IK_Ctrl_parentConstraint1.cpim";
-connectAttr "MC_control_rigRN.phl[261]" "armR_IK_Ctrl_parentConstraint1.crp";
-connectAttr "MC_control_rigRN.phl[262]" "armR_IK_Ctrl_parentConstraint1.crt";
-connectAttr "RightArm_IK_rotateX.o" "MC_control_rigRN.phl[263]";
-connectAttr "RightArm_IK_rotateY.o" "MC_control_rigRN.phl[264]";
-connectAttr "RightArm_IK_rotateZ.o" "MC_control_rigRN.phl[265]";
-connectAttr "RightArm_IK_visibility.o" "MC_control_rigRN.phl[266]";
-connectAttr "RightArm_IK_translateX.o" "MC_control_rigRN.phl[267]";
-connectAttr "RightArm_IK_translateY.o" "MC_control_rigRN.phl[268]";
-connectAttr "RightArm_IK_translateZ.o" "MC_control_rigRN.phl[269]";
-connectAttr "RightArm_IK_scaleX.o" "MC_control_rigRN.phl[270]";
-connectAttr "RightArm_IK_scaleY.o" "MC_control_rigRN.phl[271]";
-connectAttr "RightArm_IK_scaleZ.o" "MC_control_rigRN.phl[272]";
-connectAttr "RightArm_IK_offset.o" "MC_control_rigRN.phl[273]";
-connectAttr "RightArm_IK_roll.o" "MC_control_rigRN.phl[274]";
-connectAttr "RightArm_IK_twist.o" "MC_control_rigRN.phl[275]";
-connectAttr "RightArm_IK_ikBlend.o" "MC_control_rigRN.phl[276]";
-connectAttr "RightArm_IK_poleVectorConstraint1_nodeState.o" "MC_control_rigRN.phl[277]"
+connectAttr "ROOT_Ctrl_visibility.o" "MC_control_rigRN.phl[18]";
+connectAttr "hipR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[19]";
+connectAttr "hipR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[20]";
+connectAttr "hipR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[21]";
+connectAttr "hipR_FK_Grp_translateX.o" "MC_control_rigRN.phl[22]";
+connectAttr "hipR_FK_Grp_translateY.o" "MC_control_rigRN.phl[23]";
+connectAttr "hipR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[24]";
+connectAttr "hipR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[25]";
+connectAttr "hipR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[26]";
+connectAttr "hipR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[27]";
+connectAttr "hipR_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[28]";
+connectAttr "hipR_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[29]";
+connectAttr "hipR_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[30]";
+connectAttr "hipR_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[31]";
+connectAttr "hipR_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[32]";
+connectAttr "hipR_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[33]";
+connectAttr "hipR_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[34]";
+connectAttr "hipR_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[35]";
+connectAttr "hipR_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[36]";
+connectAttr "hipR_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[37]";
+connectAttr "kneeR_FK_Grp_visibility.o" "MC_control_rigRN.phl[38]";
+connectAttr "kneeR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[39]";
+connectAttr "kneeR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[40]";
+connectAttr "kneeR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[41]";
+connectAttr "kneeR_FK_Grp_translateX.o" "MC_control_rigRN.phl[42]";
+connectAttr "kneeR_FK_Grp_translateY.o" "MC_control_rigRN.phl[43]";
+connectAttr "kneeR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[44]";
+connectAttr "kneeR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[45]";
+connectAttr "kneeR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[46]";
+connectAttr "kneeR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[47]";
+connectAttr "kneeR_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[48]";
+connectAttr "kneeR_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[49]";
+connectAttr "kneeR_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[50]";
+connectAttr "kneeR_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[51]";
+connectAttr "kneeR_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[52]";
+connectAttr "kneeR_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[53]";
+connectAttr "kneeR_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[54]";
+connectAttr "kneeR_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[55]";
+connectAttr "kneeR_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[56]";
+connectAttr "kneeR_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[57]";
+connectAttr "ankleR_FK_Grp_visibility.o" "MC_control_rigRN.phl[58]";
+connectAttr "ankleR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[59]";
+connectAttr "ankleR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[60]";
+connectAttr "ankleR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[61]";
+connectAttr "ankleR_FK_Grp_translateX.o" "MC_control_rigRN.phl[62]";
+connectAttr "ankleR_FK_Grp_translateY.o" "MC_control_rigRN.phl[63]";
+connectAttr "ankleR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[64]";
+connectAttr "ankleR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[65]";
+connectAttr "ankleR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[66]";
+connectAttr "ankleR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[67]";
+connectAttr "ankleR_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[68]";
+connectAttr "ankleR_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[69]";
+connectAttr "ankleR_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[70]";
+connectAttr "ankleR_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[71]";
+connectAttr "ankleR_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[72]";
+connectAttr "ankleR_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[73]";
+connectAttr "ankleR_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[74]";
+connectAttr "ankleR_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[75]";
+connectAttr "ankleR_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[76]";
+connectAttr "ankleR_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[77]";
+connectAttr "spine1_Grp_visibility.o" "MC_control_rigRN.phl[78]";
+connectAttr "spine1_Grp_rotateX.o" "MC_control_rigRN.phl[79]";
+connectAttr "spine1_Grp_rotateY.o" "MC_control_rigRN.phl[80]";
+connectAttr "spine1_Grp_rotateZ.o" "MC_control_rigRN.phl[81]";
+connectAttr "spine1_Grp_translateX.o" "MC_control_rigRN.phl[82]";
+connectAttr "spine1_Grp_translateY.o" "MC_control_rigRN.phl[83]";
+connectAttr "spine1_Grp_translateZ.o" "MC_control_rigRN.phl[84]";
+connectAttr "spine1_Grp_scaleX.o" "MC_control_rigRN.phl[85]";
+connectAttr "spine1_Grp_scaleY.o" "MC_control_rigRN.phl[86]";
+connectAttr "spine1_Grp_scaleZ.o" "MC_control_rigRN.phl[87]";
+connectAttr "spine1_Ctrl_rotateX.o" "MC_control_rigRN.phl[88]";
+connectAttr "spine1_Ctrl_rotateY.o" "MC_control_rigRN.phl[89]";
+connectAttr "spine1_Ctrl_rotateZ.o" "MC_control_rigRN.phl[90]";
+connectAttr "spine1_Ctrl_visibility.o" "MC_control_rigRN.phl[91]";
+connectAttr "spine1_Ctrl_translateX.o" "MC_control_rigRN.phl[92]";
+connectAttr "spine1_Ctrl_translateY.o" "MC_control_rigRN.phl[93]";
+connectAttr "spine1_Ctrl_translateZ.o" "MC_control_rigRN.phl[94]";
+connectAttr "spine1_Ctrl_scaleX.o" "MC_control_rigRN.phl[95]";
+connectAttr "spine1_Ctrl_scaleY.o" "MC_control_rigRN.phl[96]";
+connectAttr "spine1_Ctrl_scaleZ.o" "MC_control_rigRN.phl[97]";
+connectAttr "spine2_Grp_visibility.o" "MC_control_rigRN.phl[98]";
+connectAttr "spine2_Grp_rotateX.o" "MC_control_rigRN.phl[99]";
+connectAttr "spine2_Grp_rotateY.o" "MC_control_rigRN.phl[100]";
+connectAttr "spine2_Grp_rotateZ.o" "MC_control_rigRN.phl[101]";
+connectAttr "spine2_Grp_translateX.o" "MC_control_rigRN.phl[102]";
+connectAttr "spine2_Grp_translateY.o" "MC_control_rigRN.phl[103]";
+connectAttr "spine2_Grp_translateZ.o" "MC_control_rigRN.phl[104]";
+connectAttr "spine2_Grp_scaleX.o" "MC_control_rigRN.phl[105]";
+connectAttr "spine2_Grp_scaleY.o" "MC_control_rigRN.phl[106]";
+connectAttr "spine2_Grp_scaleZ.o" "MC_control_rigRN.phl[107]";
+connectAttr "spine2_Ctrl_rotateX.o" "MC_control_rigRN.phl[108]";
+connectAttr "spine2_Ctrl_rotateY.o" "MC_control_rigRN.phl[109]";
+connectAttr "spine2_Ctrl_rotateZ.o" "MC_control_rigRN.phl[110]";
+connectAttr "spine2_Ctrl_visibility.o" "MC_control_rigRN.phl[111]";
+connectAttr "spine2_Ctrl_translateX.o" "MC_control_rigRN.phl[112]";
+connectAttr "spine2_Ctrl_translateY.o" "MC_control_rigRN.phl[113]";
+connectAttr "spine2_Ctrl_translateZ.o" "MC_control_rigRN.phl[114]";
+connectAttr "spine2_Ctrl_scaleX.o" "MC_control_rigRN.phl[115]";
+connectAttr "spine2_Ctrl_scaleY.o" "MC_control_rigRN.phl[116]";
+connectAttr "spine2_Ctrl_scaleZ.o" "MC_control_rigRN.phl[117]";
+connectAttr "spine3_Grp_visibility.o" "MC_control_rigRN.phl[118]";
+connectAttr "spine3_Grp_rotateX.o" "MC_control_rigRN.phl[119]";
+connectAttr "spine3_Grp_rotateY.o" "MC_control_rigRN.phl[120]";
+connectAttr "spine3_Grp_rotateZ.o" "MC_control_rigRN.phl[121]";
+connectAttr "spine3_Grp_translateX.o" "MC_control_rigRN.phl[122]";
+connectAttr "spine3_Grp_translateY.o" "MC_control_rigRN.phl[123]";
+connectAttr "spine3_Grp_translateZ.o" "MC_control_rigRN.phl[124]";
+connectAttr "spine3_Grp_scaleX.o" "MC_control_rigRN.phl[125]";
+connectAttr "spine3_Grp_scaleY.o" "MC_control_rigRN.phl[126]";
+connectAttr "spine3_Grp_scaleZ.o" "MC_control_rigRN.phl[127]";
+connectAttr "spine3_Ctrl_rotateX.o" "MC_control_rigRN.phl[128]";
+connectAttr "spine3_Ctrl_rotateY.o" "MC_control_rigRN.phl[129]";
+connectAttr "spine3_Ctrl_rotateZ.o" "MC_control_rigRN.phl[130]";
+connectAttr "spine3_Ctrl_visibility.o" "MC_control_rigRN.phl[131]";
+connectAttr "spine3_Ctrl_translateX.o" "MC_control_rigRN.phl[132]";
+connectAttr "spine3_Ctrl_translateY.o" "MC_control_rigRN.phl[133]";
+connectAttr "spine3_Ctrl_translateZ.o" "MC_control_rigRN.phl[134]";
+connectAttr "spine3_Ctrl_scaleX.o" "MC_control_rigRN.phl[135]";
+connectAttr "spine3_Ctrl_scaleY.o" "MC_control_rigRN.phl[136]";
+connectAttr "spine3_Ctrl_scaleZ.o" "MC_control_rigRN.phl[137]";
+connectAttr "neck_Grp_visibility.o" "MC_control_rigRN.phl[138]";
+connectAttr "neck_Grp_rotateX.o" "MC_control_rigRN.phl[139]";
+connectAttr "neck_Grp_rotateY.o" "MC_control_rigRN.phl[140]";
+connectAttr "neck_Grp_rotateZ.o" "MC_control_rigRN.phl[141]";
+connectAttr "neck_Grp_translateX.o" "MC_control_rigRN.phl[142]";
+connectAttr "neck_Grp_translateY.o" "MC_control_rigRN.phl[143]";
+connectAttr "neck_Grp_translateZ.o" "MC_control_rigRN.phl[144]";
+connectAttr "neck_Grp_scaleX.o" "MC_control_rigRN.phl[145]";
+connectAttr "neck_Grp_scaleY.o" "MC_control_rigRN.phl[146]";
+connectAttr "neck_Grp_scaleZ.o" "MC_control_rigRN.phl[147]";
+connectAttr "neck_Ctrl_rotateX.o" "MC_control_rigRN.phl[148]";
+connectAttr "neck_Ctrl_rotateY.o" "MC_control_rigRN.phl[149]";
+connectAttr "neck_Ctrl_rotateZ.o" "MC_control_rigRN.phl[150]";
+connectAttr "neck_Ctrl_visibility.o" "MC_control_rigRN.phl[151]";
+connectAttr "neck_Ctrl_translateX.o" "MC_control_rigRN.phl[152]";
+connectAttr "neck_Ctrl_translateY.o" "MC_control_rigRN.phl[153]";
+connectAttr "neck_Ctrl_translateZ.o" "MC_control_rigRN.phl[154]";
+connectAttr "neck_Ctrl_scaleX.o" "MC_control_rigRN.phl[155]";
+connectAttr "neck_Ctrl_scaleY.o" "MC_control_rigRN.phl[156]";
+connectAttr "neck_Ctrl_scaleZ.o" "MC_control_rigRN.phl[157]";
+connectAttr "clavicleR_FK_Grp_visibility.o" "MC_control_rigRN.phl[158]";
+connectAttr "clavicleR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[159]";
+connectAttr "clavicleR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[160]";
+connectAttr "clavicleR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[161]";
+connectAttr "clavicleR_FK_Grp_translateX.o" "MC_control_rigRN.phl[162]";
+connectAttr "clavicleR_FK_Grp_translateY.o" "MC_control_rigRN.phl[163]";
+connectAttr "clavicleR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[164]";
+connectAttr "clavicleR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[165]";
+connectAttr "clavicleR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[166]";
+connectAttr "clavicleR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[167]";
+connectAttr "clavicleR_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[168]";
+connectAttr "clavicleR_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[169]";
+connectAttr "clavicleR_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[170]";
+connectAttr "clavicleR_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[171]";
+connectAttr "clavicleR_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[172]";
+connectAttr "clavicleR_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[173]";
+connectAttr "clavicleR_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[174]";
+connectAttr "clavicleR_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[175]";
+connectAttr "clavicleR_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[176]";
+connectAttr "clavicleR_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[177]";
+connectAttr "shoulderR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[178]";
+connectAttr "shoulderR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[179]";
+connectAttr "shoulderR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[180]";
+connectAttr "shoulderR_FK_Grp_translateX.o" "MC_control_rigRN.phl[181]";
+connectAttr "shoulderR_FK_Grp_translateY.o" "MC_control_rigRN.phl[182]";
+connectAttr "shoulderR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[183]";
+connectAttr "shoulderR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[184]";
+connectAttr "shoulderR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[185]";
+connectAttr "shoulderR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[186]";
+connectAttr "shoulderR_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[187]";
+connectAttr "shoulderR_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[188]";
+connectAttr "shoulderR_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[189]";
+connectAttr "shoulderR_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[190]";
+connectAttr "shoulderR_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[191]";
+connectAttr "shoulderR_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[192]";
+connectAttr "shoulderR_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[193]";
+connectAttr "shoulderR_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[194]";
+connectAttr "shoulderR_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[195]";
+connectAttr "shoulderR_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[196]";
+connectAttr "elbowR_FK_Grp_visibility.o" "MC_control_rigRN.phl[197]";
+connectAttr "elbowR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[198]";
+connectAttr "elbowR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[199]";
+connectAttr "elbowR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[200]";
+connectAttr "elbowR_FK_Grp_translateX.o" "MC_control_rigRN.phl[201]";
+connectAttr "elbowR_FK_Grp_translateY.o" "MC_control_rigRN.phl[202]";
+connectAttr "elbowR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[203]";
+connectAttr "elbowR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[204]";
+connectAttr "elbowR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[205]";
+connectAttr "elbowR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[206]";
+connectAttr "elbowR_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[207]";
+connectAttr "elbowR_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[208]";
+connectAttr "elbowR_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[209]";
+connectAttr "elbowR_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[210]";
+connectAttr "elbowR_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[211]";
+connectAttr "elbowR_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[212]";
+connectAttr "elbowR_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[213]";
+connectAttr "elbowR_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[214]";
+connectAttr "elbowR_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[215]";
+connectAttr "elbowR_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[216]";
+connectAttr "wristR_FK_Grp_visibility.o" "MC_control_rigRN.phl[217]";
+connectAttr "wristR_FK_Grp_rotateX.o" "MC_control_rigRN.phl[218]";
+connectAttr "wristR_FK_Grp_rotateY.o" "MC_control_rigRN.phl[219]";
+connectAttr "wristR_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[220]";
+connectAttr "wristR_FK_Grp_translateX.o" "MC_control_rigRN.phl[221]";
+connectAttr "wristR_FK_Grp_translateY.o" "MC_control_rigRN.phl[222]";
+connectAttr "wristR_FK_Grp_translateZ.o" "MC_control_rigRN.phl[223]";
+connectAttr "wristR_FK_Grp_scaleX.o" "MC_control_rigRN.phl[224]";
+connectAttr "wristR_FK_Grp_scaleY.o" "MC_control_rigRN.phl[225]";
+connectAttr "wristR_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[226]";
+connectAttr "wristR_FK_Grp_rotateX1.o" "MC_control_rigRN.phl[227]";
+connectAttr "wristR_FK_Grp_rotateY1.o" "MC_control_rigRN.phl[228]";
+connectAttr "wristR_FK_Grp_rotateZ1.o" "MC_control_rigRN.phl[229]";
+connectAttr "wristR_FK_Grp_visibility1.o" "MC_control_rigRN.phl[230]";
+connectAttr "wristR_FK_Grp_translateX1.o" "MC_control_rigRN.phl[231]";
+connectAttr "wristR_FK_Grp_translateY1.o" "MC_control_rigRN.phl[232]";
+connectAttr "wristR_FK_Grp_translateZ1.o" "MC_control_rigRN.phl[233]";
+connectAttr "wristR_FK_Grp_scaleX1.o" "MC_control_rigRN.phl[234]";
+connectAttr "wristR_FK_Grp_scaleY1.o" "MC_control_rigRN.phl[235]";
+connectAttr "wristR_FK_Grp_scaleZ1.o" "MC_control_rigRN.phl[236]";
+connectAttr "armR_IK_Grp_visibility.o" "MC_control_rigRN.phl[237]";
+connectAttr "armR_IK_Grp_rotateX.o" "MC_control_rigRN.phl[238]";
+connectAttr "armR_IK_Grp_rotateY.o" "MC_control_rigRN.phl[239]";
+connectAttr "armR_IK_Grp_rotateZ.o" "MC_control_rigRN.phl[240]";
+connectAttr "armR_IK_Grp_translateX.o" "MC_control_rigRN.phl[241]";
+connectAttr "armR_IK_Grp_translateY.o" "MC_control_rigRN.phl[242]";
+connectAttr "armR_IK_Grp_translateZ.o" "MC_control_rigRN.phl[243]";
+connectAttr "armR_IK_Grp_scaleX.o" "MC_control_rigRN.phl[244]";
+connectAttr "armR_IK_Grp_scaleY.o" "MC_control_rigRN.phl[245]";
+connectAttr "armR_IK_Grp_scaleZ.o" "MC_control_rigRN.phl[246]";
+connectAttr "pairBlend3.orx" "MC_control_rigRN.phl[247]";
+connectAttr "pairBlend3.ory" "MC_control_rigRN.phl[248]";
+connectAttr "pairBlend3.orz" "MC_control_rigRN.phl[249]";
+connectAttr "MC_control_rigRN.phl[250]" "pairBlend3.ro";
+connectAttr "MC_control_rigRN.phl[251]" "armR_IK_Ctrl_parentConstraint1.cro";
+connectAttr "armR_IK_Ctrl_visibility.o" "MC_control_rigRN.phl[252]";
+connectAttr "MC_control_rigRN.phl[253]" "pairBlend3.w";
+connectAttr "armR_IK_Ctrl_blendParent1.o" "MC_control_rigRN.phl[254]";
+connectAttr "pairBlend3.otx" "MC_control_rigRN.phl[255]";
+connectAttr "pairBlend3.oty" "MC_control_rigRN.phl[256]";
+connectAttr "pairBlend3.otz" "MC_control_rigRN.phl[257]";
+connectAttr "armR_IK_Ctrl_scaleX.o" "MC_control_rigRN.phl[258]";
+connectAttr "armR_IK_Ctrl_scaleY.o" "MC_control_rigRN.phl[259]";
+connectAttr "armR_IK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[260]";
+connectAttr "MC_control_rigRN.phl[261]" "armR_IK_Ctrl_parentConstraint1.cpim";
+connectAttr "MC_control_rigRN.phl[262]" "armR_IK_Ctrl_parentConstraint1.crp";
+connectAttr "MC_control_rigRN.phl[263]" "armR_IK_Ctrl_parentConstraint1.crt";
+connectAttr "RightArm_IK_rotateX.o" "MC_control_rigRN.phl[264]";
+connectAttr "RightArm_IK_rotateY.o" "MC_control_rigRN.phl[265]";
+connectAttr "RightArm_IK_rotateZ.o" "MC_control_rigRN.phl[266]";
+connectAttr "RightArm_IK_visibility.o" "MC_control_rigRN.phl[267]";
+connectAttr "RightArm_IK_translateX.o" "MC_control_rigRN.phl[268]";
+connectAttr "RightArm_IK_translateY.o" "MC_control_rigRN.phl[269]";
+connectAttr "RightArm_IK_translateZ.o" "MC_control_rigRN.phl[270]";
+connectAttr "RightArm_IK_scaleX.o" "MC_control_rigRN.phl[271]";
+connectAttr "RightArm_IK_scaleY.o" "MC_control_rigRN.phl[272]";
+connectAttr "RightArm_IK_scaleZ.o" "MC_control_rigRN.phl[273]";
+connectAttr "RightArm_IK_offset.o" "MC_control_rigRN.phl[274]";
+connectAttr "RightArm_IK_roll.o" "MC_control_rigRN.phl[275]";
+connectAttr "RightArm_IK_twist.o" "MC_control_rigRN.phl[276]";
+connectAttr "RightArm_IK_ikBlend.o" "MC_control_rigRN.phl[277]";
+connectAttr "RightArm_IK_poleVectorConstraint1_nodeState.o" "MC_control_rigRN.phl[278]"
 		;
-connectAttr "RightArm_IK_poleVectorConstraint1_ArmR_PoleW0.o" "MC_control_rigRN.phl[278]"
+connectAttr "RightArm_IK_poleVectorConstraint1_ArmR_PoleW0.o" "MC_control_rigRN.phl[279]"
 		;
-connectAttr "RightArm_IK_poleVectorConstraint1_offsetX.o" "MC_control_rigRN.phl[279]"
+connectAttr "RightArm_IK_poleVectorConstraint1_offsetX.o" "MC_control_rigRN.phl[280]"
 		;
-connectAttr "RightArm_IK_poleVectorConstraint1_offsetY.o" "MC_control_rigRN.phl[280]"
+connectAttr "RightArm_IK_poleVectorConstraint1_offsetY.o" "MC_control_rigRN.phl[281]"
 		;
-connectAttr "RightArm_IK_poleVectorConstraint1_offsetZ.o" "MC_control_rigRN.phl[281]"
+connectAttr "RightArm_IK_poleVectorConstraint1_offsetZ.o" "MC_control_rigRN.phl[282]"
 		;
-connectAttr "clavicleL_FK_Grp_visibility.o" "MC_control_rigRN.phl[282]";
-connectAttr "clavicleL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[283]";
-connectAttr "clavicleL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[284]";
-connectAttr "clavicleL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[285]";
-connectAttr "clavicleL_FK_Grp_translateX.o" "MC_control_rigRN.phl[286]";
-connectAttr "clavicleL_FK_Grp_translateY.o" "MC_control_rigRN.phl[287]";
-connectAttr "clavicleL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[288]";
-connectAttr "clavicleL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[289]";
-connectAttr "clavicleL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[290]";
-connectAttr "clavicleL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[291]";
-connectAttr "clavicleL_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[292]";
-connectAttr "clavicleL_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[293]";
-connectAttr "clavicleL_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[294]";
-connectAttr "clavicleL_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[295]";
-connectAttr "clavicleL_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[296]";
-connectAttr "clavicleL_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[297]";
-connectAttr "clavicleL_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[298]";
-connectAttr "clavicleL_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[299]";
-connectAttr "clavicleL_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[300]";
-connectAttr "clavicleL_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[301]";
-connectAttr "shoulderL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[302]";
-connectAttr "shoulderL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[303]";
-connectAttr "shoulderL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[304]";
-connectAttr "shoulderL_FK_Grp_translateX.o" "MC_control_rigRN.phl[305]";
-connectAttr "shoulderL_FK_Grp_translateY.o" "MC_control_rigRN.phl[306]";
-connectAttr "shoulderL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[307]";
-connectAttr "shoulderL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[308]";
-connectAttr "shoulderL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[309]";
-connectAttr "shoulderL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[310]";
-connectAttr "shoulderL_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[311]";
-connectAttr "shoulderL_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[312]";
-connectAttr "shoulderL_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[313]";
-connectAttr "shoulderL_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[314]";
-connectAttr "shoulderL_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[315]";
-connectAttr "shoulderL_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[316]";
-connectAttr "shoulderL_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[317]";
-connectAttr "shoulderL_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[318]";
-connectAttr "shoulderL_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[319]";
-connectAttr "shoulderL_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[320]";
-connectAttr "elbowL_FK_Grp_visibility.o" "MC_control_rigRN.phl[321]";
-connectAttr "elbowL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[322]";
-connectAttr "elbowL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[323]";
-connectAttr "elbowL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[324]";
-connectAttr "elbowL_FK_Grp_translateX.o" "MC_control_rigRN.phl[325]";
-connectAttr "elbowL_FK_Grp_translateY.o" "MC_control_rigRN.phl[326]";
-connectAttr "elbowL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[327]";
-connectAttr "elbowL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[328]";
-connectAttr "elbowL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[329]";
-connectAttr "elbowL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[330]";
-connectAttr "elbowL_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[331]";
-connectAttr "elbowL_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[332]";
-connectAttr "elbowL_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[333]";
-connectAttr "elbowL_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[334]";
-connectAttr "elbowL_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[335]";
-connectAttr "elbowL_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[336]";
-connectAttr "elbowL_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[337]";
-connectAttr "elbowL_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[338]";
-connectAttr "elbowL_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[339]";
-connectAttr "elbowL_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[340]";
-connectAttr "wristL_FK_Grp_visibility1.o" "MC_control_rigRN.phl[341]";
-connectAttr "wristL_FK_Grp_rotateX1.o" "MC_control_rigRN.phl[342]";
-connectAttr "wristL_FK_Grp_rotateY1.o" "MC_control_rigRN.phl[343]";
-connectAttr "wristL_FK_Grp_rotateZ1.o" "MC_control_rigRN.phl[344]";
-connectAttr "wristL_FK_Grp_translateX1.o" "MC_control_rigRN.phl[345]";
-connectAttr "wristL_FK_Grp_translateY1.o" "MC_control_rigRN.phl[346]";
-connectAttr "wristL_FK_Grp_translateZ1.o" "MC_control_rigRN.phl[347]";
-connectAttr "wristL_FK_Grp_scaleX1.o" "MC_control_rigRN.phl[348]";
-connectAttr "wristL_FK_Grp_scaleY1.o" "MC_control_rigRN.phl[349]";
-connectAttr "wristL_FK_Grp_scaleZ1.o" "MC_control_rigRN.phl[350]";
-connectAttr "wristL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[351]";
-connectAttr "wristL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[352]";
-connectAttr "wristL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[353]";
-connectAttr "wristL_FK_Grp_visibility.o" "MC_control_rigRN.phl[354]";
-connectAttr "wristL_FK_Grp_translateX.o" "MC_control_rigRN.phl[355]";
-connectAttr "wristL_FK_Grp_translateY.o" "MC_control_rigRN.phl[356]";
-connectAttr "wristL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[357]";
-connectAttr "wristL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[358]";
-connectAttr "wristL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[359]";
-connectAttr "wristL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[360]";
-connectAttr "armL_IK_Grp_visibility.o" "MC_control_rigRN.phl[361]";
-connectAttr "armL_IK_Grp_rotateX.o" "MC_control_rigRN.phl[362]";
-connectAttr "armL_IK_Grp_rotateY.o" "MC_control_rigRN.phl[363]";
-connectAttr "armL_IK_Grp_rotateZ.o" "MC_control_rigRN.phl[364]";
-connectAttr "armL_IK_Grp_translateX.o" "MC_control_rigRN.phl[365]";
-connectAttr "armL_IK_Grp_translateY.o" "MC_control_rigRN.phl[366]";
-connectAttr "armL_IK_Grp_translateZ.o" "MC_control_rigRN.phl[367]";
-connectAttr "armL_IK_Grp_scaleX.o" "MC_control_rigRN.phl[368]";
-connectAttr "armL_IK_Grp_scaleY.o" "MC_control_rigRN.phl[369]";
-connectAttr "armL_IK_Grp_scaleZ.o" "MC_control_rigRN.phl[370]";
-connectAttr "pairBlend2.orx" "MC_control_rigRN.phl[371]";
-connectAttr "pairBlend2.ory" "MC_control_rigRN.phl[372]";
-connectAttr "pairBlend2.orz" "MC_control_rigRN.phl[373]";
-connectAttr "MC_control_rigRN.phl[374]" "pairBlend2.ro";
-connectAttr "MC_control_rigRN.phl[375]" "armL_IK_Grp1_parentConstraint1.cro";
-connectAttr "armL_IK_Grp1_visibility.o" "MC_control_rigRN.phl[376]";
-connectAttr "MC_control_rigRN.phl[377]" "pairBlend2.w";
-connectAttr "armL_IK_Grp1_blendParent1.o" "MC_control_rigRN.phl[378]";
-connectAttr "pairBlend2.otx" "MC_control_rigRN.phl[379]";
-connectAttr "pairBlend2.oty" "MC_control_rigRN.phl[380]";
-connectAttr "pairBlend2.otz" "MC_control_rigRN.phl[381]";
-connectAttr "armL_IK_Grp1_scaleX.o" "MC_control_rigRN.phl[382]";
-connectAttr "armL_IK_Grp1_scaleY.o" "MC_control_rigRN.phl[383]";
-connectAttr "armL_IK_Grp1_scaleZ.o" "MC_control_rigRN.phl[384]";
-connectAttr "MC_control_rigRN.phl[385]" "armL_IK_Grp1_parentConstraint1.cpim";
-connectAttr "MC_control_rigRN.phl[386]" "armL_IK_Grp1_parentConstraint1.crp";
-connectAttr "MC_control_rigRN.phl[387]" "armL_IK_Grp1_parentConstraint1.crt";
-connectAttr "LeftArm_IK_rotateX.o" "MC_control_rigRN.phl[388]";
-connectAttr "LeftArm_IK_rotateY.o" "MC_control_rigRN.phl[389]";
-connectAttr "LeftArm_IK_rotateZ.o" "MC_control_rigRN.phl[390]";
-connectAttr "LeftArm_IK_visibility.o" "MC_control_rigRN.phl[391]";
-connectAttr "LeftArm_IK_translateX.o" "MC_control_rigRN.phl[392]";
-connectAttr "LeftArm_IK_translateY.o" "MC_control_rigRN.phl[393]";
-connectAttr "LeftArm_IK_translateZ.o" "MC_control_rigRN.phl[394]";
-connectAttr "LeftArm_IK_scaleX.o" "MC_control_rigRN.phl[395]";
-connectAttr "LeftArm_IK_scaleY.o" "MC_control_rigRN.phl[396]";
-connectAttr "LeftArm_IK_scaleZ.o" "MC_control_rigRN.phl[397]";
-connectAttr "LeftArm_IK_offset.o" "MC_control_rigRN.phl[398]";
-connectAttr "LeftArm_IK_roll.o" "MC_control_rigRN.phl[399]";
-connectAttr "LeftArm_IK_twist.o" "MC_control_rigRN.phl[400]";
-connectAttr "LeftArm_IK_ikBlend.o" "MC_control_rigRN.phl[401]";
-connectAttr "LeftArm_IK_poleVectorConstraint1_nodeState.o" "MC_control_rigRN.phl[402]"
+connectAttr "clavicleL_FK_Grp_visibility.o" "MC_control_rigRN.phl[283]";
+connectAttr "clavicleL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[284]";
+connectAttr "clavicleL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[285]";
+connectAttr "clavicleL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[286]";
+connectAttr "clavicleL_FK_Grp_translateX.o" "MC_control_rigRN.phl[287]";
+connectAttr "clavicleL_FK_Grp_translateY.o" "MC_control_rigRN.phl[288]";
+connectAttr "clavicleL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[289]";
+connectAttr "clavicleL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[290]";
+connectAttr "clavicleL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[291]";
+connectAttr "clavicleL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[292]";
+connectAttr "clavicleL_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[293]";
+connectAttr "clavicleL_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[294]";
+connectAttr "clavicleL_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[295]";
+connectAttr "clavicleL_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[296]";
+connectAttr "clavicleL_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[297]";
+connectAttr "clavicleL_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[298]";
+connectAttr "clavicleL_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[299]";
+connectAttr "clavicleL_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[300]";
+connectAttr "clavicleL_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[301]";
+connectAttr "clavicleL_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[302]";
+connectAttr "shoulderL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[303]";
+connectAttr "shoulderL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[304]";
+connectAttr "shoulderL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[305]";
+connectAttr "shoulderL_FK_Grp_translateX.o" "MC_control_rigRN.phl[306]";
+connectAttr "shoulderL_FK_Grp_translateY.o" "MC_control_rigRN.phl[307]";
+connectAttr "shoulderL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[308]";
+connectAttr "shoulderL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[309]";
+connectAttr "shoulderL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[310]";
+connectAttr "shoulderL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[311]";
+connectAttr "shoulderL_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[312]";
+connectAttr "shoulderL_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[313]";
+connectAttr "shoulderL_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[314]";
+connectAttr "shoulderL_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[315]";
+connectAttr "shoulderL_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[316]";
+connectAttr "shoulderL_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[317]";
+connectAttr "shoulderL_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[318]";
+connectAttr "shoulderL_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[319]";
+connectAttr "shoulderL_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[320]";
+connectAttr "shoulderL_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[321]";
+connectAttr "elbowL_FK_Grp_visibility.o" "MC_control_rigRN.phl[322]";
+connectAttr "elbowL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[323]";
+connectAttr "elbowL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[324]";
+connectAttr "elbowL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[325]";
+connectAttr "elbowL_FK_Grp_translateX.o" "MC_control_rigRN.phl[326]";
+connectAttr "elbowL_FK_Grp_translateY.o" "MC_control_rigRN.phl[327]";
+connectAttr "elbowL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[328]";
+connectAttr "elbowL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[329]";
+connectAttr "elbowL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[330]";
+connectAttr "elbowL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[331]";
+connectAttr "elbowL_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[332]";
+connectAttr "elbowL_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[333]";
+connectAttr "elbowL_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[334]";
+connectAttr "elbowL_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[335]";
+connectAttr "elbowL_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[336]";
+connectAttr "elbowL_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[337]";
+connectAttr "elbowL_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[338]";
+connectAttr "elbowL_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[339]";
+connectAttr "elbowL_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[340]";
+connectAttr "elbowL_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[341]";
+connectAttr "wristL_FK_Grp_visibility1.o" "MC_control_rigRN.phl[342]";
+connectAttr "wristL_FK_Grp_rotateX1.o" "MC_control_rigRN.phl[343]";
+connectAttr "wristL_FK_Grp_rotateY1.o" "MC_control_rigRN.phl[344]";
+connectAttr "wristL_FK_Grp_rotateZ1.o" "MC_control_rigRN.phl[345]";
+connectAttr "wristL_FK_Grp_translateX1.o" "MC_control_rigRN.phl[346]";
+connectAttr "wristL_FK_Grp_translateY1.o" "MC_control_rigRN.phl[347]";
+connectAttr "wristL_FK_Grp_translateZ1.o" "MC_control_rigRN.phl[348]";
+connectAttr "wristL_FK_Grp_scaleX1.o" "MC_control_rigRN.phl[349]";
+connectAttr "wristL_FK_Grp_scaleY1.o" "MC_control_rigRN.phl[350]";
+connectAttr "wristL_FK_Grp_scaleZ1.o" "MC_control_rigRN.phl[351]";
+connectAttr "wristL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[352]";
+connectAttr "wristL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[353]";
+connectAttr "wristL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[354]";
+connectAttr "wristL_FK_Grp_visibility.o" "MC_control_rigRN.phl[355]";
+connectAttr "wristL_FK_Grp_translateX.o" "MC_control_rigRN.phl[356]";
+connectAttr "wristL_FK_Grp_translateY.o" "MC_control_rigRN.phl[357]";
+connectAttr "wristL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[358]";
+connectAttr "wristL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[359]";
+connectAttr "wristL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[360]";
+connectAttr "wristL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[361]";
+connectAttr "armL_IK_Grp_visibility.o" "MC_control_rigRN.phl[362]";
+connectAttr "armL_IK_Grp_rotateX.o" "MC_control_rigRN.phl[363]";
+connectAttr "armL_IK_Grp_rotateY.o" "MC_control_rigRN.phl[364]";
+connectAttr "armL_IK_Grp_rotateZ.o" "MC_control_rigRN.phl[365]";
+connectAttr "armL_IK_Grp_translateX.o" "MC_control_rigRN.phl[366]";
+connectAttr "armL_IK_Grp_translateY.o" "MC_control_rigRN.phl[367]";
+connectAttr "armL_IK_Grp_translateZ.o" "MC_control_rigRN.phl[368]";
+connectAttr "armL_IK_Grp_scaleX.o" "MC_control_rigRN.phl[369]";
+connectAttr "armL_IK_Grp_scaleY.o" "MC_control_rigRN.phl[370]";
+connectAttr "armL_IK_Grp_scaleZ.o" "MC_control_rigRN.phl[371]";
+connectAttr "pairBlend2.orx" "MC_control_rigRN.phl[372]";
+connectAttr "pairBlend2.ory" "MC_control_rigRN.phl[373]";
+connectAttr "pairBlend2.orz" "MC_control_rigRN.phl[374]";
+connectAttr "MC_control_rigRN.phl[375]" "pairBlend2.ro";
+connectAttr "MC_control_rigRN.phl[376]" "armL_IK_Grp1_parentConstraint1.cro";
+connectAttr "armL_IK_Grp1_visibility.o" "MC_control_rigRN.phl[377]";
+connectAttr "MC_control_rigRN.phl[378]" "pairBlend2.w";
+connectAttr "armL_IK_Grp1_blendParent1.o" "MC_control_rigRN.phl[379]";
+connectAttr "pairBlend2.otx" "MC_control_rigRN.phl[380]";
+connectAttr "pairBlend2.oty" "MC_control_rigRN.phl[381]";
+connectAttr "pairBlend2.otz" "MC_control_rigRN.phl[382]";
+connectAttr "armL_IK_Grp1_scaleX.o" "MC_control_rigRN.phl[383]";
+connectAttr "armL_IK_Grp1_scaleY.o" "MC_control_rigRN.phl[384]";
+connectAttr "armL_IK_Grp1_scaleZ.o" "MC_control_rigRN.phl[385]";
+connectAttr "MC_control_rigRN.phl[386]" "armL_IK_Grp1_parentConstraint1.cpim";
+connectAttr "MC_control_rigRN.phl[387]" "armL_IK_Grp1_parentConstraint1.crp";
+connectAttr "MC_control_rigRN.phl[388]" "armL_IK_Grp1_parentConstraint1.crt";
+connectAttr "LeftArm_IK_rotateX.o" "MC_control_rigRN.phl[389]";
+connectAttr "LeftArm_IK_rotateY.o" "MC_control_rigRN.phl[390]";
+connectAttr "LeftArm_IK_rotateZ.o" "MC_control_rigRN.phl[391]";
+connectAttr "LeftArm_IK_visibility.o" "MC_control_rigRN.phl[392]";
+connectAttr "LeftArm_IK_translateX.o" "MC_control_rigRN.phl[393]";
+connectAttr "LeftArm_IK_translateY.o" "MC_control_rigRN.phl[394]";
+connectAttr "LeftArm_IK_translateZ.o" "MC_control_rigRN.phl[395]";
+connectAttr "LeftArm_IK_scaleX.o" "MC_control_rigRN.phl[396]";
+connectAttr "LeftArm_IK_scaleY.o" "MC_control_rigRN.phl[397]";
+connectAttr "LeftArm_IK_scaleZ.o" "MC_control_rigRN.phl[398]";
+connectAttr "LeftArm_IK_offset.o" "MC_control_rigRN.phl[399]";
+connectAttr "LeftArm_IK_roll.o" "MC_control_rigRN.phl[400]";
+connectAttr "LeftArm_IK_twist.o" "MC_control_rigRN.phl[401]";
+connectAttr "LeftArm_IK_ikBlend.o" "MC_control_rigRN.phl[402]";
+connectAttr "LeftArm_IK_poleVectorConstraint1_nodeState.o" "MC_control_rigRN.phl[403]"
 		;
-connectAttr "LeftArm_IK_poleVectorConstraint1_ArmL_PoleW0.o" "MC_control_rigRN.phl[403]"
+connectAttr "LeftArm_IK_poleVectorConstraint1_ArmL_PoleW0.o" "MC_control_rigRN.phl[404]"
 		;
-connectAttr "LeftArm_IK_poleVectorConstraint1_offsetX.o" "MC_control_rigRN.phl[404]"
+connectAttr "LeftArm_IK_poleVectorConstraint1_offsetX.o" "MC_control_rigRN.phl[405]"
 		;
-connectAttr "LeftArm_IK_poleVectorConstraint1_offsetY.o" "MC_control_rigRN.phl[405]"
+connectAttr "LeftArm_IK_poleVectorConstraint1_offsetY.o" "MC_control_rigRN.phl[406]"
 		;
-connectAttr "LeftArm_IK_poleVectorConstraint1_offsetZ.o" "MC_control_rigRN.phl[406]"
+connectAttr "LeftArm_IK_poleVectorConstraint1_offsetZ.o" "MC_control_rigRN.phl[407]"
 		;
-connectAttr "hipL_FK_Grp_visibility.o" "MC_control_rigRN.phl[407]";
-connectAttr "hipL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[408]";
-connectAttr "hipL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[409]";
-connectAttr "hipL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[410]";
-connectAttr "hipL_FK_Grp_translateX.o" "MC_control_rigRN.phl[411]";
-connectAttr "hipL_FK_Grp_translateY.o" "MC_control_rigRN.phl[412]";
-connectAttr "hipL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[413]";
-connectAttr "hipL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[414]";
-connectAttr "hipL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[415]";
-connectAttr "hipL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[416]";
-connectAttr "hipL_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[417]";
-connectAttr "hipL_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[418]";
-connectAttr "hipL_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[419]";
-connectAttr "hipL_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[420]";
-connectAttr "hipL_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[421]";
-connectAttr "hipL_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[422]";
-connectAttr "hipL_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[423]";
-connectAttr "hipL_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[424]";
-connectAttr "hipL_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[425]";
-connectAttr "kneeL_FK_Grp_visibility.o" "MC_control_rigRN.phl[426]";
-connectAttr "kneeL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[427]";
-connectAttr "kneeL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[428]";
-connectAttr "kneeL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[429]";
-connectAttr "kneeL_FK_Grp_translateX.o" "MC_control_rigRN.phl[430]";
-connectAttr "kneeL_FK_Grp_translateY.o" "MC_control_rigRN.phl[431]";
-connectAttr "kneeL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[432]";
-connectAttr "kneeL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[433]";
-connectAttr "kneeL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[434]";
-connectAttr "kneeL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[435]";
-connectAttr "kneeL_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[436]";
-connectAttr "kneeL_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[437]";
-connectAttr "kneeL_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[438]";
-connectAttr "kneeL_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[439]";
-connectAttr "kneeL_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[440]";
-connectAttr "kneeL_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[441]";
-connectAttr "kneeL_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[442]";
-connectAttr "kneeL_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[443]";
-connectAttr "kneeL_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[444]";
-connectAttr "kneeL_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[445]";
-connectAttr "ankleL_FK_Grp_visibility.o" "MC_control_rigRN.phl[446]";
-connectAttr "ankleL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[447]";
-connectAttr "ankleL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[448]";
-connectAttr "ankleL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[449]";
-connectAttr "ankleL_FK_Grp_translateX.o" "MC_control_rigRN.phl[450]";
-connectAttr "ankleL_FK_Grp_translateY.o" "MC_control_rigRN.phl[451]";
-connectAttr "ankleL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[452]";
-connectAttr "ankleL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[453]";
-connectAttr "ankleL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[454]";
-connectAttr "ankleL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[455]";
-connectAttr "ankleL_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[456]";
-connectAttr "ankleL_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[457]";
-connectAttr "ankleL_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[458]";
-connectAttr "ankleL_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[459]";
-connectAttr "ankleL_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[460]";
-connectAttr "ankleL_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[461]";
-connectAttr "ankleL_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[462]";
-connectAttr "ankleL_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[463]";
-connectAttr "ankleL_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[464]";
-connectAttr "ankleL_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[465]";
-connectAttr "footL_Ctrl_visibility.o" "MC_control_rigRN.phl[466]";
-connectAttr "footL_Ctrl_translateX.o" "MC_control_rigRN.phl[467]";
-connectAttr "footL_Ctrl_translateY.o" "MC_control_rigRN.phl[468]";
-connectAttr "footL_Ctrl_translateZ.o" "MC_control_rigRN.phl[469]";
-connectAttr "footL_Ctrl_rotateX.o" "MC_control_rigRN.phl[470]";
-connectAttr "footL_Ctrl_rotateY.o" "MC_control_rigRN.phl[471]";
-connectAttr "footL_Ctrl_rotateZ.o" "MC_control_rigRN.phl[472]";
-connectAttr "footL_Ctrl_scaleX.o" "MC_control_rigRN.phl[473]";
-connectAttr "footL_Ctrl_scaleY.o" "MC_control_rigRN.phl[474]";
-connectAttr "footL_Ctrl_scaleZ.o" "MC_control_rigRN.phl[475]";
-connectAttr "footR_Ctrl_visibility.o" "MC_control_rigRN.phl[476]";
-connectAttr "footR_Ctrl_translateX.o" "MC_control_rigRN.phl[477]";
-connectAttr "footR_Ctrl_translateY.o" "MC_control_rigRN.phl[478]";
-connectAttr "footR_Ctrl_translateZ.o" "MC_control_rigRN.phl[479]";
-connectAttr "footR_Ctrl_rotateX.o" "MC_control_rigRN.phl[480]";
-connectAttr "footR_Ctrl_rotateY.o" "MC_control_rigRN.phl[481]";
-connectAttr "footR_Ctrl_rotateZ.o" "MC_control_rigRN.phl[482]";
-connectAttr "footR_Ctrl_scaleX.o" "MC_control_rigRN.phl[483]";
-connectAttr "footR_Ctrl_scaleY.o" "MC_control_rigRN.phl[484]";
-connectAttr "footR_Ctrl_scaleZ.o" "MC_control_rigRN.phl[485]";
-connectAttr "LegL_Pole_translateX.o" "MC_control_rigRN.phl[486]";
-connectAttr "LegL_Pole_translateY.o" "MC_control_rigRN.phl[487]";
-connectAttr "LegL_Pole_translateZ.o" "MC_control_rigRN.phl[488]";
-connectAttr "LegL_Pole_rotateX.o" "MC_control_rigRN.phl[489]";
-connectAttr "LegL_Pole_rotateY.o" "MC_control_rigRN.phl[490]";
-connectAttr "LegL_Pole_rotateZ.o" "MC_control_rigRN.phl[491]";
-connectAttr "LegL_Pole_visibility.o" "MC_control_rigRN.phl[492]";
-connectAttr "LegL_Pole_scaleX.o" "MC_control_rigRN.phl[493]";
-connectAttr "LegL_Pole_scaleY.o" "MC_control_rigRN.phl[494]";
-connectAttr "LegL_Pole_scaleZ.o" "MC_control_rigRN.phl[495]";
-connectAttr "LegR_Pole_translateX.o" "MC_control_rigRN.phl[496]";
-connectAttr "LegR_Pole_translateY.o" "MC_control_rigRN.phl[497]";
-connectAttr "LegR_Pole_translateZ.o" "MC_control_rigRN.phl[498]";
-connectAttr "LegR_Pole_rotateX.o" "MC_control_rigRN.phl[499]";
-connectAttr "LegR_Pole_rotateY.o" "MC_control_rigRN.phl[500]";
-connectAttr "LegR_Pole_rotateZ.o" "MC_control_rigRN.phl[501]";
-connectAttr "LegR_Pole_visibility.o" "MC_control_rigRN.phl[502]";
-connectAttr "LegR_Pole_scaleX.o" "MC_control_rigRN.phl[503]";
-connectAttr "LegR_Pole_scaleY.o" "MC_control_rigRN.phl[504]";
-connectAttr "LegR_Pole_scaleZ.o" "MC_control_rigRN.phl[505]";
-connectAttr "ArmL_Pole_translateX.o" "MC_control_rigRN.phl[506]";
-connectAttr "ArmL_Pole_translateY.o" "MC_control_rigRN.phl[507]";
-connectAttr "ArmL_Pole_translateZ.o" "MC_control_rigRN.phl[508]";
-connectAttr "ArmL_Pole_visibility.o" "MC_control_rigRN.phl[509]";
-connectAttr "ArmL_Pole_rotateX.o" "MC_control_rigRN.phl[510]";
-connectAttr "ArmL_Pole_rotateY.o" "MC_control_rigRN.phl[511]";
-connectAttr "ArmL_Pole_rotateZ.o" "MC_control_rigRN.phl[512]";
-connectAttr "ArmL_Pole_scaleX.o" "MC_control_rigRN.phl[513]";
-connectAttr "ArmL_Pole_scaleY.o" "MC_control_rigRN.phl[514]";
-connectAttr "ArmL_Pole_scaleZ.o" "MC_control_rigRN.phl[515]";
-connectAttr "ArmR_Pole_translateX.o" "MC_control_rigRN.phl[516]";
-connectAttr "ArmR_Pole_translateY.o" "MC_control_rigRN.phl[517]";
-connectAttr "ArmR_Pole_translateZ.o" "MC_control_rigRN.phl[518]";
-connectAttr "ArmR_Pole_visibility.o" "MC_control_rigRN.phl[519]";
-connectAttr "ArmR_Pole_rotateX.o" "MC_control_rigRN.phl[520]";
-connectAttr "ArmR_Pole_rotateY.o" "MC_control_rigRN.phl[521]";
-connectAttr "ArmR_Pole_rotateZ.o" "MC_control_rigRN.phl[522]";
-connectAttr "ArmR_Pole_scaleX.o" "MC_control_rigRN.phl[523]";
-connectAttr "ArmR_Pole_scaleY.o" "MC_control_rigRN.phl[524]";
-connectAttr "ArmR_Pole_scaleZ.o" "MC_control_rigRN.phl[525]";
-connectAttr "armR_IKFK_IKFKSwitch.o" "MC_control_rigRN.phl[526]";
-connectAttr "armL_IKFK_IKFKSwitch.o" "MC_control_rigRN.phl[527]";
-connectAttr "RPinky_Knuckle_rotateZ.o" "MC_control_rigRN.phl[528]";
-connectAttr "RPinky_Knuckle_rotateX.o" "MC_control_rigRN.phl[529]";
-connectAttr "RPinky_Knuckle_rotateY.o" "MC_control_rigRN.phl[530]";
-connectAttr "RPinky_Knuckle_visibility.o" "MC_control_rigRN.phl[531]";
-connectAttr "RPinky_Knuckle_translateX.o" "MC_control_rigRN.phl[532]";
-connectAttr "RPinky_Knuckle_translateY.o" "MC_control_rigRN.phl[533]";
-connectAttr "RPinky_Knuckle_translateZ.o" "MC_control_rigRN.phl[534]";
-connectAttr "RPinky_Knuckle_scaleX.o" "MC_control_rigRN.phl[535]";
-connectAttr "RPinky_Knuckle_scaleY.o" "MC_control_rigRN.phl[536]";
-connectAttr "RPinky_Knuckle_scaleZ.o" "MC_control_rigRN.phl[537]";
-connectAttr "RRing_Knuckle_rotateZ.o" "MC_control_rigRN.phl[538]";
-connectAttr "RRing_Knuckle_rotateX.o" "MC_control_rigRN.phl[539]";
-connectAttr "RRing_Knuckle_rotateY.o" "MC_control_rigRN.phl[540]";
-connectAttr "RRing_Knuckle_visibility.o" "MC_control_rigRN.phl[541]";
-connectAttr "RRing_Knuckle_translateX.o" "MC_control_rigRN.phl[542]";
-connectAttr "RRing_Knuckle_translateY.o" "MC_control_rigRN.phl[543]";
-connectAttr "RRing_Knuckle_translateZ.o" "MC_control_rigRN.phl[544]";
-connectAttr "RRing_Knuckle_scaleX.o" "MC_control_rigRN.phl[545]";
-connectAttr "RRing_Knuckle_scaleY.o" "MC_control_rigRN.phl[546]";
-connectAttr "RRing_Knuckle_scaleZ.o" "MC_control_rigRN.phl[547]";
-connectAttr "RMiddle_Knuckle_rotateZ.o" "MC_control_rigRN.phl[548]";
-connectAttr "RMiddle_Knuckle_rotateX.o" "MC_control_rigRN.phl[549]";
-connectAttr "RMiddle_Knuckle_rotateY.o" "MC_control_rigRN.phl[550]";
-connectAttr "RMiddle_Knuckle_visibility.o" "MC_control_rigRN.phl[551]";
-connectAttr "RMiddle_Knuckle_translateX.o" "MC_control_rigRN.phl[552]";
-connectAttr "RMiddle_Knuckle_translateY.o" "MC_control_rigRN.phl[553]";
-connectAttr "RMiddle_Knuckle_translateZ.o" "MC_control_rigRN.phl[554]";
-connectAttr "RMiddle_Knuckle_scaleX.o" "MC_control_rigRN.phl[555]";
-connectAttr "RMiddle_Knuckle_scaleY.o" "MC_control_rigRN.phl[556]";
-connectAttr "RMiddle_Knuckle_scaleZ.o" "MC_control_rigRN.phl[557]";
-connectAttr "RIndex_Knuckle_rotateZ.o" "MC_control_rigRN.phl[558]";
-connectAttr "RIndex_Knuckle_rotateX.o" "MC_control_rigRN.phl[559]";
-connectAttr "RIndex_Knuckle_rotateY.o" "MC_control_rigRN.phl[560]";
-connectAttr "RIndex_Knuckle_visibility.o" "MC_control_rigRN.phl[561]";
-connectAttr "RIndex_Knuckle_translateX.o" "MC_control_rigRN.phl[562]";
-connectAttr "RIndex_Knuckle_translateY.o" "MC_control_rigRN.phl[563]";
-connectAttr "RIndex_Knuckle_translateZ.o" "MC_control_rigRN.phl[564]";
-connectAttr "RIndex_Knuckle_scaleX.o" "MC_control_rigRN.phl[565]";
-connectAttr "RIndex_Knuckle_scaleY.o" "MC_control_rigRN.phl[566]";
-connectAttr "RIndex_Knuckle_scaleZ.o" "MC_control_rigRN.phl[567]";
-connectAttr "LPinky_Knuckle_rotateX.o" "MC_control_rigRN.phl[568]";
-connectAttr "LPinky_Knuckle_rotateY.o" "MC_control_rigRN.phl[569]";
-connectAttr "LPinky_Knuckle_rotateZ.o" "MC_control_rigRN.phl[570]";
-connectAttr "LPinky_Knuckle_visibility.o" "MC_control_rigRN.phl[571]";
-connectAttr "LPinky_Knuckle_translateX.o" "MC_control_rigRN.phl[572]";
-connectAttr "LPinky_Knuckle_translateY.o" "MC_control_rigRN.phl[573]";
-connectAttr "LPinky_Knuckle_translateZ.o" "MC_control_rigRN.phl[574]";
-connectAttr "LPinky_Knuckle_scaleX.o" "MC_control_rigRN.phl[575]";
-connectAttr "LPinky_Knuckle_scaleY.o" "MC_control_rigRN.phl[576]";
-connectAttr "LPinky_Knuckle_scaleZ.o" "MC_control_rigRN.phl[577]";
-connectAttr "LPinky_Mid_rotateX.o" "MC_control_rigRN.phl[578]";
-connectAttr "LPinky_Mid_rotateY.o" "MC_control_rigRN.phl[579]";
-connectAttr "LPinky_Mid_rotateZ.o" "MC_control_rigRN.phl[580]";
-connectAttr "LPinky_Mid_visibility.o" "MC_control_rigRN.phl[581]";
-connectAttr "LPinky_Mid_translateX.o" "MC_control_rigRN.phl[582]";
-connectAttr "LPinky_Mid_translateY.o" "MC_control_rigRN.phl[583]";
-connectAttr "LPinky_Mid_translateZ.o" "MC_control_rigRN.phl[584]";
-connectAttr "LPinky_Mid_scaleX.o" "MC_control_rigRN.phl[585]";
-connectAttr "LPinky_Mid_scaleY.o" "MC_control_rigRN.phl[586]";
-connectAttr "LPinky_Mid_scaleZ.o" "MC_control_rigRN.phl[587]";
-connectAttr "LRing_Knuckle_rotateX.o" "MC_control_rigRN.phl[588]";
-connectAttr "LRing_Knuckle_rotateY.o" "MC_control_rigRN.phl[589]";
-connectAttr "LRing_Knuckle_rotateZ.o" "MC_control_rigRN.phl[590]";
-connectAttr "LRing_Knuckle_visibility.o" "MC_control_rigRN.phl[591]";
-connectAttr "LRing_Knuckle_translateX.o" "MC_control_rigRN.phl[592]";
-connectAttr "LRing_Knuckle_translateY.o" "MC_control_rigRN.phl[593]";
-connectAttr "LRing_Knuckle_translateZ.o" "MC_control_rigRN.phl[594]";
-connectAttr "LRing_Knuckle_scaleX.o" "MC_control_rigRN.phl[595]";
-connectAttr "LRing_Knuckle_scaleY.o" "MC_control_rigRN.phl[596]";
-connectAttr "LRing_Knuckle_scaleZ.o" "MC_control_rigRN.phl[597]";
-connectAttr "LRing_Mid_rotateX.o" "MC_control_rigRN.phl[598]";
-connectAttr "LRing_Mid_rotateY.o" "MC_control_rigRN.phl[599]";
-connectAttr "LRing_Mid_rotateZ.o" "MC_control_rigRN.phl[600]";
-connectAttr "LRing_Mid_visibility.o" "MC_control_rigRN.phl[601]";
-connectAttr "LRing_Mid_translateX.o" "MC_control_rigRN.phl[602]";
-connectAttr "LRing_Mid_translateY.o" "MC_control_rigRN.phl[603]";
-connectAttr "LRing_Mid_translateZ.o" "MC_control_rigRN.phl[604]";
-connectAttr "LRing_Mid_scaleX.o" "MC_control_rigRN.phl[605]";
-connectAttr "LRing_Mid_scaleY.o" "MC_control_rigRN.phl[606]";
-connectAttr "LRing_Mid_scaleZ.o" "MC_control_rigRN.phl[607]";
-connectAttr "LMiddle_Knuckle_rotateX.o" "MC_control_rigRN.phl[608]";
-connectAttr "LMiddle_Knuckle_rotateY.o" "MC_control_rigRN.phl[609]";
-connectAttr "LMiddle_Knuckle_rotateZ.o" "MC_control_rigRN.phl[610]";
-connectAttr "LMiddle_Knuckle_visibility.o" "MC_control_rigRN.phl[611]";
-connectAttr "LMiddle_Knuckle_translateX.o" "MC_control_rigRN.phl[612]";
-connectAttr "LMiddle_Knuckle_translateY.o" "MC_control_rigRN.phl[613]";
-connectAttr "LMiddle_Knuckle_translateZ.o" "MC_control_rigRN.phl[614]";
-connectAttr "LMiddle_Knuckle_scaleX.o" "MC_control_rigRN.phl[615]";
-connectAttr "LMiddle_Knuckle_scaleY.o" "MC_control_rigRN.phl[616]";
-connectAttr "LMiddle_Knuckle_scaleZ.o" "MC_control_rigRN.phl[617]";
-connectAttr "LMiddle_Mid_rotateX.o" "MC_control_rigRN.phl[618]";
-connectAttr "LMiddle_Mid_rotateY.o" "MC_control_rigRN.phl[619]";
-connectAttr "LMiddle_Mid_rotateZ.o" "MC_control_rigRN.phl[620]";
-connectAttr "LMiddle_Mid_visibility.o" "MC_control_rigRN.phl[621]";
-connectAttr "LMiddle_Mid_translateX.o" "MC_control_rigRN.phl[622]";
-connectAttr "LMiddle_Mid_translateY.o" "MC_control_rigRN.phl[623]";
-connectAttr "LMiddle_Mid_translateZ.o" "MC_control_rigRN.phl[624]";
-connectAttr "LMiddle_Mid_scaleX.o" "MC_control_rigRN.phl[625]";
-connectAttr "LMiddle_Mid_scaleY.o" "MC_control_rigRN.phl[626]";
-connectAttr "LMiddle_Mid_scaleZ.o" "MC_control_rigRN.phl[627]";
-connectAttr "LIndex_Knuckle_rotateX.o" "MC_control_rigRN.phl[628]";
-connectAttr "LIndex_Knuckle_rotateY.o" "MC_control_rigRN.phl[629]";
-connectAttr "LIndex_Knuckle_rotateZ.o" "MC_control_rigRN.phl[630]";
-connectAttr "LIndex_Knuckle_visibility.o" "MC_control_rigRN.phl[631]";
-connectAttr "LIndex_Knuckle_translateX.o" "MC_control_rigRN.phl[632]";
-connectAttr "LIndex_Knuckle_translateY.o" "MC_control_rigRN.phl[633]";
-connectAttr "LIndex_Knuckle_translateZ.o" "MC_control_rigRN.phl[634]";
-connectAttr "LIndex_Knuckle_scaleX.o" "MC_control_rigRN.phl[635]";
-connectAttr "LIndex_Knuckle_scaleY.o" "MC_control_rigRN.phl[636]";
-connectAttr "LIndex_Knuckle_scaleZ.o" "MC_control_rigRN.phl[637]";
-connectAttr "LIndex_Mid_rotateX.o" "MC_control_rigRN.phl[638]";
-connectAttr "LIndex_Mid_rotateY.o" "MC_control_rigRN.phl[639]";
-connectAttr "LIndex_Mid_rotateZ.o" "MC_control_rigRN.phl[640]";
-connectAttr "LIndex_Mid_visibility.o" "MC_control_rigRN.phl[641]";
-connectAttr "LIndex_Mid_translateX.o" "MC_control_rigRN.phl[642]";
-connectAttr "LIndex_Mid_translateY.o" "MC_control_rigRN.phl[643]";
-connectAttr "LIndex_Mid_translateZ.o" "MC_control_rigRN.phl[644]";
-connectAttr "LIndex_Mid_scaleX.o" "MC_control_rigRN.phl[645]";
-connectAttr "LIndex_Mid_scaleY.o" "MC_control_rigRN.phl[646]";
-connectAttr "LIndex_Mid_scaleZ.o" "MC_control_rigRN.phl[647]";
-connectAttr "LThumb_Knuckle_rotateX.o" "MC_control_rigRN.phl[648]";
-connectAttr "LThumb_Knuckle_rotateY.o" "MC_control_rigRN.phl[649]";
-connectAttr "LThumb_Knuckle_rotateZ.o" "MC_control_rigRN.phl[650]";
-connectAttr "LThumb_Knuckle_visibility.o" "MC_control_rigRN.phl[651]";
-connectAttr "LThumb_Knuckle_translateX.o" "MC_control_rigRN.phl[652]";
-connectAttr "LThumb_Knuckle_translateY.o" "MC_control_rigRN.phl[653]";
-connectAttr "LThumb_Knuckle_translateZ.o" "MC_control_rigRN.phl[654]";
-connectAttr "LThumb_Knuckle_scaleX.o" "MC_control_rigRN.phl[655]";
-connectAttr "LThumb_Knuckle_scaleY.o" "MC_control_rigRN.phl[656]";
-connectAttr "LThumb_Knuckle_scaleZ.o" "MC_control_rigRN.phl[657]";
-connectAttr "blendShape1_mouth_smile_wide.o" "MC_control_rigRN.phl[658]";
-connectAttr "blendShape2_mouth_smile_nervous.o" "MC_control_rigRN.phl[659]";
-connectAttr "blendShape3_lips_pursed.o" "MC_control_rigRN.phl[660]";
-connectAttr "blendShape4_mouth_open.o" "MC_control_rigRN.phl[661]";
-connectAttr "blendShape5_right_eye.o" "MC_control_rigRN.phl[662]";
-connectAttr "blendShape5_left__eye.o" "MC_control_rigRN.phl[663]";
-connectAttr "blendShape6_right_furrow.o" "MC_control_rigRN.phl[664]";
-connectAttr "blendShape6_right_suprise.o" "MC_control_rigRN.phl[665]";
-connectAttr "blendShape6_left_furrow.o" "MC_control_rigRN.phl[666]";
-connectAttr "blendShape6_left_surprise.o" "MC_control_rigRN.phl[667]";
-connectAttr "bean_bowl_visibility.o" "grannyCranny_SET_latestRN.phl[8]";
-connectAttr "bean_bowl_translateX.o" "grannyCranny_SET_latestRN.phl[9]";
-connectAttr "bean_bowl_translateY.o" "grannyCranny_SET_latestRN.phl[10]";
-connectAttr "bean_bowl_translateZ.o" "grannyCranny_SET_latestRN.phl[11]";
-connectAttr "bean_bowl_rotateX.o" "grannyCranny_SET_latestRN.phl[12]";
-connectAttr "bean_bowl_rotateY.o" "grannyCranny_SET_latestRN.phl[13]";
-connectAttr "bean_bowl_rotateZ.o" "grannyCranny_SET_latestRN.phl[14]";
-connectAttr "bean_bowl_scaleX.o" "grannyCranny_SET_latestRN.phl[15]";
-connectAttr "bean_bowl_scaleY.o" "grannyCranny_SET_latestRN.phl[16]";
-connectAttr "bean_bowl_scaleZ.o" "grannyCranny_SET_latestRN.phl[17]";
-connectAttr "bowl_blueceramic_patternShape1.iog" "grannyCranny_SET_latestRN.phl[18]"
+connectAttr "hipL_FK_Grp_visibility.o" "MC_control_rigRN.phl[408]";
+connectAttr "hipL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[409]";
+connectAttr "hipL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[410]";
+connectAttr "hipL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[411]";
+connectAttr "hipL_FK_Grp_translateX.o" "MC_control_rigRN.phl[412]";
+connectAttr "hipL_FK_Grp_translateY.o" "MC_control_rigRN.phl[413]";
+connectAttr "hipL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[414]";
+connectAttr "hipL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[415]";
+connectAttr "hipL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[416]";
+connectAttr "hipL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[417]";
+connectAttr "hipL_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[418]";
+connectAttr "hipL_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[419]";
+connectAttr "hipL_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[420]";
+connectAttr "hipL_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[421]";
+connectAttr "hipL_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[422]";
+connectAttr "hipL_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[423]";
+connectAttr "hipL_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[424]";
+connectAttr "hipL_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[425]";
+connectAttr "hipL_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[426]";
+connectAttr "kneeL_FK_Grp_visibility.o" "MC_control_rigRN.phl[427]";
+connectAttr "kneeL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[428]";
+connectAttr "kneeL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[429]";
+connectAttr "kneeL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[430]";
+connectAttr "kneeL_FK_Grp_translateX.o" "MC_control_rigRN.phl[431]";
+connectAttr "kneeL_FK_Grp_translateY.o" "MC_control_rigRN.phl[432]";
+connectAttr "kneeL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[433]";
+connectAttr "kneeL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[434]";
+connectAttr "kneeL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[435]";
+connectAttr "kneeL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[436]";
+connectAttr "kneeL_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[437]";
+connectAttr "kneeL_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[438]";
+connectAttr "kneeL_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[439]";
+connectAttr "kneeL_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[440]";
+connectAttr "kneeL_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[441]";
+connectAttr "kneeL_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[442]";
+connectAttr "kneeL_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[443]";
+connectAttr "kneeL_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[444]";
+connectAttr "kneeL_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[445]";
+connectAttr "kneeL_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[446]";
+connectAttr "ankleL_FK_Grp_visibility.o" "MC_control_rigRN.phl[447]";
+connectAttr "ankleL_FK_Grp_rotateX.o" "MC_control_rigRN.phl[448]";
+connectAttr "ankleL_FK_Grp_rotateY.o" "MC_control_rigRN.phl[449]";
+connectAttr "ankleL_FK_Grp_rotateZ.o" "MC_control_rigRN.phl[450]";
+connectAttr "ankleL_FK_Grp_translateX.o" "MC_control_rigRN.phl[451]";
+connectAttr "ankleL_FK_Grp_translateY.o" "MC_control_rigRN.phl[452]";
+connectAttr "ankleL_FK_Grp_translateZ.o" "MC_control_rigRN.phl[453]";
+connectAttr "ankleL_FK_Grp_scaleX.o" "MC_control_rigRN.phl[454]";
+connectAttr "ankleL_FK_Grp_scaleY.o" "MC_control_rigRN.phl[455]";
+connectAttr "ankleL_FK_Grp_scaleZ.o" "MC_control_rigRN.phl[456]";
+connectAttr "ankleL_FK_Ctrl_rotateX.o" "MC_control_rigRN.phl[457]";
+connectAttr "ankleL_FK_Ctrl_rotateY.o" "MC_control_rigRN.phl[458]";
+connectAttr "ankleL_FK_Ctrl_rotateZ.o" "MC_control_rigRN.phl[459]";
+connectAttr "ankleL_FK_Ctrl_translateX.o" "MC_control_rigRN.phl[460]";
+connectAttr "ankleL_FK_Ctrl_translateY.o" "MC_control_rigRN.phl[461]";
+connectAttr "ankleL_FK_Ctrl_translateZ.o" "MC_control_rigRN.phl[462]";
+connectAttr "ankleL_FK_Ctrl_scaleX.o" "MC_control_rigRN.phl[463]";
+connectAttr "ankleL_FK_Ctrl_scaleY.o" "MC_control_rigRN.phl[464]";
+connectAttr "ankleL_FK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[465]";
+connectAttr "ankleL_FK_Ctrl_visibility.o" "MC_control_rigRN.phl[466]";
+connectAttr "footL_Ctrl_visibility.o" "MC_control_rigRN.phl[467]";
+connectAttr "footL_Ctrl_translateX.o" "MC_control_rigRN.phl[468]";
+connectAttr "footL_Ctrl_translateY.o" "MC_control_rigRN.phl[469]";
+connectAttr "footL_Ctrl_translateZ.o" "MC_control_rigRN.phl[470]";
+connectAttr "footL_Ctrl_rotateX.o" "MC_control_rigRN.phl[471]";
+connectAttr "footL_Ctrl_rotateY.o" "MC_control_rigRN.phl[472]";
+connectAttr "footL_Ctrl_rotateZ.o" "MC_control_rigRN.phl[473]";
+connectAttr "footL_Ctrl_scaleX.o" "MC_control_rigRN.phl[474]";
+connectAttr "footL_Ctrl_scaleY.o" "MC_control_rigRN.phl[475]";
+connectAttr "footL_Ctrl_scaleZ.o" "MC_control_rigRN.phl[476]";
+connectAttr "footR_Ctrl_visibility.o" "MC_control_rigRN.phl[477]";
+connectAttr "footR_Ctrl_translateX.o" "MC_control_rigRN.phl[478]";
+connectAttr "footR_Ctrl_translateY.o" "MC_control_rigRN.phl[479]";
+connectAttr "footR_Ctrl_translateZ.o" "MC_control_rigRN.phl[480]";
+connectAttr "footR_Ctrl_rotateX.o" "MC_control_rigRN.phl[481]";
+connectAttr "footR_Ctrl_rotateY.o" "MC_control_rigRN.phl[482]";
+connectAttr "footR_Ctrl_rotateZ.o" "MC_control_rigRN.phl[483]";
+connectAttr "footR_Ctrl_scaleX.o" "MC_control_rigRN.phl[484]";
+connectAttr "footR_Ctrl_scaleY.o" "MC_control_rigRN.phl[485]";
+connectAttr "footR_Ctrl_scaleZ.o" "MC_control_rigRN.phl[486]";
+connectAttr "LegL_Pole_translateX.o" "MC_control_rigRN.phl[487]";
+connectAttr "LegL_Pole_translateY.o" "MC_control_rigRN.phl[488]";
+connectAttr "LegL_Pole_translateZ.o" "MC_control_rigRN.phl[489]";
+connectAttr "LegL_Pole_rotateX.o" "MC_control_rigRN.phl[490]";
+connectAttr "LegL_Pole_rotateY.o" "MC_control_rigRN.phl[491]";
+connectAttr "LegL_Pole_rotateZ.o" "MC_control_rigRN.phl[492]";
+connectAttr "LegL_Pole_visibility.o" "MC_control_rigRN.phl[493]";
+connectAttr "LegL_Pole_scaleX.o" "MC_control_rigRN.phl[494]";
+connectAttr "LegL_Pole_scaleY.o" "MC_control_rigRN.phl[495]";
+connectAttr "LegL_Pole_scaleZ.o" "MC_control_rigRN.phl[496]";
+connectAttr "LegR_Pole_translateX.o" "MC_control_rigRN.phl[497]";
+connectAttr "LegR_Pole_translateY.o" "MC_control_rigRN.phl[498]";
+connectAttr "LegR_Pole_translateZ.o" "MC_control_rigRN.phl[499]";
+connectAttr "LegR_Pole_rotateX.o" "MC_control_rigRN.phl[500]";
+connectAttr "LegR_Pole_rotateY.o" "MC_control_rigRN.phl[501]";
+connectAttr "LegR_Pole_rotateZ.o" "MC_control_rigRN.phl[502]";
+connectAttr "LegR_Pole_visibility.o" "MC_control_rigRN.phl[503]";
+connectAttr "LegR_Pole_scaleX.o" "MC_control_rigRN.phl[504]";
+connectAttr "LegR_Pole_scaleY.o" "MC_control_rigRN.phl[505]";
+connectAttr "LegR_Pole_scaleZ.o" "MC_control_rigRN.phl[506]";
+connectAttr "ArmL_Pole_translateX.o" "MC_control_rigRN.phl[507]";
+connectAttr "ArmL_Pole_translateY.o" "MC_control_rigRN.phl[508]";
+connectAttr "ArmL_Pole_translateZ.o" "MC_control_rigRN.phl[509]";
+connectAttr "ArmL_Pole_visibility.o" "MC_control_rigRN.phl[510]";
+connectAttr "ArmL_Pole_rotateX.o" "MC_control_rigRN.phl[511]";
+connectAttr "ArmL_Pole_rotateY.o" "MC_control_rigRN.phl[512]";
+connectAttr "ArmL_Pole_rotateZ.o" "MC_control_rigRN.phl[513]";
+connectAttr "ArmL_Pole_scaleX.o" "MC_control_rigRN.phl[514]";
+connectAttr "ArmL_Pole_scaleY.o" "MC_control_rigRN.phl[515]";
+connectAttr "ArmL_Pole_scaleZ.o" "MC_control_rigRN.phl[516]";
+connectAttr "ArmR_Pole_translateX.o" "MC_control_rigRN.phl[517]";
+connectAttr "ArmR_Pole_translateY.o" "MC_control_rigRN.phl[518]";
+connectAttr "ArmR_Pole_translateZ.o" "MC_control_rigRN.phl[519]";
+connectAttr "ArmR_Pole_visibility.o" "MC_control_rigRN.phl[520]";
+connectAttr "ArmR_Pole_rotateX.o" "MC_control_rigRN.phl[521]";
+connectAttr "ArmR_Pole_rotateY.o" "MC_control_rigRN.phl[522]";
+connectAttr "ArmR_Pole_rotateZ.o" "MC_control_rigRN.phl[523]";
+connectAttr "ArmR_Pole_scaleX.o" "MC_control_rigRN.phl[524]";
+connectAttr "ArmR_Pole_scaleY.o" "MC_control_rigRN.phl[525]";
+connectAttr "ArmR_Pole_scaleZ.o" "MC_control_rigRN.phl[526]";
+connectAttr "armR_IKFK_IKFKSwitch.o" "MC_control_rigRN.phl[527]";
+connectAttr "armL_IKFK_IKFKSwitch.o" "MC_control_rigRN.phl[528]";
+connectAttr "RPinky_Knuckle_rotateZ.o" "MC_control_rigRN.phl[529]";
+connectAttr "RPinky_Knuckle_rotateX.o" "MC_control_rigRN.phl[530]";
+connectAttr "RPinky_Knuckle_rotateY.o" "MC_control_rigRN.phl[531]";
+connectAttr "RPinky_Knuckle_visibility.o" "MC_control_rigRN.phl[532]";
+connectAttr "RPinky_Knuckle_translateX.o" "MC_control_rigRN.phl[533]";
+connectAttr "RPinky_Knuckle_translateY.o" "MC_control_rigRN.phl[534]";
+connectAttr "RPinky_Knuckle_translateZ.o" "MC_control_rigRN.phl[535]";
+connectAttr "RPinky_Knuckle_scaleX.o" "MC_control_rigRN.phl[536]";
+connectAttr "RPinky_Knuckle_scaleY.o" "MC_control_rigRN.phl[537]";
+connectAttr "RPinky_Knuckle_scaleZ.o" "MC_control_rigRN.phl[538]";
+connectAttr "RRing_Knuckle_rotateZ.o" "MC_control_rigRN.phl[539]";
+connectAttr "RRing_Knuckle_rotateX.o" "MC_control_rigRN.phl[540]";
+connectAttr "RRing_Knuckle_rotateY.o" "MC_control_rigRN.phl[541]";
+connectAttr "RRing_Knuckle_visibility.o" "MC_control_rigRN.phl[542]";
+connectAttr "RRing_Knuckle_translateX.o" "MC_control_rigRN.phl[543]";
+connectAttr "RRing_Knuckle_translateY.o" "MC_control_rigRN.phl[544]";
+connectAttr "RRing_Knuckle_translateZ.o" "MC_control_rigRN.phl[545]";
+connectAttr "RRing_Knuckle_scaleX.o" "MC_control_rigRN.phl[546]";
+connectAttr "RRing_Knuckle_scaleY.o" "MC_control_rigRN.phl[547]";
+connectAttr "RRing_Knuckle_scaleZ.o" "MC_control_rigRN.phl[548]";
+connectAttr "RMiddle_Knuckle_rotateZ.o" "MC_control_rigRN.phl[549]";
+connectAttr "RMiddle_Knuckle_rotateX.o" "MC_control_rigRN.phl[550]";
+connectAttr "RMiddle_Knuckle_rotateY.o" "MC_control_rigRN.phl[551]";
+connectAttr "RMiddle_Knuckle_visibility.o" "MC_control_rigRN.phl[552]";
+connectAttr "RMiddle_Knuckle_translateX.o" "MC_control_rigRN.phl[553]";
+connectAttr "RMiddle_Knuckle_translateY.o" "MC_control_rigRN.phl[554]";
+connectAttr "RMiddle_Knuckle_translateZ.o" "MC_control_rigRN.phl[555]";
+connectAttr "RMiddle_Knuckle_scaleX.o" "MC_control_rigRN.phl[556]";
+connectAttr "RMiddle_Knuckle_scaleY.o" "MC_control_rigRN.phl[557]";
+connectAttr "RMiddle_Knuckle_scaleZ.o" "MC_control_rigRN.phl[558]";
+connectAttr "RIndex_Knuckle_rotateZ.o" "MC_control_rigRN.phl[559]";
+connectAttr "RIndex_Knuckle_rotateX.o" "MC_control_rigRN.phl[560]";
+connectAttr "RIndex_Knuckle_rotateY.o" "MC_control_rigRN.phl[561]";
+connectAttr "RIndex_Knuckle_visibility.o" "MC_control_rigRN.phl[562]";
+connectAttr "RIndex_Knuckle_translateX.o" "MC_control_rigRN.phl[563]";
+connectAttr "RIndex_Knuckle_translateY.o" "MC_control_rigRN.phl[564]";
+connectAttr "RIndex_Knuckle_translateZ.o" "MC_control_rigRN.phl[565]";
+connectAttr "RIndex_Knuckle_scaleX.o" "MC_control_rigRN.phl[566]";
+connectAttr "RIndex_Knuckle_scaleY.o" "MC_control_rigRN.phl[567]";
+connectAttr "RIndex_Knuckle_scaleZ.o" "MC_control_rigRN.phl[568]";
+connectAttr "LPinky_Knuckle_rotateX.o" "MC_control_rigRN.phl[569]";
+connectAttr "LPinky_Knuckle_rotateY.o" "MC_control_rigRN.phl[570]";
+connectAttr "LPinky_Knuckle_rotateZ.o" "MC_control_rigRN.phl[571]";
+connectAttr "LPinky_Knuckle_visibility.o" "MC_control_rigRN.phl[572]";
+connectAttr "LPinky_Knuckle_translateX.o" "MC_control_rigRN.phl[573]";
+connectAttr "LPinky_Knuckle_translateY.o" "MC_control_rigRN.phl[574]";
+connectAttr "LPinky_Knuckle_translateZ.o" "MC_control_rigRN.phl[575]";
+connectAttr "LPinky_Knuckle_scaleX.o" "MC_control_rigRN.phl[576]";
+connectAttr "LPinky_Knuckle_scaleY.o" "MC_control_rigRN.phl[577]";
+connectAttr "LPinky_Knuckle_scaleZ.o" "MC_control_rigRN.phl[578]";
+connectAttr "LPinky_Mid_rotateX.o" "MC_control_rigRN.phl[579]";
+connectAttr "LPinky_Mid_rotateY.o" "MC_control_rigRN.phl[580]";
+connectAttr "LPinky_Mid_rotateZ.o" "MC_control_rigRN.phl[581]";
+connectAttr "LPinky_Mid_visibility.o" "MC_control_rigRN.phl[582]";
+connectAttr "LPinky_Mid_translateX.o" "MC_control_rigRN.phl[583]";
+connectAttr "LPinky_Mid_translateY.o" "MC_control_rigRN.phl[584]";
+connectAttr "LPinky_Mid_translateZ.o" "MC_control_rigRN.phl[585]";
+connectAttr "LPinky_Mid_scaleX.o" "MC_control_rigRN.phl[586]";
+connectAttr "LPinky_Mid_scaleY.o" "MC_control_rigRN.phl[587]";
+connectAttr "LPinky_Mid_scaleZ.o" "MC_control_rigRN.phl[588]";
+connectAttr "LRing_Knuckle_rotateX.o" "MC_control_rigRN.phl[589]";
+connectAttr "LRing_Knuckle_rotateY.o" "MC_control_rigRN.phl[590]";
+connectAttr "LRing_Knuckle_rotateZ.o" "MC_control_rigRN.phl[591]";
+connectAttr "LRing_Knuckle_visibility.o" "MC_control_rigRN.phl[592]";
+connectAttr "LRing_Knuckle_translateX.o" "MC_control_rigRN.phl[593]";
+connectAttr "LRing_Knuckle_translateY.o" "MC_control_rigRN.phl[594]";
+connectAttr "LRing_Knuckle_translateZ.o" "MC_control_rigRN.phl[595]";
+connectAttr "LRing_Knuckle_scaleX.o" "MC_control_rigRN.phl[596]";
+connectAttr "LRing_Knuckle_scaleY.o" "MC_control_rigRN.phl[597]";
+connectAttr "LRing_Knuckle_scaleZ.o" "MC_control_rigRN.phl[598]";
+connectAttr "LRing_Mid_rotateX.o" "MC_control_rigRN.phl[599]";
+connectAttr "LRing_Mid_rotateY.o" "MC_control_rigRN.phl[600]";
+connectAttr "LRing_Mid_rotateZ.o" "MC_control_rigRN.phl[601]";
+connectAttr "LRing_Mid_visibility.o" "MC_control_rigRN.phl[602]";
+connectAttr "LRing_Mid_translateX.o" "MC_control_rigRN.phl[603]";
+connectAttr "LRing_Mid_translateY.o" "MC_control_rigRN.phl[604]";
+connectAttr "LRing_Mid_translateZ.o" "MC_control_rigRN.phl[605]";
+connectAttr "LRing_Mid_scaleX.o" "MC_control_rigRN.phl[606]";
+connectAttr "LRing_Mid_scaleY.o" "MC_control_rigRN.phl[607]";
+connectAttr "LRing_Mid_scaleZ.o" "MC_control_rigRN.phl[608]";
+connectAttr "LMiddle_Knuckle_rotateX.o" "MC_control_rigRN.phl[609]";
+connectAttr "LMiddle_Knuckle_rotateY.o" "MC_control_rigRN.phl[610]";
+connectAttr "LMiddle_Knuckle_rotateZ.o" "MC_control_rigRN.phl[611]";
+connectAttr "LMiddle_Knuckle_visibility.o" "MC_control_rigRN.phl[612]";
+connectAttr "LMiddle_Knuckle_translateX.o" "MC_control_rigRN.phl[613]";
+connectAttr "LMiddle_Knuckle_translateY.o" "MC_control_rigRN.phl[614]";
+connectAttr "LMiddle_Knuckle_translateZ.o" "MC_control_rigRN.phl[615]";
+connectAttr "LMiddle_Knuckle_scaleX.o" "MC_control_rigRN.phl[616]";
+connectAttr "LMiddle_Knuckle_scaleY.o" "MC_control_rigRN.phl[617]";
+connectAttr "LMiddle_Knuckle_scaleZ.o" "MC_control_rigRN.phl[618]";
+connectAttr "LMiddle_Mid_rotateX.o" "MC_control_rigRN.phl[619]";
+connectAttr "LMiddle_Mid_rotateY.o" "MC_control_rigRN.phl[620]";
+connectAttr "LMiddle_Mid_rotateZ.o" "MC_control_rigRN.phl[621]";
+connectAttr "LMiddle_Mid_visibility.o" "MC_control_rigRN.phl[622]";
+connectAttr "LMiddle_Mid_translateX.o" "MC_control_rigRN.phl[623]";
+connectAttr "LMiddle_Mid_translateY.o" "MC_control_rigRN.phl[624]";
+connectAttr "LMiddle_Mid_translateZ.o" "MC_control_rigRN.phl[625]";
+connectAttr "LMiddle_Mid_scaleX.o" "MC_control_rigRN.phl[626]";
+connectAttr "LMiddle_Mid_scaleY.o" "MC_control_rigRN.phl[627]";
+connectAttr "LMiddle_Mid_scaleZ.o" "MC_control_rigRN.phl[628]";
+connectAttr "LIndex_Knuckle_rotateX.o" "MC_control_rigRN.phl[629]";
+connectAttr "LIndex_Knuckle_rotateY.o" "MC_control_rigRN.phl[630]";
+connectAttr "LIndex_Knuckle_rotateZ.o" "MC_control_rigRN.phl[631]";
+connectAttr "LIndex_Knuckle_visibility.o" "MC_control_rigRN.phl[632]";
+connectAttr "LIndex_Knuckle_translateX.o" "MC_control_rigRN.phl[633]";
+connectAttr "LIndex_Knuckle_translateY.o" "MC_control_rigRN.phl[634]";
+connectAttr "LIndex_Knuckle_translateZ.o" "MC_control_rigRN.phl[635]";
+connectAttr "LIndex_Knuckle_scaleX.o" "MC_control_rigRN.phl[636]";
+connectAttr "LIndex_Knuckle_scaleY.o" "MC_control_rigRN.phl[637]";
+connectAttr "LIndex_Knuckle_scaleZ.o" "MC_control_rigRN.phl[638]";
+connectAttr "LIndex_Mid_rotateX.o" "MC_control_rigRN.phl[639]";
+connectAttr "LIndex_Mid_rotateY.o" "MC_control_rigRN.phl[640]";
+connectAttr "LIndex_Mid_rotateZ.o" "MC_control_rigRN.phl[641]";
+connectAttr "LIndex_Mid_visibility.o" "MC_control_rigRN.phl[642]";
+connectAttr "LIndex_Mid_translateX.o" "MC_control_rigRN.phl[643]";
+connectAttr "LIndex_Mid_translateY.o" "MC_control_rigRN.phl[644]";
+connectAttr "LIndex_Mid_translateZ.o" "MC_control_rigRN.phl[645]";
+connectAttr "LIndex_Mid_scaleX.o" "MC_control_rigRN.phl[646]";
+connectAttr "LIndex_Mid_scaleY.o" "MC_control_rigRN.phl[647]";
+connectAttr "LIndex_Mid_scaleZ.o" "MC_control_rigRN.phl[648]";
+connectAttr "LThumb_Knuckle_rotateX.o" "MC_control_rigRN.phl[649]";
+connectAttr "LThumb_Knuckle_rotateY.o" "MC_control_rigRN.phl[650]";
+connectAttr "LThumb_Knuckle_rotateZ.o" "MC_control_rigRN.phl[651]";
+connectAttr "LThumb_Knuckle_visibility.o" "MC_control_rigRN.phl[652]";
+connectAttr "LThumb_Knuckle_translateX.o" "MC_control_rigRN.phl[653]";
+connectAttr "LThumb_Knuckle_translateY.o" "MC_control_rigRN.phl[654]";
+connectAttr "LThumb_Knuckle_translateZ.o" "MC_control_rigRN.phl[655]";
+connectAttr "LThumb_Knuckle_scaleX.o" "MC_control_rigRN.phl[656]";
+connectAttr "LThumb_Knuckle_scaleY.o" "MC_control_rigRN.phl[657]";
+connectAttr "LThumb_Knuckle_scaleZ.o" "MC_control_rigRN.phl[658]";
+connectAttr "foreground.di" "MC_control_rigRN.phl[659]";
+connectAttr "foreground.di" "MC_control_rigRN.phl[660]";
+connectAttr "foreground.di" "MC_control_rigRN.phl[661]";
+connectAttr "foreground.di" "MC_control_rigRN.phl[662]";
+connectAttr "foreground.di" "MC_control_rigRN.phl[663]";
+connectAttr "foreground.di" "MC_control_rigRN.phl[664]";
+connectAttr "foreground.di" "MC_control_rigRN.phl[665]";
+connectAttr "foreground.di" "MC_control_rigRN.phl[666]";
+connectAttr "foreground.di" "MC_control_rigRN.phl[667]";
+connectAttr "foreground.di" "MC_control_rigRN.phl[668]";
+connectAttr "blendShape1_mouth_smile_wide.o" "MC_control_rigRN.phl[669]";
+connectAttr "blendShape2_mouth_smile_nervous.o" "MC_control_rigRN.phl[670]";
+connectAttr "blendShape3_lips_pursed.o" "MC_control_rigRN.phl[671]";
+connectAttr "blendShape4_mouth_open.o" "MC_control_rigRN.phl[672]";
+connectAttr "blendShape5_right_eye.o" "MC_control_rigRN.phl[673]";
+connectAttr "blendShape5_left__eye.o" "MC_control_rigRN.phl[674]";
+connectAttr "blendShape6_right_furrow.o" "MC_control_rigRN.phl[675]";
+connectAttr "blendShape6_right_suprise.o" "MC_control_rigRN.phl[676]";
+connectAttr "blendShape6_left_furrow.o" "MC_control_rigRN.phl[677]";
+connectAttr "blendShape6_left_surprise.o" "MC_control_rigRN.phl[678]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[68]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[69]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[70]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[71]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[72]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[73]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[74]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[75]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[123]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[124]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[125]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[8]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[9]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[10]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[11]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[12]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[13]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[14]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[15]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[16]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[17]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[18]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[19]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[20]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[21]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[22]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[23]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[24]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[25]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[26]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[27]";
+connectAttr "bean_bowl_visibility.o" "grannyCranny_SET_latestRN.phl[108]";
+connectAttr "bean_bowl_translateX.o" "grannyCranny_SET_latestRN.phl[109]";
+connectAttr "bean_bowl_translateY.o" "grannyCranny_SET_latestRN.phl[110]";
+connectAttr "bean_bowl_translateZ.o" "grannyCranny_SET_latestRN.phl[111]";
+connectAttr "bean_bowl_rotateX.o" "grannyCranny_SET_latestRN.phl[112]";
+connectAttr "bean_bowl_rotateY.o" "grannyCranny_SET_latestRN.phl[113]";
+connectAttr "bean_bowl_rotateZ.o" "grannyCranny_SET_latestRN.phl[114]";
+connectAttr "bean_bowl_scaleX.o" "grannyCranny_SET_latestRN.phl[115]";
+connectAttr "bean_bowl_scaleY.o" "grannyCranny_SET_latestRN.phl[116]";
+connectAttr "bean_bowl_scaleZ.o" "grannyCranny_SET_latestRN.phl[117]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[118]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[119]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[120]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[121]";
+connectAttr "bowl_blueceramic_patternShape1.iog" "grannyCranny_SET_latestRN.phl[122]"
 		;
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[28]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[29]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[30]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[31]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[32]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[33]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[34]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[35]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[36]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[37]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[38]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[39]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[40]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[41]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[42]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[43]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[44]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[45]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[46]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[47]";
 connectAttr "background.di" "grannyCranny_SET_latestRN.phl[4]";
 connectAttr "background.di" "grannyCranny_SET_latestRN.phl[1]";
 connectAttr "background.di" "grannyCranny_SET_latestRN.phl[7]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[76]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[77]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[78]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[79]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[80]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[81]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[82]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[83]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[84]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[85]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[86]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[87]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[88]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[89]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[90]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[91]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[92]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[93]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[94]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[95]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[96]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[97]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[98]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[99]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[100]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[101]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[102]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[103]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[104]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[105]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[106]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[107]";
 connectAttr "background.di" "grannyCranny_SET_latestRN.phl[5]";
-connectAttr "teacup_visibility.o" "grannyCranny_SET_latestRN.phl[19]";
-connectAttr "teacup_translateX.o" "grannyCranny_SET_latestRN.phl[20]";
-connectAttr "teacup_translateY.o" "grannyCranny_SET_latestRN.phl[21]";
-connectAttr "teacup_translateZ.o" "grannyCranny_SET_latestRN.phl[22]";
-connectAttr "teacup_rotateX.o" "grannyCranny_SET_latestRN.phl[23]";
-connectAttr "teacup_rotateY.o" "grannyCranny_SET_latestRN.phl[24]";
-connectAttr "teacup_rotateZ.o" "grannyCranny_SET_latestRN.phl[25]";
-connectAttr "teacup_scaleX.o" "grannyCranny_SET_latestRN.phl[26]";
-connectAttr "teacup_scaleY.o" "grannyCranny_SET_latestRN.phl[27]";
-connectAttr "teacup_scaleZ.o" "grannyCranny_SET_latestRN.phl[28]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[48]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[49]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[50]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[51]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[52]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[53]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[54]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[55]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[56]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[57]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[58]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[59]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[60]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[61]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[62]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[63]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[64]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[65]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[66]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[67]";
+connectAttr "teacup_visibility.o" "grannyCranny_SET_latestRN.phl[126]";
+connectAttr "teacup_translateX.o" "grannyCranny_SET_latestRN.phl[127]";
+connectAttr "teacup_translateY.o" "grannyCranny_SET_latestRN.phl[128]";
+connectAttr "teacup_translateZ.o" "grannyCranny_SET_latestRN.phl[129]";
+connectAttr "teacup_rotateX.o" "grannyCranny_SET_latestRN.phl[130]";
+connectAttr "teacup_rotateY.o" "grannyCranny_SET_latestRN.phl[131]";
+connectAttr "teacup_rotateZ.o" "grannyCranny_SET_latestRN.phl[132]";
+connectAttr "teacup_scaleX.o" "grannyCranny_SET_latestRN.phl[133]";
+connectAttr "teacup_scaleY.o" "grannyCranny_SET_latestRN.phl[134]";
+connectAttr "teacup_scaleZ.o" "grannyCranny_SET_latestRN.phl[135]";
+connectAttr "foreground.di" "grannyCranny_SET_latestRN.phl[136]";
 connectAttr "background.di" "grannyCranny_SET_latestRN.phl[2]";
 connectAttr "background.di" "grannyCranny_SET_latestRN.phl[3]";
 connectAttr "background.di" "grannyCranny_SET_latestRN.phl[6]";
-connectAttr "polyExtrudeFace3.out" "speech_ribbonRN.phl[1]";
-connectAttr "speech_ribbonRN.phl[2]" "PxrSurface2SG.dsm" -na;
-connectAttr "speech_ribbonRN.phl[3]" "polyExtrudeFace3.mp";
-connectAttr "speech_ribbonRN.phl[4]" "polyExtrudeFace3.ip";
-connectAttr "polyExtrudeFace4.out" "speech_ribbonRN1.phl[1]";
-connectAttr "speech_ribbonRN1.phl[2]" "PxrSurface2SG.dsm" -na;
-connectAttr "speech_ribbonRN1.phl[3]" "polyExtrudeFace4.mp";
-connectAttr "speech_ribbonRN1.phl[4]" "polyExtrudeFace4.ip";
-connectAttr "polyExtrudeFace6.out" "speech_ribbonRN2.phl[1]";
-connectAttr "speech_ribbonRN2.phl[2]" "PxrSurface4SG.dsm" -na;
-connectAttr "speech_ribbonRN2.phl[3]" "polyExtrudeFace6.mp";
-connectAttr "speech_ribbonRN2.phl[4]" "polyExtrudeFace6.ip";
-connectAttr "polyExtrudeFace5.out" "speech_ribbonRN3.phl[1]";
-connectAttr "speech_ribbonRN3.phl[2]" "PxrSurface3SG.dsm" -na;
-connectAttr "speech_ribbonRN3.phl[3]" "polyExtrudeFace5.mp";
-connectAttr "speech_ribbonRN3.phl[4]" "polyExtrudeFace5.ip";
-connectAttr "polyExtrudeFace2.out" "speech_ribbonRN4.phl[1]";
-connectAttr "speech_ribbonRN4.phl[2]" "PxrSurface1SG.dsm" -na;
-connectAttr "speech_ribbonRN4.phl[3]" "polyExtrudeFace2.mp";
-connectAttr "speech_ribbonRN4.phl[4]" "polyExtrudeFace2.ip";
-connectAttr "polyExtrudeFace1.out" "speech_ribbonRN5.phl[1]";
-connectAttr "speech_ribbonRN5.phl[2]" "PxrSurface1SG.dsm" -na;
-connectAttr "speech_ribbonRN5.phl[3]" "polyExtrudeFace1.mp";
-connectAttr "speech_ribbonRN5.phl[4]" "polyExtrudeFace1.ip";
+connectAttr "foreground.di" "speech_ribbonRN.phl[1]";
+connectAttr "foreground.di" "speech_ribbonRN.phl[2]";
+connectAttr "polyExtrudeFace3.out" "speech_ribbonRN.phl[3]";
+connectAttr "speech_ribbonRN.phl[4]" "PxrSurface2SG.dsm" -na;
+connectAttr "speech_ribbonRN.phl[5]" "polyExtrudeFace3.mp";
+connectAttr "speech_ribbonRN.phl[6]" "polyExtrudeFace3.ip";
+connectAttr "foreground.di" "speech_ribbonRN1.phl[1]";
+connectAttr "foreground.di" "speech_ribbonRN1.phl[2]";
+connectAttr "polyExtrudeFace4.out" "speech_ribbonRN1.phl[3]";
+connectAttr "speech_ribbonRN1.phl[4]" "PxrSurface2SG.dsm" -na;
+connectAttr "speech_ribbonRN1.phl[5]" "polyExtrudeFace4.mp";
+connectAttr "speech_ribbonRN1.phl[6]" "polyExtrudeFace4.ip";
+connectAttr "foreground.di" "speech_ribbonRN2.phl[1]";
+connectAttr "foreground.di" "speech_ribbonRN2.phl[2]";
+connectAttr "polyExtrudeFace6.out" "speech_ribbonRN2.phl[3]";
+connectAttr "speech_ribbonRN2.phl[4]" "PxrSurface4SG.dsm" -na;
+connectAttr "speech_ribbonRN2.phl[5]" "polyExtrudeFace6.mp";
+connectAttr "speech_ribbonRN2.phl[6]" "polyExtrudeFace6.ip";
+connectAttr "foreground.di" "speech_ribbonRN3.phl[1]";
+connectAttr "foreground.di" "speech_ribbonRN3.phl[2]";
+connectAttr "polyExtrudeFace5.out" "speech_ribbonRN3.phl[3]";
+connectAttr "speech_ribbonRN3.phl[4]" "PxrSurface3SG.dsm" -na;
+connectAttr "speech_ribbonRN3.phl[5]" "polyExtrudeFace5.mp";
+connectAttr "speech_ribbonRN3.phl[6]" "polyExtrudeFace5.ip";
+connectAttr "foreground.di" "speech_ribbonRN4.phl[1]";
+connectAttr "foreground.di" "speech_ribbonRN4.phl[2]";
+connectAttr "polyExtrudeFace2.out" "speech_ribbonRN4.phl[3]";
+connectAttr "speech_ribbonRN4.phl[4]" "PxrSurface1SG.dsm" -na;
+connectAttr "speech_ribbonRN4.phl[5]" "polyExtrudeFace2.mp";
+connectAttr "speech_ribbonRN4.phl[6]" "polyExtrudeFace2.ip";
+connectAttr "foreground.di" "speech_ribbonRN5.phl[1]";
+connectAttr "foreground.di" "speech_ribbonRN5.phl[2]";
+connectAttr "polyExtrudeFace1.out" "speech_ribbonRN5.phl[3]";
+connectAttr "speech_ribbonRN5.phl[4]" "PxrSurface1SG.dsm" -na;
+connectAttr "speech_ribbonRN5.phl[5]" "polyExtrudeFace1.mp";
+connectAttr "speech_ribbonRN5.phl[6]" "polyExtrudeFace1.ip";
 connectAttr "background.di" "livingRoom_SET_latestRN.phl[5]";
 connectAttr "background.di" "livingRoom_SET_latestRN.phl[6]";
-connectAttr "background.di" "livingRoom_SET_latestRN.phl[7]";
 connectAttr "background.di" "livingRoom_SET_latestRN.phl[2]";
 connectAttr "background.di" "livingRoom_SET_latestRN.phl[3]";
 connectAttr "background.di" "livingRoom_SET_latestRN.phl[4]";
+connectAttr "background.di" "livingRoom_SET_latestRN.phl[7]";
 connectAttr "background.di" "livingRoom_SET_latestRN.phl[1]";
 connectAttr "armL_IK_Grp1_parentConstraint1_nodeState.o" "armL_IK_Grp1_parentConstraint1.nds"
 		;
@@ -20800,6 +21371,7 @@ connectAttr "bowl_blueceramic_pattern1_CTRL_visibility.o" "bowl_blueceramic_patt
 		;
 connectAttr "bowl_blueceramic_pattern1_CTRL_blendParent1.o" "bowl_blueceramic_pattern1_CTRL.blendParent1"
 		;
+connectAttr "foreground.di" "bowl_blueceramic_pattern1_CTRL.do";
 connectAttr "bowl_blueceramic_pattern1_CTRL_parentConstraint1.w0" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.tg[0].tw"
 		;
 connectAttr "bowl_blueceramic_pattern1_CTRL.ro" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.cro"
@@ -20810,6 +21382,7 @@ connectAttr "bowl_blueceramic_pattern1_CTRL.rp" "bowl_blueceramic_pattern1_CTRL_
 		;
 connectAttr "bowl_blueceramic_pattern1_CTRL.rpt" "bowl_blueceramic_pattern1_CTRL_parentConstraint1.crt"
 		;
+connectAttr "foreground.di" "bowl_blueceramic_pattern1.do";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "grannyCranny_SET_latest1:edamame_latest:PxrSurface2SG.message" ":defaultLightSet.message";
@@ -20933,7 +21506,9 @@ connectAttr "darkyellow_RIBBON_SHADER.oc" "PxrSurface4SG.rman__surface";
 connectAttr "lambert5.oc" "PxrSurface4SG.ss";
 connectAttr "PxrSurface4SG.msg" "materialInfo4.sg";
 connectAttr "lambert5.msg" "materialInfo4.m";
+connectAttr "sharedReferenceNode.sr" "livingRoom_SET_latestRN.sr";
 connectAttr "layerManager.dli[4]" "background.id";
+connectAttr "layerManager.dli[5]" "foreground.id";
 connectAttr "grannyCranny_SET_latest1:edamame_latest:PxrSurface2SG.pa" ":renderPartition.st"
 		 -na;
 connectAttr "MC_control_rig2:PxrSurface1SG.pa" ":renderPartition.st" -na;
