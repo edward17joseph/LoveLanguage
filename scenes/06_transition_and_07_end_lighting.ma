@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: 06_transition_and_07_end_lighting.ma
-//Last modified: Fri, May 08, 2020 06:00:39 AM
+//Last modified: Fri, May 08, 2020 08:41:29 AM
 //Codeset: 1252
 file -rdi 1 -ns "chair" -dr 1 -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
 file -rdi 1 -ns "chair1" -dr 1 -rfn "chairRN1" -op "v=0;" -typ "mayaAscii" "/Users/ashnachoudhury/Art_Animation/MAYA_PROJECTS/LoveLanguage//assets/livingroomprops/chair.ma";
@@ -377,6 +377,8 @@ requires -nodeType "PxrDiskLight" -nodeType "PxrVisualizer" -nodeType "PxrDispTr
 		 -nodeType "PxrDirectLighting" -nodeType "PxrVCM" -nodeType "PxrRectLight" -nodeType "PxrPathTracer"
 		 -nodeType "PxrDirt" -nodeType "PxrSphereLight" -nodeType "rmanDisplay" "RenderMan_for_Maya.py" "23.1 @ 2036321";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "3.1.2";
+requires -nodeType "renderSetup" "renderSetup.py" "1.0";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2019";
@@ -620,7 +622,7 @@ createNode parentConstraint -n "_meetGrandma:armL_IK_Grp1_parentConstraint1" -p 
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -96.409643068543332 33.378817009532952 27.011623892664296 ;
+	setAttr ".lr" -type "double3" -26.73473064264623 -104.33679141499296 -65.361281144096594 ;
 	setAttr ".rst" -type "double3" -5.8603317357442037 -1.9574813848107517 7.1097108584675937 ;
 	setAttr ".rsrr" -type "double3" -33.64095564377417 -99.833356191941732 -60.536049465608805 ;
 	setAttr -k on ".w0";
@@ -640,7 +642,7 @@ createNode parentConstraint -n "_meetGrandma:armR_IK_Ctrl_parentConstraint1" -p 
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 172.75178275187568 10.9221614168465 -0.4586765691200172 ;
+	setAttr ".lr" -type "double3" -167.4591937263055 -220.14947053710449 16.124125372125803 ;
 	setAttr ".rst" -type "double3" 5.3721462521421781 0.84904557742057207 -7.4009585660128714 ;
 	setAttr ".rsrr" -type "double3" -37.553413617181484 -98.288570174533817 -54.943896127099329 ;
 	setAttr -k on ".w0";
@@ -1593,9 +1595,9 @@ createNode PxrSphereLight -n "PxrSphereLightShape" -p "PxrSphereLight";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 0.70747208595275879;
-	setAttr ".exposure" 0.20249070227146149;
-	setAttr ".lightColor" -type "float3" 0.12918149 0.13205379 0.45144573 ;
+	setAttr ".intensity" 1;
+	setAttr ".exposure" 0.30000001192092896;
+	setAttr ".lightColor" -type "float3" 1 0.73729998 0.234 ;
 	setAttr ".enableTemperature" no;
 	setAttr ".temperature" 6500;
 	setAttr ".emissionFocus" 0;
@@ -1626,7 +1628,7 @@ createNode PxrSphereLight -n "PxrSphereLightShape" -p "PxrSphereLight";
 	setAttr ".lightGroup" -type "string" "";
 	setAttr ".importanceMultiplier" 1;
 	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
-	setAttr ".cl" -type "float3" 0.12918149 0.13205379 0.45144573 ;
+	setAttr ".cl" -type "float3" 1 0.73729998 0.234 ;
 	setAttr ".ed" yes;
 	setAttr ".sn" yes;
 	setAttr ".lls" 1;
@@ -1729,7 +1731,7 @@ createNode PxrDomeLight -n "PxrDomeLightShape" -p "PxrDomeLight";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 0.5;
+	setAttr ".intensity" 0;
 	setAttr ".exposure" 0;
 	setAttr ".lightColor" -type "float3" 1 1 1 ;
 	setAttr ".lightColorMap" -type "string" "C:/Users/wyatt/Documents/GitHub/LoveLanguage//sourceimages/house/autumn_meadow_4k.hdr";
@@ -1861,7 +1863,7 @@ createNode PxrRectLight -n "PxrRectLightShape" -p "PxrRectLight";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 5;
+	setAttr ".intensity" 0;
 	setAttr ".exposure" 0;
 	setAttr ".lightColor" -type "float3" 1 0.91602212 0.68700004 ;
 	setAttr ".lightColorMap" -type "string" "";
@@ -2002,7 +2004,7 @@ createNode PxrRectLight -n "PxrRectLight1Shape" -p "PxrRectLight1";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 1;
+	setAttr ".intensity" 0;
 	setAttr ".exposure" 0;
 	setAttr ".lightColor" -type "float3" 1 0.91602212 0.68700004 ;
 	setAttr ".lightColorMap" -type "string" "";
@@ -2143,7 +2145,7 @@ createNode PxrRectLight -n "PxrRectLight2Shape" -p "PxrRectLight2";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 1;
+	setAttr ".intensity" 0;
 	setAttr ".exposure" 0;
 	setAttr ".lightColor" -type "float3" 1 0.9466083 0.801 ;
 	setAttr ".lightColorMap" -type "string" "";
@@ -2284,7 +2286,7 @@ createNode PxrRectLight -n "PxrRectLight3Shape" -p "PxrRectLight3";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 0;
+	setAttr ".intensity" 3.5639412403106689;
 	setAttr ".exposure" 0;
 	setAttr ".lightColor" -type "float3" 1 0.85163009 0.44700003 ;
 	setAttr ".lightColorMap" -type "string" "";
@@ -2425,7 +2427,7 @@ createNode PxrSphereLight -n "PxrSphereLight1Shape" -p "PxrSphereLight1";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 3;
+	setAttr ".intensity" 10;
 	setAttr ".exposure" 0;
 	setAttr ".lightColor" -type "float3" 1 1 1 ;
 	setAttr ".enableTemperature" yes;
@@ -2563,9 +2565,9 @@ createNode PxrDiskLight -n "PxrDiskLightShape" -p "PxrDiskLight";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 0;
+	setAttr ".intensity" 20;
 	setAttr ".exposure" 0;
-	setAttr ".lightColor" -type "float3" 1 0.97797686 0.699 ;
+	setAttr ".lightColor" -type "float3" 0.56900001 0.87385345 1 ;
 	setAttr ".enableTemperature" no;
 	setAttr ".temperature" 6500;
 	setAttr ".emissionFocus" 0;
@@ -2596,7 +2598,7 @@ createNode PxrDiskLight -n "PxrDiskLightShape" -p "PxrDiskLight";
 	setAttr ".lightGroup" -type "string" "";
 	setAttr ".importanceMultiplier" 1;
 	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
-	setAttr ".cl" -type "float3" 1 0.97797686 0.699 ;
+	setAttr ".cl" -type "float3" 0.56900001 0.87385345 1 ;
 	setAttr ".ed" yes;
 	setAttr ".sn" yes;
 	setAttr ".lls" 1;
@@ -2700,7 +2702,7 @@ createNode PxrDiskLight -n "PxrDiskLight1Shape" -p "PxrDiskLight1";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".intensity" 20;
 	setAttr ".exposure" 0;
-	setAttr ".lightColor" -type "float3" 1 0.95982844 0.81700003 ;
+	setAttr ".lightColor" -type "float3" 0.56900001 0.87385345 1 ;
 	setAttr ".enableTemperature" no;
 	setAttr ".temperature" 6500;
 	setAttr ".emissionFocus" 0;
@@ -2731,7 +2733,7 @@ createNode PxrDiskLight -n "PxrDiskLight1Shape" -p "PxrDiskLight1";
 	setAttr ".lightGroup" -type "string" "";
 	setAttr ".importanceMultiplier" 1;
 	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
-	setAttr ".cl" -type "float3" 1 0.95982844 0.81700003 ;
+	setAttr ".cl" -type "float3" 0.56900001 0.87385345 1 ;
 	setAttr ".ed" yes;
 	setAttr ".sn" yes;
 	setAttr ".lls" 1;
@@ -2976,7 +2978,7 @@ createNode PxrDiskLight -n "PxrDiskLight3Shape" -p "PxrDiskLight3";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".intensity" 8;
 	setAttr ".exposure" 0;
-	setAttr ".lightColor" -type "float3" 0.81 0.67795002 0.35883 ;
+	setAttr ".lightColor" -type "float3" 0.68129331 0.23263916 0 ;
 	setAttr ".enableTemperature" yes;
 	setAttr ".temperature" 4287.2119140625;
 	setAttr ".emissionFocus" 0;
@@ -3007,7 +3009,7 @@ createNode PxrDiskLight -n "PxrDiskLight3Shape" -p "PxrDiskLight3";
 	setAttr ".lightGroup" -type "string" "";
 	setAttr ".importanceMultiplier" 1;
 	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
-	setAttr ".cl" -type "float3" 0.81 0.67795002 0.35883 ;
+	setAttr ".cl" -type "float3" 0.68129331 0.23263916 0 ;
 	setAttr ".ed" yes;
 	setAttr ".sn" yes;
 	setAttr ".lls" 1;
@@ -3114,7 +3116,7 @@ createNode PxrDiskLight -n "PxrDiskLight4Shape" -p "PxrDiskLight4";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".intensity" 20;
 	setAttr ".exposure" 0;
-	setAttr ".lightColor" -type "float3" 1 0.94724339 0.69099998 ;
+	setAttr ".lightColor" -type "float3" 0.56900001 0.87385345 1 ;
 	setAttr ".enableTemperature" no;
 	setAttr ".temperature" 6500;
 	setAttr ".emissionFocus" 0;
@@ -3145,7 +3147,7 @@ createNode PxrDiskLight -n "PxrDiskLight4Shape" -p "PxrDiskLight4";
 	setAttr ".lightGroup" -type "string" "";
 	setAttr ".importanceMultiplier" 1;
 	setAttr ".rman__lightfilters[0]" -type "float3"  0 0 0;
-	setAttr ".cl" -type "float3" 1 0.94724339 0.69099998 ;
+	setAttr ".cl" -type "float3" 0.56900001 0.87385345 1 ;
 	setAttr ".ed" yes;
 	setAttr ".sn" yes;
 	setAttr ".lls" 1;
@@ -3385,7 +3387,7 @@ createNode PxrDiskLight -n "PxrDiskLight6Shape" -p "PxrDiskLight6";
 	setAttr ".dhe" no;
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".intensity" 10;
+	setAttr ".intensity" 0;
 	setAttr ".exposure" 0;
 	setAttr ".lightColor" -type "float3" 1 1 1 ;
 	setAttr ".enableTemperature" no;
@@ -3431,7 +3433,7 @@ createNode PxrDiskLight -n "PxrDiskLight6Shape" -p "PxrDiskLight6";
 	setAttr ".rman_coneAngleDepth" 10;
 	setAttr ".rman_coneAngleOpacity" 0.5;
 createNode fosterParent -n "eggroll_platterRNfosterParent1";
-	rename -uid "DBE0C515-4326-97BD-4603-88886B72839C";
+	rename -uid "59C898C3-4C56-9996-B034-B4BA54DA4C0C";
 createNode transform -n "group1" -p "eggroll_platterRNfosterParent1";
 	rename -uid "14D32B9C-E748-FFA9-8444-998C95EADB38";
 	setAttr ".rp" -type "double3" 0.016866505146030275 3.3264787938006428 0.16904144547045019 ;
@@ -18194,28 +18196,7 @@ createNode parentConstraint -n "pCube2_parentConstraint1" -p "pCube2";
 	setAttr ".rsrr" -type "double3" -180 -140.73621745499872 -180.00000000000003 ;
 	setAttr -k on ".w0";
 createNode fosterParent -n "fork_latestRNfosterParent1";
-	rename -uid "8CE313F1-45B3-4EAF-F851-20B2103F2764";
-createNode parentConstraint -n "fork_parentConstraint1" -p "fork_latestRNfosterParent1";
-	rename -uid "55B5E00C-8748-5464-8FAE-FF93F15B0266";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "armR_IK_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".tg[0].tot" -type "double3" -5.6164946117852406 0.78402968297042541 -1.540960095964186 ;
-	setAttr ".tg[0].tor" -type "double3" -77.997720837944186 -63.959631168584714 -101.38327482432764 ;
-	setAttr ".lr" -type "double3" 12.104524643487036 -171.43103079497243 -26.909966437941286 ;
-	setAttr ".rst" -type "double3" 101.15519133793217 46.966615659941674 -172.88585710005049 ;
-	setAttr ".rsrr" -type "double3" 8.7557102415118813 -195.14126999337267 -4.3512897793757057 ;
-	setAttr -k on ".w0";
+	rename -uid "3029AB57-4092-1DA3-6ED9-EC8EE55A9BDD";
 createNode transform -n "pSphere1" -p "fork_latestRNfosterParent1";
 	rename -uid "84BECDDC-9545-BD34-1357-D0A26B6E8F20";
 	addAttr -ci true -k true -sn "blendParent1" -ln "blendParent1" -dv 1 -smn 0 -smx 
@@ -20844,13 +20825,34 @@ createNode parentConstraint -n "pSphere1_parentConstraint1" -p "pSphere1";
 	setAttr ".tg[0].tor" -type "double3" 1.6695385548807942 132.37773501102828 2.5820296299183707 ;
 	setAttr ".tg[1].tot" -type "double3" -3.7786638985947292 0.96847226801346409 -0.65601337213746547 ;
 	setAttr ".tg[1].tor" -type "double3" -165.41734908293836 70.205080878714597 12.992045156927352 ;
-	setAttr ".lr" -type "double3" 12.533046066435622 -128.43313343012886 -14.433431743637726 ;
+	setAttr ".lr" -type "double3" -7.1718872792500488 22.260882450135192 -6.5909440761307767 ;
 	setAttr ".rst" -type "double3" -13.92236157723778 -13.870611943709264 -5.2065615977535913 ;
 	setAttr ".rsrr" -type "double3" 13.870928013785015 -156.43602484393111 -35.355023518486519 ;
 	setAttr -k on ".w0";
 	setAttr -k on ".w1" 0;
+createNode parentConstraint -n "fork_parentConstraint1" -p "fork_latestRNfosterParent1";
+	rename -uid "55B5E00C-8748-5464-8FAE-FF93F15B0266";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "armR_IK_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -5.6164946117852406 0.78402968297042541 -1.540960095964186 ;
+	setAttr ".tg[0].tor" -type "double3" -77.997720837944186 -63.959631168584714 -101.38327482432764 ;
+	setAttr ".lr" -type "double3" -184.04895511609649 -45.20364357023012 254.91457303876035 ;
+	setAttr ".rst" -type "double3" 101.15519133793217 46.966615659941674 -172.88585710005049 ;
+	setAttr ".rsrr" -type "double3" 8.7557102415118813 -195.14126999337267 -4.3512897793757057 ;
+	setAttr -k on ".w0";
 createNode fosterParent -n "eggroll_sheetsRNfosterParent1";
-	rename -uid "6C85565B-490D-86FF-0DC3-C38BC273DBA7";
+	rename -uid "4DDBBBD1-4A55-9EEF-F386-2EB05310E50A";
 createNode parentConstraint -n "sheet_parentConstraint1" -p "eggroll_sheetsRNfosterParent1";
 	rename -uid "7BB72949-6E4E-8666-4990-57B52EF2BC03";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "armR_IK_CtrlW0" -dv 1 -min 0 -at "double";
@@ -20868,12 +20870,12 @@ createNode parentConstraint -n "sheet_parentConstraint1" -p "eggroll_sheetsRNfos
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -3.7448958401967332 0.56555035485967764 0.51938036604415805 ;
 	setAttr ".tg[0].tor" -type "double3" -172.77144942902868 60.981504536396216 17.412653566899419 ;
-	setAttr ".lr" -type "double3" -23.073334360060056 33.574387275065853 -14.912456307005549 ;
+	setAttr ".lr" -type "double3" -340.37581252289613 62.164428499865046 112.48505498644219 ;
 	setAttr ".rst" -type "double3" 99.477012944074801 32.679370917207912 -174.23709628692453 ;
 	setAttr ".rsrr" -type "double3" 3.0686641967548325 -2.3556600978862656 -0.11388756849137689 ;
 	setAttr -k on ".w0";
 createNode fosterParent -n "soy_bean_blendshapeRNfosterParent1";
-	rename -uid "C162B93C-4DF7-FF6B-2C3E-02B197E743D2";
+	rename -uid "C736C13B-4D15-87FE-8B22-17918E266891";
 createNode parentConstraint -n "polySurface18_parentConstraint1" -p "soy_bean_blendshapeRNfosterParent1";
 	rename -uid "737E373B-D449-6D31-BEB9-1DB275B286A6";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "armR_IK_CtrlW0" -dv 1 -min 0 -at "double";
@@ -20891,34 +20893,34 @@ createNode parentConstraint -n "polySurface18_parentConstraint1" -p "soy_bean_bl
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -2.2307450861192137 0.65487811458416445 -1.644993415760041 ;
 	setAttr ".tg[0].tor" -type "double3" 117.22113055607704 81.809548814777841 -74.265723413299426 ;
-	setAttr ".lr" -type "double3" 5.0390323668733723 10.917454814905673 7.0385632820182691 ;
+	setAttr ".lr" -type "double3" -319.02455078327591 31.917337618727217 114.86392786376419 ;
 	setAttr ".rst" -type "double3" 5.8676835475217359 0.13054413231273543 -6.8091950381039226 ;
 	setAttr ".rsrr" -type "double3" -319.04063211164618 31.889343943034326 114.85118821558011 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "4CD80A8C-46E5-930C-3E99-B8B69EB756BD";
+	rename -uid "9F2B5EFA-46BD-EC9B-011B-9DBAC4B58ED9";
 	setAttr -s 902 ".lnk";
 	setAttr -s 1164 ".ign";
 	setAttr -s 902 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "DB696CBA-4F24-39F8-F17B-67805DAA70E2";
+	rename -uid "BF501CE7-426A-0662-6C17-EFADF4195557";
 	setAttr -s 17 ".dli[1:16]"  1 2 3 4 5 6 7 8 
 		9 10 11 12 13 14 15 16;
 	setAttr -s 17 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "68A0196B-D24C-924B-9F47-BDB45E9DD1B0";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "55B86451-4AAB-5BFA-DF38-ECA14D085109";
+	rename -uid "670274D8-49BB-6927-29D5-7EACB37287C0";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "2F4F00D2-EF47-E196-0F28-1FA9CC37941D";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "58501E76-4D7A-F4F8-D159-36AF7C40330F";
+	rename -uid "A9D88CA9-4D10-7ED0-C5E6-45BD51F0E411";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 3 1 0 2 ;
 	setAttr -s 3 ".bspr";
 	setAttr -s 3 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "0D9D9BE4-49B5-6F0A-5B9E-61B55AB268C8";
+	rename -uid "14D969A3-4B1E-CDC4-A26A-5F8B73B6ED36";
 createNode rmanGlobals -s -n "rmanGlobals";
 	rename -uid "8FE3CD77-7742-010A-4E99-71B980D5197F";
 	setAttr ".cch" no;
@@ -20926,7 +20928,7 @@ createNode rmanGlobals -s -n "rmanGlobals";
 	setAttr ".ihi" 2;
 	setAttr ".nds" 0;
 	setAttr ".hider_minSamples" 0;
-	setAttr ".hider_maxSamples" 128;
+	setAttr ".hider_maxSamples" 32;
 	setAttr ".ri_pixelVariance" 0.014999999664723873;
 	setAttr ".hider_incremental" yes;
 	setAttr ".ipr_hider_maxSamples" 64;
@@ -21006,8 +21008,8 @@ createNode rmanGlobals -s -n "rmanGlobals";
 	setAttr ".ribFileFormat" -type "string" "<camera><layer>.<f4>.rib";
 	setAttr ".version" 1;
 	setAttr ".take" 1;
-	setAttr ".imageOutputDir" -type "string" "<ws>/images/<scene>_v<version>_t<take>";
-	setAttr ".ribOutputDir" -type "string" "<ws>/renderman/rib/<scene>/v<version>_t<take>";
+	setAttr ".imageOutputDir" -type "string" "F:/LoveLanguage/scene6_and_7";
+	setAttr ".ribOutputDir" -type "string" "F:/LoveLanguage/scene6_and_7/rib";
 	setAttr -s 10 ".UserTokens";
 	setAttr ".UserTokens[0].userTokenKeys" -type "string" "";
 	setAttr ".UserTokens[0].userTokenValues" -type "string" "";
@@ -21147,9 +21149,9 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n"
 		+ "                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"rmanNodeEdKeyPressCommand\" \n"
+		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n"
 		+ "                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n"
-		+ "                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"rmanNodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n"
+		+ "                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
@@ -21158,9 +21160,9 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n"
 		+ "                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n"
 		+ "                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n"
-		+ "            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n"
-		+ "            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"quad\\\" -ps 1 50 50 -ps 2 50 50 -ps 3 50 50 -ps 4 50 50 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Top View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n"
+		+ "            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n"
+		+ "            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"quad\\\" -ps 1 50 50 -ps 2 50 50 -ps 3 50 50 -ps 4 50 50 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Top View\")) \n\t\t\t\t\t\"modelPanel\"\n"
 		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera top` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1149\\n    -height 764\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera top` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1149\\n    -height 764\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
@@ -21176,7 +21178,7 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "A6F7FC0A-B74B-697A-950F-FD8F16A2E62A";
-	setAttr ".b" -type "string" "playbackOptions -min -40 -max 45 -ast -50 -aet 600 ";
+	setAttr ".b" -type "string" "playbackOptions -min -45 -max 45 -ast -50 -aet 600 ";
 	setAttr ".st" 6;
 createNode reference -n "house_INTERIORRN";
 	rename -uid "55367DA3-AA40-34A9-58FC-5BBF08712FA3";
@@ -31926,7 +31928,7 @@ createNode reference -n "grandma_controlrigRN";
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl" 
 		"scaleZ" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl" 
-		"translate" " -type \"double3\" 0.67652188689581094 -14.61547060633593631 -13.6294382813370234"
+		"translate" " -type \"double3\" 4.95495884352008176 -12.438 -13.41707030379355636"
 		
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl" 
 		"translateX" " -av"
@@ -31943,7 +31945,7 @@ createNode reference -n "grandma_controlrigRN";
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl" 
 		"rotateX" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl" 
-		"rotate" " -type \"double3\" 0.76078319487693546 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl" 
 		"rotateX" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl" 
@@ -31952,7 +31954,7 @@ createNode reference -n "grandma_controlrigRN";
 		"rotatePivotTranslate" " -type \"double3\" 0 -0.0015751315765372073 -0.0015339281772838165"
 		
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl" 
-		"translate" " -type \"double3\" 0 0.17156227269681645 0"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl" 
 		"translateX" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl" 
@@ -31964,7 +31966,7 @@ createNode reference -n "grandma_controlrigRN";
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl" 
 		"rotateX" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl" 
-		"rotate" " -type \"double3\" -2.79720638643234487 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl" 
 		"rotateX" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:neck_Ctrl" 
@@ -31977,7 +31979,7 @@ createNode reference -n "grandma_controlrigRN";
 		"rotatePivotTranslate" " -type \"double3\" 0.1282583348814037 1.02456732803698936 0.030512038353766924"
 		
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl" 
-		"rotate" " -type \"double3\" -0.15161799671423362 4.06531121070910562 24.31811844237471121"
+		"rotate" " -type \"double3\" -0.19453800755681566 4.06348656987798407 23.71257346802661914"
 		
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl" 
 		"rotateX" " -av"
@@ -31991,8 +31993,7 @@ createNode reference -n "grandma_controlrigRN";
 		"rotatePivotTranslate" " -type \"double3\" -4.42712196363090804 2.97291773051308006 -0.57956395551521678"
 		
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl" 
-		"rotate" " -type \"double3\" -21.54267577333693851 23.31752618926985221 8.26647664510732483"
-		
+		"rotate" " -type \"double3\" 0 0 5.201027726709329"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl" 
 		"rotateX" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl" 
@@ -32008,8 +32009,7 @@ createNode reference -n "grandma_controlrigRN";
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
 		"visibility" " -av 1"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
-		"rotate" " -type \"double3\" 0.37251960309664151 6.0765647540276424 -2.41874338674295464"
-		
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
 		"rotateX" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderR_trans_Ctrl|grandma_controlrig1:ShoulderR_Ctrl|grandma_controlrig1:ElbowR_Ctrl|grandma_controlrig1:WristR_Ctrl" 
@@ -32045,7 +32045,7 @@ createNode reference -n "grandma_controlrigRN";
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
 		"visibility" " -av 1"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
-		"rotate" " -type \"double3\" -14.44370230565488278 -37.98823143542148983 2.28633321155350355"
+		"rotate" " -type \"double3\" 0.37226345650590847 -2.5604027315917639 -3.43145677662346538"
 		
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl" 
 		"rotateX" " -av"
@@ -32068,8 +32068,7 @@ createNode reference -n "grandma_controlrigRN";
 		"rotatePivotTranslate" " -type \"double3\" 3.60579158831768032 -0.66210305349281795 -5.81124774343678308"
 		
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl" 
-		"rotate" " -type \"double3\" -15.07659705705791886 -15.54601020816388335 7.32613838870814593"
-		
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl" 
 		"rotateX" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:ROOT_Grp|grandma_controlrig1:ROOT_Ctrl|grandma_controlrig1:spine3_Ctrl|grandma_controlrig1:spine2_Ctrl|grandma_controlrig1:spine1_Ctrl|grandma_controlrig1:ShoulderL_trans_Ctrl|grandma_controlrig1:ShoulderL_Ctrl|grandma_controlrig1:ElbowL_Ctrl|grandma_controlrig1:WristL_Ctrl" 
@@ -32087,7 +32086,7 @@ createNode reference -n "grandma_controlrigRN";
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl" 
 		"translateY" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl" 
-		"rotate" " -type \"double3\" -0.9468656999902807 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl" 
 		"rotateX" " -av"
 		2 "|grandma_controlrig1:gma_ControlRig|grandma_controlrig1:gma_CTRL|grandma_controlrig1:MAIN_Grp|grandma_controlrig1:MAIN_Ctrl|grandma_controlrig1:MAIN_Children|grandma_controlrig1:EyeMaster_Ctrl" 
@@ -32845,7 +32844,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl" 
-		"rotate" " -type \"double3\" -1.23090108865277714 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl" 
 		"rotateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl" 
@@ -32879,7 +32878,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl" 
-		"rotate" " -type \"double3\" 0.50330870120039106 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl" 
 		"rotateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl" 
@@ -32913,7 +32912,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl" 
-		"rotate" " -type \"double3\" 1.86649460996956207 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl" 
 		"rotateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl" 
@@ -32947,8 +32946,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl" 
-		"rotate" " -type \"double3\" -10.08367738236063538 -0.47692339756249091 -2.60270274259867573"
-		
+		"rotate" " -type \"double3\" -7.70080771366608818 0 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl" 
 		"rotateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:neck_Grp|MC_control_rig:neck_Ctrl" 
@@ -32975,7 +32973,7 @@ createNode reference -n "MC_control_rigRN";
 		"scale" " -type \"double3\" 0.99999999999999978 0.99999999999999989 0.99999999999999989"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl" 
-		"translate" " -type \"double3\" -0.01115936086956338 -0.34170768777098692 0"
+		"translate" " -type \"double3\" -0.011159360869587047 -0.37101291773940326 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl" 
 		"translateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl" 
@@ -33045,7 +33043,7 @@ createNode reference -n "MC_control_rigRN";
 		"scale" " -type \"double3\" 1.00000000000000111 1.00000000000000067 0.99999999999999989"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl" 
-		"translate" " -type \"double3\" 4.84022446230652026 -0.47772003632986804 -4.58546155601496519"
+		"translate" " -type \"double3\" 5.39019288845928912 -1.62676809459183525 -6.682851749198643"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl" 
 		"translateX" " -av"
@@ -33054,7 +33052,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl" 
-		"rotate" " -type \"double3\" -43.92329177926692552 -77.83460099148702227 52.25311125841699322"
+		"rotate" " -type \"double3\" -186.07739770638866617 -53.6219207792155288 100.70673227503743874"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl" 
 		"rotateX" " -av"
@@ -33094,7 +33092,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleR_FK_Grp|MC_control_rig:clavicleR_FK_Ctrl|MC_control_rig:armR_IK_Grp|MC_control_rig:armR_IK_Ctrl|MC_control_rig:RightArm_IK|MC_control_rig:RightArm_IK_poleVectorConstraint1" 
 		"ArmR_PoleW0" " -k 1 1"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl" 
-		"translate" " -type \"double3\" 0.0041976622013529964 0.0048203176307335229 0"
+		"translate" " -type \"double3\" 0 0.014026910331001407 0"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl" 
 		"translateX" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl" 
@@ -33155,7 +33153,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl" 
-		"rotate" " -type \"double3\" -3.67884381762134893 24.12644361846530217 111.16522226922603522"
+		"rotate" " -type \"double3\" -5.48027088403324747 23.80178441668360279 106.73187120046277698"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:shoulderL_FK_Grp|MC_control_rig:shoulderL_FK_Ctrl|MC_control_rig:elbowL_FK_Grp|MC_control_rig:elbowL_FK_Ctrl" 
 		"rotateX" " -av"
@@ -33218,7 +33216,7 @@ createNode reference -n "MC_control_rigRN";
 		"scale" " -type \"double3\" 0.033333333333333354 0.03333333333333334 0.03333333333333334"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1" 
-		"translate" " -type \"double3\" -5.15655715142661997 0.51398524697749137 5.00096529330589856"
+		"translate" " -type \"double3\" -4.08063360495036687 -7.01696311512896198 0.67062162412335413"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1" 
 		"translateX" " -av"
@@ -33227,7 +33225,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1" 
 		"translateZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1" 
-		"rotate" " -type \"double3\" -117.62972591032959713 -83.04638340934782548 129.44699067798552505"
+		"rotate" " -type \"double3\" 35.79588736103399782 -12.28737845146210184 -59.31809649199021095"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:ROOT_Grp|MC_control_rig:ROOT_Ctrl|MC_control_rig:spine1_Grp|MC_control_rig:spine1_Ctrl|MC_control_rig:spine2_Grp|MC_control_rig:spine2_Ctrl|MC_control_rig:spine3_Grp|MC_control_rig:spine3_Ctrl|MC_control_rig:clavicleL_FK_Grp|MC_control_rig:clavicleL_FK_Ctrl|MC_control_rig:armL_IK_Grp|MC_control_rig:armL_IK_Grp1" 
 		"rotateX" " -av"
@@ -33304,7 +33302,7 @@ createNode reference -n "MC_control_rigRN";
 		"rotate" " -type \"double3\" -0.3979836422269189 5.28444684563912404 -1.1229350717956923"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole" 
-		"translate" " -type \"double3\" -0.060311165046228687 -0.41126514689884308 0.20053357980086961"
+		"translate" " -type \"double3\" -0.060311165046229104 -0.40646979876923706 -0.2530120420931174"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole" 
 		"translateX" " -av"
@@ -33329,7 +33327,7 @@ createNode reference -n "MC_control_rigRN";
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmL_Pole" 
 		"scaleZ" " -av"
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole" 
-		"translate" " -type \"double3\" 0.044096844028456414 -0.53129722527778522 0.31430538975784639"
+		"translate" " -type \"double3\" 0.044096844028470625 -0.53129722527778522 0.04094344622023513"
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:MAIN_Grp|MC_control_rig:MAIN_Ctrl|MC_control_rig:MAIN_Children|MC_control_rig:Arms_Pole_Grp|MC_control_rig:ArmR_Pole" 
 		"translateX" " -av"
@@ -33428,16 +33426,15 @@ createNode reference -n "MC_control_rigRN";
 		
 		2 "|MC_control_rig:May_ControlRig|MC_control_rig:GEO|MC_control_rig:SCALE_Grp|MC_control_rig:SOCKS_Grp|MC_control_rig:MC_overalls_latest:polySurface1|MC_control_rig:MC_overalls_latest:polySurfaceShape2" 
 		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "MC_control_rig:blendShape1" "weight[0]" " 0.56986612000000003"
+		2 "MC_control_rig:blendShape1" "weight[0]" " 0.074324324999999997"
 		2 "MC_control_rig:blendShape1" "weight[0]" " -av"
-		2 "MC_control_rig:blendShape2" "weight[0]" " 0.087837838000000001"
+		2 "MC_control_rig:blendShape2" "weight[0]" " 0.33108109000000002"
 		2 "MC_control_rig:blendShape2" "weight[0]" " -av"
 		2 "MC_control_rig:blendShape3" "weight[0]" " 0"
 		2 "MC_control_rig:blendShape3" "weight[0]" " -av"
-		2 "MC_control_rig:blendShape4" "weight[0]" " 0.054081861000000002"
+		2 "MC_control_rig:blendShape4" "weight[0]" " 0.10135135000000001"
 		2 "MC_control_rig:blendShape4" "weight[0]" " -av"
-		2 "MC_control_rig:blendShape5" "w[0:1]" " -s 2 0.067335851000000002 0.073860898999999994"
-		
+		2 "MC_control_rig:blendShape5" "w[0:1]" " -s 2 0 0"
 		2 "MC_control_rig:blendShape5" "weight" " -s 2"
 		2 "MC_control_rig:blendShape5" "weight[0]" " -av"
 		2 "MC_control_rig:blendShape5" "weight[1]" " -av"
@@ -34108,8 +34105,8 @@ createNode reference -n "eggroll_platterRN";
 		"eggroll_platterRN" 14
 		0 "|eggroll_platterRNfosterParent1|group1" "|eggroll_platter:eggroll_platter" 
 		"-s -r "
-		2 "|eggroll_platter:eggroll_platter" "visibility" " -av 1"
-		2 "|eggroll_platter:eggroll_platter" "translate" " -type \"double3\" 117.53430346683499863 31.89298438093305066 -159.19782827092996058"
+		2 "|eggroll_platter:eggroll_platter" "visibility" " -av 0"
+		2 "|eggroll_platter:eggroll_platter" "translate" " -type \"double3\" 117.53430346683499863 31.89298438093305066 -162.49428358339824285"
 		
 		2 "|eggroll_platter:eggroll_platter" "translateZ" " -av"
 		5 4 "eggroll_platterRN" "|eggroll_platter:eggroll_platter.visibility" 
@@ -34271,7 +34268,7 @@ createNode reference -n "cutting_boardRN";
 		"cutting_boardRN"
 		"cutting_boardRN" 0
 		"cutting_boardRN" 22
-		2 "|cutting_board:cuttingBoard" "visibility" " -av 1"
+		2 "|cutting_board:cuttingBoard" "visibility" " -av 0"
 		2 "|cutting_board:cuttingBoard" "translate" " -type \"double3\" 111.29174066667812326 32.72271899289678032 -173.14360347087637138"
 		
 		2 "|cutting_board:cuttingBoard" "translateX" " -av"
@@ -34332,8 +34329,8 @@ createNode reference -n "soy_sauce_latestRN";
 		"soy_sauce_latestRN"
 		"soy_sauce_latestRN" 0
 		"soy_sauce_latestRN" 14
-		2 "|soy_sauce_latest:soy_sauce" "visibility" " -av 1"
-		2 "|soy_sauce_latest:soy_sauce" "translate" " -type \"double3\" 110.12561247271059983 32.4985349505198613 -163.49940681195582215"
+		2 "|soy_sauce_latest:soy_sauce" "visibility" " -av 0"
+		2 "|soy_sauce_latest:soy_sauce" "translate" " -type \"double3\" 101.75343126905011104 32.4985349505198613 -162.98701863933058576"
 		
 		2 "|soy_sauce_latest:soy_sauce" "translateX" " -av"
 		2 "|soy_sauce_latest:soy_sauce" "translateZ" " -av"
@@ -34376,7 +34373,7 @@ createNode reference -n "cutting_boardRN1";
 		"cutting_boardRN1"
 		"cutting_boardRN1" 0
 		"cutting_boardRN1" 11
-		2 "|cutting_board1:cuttingBoard" "visibility" " -av 1"
+		2 "|cutting_board1:cuttingBoard" "visibility" " -av 0"
 		5 4 "cutting_boardRN1" "|cutting_board1:cuttingBoard.visibility" "cutting_boardRN1.placeHolderList[1]" 
 		""
 		5 4 "cutting_boardRN1" "|cutting_board1:cuttingBoard.scaleX" "cutting_boardRN1.placeHolderList[2]" 
@@ -34423,18 +34420,18 @@ createNode reference -n "fork_latestRN";
 		"fork_latestRN"
 		"fork_latestRN" 0
 		"fork_latestRN" 38
-		0 "|fork_latestRNfosterParent1|pSphere1" "|fork_latest:fork" "-s -r "
 		0 "|fork_latestRNfosterParent1|fork_parentConstraint1" "|fork_latest:fork" 
 		"-s -r "
+		0 "|fork_latestRNfosterParent1|pSphere1" "|fork_latest:fork" "-s -r "
 		1 |fork_latest:fork "blendParent1" "blendParent1" " -ci 1 -k 1 -dv 1 -smn 0 -smx 1 -at \"double\""
 		
-		2 "|fork_latest:fork" "visibility" " -av 1"
-		2 "|fork_latest:fork" "translate" " -type \"double3\" 101.90253597939609165 46.93624893004163567 -172.48279980415543378"
+		2 "|fork_latest:fork" "visibility" " -av 0"
+		2 "|fork_latest:fork" "translate" " -type \"double3\" 110.46447061392497346 43.33002292096398378 -163.11366321858818651"
 		
 		2 "|fork_latest:fork" "translateX" " -av"
 		2 "|fork_latest:fork" "translateY" " -av"
 		2 "|fork_latest:fork" "translateZ" " -av"
-		2 "|fork_latest:fork" "rotate" " -type \"double3\" 188.53744269814086465 8.20123761685506558 174.57176729471814269"
+		2 "|fork_latest:fork" "rotate" " -type \"double3\" 6.6891227258728998 21.91157503049266708 2.50601881369838297"
 		
 		2 "|fork_latest:fork" "rotateX" " -av"
 		2 "|fork_latest:fork" "rotateY" " -av"
@@ -34504,7 +34501,7 @@ createNode reference -n "butter_knife_latestRN";
 		"butter_knife_latestRN"
 		"butter_knife_latestRN" 0
 		"butter_knife_latestRN" 11
-		2 "|butter_knife_latest:knife" "visibility" " -av 1"
+		2 "|butter_knife_latest:knife" "visibility" " -av 0"
 		5 4 "butter_knife_latestRN" "|butter_knife_latest:knife.visibility" 
 		"butter_knife_latestRN.placeHolderList[1]" ""
 		5 4 "butter_knife_latestRN" "|butter_knife_latest:knife.translateX" 
@@ -34544,13 +34541,12 @@ createNode reference -n "pot_small_latestRN";
 		"pot_small_latestRN"
 		"pot_small_latestRN" 0
 		"pot_small_latestRN" 21
-		2 "|pot_small_latest:pot_small_CTRL" "visibility" " -av 1"
-		2 "|pot_small_latest:pot_small_CTRL" "translate" " -type \"double3\" 107.20402549983332108 32.15868506054644627 -158.73446377565241505"
+		2 "|pot_small_latest:pot_small_CTRL" "visibility" " -av 0"
+		2 "|pot_small_latest:pot_small_CTRL" "translate" " -type \"double3\" 107.00305392832586904 32.15868506054644627 -162.17462336949040491"
 		
 		2 "|pot_small_latest:pot_small_CTRL" "translateX" " -av"
 		2 "|pot_small_latest:pot_small_CTRL" "translateZ" " -av"
-		2 "|pot_small_latest:pot_small_CTRL" "rotate" " -type \"double3\" 0 -13.97932180390994539 0"
-		
+		2 "|pot_small_latest:pot_small_CTRL" "rotate" " -type \"double3\" 0 0 0"
 		2 "|pot_small_latest:pot_small_CTRL" "rotateX" " -av"
 		2 "|pot_small_latest:pot_small_CTRL" "rotateY" " -av"
 		2 "|pot_small_latest:pot_small_CTRL" "rotateZ" " -av"
@@ -34601,8 +34597,8 @@ createNode reference -n "butter_knife_latestRN1";
 		"butter_knife_latestRN1"
 		"butter_knife_latestRN1" 0
 		"butter_knife_latestRN1" 18
-		2 "|butter_knife_latest1:knife" "visibility" " -av 1"
-		2 "|butter_knife_latest1:knife" "translate" " -type \"double3\" 101.28920866378263099 32.44277089629581212 -157.96313841028069191"
+		2 "|butter_knife_latest1:knife" "visibility" " -av 0"
+		2 "|butter_knife_latest1:knife" "translate" " -type \"double3\" 101.86138277502743676 32.44277089629581212 -159.14155175005328147"
 		
 		2 "|butter_knife_latest1:knife" "translateX" " -av"
 		2 "|butter_knife_latest1:knife" "translateZ" " -av"
@@ -35294,8 +35290,8 @@ createNode reference -n "grannyCranny_SET_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"grannyCranny_SET_latestRN"
 		"grannyCranny_SET_latest:string_of_pearls_latestRN" 0
-		"grannyCranny_SET_latest:chairRN2" 0
 		"grannyCranny_SET_latest:tableRN" 0
+		"grannyCranny_SET_latest:chairRN2" 0
 		"grannyCranny_SET_latest:chairRN" 0
 		"grannyCranny_SET_latest:edamame_latestRN" 0
 		"grannyCranny_SET_latest:house_INTERIOR:door_v01_latestRN" 0
@@ -35358,9 +35354,9 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		
 		"grannyCranny_SET_latest:edamame_latestRN" 14
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl" 
-		"visibility" " -av 0"
+		"visibility" " -av 1"
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl" 
-		"translate" " -type \"double3\" 22.62229484592857176 9.6059230800409825 -40.27961921396117617"
+		"translate" " -type \"double3\" 22.84176468782539615 9.6059230800409825 -40.27961921396117617"
 		
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:edamame_latest:bean_bowl" 
 		"translateX" " -av"
@@ -35388,7 +35384,7 @@ createNode reference -n "grannyCranny_SET_latestRN";
 		"grannyCranny_SET_latestRN.placeHolderList[10]" ""
 		"grannyCranny_SET_latestRN" 21
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup" 
-		"translate" " -type \"double3\" 25.61780902946146909 10.24426313000877542 -38.62244225806544762"
+		"translate" " -type \"double3\" 24.59044508986178101 10.2827141237649009 -33.21046738155116884"
 		
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:teacup" 
 		"translateX" " -av"
@@ -35616,7 +35612,7 @@ createNode reference -n "bokchoy_splitRN";
 		"bokchoy_splitRN"
 		"bokchoy_splitRN" 0
 		"bokchoy_splitRN" 11
-		2 "|bokchoy_split:bokchoy" "visibility" " -av 1"
+		2 "|bokchoy_split:bokchoy" "visibility" " -av 0"
 		5 4 "bokchoy_splitRN" "|bokchoy_split:bokchoy.visibility" "bokchoy_splitRN.placeHolderList[1]" 
 		""
 		5 4 "bokchoy_splitRN" "|bokchoy_split:bokchoy.translateX" "bokchoy_splitRN.placeHolderList[2]" 
@@ -35656,7 +35652,7 @@ createNode reference -n "knife_v01_latestRN";
 		"knife_v01_latestRN"
 		"knife_v01_latestRN" 0
 		"knife_v01_latestRN" 26
-		2 "|knife_v01_latest:knife" "visibility" " -av 1"
+		2 "|knife_v01_latest:knife" "visibility" " -av 0"
 		2 "|knife_v01_latest:knife" "translate" " -type \"double3\" 114.8522838241823365 33.76346579278596494 -149.37968763042121623"
 		
 		2 "|knife_v01_latest:knife" "translateX" " -av"
@@ -37602,8 +37598,8 @@ createNode reference -n "_meetGrandma:full_SET_latestRN";
 		"_meetGrandma:full_SET_latestRN"
 		"full_SET_latest:kitchen_SET_latest:house_INTERIORRN" 0
 		"full_SET_latest:kitchen_SET_latest:plate_latestRN" 0
-		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN13" 0
 		"full_SET_latest:livingRoom_SET_latest:napkinStack_latestRN1" 0
+		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN13" 0
 		"full_SET_latest:kitchen_SET_latest:water_kettle_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:orchid_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:frame2RN" 0
@@ -37632,9 +37628,9 @@ createNode reference -n "_meetGrandma:full_SET_latestRN";
 		
 		"full_SET_latest:livingRoom_SET_latest:coffee_table_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:mug_WALL_HANGINGRN" 0
+		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:bowl_blueceramic_pattern1_latestRN" 
 		0
-		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
 		"full_SET_latest:livingRoom_SET_latest:wooden_pictureRN" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN2" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platterRN1" 0
@@ -37737,8 +37733,8 @@ createNode reference -n "_meetGrandma:full_SET_latestRN";
 		
 		"full_SET_latest:livingRoom_SET_latest:fish4RN" 0
 		"full_SET_latest:kitchen_SET_latest:cutting_boardRN" 0
-		"full_SET_latest:kitchen_SET_latest:chopsticks_round_latestRN1" 0
 		"full_SET_latest:kitchen_SET_latest:pot_small_handle_latestRN" 0
+		"full_SET_latest:kitchen_SET_latest:chopsticks_round_latestRN1" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN10" 0
 		"full_SET_latest:kitchen_SET_latest:butter_knife_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latestRN" 2
@@ -37752,21 +37748,21 @@ createNode reference -n "_meetGrandma:full_SET_latestRN";
 		
 		"full_SET_latest:kitchen_SET_latest:house_INTERIOR:door_v01_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN9" 0
-		"full_SET_latest:kitchen_SET_latest:mug_round_latestRN3" 0
 		"full_SET_latest:kitchen_SET_latest:bowl_conic_latestRN2" 0
+		"full_SET_latest:kitchen_SET_latest:mug_round_latestRN3" 0
 		"full_SET_latest:livingRoom_SET_latest:boardGames_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:mug_round_latestRN" 0
 		
 		"full_SET_latest:kitchen_SET_latest:pho_spoon_latestRN1" 0
-		"full_SET_latest:livingRoom_SET_latest:shoe_jicRN1" 0
 		"full_SET_latest:livingRoom_SET_latest:bambooRN" 0
+		"full_SET_latest:livingRoom_SET_latest:shoe_jicRN1" 0
+		"full_SET_latest:livingRoom_SET_latest:croc3RN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:butter_knife_latestRN" 0
 		
-		"full_SET_latest:livingRoom_SET_latest:croc3RN" 0
 		"full_SET_latest:livingRoom_SET_latest:meat_stirFry_latest:bowl_smallwhite_pattern1_latestRN" 
 		0
-		"full_SET_latest:livingRoom_SET_latest:soy_sauce_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:eggroll_platter1:eggrollRN11" 0
+		"full_SET_latest:livingRoom_SET_latest:soy_sauce_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:takeout_box_v01_latestRN" 0
 		"full_SET_latest:kitchen_SET_latest:dish_rack_latest:chopsticks_round_latestRN" 
 		0
@@ -37776,8 +37772,8 @@ createNode reference -n "_meetGrandma:full_SET_latestRN";
 		"full_SET_latest:kitchen_SET_latest:towelRN" 0
 		"full_SET_latest:livingRoom_SET_latest:bookshelf_v01_latestRN" 0
 		"full_SET_latest:livingRoom_SET_latest:sofa_latestRN" 0
-		"full_SET_latest:kitchen_SET_latest:utensil_holderRN" 0
 		"full_SET_latest:kitchen_SET_latest:pot_big_handle_latestRN1" 0
+		"full_SET_latest:kitchen_SET_latest:utensil_holderRN" 0
 		"full_SET_latest:kitchen_SET_latest:plate_latestRN1" 0
 		"full_SET_latest:kitchen_SET_latest:bowl_smallwhite_pattern1_latestRN3" 0;
 	setAttr ".ptag" -type "string" "";
@@ -39699,12 +39695,12 @@ createNode reference -n "_meetGrandma:grannyCranny_SET_latestRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"_meetGrandma:grannyCranny_SET_latestRN"
 		"grannyCranny_SET_latest:string_of_pearls_latestRN" 0
-		"grannyCranny_SET_latest:tableRN" 0
 		"grannyCranny_SET_latest:chairRN2" 2
 		3 "grannyCranny_SET_latest:chair2:layerManager.displayLayerId[3]" "grannyCranny_SET_latest:chair2:windsor_seat_layer.identification" 
 		""
 		5 4 "_meetGrandma:grannyCranny_SET_latestRN" "grannyCranny_SET_latest:chair2:windsor_seat_layer.identification" 
 		"_meetGrandma:grannyCranny_SET_latestRN.placeHolderList[3]" ""
+		"grannyCranny_SET_latest:tableRN" 0
 		"grannyCranny_SET_latest:chairRN" 9
 		2 "|grannyCranny_SET_latest:GRANNY_CRANNY_SET|grannyCranny_SET_latest:PROPS|grannyCranny_SET_latest:chair:chair|grannyCranny_SET_latest:chair:back_rod5" 
 		"visibility" " 1"
@@ -45372,11 +45368,11 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:ping_shoes_latestRN2" 0
 		"livingRoom_SET_latest:house_INTERIOR:window_REALRN1" 0
 		"livingRoom_SET_latest:croc3RN" 0
-		"livingRoom_SET_latest:house_INTERIOR:door_v01_latestRN" 0
 		"livingRoom_SET_latest:shoe_jicRN" 0
+		"livingRoom_SET_latest:house_INTERIOR:door_v01_latestRN" 0
 		"livingRoom_SET_latest:croc_pile:croc3RN" 0
-		"livingRoom_SET_latest:frame2RN" 0
 		"livingRoom_SET_latest:ping_shoes_latestRN" 0
+		"livingRoom_SET_latest:frame2RN" 0
 		"livingRoom_SET_latest:eggroll_platter1:eggrollRN1" 0
 		"livingRoom_SET_latest:running_shoe_latestRN3" 0
 		"livingRoom_SET_latest:eggroll_platter1:eggrollRN2" 0
@@ -45404,8 +45400,8 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:running_shoe_latestRN2" 0
 		"livingRoom_SET_latest:bookStack_RIGHT_SHELFRN" 0
 		"livingRoom_SET_latest:jackie_shoe_latest_purpleRN1" 0
-		"livingRoom_SET_latest:guianaChestnutPlant_latestRN" 0
 		"livingRoom_SET_latest:soy_sauce_latestRN" 0
+		"livingRoom_SET_latest:guianaChestnutPlant_latestRN" 0
 		"livingRoom_SET_latest:eggroll_platterRN1" 0
 		"livingRoom_SET_latest:running_shoe_latestRN" 0
 		"livingRoom_SET_latest:shoe_rack_latestRN" 0
@@ -45413,8 +45409,8 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:bookshelf_v01_latestRN" 0
 		"livingRoom_SET_latest:flatsRN" 0
 		"livingRoom_SET_latest:sofa_latestRN" 0
-		"livingRoom_SET_latest:frame3RN" 0
 		"livingRoom_SET_latest:eggroll_platter1:eggrollRN" 0
+		"livingRoom_SET_latest:frame3RN" 0
 		"livingRoom_SET_latest:shoe_jicRN2" 0
 		"livingRoom_SET_latest:flats_redRN" 0
 		"livingRoom_SET_latest:house_INTERIOR:curtainsRN" 0
@@ -45433,14 +45429,14 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:chopsticks_round_latestRN" 0
 		"livingRoom_SET_latest:jackie_shoe_latestRN" 0
 		"livingRoom_SET_latest:shoe_converse_latestRN" 0
-		"livingRoom_SET_latest:shoe_swooshRN1" 0
 		"livingRoom_SET_latest:chopsticks_square_latestRN" 0
-		"livingRoom_SET_latest:fork_latestRN" 0
+		"livingRoom_SET_latest:shoe_swooshRN1" 0
 		"livingRoom_SET_latest:windchime_latestRN" 0
+		"livingRoom_SET_latest:fork_latestRN" 0
 		"livingRoom_SET_latest:side_tableRN" 0
 		"livingRoom_SET_latest:eggroll_platter1:eggrollRN8" 0
-		"livingRoom_SET_latest:coffee_table_latestRN" 0
 		"livingRoom_SET_latest:eggroll_platter1:eggrollRN9" 0
+		"livingRoom_SET_latest:coffee_table_latestRN" 0
 		"livingRoom_SET_latest:house_INTERIOR:window_REALRN" 0
 		"livingRoom_SET_latest:house_INTERIOR:window_REALRN4" 2
 		2 "|livingRoom_SET_latest:house_INTERIOR:window_REAL4:HOUSE_INTERIOR" "translate" 
@@ -45450,16 +45446,16 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:rice_partyserving:bowl_blueceramic_pattern1_latestRN" 1
 		
 		2 "|livingRoom_SET_latest:LIVING_ROOM_SET|livingRoom_SET_latest:PROPS|livingRoom_SET_latest:FRONT_WALL|livingRoom_SET_latest:COFFEE_TABLE|livingRoom_SET_latest:rice_partyserving:rice_party_serving_CTRL|livingRoom_SET_latest:rice_partyserving:rice_party_serving|livingRoom_SET_latest:rice_partyserving:bowl_blueceramic_pattern1_latest:bowl_blueceramic_pattern1_CTRL|livingRoom_SET_latest:rice_partyserving:bowl_blueceramic_pattern1_latest:group1|livingRoom_SET_latest:rice_partyserving:bowl_blueceramic_pattern1_latest:pho_v3:nRigid1|livingRoom_SET_latest:rice_partyserving:bowl_blueceramic_pattern1_latest:pho_v3:nRigidShape1" 
-		"cacheWidth" " 86"
+		"cacheWidth" " 91"
 		"livingRoom_SET_latestRN" 23
 		2 "|livingRoom_SET_latest:LIVING_ROOM_SET" "translate" " -type \"double3\" 23.64135667542716135 0 0"
 		
 		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:livingroom_roof" 
 		"visibility" " 1"
 		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:livingroom_roof|livingRoom_SET_latest:livingroom_roofShape" 
-		"intensity" " -av 0.037360470741987228"
+		"intensity" " -av 1.5"
 		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:livingroom_roof|livingRoom_SET_latest:livingroom_roofShape" 
-		"exposure" " -av 0.012453490868210793"
+		"exposure" " -av 0.5"
 		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:livingroom_roof|livingRoom_SET_latest:livingroom_roofShape" 
 		"color" " -type \"float3\" 1 0.83124423000000003 0.59299999000000003"
 		2 "|livingRoom_SET_latest:livingRoomLights|livingRoom_SET_latest:livingroom_window|livingRoom_SET_latest:livingroom_windowShape" 
@@ -45521,12 +45517,11 @@ createNode reference -n "livingRoom_SET_latestRN";
 		"livingRoom_SET_latest:plateRN" 12
 		2 "|livingRoom_SET_latest:plate:PxrEnvDayLight" "visibility" " 1"
 		2 "|livingRoom_SET_latest:plate:PxrEnvDayLight|livingRoom_SET_latest:plate:PxrEnvDayLightShape" 
-		"intensity" " -av 0.10747209936380386"
+		"intensity" " -av 0.40000000596046448"
 		2 "|livingRoom_SET_latest:plate:PxrEnvDayLight|livingRoom_SET_latest:plate:PxrEnvDayLightShape" 
-		"exposure" " -av 0.012453490868210793"
+		"exposure" " -av 0.5"
 		2 "|livingRoom_SET_latest:plate:PxrEnvDayLight|livingRoom_SET_latest:plate:PxrEnvDayLightShape" 
-		"skyTint" " -type \"float3\" 0.062923908000000001 0.065044886999999996 0.17583196000000001"
-		
+		"skyTint" " -type \"float3\" 1 0.94260001000000004 0.36500000999999999"
 		2 "|livingRoom_SET_latest:plate:PxrEnvDayLight|livingRoom_SET_latest:plate:PxrEnvDayLightShape" 
 		"skyTintR" " -av"
 		2 "|livingRoom_SET_latest:plate:PxrEnvDayLight|livingRoom_SET_latest:plate:PxrEnvDayLightShape" 
@@ -45905,9 +45900,9 @@ createNode reference -n "soy_bean_blendshapeRN";
 		0 "|soy_bean_blendshapeRNfosterParent1|polySurface18_parentConstraint1" "|soy_bean_blendshape:edamame_latestRNfosterParent1|soy_bean_blendshape:polySurface18" 
 		"-s -r "
 		2 "|soy_bean_blendshape:edamame_latestRNfosterParent1|soy_bean_blendshape:polySurface18" 
-		"visibility" " -av 0"
+		"visibility" " -av 1"
 		2 "|soy_bean_blendshape:edamame_latestRNfosterParent1|soy_bean_blendshape:polySurface18" 
-		"translate" " -type \"double3\" 5.95402950262615605 -4.26891549937303694 -7.31666114822260738"
+		"translate" " -type \"double3\" 5.86854093274547495 0.1357967994592002 -6.80366722701808158"
 		
 		2 "|soy_bean_blendshape:edamame_latestRNfosterParent1|soy_bean_blendshape:polySurface18" 
 		"translateX" " -av"
@@ -48848,13 +48843,15 @@ createNode animCurveTU -n "PxrDiskLight1Shape_intensity";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  26 20;
+createNode renderSetup -n "renderSetup";
+	rename -uid "2D6EFCBA-4E67-C4B9-341E-99835C25AD62";
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -av -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 37;
-	setAttr -av ".unw" 37;
+	setAttr -k on ".o" -40;
+	setAttr -av ".unw" -40;
 	setAttr -k on ".etw";
 	setAttr -k on ".tps";
 	setAttr -k on ".tms";
@@ -48956,10 +48953,10 @@ select -ne :defaultRenderGlobals;
 	setAttr -av -k on ".outf";
 	setAttr -k on ".imfkey";
 	setAttr -k on ".gama";
-	setAttr -k on ".an";
+	setAttr -k on ".an" yes;
 	setAttr -cb on ".ar";
-	setAttr -k on ".fs";
-	setAttr -k on ".ef";
+	setAttr -k on ".fs" -40;
+	setAttr -k on ".ef" 45;
 	setAttr -av -k on ".bfs";
 	setAttr -cb on ".me";
 	setAttr -cb on ".se";
@@ -48972,7 +48969,7 @@ select -ne :defaultRenderGlobals;
 	setAttr -cb on ".oft";
 	setAttr -cb on ".umfn";
 	setAttr -cb on ".ufe";
-	setAttr -cb on ".pff";
+	setAttr -cb on ".pff" yes;
 	setAttr -cb on ".peie";
 	setAttr -cb on ".ifp";
 	setAttr -k on ".comp";
@@ -49350,29 +49347,29 @@ connectAttr "MC_control_rigRN.phl[83]" "sheet_parentConstraint1.tg[0].tpm";
 connectAttr "MC_control_rigRN.phl[84]" "pSphere1_parentConstraint1.tg[1].tpm";
 connectAttr "MC_control_rigRN.phl[85]" "polySurface18_parentConstraint1.tg[0].tpm"
 		;
-connectAttr "MC_control_rigRN.phl[86]" "sheet_parentConstraint1.tg[0].tt";
-connectAttr "MC_control_rigRN.phl[87]" "fork_parentConstraint1.tg[0].tt";
+connectAttr "MC_control_rigRN.phl[86]" "fork_parentConstraint1.tg[0].tt";
+connectAttr "MC_control_rigRN.phl[87]" "sheet_parentConstraint1.tg[0].tt";
 connectAttr "MC_control_rigRN.phl[88]" "pSphere1_parentConstraint1.tg[1].tt";
 connectAttr "MC_control_rigRN.phl[89]" "polySurface18_parentConstraint1.tg[0].tt"
 		;
 connectAttr "armR_IK_Ctrl_translateX.o" "MC_control_rigRN.phl[90]";
 connectAttr "armR_IK_Ctrl_translateY.o" "MC_control_rigRN.phl[91]";
 connectAttr "armR_IK_Ctrl_translateZ.o" "MC_control_rigRN.phl[92]";
-connectAttr "MC_control_rigRN.phl[93]" "sheet_parentConstraint1.tg[0].ts";
-connectAttr "MC_control_rigRN.phl[94]" "fork_parentConstraint1.tg[0].ts";
+connectAttr "MC_control_rigRN.phl[93]" "fork_parentConstraint1.tg[0].ts";
+connectAttr "MC_control_rigRN.phl[94]" "sheet_parentConstraint1.tg[0].ts";
 connectAttr "MC_control_rigRN.phl[95]" "pSphere1_parentConstraint1.tg[1].ts";
 connectAttr "MC_control_rigRN.phl[96]" "polySurface18_parentConstraint1.tg[0].ts"
 		;
 connectAttr "armR_IK_Ctrl_scaleX.o" "MC_control_rigRN.phl[97]";
 connectAttr "armR_IK_Ctrl_scaleY.o" "MC_control_rigRN.phl[98]";
 connectAttr "armR_IK_Ctrl_scaleZ.o" "MC_control_rigRN.phl[99]";
-connectAttr "MC_control_rigRN.phl[100]" "sheet_parentConstraint1.tg[0].trp";
-connectAttr "MC_control_rigRN.phl[101]" "fork_parentConstraint1.tg[0].trp";
+connectAttr "MC_control_rigRN.phl[100]" "fork_parentConstraint1.tg[0].trp";
+connectAttr "MC_control_rigRN.phl[101]" "sheet_parentConstraint1.tg[0].trp";
 connectAttr "MC_control_rigRN.phl[102]" "pSphere1_parentConstraint1.tg[1].trp";
 connectAttr "MC_control_rigRN.phl[103]" "polySurface18_parentConstraint1.tg[0].trp"
 		;
-connectAttr "MC_control_rigRN.phl[104]" "sheet_parentConstraint1.tg[0].trt";
-connectAttr "MC_control_rigRN.phl[105]" "fork_parentConstraint1.tg[0].trt";
+connectAttr "MC_control_rigRN.phl[104]" "fork_parentConstraint1.tg[0].trt";
+connectAttr "MC_control_rigRN.phl[105]" "sheet_parentConstraint1.tg[0].trt";
 connectAttr "MC_control_rigRN.phl[106]" "pSphere1_parentConstraint1.tg[1].trt";
 connectAttr "MC_control_rigRN.phl[107]" "polySurface18_parentConstraint1.tg[0].trt"
 		;
@@ -49600,8 +49597,8 @@ connectAttr "fork_scaleZ.o" "fork_latestRN.phl[12]";
 connectAttr "fork_latestRN.phl[13]" "fork_parentConstraint1.crp";
 connectAttr "fork_latestRN.phl[14]" "fork_parentConstraint1.crt";
 connectAttr "fork_latestRN.phl[15]" "fork_parentConstraint1.cpim";
-connectAttr "fork_latestRN.phl[16]" "pairBlend1.ro";
-connectAttr "fork_latestRN.phl[17]" "fork_parentConstraint1.cro";
+connectAttr "fork_latestRN.phl[16]" "fork_parentConstraint1.cro";
+connectAttr "fork_latestRN.phl[17]" "pairBlend1.ro";
 connectAttr "knife_visibility1.o" "butter_knife_latestRN.phl[1]";
 connectAttr "knife_translateX1.o" "butter_knife_latestRN.phl[2]";
 connectAttr "knife_translateZ1.o" "butter_knife_latestRN.phl[3]";
@@ -50585,7 +50582,6 @@ connectAttr "pCube2.ro" "pCube2_parentConstraint1.cro";
 connectAttr "pCube2.pim" "pCube2_parentConstraint1.cpim";
 connectAttr "pCube2.rp" "pCube2_parentConstraint1.crp";
 connectAttr "pCube2.rpt" "pCube2_parentConstraint1.crt";
-connectAttr "fork_parentConstraint1.w0" "fork_parentConstraint1.tg[0].tw";
 connectAttr "pairBlend2.otx" "pSphere1.tx";
 connectAttr "pairBlend2.oty" "pSphere1.ty";
 connectAttr "pairBlend2.otz" "pSphere1.tz";
@@ -50605,6 +50601,7 @@ connectAttr "pSphere1.ro" "pSphere1_parentConstraint1.cro";
 connectAttr "pSphere1.pim" "pSphere1_parentConstraint1.cpim";
 connectAttr "pSphere1.rp" "pSphere1_parentConstraint1.crp";
 connectAttr "pSphere1.rpt" "pSphere1_parentConstraint1.crt";
+connectAttr "fork_parentConstraint1.w0" "fork_parentConstraint1.tg[0].tw";
 connectAttr "sheet_parentConstraint1.w0" "sheet_parentConstraint1.tg[0].tw";
 connectAttr "polySurface18_parentConstraint1.w0" "polySurface18_parentConstraint1.tg[0].tw"
 		;
